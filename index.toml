@@ -273,6 +273,14 @@ file = "config/jade/sort-order.json"
 hash = "fa62b76fa540dd04995ae4926f2b762dabefcd81db88291706c95e73fab2f470"
 
 [[files]]
+file = "config/leanobject.toml"
+hash = "1094ff0f529fbb284ab1167871356b6ff0eb8259cfe7b2b5fd8f4d36789139dd"
+
+[[files]]
+file = "config/lithium.properties"
+hash = "db142780f1a6f79c67bd50c015ae47252d957249973071dd069b2f7d23ecf504"
+
+[[files]]
 file = "config/littletiles-client.json"
 hash = "9217db4bfe5f0a44061e2d04b615e589f47ca3e9679cbf6274aa8abe5466c6ee"
 
@@ -442,6 +450,11 @@ hash = "0f4c2198603cd84a14dc6741729d0b0dcf509574776e620c36c3e7180082db32"
 metafile = true
 
 [[files]]
+file = "mods/aiimprovements.pw.toml"
+hash = "f9bd7db23ed1e80b460eb1f3b1593317496b593b3a3b36868b289dd20e9c5f0d"
+metafile = true
+
+[[files]]
 file = "mods/alltheleaks.pw.toml"
 hash = "8fbb785b3eae78292f26a0c657a55d9a68cf4d1c2a1f8b29e9f74fa7fea04f8c"
 metafile = true
@@ -502,6 +515,11 @@ hash = "acb009023869711a283adebaf47cb4256125f350aa092f27315ccefa2b9816e3"
 metafile = true
 
 [[files]]
+file = "mods/chloride.pw.toml"
+hash = "c87ec498be6af5651f699b83733e5e0177526f9ee449089952e97486d12c819c"
+metafile = true
+
+[[files]]
 file = "mods/cloth_config.pw.toml"
 hash = "be66d8c067dd3aa132be4b92c81135c3a6dbe53455f834c0eddbc7f14ee85d74"
 metafile = true
@@ -522,6 +540,11 @@ hash = "1e56f528d8e21b0cf9c52c3d6deea2a4eafa408170b39a070195dbf66617f373"
 metafile = true
 
 [[files]]
+file = "mods/coroutil.pw.toml"
+hash = "9f2bb57e05bad305f03c25c275c6d11e952835a41b2da68dba10a0bd1f3f6261"
+metafile = true
+
+[[files]]
 file = "mods/craftingtweaks.pw.toml"
 hash = "91bcce6c7d33ab3bd15217c4fd84aa04ddfaf929dda1219f351d27aeeb3ecc91"
 metafile = true
@@ -534,6 +557,11 @@ metafile = true
 [[files]]
 file = "mods/cryonicconfig.pw.toml"
 hash = "c5b561e87ccb02a7d4cff5e56b228542c343800066dd0002aa5b5a72ad564718"
+metafile = true
+
+[[files]]
+file = "mods/culllessleaves.pw.toml"
+hash = "601f7d369984b99ba6786461a0794573966a69d783069b0926e589e9d54de9e5"
 metafile = true
 
 [[files]]
@@ -587,6 +615,11 @@ hash = "d0c5ebc4f60fd72a7f61e6ddf23242d0606e4a859069efecbb0d5fc8b15e9c8a"
 metafile = true
 
 [[files]]
+file = "mods/experiencebugfix.pw.toml"
+hash = "c06b7d882d03eab975e5228838526903ab13de82b7b83f90cee8ee3225b91cde"
+metafile = true
+
+[[files]]
 file = "mods/explorerscompass.pw.toml"
 hash = "0db85b53cd32bb1d23c33273deaef58bd0f0429a180d171e3f02fe0ab86b0fe2"
 metafile = true
@@ -632,6 +665,11 @@ hash = "e257c403f403c11da642a88c81e7940ea4c5801865a03bc33179ff414f274467"
 metafile = true
 
 [[files]]
+file = "mods/fastrecipesearch.pw.toml"
+hash = "61d75de00881b7bf446af674d71a6c81d065149b90b86da66135333571004a73"
+metafile = true
+
+[[files]]
 file = "mods/fastspawner.pw.toml"
 hash = "048257e52fbc458170c7a6bfe2b2490594ffeade1787e4ff6df98f422530c13a"
 metafile = true
@@ -644,6 +682,16 @@ metafile = true
 [[files]]
 file = "mods/flerovium.pw.toml"
 hash = "20d2a98e9a9303873e6ccdeb1aede9907deaac80bafe046405809126dbd83af4"
+metafile = true
+
+[[files]]
+file = "mods/flickerfix.pw.toml"
+hash = "e9ef3bd68da12ef3c2042b9fcc02691d1f05c03f5616211c053a30048788fcef"
+metafile = true
+
+[[files]]
+file = "mods/fluidium.pw.toml"
+hash = "017fb438c7e51e46db6292d80d85b67d0623506a2f650a1d385ce58f1ba4ee67"
 metafile = true
 
 [[files]]
@@ -728,7 +776,7 @@ metafile = true
 
 [[files]]
 file = "mods/gtia-0.1.0.jar"
-hash = "a613abe72fd029bc4967a32180c2777a9b05f1407cb7aa4231c227b871f7e96f"
+hash = "d9212be68357ac65321a313f55b95cc17cf760f4aa57c2972f610d00802c4917"
 
 [[files]]
 file = "mods/gtna-0.5.1.jar"
@@ -765,8 +813,18 @@ hash = "1502130fd3184cbef72d393c83d4cb5a66e9efca42daa2c0a16df68ace85c2a7"
 metafile = true
 
 [[files]]
+file = "mods/krypton.pw.toml"
+hash = "ba2f214504381c53f588e1a52d8be657b47ed53a256b45d623cea2c724748afa"
+metafile = true
+
+[[files]]
 file = "mods/ldlib.pw.toml"
 hash = "9267d0c570765720df4d9a3b5ff5f380c1f732677961c95c189269a8fdaed0cc"
+metafile = true
+
+[[files]]
+file = "mods/leanobject.pw.toml"
+hash = "21fb12932655c41985952aa68091c1e43d74c6c6db6b75919f4b69cd4efb5388"
 metafile = true
 
 [[files]]
@@ -777,6 +835,16 @@ metafile = true
 [[files]]
 file = "mods/merequester.pw.toml"
 hash = "edd3084dd2c10ae697ace9bb2c6a249c6a9d4d92a6d02247169fdab60e55b286"
+metafile = true
+
+[[files]]
+file = "mods/mobtimizations.pw.toml"
+hash = "7f6a458465e7191a893d635d082421d900a92272e99c2dc59a172038bfe2df79"
+metafile = true
+
+[[files]]
+file = "mods/modelfix.pw.toml"
+hash = "27916bf8bc1aa2740f6beb7d0e5971aca194da879aa98a0f8627db67f7bc42b0"
 metafile = true
 
 [[files]]
@@ -807,6 +875,11 @@ metafile = true
 [[files]]
 file = "mods/naturescompass.pw.toml"
 hash = "937c7ae4c8274ee0717546a2ca736099b1640a178b8f06027f62ca310517e413"
+metafile = true
+
+[[files]]
+file = "mods/no_telemetry.pw.toml"
+hash = "f557ccd936f4ea169e747a037bcff023594c343c726722034fa7b57804d3f10d"
 metafile = true
 
 [[files]]

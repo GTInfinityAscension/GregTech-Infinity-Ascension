@@ -1,0 +1,13 @@
+name = "No Telemetry"
+filename = "no-telemetry-1.10.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3d52342f5825d01dda6661ef7116cdbacbe49746"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7436494
+project-id = 530816

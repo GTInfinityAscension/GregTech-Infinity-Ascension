@@ -8,6 +8,7 @@
     "ad_astra_rocketed",
     "adastraextra",
     "ae2",
+    "aiimprovements",
     "alltheleaks",
     "alternate_current",
     "architectury",
@@ -21,13 +22,16 @@
     "buildinggadgets2",
     "certain_questing_additions",
     "chisel",
+    "chloride",
     "cloth_config",
     "configured",
     "constructionwand",
     "controlling",
+    "coroutil",
     "craftingtweaks",
     "creativecore",
     "cryonicconfig",
+    "culllessleaves",
     "doespotatotick",
     "duplicationless",
     "easy_villagers",
@@ -38,6 +42,7 @@
     "emi_ores",
     "euphoria_patcher",
     "expatternprovider",
+    "experiencebugfix",
     "explorerscompass",
     "extendedae_plus",
     "extremesoundmuffler",
@@ -47,9 +52,12 @@
     "fastleafdecay",
     "fastnbt",
     "fastquit",
+    "fastrecipesearch",
     "fastspawner",
     "ferritecore",
     "flerovium",
+    "flickerfix",
+    "fluidium",
     "framedblocks",
     "ftbbackups2",
     "ftbchunks",
@@ -75,15 +83,20 @@
     "jade",
     "jadeaddons",
     "kotlinforforge",
+    "krypton",
     "ldlib",
+    "leanobject",
     "littletiles",
     "merequester",
+    "mobtimizations",
+    "modelfix",
     "modernfix",
     "modernui",
     "moremorelang",
     "mousetweaks",
     "nanhealthfixer",
     "naturescompass",
+    "no_telemetry",
     "nolijium",
     "oculus",
     "packmenu",
@@ -184,6 +197,15 @@
       "requires": [
         "guideme"
       ]
+    },
+    {
+      "mod_id": "aiimprovements",
+      "filename": "AI-Improvements-1.20-0.5.2.jar",
+      "sha256": "575a4a8e00f982c064d54bb3e73e5cda2d14414de054a471a3daf3f58bdf560a",
+      "source": "curseforge",
+      "project_id": 233019,
+      "file_id": 4578262,
+      "requires": []
     },
     {
       "mod_id": "alltheleaks",
@@ -304,6 +326,17 @@
       ]
     },
     {
+      "mod_id": "chloride",
+      "filename": "chloride-FORGE-mc1.20.1-v1.8.1.jar",
+      "sha256": "6ebabdcaf4d466ff229f50f0b5715ebc3e9229e72dae2064c4fe8f1fb62d860b",
+      "source": "curseforge",
+      "project_id": 931925,
+      "file_id": 8462759,
+      "requires": [
+        "embeddium"
+      ]
+    },
+    {
       "mod_id": "cloth_config",
       "filename": "cloth-config-11.1.136-forge.jar",
       "sha256": "1e895e85cf5b1e1905ef3178ec155c8badfe22a1577b92c09143a5aa1f4ce0f2",
@@ -342,6 +375,15 @@
       ]
     },
     {
+      "mod_id": "coroutil",
+      "filename": "coroutil-forge-1.20.1-1.3.7.jar",
+      "sha256": "11448808a42c17425cf2ea39701841008683d6ad6e2838a34eef0253251a870f",
+      "source": "curseforge",
+      "project_id": 237749,
+      "file_id": 5096038,
+      "requires": []
+    },
+    {
       "mod_id": "craftingtweaks",
       "filename": "craftingtweaks-forge-1.20.1-18.2.9.jar",
       "sha256": "1cc83c8c0bee73a2ffa3428ce28e3c17d7f95e26e1a820d8bd7270e0931f8974",
@@ -368,6 +410,15 @@
       "source": "curseforge",
       "project_id": 1208896,
       "file_id": 6247797,
+      "requires": []
+    },
+    {
+      "mod_id": "culllessleaves",
+      "filename": "CullLessLeaves-Reforged-1.20.1-1.0.5.jar",
+      "sha256": "b91ca5cd028b1c919e28851b984edd61874d44ad8038cdeee87315d2656cb292",
+      "source": "curseforge",
+      "project_id": 840788,
+      "file_id": 4917082,
       "requires": []
     },
     {
@@ -471,6 +522,15 @@
       ]
     },
     {
+      "mod_id": "experiencebugfix",
+      "filename": "fixexperiencebug-1.20-46.2.2.jar",
+      "sha256": "08dc722aaa1bd61b4ee867badeb830e537b8362633197dd211c772a4a002f42e",
+      "source": "curseforge",
+      "project_id": 486778,
+      "file_id": 4587408,
+      "requires": []
+    },
+    {
       "mod_id": "explorerscompass",
       "filename": "ExplorersCompass-1.20.1-1.4.0-forge.jar",
       "sha256": "0d9a7705f39a9eac19c33e0fbe5422280048991a341dc0d9471bff32111c502c",
@@ -563,6 +623,15 @@
       ]
     },
     {
+      "mod_id": "fastrecipesearch",
+      "filename": "fastrecipesearch-1.20.1-26.8.4-forge.jar",
+      "sha256": "6ec611bc07e3c9bcdf75ae5af5af302cb82b94be025afb12d138c1b0140a0b95",
+      "source": "curseforge",
+      "project_id": 1406509,
+      "file_id": 8737025,
+      "requires": []
+    },
+    {
       "mod_id": "fastspawner",
       "filename": "fastspawner-1.20.1-1.1.0.jar",
       "sha256": "270dad457d93077899c4ac62216261f9a961a6584b9375eb38b6b1824f1eba0b",
@@ -589,6 +658,26 @@
       "file_id": 8284677,
       "requires": [
         "embeddium"
+      ]
+    },
+    {
+      "mod_id": "flickerfix",
+      "filename": "flickerfix-1.20.1-4.0.1.jar",
+      "sha256": "6f154f6bd798cdf5a9f3f90c743b396b2162308c69d9713af22091a18a4746b6",
+      "source": "curseforge",
+      "project_id": 431430,
+      "file_id": 4731559,
+      "requires": []
+    },
+    {
+      "mod_id": "fluidium",
+      "filename": "fluidium-1.20.1-1.4.0.jar",
+      "sha256": "c352872092cc970b7826f5dd1779cdf325fbdb934dc104dd3dca95440b432e21",
+      "source": "curseforge",
+      "project_id": 1306029,
+      "file_id": 7481405,
+      "requires": [
+        "duplicationless"
       ]
     },
     {
@@ -767,9 +856,9 @@
     {
       "mod_id": "gtia",
       "filename": "gtia-0.1.0.jar",
-      "sha256": "a613abe72fd029bc4967a32180c2777a9b05f1407cb7aa4231c227b871f7e96f",
+      "sha256": "d9212be68357ac65321a313f55b95cc17cf760f4aa57c2972f610d00802c4917",
       "source": "local-build",
-      "path": "/home/raishxn/MineProjects/GregTech Infinity Ascension(GT:IA)/GTIACore/build/libs/gtia-0.1.0.jar",
+      "path": "/home/raishxn/MineProjects/GTIA/core/build/libs/gtia-0.1.0.jar",
       "requires": []
     },
     {
@@ -777,7 +866,7 @@
       "filename": "gtna-0.5.1.jar",
       "sha256": "425d0581fbc55fe26c8b80d1bf687b496328e530cb32667566b6a984fbf3e591",
       "source": "local-build",
-      "path": "/home/raishxn/MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.5.1.jar",
+      "path": "/tmp/claude-1000/-home-raishxn/0456a340-2ca8-4e20-98dc-12e2cfdb2751/scratchpad/gtna-released/gtna-0.5.1.jar",
       "requires": []
     },
     {
@@ -837,12 +926,30 @@
       "requires": []
     },
     {
+      "mod_id": "krypton",
+      "filename": "KryptonReforged-0.2.3.jar",
+      "sha256": "9b281428d0e7560b7b6e74cdc808c0ffd7a8e662ba84d1a12a6616b49cedec10",
+      "source": "curseforge",
+      "project_id": 549394,
+      "file_id": 4606534,
+      "requires": []
+    },
+    {
       "mod_id": "ldlib",
       "filename": "ldlib-forge-1.20.1-1.0.52.a.jar",
       "sha256": "a9b0827d264e0d15f90482de0d4783a28fc2dad9dfb477f344dc5e959168838d",
       "source": "curseforge",
       "project_id": 626676,
       "file_id": 8830518,
+      "requires": []
+    },
+    {
+      "mod_id": "leanobject",
+      "filename": "leanobject-1.20-26.9.2-forge.jar",
+      "sha256": "2dca130bb7ce42dedee7cfb4ca6e24be8dbf3a33cef7e1cee07c75b240e91265",
+      "source": "curseforge",
+      "project_id": 1703183,
+      "file_id": 8929333,
       "requires": []
     },
     {
@@ -866,6 +973,26 @@
       "requires": [
         "ae2"
       ]
+    },
+    {
+      "mod_id": "mobtimizations",
+      "filename": "mobtimizations-forge-1.20.1-1.0.1.jar",
+      "sha256": "1713bbf6aba4e5cdf21854cc8daf6b4c3893bc175778367273b9b052340ae168",
+      "source": "curseforge",
+      "project_id": 974401,
+      "file_id": 7594372,
+      "requires": [
+        "coroutil"
+      ]
+    },
+    {
+      "mod_id": "modelfix",
+      "filename": "modelfix-1.15.jar",
+      "sha256": "35f27982242a3ea58c526204a28704ddf355d19bb2e9b0ff10f9585c255a4f16",
+      "source": "curseforge",
+      "project_id": 676136,
+      "file_id": 5200949,
+      "requires": []
     },
     {
       "mod_id": "modernfix",
@@ -919,6 +1046,15 @@
       "source": "curseforge",
       "project_id": 252848,
       "file_id": 7892948,
+      "requires": []
+    },
+    {
+      "mod_id": "no_telemetry",
+      "filename": "no-telemetry-1.10.0.jar",
+      "sha256": "8e9086fefd2ef7d65d31946a91b9414a23cd1b777bbab08855039b130f0b8b2c",
+      "source": "curseforge",
+      "project_id": 530816,
+      "file_id": 7436494,
       "requires": []
     },
     {
