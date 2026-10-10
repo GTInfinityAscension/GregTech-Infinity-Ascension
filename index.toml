@@ -798,6 +798,11 @@ hash = "ca845065e5fa2b92d58ee098d4abb901ef6865ffea8e18b268f897ee7bcbce6b"
 metafile = true
 
 [[files]]
+file = "mods/infiniverse.pw.toml"
+hash = "39aff620a5883fcb2660bccf577c31e7efacd1e50d0bc298cec0f848d1b90a02"
+metafile = true
+
+[[files]]
 file = "mods/jade.pw.toml"
 hash = "ece9e836f6a97a8d43860a2632e932b048770fe44d99c4a76754698ff21c01e9"
 metafile = true
@@ -848,8 +853,18 @@ hash = "27916bf8bc1aa2740f6beb7d0e5971aca194da879aa98a0f8627db67f7bc42b0"
 metafile = true
 
 [[files]]
+file = "mods/modern_manipulator.pw.toml"
+hash = "ffd81c0defaf3aaed3b43fcdbdc9a72f079bbff8982929c5910cb94d70720863"
+metafile = true
+
+[[files]]
 file = "mods/modernfix.pw.toml"
 hash = "23101872bab310275f7a2a9e4ae24b9db94e7883a9f3441ffe99517490813c67"
+metafile = true
+
+[[files]]
+file = "mods/modernspace.pw.toml"
+hash = "410e1b9d21e12077406a61a75d0d393784c0d1b15862c559b50584174f2b4357"
 metafile = true
 
 [[files]]

@@ -6,10 +6,11 @@ GTIA's own mods:
 
 - **GTIACore** (`gtia`): LGPL-3.0.
 - **GregTech Nexus Addon** (`gtna`): see https://github.com/Raishxn/GregTech-Nexus-Addon.
+- **ModernSpace** (`modernspace`) and **ModernManipulator** (`modern_manipulator`): by the same author, see https://github.com/Raishxn/ModernSpace and https://github.com/Raishxn/ModernManipulator.
 
 No quest text, texture or config was copied from other modpacks (GTO, GTL, GTNH, Monifactory, ForgeBorn). They were only used as layout and design references.
 
-## Mods in the full pack (122)
+## Mods in the full pack (125)
 
 | Mod ID | File | Source |
 | --- | --- | --- |
@@ -88,6 +89,7 @@ No quest text, texture or config was copied from other modpacks (GTO, GTL, GTNH,
 | `guideme` | guideme-20.1.15.jar | [CurseForge](https://www.curseforge.com/projects/1173950) |
 | `immediatelyfast` | ImmediatelyFast-Forge-1.5.5+1.20.4.jar | [CurseForge](https://www.curseforge.com/projects/686911) |
 | `industrial_platform` | Industrial Platform-1.20.1-2.0.1.jar | [CurseForge](https://www.curseforge.com/projects/1350900) |
+| `infiniverse` | infiniverse-1.20.1-1.0.0.5.jar | [CurseForge](https://www.curseforge.com/projects/568341) |
 | `jade` | Jade-1.20.1-Forge-11.13.3.jar | [CurseForge](https://www.curseforge.com/projects/324717) |
 | `jadeaddons` | JadeAddons-1.20.1-Forge-5.5.1.jar | [CurseForge](https://www.curseforge.com/projects/583345) |
 | `kotlinforforge` | kotlinforforge-4.12.0-all.jar | [CurseForge](https://www.curseforge.com/projects/351264) |
@@ -98,7 +100,9 @@ No quest text, texture or config was copied from other modpacks (GTO, GTL, GTNH,
 | `merequester` | merequester-forge-1.20.1-1.2.1.jar | [CurseForge](https://www.curseforge.com/projects/688367) |
 | `mobtimizations` | mobtimizations-forge-1.20.1-1.0.1.jar | [CurseForge](https://www.curseforge.com/projects/974401) |
 | `modelfix` | modelfix-1.15.jar | [CurseForge](https://www.curseforge.com/projects/676136) |
+| `modern_manipulator` | modern-manipulator-0.2.0.jar | [CurseForge](https://www.curseforge.com/projects/1735042) |
 | `modernfix` | modernfix-forge-5.27.83+mc1.20.1.jar | [CurseForge](https://www.curseforge.com/projects/790626) |
+| `modernspace` | modernspace-0.2.0.jar | [CurseForge](https://www.curseforge.com/projects/1735000) |
 | `modernui` | ModernUI-Forge-1.20.1-3.12.0.1-universal.jar | [CurseForge](https://www.curseforge.com/projects/352491) |
 | `moremorelang` | moremorelang-1.0.5.jar | [CurseForge](https://www.curseforge.com/projects/1444917) |
 | `mousetweaks` | MouseTweaks-forge-mc1.20.1-2.25.1.jar | [CurseForge](https://www.curseforge.com/projects/60089) |

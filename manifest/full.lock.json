@@ -80,6 +80,7 @@
     "guideme",
     "immediatelyfast",
     "industrial_platform",
+    "infiniverse",
     "jade",
     "jadeaddons",
     "kotlinforforge",
@@ -90,7 +91,9 @@
     "merequester",
     "mobtimizations",
     "modelfix",
+    "modern_manipulator",
     "modernfix",
+    "modernspace",
     "modernui",
     "moremorelang",
     "mousetweaks",
@@ -897,6 +900,15 @@
       "requires": []
     },
     {
+      "mod_id": "infiniverse",
+      "filename": "infiniverse-1.20.1-1.0.0.5.jar",
+      "sha256": "0a9e3ad0bdcee18959c1ecc68e76eca9cf25f0ab02565219db5e35ceaced3c2a",
+      "source": "curseforge",
+      "project_id": 568341,
+      "file_id": 4597298,
+      "requires": []
+    },
+    {
       "mod_id": "jade",
       "filename": "Jade-1.20.1-Forge-11.13.3.jar",
       "sha256": "a632c77975e5aedff6322b0072f8b0db3f5d4bf914df6bdcc87d1aea4d5f55f4",
@@ -995,6 +1007,17 @@
       "requires": []
     },
     {
+      "mod_id": "modern_manipulator",
+      "filename": "modern-manipulator-0.2.0.jar",
+      "sha256": "5ef1e1b6923d31c3731c8bbb5eb7770f7b50673dbca37cf1f3131fa814b0d989",
+      "source": "curseforge",
+      "project_id": 1735042,
+      "file_id": 9116775,
+      "requires": [
+        "gtceu"
+      ]
+    },
+    {
       "mod_id": "modernfix",
       "filename": "modernfix-forge-5.27.83+mc1.20.1.jar",
       "sha256": "954ff22f601be8de3978a0d7636a138dc93801c6ac55cfd71ef1cd2895de8e5f",
@@ -1002,6 +1025,17 @@
       "project_id": 790626,
       "file_id": 8774721,
       "requires": []
+    },
+    {
+      "mod_id": "modernspace",
+      "filename": "modernspace-0.2.0.jar",
+      "sha256": "25ad8f0c34efd3f679b4284a98fbaf7e4e00de6cd4cb2d8c8fc5980688f4f04f",
+      "source": "curseforge",
+      "project_id": 1735000,
+      "file_id": 9116779,
+      "requires": [
+        "infiniverse"
+      ]
     },
     {
       "mod_id": "modernui",

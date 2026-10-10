@@ -1,0 +1,13 @@
+name = "ModernManipulator"
+filename = "modern-manipulator-0.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "aabdbeb36fbf14d625d2002e2ddd7b3db1c3560e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9116775
+project-id = 1735042

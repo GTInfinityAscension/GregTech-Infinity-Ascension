@@ -1,0 +1,13 @@
+name = "ModernSpace"
+filename = "modernspace-0.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0431244bbbec0cf1e97e622ed2d2a445021bf663"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9116779
+project-id = 1735000
