@@ -4,7 +4,7 @@ A GregTech modpack for Minecraft 1.20.1 built on **GTCEu Modern**, **[GregTech N
 
 GTIA is guided GregTech where the factory is the star: Satisfactory-style megafactories, real industrial chemistry and long production lines. You start in Steam, go electric, head to space and keep scaling. Large machines, wireless power and AE2 are part of the main path, not side content. The quest book is the main guide, and it's written with a sense of humour.
 
-> **Status: early development.** No playable release yet. Start → Steam → LV is the first slice we want people to play; see the [roadmap](ROADMAP.md) and the [Start/Steam/LV plan](docs/START_STEAM_LV_PLAN.md).
+> **Status: early development.** Builds are for testers. Start → Steam → LV is the first slice we want people to play; see the [roadmap](ROADMAP.md) and the [Start/Steam/LV plan](docs/START_STEAM_LV_PLAN.md).
 
 ## Design pillars
 
@@ -15,31 +15,85 @@ GTIA is guided GregTech where the factory is the star: Satisfactory-style megafa
 - **Every quest is reachable.** A checker reads the pack's real recipes and fails the build if a quest asks for something you can't make yet.
 - **Modes:** Normal/Journey are picked at world creation and locked.
 
-## Repository layout
+## How to play
+
+Download the latest build from [Releases](https://github.com/Raishxn/GregTech-Infinity-Ascension/releases):
+
+| File | Use it for |
+| --- | --- |
+| `GregTech-Infinity-Ascension-<version>.zip` | **Client.** Import it in Prism Launcher (*Add Instance → Import*), the CurseForge app or ATLauncher. |
+| `GregTech-Infinity-Ascension-server-<version>.zip` | **Dedicated server.** Unzip, run `install.sh` / `install.bat`, see `README-SERVER.md`. |
+
+Java 17+ and 8 GB of RAM or more are recommended.
+
+### Release channels
+
+| Channel | Tag | What to expect |
+| --- | --- | --- |
+| nightly | `nightly` (version `X.Y.Z-dev-<commit>`) | Built on every change to `main`. Can break anything. |
+| dev | `X.Y.Z-dev-N` | Snapshot for the team and testers. |
+| pre | `X.Y.Z-pre-N` | Feature-complete for the version and being tested. |
+| alpha | `X.Y.Z-alpha[-N]` | First public test of the version. |
+| beta | `X.Y.Z-beta[-N]` | **Stable** for the version. |
+
+A version moves dev → pre → alpha → beta. Only beta releases are not marked as pre-release. Always say the exact version when reporting a bug.
+
+### Other ways to install
+
+- **packwiz-installer:** point [packwiz-installer](https://packwiz.infra.link/tutorials/installing/packwiz-installer/) at `pack.toml` from this repo (raw URL or a local clone) to install and auto-update an instance.
+- **Export it yourself:** install [packwiz](https://github.com/packwiz/packwiz), clone the repo and run `packwiz curseforge export`.
+- **Nix (flake):** `nix build .#curseforge` or `nix build .#server`. `nix develop` gives you packwiz, Python and JDK 17.
+
+## Development
+
+### Repository layout
 
 | Path | What it is |
 | --- | --- |
-| `config/` | Pack configs, including the generated FTB Quests book |
-| `kubejs/` | Small data tweaks (most content is Java, in GTIACore/GTNA) |
-| `resourcepacks/` | GTIA's own resource packs |
+| `pack.toml`, `index.toml`, `mods/` | The packwiz pack. One `.pw.toml` per CurseForge mod, plus the GTIACore and GTNA jars |
+| `config/`, `defaultconfigs/`, `resourcepacks/` | Shipped with the pack (the quest book is generated into `config/ftbquests`) |
 | `quests-src/` | Quest book sources (TOML) and processing-line flowchart data |
-| `manifest/` | Mod lockfiles with sources and SHA-256 (`full.lock.json`, `first-slice.lock.json`) |
-| `tools/` | Build and QA scripts (below) |
+| `manifest/` | `full.lock.json` (mods with CurseForge ids and SHA-256), `client-only.txt`, recipe/item dumps for the quest checker |
+| `tools/` | Build and QA scripts |
+| `kubejs/` | Small data tweaks, not shipped yet (KubeJS isn't in the pack) |
 | `docs/` | Public docs: tier plans and flowcharts |
+| `.github/` | CI (package + checks), server installer, issue templates |
 
-## Tools
+### Mods
+
+`manifest/full.lock.json` is the source of truth, and `mods/` is generated from it:
 
 ```sh
-python3 tools/pack.py lock|fetch|verify|instance   # lock mods, download, check hashes, build a Prism instance
-python3 tools/pack.py --profile first-slice instance   # smaller test instance
-python3 tools/questgen.py build                      # generate the quest book from quests-src/
-python3 tools/questgen.py check                      # reachability check: can the player do this quest here?
-python3 tools/flowchart.py                           # render processing-line flowcharts (Graphviz)
-python3 tools/server_smoke.py                        # boot a dedicated server with the locked mods
-python3 tools/reach.py                               # recipe reachability / shortcut queries
+python3 tools/pack.py lock          # resolve mods + required dependencies into the lock
+python3 tools/pack.py fetch         # download them into the cache and check SHA-256
+python3 tools/packwiz_sync.py       # write mods/*.pw.toml, copy the local jars, packwiz refresh
+python3 tools/packwiz_sync.py --check
 ```
 
-GTIACore and GTNA are local builds for now. Set `GTIA_JAR` and `GTNA_JAR` if your jars are elsewhere.
+A mod that a dedicated server can't load goes in `manifest/client-only.txt` (`tools/server_smoke.py` lists them). GTIACore and GTNA are local builds; set `GTIA_JAR` / `GTNA_JAR` if your jars are elsewhere.
+
+### Configs and quests
+
+- Edit files under `config/` or `defaultconfigs/`, then run `packwiz refresh`.
+- Quests: edit `quests-src/*.toml`, never the generated `.snbt`. Then run `python3 tools/questgen.py build && python3 tools/questgen.py check`.
+
+### Other tools
+
+```sh
+python3 tools/pack.py instance                     # build a Prism instance straight from the lock (testing)
+python3 tools/pack.py sync --instance NAME         # copy config/ over an existing instance
+python3 tools/server_smoke.py                      # boot a dedicated server with the locked mods
+python3 tools/release.py curseforge|server OUT     # build the release zips (what CI and Nix run)
+python3 tools/flowchart.py                         # render processing-line flowcharts (Graphviz)
+python3 tools/reach.py                             # recipe reachability / shortcut queries
+```
+
+### CI
+
+- `check.yml` runs on every push and PR. It fails if `index.toml` is stale, the quest book wasn't rebuilt, or a quest isn't reachable.
+- `package.yml` builds the client and server zips:
+  - every push to `main` updates the `nightly` release;
+  - running it by hand with a tag (e.g. `0.1.0-dev-1`) creates that release.
 
 ## Contributing
 

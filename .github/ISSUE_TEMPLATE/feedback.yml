@@ -1,0 +1,21 @@
+name: Playtest feedback
+description: Pacing, confusing quests, boring grinds, ideas
+labels: [feedback]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Pack version
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where in the progression
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      description: What felt slow, confusing or great? Did any quest leave you without a next step?
+    validations:
+      required: true

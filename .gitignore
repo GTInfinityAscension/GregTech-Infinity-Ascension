@@ -6,3 +6,10 @@ __pycache__/
 # local caches and outputs
 /work/
 *.log
+/result
+/server
+/curseforge
+*.zip
+*.mrpack
+/packwiz
+.direnv

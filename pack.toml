@@ -1,0 +1,13 @@
+name = "GregTech Infinity Ascension"
+author = "Raishxn"
+version = "0.1.0-dev"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "3a28203dabe81e1bfce8e0b342f7bc49921c46360dc3c18b11bdd74a3f960115"
+
+[versions]
+forge = "47.4.23"
+minecraft = "1.20.1"

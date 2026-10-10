@@ -1,0 +1,35 @@
+name: Bug report
+description: Something is broken, impossible or skips progression
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Pack version
+      description: The exact version from the release you installed, e.g. 0.1.0-dev-1 or 0.1.0-dev-a1b2c3 (nightly).
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where in the progression
+      description: Chapter and quest, e.g. "LV — Diaphragm Cell".
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Screenshots and logs
+      description: Recipe/GUI/quest screenshots. For crashes, attach logs/latest.log or the crash report.
+  - type: dropdown
+    id: side
+    attributes:
+      label: Singleplayer or server?
+      options: [Singleplayer, Dedicated server, LAN]

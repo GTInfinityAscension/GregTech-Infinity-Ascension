@@ -1,0 +1,26 @@
+# Everything packwiz must NOT ship. The pack is: mods/, config/, defaultconfigs/, resourcepacks/.
+/README.md
+/ROADMAP.md
+/CONTRIBUTING.md
+/LICENSE.txt
+/THIRD_PARTY_LICENSES.md
+/CHANGELOG.md
+/docs/
+/tools/
+/quests-src/
+/manifest/
+/kubejs/
+/.github/
+/*.nix
+/flake.lock
+/*.zip
+/*.mrpack
+/result
+/server-result
+.direnv
+.envrc
+.idea/
+.vscode/
+.DS_Store
+__pycache__/
+**/.gitkeep

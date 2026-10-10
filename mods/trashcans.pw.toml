@@ -1,0 +1,13 @@
+name = "Trash Cans\" #mandatory"
+filename = "trashcans-1.1.1-forge-mc1.20.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "41b2eb8fcfe5e04a2a50d7c8207e1634d26eeea9"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8972123
+project-id = 394535

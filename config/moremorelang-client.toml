@@ -1,0 +1,10 @@
+#A list of language codes to display in tooltips, in order. E.g., ["en_us", "zh_cn"]
+MoreLanguages = []
+#Whether to use Mixin for language control.[Requires Game Restart]
+UseMixinTranslator = true
+#When to show: ALWAYS, ONLY_SHIFT, ONLY_ADVANCED, SHIFT_AND_ADVANCED
+#Allowed Values: ALWAYS, ONLY_SHIFT, ONLY_ADVANCED, SHIFT_AND_ADVANCED
+DisplayMode = "ONLY_ADVANCED"
+#Try to add translations at the top of the tooltip (just below the item name). This is a 'best effort' and may be overridden by other mods.
+TryTopPriority = false
+

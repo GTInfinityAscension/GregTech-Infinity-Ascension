@@ -1,0 +1,29 @@
+name: Check
+
+# Runs on every push and pull request: the packwiz index must be up to date and every quest must be reachable.
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: nixbuild/nix-quick-install-action@v30
+      - name: packwiz index is up to date
+        run: |
+          nix develop --command packwiz refresh
+          git diff --exit-code -- index.toml pack.toml \
+            || { echo "::error::Run 'packwiz refresh' and commit index.toml/pack.toml"; exit 1; }
+      - name: Quest book builds and every quest is reachable
+        run: |
+          python3 tools/questgen.py build
+          python3 tools/questgen.py check
+          git diff --exit-code -- config/ftbquests \
+            || { echo "::error::Run 'python3 tools/questgen.py build' and commit the generated chapters"; exit 1; }
+      - name: Start chapter is intact
+        run: python3 tools/qa_start_quests.py

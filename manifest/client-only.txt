@@ -1,0 +1,5 @@
+# Mods a dedicated server must not load (written as side = "client" in mods/*.pw.toml).
+# Source: tools/server_smoke.py, 2026-10-10 ("left out because they are client-only").
+oculus
+fastquit
+nolijium

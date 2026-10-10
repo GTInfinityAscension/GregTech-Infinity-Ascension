@@ -1,0 +1,13 @@
+name = "Ad Astra Extra"
+filename = "adastraextra-forge-1.20.1-1.2.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6b28e904f2cbe19475b91c8d2abe69bd6b368a83"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5037401
+project-id = 957097

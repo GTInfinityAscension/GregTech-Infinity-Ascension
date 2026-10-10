@@ -1,0 +1,80 @@
+name: Package
+
+# Every push to main builds a "nightly" pre-release. A tagged release (dev -> pre -> alpha -> beta) is built by
+# running this workflow by hand with the tag, e.g. 0.1.0-dev-1, 0.1.0-pre-1, 0.1.0-alpha, 0.1.0-beta.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'config/**'
+      - 'defaultconfigs/**'
+      - 'resourcepacks/**'
+      - 'mods/**'
+      - 'pack.toml'
+      - 'index.toml'
+      - 'tools/release.py'
+      - '.github/server/**'
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: "Release tag: X.Y.Z-dev-N, X.Y.Z-pre-N, X.Y.Z-alpha[-N] or X.Y.Z-beta[-N]"
+        required: true
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pick the version
+        id: version
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            V="${{ github.event.inputs.tag_name }}"
+            echo "$V" | grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+-(dev|pre|alpha|beta)(-[0-9]+)?$' \
+              || { echo "::error::Tag must look like 0.1.0-dev-1, 0.1.0-pre-1, 0.1.0-alpha or 0.1.0-beta"; exit 1; }
+          else
+            BASE="$(sed -n 's/^version = "\([^"]*\)"$/\1/p' pack.toml)"
+            V="${BASE}-$(echo "$GITHUB_SHA" | cut -c1-6)"
+          fi
+          sed -i "s/^version = \".*\"$/version = \"$V\"/" pack.toml
+          echo "version=$V" >> "$GITHUB_OUTPUT"
+      - uses: nixbuild/nix-quick-install-action@v30
+      - name: Build CurseForge pack
+        run: nix build .#curseforge -o curseforge
+      - name: Build server pack
+        run: nix build .#server -o server
+      - uses: actions/upload-artifact@v4
+        with:
+          name: GregTech-Infinity-Ascension-${{ steps.version.outputs.version }}
+          path: |
+            curseforge/*.zip
+            server/*.zip
+
+  publish:
+    needs: package
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      VERSION: ${{ needs.package.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+      - name: Publish
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            TAG="$VERSION"; TITLE="GregTech Infinity Ascension $VERSION"
+            case "$VERSION" in *-beta*) FLAGS="";; *) FLAGS="--prerelease";; esac
+          else
+            TAG="nightly"; TITLE="GregTech Infinity Ascension nightly ($VERSION)"; FLAGS="--prerelease"
+            gh release delete nightly --yes --cleanup-tag || true
+          fi
+          gh release create "$TAG" $FLAGS --title "$TITLE" --notes-file .github/release-notes.md \
+            --target "$GITHUB_SHA" dist/*.zip
