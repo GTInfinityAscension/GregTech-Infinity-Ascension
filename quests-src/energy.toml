@@ -1,0 +1,541 @@
+# Power Generation: a table, not a road. Rows are eras (Steam, LV, MV, HV); columns are ways of making energy, so
+# the player reads across a row to compare what one era offers, and down a column to see one family grow. Each row
+# header depends on the entry of that era's chapter, so a row opens when the player gets there. Fuel cards on top
+# are generated from the pack's recipes (EU per bucket). Rows above HV come with the EV chapter.
+
+[chapter]
+title = "Power Generation"
+icon = "gtceu:lv_steam_turbine"
+
+[columns]
+header = 0.0
+boilers = 2.0
+steam = 3.5
+solar = 5.0
+combustion = 6.5
+gas = 8.0
+multiblock = 9.5
+
+[rows]
+cards = 0.0
+steam = 2.0
+lv = 3.5
+mv = 5.0
+hv = 6.5
+fuels = 8.25
+grid = 10.0
+
+[entry]
+x = -2.5
+y = 0.0
+subtitle = "Every way to make EU, side by side."
+text = """
+Read this chapter as a table. Each row is an era of the game and opens when you reach that era's chapter. Each column is one way of making energy.
+
+Across a row: what you can build right now, and how the options compare. Down a column: how one family grows. The cards on top list each generator's fuels with the EU one bucket gives, taken from this pack's recipes.
+"""
+
+# ------------------------------------------------------------------ row headers
+
+[[quest]]
+key = "row_steam"
+column = "header"
+grid_row = "steam"
+role = "header"
+deps = ["steam:entry"]
+hide_lines = true
+icon = "gtceu:steam_machine_casing"
+title = "Steam Era"
+subtitle = "Before the first circuit."
+checkmark = "Open the row"
+text = """
+Steam is your only energy at first, and the [item]Primitive Steam Turbine[/] turns some of it into Ultra Low Voltage power.
+"""
+
+[[quest]]
+key = "row_lv"
+column = "header"
+grid_row = "lv"
+role = "header"
+deps = ["lv:entry"]
+hide_lines = true
+icon = "gtceu:lv_machine_hull"
+title = "Low Voltage"
+subtitle = "32 V."
+checkmark = "Open the row"
+text = """
+Low Voltage machines take up to [num]32 V[/]. Every column has something to offer here; pick by the fuel you can make in quantity.
+"""
+
+[[quest]]
+key = "row_mv"
+column = "header"
+grid_row = "mv"
+role = "header"
+deps = ["mv:entry"]
+hide_lines = true
+icon = "gtceu:mv_machine_hull"
+title = "Medium Voltage"
+subtitle = "128 V."
+checkmark = "Open the row"
+text = """
+Medium Voltage machines take up to [num]128 V[/]. Feed them with generators of this row, or step up power from a lower row with a [item]Transformer[/].
+"""
+
+[[quest]]
+key = "row_hv"
+column = "header"
+grid_row = "hv"
+role = "header"
+deps = ["hv:entry"]
+hide_lines = true
+icon = "gtceu:hv_machine_hull"
+title = "High Voltage"
+subtitle = "512 V."
+checkmark = "Open the row"
+text = """
+High Voltage machines take up to [num]512 V[/]. This is where the large multiblock turbines start to pay off.
+"""
+
+# ------------------------------------------------------------------ fuel cards (generated from recipes)
+
+[[quest]]
+key = "card_steam"
+optional = true
+column = "steam"
+grid_row = "cards"
+role = "header"
+icon = "gtceu:steam_bucket"
+title = "What Steam Turbines Burn"
+subtitle = "Steam, and nothing else."
+checkmark = "Read"
+fuel_table = "gtceu:steam_turbine"
+text = """
+Turbines eat the steam of the column to their left. A boiler that keeps up with them is the real limit.
+"""
+
+[[quest]]
+key = "card_combustion"
+optional = true
+column = "combustion"
+grid_row = "cards"
+role = "header"
+icon = "gtceu:diesel_bucket"
+title = "What Combustion Burns"
+subtitle = "Liquid fuels, best first."
+checkmark = "Read"
+fuel_table = "gtceu:combustion_generator"
+text = """
+Combustion Generators burn liquid fuels. The cheapest ones, [item]Ethanol[/] and [item]Biodiesel[/], need no oil at all.
+"""
+
+[[quest]]
+key = "card_gas"
+optional = true
+column = "gas"
+grid_row = "cards"
+role = "header"
+icon = "gtceu:methane_bucket"
+title = "What Gas Turbines Burn"
+subtitle = "Gases, best first."
+checkmark = "Read"
+fuel_table = "gtceu:gas_turbine"
+text = """
+Gas Turbines burn gases and light hydrocarbons. Several of them come out of the same distillation that makes combustion fuel, so the two columns grow together.
+"""
+
+[[quest]]
+key = "card_boilers"
+column = "boilers"
+grid_row = "cards"
+role = "header"
+optional = true
+icon = "gtceu:lp_steam_solid_boiler"
+title = "Steam Sources"
+subtitle = "Boilers feed the steam column."
+checkmark = "Read"
+text = """
+Boilers burn fuel and turn [item]Water[/] into [item]Steam[/]. They make no EU themselves: the turbines of the next column do.
+
+[tip]Count your boilers first. A turbine is only as good as the steam behind it.[/]
+"""
+
+[[quest]]
+key = "card_solar"
+column = "solar"
+grid_row = "cards"
+role = "header"
+optional = true
+icon = "gtceu:lp_steam_solar_boiler"
+title = "Solar Steam"
+subtitle = "No fuel, only daylight."
+checkmark = "Read"
+text = """
+Solar boilers heat water with the sun. [tip]No fuel at all[/], but [warn]nothing at night[/], and little steam per block. They help a boiler line; they rarely replace it.
+"""
+
+[[quest]]
+key = "card_multiblock"
+column = "multiblock"
+grid_row = "cards"
+role = "header"
+optional = true
+icon = "gtna:generator_array"
+title = "Multiblock Generators"
+subtitle = "When one block is not enough."
+checkmark = "Read"
+text = """
+Multiblock generators burn the same fuels as the columns to their left, in larger amounts. Their output depends on the [mech]dynamo hatch[/] you give them, and turbines also on their [mech]rotor[/].
+"""
+
+# ------------------------------------------------------------------ Steam era row
+
+[[quest]]
+key = "steam_boiler"
+column = "boilers"
+grid_row = "steam"
+role = "cell"
+deps = ["row_steam"]
+hide_lines = true
+icon = "gtceu:lp_steam_solid_boiler"
+title = "Small Boiler"
+subtitle = "Coal, Coke, anything that burns."
+task = [{ item = "gtceu:lp_steam_solid_boiler" }]
+text = """
+The first steam source. Its high-pressure Steel version makes more steam from the same fuel.
+"""
+
+
+[[quest]]
+key = "steam_solar"
+column = "solar"
+grid_row = "steam"
+role = "cell"
+optional = true
+deps = ["row_steam", "steam:glass"]
+hide_lines = true
+icon = "gtceu:lp_steam_solar_boiler"
+title = "Solar Boiler"
+subtitle = "Free steam under the sun."
+task = [{ item = "gtceu:lp_steam_solar_boiler" }]
+text = """
+No fuel at all: the sun heats the water. It needs Glass, so it comes after the Block mold. It makes little steam and none at night, so it helps a boiler rather than replacing it.
+"""
+
+# ------------------------------------------------------------------ LV row
+
+[[quest]]
+key = "lv_boiler"
+column = "boilers"
+grid_row = "lv"
+role = "cell"
+deps = ["row_lv", "steam_boiler"]
+hide_lines = true
+icon = "gtceu:bronze_large_boiler"
+title = "Large Bronze Boiler"
+subtitle = "A multiblock steam source."
+task = [{ item = "gtceu:bronze_large_boiler" }]
+text = """
+The first multiblock boiler. Its controller asks for circuits, which is why it sits in this row and not the one above.
+"""
+
+[[quest]]
+key = "lv_steam"
+column = "steam"
+grid_row = "lv"
+role = "cell"
+deps = ["row_lv", "steam_boiler"]
+hide_lines = true
+icon = "gtceu:lv_steam_turbine"
+title = "Steam Turbine"
+subtitle = "Your boilers, now at 32 V."
+task = [{ item = "gtceu:lv_steam_turbine" }]
+text = """
+The easiest LV generator: you already make the steam. Its card above shows how much steam one EU costs, so count your boilers before you count your turbines.
+"""
+
+[[quest]]
+key = "lv_solar"
+column = "solar"
+grid_row = "lv"
+role = "cell"
+optional = true
+deps = ["row_lv", "steam_solar"]
+hide_lines = true
+icon = "gtceu:hp_steam_solar_boiler"
+title = "High-Pressure Solar Boiler"
+subtitle = "Steel catches more sun."
+task = [{ item = "gtceu:hp_steam_solar_boiler" }]
+text = """
+The Steel solar boiler makes more steam than the bronze one, still only in daylight.
+"""
+
+[[quest]]
+key = "lv_combustion"
+column = "combustion"
+grid_row = "lv"
+role = "cell"
+deps = ["row_lv"]
+hide_lines = true
+icon = "gtceu:lv_combustion"
+title = "Combustion Generator"
+subtitle = "Liquid fuel at 32 V."
+task = [{ item = "gtceu:lv_combustion" }]
+text = """
+Burns the fuels of the card above. [item]Ethanol[/] from Infinity Ascension's [item]Fermentation Vats[/] is the one you can make without oil.
+"""
+
+[[quest]]
+key = "lv_gas"
+column = "gas"
+grid_row = "lv"
+role = "cell"
+deps = ["row_lv"]
+hide_lines = true
+icon = "gtceu:lv_gas_turbine"
+title = "Gas Turbine"
+subtitle = "Gas at 32 V."
+task = [{ item = "gtceu:lv_gas_turbine" }]
+text = """
+Burns the gases of the card above. The [item]Catalytic Dehydrator[/]'s [item]Ethylene[/] is one of them.
+"""
+
+# ------------------------------------------------------------------ MV row
+
+[[quest]]
+key = "mv_boiler"
+pending = "the MV chapter is not rewritten yet; its entry does not lead to an MV hull"
+column = "boilers"
+grid_row = "mv"
+role = "cell"
+deps = ["row_mv", "lv_boiler"]
+hide_lines = true
+icon = "gtceu:steel_large_boiler"
+title = "Large Steel Boiler"
+subtitle = "More steam per block."
+task = [{ item = "gtceu:steel_large_boiler" }]
+text = """
+The Steel multiblock boiler. Pair it with Large Steam Turbines or a wall of singleblock turbines.
+"""
+
+[[quest]]
+key = "mv_steam"
+pending = "the MV chapter is not rewritten yet; its entry does not lead to an MV hull"
+column = "steam"
+grid_row = "mv"
+role = "cell"
+deps = ["row_mv", "lv_steam"]
+hide_lines = true
+icon = "gtceu:mv_steam_turbine"
+title = "MV Steam Turbine"
+subtitle = "Same steam, higher voltage."
+task = [{ item = "gtceu:mv_steam_turbine" }]
+text = """
+Burns steam faster to put out [num]128 V[/]. Steam stays a fine choice as long as your boilers keep up.
+"""
+
+[[quest]]
+key = "mv_combustion"
+pending = "the MV chapter is not rewritten yet; its entry does not lead to an MV hull"
+column = "combustion"
+grid_row = "mv"
+role = "cell"
+deps = ["row_mv", "lv_combustion"]
+hide_lines = true
+icon = "gtceu:mv_combustion"
+title = "MV Combustion Generator"
+subtitle = "Time to refine oil."
+task = [{ item = "gtceu:mv_combustion" }]
+text = """
+At this voltage the better fuels of the card start to matter: [item]Light Fuel[/], [item]Diesel[/] and [item]Gasoline[/] come from oil.
+"""
+
+[[quest]]
+key = "mv_gas"
+pending = "the MV chapter is not rewritten yet; its entry does not lead to an MV hull"
+column = "gas"
+grid_row = "mv"
+role = "cell"
+deps = ["row_mv", "lv_gas"]
+hide_lines = true
+icon = "gtceu:mv_gas_turbine"
+title = "MV Gas Turbine"
+subtitle = "Refinery gases."
+task = [{ item = "gtceu:mv_gas_turbine" }]
+text = """
+Oil refining leaves gases behind; this turbine turns them into [num]128 V[/] instead of waste.
+"""
+
+# ------------------------------------------------------------------ HV row
+
+[[quest]]
+key = "hv_steam"
+pending = "the MV and HV chapters are not rewritten yet"
+column = "steam"
+grid_row = "hv"
+role = "cell"
+deps = ["row_hv", "mv_steam"]
+hide_lines = true
+icon = "gtceu:hv_steam_turbine"
+title = "HV Steam Turbine"
+subtitle = "The last singleblock steam turbine."
+task = [{ item = "gtceu:hv_steam_turbine" }]
+text = """
+[num]512 V[/] from steam. Beyond this, steam power continues only as a multiblock.
+"""
+
+[[quest]]
+key = "hv_combustion"
+pending = "the MV and HV chapters are not rewritten yet"
+column = "combustion"
+grid_row = "hv"
+role = "cell"
+deps = ["row_hv", "mv_combustion"]
+hide_lines = true
+icon = "gtceu:hv_combustion"
+title = "HV Combustion Generator"
+subtitle = "512 V from liquid fuel."
+task = [{ item = "gtceu:hv_combustion" }]
+text = """
+Burns the same fuels faster. A steady [item]Diesel[/] or [item]Gasoline[/] line keeps it fed.
+"""
+
+[[quest]]
+key = "hv_gas"
+pending = "the MV and HV chapters are not rewritten yet"
+column = "gas"
+grid_row = "hv"
+role = "cell"
+deps = ["row_hv", "mv_gas"]
+hide_lines = true
+icon = "gtceu:hv_gas_turbine"
+title = "HV Gas Turbine"
+subtitle = "512 V from gas."
+task = [{ item = "gtceu:hv_gas_turbine" }]
+text = """
+The last singleblock gas turbine. [item]Benzene[/] is among the best fuels on its card.
+"""
+
+[[quest]]
+key = "hv_large_steam"
+pending = "the MV and HV chapters are not rewritten yet"
+column = "multiblock"
+grid_row = "hv"
+role = "cell"
+deps = ["row_hv", "mv_steam", "mv_boiler"]
+hide_lines = true
+icon = "gtceu:steam_large_turbine"
+title = "Large Steam Turbine"
+subtitle = "Rotors and a dynamo hatch."
+task = [{ item = "gtceu:steam_large_turbine" }]
+text = """
+A multiblock turbine: its output depends on the rotor you put in its holder and on the dynamo hatch it feeds. The rotor wears out and has to be replaced.
+"""
+
+# ------------------------------------------------------------------ fuels Infinity Ascension makes on its own
+
+[[quest]]
+key = "fuel_ethanol"
+column = "combustion"
+grid_row = "fuels"
+role = "optional"
+deps = ["lv_combustion", "lv:fermentation"]
+hide_lines = true
+icon = "gtceu:ethanol_bucket"
+title = "Ethanol"
+subtitle = "Fuel from plants."
+task = [{ fluid = "gtceu:ethanol", amount = 1000 }]
+text = """
+Carry a bucket of [item]Ethanol[/] from your Fermentation Vat. It is the combustion fuel you can make from plants alone.
+"""
+
+[[quest]]
+key = "fuel_ethylene"
+column = "gas"
+grid_row = "fuels"
+role = "optional"
+deps = ["lv_gas", "lv:dehydrator", "lv:fermentation"]
+hide_lines = true
+icon = "gtceu:ethylene_bucket"
+title = "Ethylene"
+subtitle = "Ethanol, one step further."
+task = [{ fluid = "gtceu:ethylene", amount = 1000 }]
+text = """
+Carry a bucket of [item]Ethylene[/] from the [item]Catalytic Dehydrator[/]. Burn it in a Gas Turbine, or keep it: it is also the base of plastics later on.
+"""
+
+# ------------------------------------------------------------------ moving the power
+
+[[quest]]
+key = "cable"
+column = "header"
+grid_row = "grid"
+role = "side"
+deps = ["row_lv"]
+hide_lines = true
+icon = "gtceu:tin_single_cable"
+title = "Cables"
+subtitle = "Every cable has a limit."
+task = [{ item = "gtceu:tin_single_cable", count = 8 }]
+text = """
+A cable has a voltage limit and an amperage limit, and loses a little energy per block. Too much of either and it burns.
+"""
+
+[[quest]]
+key = "buffer"
+column = "boilers"
+grid_row = "grid"
+role = "side"
+deps = ["cable"]
+icon = "gtceu:lv_battery_buffer_4x"
+title = "Battery Buffer"
+subtitle = "Store what you do not use yet."
+task = [{ item = "gtceu:lv_battery_buffer_4x" }]
+text = """
+A [item]Battery Buffer[/] holds batteries and evens out the difference between what your generators make and what your machines draw.
+"""
+
+[[quest]]
+key = "transformer"
+column = "steam"
+grid_row = "grid"
+role = "side"
+deps = ["buffer", "lv:copper_cable"]
+icon = "gtceu:lv_transformer_1a"
+title = "Transformer"
+subtitle = "Move power between rows."
+task = [{ item = "gtceu:lv_transformer_1a" }]
+text = """
+A [item]Transformer[/] steps voltage up or down by one tier. It is how a row of cheap generators feeds the machines of the next row.
+"""
+
+[[quest]]
+key = "energy_hatch"
+pending = "its recipe needs an LV Assembler; the LV chapter is not rewritten yet"
+column = "solar"
+grid_row = "grid"
+role = "side"
+deps = ["transformer"]
+icon = "gtceu:lv_energy_input_hatch"
+title = "Energy Hatch"
+subtitle = "How multiblocks take power."
+task = [{ item = "gtceu:lv_energy_input_hatch" }]
+text = """
+Multiblocks take power through [item]Energy Hatches[/]. Its voltage coil comes out of an electric Assembler. The hatch's tier decides the voltage the whole machine runs at.
+"""
+
+[[quest]]
+key = "generator_array"
+column = "multiblock"
+grid_row = "lv"
+role = "cell"
+deps = ["lv_steam", "lv_combustion", "lv_gas"]
+dep_mode = "one"
+hide_lines = true
+icon = "gtna:generator_array"
+title = "Generator Array"
+subtitle = "Any column, many at once."
+task = [{ item = "gtna:generator_array" }]
+text = """
+GTNA's [item]Generator Array[/] takes singleblock steam turbines, combustion generators or gas turbines and runs them inside one multiblock. Any one of the three columns opens it.
+"""

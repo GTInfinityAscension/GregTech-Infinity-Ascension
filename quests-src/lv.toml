@@ -1,0 +1,928 @@
+[chapter]
+title = "Low Voltage Age"
+icon = "gtceu:lv_machine_hull"
+
+[entry]
+x = 0
+y = 0
+reward = [{ item = "minecraft:copper_ingot", count = 32 }]
+subtitle = "Ascension II"
+requires = ["steam:exit"]
+text = """
+Electricity changes how you work: machines get faster, cables carry power, and chemistry finally gets its own tools. This Ascension ends where Medium Voltage begins: a [item]Good Electronic Circuit[/] in one hand and an [item]MV Machine Hull[/] in the other.
+"""
+
+[[quest]]
+key = "electric_age"
+title = "Electric Age"
+role = "spine"
+task = [{ item = "gtceu:lv_steam_turbine" }]
+deps = ["entry"]
+x = 2.5
+y = 0
+reward = [{ item = "gtceu:tin_ingot", count = 16 }]
+subtitle = "Your boilers, now making EU."
+text = """
+You already make steam. An [item]LV Steam Turbine[/] turns it into [num]32 V[/] of electricity. Every machine in this chapter runs on it.
+
+[tip]Check the Power Generation chapter for every other way to make EU.[/]
+"""
+
+[[quest]]
+key = "lv_motor"
+title = "LV Electric Motor"
+role = "spine"
+task = [{ item = "gtceu:lv_electric_motor", count = 2 }]
+deps = ["electric_age"]
+x = 5
+y = 0
+subtitle = "Copper, iron and a magnet."
+text = """
+Four copper wires around a magnetic iron rod. Almost every LV machine has one or two inside, so you will build a lot of them.
+
+[tip]Real fact:[/] the first practical electric motors (1830s) also ran on copper coils and iron, just bigger and much angrier.
+"""
+
+[[quest]]
+key = "lv_parts"
+title = "LV Components"
+role = "spine"
+task = [{ item = "gtceu:lv_electric_piston" }, { item = "gtceu:lv_electric_pump" }, { item = "gtceu:lv_conveyor_module" }, { item = "gtceu:lv_robot_arm" }]
+deps = ["lv_motor"]
+x = 7.5
+y = 0
+subtitle = "Push, pump, carry, grab."
+text = """
+Piston, pump, conveyor and robot arm: the four LV components. Recipes ask for them in every combination.
+"""
+
+[[quest]]
+key = "energy_hatch"
+title = "LV Energy Hatch"
+role = "spine"
+task = [{ item = "gtceu:lv_energy_input_hatch", count = 2 }]
+deps = ["lv_parts", "voltage_coil"]
+x = 12.5
+y = 0
+subtitle = "Power into a big machine."
+text = """
+A multiblock has no power slot of its own: it draws EU through an [item]Energy Hatch[/] in its wall. Make two.
+
+[tip]Two LV Energy Hatches on the same machine count as one MV hatch. That is how the furnace reaches Aluminium.[/]
+"""
+
+[[quest]]
+key = "buses"
+title = "Buses and Hatches"
+role = "spine"
+task = [{ item = "gtceu:lv_input_bus" }, { item = "gtceu:lv_output_bus" }, { item = "gtceu:lv_input_hatch" }, { item = "gtceu:lv_output_hatch" }]
+deps = ["energy_hatch", "glue", "lv_assembler"]
+x = 15
+y = 0
+subtitle = "Items and fluids in and out."
+text = """
+[item]Buses[/] carry items and [item]Hatches[/] carry fluids, through the walls of a multiblock. The Assembler seals them with Glue (or, later, plastic). The Diaphragm Cell and the Electric Blast Furnace both need them.
+"""
+
+[[quest]]
+key = "lv_assembler"
+title = "Assembler"
+role = "spine"
+task = [{ item = "gtceu:lv_assembler" }]
+deps = ["lv_parts"]
+x = 10
+y = 0
+group = "lvshop"
+subtitle = "The machine that makes machines."
+text = """
+From here on, most components are cheaper in an Assembler than by hand.
+"""
+
+[[quest]]
+key = "lv_wiremill"
+title = "Wiremill"
+role = "side"
+task = [{ item = "gtceu:lv_wiremill" }]
+deps = ["lv_bender"]
+x = 7.5
+y = -5
+group = "lvshop"
+subtitle = "One ingot, two wires."
+text = """
+Twice the wire from the same ingot, and no Wire Cutter wear.
+"""
+
+[[quest]]
+key = "lv_bender"
+title = "Bender"
+role = "side"
+task = [{ item = "gtceu:lv_bender" }]
+deps = ["lv_parts"]
+x = 7.5
+y = -2.5
+group = "lvshop"
+subtitle = "Plates without the hammer."
+text = """
+One ingot, one plate, and foils for the coils you will need soon.
+"""
+
+[[quest]]
+key = "lv_lathe"
+title = "Lathe"
+role = "detail"
+task = [{ item = "gtceu:lv_lathe" }]
+deps = ["lv_wiremill"]
+x = 10
+y = -5
+group = "lvshop"
+subtitle = "Rods and bolts."
+text = """
+Two rods from one ingot instead of one by hand.
+"""
+
+[[quest]]
+key = "lv_polarizer"
+title = "Polarizer"
+role = "detail"
+task = [{ item = "gtceu:lv_polarizer" }]
+deps = ["lv_lathe"]
+x = 12.5
+y = -5
+group = "lvshop"
+subtitle = "Magnets, automated."
+text = """
+Magnetic rods without the redstone. Your motor line will thank you.
+"""
+
+[[quest]]
+key = "voltage_coil"
+title = "LV Voltage Coil"
+role = "detail"
+task = [{ item = "gtceu:lv_voltage_coil" }]
+deps = ["lv_polarizer", "lv_assembler"]
+x = 12.5
+y = -2.5
+group = "lvshop"
+subtitle = "The heart of an Energy Hatch."
+text = """
+Sixteen fine steel wires around a magnetic iron rod, in the Assembler.
+"""
+
+[[quest]]
+key = "lv_extractor"
+title = "LV Extractor"
+role = "detail"
+task = [{ item = "gtceu:lv_extractor" }]
+deps = ["lv_wiremill"]
+x = 5
+y = -5
+group = "lvshop"
+subtitle = "Squeeze, but electrically."
+text = """
+Melts metals into fluids for the Assembler and gets rubber out of resin faster.
+"""
+
+[[quest]]
+key = "lv_circuit_assembler"
+title = "Circuit Assembler"
+role = "detail"
+task = [{ item = "gtceu:lv_circuit_assembler" }]
+deps = ["good_circuit"]
+x = 17
+y = 16.5
+group = "lvshop"
+subtitle = "Circuits by the stack."
+text = """
+Cheaper circuits, and the only way to make integrated circuits later.
+"""
+
+[[quest]]
+key = "lv_solidifier"
+title = "Fluid Solidifier"
+role = "detail"
+task = [{ item = "gtceu:lv_fluid_solidifier" }]
+deps = ["lv_extractor"]
+x = 2.5
+y = -5
+group = "lvshop"
+subtitle = "Fluids back into shapes."
+text = """
+With a mold, molten metal and liquid plastics become plates, ingots and bars.
+"""
+
+[[quest]]
+key = "lv_mixer"
+title = "Mixer"
+role = "side"
+task = [{ item = "gtceu:lv_mixer" }]
+deps = ["lv_parts"]
+x = 7.5
+y = 2.5
+group = "lvchem"
+subtitle = "Dusts in, alloys out."
+text = """
+Mixes dusts and fluids. Invar, Cupronickel and Salt Water all start here.
+"""
+
+[[quest]]
+key = "lv_electrolyzer"
+title = "Electrolyzer"
+role = "side"
+task = [{ item = "gtceu:lv_electrolyzer" }]
+deps = ["lv_centrifuge"]
+x = 10
+y = 5
+group = "lvchem"
+subtitle = "Split it with a current."
+text = """
+Breaks compounds into their elements. Bauxite becomes aluminium dust here, the expensive way.
+"""
+
+[[quest]]
+key = "lv_centrifuge"
+title = "Centrifuge"
+role = "side"
+task = [{ item = "gtceu:lv_centrifuge" }]
+deps = ["lv_mixer"]
+x = 10
+y = 2.5
+group = "lvchem"
+subtitle = "Spin it until it gives up."
+text = """
+Separates by weight: ore byproducts, resin, air and the Cell Liquor of the chlor-alkali line.
+"""
+
+[[quest]]
+key = "glue"
+title = "Glue"
+role = "detail"
+task = [{ item = "gtceu:glue_bucket" }]
+deps = ["lv_centrifuge"]
+x = 12.5
+y = 2.5
+group = "lvchem"
+subtitle = "Sticky Resin, spun."
+text = """
+The Centrifuge separates Sticky Resin into rubber and a little [item]Glue[/]. It is enough for your first buses and boards; the wood line below makes it in bulk.
+"""
+
+[[quest]]
+key = "lv_chem_reactor"
+title = "Chemical Reactor"
+role = "side"
+task = [{ item = "gtceu:lv_chemical_reactor" }]
+deps = ["lv_electrolyzer"]
+x = 10
+y = 7.5
+group = "lvchem"
+subtitle = "Where chemistry happens."
+text = """
+Two inputs, two outputs and a lot of possibilities. Most of this chapter's chemistry runs here.
+
+[tip]Real fact:[/] industrial reactors are mostly very expensive kettles. So is this one.
+"""
+
+[[quest]]
+key = "lv_fluid_heater"
+title = "Fluid Heater"
+role = "detail"
+task = [{ item = "gtceu:lv_fluid_heater" }]
+deps = ["dehydrator"]
+x = 2.5
+y = 7.5
+group = "bio"
+subtitle = "Steam without a boiler."
+text = """
+Heats water into steam on electricity alone. Pipe it into the Catalytic Dehydrator and every batch takes half the time.
+"""
+
+[[quest]]
+key = "diaphragm_cell"
+title = "Diaphragm Cell"
+role = "side"
+task = [{ item = "gtia:diaphragm_cell" }]
+deps = ["lv_mixer", "buses"]
+x = 15
+y = 2.5
+group = "lvchem"
+subtitle = "Salt water, split three ways."
+text = """
+Electricity through salt water gives [item]Chlorine[/], [item]Hydrogen[/] and a salty caustic [item]Cell Liquor[/]: [num]4,000 mB[/] of Salt Water every [num]15 s[/] at [num]30 EU/t[/].
+
+A [num]3×3×3[/] tank of Solid Steel Machine Casings, with glass windows and iron bars in the middle for the diaphragm. In the casings: an LV Energy Hatch, a Fluid Input Hatch, three Fluid Output Hatches, an Input Bus for the diaphragm and a Maintenance Hatch.
+
+[tip]Real fact:[/] chlorine and caustic soda always come out together, in the same ratio. The industry has to sell both; chemists call it the chlor-alkali balance.
+"""
+
+[[quest]]
+key = "asbestos_diaphragm"
+title = "Asbestos Diaphragm"
+role = "detail"
+task = [{ item = "gtia:asbestos_diaphragm" }]
+deps = ["diaphragm_cell"]
+x = 15
+y = 5
+group = "lvchem"
+subtitle = "It wears out. Keep spares."
+text = """
+The cell needs one in its Input Bus. Each run has a [num]1%[/] chance to use it up.
+
+[tip]Real fact:[/] the first industrial cells really used asbestos. Modern plants switched to polymer membranes. You will too, later.
+"""
+
+[[quest]]
+key = "cell_liquor"
+title = "Cell Liquor"
+role = "detail"
+task = [{ item = "gtia:cell_liquor_bucket" }, { item = "gtceu:sodium_hydroxide_dust" }]
+deps = ["asbestos_diaphragm", "lv_centrifuge"]
+x = 15
+y = 7.5
+group = "lvchem"
+subtitle = "Half of the salt comes back."
+text = """
+A Centrifuge splits [num]2,000 mB[/] of Cell Liquor into [num]1 Sodium Hydroxide[/], [num]1 Salt[/] and water. Send the salt back to the Mixer: the line only eats one fresh salt per soda.
+
+Stockpile the soda: in Medium Voltage it digests Bauxite into alumina.
+
+[num]One Cell[/] keeps [num]one Centrifuge[/] busy.
+"""
+
+[[quest]]
+key = "hydrochloric_acid"
+title = "Hydrochloric Acid"
+role = "detail"
+task = [{ item = "gtceu:hydrochloric_acid_bucket" }]
+deps = ["cell_liquor", "lv_chem_reactor"]
+x = 12.5
+y = 7.5
+group = "lvchem"
+subtitle = "Burn the two gases together."
+text = """
+The cell's Chlorine and Hydrogen react into Hydrochloric Acid. One reactor handles a whole cell. The circuit boards need it as Iron III Chloride.
+"""
+
+[[quest]]
+key = "still"
+title = "The Still"
+role = "side"
+task = [{ item = "gtia:lv_still" }]
+deps = ["lv_parts", "steam:charcoal_byproducts"]
+x = 5
+y = 12.5
+group = "wood"
+hide_lines = true
+subtitle = "Copper, heat and patience."
+text = """
+The [item]Still[/] picks its cut by circuit, at [num]30 EU/t[/]:
+
+- Circuit 1: [num]1,000 mB[/] Charcoal Byproducts → [num]400 mB[/] Wood Vinegar + [num]250 mB[/] Wood Tar
+- Circuit 2: [num]1,000 mB[/] Wood Vinegar → [num]100 mB[/] Acetic Acid + [num]40 mB[/] Methanol + [num]700 mB[/] Water
+- Circuit 3: [num]1,000 mB[/] Wood Tar → [num]400 mB[/] Creosote
+
+[num]Three Wood Retorts[/] fill one Still on circuit 1.
+
+[tip]Real fact:[/] wood vinegar is about ninety percent water. The rest is what makes smoked ham taste like smoked ham.
+"""
+
+[[quest]]
+key = "acetic_methanol"
+title = "Acetic Acid and Methanol"
+role = "detail"
+task = [{ item = "gtceu:acetic_acid_bucket" }, { item = "gtceu:methanol_bucket" }]
+deps = ["still"]
+x = 7.5
+y = 12.5
+group = "wood"
+subtitle = "Vinegar and wood alcohol, the expensive way."
+text = """
+Not much of either: this is the early route. The MV Distillery gets far more out of the same wood.
+
+[tip]Spare Methanol burns in the Combustion Generator.[/]
+"""
+
+[[quest]]
+key = "methyl_acetate"
+title = "Methyl Acetate"
+role = "detail"
+task = [{ item = "gtceu:methyl_acetate_bucket" }]
+deps = ["acetic_methanol", "vinyl_acetate"]
+x = 12.5
+y = 12.5
+group = "wood"
+subtitle = "Both cuts, in one solvent."
+text = """
+Acetic Acid and Methanol, [num]1,000 mB[/] each, in the Chemical Reactor. It smells like nail polish remover, because that is what it is.
+"""
+
+[[quest]]
+key = "vinyl_acetate"
+title = "Vinyl Acetate"
+role = "detail"
+task = [{ item = "gtceu:vinyl_acetate_bucket" }]
+deps = ["acetic_methanol", "polyethylene"]
+x = 10
+y = 12.5
+group = "wood"
+subtitle = "Where the wood meets the plants."
+text = """
+Acetic Acid from the Still, Ethylene from the Dehydrator and Oxygen. Two lines of this chapter, one molecule.
+"""
+
+[[quest]]
+key = "pva"
+title = "Polyvinyl Acetate"
+role = "detail"
+task = [{ item = "gtceu:polyvinyl_acetate_bucket" }]
+deps = ["vinyl_acetate"]
+x = 10
+y = 15
+group = "wood"
+subtitle = "White glue, before the glue."
+text = """
+Vinyl Acetate and Oxygen in the Chemical Reactor.
+
+[tip]Real fact:[/] this is the white school glue in every classroom.
+"""
+
+[[quest]]
+key = "glue_bulk"
+title = "Glue in Bulk"
+role = "side"
+task = [{ item = "gtceu:glue_bucket", count = 4 }]
+deps = ["methyl_acetate", "pva", "lv_mixer"]
+x = 12.5
+y = 15
+group = "wood"
+subtitle = "The route that scales."
+text = """
+[num]1,000 mB[/] of Polyvinyl Acetate and [num]1,500 mB[/] of Methyl Acetate give [num]2,500 mB[/] of Glue in the Mixer, far more than resin ever will. Buses, boards and resistors all drink it.
+"""
+
+[[quest]]
+key = "creosote"
+title = "Creosote"
+role = "detail"
+task = [{ item = "gtceu:creosote_bucket" }]
+deps = ["still"]
+x = 2.5
+y = 12.5
+group = "wood"
+subtitle = "The tar, refined."
+text = """
+Circuit 3 on the Still: [num]1,000 mB[/] of Wood Tar gives [num]400 mB[/] of Creosote. It burns in boilers and protects planks, but its best use is next.
+"""
+
+[[quest]]
+key = "brewery"
+title = "Brewery"
+role = "detail"
+task = [{ item = "gtceu:lv_brewery" }]
+deps = ["lv_parts"]
+x = 0
+y = 15
+group = "wood"
+hide_lines = true
+subtitle = "Not for beer. Mostly."
+text = """
+Mixes a fluid with a dust without heat. Its best early job is Lubricant.
+"""
+
+[[quest]]
+key = "lubricant"
+title = "Lubricant"
+role = "detail"
+task = [{ item = "gtceu:lubricant_bucket" }]
+deps = ["creosote", "brewery"]
+x = 2.5
+y = 15
+group = "wood"
+subtitle = "Grease for the saws."
+text = """
+Creosote and a Talc, Soapstone or Redstone dust in the [item]Brewery[/]. Every Cutter recipe drinks it, and you will cut silicon in Medium Voltage.
+"""
+
+[[quest]]
+key = "fermentation"
+title = "Fermentation Vat"
+role = "side"
+task = [{ item = "gtia:lv_fermentation_vat" }]
+deps = ["lv_parts"]
+x = 5
+y = 2.5
+group = "bio"
+subtitle = "Plants into Ethanol."
+text = """
+Plants become biomass and biomass becomes [item]Ethanol[/], the input of the Dehydrator and a fuel of its own.
+"""
+
+[[quest]]
+key = "coupler"
+title = "Phase Coupler"
+role = "detail"
+task = [{ item = "gtia:phase_coupler" }]
+deps = ["fermentation"]
+x = 5
+y = 5
+group = "bio"
+subtitle = "Pulsating Alloy at work."
+text = """
+[item]Pulsating Alloy[/], a [item]Vacuum Tube[/], a [item]Wrought Iron Plate[/] and two [item]Red Alloy[/] wires: the heart of the Dehydrator.
+"""
+
+[[quest]]
+key = "dehydrator"
+title = "Catalytic Dehydrator"
+role = "side"
+task = [{ item = "gtia:lv_catalytic_dehydrator" }]
+deps = ["coupler"]
+x = 5
+y = 7.5
+group = "bio"
+subtitle = "Ethanol into Ethylene."
+text = """
+Turns [num]225 mB[/] of Ethanol into [num]225 mB[/] of [item]Ethylene[/] and water.
+
+[tip]Give it 100 mB of steam and each batch takes 200 ticks instead of 400.[/]
+"""
+
+[[quest]]
+key = "polyethylene"
+title = "Polyethylene"
+role = "side"
+task = [{ item = "gtceu:polyethylene_bucket" }]
+deps = ["dehydrator", "lv_chem_reactor"]
+x = 7.5
+y = 10
+group = "bio"
+subtitle = "Your first plastic, from plants."
+text = """
+Ethylene and Oxygen in a Chemical Reactor make liquid [item]Polyethylene[/]. The diodes of the next circuit need it.
+
+[tip]Real fact:[/] polyethylene was discovered by accident in 1933, when an experiment with ethylene left a waxy white solid nobody had asked for.
+"""
+
+[[quest]]
+key = "invar"
+title = "Invar"
+role = "side"
+task = [{ item = "gtceu:invar_ingot", count = 4 }]
+deps = ["lv_mixer"]
+x = 20.5
+y = -5
+group = "ebf"
+hide_lines = true
+subtitle = "Iron that does not stretch."
+text = """
+Two Iron and one Nickel. It barely expands with heat, which is why the furnace casing is made of it.
+"""
+
+[[quest]]
+key = "heatproof"
+title = "Heat Proof Casing"
+role = "detail"
+task = [{ item = "gtceu:heatproof_machine_casing", count = 16 }]
+deps = ["invar"]
+x = 20.5
+y = -2.5
+group = "ebf"
+subtitle = "Walls for a hot furnace."
+text = """
+Invar plates around an Invar frame. The Electric Blast Furnace needs a lot of them.
+"""
+
+[[quest]]
+key = "cupronickel"
+title = "Cupronickel"
+role = "detail"
+task = [{ item = "gtceu:cupronickel_ingot", count = 8 }]
+deps = ["lv_mixer"]
+x = 18
+y = -5
+group = "ebf"
+hide_lines = true
+subtitle = "Copper and nickel, half and half."
+text = """
+One Copper dust and one Nickel dust in the Mixer, then a furnace. The coils are wound from its wire.
+
+[tip]Real fact:[/] most silver-coloured coins in the world are cupronickel.
+"""
+
+[[quest]]
+key = "tin_alloy"
+title = "Tin Alloy"
+role = "detail"
+task = [{ item = "gtceu:tin_alloy_ingot", count = 4 }]
+deps = ["lv_mixer", "lv_extractor"]
+x = 15.5
+y = -5
+group = "ebf"
+hide_lines = true
+subtitle = "Solder for the coils."
+text = """
+Iron and Tin in the Mixer. The Extractor melts it into the fluid the coil recipe needs.
+"""
+
+[[quest]]
+key = "cupronickel_coil"
+title = "Cupronickel Coils"
+role = "side"
+task = [{ item = "gtceu:cupronickel_coil_block", count = 8 }]
+deps = ["cupronickel", "tin_alloy", "buses"]
+x = 18
+y = -2.5
+group = "ebf"
+subtitle = "1800 K of heating."
+text = """
+Eight Cupronickel double wires, eight Bronze foils (Bender) and [num]144 mB[/] of molten Tin Alloy (Extractor), in the Assembler. Eight coils ring the furnace.
+"""
+
+[[quest]]
+key = "blast_furnace"
+title = "Electric Blast Furnace"
+role = "spine"
+task = [{ item = "gtceu:electric_blast_furnace" }]
+deps = ["heatproof", "cupronickel_coil", "buses"]
+x = 18
+y = 0
+group = "ebf"
+subtitle = "Hotter than any primitive furnace."
+text = """
+Coils, casings, an Energy Hatch, Input and Output Buses, a Maintenance Hatch and a Muffler. With [num]two[/] LV Energy Hatches it reaches the voltage Aluminium needs.
+
+[tip]Real fact:[/] the first electric arc furnace for steel ran in 1900. It is still how most recycled steel is made today.
+"""
+
+[[quest]]
+key = "aluminium_dust"
+title = "Aluminium Dust"
+role = "detail"
+task = [{ item = "gtceu:aluminium_dust", count = 8 }]
+deps = ["lv_electrolyzer"]
+x = 23.5
+y = -2.5
+group = "ebf"
+hide_lines = true
+subtitle = "Where the metal hides."
+text = """
+Aluminium ore gives it directly; Bauxite, Ruby and Sapphire give it in the Electrolyzer. Either way, it goes into the furnace as dust.
+"""
+
+[[quest]]
+key = "aluminium"
+title = "Aluminium"
+role = "gate"
+task = [{ item = "gtceu:aluminium_ingot", count = 8 }]
+deps = ["blast_furnace", "aluminium_dust"]
+x = 21
+y = 0
+group = "ebf"
+subtitle = "The metal of Medium Voltage."
+text = """
+[num]1700 K[/] and [num]120 EU/t[/]: Cupronickel coils and two LV Energy Hatches. Slow and costly, but it is enough for the MV hull. In Medium Voltage the Hall-Heroult Cell makes it in bulk from Bauxite.
+
+[tip]Real fact:[/] aluminium was once more precious than gold. Napoleon III kept aluminium cutlery for his most important guests.
+"""
+
+[[quest]]
+key = "silver_foil"
+title = "Silver Foil"
+role = "detail"
+task = [{ item = "gtceu:silver_foil", count = 8 }]
+deps = ["lv_bender"]
+x = 20
+y = 8.5
+group = "circuit"
+hide_lines = true
+subtitle = "Thin enough to etch."
+text = """
+Silver from Galena, rolled into foil. The circuit boards print on it.
+"""
+
+[[quest]]
+key = "phenolic_board"
+title = "Phenolic Board"
+role = "detail"
+task = [{ item = "gtceu:phenolic_circuit_board" }]
+deps = ["lv_assembler", "glue"]
+x = 17.5
+y = 7.5
+group = "circuit"
+hide_lines = true
+subtitle = "Wood, glue, pressure."
+text = """
+Wood dust and [num]50 mB[/] of Glue in the Assembler: the blank board of the next circuit.
+"""
+
+[[quest]]
+key = "iron_chloride"
+title = "Iron III Chloride"
+role = "detail"
+task = [{ item = "gtceu:iron_iii_chloride_bucket" }]
+deps = ["hydrochloric_acid"]
+x = 15
+y = 10
+group = "circuit"
+subtitle = "The etching bath."
+text = """
+Iron dust in Hydrochloric Acid, in a Chemical Reactor. It eats away the copper the board does not need.
+"""
+
+[[quest]]
+key = "printed_board"
+title = "Phenolic Printed Board"
+role = "side"
+task = [{ item = "gtceu:phenolic_printed_circuit_board" }]
+deps = ["phenolic_board", "silver_foil", "iron_chloride"]
+x = 17.5
+y = 10
+group = "circuit"
+subtitle = "Etched, not wired."
+text = """
+Board, silver foil and the etching bath, in a Chemical Reactor.
+"""
+
+[[quest]]
+key = "gaas"
+title = "Gallium Arsenide"
+role = "detail"
+task = [{ item = "gtceu:gallium_arsenide_dust" }]
+deps = ["lv_mixer", "lv_electrolyzer", "lv_centrifuge"]
+x = 12.5
+y = 5
+group = "circuit"
+subtitle = "A rare metal from a common ore."
+text = """
+Gallium hides in Sphalerite and Bauxite; the Electrolyzer gets it out. Mixed with Arsenic, it becomes the semiconductor of your first diodes.
+
+[tip]Real fact:[/] almost all the world's gallium is a byproduct of making aluminium from bauxite.
+"""
+
+[[quest]]
+key = "diode"
+title = "Diodes"
+role = "side"
+task = [{ item = "gtceu:diode", count = 4 }]
+deps = ["polyethylene", "lv_assembler", "gaas"]
+x = 14.5
+y = 13.5
+group = "circuit"
+hide_lines = true
+subtitle = "Current goes one way."
+text = """
+Fine copper wire, a small pile of Gallium Arsenide and Polyethylene, in the Assembler.
+"""
+
+[[quest]]
+key = "good_circuit"
+title = "Good Electronic Circuit"
+role = "milestone"
+task = [{ item = "gtceu:good_electronic_circuit" }]
+deps = ["printed_board", "diode"]
+x = 17
+y = 13.5
+group = "circuit"
+subtitle = "The MV circuit."
+text = """
+A printed board, three basic circuits, two diodes and copper wire. It is the circuit every MV machine asks for.
+"""
+
+[[quest]]
+key = "aluminium_plate"
+title = "Aluminium Plates"
+role = "detail"
+task = [{ item = "gtceu:aluminium_plate", count = 9 }]
+deps = ["aluminium"]
+x = 23.5
+y = 2.5
+group = "hull"
+subtitle = "Light and strong."
+text = """
+Nine plates: eight for the casing and one for the hull.
+"""
+
+[[quest]]
+key = "mv_casing"
+title = "MV Machine Casing"
+role = "spine"
+task = [{ item = "gtceu:mv_machine_casing" }]
+deps = ["aluminium_plate"]
+x = 23.5
+y = 5
+group = "hull"
+subtitle = "Eight Aluminium Plates."
+text = """
+The shell of every Medium Voltage machine.
+"""
+
+[[quest]]
+key = "copper_cable"
+title = "Copper Cable"
+role = "detail"
+task = [{ item = "gtceu:copper_single_cable", count = 2 }]
+deps = ["lv_wiremill", "lv_assembler"]
+x = 21
+y = 6.5
+group = "hull"
+hide_lines = true
+subtitle = "More amps than tin."
+text = """
+Copper wire in rubber. The MV hull takes two.
+"""
+
+[[quest]]
+key = "mv_hull"
+title = "MV Machine Hull"
+role = "milestone"
+task = [{ item = "gtceu:mv_machine_hull" }]
+deps = ["mv_casing", "copper_cable"]
+x = 23.5
+y = 8
+group = "hull"
+subtitle = "The body of every MV machine."
+text = """
+Casing, two Copper Cables, two Wrought Iron Plates and an Aluminium Plate.
+"""
+
+[[quest]]
+key = "ae2_start"
+title = "Applied Energistics"
+role = "side"
+task = [{ item = "ae2:controller" }]
+deps = ["lv_assembler"]
+x = 10
+y = -2.5
+reward = [{ item = "ae2:energy_acceptor" }]
+subtitle = "Storage that thinks."
+text = """
+A ME Controller, a drive and a terminal: every item in one network. Autocrafting comes in Medium Voltage.
+"""
+
+[[quest]]
+key = "lv_multis"
+title = "LV Multiblocks"
+role = "hint"
+checkmark = "Look around"
+deps = ["lv_assembler"]
+x = 0
+y = -2.5
+hide_lines = true
+subtitle = "What GTNA builds at LV."
+text = """
+Optional multiblocks that make sense from LV on. None of them is required.
+"""
+
+[[quest]]
+key = "generator_array"
+title = "Generator Array"
+role = "gallery"
+task = [{ item = "gtna:generator_array" }]
+deps = ["lv_multis"]
+x = -1.5
+y = -4.5
+group = "lvmulti"
+hide_lines = true
+subtitle = "Optional."
+text = """
+A GTNA multiblock available from LV.
+"""
+
+[[quest]]
+key = "liquefaction"
+title = "Liquefaction Furnace"
+role = "gallery"
+task = [{ item = "gtna:liquefaction_furnace" }]
+deps = ["lv_multis"]
+x = 0.5
+y = -4.5
+group = "lvmulti"
+hide_lines = true
+subtitle = "Optional."
+text = """
+A GTNA multiblock available from LV.
+"""
+
+[[quest]]
+key = "primitive_distillation"
+title = "Primitive Distillation Tower"
+role = "gallery"
+task = [{ item = "gtna:primitive_distillation_tower" }]
+deps = ["lv_multis"]
+x = -0.5
+y = -6.5
+group = "lvmulti"
+hide_lines = true
+subtitle = "Optional."
+text = """
+A GTNA multiblock available from LV.
+"""
+
+[exit]
+x = 21
+y = 11
+title = "Ascend to Medium Voltage"
+subtitle = "A better circuit and a lighter hull."
+deps = ["good_circuit", "mv_hull"]
+text = """
+Aluminium for the hull, silicon and silver for the circuit. Medium Voltage is waiting.
+"""

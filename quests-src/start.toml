@@ -1,0 +1,51 @@
+# How the approved Start chapter is presented. Text, ids, tasks and rewards are never touched here.
+link_y = 16.5
+
+[roles]
+"How to Read This Chapter" = "hint"
+"Before You Begin" = "hint"
+"About the Pack" = "hint"
+"Welcome to Infinity Ascension" = "entry"
+"Room for a Factory" = "side"
+"Your First Workbench" = "spine"
+"Freeze Daylight" = "optional"
+"Plant for the Future" = "side"
+"A Stack of Stone" = "spine"
+"Freeze Weather" = "optional"
+"Fire Up the Furnace" = "spine"
+"Night Vision" = "optional"
+"Carry and Store More" = "optional"
+"Fuel for the Workshop" = "spine"
+"The Nexus Structure Terminal" = "keep"
+"The GregTech Terminal" = "optional"
+"Wrought Iron" = "side"
+"The First Metals" = "spine"
+"A Wider Mineral Collection" = "side"
+"Complete the Tool Kit" = "side"
+"The First GregTech Tools" = "spine"
+"Metals into Dust" = "side"
+"Collect the Creosote" = "side"
+"Build a Coke Oven" = "spine"
+"Your First Bronze" = "spine"
+"Ready for Steam" = "exit"
+"Coke for the First Boilers" = "side"
+"Bronze for the First Machines" = "side"
+"A Tool for the Next Stage" = "side"
+
+[[new_quest]]
+key = "research_tree"
+role = "side"
+after = "Carry and Store More"
+x = -3.0
+y = 6.0
+title = "The Research Tree"
+icon = "minecraft:enchanted_book"
+subtitle = "Press K to see where you are going."
+task = "Open the tree with K"
+text = """
+Infinity Ascension tracks your progress with a research tree. Press K to open it.
+
+Each node unlocks by itself once its earlier nodes are done and you hold the item it asks for. There is nothing to scan and nothing to submit: crafting, picking up or taking the item from a machine all count, and one member of a team is enough for everyone.
+
+Green nodes are unlocked, yellow ones are the next you can reach, grey ones are locked. A few nodes also lock machine recipes. Those recipes show a red research line in EMI until the node is unlocked.
+"""

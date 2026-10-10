@@ -1,0 +1,38 @@
+title = "LV · Chlor-alkali and the Steam products"
+node = [
+  { id = "salt", kind = "material", label = "1 Salt (fresh)" },
+  { id = "water", kind = "material", label = "2,000 mB Water" },
+  { id = "mixer", kind = "machine", label = "Mixer", note = "LV" },
+  { id = "brine", kind = "material", label = "2,000 mB Salt Water" },
+  { id = "diaph", kind = "material", label = "Asbestos Diaphragm<BR/>(1% used per run)" },
+  { id = "cell", kind = "machine", label = "Diaphragm Cell", note = "LV · 2 parallel · 15 s" },
+  { id = "cl", kind = "material", label = "1,000 mB Chlorine" },
+  { id = "h", kind = "material", label = "1,000 mB Hydrogen" },
+  { id = "liquor", kind = "material", label = "2,000 mB Cell Liquor<BR/>(NaOH + NaCl)" },
+  { id = "cent", kind = "machine", label = "Centrifuge", note = "LV · 7.5 s" },
+  { id = "naoh", kind = "material", label = "1 Sodium Hydroxide" },
+  { id = "rsalt", kind = "material", label = "1 Salt (recycled)" },
+  { id = "w2", kind = "material", label = "1,000 mB Water" },
+  { id = "cr", kind = "machine", label = "Chem. Reactor", note = "LV" },
+  { id = "hcl", kind = "material", label = "1,000 mB<BR/>Hydrochloric Acid" },
+  { id = "acetic", kind = "material", label = "2,000 mB Acetic Acid<BR/>(Steam stills)", area = "acetone" },
+  { id = "lime", kind = "material", label = "1 Quicklime<BR/>(Lime Kiln)", area = "acetone" },
+  { id = "cr2", kind = "machine", label = "Chem. Reactor", note = "LV · 20 s", area = "acetone" },
+  { id = "acetate", kind = "material", label = "1,000 mB Dissolved<BR/>Calcium Acetate", area = "acetone" },
+  { id = "heater", kind = "machine", label = "Fluid Heater", note = "LV", area = "acetone" },
+  { id = "acetone", kind = "material", label = "Acetone", area = "acetone" },
+  { id = "methanol", kind = "material", label = "Methanol<BR/>(Steam stills)", area = "power" },
+  { id = "comb", kind = "machine", label = "Combustion<BR/>Generator", note = "LV", area = "power" },
+  { id = "eu", kind = "material", label = "EU", area = "power" },
+]
+area = [
+  { id = "acetone", label = "Acetone from lime (the WWI route)", colour = "brown" },
+  { id = "power", label = "Wood alcohol as fuel", colour = "green" },
+]
+edge = [
+  ["salt","mixer"], ["water","mixer"], ["mixer","brine"], ["brine","cell"], ["diaph","cell"],
+  ["cell","cl"], ["cell","h"], ["cell","liquor"], ["liquor","cent"], ["cent","naoh"], ["cent","rsalt"], ["cent","w2"],
+  ["rsalt","mixer","recycle"], ["cl","cr"], ["h","cr"], ["cr","hcl"],
+  ["acetic","cr2"], ["lime","cr2"], ["cr2","acetate"], ["acetate","heater"], ["heater","acetone"],
+  ["methanol","comb"], ["comb","eu"],
+]

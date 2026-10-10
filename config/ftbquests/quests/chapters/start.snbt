@@ -1,0 +1,1527 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "start"
+	group: "5CDBA930BF6993C3"
+	id: "6B6832B924E60048"
+	order_index: 0
+	quest_links: [
+		{
+			id: "6D9BFAB0D11F694C"
+			linked_quest: "777C50D80E2DDE50"
+			shape: "gear"
+			size: 1.5d
+			x: 0.0d
+			y: 16.5d
+		}
+	]
+	quests: [
+		{
+			id: "1C80807B0037B387"
+			tasks: [
+				{
+					id: "1E84DFB212F83727"
+					type: "checkmark"
+					title: "Read and continue"
+				}
+			]
+			x: -1.5d
+			y: -2.0d
+			title: "How to Read This Chapter"
+			subtitle: "A central route with useful side branches."
+			icon: "minecraft:map"
+			description: [
+				"The central column is the main route. Connected side quests offer supplies, convenience features and preparation for later machines."
+				""
+				"A line points from a prerequisite to the quest it unlocks. A quest with several prerequisites needs all of them. The information quests at the top can be read immediately."
+				""
+				"Checkmark tasks are manual acknowledgements. Item tasks require the pictured items; rewards must be claimed separately. Convenience commands are optional and only run when you claim their rewards."
+			]
+			size: 1.0d
+			shape: "pentagon"
+			optional: true
+		}
+		{
+			id: "4EB24270ABDDBEB7"
+			tasks: [
+				{
+					id: "440DFD89CD363167"
+					title: "Read and continue"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+			title: "Before You Begin"
+			subtitle: "A safe workshop and a few useful controls."
+			icon: "minecraft:crafting_table"
+			description: [
+				"Set up a safe place for your workshop, with storage, lighting and room to expand. Keep water and a renewable supply of wood close by."
+				""
+				"Check your Controls menu for conflicting key bindings, especially the quest book, recipe browser and map. These mods share many keys by default."
+				""
+				"Item tasks in this chapter detect items in your inventory without consuming them. Collecting a Creosote Bucket also uses normal inventory detection."
+			]
+			size: 1.0d
+			shape: "pentagon"
+			optional: true
+		}
+		{
+			id: "13B25D31A4A94152"
+			tasks: [
+				{
+					id: "007997840AD396E0"
+					title: "Read and continue"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: -2.0d
+			title: "About the Pack"
+			subtitle: "Your materials, machines and progression."
+			icon: "minecraft:book"
+			description: [
+				"GTCEu Modern provides the foundation of the factory. GTIACore and GregTech Nexus Addon add the materials, machines and larger systems used by Infinity Ascension."
+				""
+				"The campaign follows Start, Steam, LV and the higher voltage tiers. This chapter prepares your first workshop; it does not require electricity."
+				""
+				"The item and recipe browser is your reference for exact ingredients and machine recipes. Search an item and open its recipes or uses whenever a quest introduces something new."
+			]
+			size: 1.0d
+			shape: "pentagon"
+			optional: true
+		}
+		{
+			icon: "minecraft:grass_block"
+			id: "48ED4F35ECCFD529"
+			rewards: [
+				{
+					id: "27F543A7FB625F00"
+					item: {
+						Count: 1
+						id: "ae2:fluix_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7F82185C25C25A3A"
+					item: {
+						Count: 1
+						id: "ae2:fluix_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "38A38D1CE31408C3"
+					title: "Read and continue"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+			title: "Welcome to Infinity Ascension"
+			subtitle: "From a small workshop to an infinite factory."
+			description: [
+				"Welcome to GregTech Infinity Ascension! Your journey begins with a workbench, a furnace and a handful of ores, then grows into a factory powered by steam and electricity."
+				""
+				"Follow the central path from top to bottom. Side branches introduce useful supplies, tools and building aids. Open a quest to read its instructions; hover over a task or reward to see the item it uses."
+				""
+				"Check this task and claim your Fluix Axe and Fluix Pickaxe. Keep them for gathering wood and mining your first resources."
+			]
+			shape: "gear"
+		}
+		{
+			dependencies: [
+				"147A54175ED9413E"
+			]
+			id: "290D8F8D57B5FA44"
+			rewards: [
+				{
+					id: "05DED82EA4741E3A"
+					item: "industrial_platform:platform_builder"
+					type: "item"
+				}
+				{
+					id: "126D364F22355363"
+					item: "industrial_platform:industrial_platform"
+					type: "item"
+				}
+				{
+					id: "4F8ED7C5C8A758A1"
+					item: {
+						Count: 1
+						id: "constructionwand:infinity_wand"
+						tag: {
+							wand_options: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "596DDB27E11B1C5E"
+					item: "constructionwand:core_angel"
+					type: "item"
+				}
+				{
+					id: "3AA0835C64FD0ECC"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "2BE20D8D4A5A2701"
+					item: "minecraft:crying_obsidian"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2B3F7B039A5B79C1"
+					type: "checkmark"
+					title: "Confirm"
+				}
+			]
+			x: -1.5d
+			y: 1.75d
+			title: "Room for a Factory"
+			subtitle: "Building supplies for a growing workshop."
+			icon: "industrial_platform:platform_builder"
+			description: [
+				"Your factory will need more space than a small shelter. Plan a flat work area with room for storage, machines, pipes and future expansions."
+				""
+				"Claim the Platform Builder, Industrial Platform and construction supplies. Use the Construction Wand and its Angel Core to help place blocks; check their tooltips and key bindings before building."
+				""
+				"This is an optional building kit. Take the space to plan your workshop, then acknowledge the task to collect it."
+			]
+			size: 1.0d
+			shape: "circle"
+		}
+		{
+			dependencies: [
+				"48ED4F35ECCFD529"
+			]
+			id: "147A54175ED9413E"
+			rewards: [
+				{
+					id: "4FE6FE1D204B6057"
+					item: {
+						Count: 1
+						id: "gtceu:prospector.hv"
+						tag: {
+							Charge: 1600000L
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7739768AC2EB1515"
+					item: "minecraft:crafting_table"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Crafting Table"
+				}
+			]
+			x: 0.0d
+			y: 1.75d
+			title: "Your First Workbench"
+			subtitle: "Hand crafting starts here."
+			icon: "minecraft:crafting_table"
+			description: [
+				"Craft a Crafting Table and keep it in your inventory until the task completes. This is the starting point for hand tools, storage and the first GregTech components."
+				""
+				"Claim the charged HV Prospector as your exploration aid. Use it to search for ore deposits before digging long tunnels; the scanner helps locate resources but does not mine them for you."
+				""
+				"The nearby branches provide building equipment and optional world settings. None of those branches blocks the main progression."
+			]
+			size: 1.0d
+			shape: "hexagon"
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"147A54175ED9413E"
+			]
+			id: "79F9D0A994CF9EDB"
+			rewards: [
+				{
+					command: "/gamerule doDaylightCycle false"
+					id: "53F0D8D6CD3DE540"
+					title: "Freeze the daylight cycle"
+					type: "command"
+					elevate_perms: true
+				}
+			]
+			tasks: [
+				{
+					id: "5096CBC8A0297816"
+					type: "checkmark"
+					title: "Confirm"
+				}
+			]
+			x: 3.0d
+			y: 1.75d
+			title: "Freeze Daylight"
+			subtitle: "Keep the world at its current time of day."
+			icon: "minecraft:clock"
+			description: [
+				"Optional world setting. Claiming this reward disables the daylight cycle and freezes the current time of day; it does not set the time to noon."
+				""
+				"This changes the whole world, including other players. To restore the cycle, an operator can run /gamerule doDaylightCycle true. The quest can be repeated if you need to apply it again."
+			]
+			size: 1.0d
+			shape: "diamond"
+			optional: true
+		}
+		{
+			dependencies: [
+				"02CCA65BFEC1A8C1"
+			]
+			id: "19DF2EC1E5BB67FE"
+			rewards: [
+				{
+					count: 320
+					id: "6362B6D1FCC9F117"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "33F046968D9DF227"
+					item: "minecraft:sugar_cane"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Sugar Cane"
+				}
+				{
+					id: "4FACC8A3B1E34722"
+					item: "gtceu:rubber_sapling"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Rubber Sapling"
+				}
+			]
+			x: -1.5d
+			y: 3.0d
+			title: "Plant for the Future"
+			subtitle: "Grow tomorrow's resources today."
+			icon: "gtceu:rubber_sapling"
+			description: [
+				"Collect a Rubber Sapling and Sugar Cane. Plant both near your workshop and keep a renewable supply growing."
+				""
+				"Rubber trees will support resin and rubber production later, while Sugar Cane supplies paper. The Bone Meal reward helps establish your farm; Sugar Cane growth still depends on the available growing conditions."
+			]
+			size: 1.0d
+			shape: "circle"
+		}
+		{
+			dependencies: [
+				"147A54175ED9413E"
+			]
+			id: "02CCA65BFEC1A8C1"
+			tasks: [
+				{
+					consume_items: false
+					count: 64L
+					id: "424DFA692A536C58"
+					item: "minecraft:cobblestone"
+					type: "item"
+					match_nbt: false
+					title: "Cobblestone"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+			title: "A Stack of Stone"
+			subtitle: "One stack for the first workshop."
+			icon: "minecraft:cobblestone"
+			description: [
+				"Gather 64 Cobblestone. Keep the full stack in your inventory for detection; it will not be consumed."
+				""
+				"Stone supplies your first furnace and basic building blocks. Gather extra sand and clay while exploring, because the Coke Oven will need them later."
+			]
+			size: 1.0d
+			shape: "hexagon"
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"147A54175ED9413E"
+			]
+			id: "4B0F76331F09E588"
+			rewards: [
+				{
+					command: "/gamerule doWeatherCycle false"
+					id: "4BB20BB3B16E53A5"
+					title: "Freeze the weather cycle"
+					type: "command"
+					elevate_perms: true
+				}
+			]
+			tasks: [
+				{
+					id: "035D14259BEFAAB1"
+					type: "checkmark"
+					title: "Confirm"
+				}
+			]
+			x: 3.0d
+			y: 3.0d
+			title: "Freeze Weather"
+			subtitle: "Keep the current weather from changing."
+			icon: "minecraft:sunflower"
+			description: [
+				"Optional world setting. Claiming this reward disables the weather cycle and keeps the current weather. It does not clear rain that is already falling."
+				""
+				"This changes the whole world, including other players. To restore normal weather changes, an operator can run /gamerule doWeatherCycle true. The quest can be repeated."
+			]
+			size: 1.0d
+			shape: "diamond"
+			optional: true
+		}
+		{
+			dependencies: [
+				"02CCA65BFEC1A8C1"
+			]
+			id: "022919E7FDBA0A44"
+			rewards: [
+				{
+					count: 8
+					id: "464F0D67D9108E11"
+					item: "minecraft:blast_furnace"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "543123F13A0F456D"
+					item: "minecraft:furnace"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Furnace"
+				}
+			]
+			x: 0.0d
+			y: 4.5d
+			title: "Fire Up the Furnace"
+			subtitle: "Turn raw resources into useful materials."
+			icon: "minecraft:furnace"
+			description: [
+				"Craft a Furnace from Cobblestone. Use it to turn raw materials into the first usable metals and to fire the bricks needed for your Coke Oven."
+				""
+				"The reward provides eight vanilla Blast Furnaces for faster smelting of compatible ores. These are different from the GregTech Primitive Blast Furnace used to make steel."
+			]
+			size: 1.0d
+			shape: "hexagon"
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"147A54175ED9413E"
+			]
+			id: "75F8535E4B2326CE"
+			rewards: [
+				{
+					command: "/effect give @s minecraft:night_vision infinite 0 true"
+					id: "0E8AC86CAA830365"
+					title: "Receive Night Vision"
+					type: "command"
+					elevate_perms: true
+				}
+			]
+			tasks: [
+				{
+					id: "13A362E087AE314C"
+					type: "checkmark"
+					title: "Confirm"
+				}
+			]
+			x: 3.0d
+			y: 4.5d
+			title: "Night Vision"
+			subtitle: "Light up your view of the underground."
+			icon: "minecraft:golden_carrot"
+			description: [
+				"Optional personal convenience. Claim the reward to receive Night Vision with an infinite duration, making caves and unlit areas easier to see."
+				""
+				"The effect is applied to the player claiming the reward. Milk, death or another effect-removal mechanic can remove it; repeat this quest to apply it again. Night Vision does not stop hostile mobs from spawning."
+			]
+			size: 1.0d
+			shape: "diamond"
+			optional: true
+		}
+		{
+			dependencies: [
+				"4717F1E89DEA5262"
+			]
+			id: "6B586DEF6A83F004"
+			rewards: [
+				{
+					id: "0092CF2437037179"
+					item: {
+						Count: 1
+						id: "sophisticatedbackpacks:netherite_backpack"
+						tag: {
+							inventorySlots: 120
+							upgradeSlots: 7
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3056D36776452F05"
+					item: "sophisticatedbackpacks:advanced_void_upgrade"
+					type: "item"
+				}
+				{
+					id: "5B45EF2DE681956B"
+					item: "sophisticatedbackpacks:advanced_magnet_upgrade"
+					type: "item"
+				}
+				{
+					id: "63E2448E187FE6F5"
+					item: "sophisticatedbackpacks:advanced_feeding_upgrade"
+					type: "item"
+				}
+				{
+					id: "0A48509C5F7CF6BA"
+					item: "sophisticatedbackpacks:stack_upgrade_omega_tier"
+					type: "item"
+				}
+				{
+					id: "008F8934D141CEF9"
+					item: "sophisticatedbackpacks:crafting_upgrade"
+					type: "item"
+				}
+				{
+					id: "19492733BECE77CB"
+					item: "sophisticatedbackpacks:anvil_upgrade"
+					type: "item"
+				}
+				{
+					id: "19582A22A98B2868"
+					item: "sophisticatedbackpacks:smithing_upgrade"
+					type: "item"
+				}
+				{
+					id: "2CA68326C8098E3B"
+					item: "sophisticatedbackpacks:everlasting_upgrade"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "056DC9D94127BC94"
+					item: "sophisticatedbackpacks:backpack"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Backpack"
+				}
+				{
+					id: "66AEBC8FF065A9E4"
+					item: "sophisticatedstorage:barrel"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Barrel"
+				}
+				{
+					id: "2B2677555BD88866"
+					item: "sophisticatedstorage:chest"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Chest"
+				}
+			]
+			x: -1.5d
+			y: 6.0d
+			title: "Carry and Store More"
+			subtitle: "A backpack and storage for your supplies."
+			icon: "sophisticatedbackpacks:backpack"
+			description: [
+				"Craft a basic Sophisticated Backpack, a Sophisticated Barrel and a Sophisticated Chest. Any wood variant of those storage blocks is accepted; the backpack does not need to be empty or unused."
+				""
+				"The reward provides a larger backpack and a set of upgrades for mining, feeding, storage and crafting. Install and configure the upgrades in the backpack interface."
+				""
+				"Configure the Void Upgrade carefully before enabling it so that it only discards items you intend to lose. This storage branch is optional."
+			]
+			size: 1.0d
+			shape: "diamond"
+			optional: true
+		}
+		{
+			dependencies: [
+				"022919E7FDBA0A44"
+			]
+			id: "4717F1E89DEA5262"
+			rewards: [
+				{
+					count: 67
+					id: "6D90B236F0A9B06A"
+					item: "minecraft:coal_block"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "17B6318C0F867B1D"
+					item: "gtceu:raw_coal"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Raw Coal"
+				}
+			]
+			x: 0.0d
+			y: 6.0d
+			title: "Fuel for the Workshop"
+			subtitle: "Find Coal and keep your furnaces running."
+			icon: "gtceu:raw_coal"
+			description: [
+				"Mine a GregTech coal deposit and collect Raw Coal. Use your Prospector to help find a deposit, then mine the ore with your pickaxe."
+				""
+				"Coal keeps the early furnaces running and becomes Coke in a Coke Oven. Claim the Coal Block supply to support your first smelting batches."
+			]
+			size: 1.0d
+			shape: "hexagon"
+		}
+		{
+			dependencies: [
+				"5AB14981CED18306"
+			]
+			icon: "gtna:nexus_structure_terminal"
+			id: "367AFA23E2694F7F"
+			rewards: [
+				{
+					id: "6AEC3652530CFB52"
+					item: "gtna:nexus_structure_terminal"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					id: "0D84E501422C17D9"
+					type: "checkmark"
+					title: "Confirm"
+				}
+			]
+			x: -4.5d
+			y: 7.5d
+			title: "The Nexus Structure Terminal"
+			subtitle: "A building aid for Nexus multiblocks."
+			description: [
+				"Claim the Nexus Structure Terminal from GregTech Nexus Addon. Use it as a building aid for supported multiblock structures."
+				""
+				"The terminal helps with structure placement and inspection; you still need the required blocks and a valid machine structure. Read its tooltip and controls before using it on your workshop."
+			]
+		}
+		{
+			dependencies: [
+				"1579E463F7A8F104"
+			]
+			icon: "gtceu:terminal"
+			id: "5AB14981CED18306"
+			rewards: [
+				{
+					id: "32602F5A151C3581"
+					item: "gtceu:terminal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7ED014DA16F31DF3"
+					type: "checkmark"
+					title: "Confirm"
+				}
+			]
+			x: -3.0d
+			y: 7.5d
+			title: "The GregTech Terminal"
+			subtitle: "A companion for GregTech structures."
+			description: [
+				"Claim the GregTech Terminal and use its available applications to inspect GregTech systems. It is a useful companion as you start building multiblocks."
+				""
+				"Before assembling a machine, inspect the controller in the recipe browser and check its structure preview. A controller alone is not a complete multiblock."
+			]
+			size: 1.0d
+			shape: "diamond"
+			optional: true
+		}
+		{
+			dependencies: [
+				"05ED48B8EAD12485"
+			]
+			id: "1579E463F7A8F104"
+			tasks: [
+				{
+					id: "15DDE4AD61B416FB"
+					item: "gtceu:wrought_iron_ingot"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Wrought Iron Ingot"
+				}
+			]
+			x: -1.5d
+			y: 7.5d
+			title: "Wrought Iron"
+			subtitle: "A useful refinement of your first Iron."
+			icon: "gtceu:wrought_iron_ingot"
+			description: [
+				"Produce a Wrought Iron Ingot. The early route smelts Iron Nuggets into Wrought Iron Nuggets, then combines nine nuggets into an ingot."
+				""
+				"Check the recipe browser for the exact route available in this instance. Wrought Iron becomes useful for steel production and other recipes later."
+			]
+			size: 1.0d
+			shape: "circle"
+		}
+		{
+			dependencies: [
+				"4717F1E89DEA5262"
+			]
+			id: "05ED48B8EAD12485"
+			rewards: [
+				{
+					count: 67
+					id: "4A15B3CA74D68633"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 67
+					id: "5FC15A8FA3FCCBCF"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					count: 67
+					id: "3A7F3D4E5F702B39"
+					item: "gtceu:tin_ingot"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "10167864D355F72D"
+					item: "minecraft:iron_ingot"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Iron Ingot"
+				}
+				{
+					id: "3EAF7B08770798CF"
+					item: "minecraft:copper_ingot"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Copper Ingot"
+				}
+				{
+					id: "0D9D559342A3AEA2"
+					item: "gtceu:tin_ingot"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Tin Ingot"
+				}
+			]
+			x: 0.0d
+			y: 7.5d
+			title: "The First Metals"
+			subtitle: "Iron, Copper and Tin begin the factory."
+			icon: "minecraft:iron_ingot"
+			description: [
+				"Obtain one Iron Ingot, one Copper Ingot and one Tin Ingot. Smelt the corresponding raw ores or use another available recipe shown in the recipe browser."
+				""
+				"Iron is the basis of your first tools. Copper and Tin lead to Bronze, the main construction material of the Steam tier."
+				""
+				"Claim the metal supply and keep some of each ingot for tools and hand crafting."
+			]
+			size: 1.0d
+			shape: "hexagon"
+		}
+		{
+			dependencies: [
+				"05ED48B8EAD12485"
+			]
+			id: "5ACCF4B9A48CCFFB"
+			tasks: [
+				{
+					id: "4C986173397BEC9C"
+					item: "minecraft:diamond"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Diamond"
+				}
+				{
+					id: "141A4C20224B221B"
+					item: "gtceu:lead_ingot"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Lead Ingot"
+				}
+				{
+					id: "5EB0F9D85F15EAD7"
+					item: "gtceu:silver_ingot"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Silver Ingot"
+				}
+				{
+					id: "79BD1E42BA079CB9"
+					item: "minecraft:gold_ingot"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Gold Ingot"
+				}
+				{
+					id: "61A412B99CA191C9"
+					item: "gtceu:nickel_ingot"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Nickel Ingot"
+				}
+			]
+			x: 1.5d
+			y: 7.5d
+			title: "A Wider Mineral Collection"
+			subtitle: "Explore more deposits at your own pace."
+			icon: "minecraft:diamond"
+			description: [
+				"Collect a Diamond and ingots of Lead, Silver, Gold and Nickel as you explore more deposits. The task requires one of each; these resources are useful for later recipes."
+				""
+				"This is an optional collection branch. You can finish the Start chapter without finding all five resources, then return when your mining routes expand."
+			]
+			size: 1.0d
+			shape: "circle"
+		}
+		{
+			dependencies: [
+				"5C7ADFB010AED3FF"
+			]
+			id: "487911F0F530BC5C"
+			rewards: [
+				{
+					id: "05CE7CBCAF8014C8"
+					item: {
+						Count: 1
+						id: "gtceu:neutronium_wire_cutter"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								RelocateMinedBlocks: 1b
+								RelocateMobDrops: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								HarvestLevel: 6
+								MaxDamage: 65534
+								ToolSpeed: 184.0f
+							}
+							HideFlags: 2
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "72E10E0E470AA705"
+					item: {
+						Count: 1
+						id: "gtceu:neutronium_screwdriver"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								RelocateMinedBlocks: 1b
+								RelocateMobDrops: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								MaxDamage: 65534
+							}
+							HideFlags: 2
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "380DF11D8714DD58"
+					item: {
+						Count: 1
+						id: "gtceu:neutronium_saw"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								HarvestIce: 1b
+								RelocateMinedBlocks: 1b
+								RelocateMobDrops: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								MaxDamage: 65534
+							}
+							HideFlags: 2
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1ABFC44C3E26CF53"
+					item: {
+						Count: 1
+						id: "gtceu:neutronium_knife"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								RelocateMinedBlocks: 1b
+								RelocateMobDrops: 1b
+							}
+							GT.Tool: {
+								AttackDamage: 100.0f
+								AttackSpeed: 3.5f
+								DefaultEnchantments: [ ]
+								MaxDamage: 65534
+							}
+							HideFlags: 2
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7DEDAB62EC1AA9BF"
+					item: {
+						Count: 1
+						id: "gtceu:neutronium_wrench"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								Mode: 2b
+								RelocateMinedBlocks: 1b
+								RelocateMobDrops: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								HarvestLevel: 6
+								MaxDamage: 65534
+								ToolSpeed: 184.0f
+							}
+							HideFlags: 2
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6CA582FC5E05DE5B"
+					item: {
+						Count: 1
+						id: "gtceu:neutronium_crowbar"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								RelocateMinedBlocks: 1b
+								RelocateMobDrops: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								HarvestLevel: 6
+								MaxDamage: 65534
+								ToolSpeed: 184.0f
+							}
+							HideFlags: 2
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "71292E6563003760"
+					item: {
+						Count: 1
+						id: "gtceu:polybenzimidazole_mallet"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								MaxDamage: 1023
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "28C414B64A4B5445"
+					item: "gtceu:iron_wire_cutter"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Iron Wire Cutter"
+				}
+				{
+					id: "76BAE6F1B72719C6"
+					item: "gtceu:iron_screwdriver"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Iron Screwdriver"
+				}
+				{
+					id: "2536F9290B4740D4"
+					item: "gtceu:iron_saw"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Iron Saw"
+				}
+				{
+					id: "664754FC5299856E"
+					item: "gtceu:iron_knife"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Iron Knife"
+				}
+				{
+					id: "29E98ECAEAD5D3E1"
+					item: "gtceu:iron_wrench"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Iron Wrench"
+				}
+				{
+					id: "6072223A7E9BBFB3"
+					item: "gtceu:wood_mallet"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Wood Mallet"
+				}
+				{
+					id: "09E6C21814F5ACE5"
+					item: "gtceu:iron_crowbar"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Iron Crowbar"
+				}
+			]
+			x: -1.5d
+			y: 9.0d
+			title: "Complete the Tool Kit"
+			subtitle: "The remaining tools for crafting and machines."
+			icon: "gtceu:iron_wrench"
+			description: [
+				"Craft an Iron Wire Cutter, Screwdriver, Saw, Knife, Wrench and a Wood Mallet. These complete the basic hand-crafting and machine-configuration kit."
+				""
+				"Used tools are accepted. The Wrench is needed when crafting the Coke Oven controller, so complete this branch before moving on to that multiblock."
+				""
+				"Claim the upgraded tools after completing the set. Consult the tooltips for their interaction modes before using them on machines."
+			]
+			size: 1.0d
+			shape: "circle"
+		}
+		{
+			dependencies: [
+				"05ED48B8EAD12485"
+			]
+			id: "5C7ADFB010AED3FF"
+			rewards: [
+				{
+					id: "4F4C4AB5694B40BE"
+					item: {
+						Count: 1
+						id: "gtceu:neutronium_hammer"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								RelocateMinedBlocks: 1b
+								RelocateMobDrops: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								HarvestLevel: 6
+								MaxDamage: 65534
+								ToolSpeed: 184.0f
+							}
+							HideFlags: 2
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3642BB7AA7EDA1CF"
+					item: {
+						Count: 1
+						id: "gtceu:neutronium_file"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								RelocateMinedBlocks: 1b
+								RelocateMobDrops: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								MaxDamage: 65534
+							}
+							HideFlags: 2
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "56276BCDBD6A1D61"
+					item: {
+						Count: 1
+						id: "gtceu:damascus_steel_mortar"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								MaxDamage: 1023
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "62D907EECE92F2A2"
+					item: "gtceu:iron_hammer"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Iron Hammer"
+				}
+				{
+					id: "75090EBC0CEE5576"
+					item: "gtceu:iron_file"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Iron File"
+				}
+				{
+					id: "7615FA692ECEFF96"
+					item: "gtceu:iron_mortar"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Iron Mortar"
+				}
+			]
+			x: 0.0d
+			y: 9.0d
+			title: "The First GregTech Tools"
+			subtitle: "Hammer, File and Mortar unlock hand processing."
+			icon: "gtceu:iron_hammer"
+			description: [
+				"Craft an Iron Hammer, Iron File and Iron Mortar. These tools let you make plates, shaped components and metal dusts by hand before machines take over."
+				""
+				"The tasks accept used tools and do not consume them. Open the recipes and uses of each tool to see the hand-crafting routes available."
+				""
+				"Claim the improved Hammer, File and Mortar supplied by this chapter. Keep your tools accessible: crafting recipes often use them as reusable ingredients."
+			]
+			size: 1.0d
+			shape: "hexagon"
+		}
+		{
+			dependencies: [
+				"5C7ADFB010AED3FF"
+			]
+			id: "6D37924AE8C4B647"
+			rewards: [
+				{
+					count: 64
+					id: "0FAADC64523AB5C0"
+					item: "gtceu:bronze_dust"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1748BB82BF70647B"
+					item: "gtceu:iron_dust"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Iron Dust"
+				}
+				{
+					id: "5BB7BF0CE2F3F0A2"
+					item: "gtceu:copper_dust"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Copper Dust"
+				}
+			]
+			x: 1.5d
+			y: 9.0d
+			title: "Metals into Dust"
+			subtitle: "Prepare metal powders for your first alloys."
+			icon: "gtceu:copper_dust"
+			description: [
+				"Use your Mortar to make Iron Dust and Copper Dust from ingots. Keep one of each dust in your inventory for the tasks."
+				""
+				"Dusts can be mixed into alloys. The Bronze Dust reward gives you a starting supply, while the manual Bronze recipe combines Copper Dust and Tin Dust. Check the recipe browser for its proportions."
+			]
+			size: 1.0d
+			shape: "circle"
+		}
+		{
+			dependencies: [
+				"0B2619CBDA9424C6"
+			]
+			id: "44B99A5358D9A1A0"
+			tasks: [
+				{
+					id: "3DD46F864BD9EC55"
+					type: "item"
+					title: "Collect a Creosote Bucket"
+					item: "gtceu:creosote_bucket"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			x: -1.5d
+			y: 10.5d
+			title: "Collect the Creosote"
+			subtitle: "Collect a bucket of the oven's fluid by-product."
+			icon: "gtceu:creosote_bucket"
+			description: [
+				"Creosote is the fluid by-product of Coke Oven processing. Collect it through the supported output or hatch and store it in a suitable fluid container."
+				""
+				"Fill a bucket with 1,000 mB of Creosote and keep the Creosote Bucket in your inventory until the task completes. The bucket and fluid are not consumed."
+				""
+				"The main route does not require this collection task. Drain and store Creosote even if you skip the task so that your oven keeps producing Coke."
+			]
+			size: 1.0d
+			shape: "circle"
+		}
+		{
+			dependencies: [
+				"487911F0F530BC5C"
+			]
+			id: "0B2619CBDA9424C6"
+			rewards: [
+				{
+					count: 75
+					id: "6A1170689E76A584"
+					item: "gtceu:coke_oven_bricks"
+					type: "item"
+				}
+				{
+					count: 6
+					id: "620A4EFC4AB6BDAA"
+					item: "gtceu:coke_oven_hatch"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "3E1194C8177A7352"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6E7D2C03942FB710"
+					item: "gtceu:coke_oven"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Coke Oven"
+				}
+				{
+					id: "41ADCEEACAC0B04D"
+					item: "gtceu:coke_oven_bricks"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Coke Oven Bricks"
+				}
+			]
+			x: 0.0d
+			y: 10.5d
+			title: "Build a Coke Oven"
+			subtitle: "Your first working GregTech multiblock."
+			icon: "gtceu:coke_oven"
+			description: [
+				"Craft a Coke Oven controller and at least one Coke Oven Brick casing. The controller recipe uses Iron Plates, Coke Oven Bricks and a Wrench."
+				""
+				"Make Compressed Coke Clay from clay, sand and a Wooden Brick Mold, fire it into Coke Oven Bricks, then craft the casings. Check each recipe in the browser."
+				""
+				"Claim the extra controllers, brick casings and hatches to finish your ovens. Build the hollow 3 x 3 x 3 structure shown by the controller preview, replacing the appropriate casing positions with the controller and any supported hatches."
+				""
+				"Feed Coal into the completed oven to produce Coke and Creosote. Keep the fluid output drained: an oven with a full output cannot continue processing."
+			]
+			size: 1.0d
+			shape: "hexagon"
+		}
+		{
+			dependencies: [
+				"6D37924AE8C4B647"
+			]
+			id: "01780714D3006B80"
+			rewards: [
+				{
+					id: "75934748D442A23C"
+					item: "gtceu:bronze_ingot"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "42571A89EC4D3B33"
+					item: "gtceu:bronze_ingot"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "Bronze Ingot"
+				}
+			]
+			x: 1.5d
+			y: 10.5d
+			title: "Your First Bronze"
+			subtitle: "The foundation of the Steam tier."
+			icon: "gtceu:bronze_ingot"
+			description: [
+				"Smelt Bronze Dust into a Bronze Ingot. You can use the dust reward from Metals into Dust or mix your own from Copper and Tin."
+				""
+				"Bronze is the foundation of the early Steam machines. Keep a stock of ingots and prepare to turn them into plates and machine components."
+			]
+			size: 1.0d
+			shape: "hexagon"
+		}
+		{
+			dependencies: [
+				"0B2619CBDA9424C6"
+				"01780714D3006B80"
+			]
+			icon: "gtceu:lp_steam_solid_boiler"
+			id: "64D91166C361698D"
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1EC5EB803E73695D"
+					type: "item"
+					title: "Produce Coke"
+					item: "gtceu:coke_gem"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			x: 0.0d
+			y: 12.5d
+			title: "Ready for Steam"
+			subtitle: "Bronze and Coke open the next chapter."
+			description: [
+				"Produce at least one Coke from your assembled Coke Oven. With Bronze available and the oven working, your workshop is ready to begin the Steam tier."
+				""
+				"Claim the supply quests below for Bronze, Coke and a mining tool. These rewards support the next stage without requiring the optional exploration or convenience branches."
+				""
+				"Your next project is steam generation: craft a Low-Pressure Solid-Fuel Boiler, supply water and fuel, then connect it to your Steam machines. Keep a heated boiler supplied with water; follow the boiler tooltip and recipe browser when building the system."
+			]
+		}
+		{
+			dependencies: [
+				"64D91166C361698D"
+			]
+			id: "0DE85EE72D07751E"
+			rewards: [
+				{
+					count: 64
+					id: "6C0A8FC1FF0006F6"
+					item: "gtceu:coke_block"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "10CA831FAB5C6CBC"
+					type: "checkmark"
+					title: "Collect the supply"
+				}
+			]
+			x: -1.5d
+			y: 14.5d
+			title: "Coke for the First Boilers"
+			subtitle: "A starting stock of boiler fuel."
+			icon: "gtceu:coke_block"
+			description: [
+				"Claim 64 Coke Blocks as a starting fuel supply for the Steam tier."
+				""
+				"Keep your Coke Oven running and its Creosote output drained. The reward supports the first machines; sustainable fuel production should come from your workshop."
+			]
+			size: 1.0d
+			shape: "circle"
+		}
+		{
+			dependencies: [
+				"64D91166C361698D"
+			]
+			id: "64DF9933496200C6"
+			rewards: [
+				{
+					count: 64
+					id: "4504FBE6988D7AAD"
+					item: "gtceu:bronze_ingot"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "78C527396B484836"
+					type: "checkmark"
+					title: "Collect the supply"
+				}
+			]
+			x: 0.0d
+			y: 14.5d
+			title: "Bronze for the First Machines"
+			subtitle: "A starting stock of the Steam alloy."
+			icon: "gtceu:bronze_ingot"
+			description: [
+				"Claim 64 Bronze Ingots to begin crafting your first Steam machine components."
+				""
+				"This is a one-time starting supply. Establish your own Copper, Tin and Bronze production as the factory expands."
+			]
+			size: 1.0d
+			shape: "circle"
+		}
+		{
+			dependencies: [
+				"64D91166C361698D"
+			]
+			id: "4E13E66E679BAE62"
+			rewards: [
+				{
+					id: "18D502FED2FB8DD3"
+					item: {
+						Count: 1
+						id: "gtna:echoite_vajra"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								DisableShields: 1b
+								Mode: 2b
+								RelocateMinedBlocks: 1b
+								RelocateMobDrops: 1b
+								TreeFelling: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								HarvestLevel: 6
+								MaxDamage: 63
+								ToolSpeed: 12.0f
+							}
+							HideFlags: 2
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "753580F74BD97812"
+					type: "checkmark"
+					title: "Collect the supply"
+				}
+			]
+			x: 1.5d
+			y: 14.5d
+			title: "A Tool for the Next Stage"
+			subtitle: "Equipment for a growing mining operation."
+			icon: "gtna:echoite_vajra"
+			description: [
+				"You have reached the end of Start. Claim the Echoite Vajra supplied by this chapter to help gather resources for your growing factory."
+				""
+				"Read its tooltip and interaction modes before mining near your machines or buildings. This is a one-time equipment reward."
+			]
+			size: 1.0d
+			shape: "circle"
+		}
+		{
+			dependencies: [
+				"6B586DEF6A83F004"
+			]
+			description: [
+				"Infinity Ascension tracks your progress with a research tree. Press K to open it."
+				""
+				"Each node unlocks by itself once its earlier nodes are done and you hold the item it asks for. There is nothing to scan and nothing to submit: crafting, picking up or taking the item from a machine all count, and one member of a team is enough for everyone."
+				""
+				"Green nodes are unlocked, yellow ones are the next you can reach, grey ones are locked. A few nodes also lock machine recipes. Those recipes show a red research line in EMI until the node is unlocked."
+			]
+			id: "25BB2330ED1C08FE"
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Press K to see where you are going."
+			tasks: [
+				{
+					id: "38BCFD17CF171330"
+					type: "checkmark"
+					title: "Open the tree with K"
+				}
+			]
+			title: "The Research Tree"
+			x: -3.0d
+			y: 6.0d
+			icon: "minecraft:enchanted_book"
+		}
+	]
+	title: "Start"
+	icon: "minecraft:grass_block"
+}

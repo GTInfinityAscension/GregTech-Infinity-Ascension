@@ -1,0 +1,20 @@
+{
+	id: "5ACFBFCC6E51EA8C"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			count: 8
+			item: "gtceu:coke_block"
+		}
+		{
+			count: 16
+			item: "minecraft:coal_block"
+		}
+		{
+			count: 16
+			item: "gtceu:wrought_iron_ingot"
+		}
+	]
+	title: "More fuel or more iron"
+}

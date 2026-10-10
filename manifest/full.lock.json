@@ -1,0 +1,1219 @@
+{
+  "minecraft": "1.20.1",
+  "forge": "47.4.23",
+  "profile": "full",
+  "seeds": [
+    "ad_astra",
+    "ad_astra_giselle_addon",
+    "ad_astra_rocketed",
+    "adastraextra",
+    "ae2",
+    "alltheleaks",
+    "alternate_current",
+    "architectury",
+    "asynclocator",
+    "asyncparticles",
+    "avaritia",
+    "badoptimizations",
+    "balm",
+    "betterp2p",
+    "botarium",
+    "buildinggadgets2",
+    "certain_questing_additions",
+    "chisel",
+    "cloth_config",
+    "configured",
+    "constructionwand",
+    "controlling",
+    "craftingtweaks",
+    "creativecore",
+    "cryonicconfig",
+    "doespotatotick",
+    "duplicationless",
+    "easy_villagers",
+    "elevatorid",
+    "embeddium",
+    "embeddium_extra",
+    "emi",
+    "emi_ores",
+    "euphoria_patcher",
+    "expatternprovider",
+    "explorerscompass",
+    "extendedae_plus",
+    "extremesoundmuffler",
+    "factory_blocks",
+    "fastbench",
+    "fastfurnace",
+    "fastleafdecay",
+    "fastnbt",
+    "fastquit",
+    "fastspawner",
+    "ferritecore",
+    "flerovium",
+    "framedblocks",
+    "ftbbackups2",
+    "ftbchunks",
+    "ftbessentials",
+    "ftblibrary",
+    "ftbquests",
+    "ftbteams",
+    "ftbultimine",
+    "ftbxmodcompat",
+    "functionalstorage",
+    "fusion",
+    "glitchcore",
+    "glodium",
+    "gnetum",
+    "gpumemleakfix",
+    "gtceu",
+    "gtia",
+    "gtmthings",
+    "gtna",
+    "guideme",
+    "immediatelyfast",
+    "industrial_platform",
+    "jade",
+    "jadeaddons",
+    "kotlinforforge",
+    "ldlib",
+    "littletiles",
+    "merequester",
+    "modernfix",
+    "modernui",
+    "moremorelang",
+    "mousetweaks",
+    "nanhealthfixer",
+    "naturescompass",
+    "nolijium",
+    "oculus",
+    "packmenu",
+    "particlerain",
+    "pipez",
+    "placebo",
+    "polyeng",
+    "polylib",
+    "polymorph",
+    "radium",
+    "resourcefulconfig",
+    "resourcefullib",
+    "rubidium",
+    "searchables",
+    "shrink",
+    "sophisticatedbackpacks",
+    "sophisticatedcore",
+    "sophisticatedstorage",
+    "spark",
+    "structure_layout_optimizer",
+    "supermartijn642configlib",
+    "supermartijn642corelib",
+    "terrablender",
+    "titanium",
+    "toofast",
+    "toolbelt",
+    "trashcans",
+    "usclb",
+    "xaerominimap",
+    "xaeroworldmap",
+    "xtonesreworked",
+    "yeetusexperimentus"
+  ],
+  "excluded": [
+    "avaritia",
+    "gtmthings",
+    "particlerain"
+  ],
+  "mods": [
+    {
+      "mod_id": "ad_astra",
+      "filename": "ad_astra-forge-1.20.1-1.15.21.jar",
+      "sha256": "d84dc1182b4c570d955df67b80703dc058ce944c7d9b0702e3577934c96d864c",
+      "source": "curseforge",
+      "project_id": 635042,
+      "file_id": 8833730,
+      "requires": [
+        "botarium",
+        "resourcefulconfig",
+        "resourcefullib"
+      ]
+    },
+    {
+      "mod_id": "ad_astra_giselle_addon",
+      "filename": "Ad-Astra-Giselle-Addon-forge-1.20.1-6.24.jar",
+      "sha256": "d807de9d9f512e91c6236ca235e3ac97453fa090cb79d53e3114f0881d4dbf1e",
+      "source": "curseforge",
+      "project_id": 714958,
+      "file_id": 8843399,
+      "requires": [
+        "ad_astra",
+        "botarium",
+        "resourcefulconfig"
+      ]
+    },
+    {
+      "mod_id": "ad_astra_rocketed",
+      "filename": "ad_astra_rocketed-forge-1.20.1-1.0.5.jar",
+      "sha256": "5c8aac1f11daf225afb2da30ed1672e944c9426bca135dc9fae20ee4b3220e80",
+      "source": "curseforge",
+      "project_id": 996980,
+      "file_id": 5245376,
+      "requires": [
+        "ad_astra",
+        "botarium",
+        "resourcefulconfig",
+        "resourcefullib"
+      ]
+    },
+    {
+      "mod_id": "adastraextra",
+      "filename": "adastraextra-forge-1.20.1-1.2.3.jar",
+      "sha256": "9115be43beed3f7d6dac8ce5bd95c6b0751e58dc95b88bde472041184792f65a",
+      "source": "curseforge",
+      "project_id": 957097,
+      "file_id": 5037401,
+      "requires": [
+        "ad_astra"
+      ]
+    },
+    {
+      "mod_id": "ae2",
+      "filename": "appliedenergistics2-forge-15.4.10.jar",
+      "sha256": "fbfee05c6674cb6b00fe425e945ca4818d41eb34069b60dcb4a36221a0390fcc",
+      "source": "curseforge",
+      "project_id": 223794,
+      "file_id": 7148487,
+      "requires": [
+        "guideme"
+      ]
+    },
+    {
+      "mod_id": "alltheleaks",
+      "filename": "alltheleaks-1.1.3+1.20.1-forge.jar",
+      "sha256": "4bb5a05d7f9caa9e689e43c4b4b65540b67afe53bb7c9e810465f63da4744685",
+      "source": "curseforge",
+      "project_id": 1091339,
+      "file_id": 8779054,
+      "requires": []
+    },
+    {
+      "mod_id": "alternate_current",
+      "filename": "alternate_current-mc1.20-1.7.0.jar",
+      "sha256": "9dfa5365ef170323612d6ada820b7cac12e05135f00f16d0f627488426f59565",
+      "source": "curseforge",
+      "project_id": 548115,
+      "file_id": 4721662,
+      "requires": []
+    },
+    {
+      "mod_id": "architectury",
+      "filename": "architectury-9.2.14-forge.jar",
+      "sha256": "218b471d0b8a1f6cda14cfc1beb9eeb0df54304500acc6c5613d9b88ec65d9af",
+      "source": "curseforge",
+      "project_id": 419699,
+      "file_id": 5137938,
+      "requires": []
+    },
+    {
+      "mod_id": "asynclocator",
+      "filename": "async-locator-forge-1.20-1.3.0.jar",
+      "sha256": "d171fdddd8dad64cba4c8c67cd2a0bdfc2697ff35e11f9fb666b7464e1e9468b",
+      "source": "curseforge",
+      "project_id": 625069,
+      "file_id": 4603343,
+      "requires": []
+    },
+    {
+      "mod_id": "asyncparticles",
+      "filename": "AsyncParticles-20.1.4.0-beta.2+1.20.1.jar",
+      "sha256": "eb9425f4da916c5850a852e2b040fed432a8bbac3c08ca5ca65251b177ece64e",
+      "source": "curseforge",
+      "project_id": 1215753,
+      "file_id": 8879586,
+      "requires": []
+    },
+    {
+      "mod_id": "badoptimizations",
+      "filename": "BadOptimizations-2.4.1-1.20.1.jar",
+      "sha256": "3da53cdf856757d9ec7df0be86bc23b2c7d67a019b490f8f64317d4d9b77cac8",
+      "source": "curseforge",
+      "project_id": 949555,
+      "file_id": 7338200,
+      "requires": []
+    },
+    {
+      "mod_id": "balm",
+      "filename": "balm-forge-1.20.1-7.3.44.jar",
+      "sha256": "ad11d968770bb1ce73377626b6f1dcd4ae6f8be1ef6f37cee9b872b8176aebd3",
+      "source": "curseforge",
+      "project_id": 531761,
+      "file_id": 8969708,
+      "requires": []
+    },
+    {
+      "mod_id": "betterp2p",
+      "filename": "betterp2p-1.5.0-forge.jar",
+      "sha256": "af3db500145f352a21bc2cd86d1f854e5f3c1486a8659b493a5b2fbc3ba0776f",
+      "source": "curseforge",
+      "project_id": 538092,
+      "file_id": 6015618,
+      "requires": [
+        "ae2",
+        "architectury",
+        "kotlinforforge"
+      ]
+    },
+    {
+      "mod_id": "botarium",
+      "filename": "botarium-forge-1.20.1-2.3.4.jar",
+      "sha256": "470810a364ff4ad4d4fcd4e55798263938fc893970eacecc58e8b741a392b1cf",
+      "source": "curseforge",
+      "project_id": 704113,
+      "file_id": 5486070,
+      "requires": []
+    },
+    {
+      "mod_id": "buildinggadgets2",
+      "filename": "buildinggadgets2-1.0.8.jar",
+      "sha256": "59efb399a4acdb69a01a970b1f1e3c5584495aabc726ff40857ab4aed9372c83",
+      "source": "curseforge",
+      "project_id": 298187,
+      "file_id": 6850495,
+      "requires": []
+    },
+    {
+      "mod_id": "certain_questing_additions",
+      "filename": "certain_questing_additions-forge-1.2.0.3+mc1.20.1.jar",
+      "sha256": "4697ebdb4153447e5b98b7adbc4d1c5cdd7c5ff2030196b3b02b06c281f4dae8",
+      "source": "curseforge",
+      "project_id": 1372051,
+      "file_id": 8385712,
+      "requires": [
+        "architectury",
+        "ftbquests"
+      ]
+    },
+    {
+      "mod_id": "chisel",
+      "filename": "chisel-forge-2.0.0+mc1.20.1.jar",
+      "sha256": "f6ebb48de0a954349a5f0d607f7955e898a87dae45fb7cf71878f4bac56653c1",
+      "source": "curseforge",
+      "project_id": 551763,
+      "file_id": 6266130,
+      "requires": [
+        "architectury",
+        "cryonicconfig"
+      ]
+    },
+    {
+      "mod_id": "cloth_config",
+      "filename": "cloth-config-11.1.136-forge.jar",
+      "sha256": "1e895e85cf5b1e1905ef3178ec155c8badfe22a1577b92c09143a5aa1f4ce0f2",
+      "source": "curseforge",
+      "project_id": 348521,
+      "file_id": 5729105,
+      "requires": []
+    },
+    {
+      "mod_id": "configured",
+      "filename": "configured-forge-1.20.1-2.2.3.jar",
+      "sha256": "05dceddd57825f911135c929504ef320b75953d05e7dc918dba58a0574e5315f",
+      "source": "curseforge",
+      "project_id": 457570,
+      "file_id": 5180900,
+      "requires": []
+    },
+    {
+      "mod_id": "constructionwand",
+      "filename": "constructionwand-1.20.1-2.15.8.jar",
+      "sha256": "e76af629737eb6536e52b782c29e186ffdb43d59e5c0a19f730f30ec5e2644c1",
+      "source": "curseforge",
+      "project_id": 1382688,
+      "file_id": 8607591,
+      "requires": []
+    },
+    {
+      "mod_id": "controlling",
+      "filename": "Controlling-forge-1.20.1-12.0.2.jar",
+      "sha256": "516308a93824119f6a1ebc75425aa21ee8f8de0c331942793a054ba6d9c24944",
+      "source": "curseforge",
+      "project_id": 250398,
+      "file_id": 4646682,
+      "requires": [
+        "searchables"
+      ]
+    },
+    {
+      "mod_id": "craftingtweaks",
+      "filename": "craftingtweaks-forge-1.20.1-18.2.9.jar",
+      "sha256": "1cc83c8c0bee73a2ffa3428ce28e3c17d7f95e26e1a820d8bd7270e0931f8974",
+      "source": "curseforge",
+      "project_id": 233071,
+      "file_id": 8019501,
+      "requires": [
+        "balm"
+      ]
+    },
+    {
+      "mod_id": "creativecore",
+      "filename": "CreativeCore_FORGE_v2.12.40_mc1.20.1.jar",
+      "sha256": "936de62489c0d6fbe74202486cbe2b191b8629b02bab1d480acfdb03690f33f4",
+      "source": "curseforge",
+      "project_id": 257814,
+      "file_id": 8947229,
+      "requires": []
+    },
+    {
+      "mod_id": "cryonicconfig",
+      "filename": "cryonicconfig-forge-1.0.0+mc1.20.1.jar",
+      "sha256": "51ffc8832eec0fce716ecab9cd148ca7408b63963a1728b06df45d8cfb2eb04a",
+      "source": "curseforge",
+      "project_id": 1208896,
+      "file_id": 6247797,
+      "requires": []
+    },
+    {
+      "mod_id": "doespotatotick",
+      "filename": "doespotatotick-1.20.1-5.6.3.jar",
+      "sha256": "5aa62c1b236e79136d8e4ef60544385c5ae0d6f37c34fe1a70eaaf3d179e5a66",
+      "source": "curseforge",
+      "project_id": 825355,
+      "file_id": 7953843,
+      "requires": [
+        "duplicationless"
+      ]
+    },
+    {
+      "mod_id": "duplicationless",
+      "filename": "duplicationless-1.20.1-1.2.1.jar",
+      "sha256": "9f9b14e65a7bf36a185baab24d7d236e5b39e05cb0818b4d51c49e7104b17a42",
+      "source": "curseforge",
+      "project_id": 1380105,
+      "file_id": 8646420,
+      "requires": []
+    },
+    {
+      "mod_id": "easy_villagers",
+      "filename": "easy-villagers-forge-1.20.1-1.1.39.jar",
+      "sha256": "f2826c6f4be28df912d263f7914888f1b173c09dc99cc41998013e817d0dfb1d",
+      "source": "curseforge",
+      "project_id": 400514,
+      "file_id": 7202309,
+      "requires": []
+    },
+    {
+      "mod_id": "elevatorid",
+      "filename": "elevatorid-1.20.1-1.9.1-forge.jar",
+      "sha256": "7487c091bc8e6ae7b83c61471c97258b380fab2a0f421ed84df78f92ba630f75",
+      "source": "curseforge",
+      "project_id": 250832,
+      "file_id": 6602224,
+      "requires": []
+    },
+    {
+      "mod_id": "embeddium",
+      "filename": "embeddium-0.3.31+mc1.20.1.jar",
+      "sha256": "eed3d1325f2acc2fd4e69bb495e5ccb91d962126ac5330f0582ebc2a3daf47fb",
+      "source": "curseforge",
+      "project_id": 908741,
+      "file_id": 5681725,
+      "requires": []
+    },
+    {
+      "mod_id": "embeddium_extra",
+      "filename": "rubidium-extra-0.5.4.4+mc1.20.1-build.131.jar",
+      "sha256": "32c28582040dfab4e167542bf319107296e9eff3cb17f4f576eba036f2d256da",
+      "source": "curseforge",
+      "project_id": 654373,
+      "file_id": 6101745,
+      "requires": [
+        "embeddium"
+      ]
+    },
+    {
+      "mod_id": "emi",
+      "filename": "emi-1.1.20+1.20.1+forge.jar",
+      "sha256": "2a86fd87dae8545e9706c0d9d29d37be9faac8cfe07be58edb497fbdddb4e8db",
+      "source": "curseforge",
+      "project_id": 580555,
+      "file_id": 6205514,
+      "requires": []
+    },
+    {
+      "mod_id": "emi_ores",
+      "filename": "emi_ores-1.3+1.20.1+forge.jar",
+      "sha256": "4c2d48dd7f29ee6f25f7ce8639ac22b05409c89ef27c1db89cc26a21982b4d75",
+      "source": "curseforge",
+      "project_id": 974009,
+      "file_id": 8254299,
+      "requires": [
+        "emi"
+      ]
+    },
+    {
+      "mod_id": "euphoria_patcher",
+      "filename": "EuphoriaPatcher-1.10.5-r5.9.3-forge.jar",
+      "sha256": "65f7437bbfc2474f5c3208e5280cd898f0623c451af541d8a5777cfb21d44c78",
+      "source": "curseforge",
+      "project_id": 915902,
+      "file_id": 8884681,
+      "requires": []
+    },
+    {
+      "mod_id": "expatternprovider",
+      "filename": "ExtendedAE-1.20-1.4.21-forge.jar",
+      "sha256": "30fc8abe66d4b96919f0fd7b33badd0bb2013b31e2ee57f6aeaa63ffae37df4b",
+      "source": "curseforge",
+      "project_id": 892005,
+      "file_id": 8918777,
+      "requires": [
+        "ae2",
+        "glodium",
+        "guideme"
+      ]
+    },
+    {
+      "mod_id": "explorerscompass",
+      "filename": "ExplorersCompass-1.20.1-1.4.0-forge.jar",
+      "sha256": "0d9a7705f39a9eac19c33e0fbe5422280048991a341dc0d9471bff32111c502c",
+      "source": "curseforge",
+      "project_id": 491794,
+      "file_id": 7892927,
+      "requires": []
+    },
+    {
+      "mod_id": "extendedae_plus",
+      "filename": "extendedae_plus-1.6.2.jar",
+      "sha256": "c92c4cb6c8c1aab7e60af536096800091d46f2726d2695dec65c8277e1b662ff",
+      "source": "curseforge",
+      "project_id": 1337639,
+      "file_id": 8755058,
+      "requires": [
+        "ae2",
+        "expatternprovider"
+      ]
+    },
+    {
+      "mod_id": "extremesoundmuffler",
+      "filename": "ExtremeSoundMuffler-3.51-forge-1.20.1.jar",
+      "sha256": "7f0a5d7f8bdcabb630c3a9034f815628831e7779475a5e707533fa454cfae83c",
+      "source": "curseforge",
+      "project_id": 363363,
+      "file_id": 7469697,
+      "requires": []
+    },
+    {
+      "mod_id": "factory_blocks",
+      "filename": "factory_blocks-forge-1.4.0+mc1.20.1.jar",
+      "sha256": "a21e9ff2f8add29e7368e933015406f8a3c91dc103bbf16783ea3a3850f23a75",
+      "source": "curseforge",
+      "project_id": 640001,
+      "file_id": 6267781,
+      "requires": [
+        "architectury"
+      ]
+    },
+    {
+      "mod_id": "fastbench",
+      "filename": "FastWorkbench-1.20.1-8.0.4.jar",
+      "sha256": "86d20c6879bf86ef76b3fd94998d3e5c3327acb5d5324b6eb0b5348354766620",
+      "source": "curseforge",
+      "project_id": 288885,
+      "file_id": 5101229,
+      "requires": [
+        "placebo"
+      ]
+    },
+    {
+      "mod_id": "fastfurnace",
+      "filename": "FastFurnace-1.20.1-8.0.2.jar",
+      "sha256": "970c11c090e7a364e2e006aabb5e573f79901e710e97195334ee5802317776e8",
+      "source": "curseforge",
+      "project_id": 299540,
+      "file_id": 5181098,
+      "requires": [
+        "placebo"
+      ]
+    },
+    {
+      "mod_id": "fastleafdecay",
+      "filename": "FastLeafDecay-32.jar",
+      "sha256": "ce48db06bfb5830c147969793771a8f8b5a5774b182543b906bc439efd4e9469",
+      "source": "curseforge",
+      "project_id": 230976,
+      "file_id": 5375681,
+      "requires": []
+    },
+    {
+      "mod_id": "fastnbt",
+      "filename": "fastnbt-1.20-26.9.1-forge.jar",
+      "sha256": "605dbea3452d101f9196b19e2f5caa876a9be0d10bd07c1307c779547846aa1a",
+      "source": "curseforge",
+      "project_id": 1417466,
+      "file_id": 8924380,
+      "requires": []
+    },
+    {
+      "mod_id": "fastquit",
+      "filename": "Fastquit-3.0.2+1.20.1forge.jar",
+      "sha256": "ece1f13c417acaf4f38c4368341741e251560fd7039cecfa18400adf325f042a",
+      "source": "curseforge",
+      "project_id": 1177884,
+      "file_id": 8795140,
+      "requires": [
+        "cloth_config"
+      ]
+    },
+    {
+      "mod_id": "fastspawner",
+      "filename": "fastspawner-1.20.1-1.1.0.jar",
+      "sha256": "270dad457d93077899c4ac62216261f9a961a6584b9375eb38b6b1824f1eba0b",
+      "source": "curseforge",
+      "project_id": 1310318,
+      "file_id": 7488350,
+      "requires": []
+    },
+    {
+      "mod_id": "ferritecore",
+      "filename": "ferritecore-6.0.1-forge.jar",
+      "sha256": "9c2c9396a49e796d88497758caa4637d2bcbb433c318e2dd9cebcffbaf0f6c54",
+      "source": "curseforge",
+      "project_id": 429235,
+      "file_id": 4810975,
+      "requires": []
+    },
+    {
+      "mod_id": "flerovium",
+      "filename": "flerovium-forge-1.20.1-1.2.19-all.jar",
+      "sha256": "d61acdac6509bae8e5a962876cb623d451fd625eb105a16e020d160de5635b25",
+      "source": "curseforge",
+      "project_id": 1142875,
+      "file_id": 8284677,
+      "requires": [
+        "embeddium"
+      ]
+    },
+    {
+      "mod_id": "framedblocks",
+      "filename": "FramedBlocks-9.4.3.jar",
+      "sha256": "58f4a8d8fb759a9db8754d83461df1b7b2e94426888259286d3acc316e6c6589",
+      "source": "curseforge",
+      "project_id": 441647,
+      "file_id": 7386520,
+      "requires": []
+    },
+    {
+      "mod_id": "ftbbackups2",
+      "filename": "ftbbackups2-forge-1.20-1.0.23.jar",
+      "sha256": "19cea280a56e533b9669d4f866aef38ebe54f6d8627efe6798016e17b6b4afda",
+      "source": "curseforge",
+      "project_id": 622737,
+      "file_id": 4834403,
+      "requires": [
+        "architectury",
+        "polylib"
+      ]
+    },
+    {
+      "mod_id": "ftbchunks",
+      "filename": "ftb-chunks-forge-2001.3.8.jar",
+      "sha256": "783f7aa42089b6f72500801284796f7cc8eb641ecddcf76f65bf586c017efb02",
+      "source": "curseforge",
+      "project_id": 314906,
+      "file_id": 8216874,
+      "requires": [
+        "architectury",
+        "ftblibrary",
+        "ftbteams"
+      ]
+    },
+    {
+      "mod_id": "ftbessentials",
+      "filename": "ftb-essentials-forge-2001.2.4.jar",
+      "sha256": "e0022bfe29dc10e373947701dae1bc4ce75ee15fe21f6d89269677fbb9aebf73",
+      "source": "curseforge",
+      "project_id": 410811,
+      "file_id": 7609948,
+      "requires": [
+        "ftblibrary"
+      ]
+    },
+    {
+      "mod_id": "ftblibrary",
+      "filename": "ftb-library-forge-2001.2.13.jar",
+      "sha256": "41810281b65336265cae2c88412022d02f2f0a3f28c66a06173d86f98acf14a7",
+      "source": "curseforge",
+      "project_id": 404465,
+      "file_id": 8226927,
+      "requires": [
+        "architectury"
+      ]
+    },
+    {
+      "mod_id": "ftbquests",
+      "filename": "ftb-quests-forge-2001.4.22.jar",
+      "sha256": "9ea9d159a78a2724cfe0457b024680fdb52a2126eff9cfa5280a30578f647a68",
+      "source": "curseforge",
+      "project_id": 289412,
+      "file_id": 8078538,
+      "requires": [
+        "architectury",
+        "ftblibrary",
+        "ftbteams"
+      ]
+    },
+    {
+      "mod_id": "ftbteams",
+      "filename": "ftb-teams-forge-2001.3.2.jar",
+      "sha256": "b1cb4d82ea9f137a87e12a7aaf3329619294b56f7d70337dfd557a76e10b6e07",
+      "source": "curseforge",
+      "project_id": 404468,
+      "file_id": 7499810,
+      "requires": [
+        "architectury",
+        "ftblibrary"
+      ]
+    },
+    {
+      "mod_id": "ftbultimine",
+      "filename": "ftb-ultimine-forge-2001.1.8.jar",
+      "sha256": "b80dde55b2c91fd27f09f15ed2aefb0756c7bd704316e488ae8a06b179e85730",
+      "source": "curseforge",
+      "project_id": 386134,
+      "file_id": 7880472,
+      "requires": [
+        "architectury",
+        "ftblibrary"
+      ]
+    },
+    {
+      "mod_id": "ftbxmodcompat",
+      "filename": "ftb-xmod-compat-forge-2.1.3.jar",
+      "sha256": "16a8eb9de88d5c33d29cb076cc39dfb337b2c54348e1ef1efe9dd60cf85e5f72",
+      "source": "curseforge",
+      "project_id": 889915,
+      "file_id": 6402486,
+      "requires": [
+        "architectury",
+        "ftblibrary"
+      ]
+    },
+    {
+      "mod_id": "functionalstorage",
+      "filename": "functionalstorage-1.20.1-1.2.14.jar",
+      "sha256": "b627f558ae16352ca4988834c5397d10b9de8541188ff0d99121fff0f5ecf5f7",
+      "source": "curseforge",
+      "project_id": 556861,
+      "file_id": 8412552,
+      "requires": [
+        "titanium"
+      ]
+    },
+    {
+      "mod_id": "fusion",
+      "filename": "fusion-1.3.15b-forge-mc1.20.1.jar",
+      "sha256": "10aa5a2e07f3e04f68925d1452765e0992029a20f2c0953fc62a70fc5bf6b50e",
+      "source": "curseforge",
+      "project_id": 854949,
+      "file_id": 8942772,
+      "requires": []
+    },
+    {
+      "mod_id": "glitchcore",
+      "filename": "GlitchCore-forge-1.20.1-0.0.1.1.jar",
+      "sha256": "e42a8b513da08a910c133caeafad9fc2fcc22fdaaa2eb3e2516e9112a5a0db61",
+      "source": "curseforge",
+      "project_id": 955399,
+      "file_id": 5787839,
+      "requires": []
+    },
+    {
+      "mod_id": "glodium",
+      "filename": "Glodium-1.20-1.5-forge.jar",
+      "sha256": "fc419cb5bf511750c0a2da498b925f5122ac4f78617aca6630fe80abf0b6f460",
+      "source": "curseforge",
+      "project_id": 957920,
+      "file_id": 5226922,
+      "requires": []
+    },
+    {
+      "mod_id": "gnetum",
+      "filename": "gnetum-2.5.0+1.20.1-forge.jar",
+      "sha256": "1648db58fb7594938d64b439d47ec8ca0de0f4137c0cd39cbd3e44bb3c58353c",
+      "source": "curseforge",
+      "project_id": 1220460,
+      "file_id": 8519281,
+      "requires": []
+    },
+    {
+      "mod_id": "gpumemleakfix",
+      "filename": "gpumemleakfix-1.20.1-1.8.jar",
+      "sha256": "a7019442f1b07b1a4a875fe404d04d162905cc7fd42e0b3c843aefc7b39efc46",
+      "source": "curseforge",
+      "project_id": 882495,
+      "file_id": 4884976,
+      "requires": []
+    },
+    {
+      "mod_id": "gtceu",
+      "filename": "gtceu-1.20.1-7.5.3.jar",
+      "sha256": "d6560d8b695828a763389d3f45e0210ef70c1892c7b1633ac458544905df1a0d",
+      "source": "curseforge",
+      "project_id": 890405,
+      "file_id": 7917773,
+      "requires": [
+        "configuration",
+        "ldlib"
+      ]
+    },
+    {
+      "mod_id": "gtia",
+      "filename": "gtia-0.1.0.jar",
+      "sha256": "a613abe72fd029bc4967a32180c2777a9b05f1407cb7aa4231c227b871f7e96f",
+      "source": "local-build",
+      "path": "/home/raishxn/MineProjects/GregTech Infinity Ascension(GT:IA)/GTIACore/build/libs/gtia-0.1.0.jar",
+      "requires": []
+    },
+    {
+      "mod_id": "gtna",
+      "filename": "gtna-0.5.1.jar",
+      "sha256": "425d0581fbc55fe26c8b80d1bf687b496328e530cb32667566b6a984fbf3e591",
+      "source": "local-build",
+      "path": "/home/raishxn/MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.5.1.jar",
+      "requires": []
+    },
+    {
+      "mod_id": "guideme",
+      "filename": "guideme-20.1.15.jar",
+      "sha256": "cf8052ab3da121012efc59a20e731c24bfe7488dfa556c9b88809f42dea3b24a",
+      "source": "curseforge",
+      "project_id": 1173950,
+      "file_id": 8204776,
+      "requires": []
+    },
+    {
+      "mod_id": "immediatelyfast",
+      "filename": "ImmediatelyFast-Forge-1.5.5+1.20.4.jar",
+      "sha256": "82db19cc65b5c11a444498fb4b8cbcb0393c043e794cb5bf368631a0af765035",
+      "source": "curseforge",
+      "project_id": 686911,
+      "file_id": 8348481,
+      "requires": []
+    },
+    {
+      "mod_id": "industrial_platform",
+      "filename": "Industrial Platform-1.20.1-2.0.1.jar",
+      "sha256": "840a4c45b5f6100318be964f1c701aa36e217b6f85914b4eeecb431e459c1851",
+      "source": "curseforge",
+      "project_id": 1350900,
+      "file_id": 8979564,
+      "requires": []
+    },
+    {
+      "mod_id": "jade",
+      "filename": "Jade-1.20.1-Forge-11.13.3.jar",
+      "sha256": "a632c77975e5aedff6322b0072f8b0db3f5d4bf914df6bdcc87d1aea4d5f55f4",
+      "source": "curseforge",
+      "project_id": 324717,
+      "file_id": 8479276,
+      "requires": []
+    },
+    {
+      "mod_id": "jadeaddons",
+      "filename": "JadeAddons-1.20.1-Forge-5.5.1.jar",
+      "sha256": "faf39cd0326e5127004be0b0c96ba7d52fa40cf9c7f85854bd47e3ebfc402f4c",
+      "source": "curseforge",
+      "project_id": 583345,
+      "file_id": 8203724,
+      "requires": [
+        "jade"
+      ]
+    },
+    {
+      "mod_id": "kotlinforforge",
+      "filename": "kotlinforforge-4.12.0-all.jar",
+      "sha256": "6a66c6a68ec09f8717cdbf06883394f0ee24d7cd826b7134a0f81839e8e720ae",
+      "source": "curseforge",
+      "project_id": 351264,
+      "file_id": 7291067,
+      "requires": []
+    },
+    {
+      "mod_id": "ldlib",
+      "filename": "ldlib-forge-1.20.1-1.0.52.a.jar",
+      "sha256": "a9b0827d264e0d15f90482de0d4783a28fc2dad9dfb477f344dc5e959168838d",
+      "source": "curseforge",
+      "project_id": 626676,
+      "file_id": 8830518,
+      "requires": []
+    },
+    {
+      "mod_id": "littletiles",
+      "filename": "LittleTiles_BETA_v1.6.0-pre161_mc1.20.1.jar",
+      "sha256": "365cfb137e0f3a95f605b45fea82040afb0ac4fa1a0fc0deaeaf59cb35e8bae4",
+      "source": "curseforge",
+      "project_id": 257818,
+      "file_id": 6610285,
+      "requires": [
+        "creativecore"
+      ]
+    },
+    {
+      "mod_id": "merequester",
+      "filename": "merequester-forge-1.20.1-1.2.1.jar",
+      "sha256": "490de12be0237e5699aba8ae57d9c40a97ae7491d6ae33ecb1fc5d3b30f391ea",
+      "source": "curseforge",
+      "project_id": 688367,
+      "file_id": 8298547,
+      "requires": [
+        "ae2"
+      ]
+    },
+    {
+      "mod_id": "modernfix",
+      "filename": "modernfix-forge-5.27.83+mc1.20.1.jar",
+      "sha256": "954ff22f601be8de3978a0d7636a138dc93801c6ac55cfd71ef1cd2895de8e5f",
+      "source": "curseforge",
+      "project_id": 790626,
+      "file_id": 8774721,
+      "requires": []
+    },
+    {
+      "mod_id": "modernui",
+      "filename": "ModernUI-Forge-1.20.1-3.12.0.1-universal.jar",
+      "sha256": "49fea599522316ef7abd8897e8bcad3ed742d935f0a53726eba1f00c9ca8fe4c",
+      "source": "curseforge",
+      "project_id": 352491,
+      "file_id": 6956345,
+      "requires": []
+    },
+    {
+      "mod_id": "moremorelang",
+      "filename": "moremorelang-1.0.5.jar",
+      "sha256": "b540e9619fcaf471086cc98e1bd051312ddf858b3aad1b8f54e2538bb6327c83",
+      "source": "curseforge",
+      "project_id": 1444917,
+      "file_id": 8673054,
+      "requires": []
+    },
+    {
+      "mod_id": "mousetweaks",
+      "filename": "MouseTweaks-forge-mc1.20.1-2.25.1.jar",
+      "sha256": "6c27d16aa715ac6613a55fc463739e2c7b78279e4e4c4cede299e4a2d4a70f08",
+      "source": "curseforge",
+      "project_id": 60089,
+      "file_id": 5338457,
+      "requires": []
+    },
+    {
+      "mod_id": "nanhealthfixer",
+      "filename": "nanhealthfixer-1.20.1-0.0.1.jar",
+      "sha256": "d03619bda583c0d52848d9225b781d022d406cecf02da2d5703bead81803fe1f",
+      "source": "curseforge",
+      "project_id": 828656,
+      "file_id": 4932788,
+      "requires": []
+    },
+    {
+      "mod_id": "naturescompass",
+      "filename": "NaturesCompass-1.20.1-1.12.0-forge.jar",
+      "sha256": "bc3601e9e050802569647de843fe9d3160934c5f31412cba62ca2ea8c1485197",
+      "source": "curseforge",
+      "project_id": 252848,
+      "file_id": 7892948,
+      "requires": []
+    },
+    {
+      "mod_id": "nolijium",
+      "filename": "nolijium-0.5.6.jar",
+      "sha256": "ccb2a49a592af42afffb25d7fca6cf4ff9b872694cce24875bef1c45fbdb3086",
+      "source": "curseforge",
+      "project_id": 969602,
+      "file_id": 6264798,
+      "requires": []
+    },
+    {
+      "mod_id": "oculus",
+      "filename": "oculus-mc1.20.1-1.8.0.jar",
+      "sha256": "0945df0cba0f62b3901dd80c3268e5311b770ece78c78037a45db12ac0425fef",
+      "source": "curseforge",
+      "project_id": 581495,
+      "file_id": 6020952,
+      "requires": []
+    },
+    {
+      "mod_id": "packmenu",
+      "filename": "PackMenu-1.20.1-6.1.2.jar",
+      "sha256": "fc33c41205dc2fd432dd07d5b5f28d105d7a99dced19220e9b3c6529c2f2af55",
+      "source": "curseforge",
+      "project_id": 358191,
+      "file_id": 5503481,
+      "requires": [
+        "placebo"
+      ]
+    },
+    {
+      "mod_id": "pipez",
+      "filename": "pipez-forge-1.20.1-1.2.26.jar",
+      "sha256": "f692b0a24c46c954358db8535248021deaf3399973c4e746ba1e3e115a8a48c9",
+      "source": "curseforge",
+      "project_id": 443900,
+      "file_id": 6945379,
+      "requires": []
+    },
+    {
+      "mod_id": "placebo",
+      "filename": "Placebo-1.20.1-8.6.3.jar",
+      "sha256": "1cdf906cfbcbb5e5be2ef1bb721f79a24b01bd2ac559c8cdbfb7693f62421571",
+      "source": "curseforge",
+      "project_id": 283644,
+      "file_id": 6274231,
+      "requires": []
+    },
+    {
+      "mod_id": "polyeng",
+      "filename": "polyeng-forge-0.1.1-1.20.1.jar",
+      "sha256": "595eeacf80632633967c1a21b751a6d981b2ac12c16416ec3993b26f26df3af0",
+      "source": "curseforge",
+      "project_id": 941096,
+      "file_id": 5282394,
+      "requires": [
+        "ae2",
+        "polymorph"
+      ]
+    },
+    {
+      "mod_id": "polylib",
+      "filename": "polylib-forge-2000.0.3-build.143.jar",
+      "sha256": "abf42a3240b083fc96b9c022a049323cd4130844fcef338e1ab8b2cd6502a04b",
+      "source": "curseforge",
+      "project_id": 576589,
+      "file_id": 5350440,
+      "requires": [
+        "architectury"
+      ]
+    },
+    {
+      "mod_id": "polymorph",
+      "filename": "polymorph-forge-0.49.11+1.20.1.jar",
+      "sha256": "cb633f3a3220ccfd00efbb57fb37bf7be44b5266195103af26add462fa71d86a",
+      "source": "curseforge",
+      "project_id": 388800,
+      "file_id": 8854504,
+      "requires": []
+    },
+    {
+      "mod_id": "radium",
+      "filename": "radium-re-reforged-mc1.20.1-0.14.3+git.e141a47.jar",
+      "sha256": "162a0d1ece705375addd1dba149248446658e006f714669ce7eebd98861e62c4",
+      "source": "curseforge",
+      "project_id": 1649038,
+      "file_id": 8923124,
+      "requires": []
+    },
+    {
+      "mod_id": "resourcefulconfig",
+      "filename": "resourcefulconfig-forge-1.20.1-2.1.3.jar",
+      "sha256": "c404b9e5cf8595427a72d4ca6ee5730289168762b463f169be3ae5dfe3727ded",
+      "source": "curseforge",
+      "project_id": 714059,
+      "file_id": 6231176,
+      "requires": []
+    },
+    {
+      "mod_id": "resourcefullib",
+      "filename": "resourcefullib-forge-1.20.1-2.1.29.jar",
+      "sha256": "b13afb95231d88e1caea5a045967e0fc291b29020b0d26ad39e6f9e9a551fee8",
+      "source": "curseforge",
+      "project_id": 570073,
+      "file_id": 5659871,
+      "requires": []
+    },
+    {
+      "mod_id": "searchables",
+      "filename": "Searchables-forge-1.20.1-1.0.3.jar",
+      "sha256": "c1a76e93886210574d3f298c0461241fb711e52ac22c7a04d3236840f29e6576",
+      "source": "curseforge",
+      "project_id": 858542,
+      "file_id": 5284015,
+      "requires": []
+    },
+    {
+      "mod_id": "shrink",
+      "filename": "Shrink-1.20.1-1.4.5.jar",
+      "sha256": "a7af6dc3bc080c470a27ff691152c974bd13ce61e0c0948daf5eefece432abb1",
+      "source": "curseforge",
+      "project_id": 426386,
+      "file_id": 4863339,
+      "requires": []
+    },
+    {
+      "mod_id": "sophisticatedbackpacks",
+      "filename": "sophisticatedbackpacks-1.20.1-3.26.3.2167.jar",
+      "sha256": "93a96f85c7a626dc1ba28180707801f0e769805841ca49a86beebfeb9f9f6e5d",
+      "source": "curseforge",
+      "project_id": 422301,
+      "file_id": 8985926,
+      "requires": [
+        "sophisticatedcore"
+      ]
+    },
+    {
+      "mod_id": "sophisticatedcore",
+      "filename": "sophisticatedcore-1.20.1-1.5.2.2346.jar",
+      "sha256": "82e8cfaf8deb3e9e85097003e7ff59a21eb67bc3d06e0906f3f1e94c79e58d14",
+      "source": "curseforge",
+      "project_id": 618298,
+      "file_id": 8985880,
+      "requires": []
+    },
+    {
+      "mod_id": "sophisticatedstorage",
+      "filename": "sophisticatedstorage-1.20.1-1.5.0.2137.jar",
+      "sha256": "ec173f9b9510ff2b9b0d3fcccde810cb4ea5baaeb8ac5557c0b6fa879d7f4c55",
+      "source": "curseforge",
+      "project_id": 619320,
+      "file_id": 8985948,
+      "requires": [
+        "sophisticatedcore"
+      ]
+    },
+    {
+      "mod_id": "spark",
+      "filename": "spark-1.10.53-forge.jar",
+      "sha256": "eba275ba9bb0cb5b542913c3138c6eeff6a752898266d63d125d185f26ac99ed",
+      "source": "curseforge",
+      "project_id": 361579,
+      "file_id": 4738952,
+      "requires": []
+    },
+    {
+      "mod_id": "structure_layout_optimizer",
+      "filename": "structure_layout_optimizer-forge-1.0.11.jar",
+      "sha256": "14bfc4b1e82ea24118402fccd90dffde45fa6d9e2238bfaa19a43b3fb88ee49c",
+      "source": "curseforge",
+      "project_id": 1087831,
+      "file_id": 7139029,
+      "requires": [
+        "resourcefulconfig"
+      ]
+    },
+    {
+      "mod_id": "supermartijn642configlib",
+      "filename": "supermartijn642configlib-1.1.8-forge-mc1.20.jar",
+      "sha256": "bea425ef7e9cd27a7fc0f4b89e00cbd0a1ee050f071ecaa9f28f7238f400f0a3",
+      "source": "curseforge",
+      "project_id": 438332,
+      "file_id": 4715408,
+      "requires": []
+    },
+    {
+      "mod_id": "supermartijn642corelib",
+      "filename": "supermartijn642corelib-1.1.24b-forge-mc1.20.1.jar",
+      "sha256": "9052aa6767cc81da58f8d3ac8bb0bb8b789996353b37ceef2f0a926c5f7bfbfb",
+      "source": "curseforge",
+      "project_id": 454372,
+      "file_id": 8943195,
+      "requires": []
+    },
+    {
+      "mod_id": "terrablender",
+      "filename": "TerraBlender-forge-1.20.1-3.0.1.10.jar",
+      "sha256": "c109016f46ca9bdae69976bf080bbf2e8e5968cb66c0a78845f8ca6af5dbbeb1",
+      "source": "curseforge",
+      "project_id": 563928,
+      "file_id": 6290448,
+      "requires": []
+    },
+    {
+      "mod_id": "titanium",
+      "filename": "titanium-1.20.1-3.8.35.jar",
+      "sha256": "c7851205ace26b28afe332b9257f0f13d9ac52a89e4ae79a76156a8c91e7a282",
+      "source": "curseforge",
+      "project_id": 287342,
+      "file_id": 8426836,
+      "requires": []
+    },
+    {
+      "mod_id": "toofast",
+      "filename": "toofast-1.20-0.4.3.5.jar",
+      "sha256": "5dc0fc5687c43ad9cec522ebb6eda9d9c84edc5b0c401721e91450b1ef57de5a",
+      "source": "curseforge",
+      "project_id": 550678,
+      "file_id": 4627738,
+      "requires": []
+    },
+    {
+      "mod_id": "toolbelt",
+      "filename": "ToolBelt-1.20.1-1.20.03.jar",
+      "sha256": "9c1b8c52d848055d7a4c60989f5b36247431c11d84a2e2975bb1ccfca2663030",
+      "source": "curseforge",
+      "project_id": 260262,
+      "file_id": 7906260,
+      "requires": []
+    },
+    {
+      "mod_id": "trashcans",
+      "filename": "trashcans-1.1.1-forge-mc1.20.4.jar",
+      "sha256": "8f01423f3847ed27f30f467f583aa5d77b6660fdb913775f85a3daa2b70a2f37",
+      "source": "curseforge",
+      "project_id": 394535,
+      "file_id": 8972123,
+      "requires": [
+        "supermartijn642configlib",
+        "supermartijn642corelib"
+      ]
+    },
+    {
+      "mod_id": "usclb",
+      "filename": "usclb-0.0.26.jar",
+      "sha256": "e0783a0698022a99890dfa98bafa04abe1ffcba98361dcb1be333b62cdd9a105",
+      "source": "curseforge",
+      "project_id": 664224,
+      "file_id": 6664039,
+      "requires": []
+    },
+    {
+      "mod_id": "xaerominimap",
+      "filename": "xaerominimap-forge-1.20.1-26.5.0.jar",
+      "sha256": "b21e1b4a13de533d0cf57d55969d5c83b3da78e8be44b93e76cddea9f6503d19",
+      "source": "curseforge",
+      "project_id": 263420,
+      "file_id": 8849836,
+      "requires": [
+        "xaerolib"
+      ]
+    },
+    {
+      "mod_id": "xaeroworldmap",
+      "filename": "xaeroworldmap-forge-1.20.1-1.46.0.jar",
+      "sha256": "e00bd87a949cfa8c31d571f4d9646db038e3b98f8cdbb7bd217f3fb9c3780c9e",
+      "source": "curseforge",
+      "project_id": 317780,
+      "file_id": 8849965,
+      "requires": [
+        "xaerolib"
+      ]
+    },
+    {
+      "mod_id": "xtonesreworked",
+      "filename": "xtonesreworked-1.0.4-F_1.20.1-47.2.0.jar",
+      "sha256": "038d9f376ca7c49cbc2b04c831751bd64dceea936efad598a7a50667b0ab9a1a",
+      "source": "curseforge",
+      "project_id": 694231,
+      "file_id": 5907303,
+      "requires": []
+    },
+    {
+      "mod_id": "yeetusexperimentus",
+      "filename": "YeetusExperimentus-Forge-2.3.1-build.6+mc1.20.1.jar",
+      "sha256": "6dacf5ea0cec5d6d53e7d002d4a06ac4fa5f7ec665f3932bb6566136e6a7f8ed",
+      "source": "curseforge",
+      "project_id": 635427,
+      "file_id": 4680832,
+      "requires": []
+    }
+  ],
+  "unresolved_dependencies": [
+    "configuration",
+    "xaerolib"
+  ]
+}

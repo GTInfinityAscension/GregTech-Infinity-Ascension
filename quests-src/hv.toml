@@ -1,0 +1,176 @@
+[chapter]
+title = "High Voltage Age"
+icon = "gtceu:hv_machine_hull"
+
+[entry]
+subtitle = "Ascension IV"
+requires = ["mv:exit"]
+text = """
+High Voltage opens chemistry: distillation, cracking, plastics and the Cleanroom. Nichrome and Titanium raise your furnace ceiling.
+"""
+
+[[quest]]
+key = "hv_age"
+title = "High Voltage Age"
+role = "spine"
+task = [{ item = "gtceu:hv_machine_hull" }]
+deps = ["mv:transistor"]
+lane = "spine"
+row = 1
+subtitle = "The frame of High Voltage."
+text = """
+The HV Machine Hull opens the High Voltage tier. It takes Stainless Steel, so make sure the alloy is ready.
+"""
+
+[[quest]]
+key = "nichrome"
+title = "Nichrome Smelting"
+role = "gate"
+task = [{ item = "gtceu:nichrome_dust" }]
+deps = ["hv_age"]
+lane = "spine"
+row = 2.5
+subtitle = "Raises the furnace ceiling."
+text = """
+Nichrome makes the hottest coil in the tier. Smelting it needs a Kanthal-coil furnace at 2700 K.
+"""
+
+[[quest]]
+key = "titanium"
+title = "Titanium Smelting"
+role = "gate"
+task = [{ item = "gtceu:titanium_dust" }]
+deps = ["nichrome"]
+lane = "spine"
+row = 4.5
+subtitle = "A strong, light metal."
+text = """
+Titanium is a strong and light metal. Hot ingots from the blast furnace cool in the Vacuum Freezer.
+"""
+
+[[quest]]
+key = "large_chemical_reactor"
+title = "Large Chemical Reactor"
+role = "spine"
+task = [{ item = "gtceu:large_chemical_reactor" }]
+lane = "spine"
+row = 6
+deps = ["hv_age", "titanium"]
+subtitle = "Chemistry in parallel."
+text = """
+The Large Chemical Reactor runs chemical recipes at scale with several inputs at once.
+"""
+
+[[quest]]
+key = "ptfe"
+title = "PTFE"
+role = "spine"
+task = [{ item = "gtceu:polytetrafluoroethylene_dust" }]
+deps = ["large_chemical_reactor"]
+lane = "spine"
+row = 7.5
+subtitle = "A chemically inert plastic."
+text = """
+PTFE is a chemically inert plastic. Making it takes a Large Chemical Reactor.
+"""
+
+[[quest]]
+key = "cleanroom"
+title = "Cleanroom"
+role = "spine"
+task = [{ item = "gtceu:cleanroom" }]
+deps = ["ptfe"]
+lane = "spine"
+row = 9
+subtitle = "A sealed room with filtered air."
+text = """
+Circuits above the first tiers need a clean room: a sealed room with filtered air.
+"""
+
+[[quest]]
+key = "plastic_circuit_board"
+title = "Plastic Circuit Board"
+role = "spine"
+task = [{ item = "gtceu:plastic_circuit_board" }]
+deps = ["cleanroom"]
+lane = "spine"
+row = 10.5
+subtitle = "The base of advanced circuits."
+text = """
+Plastic Circuit Boards are the base of the advanced circuits made in the Cleanroom.
+"""
+
+[[quest]]
+key = "implosion_compressor"
+title = "Implosion Compressor"
+role = "spine"
+task = [{ item = "gtceu:implosion_compressor" }]
+deps = ["hv_age"]
+lane = "machines"
+row = 2.5
+subtitle = "Explosives turn gems into hard materials."
+text = """
+The Implosion Compressor uses explosives to compress gems into hard materials such as industrial diamonds.
+"""
+
+[[quest]]
+key = "vacuum_freezer"
+title = "Vacuum Freezer"
+role = "spine"
+task = [{ item = "gtceu:vacuum_freezer" }]
+deps = ["titanium"]
+lane = "machines"
+row = 4.5
+subtitle = "Cools hot ingots."
+text = """
+The Vacuum Freezer cools the hot ingots that come out of the blast furnace into their normal form.
+"""
+
+[[quest]]
+key = "distillation_tower"
+title = "Distillation Tower"
+role = "spine"
+task = [{ item = "gtceu:distillation_tower" }]
+lane = "machines"
+row = 6
+subtitle = "Splits fluids into fractions."
+deps = ["hv_age", "vacuum_freezer"]
+text = """
+The Distillation Tower splits fluids such as oil into their fractions.
+"""
+
+[[quest]]
+key = "cracker"
+title = "Cracker"
+role = "spine"
+task = [{ item = "gtceu:cracker" }]
+deps = ["distillation_tower"]
+lane = "machines"
+row = 7.5
+subtitle = "Breaks long hydrocarbons into lighter ones."
+text = """
+The Cracker breaks long hydrocarbons into lighter ones using hydrogen or steam.
+"""
+
+[[quest]]
+key = "rocket_t1"
+title = "Rocket Tier 1"
+role = "spine"
+task = [{ item = "ad_astra:tier_1_rocket" }]
+deps = ["titanium"]
+lane = "machines"
+col = 1
+row = 4.5
+subtitle = "The first step off the planet."
+text = """
+The Tier 1 Rocket, from Ad Astra, takes you to the Moon.
+"""
+
+[exit]
+row = 12.5
+title = "The Road Ahead"
+subtitle = "More tiers are on their way."
+deps = ["plastic_circuit_board"]
+text = """
+You have reached the end of the chapters written so far. Extreme Voltage, space and the larger machines come next.
+"""

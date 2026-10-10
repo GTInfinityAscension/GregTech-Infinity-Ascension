@@ -1,0 +1,29 @@
+title = "MV · Contact, Haber-Bosch and Solvay"
+node = [
+  { id = "s", kind = "material", label = "1 Sulfur" , area = "contact"},
+  { id = "o", kind = "material", label = "3,000 mB Oxygen<BR/>+ 1,000 mB Water", area = "contact" },
+  { id = "v", kind = "material", label = "Vanadium Pentoxide<BR/>(never used up)", area = "contact" },
+  { id = "cc", kind = "machine", label = "Contact Converter", note = "MV · 8 s", area = "contact" },
+  { id = "h2so4", kind = "material", label = "1,000 mB Sulfuric Acid", area = "contact" },
+  { id = "steam", kind = "material", label = "2,000 mB Steam<BR/>(the heat)", area = "contact" },
+  { id = "n", kind = "material", label = "1,000 mB Nitrogen<BR/>(air)", area = "haber" },
+  { id = "h", kind = "material", label = "3,000 mB Hydrogen<BR/>(Diaphragm Cell)", area = "haber" },
+  { id = "fe", kind = "material", label = "Magnetite catalyst", area = "haber" },
+  { id = "ac", kind = "machine", label = "Ammonia Converter", note = "MV · 20 s", area = "haber" },
+  { id = "nh3", kind = "material", label = "1,000 mB Ammonia", area = "haber" },
+  { id = "brine", kind = "material", label = "1,000 mB Salt Water", area = "solvay" },
+  { id = "co2", kind = "material", label = "1,000 mB CO₂", area = "solvay" },
+  { id = "st", kind = "machine", label = "Solvay Tower", note = "MV · 10 s", area = "solvay" },
+  { id = "bicarb", kind = "material", label = "1 Sodium Bicarbonate", area = "solvay" },
+  { id = "nh4cl", kind = "material", label = "2 Ammonium Chloride", area = "solvay" },
+  { id = "kiln", kind = "machine", label = "Lime Kiln", note = "2 → 1", area = "solvay" },
+  { id = "soda", kind = "material", label = "Soda Ash", area = "solvay" },
+  { id = "cr", kind = "machine", label = "Chem. Reactor", note = "+ Quicklime", area = "solvay" },
+]
+area = [ { id = "contact", label = "Contact process", colour = "teal" }, { id = "haber", label = "Haber-Bosch", colour = "green" }, { id = "solvay", label = "Solvay (ammonia loop)", colour = "brown" } ]
+edge = [
+  ["s","cc"], ["o","cc"], ["v","cc"], ["cc","h2so4"], ["cc","steam"],
+  ["n","ac"], ["h","ac"], ["fe","ac"], ["ac","nh3"], ["ac","steam"],
+  ["nh3","st"], ["brine","st"], ["co2","st"], ["st","bicarb"], ["st","nh4cl"], ["bicarb","kiln"], ["kiln","soda"],
+  ["nh4cl","cr"], ["cr","nh3","1,000 mB back"],
+]

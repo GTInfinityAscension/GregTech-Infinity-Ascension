@@ -1,0 +1,131 @@
+protons	symbol	name	material	ingot	dust	gem	bucket
+0	Nt	Neutronium	gtceu:neutronium	gtceu:neutronium_ingot	gtceu:neutronium_dust		gtceu:neutronium_bucket
+1	D	Deuterium	gtceu:deuterium				gtceu:deuterium_bucket
+1	H	Hydrogen	gtceu:hydrogen				gtceu:hydrogen_bucket
+1	T	Tritium	gtceu:tritium				gtceu:tritium_bucket
+2	He	Helium	gtceu:helium				gtceu:helium_bucket
+2	He-3	Helium-3	gtceu:helium_3				gtceu:helium_3_bucket
+3	Li	Lithium	gtceu:lithium		gtceu:lithium_dust		gtceu:lithium_bucket
+4	Be	Beryllium	gtceu:beryllium	gtceu:beryllium_ingot	gtceu:beryllium_dust		gtceu:beryllium_bucket
+5	B	Boron	gtceu:boron		gtceu:boron_dust		
+6	C	Carbon	gtceu:carbon		gtceu:carbon_dust		gtceu:carbon_bucket
+7	N	Nitrogen	gtceu:nitrogen				gtceu:nitrogen_bucket
+8	O	Oxygen	gtceu:oxygen				gtceu:oxygen_bucket
+9	F	Fluorine	gtceu:fluorine				gtceu:fluorine_bucket
+10	Ne	Neon	gtceu:neon				gtceu:neon_bucket
+11	Na	Sodium	gtceu:sodium		gtceu:sodium_dust		
+12	Mg	Magnesium	gtceu:magnesium		gtceu:magnesium_dust		gtceu:magnesium_bucket
+13	Al	Aluminium	gtceu:aluminium	gtceu:aluminium_ingot	gtceu:aluminium_dust		gtceu:aluminium_bucket
+14	Si	Silicon	gtceu:silicon	gtceu:silicon_ingot	gtceu:silicon_dust		gtceu:silicon_bucket
+15	P	Phosphorus	gtceu:phosphorus		gtceu:phosphorus_dust		
+16	S	Sulfur	gtceu:sulfur		gtceu:sulfur_dust		
+17	Cl	Chlorine	gtceu:chlorine				gtceu:chlorine_bucket
+18	Ar	Argon	gtceu:argon				gtceu:argon_bucket
+19	K	Potassium	gtceu:potassium		gtceu:potassium_dust		gtceu:potassium_bucket
+20	Ca	Calcium	gtceu:calcium		gtceu:calcium_dust		
+21	Sc	Scandium	gtceu:scandium				
+22	Ti	Titanium	gtceu:titanium	gtceu:titanium_ingot	gtceu:titanium_dust		gtceu:titanium_bucket
+23	V	Vanadium	gtceu:vanadium	gtceu:vanadium_ingot	gtceu:vanadium_dust		gtceu:vanadium_bucket
+24	Cr	Chrome	gtceu:chromium	gtceu:chromium_ingot	gtceu:chromium_dust		gtceu:chromium_bucket
+25	Mn	Manganese	gtceu:manganese	gtceu:manganese_ingot	gtceu:manganese_dust		gtceu:manganese_bucket
+26	Fe	Iron	gtceu:iron	minecraft:iron_ingot	gtceu:iron_dust		gtceu:iron_bucket
+27	Co	Cobalt	gtceu:cobalt	gtceu:cobalt_ingot	gtceu:cobalt_dust		gtceu:cobalt_bucket
+28	Ni	Nickel	gtceu:nickel	gtceu:nickel_ingot	gtceu:nickel_dust		gtceu:nickel_bucket
+29	Cu	Copper	gtceu:copper	minecraft:copper_ingot	gtceu:copper_dust		gtceu:copper_bucket
+30	Zn	Zinc	gtceu:zinc	gtceu:zinc_ingot	gtceu:zinc_dust		gtceu:zinc_bucket
+31	Ga	Gallium	gtceu:gallium	gtceu:gallium_ingot	gtceu:gallium_dust		gtceu:gallium_bucket
+32	Ge	Germanium	gtceu:germanium				
+33	As	Arsenic	gtceu:arsenic		gtceu:arsenic_dust		gtceu:arsenic_bucket
+34	Se	Selenium	gtceu:selenium				
+35	Br	Bromine	gtceu:bromine				gtceu:bromine_bucket
+36	Kr	Krypton	gtceu:krypton				gtceu:krypton_bucket
+37	Rb	Rubidium	gtceu:rubidium		gtceu:rubidium_dust		
+38	Sr	Strontium	gtceu:strontium		gtceu:strontium_dust		
+39	Y	Yttrium	gtceu:yttrium	gtceu:yttrium_ingot	gtceu:yttrium_dust		gtceu:yttrium_bucket
+40	Zr	Zirconium	gtceu:zirconium		gtceu:zirconium_dust		
+41	Nb	Niobium	gtceu:niobium	gtceu:niobium_ingot	gtceu:niobium_dust		gtceu:niobium_bucket
+42	Mo	Molybdenum	gtceu:molybdenum	gtceu:molybdenum_ingot	gtceu:molybdenum_dust		gtceu:molybdenum_bucket
+43	Tc	Technetium	gtceu:technetium				
+44	Ru	Ruthenium	gtceu:ruthenium	gtceu:ruthenium_ingot	gtceu:ruthenium_dust		gtceu:ruthenium_bucket
+45	Rh	Rhodium	gtceu:rhodium	gtceu:rhodium_ingot	gtceu:rhodium_dust		gtceu:rhodium_bucket
+46	Pd	Palladium	gtceu:palladium	gtceu:palladium_ingot	gtceu:palladium_dust		gtceu:palladium_bucket
+47	Ag	Silver	gtceu:silver	gtceu:silver_ingot	gtceu:silver_dust		gtceu:silver_bucket
+48	Cd	Cadmium	gtceu:cadmium		gtceu:cadmium_dust		
+49	In	Indium	gtceu:indium	gtceu:indium_ingot	gtceu:indium_dust		gtceu:indium_bucket
+50	Sn	Tin	gtceu:tin	gtceu:tin_ingot	gtceu:tin_dust		gtceu:tin_bucket
+51	Sb	Antimony	gtceu:antimony	gtceu:antimony_ingot	gtceu:antimony_dust		gtceu:antimony_bucket
+52	Te	Tellurium	gtceu:tellurium		gtceu:tellurium_dust		
+53	I	Iodine	gtceu:iodine		gtceu:iodine_dust		
+54	Xe	Xenon	gtceu:xenon				gtceu:xenon_bucket
+55	Cs	Caesium	gtceu:caesium		gtceu:caesium_dust		
+56	Ba	Barium	gtceu:barium		gtceu:barium_dust		
+57	La	Lanthanum	gtceu:lanthanum		gtceu:lanthanum_dust		gtceu:lanthanum_bucket
+58	Ce	Cerium	gtceu:cerium		gtceu:cerium_dust		gtceu:cerium_bucket
+59	Pr	Praseodymium	gtceu:praseodymium				
+60	Nd	Neodymium	gtceu:neodymium	gtceu:neodymium_ingot	gtceu:neodymium_dust		gtceu:neodymium_bucket
+61	Pm	Promethium	gtceu:promethium				
+62	Sm	Samarium	gtceu:samarium	gtceu:samarium_ingot	gtceu:samarium_dust		gtceu:samarium_bucket
+63	Eu	Europium	gtceu:europium	gtceu:europium_ingot	gtceu:europium_dust		gtceu:europium_bucket
+64	Gd	Gadolinium	gtceu:gadolinium				
+65	Tb	Terbium	gtceu:terbium				
+66	Dy	Dysprosium	gtceu:dysprosium				
+67	Ho	Holmium	gtceu:holmium				
+68	Er	Erbium	gtceu:erbium				
+69	Tm	Thulium	gtceu:thulium				
+70	Yb	Ytterbium	gtceu:ytterbium				
+71	Lu	Lutetium	gtceu:lutetium		gtceu:lutetium_dust		gtceu:lutetium_bucket
+72	Hf	Hafnium	gtceu:hafnium				
+73	Ta	Tantalum	gtceu:tantalum	gtceu:tantalum_ingot	gtceu:tantalum_dust		gtceu:tantalum_bucket
+74	W	Tungsten	gtceu:tungsten	gtceu:tungsten_ingot	gtceu:tungsten_dust		gtceu:tungsten_bucket
+75	Re	Rhenium	gtceu:rhenium				
+76	Os	Osmium	gtceu:osmium	gtceu:osmium_ingot	gtceu:osmium_dust		gtceu:osmium_bucket
+77	Ir	Iridium	gtceu:iridium	gtceu:iridium_ingot	gtceu:iridium_dust		gtceu:iridium_bucket
+78	Pt	Platinum	gtceu:platinum	gtceu:platinum_ingot	gtceu:platinum_dust		gtceu:platinum_bucket
+79	Au	Gold	gtceu:gold	minecraft:gold_ingot	gtceu:gold_dust		gtceu:gold_bucket
+80	Hg	Mercury	gtceu:mercury				gtceu:mercury_bucket
+81	Tl	Thallium	gtceu:thallium				
+82	Pb	Lead	gtceu:lead	gtceu:lead_ingot	gtceu:lead_dust		gtceu:lead_bucket
+83	Bi	Bismuth	gtceu:bismuth	gtceu:bismuth_ingot	gtceu:bismuth_dust		gtceu:bismuth_bucket
+84	Po	Polonium	gtceu:polonium				
+85	At	Astatine	gtceu:astatine				
+86	Rn	Radon	gtceu:radon				gtceu:radon_bucket
+87	Fr	Francium	gtceu:francium				
+88	Ra	Radium	gtceu:radium				
+89	Ac	Actinium	gtceu:actinium				
+90	Th	Thorium	gtceu:thorium	gtceu:thorium_ingot	gtceu:thorium_dust		gtceu:thorium_bucket
+91	Pa	Protactinium	gtceu:protactinium				
+92	U-238	Uranium-238	gtceu:uranium	gtceu:uranium_ingot	gtceu:uranium_dust		gtceu:uranium_bucket
+92	U-235	Uranium-235	gtceu:uranium_235	gtceu:uranium_235_ingot	gtceu:uranium_235_dust		gtceu:uranium_235_bucket
+93	Np	Neptunium	gtceu:neptunium				
+94	Pu-239	Plutonium-239	gtceu:plutonium	gtceu:plutonium_ingot	gtceu:plutonium_dust		gtceu:plutonium_bucket
+94	Pu-241	Plutonium-241	gtceu:plutonium_241	gtceu:plutonium_241_ingot	gtceu:plutonium_241_dust		gtceu:plutonium_241_bucket
+95	Am	Americium	gtceu:americium	gtceu:americium_ingot	gtceu:americium_dust		gtceu:americium_bucket
+96	Cm	Curium	gtceu:curium				
+97	Bk	Berkelium	gtceu:berkelium				
+98	Cf	Californium	gtceu:californium				
+99	Es	Einsteinium	gtceu:einsteinium				
+100	Fm	Fermium	gtceu:fermium				
+101	Md	Mendelevium	gtceu:mendelevium				
+102	No	Nobelium	gtceu:nobelium				
+103	Lr	Lawrencium	gtceu:lawrencium				
+104	Rf	Rutherfordium	gtceu:rutherfordium				
+105	Db	Dubnium	gtceu:dubnium				
+106	Sg	Seaborgium	gtceu:seaborgium				
+107	Bh	Bohrium	gtceu:bohrium				
+108	Hs	Hassium	gtceu:hassium				
+109	Mt	Meitnerium	gtceu:meitnerium				
+110	Ds	Darmstadtium	gtceu:darmstadtium	gtceu:darmstadtium_ingot	gtceu:darmstadtium_dust		gtceu:darmstadtium_bucket
+111	Rg	Roentgenium	gtceu:roentgenium				
+112	Cn	Copernicium	gtceu:copernicium				
+113	Nh	Nihonium	gtceu:nihonium				
+114	Fl	Flerovium	gtceu:flerovium				
+115	Mc	Moscovium	gtceu:moscovium				
+116	Lv	Livermorium	gtceu:livermorium				
+117	Ts	Tennessine	gtceu:tennessine				
+118	Og	Oganesson	gtceu:oganesson				
+119	Tr	Tritanium	gtceu:tritanium	gtceu:tritanium_ingot	gtceu:tritanium_dust		gtceu:tritanium_bucket
+120	Dr	Duranium	gtceu:duranium	gtceu:duranium_ingot	gtceu:duranium_dust		gtceu:duranium_bucket
+125	Ke	Trinium	gtceu:trinium	gtceu:trinium_ingot	gtceu:trinium_dust		gtceu:trinium_bucket
+174	Nq+	NaquadahEnriched	gtceu:enriched_naquadah	gtceu:enriched_naquadah_ingot	gtceu:enriched_naquadah_dust		gtceu:enriched_naquadah_bucket
+174	Nq	Naquadah	gtceu:naquadah	gtceu:naquadah_ingot	gtceu:naquadah_dust		gtceu:naquadah_bucket
+174	*Nq*	Naquadria	gtceu:naquadria	gtceu:naquadria_ingot	gtceu:naquadria_dust		gtceu:naquadria_bucket

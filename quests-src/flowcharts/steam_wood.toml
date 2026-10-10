@@ -1,0 +1,35 @@
+title = "Steam · Wood chemistry and lime"
+node = [
+  { id = "logs", kind = "material", label = "4 Logs" },
+  { id = "retort", kind = "machine", label = "Wood Retort", note = "self-heated · 30 s" },
+  { id = "charcoal", kind = "material", label = "3 Charcoal" },
+  { id = "cbp", kind = "material", label = "1,000 mB Charcoal<BR/>Byproducts" },
+  { id = "still1", kind = "machine", label = "Still", note = "ULV · circuit 1" },
+  { id = "vinegar", kind = "material", label = "400 mB<BR/>Wood Vinegar" },
+  { id = "tar", kind = "material", label = "250 mB<BR/>Wood Tar" },
+  { id = "gas", kind = "residue", label = "wood gas" },
+  { id = "still2", kind = "machine", label = "Still", note = "ULV · circuit 2" },
+  { id = "acetic", kind = "material", label = "100 mB Acetic Acid" },
+  { id = "methanol", kind = "material", label = "40 mB Methanol" },
+  { id = "water", kind = "material", label = "700 mB Water" },
+  { id = "still3", kind = "machine", label = "Still", note = "ULV · circuit 3" },
+  { id = "creosote", kind = "material", label = "400 mB Creosote" },
+  { id = "calcite", kind = "material", label = "4 Calcite Dust", area = "lime" },
+  { id = "fuel", kind = "material", label = "1 Charcoal / Coal", area = "lime" },
+  { id = "kiln", kind = "machine", label = "Lime Kiln", note = "~900 °C · 20 s", area = "lime" },
+  { id = "quicklime", kind = "material", label = "4 Quicklime", area = "lime" },
+  { id = "co2", kind = "residue", label = "CO₂", area = "lime" },
+  { id = "wi", kind = "material", label = "2 Wrought Iron", area = "steel" },
+  { id = "pbf", kind = "machine", label = "PBF", note = "fluxed · 50 s", area = "steel" },
+  { id = "steel", kind = "material", label = "2 Steel", area = "steel" },
+]
+area = [
+  { id = "lime", label = "Lime (CaCO₃ → CaO + CO₂)", colour = "teal" },
+  { id = "steel", label = "Fluxed steel", colour = "brown" },
+]
+edge = [
+  ["logs","retort"], ["retort","charcoal"], ["retort","cbp"], ["cbp","still1"], ["still1","vinegar"], ["still1","tar"], ["still1","gas"],
+  ["vinegar","still2"], ["still2","acetic"], ["still2","methanol"], ["still2","water"], ["tar","still3"], ["still3","creosote"],
+  ["calcite","kiln"], ["fuel","kiln"], ["kiln","quicklime"], ["kiln","co2"],
+  ["wi","pbf"], ["charcoal","pbf","2"], ["quicklime","pbf","1 (flux)"], ["pbf","steel"],
+]

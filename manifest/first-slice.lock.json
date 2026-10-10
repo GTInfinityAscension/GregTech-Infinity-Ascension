@@ -1,0 +1,183 @@
+{
+  "minecraft": "1.20.1",
+  "forge": "47.4.23",
+  "seeds": [
+    "gtceu",
+    "ldlib",
+    "gtna",
+    "gtia",
+    "ae2",
+    "guideme",
+    "emi",
+    "ftbquests",
+    "sophisticatedbackpacks",
+    "sophisticatedstorage",
+    "constructionwand",
+    "industrial_platform"
+  ],
+  "mods": [
+    {
+      "mod_id": "ae2",
+      "filename": "appliedenergistics2-forge-15.4.10.jar",
+      "sha256": "fbfee05c6674cb6b00fe425e945ca4818d41eb34069b60dcb4a36221a0390fcc",
+      "source": "curseforge",
+      "project_id": 223794,
+      "file_id": 7148487,
+      "requires": [
+        "guideme"
+      ]
+    },
+    {
+      "mod_id": "architectury",
+      "filename": "architectury-9.2.14-forge.jar",
+      "sha256": "218b471d0b8a1f6cda14cfc1beb9eeb0df54304500acc6c5613d9b88ec65d9af",
+      "source": "curseforge",
+      "project_id": 419699,
+      "file_id": 5137938,
+      "requires": []
+    },
+    {
+      "mod_id": "constructionwand",
+      "filename": "constructionwand-1.20.1-2.15.8.jar",
+      "sha256": "e76af629737eb6536e52b782c29e186ffdb43d59e5c0a19f730f30ec5e2644c1",
+      "source": "curseforge",
+      "project_id": 1382688,
+      "file_id": 8607591,
+      "requires": []
+    },
+    {
+      "mod_id": "emi",
+      "filename": "emi-1.1.20+1.20.1+forge.jar",
+      "sha256": "2a86fd87dae8545e9706c0d9d29d37be9faac8cfe07be58edb497fbdddb4e8db",
+      "source": "curseforge",
+      "project_id": 580555,
+      "file_id": 6205514,
+      "requires": []
+    },
+    {
+      "mod_id": "ftblibrary",
+      "filename": "ftb-library-forge-2001.2.13.jar",
+      "sha256": "41810281b65336265cae2c88412022d02f2f0a3f28c66a06173d86f98acf14a7",
+      "source": "curseforge",
+      "project_id": 404465,
+      "file_id": 8226927,
+      "requires": [
+        "architectury"
+      ]
+    },
+    {
+      "mod_id": "ftbquests",
+      "filename": "ftb-quests-forge-2001.4.22.jar",
+      "sha256": "9ea9d159a78a2724cfe0457b024680fdb52a2126eff9cfa5280a30578f647a68",
+      "source": "curseforge",
+      "project_id": 289412,
+      "file_id": 8078538,
+      "requires": [
+        "architectury",
+        "ftblibrary",
+        "ftbteams"
+      ]
+    },
+    {
+      "mod_id": "ftbteams",
+      "filename": "ftb-teams-forge-2001.3.2.jar",
+      "sha256": "b1cb4d82ea9f137a87e12a7aaf3329619294b56f7d70337dfd557a76e10b6e07",
+      "source": "curseforge",
+      "project_id": 404468,
+      "file_id": 7499810,
+      "requires": [
+        "architectury",
+        "ftblibrary"
+      ]
+    },
+    {
+      "mod_id": "gtceu",
+      "filename": "gtceu-1.20.1-7.5.3.jar",
+      "sha256": "d6560d8b695828a763389d3f45e0210ef70c1892c7b1633ac458544905df1a0d",
+      "source": "curseforge",
+      "project_id": 890405,
+      "file_id": 7917773,
+      "requires": [
+        "configuration",
+        "ldlib"
+      ]
+    },
+    {
+      "mod_id": "gtia",
+      "filename": "gtia-0.1.0.jar",
+      "sha256": "a613abe72fd029bc4967a32180c2777a9b05f1407cb7aa4231c227b871f7e96f",
+      "source": "local-build",
+      "path": "/home/raishxn/MineProjects/GregTech Infinity Ascension(GT:IA)/GTIACore/build/libs/gtia-0.1.0.jar",
+      "requires": []
+    },
+    {
+      "mod_id": "gtna",
+      "filename": "gtna-0.5.1.jar",
+      "sha256": "425d0581fbc55fe26c8b80d1bf687b496328e530cb32667566b6a984fbf3e591",
+      "source": "local-build",
+      "path": "/home/raishxn/MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.5.1.jar",
+      "requires": []
+    },
+    {
+      "mod_id": "guideme",
+      "filename": "guideme-20.1.15.jar",
+      "sha256": "cf8052ab3da121012efc59a20e731c24bfe7488dfa556c9b88809f42dea3b24a",
+      "source": "curseforge",
+      "project_id": 1173950,
+      "file_id": 8204776,
+      "requires": []
+    },
+    {
+      "mod_id": "industrial_platform",
+      "filename": "Industrial Platform-1.20.1-2.0.1.jar",
+      "sha256": "840a4c45b5f6100318be964f1c701aa36e217b6f85914b4eeecb431e459c1851",
+      "source": "curseforge",
+      "project_id": 1350900,
+      "file_id": 8979564,
+      "requires": []
+    },
+    {
+      "mod_id": "ldlib",
+      "filename": "ldlib-forge-1.20.1-1.0.52.a.jar",
+      "sha256": "a9b0827d264e0d15f90482de0d4783a28fc2dad9dfb477f344dc5e959168838d",
+      "source": "curseforge",
+      "project_id": 626676,
+      "file_id": 8830518,
+      "requires": []
+    },
+    {
+      "mod_id": "sophisticatedbackpacks",
+      "filename": "sophisticatedbackpacks-1.20.1-3.26.3.2167.jar",
+      "sha256": "93a96f85c7a626dc1ba28180707801f0e769805841ca49a86beebfeb9f9f6e5d",
+      "source": "curseforge",
+      "project_id": 422301,
+      "file_id": 8985926,
+      "requires": [
+        "sophisticatedcore"
+      ]
+    },
+    {
+      "mod_id": "sophisticatedcore",
+      "filename": "sophisticatedcore-1.20.1-1.5.2.2346.jar",
+      "sha256": "82e8cfaf8deb3e9e85097003e7ff59a21eb67bc3d06e0906f3f1e94c79e58d14",
+      "source": "curseforge",
+      "project_id": 618298,
+      "file_id": 8985880,
+      "requires": []
+    },
+    {
+      "mod_id": "sophisticatedstorage",
+      "filename": "sophisticatedstorage-1.20.1-1.5.0.2137.jar",
+      "sha256": "ec173f9b9510ff2b9b0d3fcccde810cb4ea5baaeb8ac5557c0b6fa879d7f4c55",
+      "source": "curseforge",
+      "project_id": 619320,
+      "file_id": 8985948,
+      "requires": [
+        "sophisticatedcore"
+      ]
+    }
+  ],
+  "unresolved_dependencies": [
+    "configuration"
+  ]
+}

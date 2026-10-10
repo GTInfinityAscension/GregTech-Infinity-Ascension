@@ -1,0 +1,63 @@
+# What the reachability check (tools/reach.py) assumes about the world and about machines that GregTech does not
+# describe by itself. Everything else comes from the full-pack export in manifest/registry/pack/
+# (`tools/server_smoke.py --export-recipes`).
+
+[world]
+# Dimensions the player can reach from the first day. Ores and bedrock fluids of these dimensions count as minable.
+# Other dimensions open when a quest the player has done has a dimension task for them.
+dimensions = ["minecraft:overworld", "minecraft:the_nether"]
+
+# Things gathered by hand: blocks, plants and mob drops. Glob patterns are allowed.
+items = [
+    "minecraft:*_log", "minecraft:*_sapling", "minecraft:*_leaves", "minecraft:bamboo",
+    "gtceu:rubber_log", "gtceu:rubber_sapling", "gtceu:rubber_leaves", "gtceu:sticky_resin",
+    "minecraft:dirt", "minecraft:grass_block", "minecraft:sand", "minecraft:red_sand", "minecraft:gravel",
+    "minecraft:flint", "minecraft:clay_ball", "minecraft:clay", "minecraft:stone", "minecraft:cobblestone",
+    "minecraft:deepslate", "minecraft:cobbled_deepslate", "minecraft:andesite", "minecraft:diorite",
+    "minecraft:granite", "minecraft:tuff", "minecraft:calcite", "minecraft:sandstone", "minecraft:ice",
+    "minecraft:snowball", "minecraft:obsidian", "minecraft:sugar_cane", "minecraft:wheat_seeds", "minecraft:wheat",
+    "minecraft:apple", "minecraft:pumpkin", "minecraft:melon_slice", "minecraft:cactus", "minecraft:kelp",
+    "minecraft:carrot", "minecraft:potato", "minecraft:beetroot", "minecraft:brown_mushroom", "minecraft:red_mushroom",
+    "minecraft:*_flower*", "minecraft:dandelion", "minecraft:poppy", "minecraft:vine", "minecraft:lily_pad",
+    "minecraft:bone", "minecraft:string", "minecraft:rotten_flesh", "minecraft:gunpowder", "minecraft:spider_eye",
+    "minecraft:ender_pearl", "minecraft:leather", "minecraft:feather", "minecraft:egg", "minecraft:white_wool",
+    "minecraft:ink_sac", "minecraft:slime_ball", "minecraft:beef", "minecraft:porkchop", "minecraft:chicken",
+    "minecraft:mutton", "minecraft:cod", "minecraft:salmon",
+    # the Nether, open from the start (see dimensions)
+    "minecraft:netherrack", "minecraft:soul_sand", "minecraft:soul_soil", "minecraft:basalt", "minecraft:blackstone",
+    "minecraft:quartz", "minecraft:glowstone_dust", "minecraft:nether_wart", "minecraft:blaze_rod",
+    "minecraft:magma_cream", "minecraft:ghast_tear", "minecraft:gold_nugget",
+    # AE2 meteorites fall in the Overworld: sky stone, certus quartz and the four inscriber presses come from them
+    "ae2:sky_stone_block", "ae2:certus_quartz_crystal", "ae2:calculation_processor_press",
+    "ae2:engineering_processor_press", "ae2:logic_processor_press", "ae2:silicon_press",
+]
+
+fluids = ["minecraft:water", "minecraft:lava", "minecraft:milk"]
+
+# Recipe types that no GregTech machine runs. The value lists the block that runs them; [] means the player does
+# it by hand. Types missing here are treated as unavailable, so their products have to come from somewhere else.
+[types]
+"minecraft:crafting" = []
+"minecraft:smelting" = ["minecraft:furnace"]
+"minecraft:blasting" = ["minecraft:blast_furnace"]
+"minecraft:smoking" = ["minecraft:smoker"]
+"minecraft:campfire_cooking" = ["minecraft:campfire"]
+"minecraft:stonecutting" = ["minecraft:stonecutter"]
+"minecraft:smithing" = ["minecraft:smithing_table"]
+"ae2:inscriber" = ["ae2:inscriber"]
+"ae2:charger" = ["ae2:charger"]
+"ae2:transform" = []
+"ae2:entropy" = ["ae2:entropy_manipulator"]
+
+# The voltage tier a multiblock generator can feed (0 ULV, 1 LV, 2 MV, 3 HV, 4 EV ...). Its real output depends on
+# the dynamo hatch; this is the tier the check assumes once the player has built it.
+[generators]
+"gtceu:steam_large_turbine" = 3
+"gtceu:large_combustion_engine" = 4
+"gtceu:gas_large_turbine" = 4
+"gtceu:extreme_combustion_engine" = 5
+"gtceu:plasma_large_turbine" = 6
+"gtna:generator_array" = 1
+"gtna:rocket_large_turbine" = 5
+"gtna:supercritical_steam_turbine" = 6
+"gtna:annihilate_generator" = 13

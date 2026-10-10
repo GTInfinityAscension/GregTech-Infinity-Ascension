@@ -1,0 +1,14 @@
+GregTech Infinity Ascension (GTIA) modpack
+Copyright (c) 2026 Raishxn
+
+Unless stated otherwise, the original content of this repository (pack structure, configuration,
+scripts, tools, original textures and translations) is licensed under the
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).
+Full legal text: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+Exceptions:
+- Quest texts (titles, subtitles and descriptions in config/ftbquests and quests-src) are
+  all rights reserved unless a file states otherwise.
+- GTIACore source code is licensed under the GNU LGPL v3.0 in its own repository.
+- Third-party mods and assets keep their original licenses; see THIRD_PARTY_LICENSES.md.
+  No third-party mod jars are distributed in this repository.

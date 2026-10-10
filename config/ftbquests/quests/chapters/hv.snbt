@@ -1,0 +1,375 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "hv"
+	group: "461BAA0C86EE43B3"
+	icon: "gtceu:hv_machine_hull"
+	id: "659C90D9A3BDD2CF"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"65075BFD98BEAF73"
+			]
+			description: [
+				"High Voltage opens chemistry: distillation, cracking, plastics and the Cleanroom. Nichrome and Titanium raise your furnace ceiling."
+			]
+			icon: "gtceu:hv_machine_hull"
+			id: "31AF3AD2C78D4901"
+			rewards: [ ]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Ascension IV"
+			tasks: [
+				{
+					id: "7B3D6712D2109510"
+					type: "checkmark"
+					title: "Begin"
+				}
+			]
+			title: "High Voltage Age"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"497B83134062A1F3"
+			]
+			description: [
+				"The HV Machine Hull opens the High Voltage tier. It takes Stainless Steel, so make sure the alloy is ready."
+			]
+			id: "3C0DB20D56EB8270"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "The frame of High Voltage."
+			tasks: [
+				{
+					id: "2EFB5D71FEEFC8AA"
+					type: "item"
+					item: "gtceu:hv_machine_hull"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "High Voltage Age"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"3C0DB20D56EB8270"
+			]
+			description: [
+				"Nichrome makes the hottest coil in the tier. Smelting it needs a Kanthal-coil furnace at 2700 K."
+			]
+			id: "379EBF258F06316C"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Raises the furnace ceiling."
+			tasks: [
+				{
+					id: "70E4D403B2667AD2"
+					type: "item"
+					item: "gtceu:nichrome_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Nichrome Smelting"
+			x: 0.0d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"379EBF258F06316C"
+			]
+			description: [
+				"Titanium is a strong and light metal. Hot ingots from the blast furnace cool in the Vacuum Freezer."
+			]
+			id: "46339E36EDB132E0"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "A strong, light metal."
+			tasks: [
+				{
+					id: "636E6513B89580B1"
+					type: "item"
+					item: "gtceu:titanium_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Titanium Smelting"
+			x: 0.0d
+			y: 6.75d
+		}
+		{
+			dependencies: [
+				"3C0DB20D56EB8270"
+				"46339E36EDB132E0"
+			]
+			description: [
+				"The Large Chemical Reactor runs chemical recipes at scale with several inputs at once."
+			]
+			id: "2545B343E0DF5445"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Chemistry in parallel."
+			tasks: [
+				{
+					id: "39DC61DF3F47E9E2"
+					type: "item"
+					item: "gtceu:large_chemical_reactor"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Large Chemical Reactor"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"2545B343E0DF5445"
+			]
+			description: [
+				"PTFE is a chemically inert plastic. Making it takes a Large Chemical Reactor."
+			]
+			id: "727416056B57EA7C"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "A chemically inert plastic."
+			tasks: [
+				{
+					id: "3C8B66E8281BF61F"
+					type: "item"
+					item: "gtceu:polytetrafluoroethylene_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "PTFE"
+			x: 0.0d
+			y: 11.25d
+		}
+		{
+			dependencies: [
+				"727416056B57EA7C"
+			]
+			description: [
+				"Circuits above the first tiers need a clean room: a sealed room with filtered air."
+			]
+			id: "5E25EA51925C4682"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "A sealed room with filtered air."
+			tasks: [
+				{
+					id: "24C9677E2807A43E"
+					type: "item"
+					item: "gtceu:cleanroom"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Cleanroom"
+			x: 0.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"5E25EA51925C4682"
+			]
+			description: [
+				"Plastic Circuit Boards are the base of the advanced circuits made in the Cleanroom."
+			]
+			id: "36DE714133912594"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "The base of advanced circuits."
+			tasks: [
+				{
+					id: "3316FB3E6619D3C8"
+					type: "item"
+					item: "gtceu:plastic_circuit_board"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Plastic Circuit Board"
+			x: 0.0d
+			y: 15.75d
+		}
+		{
+			dependencies: [
+				"3C0DB20D56EB8270"
+			]
+			description: [
+				"The Implosion Compressor uses explosives to compress gems into hard materials such as industrial diamonds."
+			]
+			id: "6C0348FBC31BB542"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Explosives turn gems into hard materials."
+			tasks: [
+				{
+					id: "5ADBB5AFC6ECFE92"
+					type: "item"
+					item: "gtceu:implosion_compressor"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Implosion Compressor"
+			x: 3.0d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"46339E36EDB132E0"
+			]
+			description: [
+				"The Vacuum Freezer cools the hot ingots that come out of the blast furnace into their normal form."
+			]
+			id: "365628E1E05E7D94"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Cools hot ingots."
+			tasks: [
+				{
+					id: "58A3AF3706DC7D52"
+					type: "item"
+					item: "gtceu:vacuum_freezer"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Vacuum Freezer"
+			x: 3.0d
+			y: 6.75d
+		}
+		{
+			dependencies: [
+				"3C0DB20D56EB8270"
+				"365628E1E05E7D94"
+			]
+			description: [
+				"The Distillation Tower splits fluids such as oil into their fractions."
+			]
+			id: "01791559C6DE08D7"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Splits fluids into fractions."
+			tasks: [
+				{
+					id: "332F7DFBE5485853"
+					type: "item"
+					item: "gtceu:distillation_tower"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Distillation Tower"
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"01791559C6DE08D7"
+			]
+			description: [
+				"The Cracker breaks long hydrocarbons into lighter ones using hydrogen or steam."
+			]
+			id: "165BAE6D86A18898"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Breaks long hydrocarbons into lighter ones."
+			tasks: [
+				{
+					id: "5734EAAF7745D8DF"
+					type: "item"
+					item: "gtceu:cracker"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Cracker"
+			x: 3.0d
+			y: 11.25d
+		}
+		{
+			dependencies: [
+				"46339E36EDB132E0"
+			]
+			description: [
+				"The Tier 1 Rocket, from Ad Astra, takes you to the Moon."
+			]
+			id: "6B40384D9C2E71AD"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "The first step off the planet."
+			tasks: [
+				{
+					id: "4F8DF5ADBFBA247A"
+					type: "item"
+					item: "ad_astra:tier_1_rocket"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Rocket Tier 1"
+			x: 4.5d
+			y: 6.75d
+		}
+		{
+			dependencies: [
+				"36DE714133912594"
+			]
+			description: [
+				"You have reached the end of the chapters written so far. Extreme Voltage, space and the larger machines come next."
+			]
+			icon: "gtceu:hv_machine_hull"
+			id: "64DD2F37D28FCFCC"
+			rewards: [ ]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "More tiers are on their way."
+			tasks: [
+				{
+					id: "189AA813FD3D73D3"
+					type: "checkmark"
+					title: "Ascend"
+				}
+			]
+			title: "The Road Ahead"
+			x: 0.0d
+			y: 18.75d
+		}
+	]
+	title: "High Voltage Age"
+}

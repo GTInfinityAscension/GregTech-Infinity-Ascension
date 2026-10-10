@@ -1,0 +1,2376 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "steam"
+	group: "461BAA0C86EE43B3"
+	icon: "gtceu:lp_steam_solid_boiler"
+	id: "3C14547D33CC8C24"
+	order_index: 1
+	quest_links: [
+		{
+			id: "41A9D9FCB5DBCB04"
+			linked_quest: "5122FC31C1635F38"
+			shape: "gear"
+			size: 1.5d
+			x: 6.5d
+			y: 9.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: [
+				"64D91166C361698D"
+			]
+			description: [
+				"&6Bronze&r and &6Coke&r got you here. Now water becomes steam, and steam drives your first machines."
+				""
+				"Each quest asks for one thing, and each branch starts from what it is made of. The road runs left to right to &6Steel&r and the first circuit. Gears are the stops that matter; diamonds are optional."
+			]
+			icon: "gtceu:lp_steam_solid_boiler"
+			id: "777C50D80E2DDE50"
+			rewards: [ ]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Ascension I"
+			tasks: [
+				{
+					id: "4E24CAD891AE926A"
+					type: "checkmark"
+					title: "Begin"
+				}
+			]
+			title: "Steam Age"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"777C50D80E2DDE50"
+			]
+			description: [
+				"You already carry &6Bronze&r from Start, so this completes as soon as you open the chapter. Everything in this tier grows from it."
+			]
+			id: "20D6FC1CBD24554B"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Where the Steam age begins."
+			tasks: [
+				{
+					id: "6E89A2C500EDDB17"
+					type: "item"
+					item: "gtceu:bronze_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Bronze Age"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"777C50D80E2DDE50"
+			]
+			description: [
+				"- Every steam machine has an &dexhaust&r. &cKeep the block in front of it empty&r, or the machine stops after one operation."
+				"- Low-pressure machines take &etwice as long&r as high-pressure ones. High pressure needs &6Steel&r."
+				"- A steam machine refuses any recipe above &e32 EU/t&r (Low Voltage). Those recipes wait for electricity."
+			]
+			icon: "gtceu:steam_machine_casing"
+			id: "044777D8A6ACACE5"
+			optional: true
+			rewards: [ ]
+			shape: "pentagon"
+			size: 1.25d
+			subtitle: "Three rules worth knowing first."
+			tasks: [
+				{
+					id: "548F2E3B58E368AD"
+					type: "checkmark"
+					title: "Understood"
+				}
+			]
+			title: "How Steam Machines Work"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"20D6FC1CBD24554B"
+			]
+			description: [
+				"&eFive&r &6Bronze Plates&r around a &6Furnace&r, over &etwo&r &6Brick&r blocks, turned with a wrench. Give it &6Water&r, burn &6Coal&r or &6Coke&r, and it fills with &6Steam&r."
+				""
+				"&cIf it runs dry while hot, let it cool before adding water: water poured into a hot, empty boiler makes it explode.&r"
+			]
+			icon: "gtceu:lp_steam_solid_boiler"
+			id: "10F6BF82785B0F48"
+			rewards: [
+				{
+					count: 2
+					id: "159CB08FEFCEA66F"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Five plates around a furnace."
+			tasks: [
+				{
+					id: "30B36EC8339D57D3"
+					type: "item"
+					item: "gtceu:lp_steam_solid_boiler"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Boil Water"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"10F6BF82785B0F48"
+			]
+			description: [
+				"A furnace that runs on the steam you already make, so your &6Coal&r goes to the boiler only."
+			]
+			icon: "gtceu:lp_steam_furnace"
+			id: "309831FDDA2D16A3"
+			optional: true
+			rewards: [ ]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Smelting without fuel."
+			tasks: [
+				{
+					id: "23025C3881EA2438"
+					type: "item"
+					item: "gtceu:lp_steam_furnace"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Steam Furnace"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"10F6BF82785B0F48"
+			]
+			description: [
+				"A boiler drinks a lot. The &6Primitive Pump&r draws &6Water&r from the world into its &6Pump Hatch&r; pipe it to your boilers. It is built from &6Treated Wood&r, so your Creosote finally has a use."
+				""
+				"&o&7It does not have to stand in water.&r"
+			]
+			icon: "gtceu:primitive_pump"
+			id: "0D4E8CC3245E6800"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Water without buckets."
+			tasks: [
+				{
+					id: "26FD4519F93747F8"
+					type: "item"
+					item: "gtceu:primitive_pump"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "73D174B9C1C1494C"
+					type: "item"
+					item: "gtceu:pump_hatch"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Primitive Pump"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"0D4E8CC3245E6800"
+			]
+			description: [
+				"- &6Solid Boiler&r: Coal, Coke, Charcoal. Its Steel version makes more steam."
+				"- &6Liquid Boiler&r: burns Creosote and lava. Needs &6Glass&r."
+				"- &6Solar Boiler&r: &ano fuel at all&r, &cnothing at night&r. Needs &6Glass&r."
+				"- &6Large Bronze Boiler&r: a multiblock, once you have circuits."
+				""
+				"&aThe Power Generation chapter puts them side by side.&r"
+			]
+			icon: "gtceu:lp_steam_solar_boiler"
+			id: "0FF5E90023F5FCFD"
+			optional: true
+			rewards: [ ]
+			shape: "pentagon"
+			size: 1.25d
+			subtitle: "Pick by the fuel you have."
+			tasks: [
+				{
+					id: "651F41F50E567053"
+					type: "checkmark"
+					title: "Understood"
+				}
+			]
+			title: "More Ways to Make Steam"
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"10F6BF82785B0F48"
+			]
+			description: [
+				"&eTwo&r &6Furnaces&r and a &6Bronze Brick Casing&r in a ring of small bronze pipes. It melts two ingredients into one, and with a &dmold&r it casts glass and rubber."
+			]
+			icon: "gtceu:lp_steam_alloy_smelter"
+			id: "520AD237AC3B724D"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Two inputs, one new metal."
+			tasks: [
+				{
+					id: "7F031FA0987826F9"
+					type: "item"
+					item: "gtceu:lp_steam_alloy_smelter"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Alloy Smelter"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"520AD237AC3B724D"
+			]
+			description: [
+				"&6Copper&r and &efour&r &6Redstone&r in the Alloy Smelter make &6Red Alloy&r, the conductor of the Ultra Low Voltage tier."
+			]
+			icon: "gtceu:red_alloy_ingot"
+			id: "130B22C46670AED8"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Copper and redstone."
+			tasks: [
+				{
+					id: "5A57A385162A5197"
+					type: "item"
+					item: "gtceu:red_alloy_ingot"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Red Alloy"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"130B22C46670AED8"
+			]
+			description: [
+				"Hammer &6Red Alloy&r into a plate and cut it with the &6Wire Cutter&r. With rubber, after Steel, it becomes a cable."
+			]
+			icon: "gtceu:red_alloy_single_wire"
+			id: "25B8076FDC395763"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Plate and wire cutter."
+			tasks: [
+				{
+					id: "3831FEB630E85901"
+					type: "item"
+					item: "gtceu:red_alloy_single_wire"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Red Alloy Wire"
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"61C301395A3CD5BF"
+			]
+			description: [
+				"&6Phase Matrix&r deposits sit in the stone of the Overworld between &eY 40 and 60&r, marked by indicators on the surface. Your Prospector finds them too."
+			]
+			icon: "gtia:raw_phase_matrix"
+			id: "30EDF167593F2578"
+			hide_dependency_lines: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Infinity Ascension's own ore."
+			tasks: [
+				{
+					id: "2B28B17BC6ADC024"
+					type: "item"
+					item: "gtia:raw_phase_matrix"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Phase Matrix"
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"30EDF167593F2578"
+			]
+			description: [
+				"The &6Macerator&r crushes the raw matrix; crush the result again for &6Impure Phase Matrix Dust&r. A hand hammer does the second step too."
+				""
+				"&o&7The recipe viewer shows how much each step yields.&r"
+			]
+			icon: "gtia:impure_phase_matrix_dust"
+			id: "363987BE26B78FE4"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Crushed, then crushed again."
+			tasks: [
+				{
+					id: "0B5E4337D997D536"
+					type: "item"
+					item: "gtia:crushed_phase_matrix_ore"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "0BDC8CCBF312B1D3"
+					type: "item"
+					item: "gtia:impure_phase_matrix_dust"
+					count: 2L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Impure Phase Dust"
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"363987BE26B78FE4"
+			]
+			description: [
+				"&eOne&r &6Iron Ingot&r and &eone&r &6Impure Phase Matrix Dust&r in the Alloy Smelter make one &6Pulsating Alloy&r."
+				""
+				"&o&7An Ender Pearl in place of the dust works too.&r"
+			]
+			icon: "gtia:pulsating_alloy_ingot"
+			id: "0E0958673BA3B92E"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Iron plus phase."
+			tasks: [
+				{
+					id: "5ED4C6B197A5C90C"
+					type: "item"
+					item: "gtia:pulsating_alloy_ingot"
+					count: 2L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Pulsating Alloy"
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"0E0958673BA3B92E"
+				"130B22C46670AED8"
+			]
+			description: [
+				"&6Red Alloy&r and &6Pulsating Alloy&r smelt into &etwo&r &6Conductive Alloy&r. Its wire carries Ultra Low Voltage at &e4 amps&r with &ano loss over distance&r."
+			]
+			icon: "gtia:conductive_alloy_ingot"
+			id: "236448436A2E4C33"
+			optional: true
+			rewards: [ ]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "A wire that loses nothing."
+			tasks: [
+				{
+					id: "456EFFD0591C5068"
+					type: "item"
+					item: "gtia:conductive_alloy_ingot"
+					count: 2L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Conductive Alloy"
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"520AD237AC3B724D"
+			]
+			description: [
+				"The Compressor takes &etwo&r &6Pistons&r, the Macerator &etwo&r, the Forge Hammer &eone&r. Iron works; Bronze and Steel are alternatives for the metal in the middle."
+			]
+			icon: "minecraft:piston"
+			id: "3565931FCE2A770E"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Every steam machine that moves."
+			tasks: [
+				{
+					id: "247DB674355112EC"
+					type: "item"
+					item: "minecraft:piston"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Pistons"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3565931FCE2A770E"
+			]
+			description: [
+				"&eTwo&r &6Pistons&r and &etwo&r &6Diamonds&r. It grinds ore, bricks, clay and wood into dust without wearing out your mortar, and it is the first step of the &6Phase Matrix&r."
+			]
+			icon: "gtceu:lp_steam_macerator"
+			id: "61C301395A3CD5BF"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Two diamonds well spent."
+			tasks: [
+				{
+					id: "110372353CE4E33E"
+					type: "item"
+					item: "gtceu:lp_steam_macerator"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Macerator"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"61C301395A3CD5BF"
+			]
+			description: [
+				"Your &6Macerator&r, &etwo&r &6Potin Gears&r and &6Steam Machine Casings&r (&esix&r Bronze Plates around a Brick make two) form the &6Steam Grinder&r. It processes &dseveral items at once&r."
+				""
+				"&o&7Its preview in the recipe viewer gives the casing count.&r"
+			]
+			icon: "gtceu:steam_grinder"
+			id: "45ABA36DDF417F2D"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "A macerator grown into a multiblock."
+			tasks: [
+				{
+					id: "4B617FB3969A73C4"
+					type: "item"
+					item: "gtceu:steam_machine_casing"
+					count: 8L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "3A75BC858A92915F"
+					type: "item"
+					item: "gtceu:potin_gear"
+					count: 2L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "71A8087D5CA33A1C"
+					type: "item"
+					item: "gtceu:steam_grinder"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Steam Grinder"
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"61C301395A3CD5BF"
+			]
+			description: [
+				"&eTwo&r &6Pistons&r and a &6Bronze Machine Casing&r. It presses dust into plates, &6Fireclay&r into raw bricks and &enine&r &6Iron Ingots&r into an &6Iron Block&r."
+			]
+			icon: "gtceu:lp_steam_compressor"
+			id: "4717128674ADBA89"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Squeeze dust into shape."
+			tasks: [
+				{
+					id: "3DA52947FCA03D5F"
+					type: "item"
+					item: "gtceu:lp_steam_compressor"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Compressor"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4717128674ADBA89"
+			]
+			description: [
+				"&cNine ingots on a crafting table do not make an Iron Block in this pack.&r The Compressor does."
+			]
+			icon: "minecraft:iron_block"
+			id: "012E53ECB697D9F3"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Only the Compressor makes them."
+			tasks: [
+				{
+					id: "69C6823E76B7C2DD"
+					type: "item"
+					item: "minecraft:iron_block"
+					count: 5L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Iron Blocks"
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"012E53ECB697D9F3"
+			]
+			description: [
+				"&eFive&r &6Iron Blocks&r, &6Iron Screws&r and &6Iron Plates&r. The Forge Hammer is built around it."
+			]
+			icon: "minecraft:anvil"
+			id: "69D73C20940013E3"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Five blocks, screws and plates."
+			tasks: [
+				{
+					id: "4D10B3B9027AADB8"
+					type: "item"
+					item: "minecraft:anvil"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Anvil"
+			x: 12.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"69D73C20940013E3"
+			]
+			description: [
+				"An &6Anvil&r and a &6Piston&r in bronze pipes. &eThree&r ingots become &etwo&r plates, where the hand hammer needs two ingots for one. It crushes ore too."
+			]
+			icon: "gtceu:lp_steam_forge_hammer"
+			id: "0BE3526B1728A13F"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Three ingots, two plates."
+			tasks: [
+				{
+					id: "5EA3B4979C4A23E6"
+					type: "item"
+					item: "gtceu:lp_steam_forge_hammer"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Forge Hammer"
+			x: 14.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"0BE3526B1728A13F"
+			]
+			description: [
+				"&eEight&r &6Wrought Iron Plates&r make an &6Ultra Low Voltage Machine Casing&r, later in this chapter."
+			]
+			icon: "gtceu:wrought_iron_plate"
+			id: "2E1B5CB58E08EB29"
+			hide_dependency_lines: true
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The first job for the hammer."
+			tasks: [
+				{
+					id: "1753C7868930099B"
+					type: "item"
+					item: "gtceu:wrought_iron_plate"
+					count: 8L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Wrought Iron Plates"
+			x: 5.5d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"4717128674ADBA89"
+			]
+			description: [
+				"Grind &6Bricks&r and &6Clay&r into dust, with the mortar or the Macerator, and mix one of each into &etwo&r &6Fireclay Dust&r."
+			]
+			icon: "gtceu:fireclay_dust"
+			id: "63D808F9077FA81E"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Brick dust and clay dust."
+			tasks: [
+				{
+					id: "2994C7DC882302E8"
+					type: "item"
+					item: "gtceu:fireclay_dust"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Fireclay"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"63D808F9077FA81E"
+			]
+			description: [
+				"Compress &6Fireclay Dust&r, bake it in a furnace into a &6Firebrick&r, and set &efour&r Firebricks into one &6Firebricks&r block."
+				""
+				"&aOpen the blast furnace's multiblock preview for the exact count before you start baking.&r"
+			]
+			icon: "gtceu:firebricks"
+			id: "7DA696110A273CA4"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Compress, bake, stack."
+			tasks: [
+				{
+					id: "751294BA590CF88E"
+					type: "item"
+					item: "gtceu:compressed_fireclay"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "3F06A58AEFFFCA4F"
+					type: "item"
+					item: "gtceu:firebricks"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Firebricks"
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7DA696110A273CA4"
+			]
+			description: [
+				"Build the furnace around its controller. It turns &6Iron&r and fuel into &6Steel&r without any steam at all, slowly."
+				""
+				"&aWrought Iron is much faster than plain Iron:&r with Coke, a Steel ingot takes &e600 ticks&r from Wrought Iron and &e1500&r from Iron."
+			]
+			icon: "gtceu:primitive_blast_furnace"
+			id: "3713CBE1F33AC0E6"
+			rewards: [
+				{
+					count: 8
+					id: "2D7E8274844F2C94"
+					item: "minecraft:coal_block"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Your first furnace for Steel."
+			tasks: [
+				{
+					id: "1E3CD22F00A3C11E"
+					type: "item"
+					item: "gtceu:primitive_blast_furnace"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Primitive Blast Furnace"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3713CBE1F33AC0E6"
+			]
+			description: [
+				"Your first &6Steel&r ingot. From here on Steel is in nearly everything: molds, bolts, high-pressure machines, GTNA's large steam machines and the first circuit."
+			]
+			id: "707CBC0C69EAFA06"
+			rewards: [
+				{
+					id: "55C6847333F1050C"
+					table_id: 6543659668337715852L
+					type: "choice"
+				}
+			]
+			shape: "gear"
+			size: 2.25d
+			subtitle: "The metal of the rest of the game."
+			tasks: [
+				{
+					id: "7B6F9EDE689EEE20"
+					type: "item"
+					item: "gtceu:steel_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Steel"
+			x: 20.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"707CBC0C69EAFA06"
+			]
+			description: [
+				"With &6Steel&r you can build the high-pressure boiler and high-pressure versions of every steam machine. They finish recipes in &ehalf the time&r and burn more steam doing it."
+			]
+			icon: "gtceu:hp_steam_solid_boiler"
+			id: "237E6A27D526CE57"
+			optional: true
+			rewards: [ ]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Steel boilers, faster machines."
+			tasks: [
+				{
+					id: "18965FDFAA9B3553"
+					type: "item"
+					item: "gtceu:hp_steam_solid_boiler"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "High Pressure"
+			x: 20.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"707CBC0C69EAFA06"
+			]
+			description: [
+				"&6Bronze&r and &6Steel&r in the Alloy Smelter make &6Stronze&r, the metal of GTNA's large steam machines."
+			]
+			icon: "gtna:stronze_ingot"
+			id: "53C413FEC2C1001C"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Bronze and Steel together."
+			tasks: [
+				{
+					id: "51337E0FD2548719"
+					type: "item"
+					item: "gtna:stronze_ingot"
+					count: 3L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Stronze"
+			x: 23.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"53C413FEC2C1001C"
+			]
+			description: [
+				"Bronze gears, rods and springs around &eone&r small &6Steel Spring&r. Every Large steam controller of GTNA takes one or more; the Leap Forward furnace takes &efour&r."
+			]
+			icon: "gtna:precision_steam_component"
+			id: "0C9BA2223F3D4D33"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Every Large machine needs it."
+			tasks: [
+				{
+					id: "4BFB45EC29F90612"
+					type: "item"
+					item: "gtna:precision_steam_component"
+					count: 2L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Precision Steam Component"
+			x: 25.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"707CBC0C69EAFA06"
+			]
+			description: [
+				"&eTwo&r &6Bronze Dust&r and &eone&r &6Steel Dust&r on a crafting table make &ethree&r &6Breel Dust&r; a furnace turns it into ingots. Its tiny pipes go into several Large steam machines."
+			]
+			icon: "gtna:breel_ingot"
+			id: "00BBCDAF61B4507A"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Bronze and Steel, mixed by hand."
+			tasks: [
+				{
+					id: "7529FA8CE68C8B5C"
+					type: "item"
+					item: "gtna:breel_dust"
+					count: 3L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "2DD458531B0A12F8"
+					type: "item"
+					item: "gtna:breel_ingot"
+					count: 3L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Breel"
+			x: 23.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7DA696110A273CA4"
+			]
+			description: [
+				"Wrought Iron rods, screws and a double plate around a &6Coke Oven Hatch&r. The structure is &6Firebricks&r, Bricks and Stone Bricks; check its preview."
+				""
+				"It fires bricks from compressed clay and coal without any steam, and it is where &6Clay Compound&r comes from."
+			]
+			icon: "gtna:brick_kiln"
+			id: "2859530E8F91C14C"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "A primitive kiln for ceramics."
+			tasks: [
+				{
+					id: "5D6FDEA726754478"
+					type: "item"
+					item: "gtna:brick_kiln"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Brick Kiln"
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2859530E8F91C14C"
+			]
+			description: [
+				"&eEight&r each of &6Clay Dust&r, &6Stone Dust&r (from the Macerator) and &6Flint Dust&r in the Brick Kiln make &esixteen&r &6Clay Compound&r ingots. Hammer them into plates and gears for hydraulic parts."
+			]
+			icon: "gtna:clay_compound_ingot"
+			id: "124C8D9FDCCC00E1"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Clay, stone and flint, fired."
+			tasks: [
+				{
+					id: "0E3DE5CABB9763C5"
+					type: "item"
+					item: "gtna:clay_compound_ingot"
+					count: 16L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Clay Compound"
+			x: 18.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"124C8D9FDCCC00E1"
+			]
+			description: [
+				"A &6Hydraulic Motor&r is bronze gears and tiny pipes around an iron rotor. Add &ethree&r &6Clay Compound Plates&r and it becomes a &6Hydraulic Piston&r, the moving part of GTNA's Large steam machines."
+			]
+			icon: "gtna:hydraulic_piston"
+			id: "60E0845A289BE078"
+			hide_dependency_lines: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Clay Compound in motion."
+			tasks: [
+				{
+					id: "6CFA4C533E877E7D"
+					type: "item"
+					item: "gtna:hydraulic_motor"
+					count: 2L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "1F7E4BAC7380A914"
+					type: "item"
+					item: "gtna:hydraulic_piston"
+					count: 2L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Hydraulic Piston"
+			x: 22.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"60E0845A289BE078"
+				"52E07B2FAD21E496"
+			]
+			description: [
+				"A belt of &6Rubber&r driven by a &6Hydraulic Motor&r. Four Large machines move their work with it: the Alloy Smelter, the Wiremill, the Cutter and the Bender."
+			]
+			id: "13E1320EF38F3A65"
+			hide_dependency_lines: true
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Rubber belts, steam muscles."
+			tasks: [
+				{
+					id: "6A9D6258ECFC003B"
+					type: "item"
+					item: "gtna:hydraulic_conveyor"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Hydraulic Conveyor"
+			x: 25.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"0C9BA2223F3D4D33"
+				"60E0845A289BE078"
+				"00BBCDAF61B4507A"
+			]
+			description: [
+				"Every Large steam machine GTNA makes possible in this age, in one place. Each is the multiblock version of a machine you already know and runs its recipes &din parallel&r, up to &e32 EU/t&r."
+				""
+				"They all start from a &6Precision Steam Component&r; several need &6Hydraulic Pistons&r (Clay Compound from the Brick Kiln) or &6Breel&r pipes. &o&7Build the ones your factory is short of; none of them is required.&r"
+			]
+			icon: "gtna:precision_steam_component"
+			id: "10043917A6960AA3"
+			optional: true
+			rewards: [ ]
+			shape: "pentagon"
+			size: 1.25d
+			subtitle: "GTNA's Large machines, side by side."
+			tasks: [
+				{
+					id: "77AECE0EDA4AD9BB"
+					type: "checkmark"
+					title: "Open the gallery"
+				}
+			]
+			title: "Steam Multiblocks"
+			x: 25.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"10043917A6960AA3"
+				"45ABA36DDF417F2D"
+			]
+			description: [
+				"Crushes ore in parallel. Four Steam Grinders, Stronze Plates and a Precision Steam Component. It opens GTNA's Large steam line."
+			]
+			id: "6961142793AE9F7B"
+			hide_dependency_lines: true
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Four grinders in one machine."
+			tasks: [
+				{
+					id: "50174B354ABAC2E7"
+					type: "item"
+					item: "gtna:large_steam_crusher"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Large Steam Machines"
+			x: 28.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"10043917A6960AA3"
+				"13E1320EF38F3A65"
+			]
+			description: [
+				"Alloys in parallel. Its &6Hydraulic Conveyor&r needs Rubber Sheets."
+			]
+			icon: "gtna:large_steam_alloy_smelter"
+			id: "6CD0424A8F315036"
+			hide_dependency_lines: true
+			optional: true
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Alloy Smelter, multiblock."
+			tasks: [
+				{
+					id: "3B65AE44F6BC0F89"
+					type: "item"
+					item: "gtna:large_steam_alloy_smelter"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Large Steam Alloy Smelter"
+			x: 29.6d
+			y: 3.3d
+		}
+		{
+			dependencies: [
+				"10043917A6960AA3"
+			]
+			description: [
+				"Plates, blocks and bricks in bulk. Two &6Hydraulic Pistons&r and Stronze."
+			]
+			icon: "gtna:large_steam_compressor"
+			id: "6BABFB2B1E621605"
+			hide_dependency_lines: true
+			optional: true
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Compressor, multiblock."
+			tasks: [
+				{
+					id: "5D3B4F9E2461B431"
+					type: "item"
+					item: "gtna:large_steam_compressor"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Large Steam Compressor"
+			x: 28.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"10043917A6960AA3"
+				"0BE3526B1728A13F"
+			]
+			description: [
+				"Plates and crushed ore in bulk, built around your Forge Hammer and an Anvil."
+			]
+			icon: "gtna:large_steam_hammer"
+			id: "24A0C4B65EF45179"
+			hide_dependency_lines: true
+			optional: true
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Hammer, multiblock."
+			tasks: [
+				{
+					id: "7F50E42D375BFFD8"
+					type: "item"
+					item: "gtna:large_steam_hammer"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Large Steam Hammer"
+			x: 29.6d
+			y: 0.30000000000000004d
+		}
+		{
+			dependencies: [
+				"10043917A6960AA3"
+				"309831FDDA2D16A3"
+			]
+			description: [
+				"Smelting in bulk, with Stronze and &6Breel&r pipes."
+			]
+			icon: "gtna:large_steam_furnace"
+			id: "4477A45D4485478D"
+			hide_dependency_lines: true
+			optional: true
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Furnace, multiblock."
+			tasks: [
+				{
+					id: "4BCF74909A85BE7A"
+					type: "item"
+					item: "gtna:large_steam_furnace"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Large Steam Furnace"
+			x: 28.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"10043917A6960AA3"
+				"2C599B6E18221391"
+			]
+			description: [
+				"Rubber in bulk. Glass, a Hydraulic Pump and a Hydraulic Piston."
+			]
+			icon: "gtna:large_steam_extractor"
+			id: "4BDCE20E098F475E"
+			hide_dependency_lines: true
+			optional: true
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Extractor, multiblock."
+			tasks: [
+				{
+					id: "78150BC9ECA57E0E"
+					type: "item"
+					item: "gtna:large_steam_extractor"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Large Steam Extractor"
+			x: 36.0d
+			y: 3.3d
+		}
+		{
+			dependencies: [
+				"10043917A6960AA3"
+				"3F1DCA7419D19774"
+			]
+			description: [
+				"&aThe Steam age's only mixer&r: Breel, Clay Compound and every mixer recipe up to &e32 EU/t&r."
+			]
+			icon: "gtna:large_steam_mixer"
+			id: "54115CC7B051BD9E"
+			hide_dependency_lines: true
+			optional: true
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Mixer, multiblock."
+			tasks: [
+				{
+					id: "04FF54E7FBB72FB2"
+					type: "item"
+					item: "gtna:large_steam_mixer"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Large Steam Mixer"
+			x: 31.2d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"6961142793AE9F7B"
+			]
+			description: [
+				"Splits dusts, resin and mixtures into their parts."
+			]
+			icon: "gtna:large_steam_centrifuge"
+			id: "2A82174C947F4C30"
+			hide_dependency_lines: true
+			optional: true
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Centrifuge, multiblock."
+			tasks: [
+				{
+					id: "27F72AC98854E029"
+					type: "item"
+					item: "gtna:large_steam_centrifuge"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Large Steam Centrifuge"
+			x: 34.4d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"6961142793AE9F7B"
+			]
+			description: [
+				"Heats purified ore apart for the byproducts the Macerator leaves behind."
+			]
+			icon: "gtna:large_steam_thermal_centrifuge"
+			id: "6641AFACBF378E6D"
+			hide_dependency_lines: true
+			optional: true
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Thermal Centrifuge, multiblock."
+			tasks: [
+				{
+					id: "715FC564D9A4706A"
+					type: "item"
+					item: "gtna:large_steam_thermal_centrifuge"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Large Steam Thermal Centrifuge"
+			x: 31.2d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"6961142793AE9F7B"
+			]
+			description: [
+				"Washes crushed ore into purified ore, with water."
+			]
+			icon: "gtna:large_steam_ore_washer"
+			id: "1B5B8702CD8CD184"
+			hide_dependency_lines: true
+			optional: true
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Ore Washer, multiblock."
+			tasks: [
+				{
+					id: "55762C68245ABDAA"
+					type: "item"
+					item: "gtna:large_steam_ore_washer"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Large Steam Ore Washer"
+			x: 29.6d
+			y: -2.7d
+		}
+		{
+			dependencies: [
+				"6961142793AE9F7B"
+			]
+			description: [
+				"Sifts purified ore for gems."
+			]
+			icon: "gtna:large_steam_sifter"
+			id: "07B87A06EAA80D2E"
+			hide_dependency_lines: true
+			optional: true
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Sifter, multiblock."
+			tasks: [
+				{
+					id: "100909ADA4ABE76B"
+					type: "item"
+					item: "gtna:large_steam_sifter"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Large Steam Sifter"
+			x: 32.8d
+			y: -2.7d
+		}
+		{
+			dependencies: [
+				"10043917A6960AA3"
+			]
+			description: [
+				"Rods and screws in bulk."
+			]
+			icon: "gtna:large_steam_lathe"
+			id: "3F22F9968DD21376"
+			hide_dependency_lines: true
+			optional: true
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Lathe, multiblock."
+			tasks: [
+				{
+					id: "59D4310E1B385653"
+					type: "item"
+					item: "gtna:large_steam_lathe"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Large Steam Lathe"
+			x: 34.4d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"10043917A6960AA3"
+				"13E1320EF38F3A65"
+			]
+			description: [
+				"Wires straight from ingots, without the wire cutter."
+			]
+			icon: "gtna:large_steam_wiremill"
+			id: "0F86C18F9B565DBA"
+			hide_dependency_lines: true
+			optional: true
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Wiremill, multiblock."
+			tasks: [
+				{
+					id: "02C01BADF7F20F58"
+					type: "item"
+					item: "gtna:large_steam_wiremill"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Large Steam Wiremill"
+			x: 36.0d
+			y: 0.30000000000000004d
+		}
+		{
+			dependencies: [
+				"10043917A6960AA3"
+				"13E1320EF38F3A65"
+			]
+			description: [
+				"Cuts blocks into plates and rods into bolts, with water."
+			]
+			icon: "gtna:large_steam_cutting"
+			id: "10D4D19D6393D70F"
+			hide_dependency_lines: true
+			optional: true
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Cutting Machine, multiblock."
+			tasks: [
+				{
+					id: "57D5655BC9272EA9"
+					type: "item"
+					item: "gtna:large_steam_cutting"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Large Steam Cutting Machine"
+			x: 37.6d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"10043917A6960AA3"
+				"13E1320EF38F3A65"
+			]
+			description: [
+				"Bends ingots into plates and foils."
+			]
+			icon: "gtna:large_steam_bending"
+			id: "30F6363FBD790EBB"
+			hide_dependency_lines: true
+			optional: true
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Bender, multiblock."
+			tasks: [
+				{
+					id: "78C3DB1A96B100BB"
+					type: "item"
+					item: "gtna:large_steam_bending"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Large Steam Bender"
+			x: 31.2d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"10043917A6960AA3"
+			]
+			description: [
+				"Presses shapes with molds."
+			]
+			icon: "gtna:large_steam_forming_press"
+			id: "12A3F0BDB61C4738"
+			hide_dependency_lines: true
+			optional: true
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Forming Press, multiblock."
+			tasks: [
+				{
+					id: "029D63D15B88FAF7"
+					type: "item"
+					item: "gtna:large_steam_forming_press"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Large Steam Forming Press"
+			x: 32.8d
+			y: 0.30000000000000004d
+		}
+		{
+			dependencies: [
+				"10043917A6960AA3"
+				"237E6A27D526CE57"
+			]
+			description: [
+				"&aSteam from the sun at scale&r: no fuel, &cnothing at night&r."
+			]
+			icon: "gtna:large_steam_solar_boiler"
+			id: "0B6B99B114BE146C"
+			hide_dependency_lines: true
+			optional: true
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Solar Boiler, multiblock."
+			tasks: [
+				{
+					id: "3ABDA2218E67BB3B"
+					type: "item"
+					item: "gtna:large_steam_solar_boiler"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Large Steam Solar Boiler"
+			x: 34.4d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"10043917A6960AA3"
+			]
+			description: [
+				"Your Primitive Blast Furnace and &efour&r Precision Steam Components make GTNA's giant blast furnace: the same Steel recipes, many at once. &o&7The structure is huge; check its preview.&r"
+			]
+			icon: "gtna:leap_forward_one_blast_furnace"
+			id: "41D6A548289FF42F"
+			hide_dependency_lines: true
+			optional: true
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Leap Forward Blast Furnace, multiblock."
+			tasks: [
+				{
+					id: "72626A5435B2517E"
+					type: "item"
+					item: "gtna:leap_forward_one_blast_furnace"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Leap Forward Blast Furnace"
+			x: 32.8d
+			y: 3.3d
+		}
+		{
+			dependencies: [
+				"10F6BF82785B0F48"
+			]
+			description: [
+				"A primitive multiblock furnace."
+			]
+			icon: "gtna:primitive_stone_furnace"
+			id: "2890D60ACDE4959D"
+			optional: true
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Primitive Stone Furnace, multiblock."
+			tasks: [
+				{
+					id: "5787F15CD6541719"
+					type: "item"
+					item: "gtna:primitive_stone_furnace"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Primitive Stone Furnace"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"10043917A6960AA3"
+			]
+			description: [
+				"Cactus, bronze brick casings and a Hydraulic Regulator. It burns carbon fuels into steam: &e8000 mB&r per Coal or Charcoal, &e90000&r per block, &e16000&r per Coke, &e180000&r per Coke block."
+			]
+			icon: "gtna:steam_cactus_wonder"
+			id: "15C7D95DE420E74C"
+			hide_dependency_lines: true
+			optional: true
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Cactus Wonder, multiblock."
+			tasks: [
+				{
+					id: "490417DBCEC97BD1"
+					type: "item"
+					item: "gtna:steam_cactus_wonder"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Cactus Wonder"
+			x: 37.6d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"707CBC0C69EAFA06"
+			]
+			description: [
+				"The Forge Hammer gets &etwo&r plates out of &ethree&r ingots. Molds, bolts and every Low Voltage hull start here."
+			]
+			icon: "gtceu:steel_plate"
+			id: "10A2B48FED1F6AC6"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Hammer them, do not waste them."
+			tasks: [
+				{
+					id: "1B213E201E771540"
+					type: "item"
+					item: "gtceu:steel_plate"
+					count: 8L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Steel Plates"
+			x: 20.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"10A2B48FED1F6AC6"
+			]
+			description: [
+				"&eFour&r &6Steel Plates&r with a hammer and a file. Hammer an Empty Mold again to give it a shape."
+				""
+				"&aMolds are never used up. One of each shape is enough.&r"
+			]
+			icon: "gtceu:empty_mold"
+			id: "0EBD82984EF14E81"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Four plates, a hammer and a file."
+			tasks: [
+				{
+					id: "40EE8DF5670FAAF8"
+					type: "item"
+					item: "gtceu:empty_mold"
+					count: 3L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Empty Mold"
+			x: 18.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"0EBD82984EF14E81"
+			]
+			description: [
+				"In the Alloy Smelter, the &6Block&r mold turns &6Glass Dust&r into &6Glass&r."
+			]
+			icon: "gtceu:block_casting_mold"
+			id: "392F0978473E4D96"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "For glass."
+			tasks: [
+				{
+					id: "057152BD66993FEF"
+					type: "item"
+					item: "gtceu:block_casting_mold"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Block Mold"
+			x: 20.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"0EBD82984EF14E81"
+			]
+			description: [
+				"In the Alloy Smelter, the &6Plate&r mold turns &etwo&r &6Rubber Bars&r into a &6Rubber Sheet&r."
+			]
+			icon: "gtceu:plate_casting_mold"
+			id: "5BB7C360D019CF54"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "For rubber sheets."
+			tasks: [
+				{
+					id: "1B0EFDE7D42481E2"
+					type: "item"
+					item: "gtceu:plate_casting_mold"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Plate Mold"
+			x: 18.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"0EBD82984EF14E81"
+			]
+			description: [
+				"In the Alloy Smelter, the &6Ball&r mold turns &6Glass Dust&r into a &6Glass Tube&r."
+			]
+			icon: "gtceu:ball_casting_mold"
+			id: "42A7A0ACDDB1588D"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "For glass tubes."
+			tasks: [
+				{
+					id: "5DF7A2CA79BF6F73"
+					type: "item"
+					item: "gtceu:ball_casting_mold"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Ball Mold"
+			x: 16.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"392F0978473E4D96"
+			]
+			description: [
+				"&cSand does not smelt into Glass in this pack.&r Grind &6Sand&r into &6Quartz Sand&r and &6Flint&r into &6Flint Dust&r with the mortar, mix them into &6Glass Dust&r, and cast it with the Block mold."
+			]
+			icon: "minecraft:glass"
+			id: "3F1DCA7419D19774"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "No furnace makes it here."
+			tasks: [
+				{
+					id: "41F533F56F339CD1"
+					type: "item"
+					item: "gtceu:glass_dust"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "34392891881BD71A"
+					type: "item"
+					item: "minecraft:glass"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Glass"
+			x: 20.5d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"3F1DCA7419D19774"
+			]
+			description: [
+				"A &6Piston&r, a pane of &6Glass&r and bronze pipes. It pulls &ethree&r &6Raw Rubber Dust&r out of each &6Sticky Resin&r."
+			]
+			icon: "gtceu:lp_steam_extractor"
+			id: "2C599B6E18221391"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "It needs a pane of glass."
+			tasks: [
+				{
+					id: "46376551026D5A4E"
+					type: "item"
+					item: "gtceu:lp_steam_extractor"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Extractor"
+			x: 18.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"2C599B6E18221391"
+			]
+			description: [
+				"&6Sticky Resin&r gives the most; rubber logs, saplings and leaves give a little."
+			]
+			icon: "gtceu:raw_rubber_dust"
+			id: "30B5CF8757F9BF2D"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The rubber trees pay off."
+			tasks: [
+				{
+					id: "08C198BB0476B63A"
+					type: "item"
+					item: "gtceu:raw_rubber_dust"
+					count: 6L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Raw Rubber"
+			x: 16.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"30B5CF8757F9BF2D"
+			]
+			description: [
+				"&eThree&r &6Raw Rubber Dust&r and &eone&r &6Sulfur Dust&r in the Alloy Smelter."
+				""
+				"&o&7The recipe viewer shows where Sulfur comes from.&r"
+			]
+			icon: "gtceu:rubber_ingot"
+			id: "625DD74AEAFA5AA4"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Dust and sulfur."
+			tasks: [
+				{
+					id: "1782FE05500EA918"
+					type: "item"
+					item: "gtceu:sulfur_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "7D3CC380F97A7D2F"
+					type: "item"
+					item: "gtceu:rubber_ingot"
+					count: 2L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Rubber Bar"
+			x: 14.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"625DD74AEAFA5AA4"
+			]
+			description: [
+				"&eTwo&r &6Rubber Bars&r and the Plate mold in the Alloy Smelter."
+			]
+			icon: "gtceu:rubber_plate"
+			id: "52E07B2FAD21E496"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Insulation for wires."
+			tasks: [
+				{
+					id: "176FFD97E8ADBE8C"
+					type: "item"
+					item: "gtceu:rubber_plate"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Rubber Sheet"
+			x: 12.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"52E07B2FAD21E496"
+			]
+			description: [
+				"A &6Red Alloy Wire&r and a &6Rubber Sheet&r, crafted together. &cBare wires shock whoever touches them.&r"
+			]
+			icon: "gtceu:red_alloy_single_cable"
+			id: "04D883B83F0A5B75"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "A wire you can touch."
+			tasks: [
+				{
+					id: "333194561CFFAAE1"
+					type: "item"
+					item: "gtceu:red_alloy_single_cable"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Red Alloy Cable"
+			x: 9.5d
+			y: 9.25d
+		}
+		{
+			dependencies: [
+				"42A7A0ACDDB1588D"
+			]
+			description: [
+				"&6Glass Dust&r and the Ball mold in the Alloy Smelter."
+			]
+			icon: "gtceu:glass_tube"
+			id: "5A2F18CD6FB50ABA"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Glass dust in the Ball mold."
+			tasks: [
+				{
+					id: "2FCF17A4E3BCD441"
+					type: "item"
+					item: "gtceu:glass_tube"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Glass Tube"
+			x: 14.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"5A2F18CD6FB50ABA"
+			]
+			description: [
+				"A &6Glass Tube&r, &etwo&r &6Steel Bolts&r and &ethree&r &6Copper Wires&r. A saw cuts Steel Rods into bolts."
+			]
+			icon: "gtceu:vacuum_tube"
+			id: "39008B4252E18D4F"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "The first electronic part."
+			tasks: [
+				{
+					id: "60EA3D2D23033AE8"
+					type: "item"
+					item: "gtceu:vacuum_tube"
+					count: 2L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Vacuum Tube"
+			x: 12.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"39008B4252E18D4F"
+			]
+			description: [
+				"&6Sticky Resin&r, &6Paper&r, &6Copper Wire&r and &6Coal&r or &6Charcoal Dust&r make &etwo&r &6Resistors&r by hand."
+			]
+			icon: "gtceu:resistor"
+			id: "09CD4AE957693FF7"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Paper, resin, carbon and copper."
+			tasks: [
+				{
+					id: "71FC283F067A1C34"
+					type: "item"
+					item: "gtceu:resistor"
+					count: 2L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Resistors"
+			x: 11.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"39008B4252E18D4F"
+			]
+			description: [
+				"&6Wood Plates&r (wood dust from the Macerator, pressed in the Compressor) coated in &6Sticky Resin&r make a &6Resin Circuit Board&r. &eEight&r &6Copper Wires&r around it print the circuit."
+			]
+			icon: "gtceu:resin_printed_circuit_board"
+			id: "1462856644D0B984"
+			hide_dependency_lines: true
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Wood, resin and copper."
+			tasks: [
+				{
+					id: "604DF42ADC90E0CF"
+					type: "item"
+					item: "gtceu:resin_circuit_board"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "0F67007FF7044C9E"
+					type: "item"
+					item: "gtceu:resin_printed_circuit_board"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Circuit Board"
+			x: 11.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"09CD4AE957693FF7"
+				"1462856644D0B984"
+				"04D883B83F0A5B75"
+			]
+			description: [
+				"&eTwo&r &6Vacuum Tubes&r, &etwo&r &6Resistors&r, the printed board, a &6Steel Plate&r and &ethree&r &6Red Alloy Cables&r: the &6Basic Electronic Circuit&r. Every Low Voltage machine needs at least one."
+			]
+			id: "6953C899271F3796"
+			rewards: [
+				{
+					id: "591919F3B5DF9998"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			shape: "gear"
+			size: 2.25d
+			subtitle: "The key to Low Voltage."
+			tasks: [
+				{
+					id: "25278AF3742D598E"
+					type: "item"
+					item: "gtceu:basic_electronic_circuit"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "The First Circuit"
+			x: 7.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"6953C899271F3796"
+			]
+			description: [
+				"Its controller asks for &6Basic Electronic Circuits&r and &6Tin Cables&r. The Power Generation chapter compares it with the other ways of making steam."
+			]
+			icon: "gtceu:bronze_large_boiler"
+			id: "69CA084126822E92"
+			optional: true
+			rewards: [ ]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "A first job for your circuits."
+			tasks: [
+				{
+					id: "2E19C47253AE7F63"
+					type: "item"
+					item: "gtceu:bronze_large_boiler"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Large Bronze Boiler"
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"10A2B48FED1F6AC6"
+			]
+			description: [
+				"The shell of every Low Voltage machine: &e8 Steel Plates&r bent around a wrench. It is the reason your Steel line has to keep running."
+			]
+			id: "41499D4881126224"
+			hide_dependency_lines: true
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Eight Steel Plates and a wrench."
+			tasks: [
+				{
+					id: "1DB80F0FDC2BDE18"
+					type: "item"
+					item: "gtceu:lv_machine_casing"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "LV Machine Casing"
+			x: 7.5d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"52E07B2FAD21E496"
+			]
+			description: [
+				"A &6Tin Wire&r wrapped in a &6Rubber Sheet&r. Bare wires hurt; cables do not. The LV hull takes two."
+			]
+			id: "5AF28B9BC8D75791"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Insulated, at last."
+			tasks: [
+				{
+					id: "02EC5E8303D77624"
+					type: "item"
+					item: "gtceu:tin_single_cable"
+					count: 2L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Tin Cable"
+			x: 10.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"41499D4881126224"
+				"5AF28B9BC8D75791"
+				"2E1B5CB58E08EB29"
+			]
+			description: [
+				"Casing, &etwo&r Tin Cables, &etwo&r Wrought Iron Plates and a Steel Plate. With a circuit in the other hand, Low Voltage is one step away."
+			]
+			id: "0714D70458EEC997"
+			rewards: [ ]
+			shape: "gear"
+			size: 2.25d
+			subtitle: "The body of every electric machine."
+			tasks: [
+				{
+					id: "567DE439CC959F79"
+					type: "item"
+					item: "gtceu:lv_machine_hull"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "LV Machine Hull"
+			x: 7.5d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"7DA696110A273CA4"
+			]
+			description: [
+				"A furnace burns wood. A &6Wood Retort&r cooks it in a sealed box, and the wood comes apart: &e4 logs&r give &e3 Charcoal&r and &e1,000 mB&r of &6Charcoal Byproducts&r every &e30 s&r, with no fuel at all."
+				""
+				"Build it like a Coke Oven, but taller: a hollow &e3×3×4&r of &6Firebricks&r with the controller in the middle of a face. Coke Oven Hatches in the walls automate it."
+				""
+				"&aReal fact:&r until the 1920s, almost all of the world's methanol came from cooking wood. That is why it was called wood alcohol."
+			]
+			id: "1470DD8318DF0F60"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Cook wood without air."
+			tasks: [
+				{
+					id: "06B58864CFD3503F"
+					type: "item"
+					item: "gtia:wood_retort"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Wood Retort"
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1470DD8318DF0F60"
+			]
+			description: [
+				"The liquid in the Retort's tank is a mix of wood vinegar and tar. You cannot separate it yet: keep it in tanks. In Low Voltage, a &6Still&r turns it into acid, alcohol and creosote."
+				""
+				"&eThree Retorts&r fill exactly one Still."
+			]
+			id: "278E9258DFD1E67A"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Smells like a campfire with a chemistry degree."
+			tasks: [
+				{
+					id: "43F762F667A94111"
+					type: "item"
+					item: "gtceu:charcoal_byproducts_bucket"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Charcoal Byproducts"
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"3713CBE1F33AC0E6"
+			]
+			description: [
+				"Calcite is limestone. Burn it and it becomes &6Quicklime&r: &e4 Calcite Dust&r and one Charcoal, Coal or Coke give &e4 Quicklime&r in &e20 s&r; the CO₂ goes up the shaft."
+				""
+				"Calcite blocks line dripstone caves and amethyst geodes; the Steam Macerator turns them into dust. Build a hollow &e3×3×5&r shaft of &6Firebricks&r, open at the top, controller low on a face."
+				""
+				"&aReal fact:&r lime kilns are older than writing."
+			]
+			id: "6637F16316206C88"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Rocks in, hotter rocks out."
+			tasks: [
+				{
+					id: "5320B0648E317717"
+					type: "item"
+					item: "gtia:lime_kiln"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Lime Kiln"
+			x: 18.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"6637F16316206C88"
+			]
+			description: [
+				"Add Quicklime to the Primitive Blast Furnace: &e2 Wrought Iron&r, &e2 Charcoal&r (or Coal) and &e1 Quicklime&r give &e2 Steel&r in &e50 s&r. That is &e2.4 Steel&r a minute per furnace, against &e1.5&r without it."
+				""
+				"One Lime Kiln keeps about ten furnaces fluxed."
+				""
+				"&aReal fact:&r real blast furnaces add limestone as flux. It grabs the sulfur and the sand and floats them off as slag."
+			]
+			id: "724D0AD550E0BFFE"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Faster steel, same furnace."
+			tasks: [
+				{
+					id: "62FB0E4BD03D9AE2"
+					type: "item"
+					item: "gtceu:quicklime_dust"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Fluxed Steel"
+			x: 18.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"6953C899271F3796"
+				"0714D70458EEC997"
+			]
+			description: [
+				"You hold a circuit. Your boilers keep running: the Low Voltage chapter turns their steam into electricity and builds the first electric machines."
+			]
+			icon: "gtceu:lp_steam_solid_boiler"
+			id: "7E683D21CB6D6CCD"
+			rewards: [ ]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Steam stays; electricity begins."
+			tasks: [
+				{
+					id: "485276C506C3334E"
+					type: "checkmark"
+					title: "Ascend"
+				}
+			]
+			title: "Ascend to Low Voltage"
+			x: 4.5d
+			y: 9.0d
+		}
+	]
+	title: "Steam Age"
+}

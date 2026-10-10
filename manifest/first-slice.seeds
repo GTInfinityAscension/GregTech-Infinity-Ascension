@@ -1,0 +1,15 @@
+# Mods the first slice (Start -> Steam -> LV) asks for. `pack.py lock` adds their required dependencies.
+# Local builds (gtia, gtna) are taken from the GTIACore and GTNA build folders.
+gtceu
+ldlib
+gtna
+gtia
+ae2
+guideme
+emi
+# Start chapter: quest book, storage, building tools
+ftbquests
+sophisticatedbackpacks
+sophisticatedstorage
+constructionwand
+industrial_platform

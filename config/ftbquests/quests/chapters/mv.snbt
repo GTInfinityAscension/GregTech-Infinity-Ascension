@@ -1,0 +1,1699 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "mv"
+	group: "461BAA0C86EE43B3"
+	icon: "gtceu:mv_machine_hull"
+	id: "42654D02C0065973"
+	order_index: 3
+	quest_links: [
+		{
+			id: "0AA7F1168C64F270"
+			linked_quest: "31AF3AD2C78D4901"
+			shape: "gear"
+			size: 1.5d
+			x: 23.0d
+			y: 8.5d
+		}
+	]
+	quests: [
+		{
+			dependencies: [
+				"38CA6D953B26F3B6"
+				"49F8A2C33A7E812E"
+				"230D7F721E274053"
+				"50EA9AC05C27F284"
+			]
+			description: [
+				"Medium Voltage is where the factory starts to look like an industry: silicon becomes chips, and the old processes of real chemistry plants arrive. Bauxite into aluminium, sulfur into acid, air into ammonia. This Ascension ends with an &6Advanced Integrated Circuit&r and an &6HV Machine Hull&r."
+			]
+			icon: "gtceu:mv_machine_hull"
+			id: "504EF8C3140CAD5D"
+			rewards: [
+				{
+					count: 16
+					id: "1115837B9201068E"
+					item: "gtceu:aluminium_ingot"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Ascension III"
+			tasks: [
+				{
+					id: "2DD1633C52634B10"
+					type: "checkmark"
+					title: "Begin"
+				}
+			]
+			title: "Medium Voltage Age"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"504EF8C3140CAD5D"
+			]
+			description: [
+				"Cupronickel coils around a magnetic steel rod. Every MV machine starts here."
+			]
+			id: "5B8ECE2B3E043A46"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Aluminium rods, steel magnets."
+			tasks: [
+				{
+					id: "6CEB931CC63DE05B"
+					type: "item"
+					item: "gtceu:mv_electric_motor"
+					count: 2L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "MV Electric Motor"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6D1F91AD527835FA"
+			]
+			description: [
+				"Piston, pump, conveyor and robot arm at MV."
+			]
+			id: "10DB8940D99766BF"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "The same four, a tier up."
+			tasks: [
+				{
+					id: "45BCBAB7026BAB4F"
+					type: "item"
+					item: "gtceu:mv_electric_piston"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "304DAD084ECA0006"
+					type: "item"
+					item: "gtceu:mv_electric_pump"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "300812CCC172AA1D"
+					type: "item"
+					item: "gtceu:mv_conveyor_module"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "21838BBFE7ED64B3"
+					type: "item"
+					item: "gtceu:mv_robot_arm"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "MV Components"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5B8ECE2B3E043A46"
+			]
+			description: [
+				"Your boilers again, at Medium Voltage. Or check Power Generation for combustion and gas."
+			]
+			id: "6D1F91AD527835FA"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "128 V from the same steam."
+			tasks: [
+				{
+					id: "1E4E1995667EBCFE"
+					type: "item"
+					item: "gtceu:mv_steam_turbine"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "MV Steam Turbine"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"10DB8940D99766BF"
+			]
+			description: [
+				"Transistors and integrated circuits need an MV Assembler."
+			]
+			id: "1B0581FFF976E579"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Faster, and MV recipes."
+			tasks: [
+				{
+					id: "0D89D6BBC41B439B"
+					type: "item"
+					item: "gtceu:mv_assembler"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "MV Assembler"
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"10DB8940D99766BF"
+			]
+			description: [
+				"Stainless Steel, Kanthal and Vanadium Steel dusts all need an MV Mixer."
+			]
+			id: "279278CBBD75789E"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Four ingredients at once."
+			tasks: [
+				{
+					id: "7C866E12D4DBC568"
+					type: "item"
+					item: "gtceu:mv_mixer"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "MV Mixer"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1B0581FFF976E579"
+			]
+			description: [
+				"Besides washing ores in chemicals, it quenches hot ingots in water: Kanthal comes out of the furnace too hot to touch."
+			]
+			id: "16E3D00500A5BB0B"
+			hide_dependency_lines: true
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "A cold bath for hot metal."
+			tasks: [
+				{
+					id: "46321CAB9085EC6F"
+					type: "item"
+					item: "gtceu:mv_chemical_bath"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "MV Chemical Bath"
+			x: 24.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"113D6C3E66EBCDC4"
+				"16E3D00500A5BB0B"
+			]
+			description: [
+				"Kanthal smelts hot in the Electric Blast Furnace; quench the hot ingot in the Chemical Bath, then wire it with Aluminium foil and copper. The furnace is ready for the hotter metals of High Voltage."
+				""
+				"&aReal fact:&r Kanthal (iron, chromium, aluminium) was invented in Sweden in the 1930s and still heats most toasters on Earth."
+			]
+			id: "5CCA3C01B051A1CF"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "2700 K."
+			tasks: [
+				{
+					id: "20FFEE7A3F4CD592"
+					type: "item"
+					item: "gtceu:kanthal_coil_block"
+					count: 8L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Kanthal Coils"
+			x: 21.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"279278CBBD75789E"
+			]
+			description: [
+				"Vanadium, Chromium and Steel, mixed and smelted. The MV Cutter's saw blade is made of it."
+			]
+			id: "3EA592967D9E9E3F"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Tough steel for blades."
+			tasks: [
+				{
+					id: "0704038C9392A4FB"
+					type: "item"
+					item: "gtceu:vanadium_steel_ingot"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Vanadium Steel"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3EA592967D9E9E3F"
+			]
+			description: [
+				"A Vanadium Steel buzz saw. It cuts silicon boules into wafers and wafers into chips."
+			]
+			id: "5090547B46FCE73D"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Slices of silicon."
+			tasks: [
+				{
+					id: "410864F655AB2F2F"
+					type: "item"
+					item: "gtceu:mv_cutter"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "MV Cutter"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1B0581FFF976E579"
+			]
+			description: [
+				"Plates, rods, pipes and more from one ingot and the right shape."
+			]
+			id: "6318999D0393E359"
+			hide_dependency_lines: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Shapes from a die."
+			tasks: [
+				{
+					id: "3C779419AFB8A527"
+					type: "item"
+					item: "gtceu:mv_extruder"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Extruder"
+			x: 26.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"10DB8940D99766BF"
+			]
+			description: [
+				"Cryolite, the Bayer line and the vanadium catalyst start here."
+			]
+			id: "52E80D9614D45259"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Hotter chemistry."
+			tasks: [
+				{
+					id: "34368B3E06D28FF0"
+					type: "item"
+					item: "gtceu:mv_chemical_reactor"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "MV Chemical Reactor"
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"52E80D9614D45259"
+			]
+			description: [
+				"Mica, Lepidolite and Topaz give up their fluorine only at MV."
+			]
+			id: "3DA44F536F2625FA"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Harder splits."
+			tasks: [
+				{
+					id: "43FBDE25C28EAF6F"
+					type: "item"
+					item: "gtceu:mv_electrolyzer"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "MV Electrolyzer"
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"667980415CD32F36"
+			]
+			description: [
+				"Turns exquisite gems into the lenses of the Laser Engraver."
+			]
+			id: "4158F988E5A49BA4"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Lenses."
+			tasks: [
+				{
+					id: "6C10F7E0EC801092"
+					type: "item"
+					item: "gtceu:mv_lathe"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "MV Lathe"
+			x: 11.5d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"10DB8940D99766BF"
+			]
+			description: [
+				"Washing crushed ore gives purified ore and its first byproducts."
+			]
+			id: "68F7AD3FF14593D4"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Clean ore, more ore."
+			tasks: [
+				{
+					id: "2BBE8DDD26530FE7"
+					type: "item"
+					item: "gtceu:lv_ore_washer"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Ore Washer"
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"68F7AD3FF14593D4"
+			]
+			description: [
+				"Purified gem ores through a Sifter come out as gems of every quality."
+			]
+			id: "250587E03F0576B8"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Grades your gems."
+			tasks: [
+				{
+					id: "40908EE8A085F297"
+					type: "item"
+					item: "gtceu:lv_sifter"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Sifter"
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"68F7AD3FF14593D4"
+			]
+			description: [
+				"Cuts gem blocks into plates: Lazurite plates make fluid filters."
+			]
+			id: "2AB2176EAB4E58A3"
+			hide_dependency_lines: true
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Plates from gems."
+			tasks: [
+				{
+					id: "7B79C95140B61704"
+					type: "item"
+					item: "gtceu:lv_cutter"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "LV Cutter"
+			x: 8.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"250587E03F0576B8"
+			]
+			description: [
+				"A Sifter grades purified gem ores. The emitter needs a flawless emerald."
+			]
+			id: "667980415CD32F36"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Sift for the good ones."
+			tasks: [
+				{
+					id: "0BBD53F7DBF78833"
+					type: "item"
+					item: "gtceu:flawless_emerald_gem"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Flawless Emerald"
+			x: 9.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"667980415CD32F36"
+			]
+			description: [
+				"The heart of the Laser Engraver."
+			]
+			id: "6885D38E766965B4"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "A focused beam."
+			tasks: [
+				{
+					id: "041F52B8743CF517"
+					type: "item"
+					item: "gtceu:mv_emitter"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "MV Emitter"
+			x: 11.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"6885D38E766965B4"
+			]
+			description: [
+				"With a lens, it prints circuits onto silicon wafers."
+			]
+			id: "5033C713FFFE6453"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Light that writes."
+			tasks: [
+				{
+					id: "79FD0E1E27B4E605"
+					type: "item"
+					item: "gtceu:mv_laser_engraver"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Laser Engraver"
+			x: 14.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"4158F988E5A49BA4"
+			]
+			description: [
+				"Ruby for logic, emerald for memory, sapphire for the power chips. Exquisite gems on the MV Lathe."
+			]
+			id: "051A7A471D165640"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Red, green, blue."
+			tasks: [
+				{
+					id: "08131780CB1CA9A4"
+					type: "item"
+					item: "gtceu:ruby_lens"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "67F37CAF8795E89A"
+					type: "item"
+					item: "gtceu:emerald_lens"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "0DEC185121042203"
+					type: "item"
+					item: "gtceu:sapphire_lens"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Lenses"
+			x: 15.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"2D7B8E89436888F6"
+				"5033C713FFFE6453"
+				"051A7A471D165640"
+			]
+			description: [
+				"A sapphire lens and a silicon wafer. MV Energy Hatches need them."
+			]
+			id: "28369DD5349AA123"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Power management on a chip."
+			tasks: [
+				{
+					id: "6C30C36C3AC04698"
+					type: "item"
+					item: "gtceu:ulpic_chip"
+					count: 2L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "ULPIC Chips"
+			x: 16.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"1B0581FFF976E579"
+			]
+			description: [
+				"Fine copper wire around a magnetic steel rod."
+			]
+			id: "6860F84D7172B7C0"
+			hide_dependency_lines: true
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "A magnet, wound."
+			tasks: [
+				{
+					id: "0ADF60DCD9633C5C"
+					type: "item"
+					item: "gtceu:mv_voltage_coil"
+					count: 2L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "MV Voltage Coil"
+			x: 19.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"28369DD5349AA123"
+				"6860F84D7172B7C0"
+			]
+			description: [
+				"Two MV Energy Hatches push the Electric Blast Furnace to High Voltage recipes: Stainless Steel and Kanthal."
+			]
+			id: "113D6C3E66EBCDC4"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Two of them."
+			tasks: [
+				{
+					id: "6A76D7899F592A47"
+					type: "item"
+					item: "gtceu:mv_energy_input_hatch"
+					count: 2L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "MV Energy Hatches"
+			x: 19.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"113D6C3E66EBCDC4"
+			]
+			description: [
+				"Iron, Nickel, Manganese and Chromium, mixed and smelted in the Electric Blast Furnace at MV."
+				""
+				"&aReal fact:&r stainless steel was found in 1913 by Harry Brearley, looking for a better gun barrel. He got cutlery instead."
+			]
+			id: "1BCFA3BDB989211E"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Iron that does not rust."
+			tasks: [
+				{
+					id: "7037488989DB37A7"
+					type: "item"
+					item: "gtceu:stainless_steel_ingot"
+					count: 8L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Stainless Steel"
+			x: 21.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"279278CBBD75789E"
+			]
+			description: [
+				"Silicon dust and a pinch of Gallium Arsenide, grown in the Electric Blast Furnace."
+				""
+				"&aReal fact:&r this is the Czochralski process, from 1916; Jan Czochralski found it by dipping his pen into molten tin instead of the inkwell."
+			]
+			id: "026E490AA8A54AF6"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.75d
+			subtitle: "One big crystal."
+			tasks: [
+				{
+					id: "7391DF634E570859"
+					type: "item"
+					item: "gtceu:silicon_boule"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Silicon Boule"
+			x: 12.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"026E490AA8A54AF6"
+				"5090547B46FCE73D"
+			]
+			description: [
+				"One boule, many wafers. Everything electronic from now on starts as one of these."
+			]
+			id: "2D7B8E89436888F6"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Sliced thin."
+			tasks: [
+				{
+					id: "1198ADFD62253C31"
+					type: "item"
+					item: "gtceu:silicon_wafer"
+					count: 16L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Silicon Wafers"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"28369DD5349AA123"
+			]
+			description: [
+				"Engrave a wafer with a red lens and cut it into chips."
+			]
+			id: "2A555A4FBDABFF70"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The first chips."
+			tasks: [
+				{
+					id: "7AA963BEB01FE3EA"
+					type: "item"
+					item: "gtceu:ilc_chip"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Integrated Logic Circuits"
+			x: 16.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"2A555A4FBDABFF70"
+			]
+			description: [
+				"A different lens, a different chip."
+			]
+			id: "5AE004D0EBF12D31"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Memory."
+			tasks: [
+				{
+					id: "613C6E99D32E8A8F"
+					type: "item"
+					item: "gtceu:ram_chip"
+					count: 2L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "RAM Chips"
+			x: 18.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"2D7B8E89436888F6"
+				"1B0581FFF976E579"
+			]
+			description: [
+				"Silicon, fine tin wire and polyethylene."
+				""
+				"&aReal fact:&r the first transistor (Bell Labs, 1947) was a lump of germanium with two gold contacts held on by a paperclip."
+			]
+			id: "497B83134062A1F3"
+			hide_dependency_lines: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The switch that changed everything."
+			tasks: [
+				{
+					id: "6502214063C42904"
+					type: "item"
+					item: "gtceu:transistor"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Transistors"
+			x: 20.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"2A555A4FBDABFF70"
+			]
+			description: [
+				"A resin board, an ILC chip, resistors and diodes."
+			]
+			id: "5A436C6D4DEA53EC"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "A circuit on a chip."
+			tasks: [
+				{
+					id: "35A23447E636B6CD"
+					type: "item"
+					item: "gtceu:basic_integrated_circuit"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Basic Integrated Circuit"
+			x: 16.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"5A436C6D4DEA53EC"
+			]
+			description: [
+				"Two basic integrated circuits on a phenolic board, with gold wire and silver bolts."
+			]
+			id: "080AD3BD18BF385F"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Two become one."
+			tasks: [
+				{
+					id: "1597D28CAB5075E6"
+					type: "item"
+					item: "gtceu:good_integrated_circuit"
+					count: 2L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Good Integrated Circuit"
+			x: 16.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"1B0581FFF976E579"
+			]
+			description: [
+				"Melts metal with an electric arc. With Oxygen, copper comes out annealed; it also recycles old machines into ingots."
+			]
+			id: "431A285F135D870A"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Lightning in a box."
+			tasks: [
+				{
+					id: "599A1C59B17CB800"
+					type: "item"
+					item: "gtceu:lv_arc_furnace"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Arc Furnace"
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"0623071762390A9E"
+				"431A285F135D870A"
+			]
+			description: [
+				"Copper through the Arc Furnace with Oxygen from your air separation."
+			]
+			id: "26D50B16FF390132"
+			hide_dependency_lines: true
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Softer copper, better wire."
+			tasks: [
+				{
+					id: "274155E573A1CBE3"
+					type: "item"
+					item: "gtceu:annealed_copper_ingot"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Annealed Copper"
+			x: 18.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"080AD3BD18BF385F"
+				"5AE004D0EBF12D31"
+				"497B83134062A1F3"
+				"26D50B16FF390132"
+			]
+			description: [
+				"Two good integrated circuits, ILC and RAM chips, transistors, electrum wire and annealed copper bolts."
+			]
+			id: "7FFDD6C6357E1A46"
+			rewards: [ ]
+			shape: "gear"
+			size: 2.25d
+			subtitle: "The HV circuit."
+			tasks: [
+				{
+					id: "045D9CFFB6B3E74F"
+					type: "item"
+					item: "gtceu:advanced_integrated_circuit"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Advanced Integrated Circuit"
+			x: 18.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"1BCFA3BDB989211E"
+			]
+			description: [
+				"Eight for the casing and one for the hull."
+			]
+			id: "4038D5A4305BB335"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Nine plates."
+			tasks: [
+				{
+					id: "3E78FF47E60FBB50"
+					type: "item"
+					item: "gtceu:stainless_steel_plate"
+					count: 9L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Stainless Steel Plates"
+			x: 24.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4038D5A4305BB335"
+			]
+			description: [
+				"The shell of every High Voltage machine."
+			]
+			id: "079EEE28B8E29B84"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Eight Stainless Steel Plates."
+			tasks: [
+				{
+					id: "7F435E38DD1010F4"
+					type: "item"
+					item: "gtceu:hv_machine_casing"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "HV Machine Casing"
+			x: 24.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"1B0581FFF976E579"
+			]
+			description: [
+				"Gold wire in rubber."
+			]
+			id: "2A5AE184AEE54737"
+			hide_dependency_lines: true
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "HV needs gold."
+			tasks: [
+				{
+					id: "1A5E453520D08CCA"
+					type: "item"
+					item: "gtceu:gold_single_cable"
+					count: 2L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Gold Cable"
+			x: 26.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"6318999D0393E359"
+			]
+			description: [
+				"Solidify the Polyethylene from your LV line into plates."
+			]
+			id: "07C6486B77AD2972"
+			hide_dependency_lines: true
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Plastic, finally useful."
+			tasks: [
+				{
+					id: "5D384BC403DE7CE3"
+					type: "item"
+					item: "gtceu:polyethylene_plate"
+					count: 2L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Polyethylene Plates"
+			x: 26.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"079EEE28B8E29B84"
+				"2A5AE184AEE54737"
+				"07C6486B77AD2972"
+			]
+			description: [
+				"Casing, two Gold Cables, two Polyethylene Plates and a Stainless Steel Plate."
+			]
+			id: "6904837F2ACA3A37"
+			rewards: [ ]
+			shape: "gear"
+			size: 2.25d
+			subtitle: "The body of every HV machine."
+			tasks: [
+				{
+					id: "24E5A064D908AA87"
+					type: "item"
+					item: "gtceu:hv_machine_hull"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "HV Machine Hull"
+			x: 24.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"52E80D9614D45259"
+			]
+			description: [
+				"Circuit 1 digests &e1 Bauxite&r, &e1 Sodium Hydroxide&r, water and steam into &e1,000 mB&r of Sodium Aluminate, leaving red mud. Circuit 2 precipitates it into &e2 Aluminium Hydroxide&r and gives back most of the soda."
+				""
+				"Provisional structure: a hollow &e3×3×3&r of Solid Steel Machine Casings with hatches in the walls."
+				""
+				"&aReal fact:&r Karl Josef Bayer patented the process in 1888. Nearly all the world's alumina is still made this way."
+			]
+			id: "53FEE3DE0FB95AF5"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Bauxite in hot caustic soda."
+			tasks: [
+				{
+					id: "222EFA94EAFEDD89"
+					type: "item"
+					item: "gtia:bayer_digester"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Bayer Digester"
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"53FEE3DE0FB95AF5"
+				"6637F16316206C88"
+			]
+			description: [
+				"Your old Lime Kiln calcines &e2 Aluminium Hydroxide&r into &e1 Alumina&r. The Steam Age is still working for you."
+			]
+			id: "3C3CB2122CD34909"
+			hide_dependency_lines: true
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Calcined in the Lime Kiln."
+			tasks: [
+				{
+					id: "6F5F9FB9FF45F0A6"
+					type: "item"
+					item: "gtia:alumina_dust"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Alumina"
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"53FEE3DE0FB95AF5"
+				"174F3AD8908B1D3D"
+			]
+			description: [
+				"Aluminium Hydroxide, Sodium Hydroxide and Hydrofluoric Acid in a Chemical Reactor. Alumina dissolves in it at a much lower temperature."
+			]
+			id: "4E4B848A1FA81753"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The molten bath."
+			tasks: [
+				{
+					id: "0FC2D5E032BED312"
+					type: "item"
+					item: "gtia:cryolite_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Cryolite"
+			x: 8.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"279278CBBD75789E"
+				"278E9258DFD1E67A"
+			]
+			description: [
+				"Coke dust bound with Wood Tar in a Mixer. It burns away in the cell, one per run."
+			]
+			id: "754D2ACD373583C8"
+			hide_dependency_lines: true
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Coke and tar."
+			tasks: [
+				{
+					id: "22126DF088D50671"
+					type: "item"
+					item: "gtia:carbon_anode"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Carbon Anode"
+			x: 12.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"3C3CB2122CD34909"
+				"4E4B848A1FA81753"
+				"754D2ACD373583C8"
+			]
+			description: [
+				"&e2 Alumina&r and a Carbon Anode become &e4 Aluminium Ingots&r and CO₂, with a small chance to use up the cryolite bath. No blast furnace needed."
+				""
+				"&aReal fact:&r Charles Hall and Paul Héroult found the same process in 1886, independently, on two continents. Both were 22."
+			]
+			id: "67175118C46ADF68"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Aluminium the real way."
+			tasks: [
+				{
+					id: "0129D22E36147124"
+					type: "item"
+					item: "gtia:hall_heroult_cell"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Hall-Héroult Cell"
+			x: 10.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"2AB2176EAB4E58A3"
+			]
+			description: [
+				"It pulls Air from the world around it. Its fluid filter is a Lazurite plate."
+			]
+			id: "491EA78EB371D651"
+			hide_dependency_lines: true
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Bottled air."
+			tasks: [
+				{
+					id: "128CDCCF7E0A7A64"
+					type: "item"
+					item: "gtceu:lv_gas_collector"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Gas Collector"
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"491EA78EB371D651"
+			]
+			description: [
+				"A Centrifuge splits Air into Nitrogen and Oxygen."
+			]
+			id: "0623071762390A9E"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Four fifths of the air."
+			tasks: [
+				{
+					id: "3F4603BC38D99903"
+					type: "item"
+					item: "gtceu:nitrogen_bucket"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Nitrogen"
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"3DA44F536F2625FA"
+			]
+			description: [
+				"Fluorine from Mica or Lepidolite in the MV Electrolyzer, burnt with Hydrogen into Hydrofluoric Acid."
+			]
+			id: "174F3AD8908B1D3D"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Handle with care."
+			tasks: [
+				{
+					id: "2EAB808CBF23CF6C"
+					type: "item"
+					item: "gtceu:hydrofluoric_acid_bucket"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Hydrofluoric Acid"
+			x: 6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"52E80D9614D45259"
+			]
+			description: [
+				"Vanadium dust burnt in oxygen. It is never used up."
+			]
+			id: "1EA9675F5B507531"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The catalyst."
+			tasks: [
+				{
+					id: "2CDA35A9F94A351B"
+					type: "item"
+					item: "gtia:vanadium_pentoxide_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Vanadium Pentoxide"
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"1EA9675F5B507531"
+			]
+			description: [
+				"Sulfur, oxygen and water over Vanadium Pentoxide: &e1,000 mB&r of Sulfuric Acid and &e2,000 mB&r of steam per run. The reaction is hot enough to feed your turbines."
+				""
+				"&aReal fact:&r sulfuric acid is the most produced chemical in the world; economists once used it to measure how industrial a country was."
+			]
+			id: "7C9302B22901B3EC"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Sulfur into acid, and steam for free."
+			tasks: [
+				{
+					id: "46531B74CB11CE6E"
+					type: "item"
+					item: "gtia:contact_converter"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Contact Converter"
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0623071762390A9E"
+			]
+			description: [
+				"Nitrogen and Hydrogen over an iron (Magnetite) catalyst become Ammonia, with a little steam. Your Diaphragm Cell already makes the hydrogen."
+				""
+				"&aReal fact:&r the Haber-Bosch process feeds about half of humanity: most of the nitrogen in your body passed through one."
+			]
+			id: "0B0DFAAC23E69912"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Bread from air."
+			tasks: [
+				{
+					id: "20153CED7A75EDBE"
+					type: "item"
+					item: "gtia:ammonia_converter"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Ammonia Converter"
+			x: 2.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"3EB8DF95318F1354"
+			]
+			description: [
+				"Brine, Ammonia and CO₂ give Sodium Bicarbonate and Ammonium Chloride. The Lime Kiln calcines the bicarbonate into Soda Ash, and Quicklime gets the ammonia back."
+				""
+				"&aReal fact:&r Ernest Solvay's process (1861) made soda ash so cheap that glass windows became normal houses' business."
+			]
+			id: "0D8B6A761A3480E0"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Soda from salt and lime."
+			tasks: [
+				{
+					id: "3C10003A87159F1A"
+					type: "item"
+					item: "gtia:solvay_tower"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Solvay Tower"
+			x: 6.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"7C9302B22901B3EC"
+			]
+			description: [
+				"From now on, make it in bulk."
+			]
+			id: "69150765E99F67F2"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The most useful acid."
+			tasks: [
+				{
+					id: "709EEF0EDEB9F067"
+					type: "item"
+					item: "gtceu:sulfuric_acid_bucket"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Sulfuric Acid"
+			x: 4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"0B0DFAAC23E69912"
+			]
+			description: [
+				"Fertiliser, explosives, rocket fuel, and the Solvay Tower."
+			]
+			id: "3EB8DF95318F1354"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Bread from air, by the bucket."
+			tasks: [
+				{
+					id: "7CD096E2C6463D02"
+					type: "item"
+					item: "gtceu:ammonia_bucket"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Ammonia"
+			x: 4.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"0D8B6A761A3480E0"
+				"6637F16316206C88"
+			]
+			description: [
+				"Sodium Bicarbonate from the tower, calcined in your Lime Kiln."
+			]
+			id: "102F7E1E812EEB90"
+			hide_dependency_lines: true
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Calcined bicarbonate."
+			tasks: [
+				{
+					id: "31B02525F235BB65"
+					type: "item"
+					item: "gtceu:soda_ash_dust"
+					count: 8L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Soda Ash"
+			x: 8.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"10DB8940D99766BF"
+			]
+			description: [
+				"Logs and nitrogen in, charcoal and far more byproducts out. The efficient route for your wood chemistry."
+			]
+			id: "5AA47704DF2B114A"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The Retort, grown up."
+			tasks: [
+				{
+					id: "5DAE33A3CB220A46"
+					type: "item"
+					item: "gtceu:pyrolyse_oven"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Pyrolyse Oven"
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"5AA47704DF2B114A"
+			]
+			description: [
+				"Much more Methanol and Acetic Acid from the same Wood Vinegar."
+			]
+			id: "332697480439D566"
+			rewards: [ ]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The Still, grown up."
+			tasks: [
+				{
+					id: "5C0D75B7E07489FC"
+					type: "item"
+					item: "gtceu:mv_distillery"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Distillery"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"1B0581FFF976E579"
+				"355578D8EBE7AC17"
+			]
+			description: [
+				"Pattern Providers, Molecular Assemblers and Crafting Units. Teach the network a recipe once and it makes it forever."
+			]
+			id: "52BA60C2A0378DFA"
+			hide_dependency_lines: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The network starts working for you."
+			tasks: [
+				{
+					id: "5D12E5DE23B19661"
+					type: "item"
+					item: "ae2:pattern_provider"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "180FA4E7DAA3B08E"
+					type: "item"
+					item: "ae2:molecular_assembler"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "065671C40A5359F0"
+					type: "item"
+					item: "ae2:crafting_unit"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Autocrafting"
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"10DB8940D99766BF"
+			]
+			description: [
+				"A GTNA multiblock that grows plants for your Fermentation Vats and wood lines."
+			]
+			id: "0E02FEAC26E15F37"
+			hide_dependency_lines: true
+			optional: true
+			rewards: [ ]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Crops on a conveyor."
+			tasks: [
+				{
+					id: "13BDBD9B2BAE2F3C"
+					type: "item"
+					item: "gtna:greenhouse"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Greenhouse"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"7FFDD6C6357E1A46"
+				"6904837F2ACA3A37"
+			]
+			description: [
+				"Integrated circuits, stainless steel and Kanthal coils. High Voltage is next."
+			]
+			icon: "gtceu:mv_machine_hull"
+			id: "65075BFD98BEAF73"
+			rewards: [ ]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Stainless steel and a chip that thinks."
+			tasks: [
+				{
+					id: "79603579C1B8C21C"
+					type: "checkmark"
+					title: "Ascend"
+				}
+			]
+			title: "Ascend to High Voltage"
+			x: 21.0d
+			y: 8.5d
+		}
+	]
+	title: "Medium Voltage Age"
+}

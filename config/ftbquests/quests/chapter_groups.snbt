@@ -1,0 +1,8 @@
+{
+	chapter_groups: [
+		{ id: "5CDBA930BF6993C3", title: "Start" }
+		{ id: "461BAA0C86EE43B3", title: "Ascensions" }
+		{ id: "3FDC799CF6961510", title: "Systems" }
+		{ id: "148BC844BA1B4853", title: "Reference" }
+	]
+}

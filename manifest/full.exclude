@@ -1,0 +1,5 @@
+# Mods of the observed test instance that the full-pack lock leaves out, with the reason. Everything else
+# active in the audit is included, so the pack that gets tested is the pack that gets played.
+avaritia        # Re-Avaritia: questionnaire answer 8.6 (C), end-game uses the pack's own materials (GTIA-D-207)
+gtmthings       # GTMThings: questionnaire answer 8.5, extras come from GTNA/GTIACore (GTIA-D-207)
+particlerain    # Pretty Rain: crashed the client on 2026-09-27 and 2026-09-29 (GTIA-F-013)

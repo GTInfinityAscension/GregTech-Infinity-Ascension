@@ -1,0 +1,2783 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "periodic"
+	group: "148BC844BA1B4853"
+	icon: "gtceu:iron_ingot"
+	id: "1F979F7F7515CABC"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Produce Hydrogen Bucket. Hydrogen has atomic number 1."
+			]
+			icon: "gtceu:hydrogen_bucket"
+			id: "78B96F7DE24357BD"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "H - 1"
+			tasks: [
+				{
+					id: "483F07DF76A34CDD"
+					type: "item"
+					item: "gtceu:hydrogen_bucket"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Hydrogen"
+			x: -12.75d
+			y: 1.5d
+		}
+		{
+			description: [
+				"Produce Helium Bucket. Helium has atomic number 2."
+			]
+			icon: "gtceu:helium_bucket"
+			id: "1669C1C479CD53AF"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "He - 2"
+			tasks: [
+				{
+					id: "741B17EB7DAD42D9"
+					type: "item"
+					item: "gtceu:helium_bucket"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Helium"
+			x: 12.75d
+			y: 1.5d
+		}
+		{
+			description: [
+				"Produce Lithium Dust. Lithium has atomic number 3."
+			]
+			icon: "gtceu:lithium_dust"
+			id: "0C6A028AAD78E469"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Li - 3"
+			tasks: [
+				{
+					id: "40BD089094E8DABC"
+					type: "item"
+					item: "gtceu:lithium_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Lithium"
+			x: -12.75d
+			y: 3.0d
+		}
+		{
+			description: [
+				"Produce Beryllium Ingot. Beryllium has atomic number 4."
+			]
+			icon: "gtceu:beryllium_ingot"
+			id: "0B8DE70CEEEF2727"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Be - 4"
+			tasks: [
+				{
+					id: "5E3034C24D3DE742"
+					type: "item"
+					item: "gtceu:beryllium_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Beryllium"
+			x: -11.25d
+			y: 3.0d
+		}
+		{
+			description: [
+				"Produce Boron Dust. Boron has atomic number 5."
+			]
+			icon: "gtceu:boron_dust"
+			id: "52EE71EA1629BBC7"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "B - 5"
+			tasks: [
+				{
+					id: "69640E436DCCC135"
+					type: "item"
+					item: "gtceu:boron_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Boron"
+			x: 5.25d
+			y: 3.0d
+		}
+		{
+			description: [
+				"Produce Carbon Dust. Carbon has atomic number 6."
+			]
+			icon: "gtceu:carbon_dust"
+			id: "33FA48DF77F6CCAC"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "C - 6"
+			tasks: [
+				{
+					id: "13A8710ED1332927"
+					type: "item"
+					item: "gtceu:carbon_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Carbon"
+			x: 6.75d
+			y: 3.0d
+		}
+		{
+			description: [
+				"Produce Nitrogen Bucket. Nitrogen has atomic number 7."
+			]
+			icon: "gtceu:nitrogen_bucket"
+			id: "186723943F6D47D5"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "N - 7"
+			tasks: [
+				{
+					id: "1FA104F10E61D226"
+					type: "item"
+					item: "gtceu:nitrogen_bucket"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Nitrogen"
+			x: 8.25d
+			y: 3.0d
+		}
+		{
+			description: [
+				"Produce Oxygen Bucket. Oxygen has atomic number 8."
+			]
+			icon: "gtceu:oxygen_bucket"
+			id: "5FC6F205CC1ED17D"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "O - 8"
+			tasks: [
+				{
+					id: "1C38546088C59F6C"
+					type: "item"
+					item: "gtceu:oxygen_bucket"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Oxygen"
+			x: 9.75d
+			y: 3.0d
+		}
+		{
+			description: [
+				"Produce Fluorine Bucket. Fluorine has atomic number 9."
+			]
+			icon: "gtceu:fluorine_bucket"
+			id: "543B61250AD52CA9"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "F - 9"
+			tasks: [
+				{
+					id: "28E1CD8DE333F2CB"
+					type: "item"
+					item: "gtceu:fluorine_bucket"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Fluorine"
+			x: 11.25d
+			y: 3.0d
+		}
+		{
+			description: [
+				"Produce Neon Bucket. Neon has atomic number 10."
+			]
+			icon: "gtceu:neon_bucket"
+			id: "41C01BEB70875596"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Ne - 10"
+			tasks: [
+				{
+					id: "5BF7D80415157AD9"
+					type: "item"
+					item: "gtceu:neon_bucket"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Neon"
+			x: 12.75d
+			y: 3.0d
+		}
+		{
+			description: [
+				"Produce Sodium Dust. Sodium has atomic number 11."
+			]
+			icon: "gtceu:sodium_dust"
+			id: "6C15D6BD766113C2"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Na - 11"
+			tasks: [
+				{
+					id: "302505C0DC619BC0"
+					type: "item"
+					item: "gtceu:sodium_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Sodium"
+			x: -12.75d
+			y: 4.5d
+		}
+		{
+			description: [
+				"Produce Magnesium Dust. Magnesium has atomic number 12."
+			]
+			icon: "gtceu:magnesium_dust"
+			id: "30DB8D11B62D3A8C"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Mg - 12"
+			tasks: [
+				{
+					id: "27CB101FB046A66E"
+					type: "item"
+					item: "gtceu:magnesium_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Magnesium"
+			x: -11.25d
+			y: 4.5d
+		}
+		{
+			description: [
+				"Produce Aluminium Ingot. Aluminium has atomic number 13."
+			]
+			icon: "gtceu:aluminium_ingot"
+			id: "682642952DDE3E00"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Al - 13"
+			tasks: [
+				{
+					id: "63A4F316BF78B107"
+					type: "item"
+					item: "gtceu:aluminium_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Aluminium"
+			x: 5.25d
+			y: 4.5d
+		}
+		{
+			description: [
+				"Produce Silicon Ingot. Silicon has atomic number 14."
+			]
+			icon: "gtceu:silicon_ingot"
+			id: "49B268E3A2189D34"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Si - 14"
+			tasks: [
+				{
+					id: "3F4DFD55A3F2B4D9"
+					type: "item"
+					item: "gtceu:silicon_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Silicon"
+			x: 6.75d
+			y: 4.5d
+		}
+		{
+			description: [
+				"Produce Phosphorus Dust. Phosphorus has atomic number 15."
+			]
+			icon: "gtceu:phosphorus_dust"
+			id: "5BB514D2F628F948"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "P - 15"
+			tasks: [
+				{
+					id: "78C94A4DEE3E1F71"
+					type: "item"
+					item: "gtceu:phosphorus_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Phosphorus"
+			x: 8.25d
+			y: 4.5d
+		}
+		{
+			description: [
+				"Produce Sulfur Dust. Sulfur has atomic number 16."
+			]
+			icon: "gtceu:sulfur_dust"
+			id: "390B70BFDBFA3FF9"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "S - 16"
+			tasks: [
+				{
+					id: "7DE2EDE542C3F649"
+					type: "item"
+					item: "gtceu:sulfur_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Sulfur"
+			x: 9.75d
+			y: 4.5d
+		}
+		{
+			description: [
+				"Produce Chlorine Bucket. Chlorine has atomic number 17."
+			]
+			icon: "gtceu:chlorine_bucket"
+			id: "6893F5C20FD7875E"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Cl - 17"
+			tasks: [
+				{
+					id: "36B49A0927A68CE8"
+					type: "item"
+					item: "gtceu:chlorine_bucket"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Chlorine"
+			x: 11.25d
+			y: 4.5d
+		}
+		{
+			description: [
+				"Produce Argon Bucket. Argon has atomic number 18."
+			]
+			icon: "gtceu:argon_bucket"
+			id: "480CBE61B660C275"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Ar - 18"
+			tasks: [
+				{
+					id: "2567F61E925EFA9E"
+					type: "item"
+					item: "gtceu:argon_bucket"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Argon"
+			x: 12.75d
+			y: 4.5d
+		}
+		{
+			description: [
+				"Produce Potassium Dust. Potassium has atomic number 19."
+			]
+			icon: "gtceu:potassium_dust"
+			id: "323F16C8A07F5A6F"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "K - 19"
+			tasks: [
+				{
+					id: "2B9AE6E4137D092C"
+					type: "item"
+					item: "gtceu:potassium_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Potassium"
+			x: -12.75d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Produce Calcium Dust. Calcium has atomic number 20."
+			]
+			icon: "gtceu:calcium_dust"
+			id: "3E1FD25676A9145C"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Ca - 20"
+			tasks: [
+				{
+					id: "0CB33300F543A7DE"
+					type: "item"
+					item: "gtceu:calcium_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Calcium"
+			x: -11.25d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Scandium has atomic number 21. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "758B017D3E965E99"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Sc - 21"
+			tasks: [
+				{
+					id: "7C53147758D8CF2B"
+					type: "checkmark"
+				}
+			]
+			title: "Scandium"
+			x: -9.75d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Produce Titanium Ingot. Titanium has atomic number 22."
+			]
+			icon: "gtceu:titanium_ingot"
+			id: "0E0682F455EE17A3"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Ti - 22"
+			tasks: [
+				{
+					id: "24772CAA31E37FC4"
+					type: "item"
+					item: "gtceu:titanium_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Titanium"
+			x: -8.25d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Produce Vanadium Ingot. Vanadium has atomic number 23."
+			]
+			icon: "gtceu:vanadium_ingot"
+			id: "4F7A7C93EB802BDF"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "V - 23"
+			tasks: [
+				{
+					id: "2687FC9CCE1D30A7"
+					type: "item"
+					item: "gtceu:vanadium_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Vanadium"
+			x: -6.75d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Produce Chromium Ingot. Chrome has atomic number 24."
+			]
+			icon: "gtceu:chromium_ingot"
+			id: "65F0759FA423F3B6"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Cr - 24"
+			tasks: [
+				{
+					id: "3629F549691AB500"
+					type: "item"
+					item: "gtceu:chromium_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Chrome"
+			x: -5.25d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Produce Manganese Ingot. Manganese has atomic number 25."
+			]
+			icon: "gtceu:manganese_ingot"
+			id: "7FF5757BD3B61915"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Mn - 25"
+			tasks: [
+				{
+					id: "116F45B0BCB101E8"
+					type: "item"
+					item: "gtceu:manganese_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Manganese"
+			x: -3.75d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Produce Iron Ingot. Iron has atomic number 26."
+			]
+			icon: "minecraft:iron_ingot"
+			id: "311BE639761C6A58"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Fe - 26"
+			tasks: [
+				{
+					id: "71B079B65D944E31"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Iron"
+			x: -2.25d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Produce Cobalt Ingot. Cobalt has atomic number 27."
+			]
+			icon: "gtceu:cobalt_ingot"
+			id: "26FD1E2642B214FF"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Co - 27"
+			tasks: [
+				{
+					id: "30DD746855C7741F"
+					type: "item"
+					item: "gtceu:cobalt_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Cobalt"
+			x: -0.75d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Produce Nickel Ingot. Nickel has atomic number 28."
+			]
+			icon: "gtceu:nickel_ingot"
+			id: "5F801FC3626BDE96"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Ni - 28"
+			tasks: [
+				{
+					id: "6CE0FC598F44EA97"
+					type: "item"
+					item: "gtceu:nickel_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Nickel"
+			x: 0.75d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Produce Copper Ingot. Copper has atomic number 29."
+			]
+			icon: "minecraft:copper_ingot"
+			id: "00C2FA0D0E8BA6F6"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Cu - 29"
+			tasks: [
+				{
+					id: "47E2A17EDE5A032D"
+					type: "item"
+					item: "minecraft:copper_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Copper"
+			x: 2.25d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Produce Zinc Ingot. Zinc has atomic number 30."
+			]
+			icon: "gtceu:zinc_ingot"
+			id: "0926904730B91933"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Zn - 30"
+			tasks: [
+				{
+					id: "51418A3554AB6B94"
+					type: "item"
+					item: "gtceu:zinc_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Zinc"
+			x: 3.75d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Produce Gallium Ingot. Gallium has atomic number 31."
+			]
+			icon: "gtceu:gallium_ingot"
+			id: "299043F9981DD514"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Ga - 31"
+			tasks: [
+				{
+					id: "5BF659F97799BE70"
+					type: "item"
+					item: "gtceu:gallium_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Gallium"
+			x: 5.25d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Germanium has atomic number 32. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "134DCED0074BD8FE"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Ge - 32"
+			tasks: [
+				{
+					id: "6792F1FD758EA479"
+					type: "checkmark"
+				}
+			]
+			title: "Germanium"
+			x: 6.75d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Produce Arsenic Dust. Arsenic has atomic number 33."
+			]
+			icon: "gtceu:arsenic_dust"
+			id: "4700EA975AA25BFE"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "As - 33"
+			tasks: [
+				{
+					id: "6AAB4A4D644A5560"
+					type: "item"
+					item: "gtceu:arsenic_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Arsenic"
+			x: 8.25d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Selenium has atomic number 34. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "1FCC3D9C040ADB1A"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Se - 34"
+			tasks: [
+				{
+					id: "30D8AFED61EDFB57"
+					type: "checkmark"
+				}
+			]
+			title: "Selenium"
+			x: 9.75d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Produce Bromine Bucket. Bromine has atomic number 35."
+			]
+			icon: "gtceu:bromine_bucket"
+			id: "366D0A1AA25EE75A"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Br - 35"
+			tasks: [
+				{
+					id: "53548BB004E8F76E"
+					type: "item"
+					item: "gtceu:bromine_bucket"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Bromine"
+			x: 11.25d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Produce Krypton Bucket. Krypton has atomic number 36."
+			]
+			icon: "gtceu:krypton_bucket"
+			id: "19DC8BA85401D7C9"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Kr - 36"
+			tasks: [
+				{
+					id: "7FAE795E76FA3F2C"
+					type: "item"
+					item: "gtceu:krypton_bucket"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Krypton"
+			x: 12.75d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Produce Rubidium Dust. Rubidium has atomic number 37."
+			]
+			icon: "gtceu:rubidium_dust"
+			id: "3437FCD4DDE4C533"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Rb - 37"
+			tasks: [
+				{
+					id: "545F9085BFAECA9F"
+					type: "item"
+					item: "gtceu:rubidium_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Rubidium"
+			x: -12.75d
+			y: 7.5d
+		}
+		{
+			description: [
+				"Produce Strontium Dust. Strontium has atomic number 38."
+			]
+			icon: "gtceu:strontium_dust"
+			id: "0CC11A93A29F7918"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Sr - 38"
+			tasks: [
+				{
+					id: "68107732A391D828"
+					type: "item"
+					item: "gtceu:strontium_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Strontium"
+			x: -11.25d
+			y: 7.5d
+		}
+		{
+			description: [
+				"Produce Yttrium Ingot. Yttrium has atomic number 39."
+			]
+			icon: "gtceu:yttrium_ingot"
+			id: "7C130A759258B4AE"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Y - 39"
+			tasks: [
+				{
+					id: "7E2311235363BBB6"
+					type: "item"
+					item: "gtceu:yttrium_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Yttrium"
+			x: -9.75d
+			y: 7.5d
+		}
+		{
+			description: [
+				"Produce Zirconium Dust. Zirconium has atomic number 40."
+			]
+			icon: "gtceu:zirconium_dust"
+			id: "6EBE6C5D9D248635"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Zr - 40"
+			tasks: [
+				{
+					id: "30301523DA687810"
+					type: "item"
+					item: "gtceu:zirconium_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Zirconium"
+			x: -8.25d
+			y: 7.5d
+		}
+		{
+			description: [
+				"Produce Niobium Ingot. Niobium has atomic number 41."
+			]
+			icon: "gtceu:niobium_ingot"
+			id: "1B15129ADCA62980"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Nb - 41"
+			tasks: [
+				{
+					id: "44D176B34E2B13DC"
+					type: "item"
+					item: "gtceu:niobium_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Niobium"
+			x: -6.75d
+			y: 7.5d
+		}
+		{
+			description: [
+				"Produce Molybdenum Ingot. Molybdenum has atomic number 42."
+			]
+			icon: "gtceu:molybdenum_ingot"
+			id: "52925A7F9EA1AEBD"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Mo - 42"
+			tasks: [
+				{
+					id: "73656BE36281A896"
+					type: "item"
+					item: "gtceu:molybdenum_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Molybdenum"
+			x: -5.25d
+			y: 7.5d
+		}
+		{
+			description: [
+				"Technetium has atomic number 43. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "72E5D85A0789FFF9"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Tc - 43"
+			tasks: [
+				{
+					id: "06C946EDCB4A1D4F"
+					type: "checkmark"
+				}
+			]
+			title: "Technetium"
+			x: -3.75d
+			y: 7.5d
+		}
+		{
+			description: [
+				"Produce Ruthenium Ingot. Ruthenium has atomic number 44."
+			]
+			icon: "gtceu:ruthenium_ingot"
+			id: "094AAF435B981FA1"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Ru - 44"
+			tasks: [
+				{
+					id: "20D35DA7F0BE620E"
+					type: "item"
+					item: "gtceu:ruthenium_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Ruthenium"
+			x: -2.25d
+			y: 7.5d
+		}
+		{
+			description: [
+				"Produce Rhodium Ingot. Rhodium has atomic number 45."
+			]
+			icon: "gtceu:rhodium_ingot"
+			id: "0304BF51BA3A9EE1"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Rh - 45"
+			tasks: [
+				{
+					id: "04D992F55037DAFC"
+					type: "item"
+					item: "gtceu:rhodium_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Rhodium"
+			x: -0.75d
+			y: 7.5d
+		}
+		{
+			description: [
+				"Produce Palladium Ingot. Palladium has atomic number 46."
+			]
+			icon: "gtceu:palladium_ingot"
+			id: "5ED1ED288AB062A2"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Pd - 46"
+			tasks: [
+				{
+					id: "51CFFC982A1B57DE"
+					type: "item"
+					item: "gtceu:palladium_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Palladium"
+			x: 0.75d
+			y: 7.5d
+		}
+		{
+			description: [
+				"Produce Silver Ingot. Silver has atomic number 47."
+			]
+			icon: "gtceu:silver_ingot"
+			id: "502FB55EBFA9F5BF"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Ag - 47"
+			tasks: [
+				{
+					id: "05DD4E30B8839911"
+					type: "item"
+					item: "gtceu:silver_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Silver"
+			x: 2.25d
+			y: 7.5d
+		}
+		{
+			description: [
+				"Produce Cadmium Dust. Cadmium has atomic number 48."
+			]
+			icon: "gtceu:cadmium_dust"
+			id: "3937189D661F3C22"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Cd - 48"
+			tasks: [
+				{
+					id: "3149A91FF157B3CE"
+					type: "item"
+					item: "gtceu:cadmium_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Cadmium"
+			x: 3.75d
+			y: 7.5d
+		}
+		{
+			description: [
+				"Produce Indium Ingot. Indium has atomic number 49."
+			]
+			icon: "gtceu:indium_ingot"
+			id: "61665A20E58875BC"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "In - 49"
+			tasks: [
+				{
+					id: "7E19A204AAB6F85A"
+					type: "item"
+					item: "gtceu:indium_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Indium"
+			x: 5.25d
+			y: 7.5d
+		}
+		{
+			description: [
+				"Produce Tin Ingot. Tin has atomic number 50."
+			]
+			icon: "gtceu:tin_ingot"
+			id: "7AF1C4A259C0586D"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Sn - 50"
+			tasks: [
+				{
+					id: "058D0786E91938F5"
+					type: "item"
+					item: "gtceu:tin_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Tin"
+			x: 6.75d
+			y: 7.5d
+		}
+		{
+			description: [
+				"Produce Antimony Ingot. Antimony has atomic number 51."
+			]
+			icon: "gtceu:antimony_ingot"
+			id: "5B141C37C450640B"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Sb - 51"
+			tasks: [
+				{
+					id: "056438E7260D5372"
+					type: "item"
+					item: "gtceu:antimony_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Antimony"
+			x: 8.25d
+			y: 7.5d
+		}
+		{
+			description: [
+				"Produce Tellurium Dust. Tellurium has atomic number 52."
+			]
+			icon: "gtceu:tellurium_dust"
+			id: "095A064E36B081CA"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Te - 52"
+			tasks: [
+				{
+					id: "7CCD9BBA9F8E09D3"
+					type: "item"
+					item: "gtceu:tellurium_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Tellurium"
+			x: 9.75d
+			y: 7.5d
+		}
+		{
+			description: [
+				"Produce Iodine Dust. Iodine has atomic number 53."
+			]
+			icon: "gtceu:iodine_dust"
+			id: "360784D0DF2C914A"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "I - 53"
+			tasks: [
+				{
+					id: "4240F28C2F3F8B76"
+					type: "item"
+					item: "gtceu:iodine_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Iodine"
+			x: 11.25d
+			y: 7.5d
+		}
+		{
+			description: [
+				"Produce Xenon Bucket. Xenon has atomic number 54."
+			]
+			icon: "gtceu:xenon_bucket"
+			id: "568BA2A26710A294"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Xe - 54"
+			tasks: [
+				{
+					id: "318359B859FD9B16"
+					type: "item"
+					item: "gtceu:xenon_bucket"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Xenon"
+			x: 12.75d
+			y: 7.5d
+		}
+		{
+			description: [
+				"Produce Caesium Dust. Caesium has atomic number 55."
+			]
+			icon: "gtceu:caesium_dust"
+			id: "5EF4D4733E8497B5"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Cs - 55"
+			tasks: [
+				{
+					id: "4059311B0B6F6F4A"
+					type: "item"
+					item: "gtceu:caesium_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Caesium"
+			x: -12.75d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Produce Barium Dust. Barium has atomic number 56."
+			]
+			icon: "gtceu:barium_dust"
+			id: "011AE82EF5F109C5"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Ba - 56"
+			tasks: [
+				{
+					id: "1406AF5241CC5B52"
+					type: "item"
+					item: "gtceu:barium_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Barium"
+			x: -11.25d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Produce Lanthanum Dust. Lanthanum has atomic number 57."
+			]
+			icon: "gtceu:lanthanum_dust"
+			id: "16CD62FFB650B207"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "La - 57"
+			tasks: [
+				{
+					id: "0DD96AC9FB792520"
+					type: "item"
+					item: "gtceu:lanthanum_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Lanthanum"
+			x: -9.75d
+			y: 13.5d
+		}
+		{
+			description: [
+				"Produce Cerium Dust. Cerium has atomic number 58."
+			]
+			icon: "gtceu:cerium_dust"
+			id: "0DF58BC0C2C521BB"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Ce - 58"
+			tasks: [
+				{
+					id: "12A7A2F62978554B"
+					type: "item"
+					item: "gtceu:cerium_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Cerium"
+			x: -8.25d
+			y: 13.5d
+		}
+		{
+			description: [
+				"Praseodymium has atomic number 59. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "1B50DA682B797753"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Pr - 59"
+			tasks: [
+				{
+					id: "1AE00E5B860B7788"
+					type: "checkmark"
+				}
+			]
+			title: "Praseodymium"
+			x: -6.75d
+			y: 13.5d
+		}
+		{
+			description: [
+				"Produce Neodymium Ingot. Neodymium has atomic number 60."
+			]
+			icon: "gtceu:neodymium_ingot"
+			id: "24460BA3A7CE6C64"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Nd - 60"
+			tasks: [
+				{
+					id: "5D4E42EA73DCFF63"
+					type: "item"
+					item: "gtceu:neodymium_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Neodymium"
+			x: -5.25d
+			y: 13.5d
+		}
+		{
+			description: [
+				"Promethium has atomic number 61. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "41715BEA8F292ABF"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Pm - 61"
+			tasks: [
+				{
+					id: "47FCA32418DEFEB9"
+					type: "checkmark"
+				}
+			]
+			title: "Promethium"
+			x: -3.75d
+			y: 13.5d
+		}
+		{
+			description: [
+				"Produce Samarium Ingot. Samarium has atomic number 62."
+			]
+			icon: "gtceu:samarium_ingot"
+			id: "10CBB184A95CD354"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Sm - 62"
+			tasks: [
+				{
+					id: "77ABF2BD00FD1D77"
+					type: "item"
+					item: "gtceu:samarium_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Samarium"
+			x: -2.25d
+			y: 13.5d
+		}
+		{
+			description: [
+				"Produce Europium Ingot. Europium has atomic number 63."
+			]
+			icon: "gtceu:europium_ingot"
+			id: "7BAF3EA6D9EE178C"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Eu - 63"
+			tasks: [
+				{
+					id: "776710612B24DC48"
+					type: "item"
+					item: "gtceu:europium_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Europium"
+			x: -0.75d
+			y: 13.5d
+		}
+		{
+			description: [
+				"Gadolinium has atomic number 64. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "20ED7955E8EDBA63"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Gd - 64"
+			tasks: [
+				{
+					id: "7359F3C092B6CF8E"
+					type: "checkmark"
+				}
+			]
+			title: "Gadolinium"
+			x: 0.75d
+			y: 13.5d
+		}
+		{
+			description: [
+				"Terbium has atomic number 65. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "0089A349857766D9"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Tb - 65"
+			tasks: [
+				{
+					id: "51D5FD605410F02F"
+					type: "checkmark"
+				}
+			]
+			title: "Terbium"
+			x: 2.25d
+			y: 13.5d
+		}
+		{
+			description: [
+				"Dysprosium has atomic number 66. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "2D8061315915CB2B"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Dy - 66"
+			tasks: [
+				{
+					id: "41EBDD5649CDA7DE"
+					type: "checkmark"
+				}
+			]
+			title: "Dysprosium"
+			x: 3.75d
+			y: 13.5d
+		}
+		{
+			description: [
+				"Holmium has atomic number 67. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "759067FC424F8668"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Ho - 67"
+			tasks: [
+				{
+					id: "24447265BCDCBCB6"
+					type: "checkmark"
+				}
+			]
+			title: "Holmium"
+			x: 5.25d
+			y: 13.5d
+		}
+		{
+			description: [
+				"Erbium has atomic number 68. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "2F8EEA7B2FFC5E6B"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Er - 68"
+			tasks: [
+				{
+					id: "454AE65B8A27D14B"
+					type: "checkmark"
+				}
+			]
+			title: "Erbium"
+			x: 6.75d
+			y: 13.5d
+		}
+		{
+			description: [
+				"Thulium has atomic number 69. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "0DAB12C544F93911"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Tm - 69"
+			tasks: [
+				{
+					id: "66728181980F3EE9"
+					type: "checkmark"
+				}
+			]
+			title: "Thulium"
+			x: 8.25d
+			y: 13.5d
+		}
+		{
+			description: [
+				"Ytterbium has atomic number 70. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "1408E45AF462E055"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Yb - 70"
+			tasks: [
+				{
+					id: "74C01ACB00FB3C7A"
+					type: "checkmark"
+				}
+			]
+			title: "Ytterbium"
+			x: 9.75d
+			y: 13.5d
+		}
+		{
+			description: [
+				"Produce Lutetium Dust. Lutetium has atomic number 71."
+			]
+			icon: "gtceu:lutetium_dust"
+			id: "1501EC2A6CCDDD4D"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Lu - 71"
+			tasks: [
+				{
+					id: "73BD1B7158EAC5E0"
+					type: "item"
+					item: "gtceu:lutetium_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Lutetium"
+			x: 11.25d
+			y: 13.5d
+		}
+		{
+			description: [
+				"Hafnium has atomic number 72. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "180056A195247740"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Hf - 72"
+			tasks: [
+				{
+					id: "46917560D86ED3A0"
+					type: "checkmark"
+				}
+			]
+			title: "Hafnium"
+			x: -8.25d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Produce Tantalum Ingot. Tantalum has atomic number 73."
+			]
+			icon: "gtceu:tantalum_ingot"
+			id: "521153BBF90224BD"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Ta - 73"
+			tasks: [
+				{
+					id: "43AE31E5D339800E"
+					type: "item"
+					item: "gtceu:tantalum_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Tantalum"
+			x: -6.75d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Produce Tungsten Ingot. Tungsten has atomic number 74."
+			]
+			icon: "gtceu:tungsten_ingot"
+			id: "77F1B5898106D4D4"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "W - 74"
+			tasks: [
+				{
+					id: "1313C1593D895845"
+					type: "item"
+					item: "gtceu:tungsten_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Tungsten"
+			x: -5.25d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Rhenium has atomic number 75. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "286EC5983D2718FA"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Re - 75"
+			tasks: [
+				{
+					id: "3B523885927CB517"
+					type: "checkmark"
+				}
+			]
+			title: "Rhenium"
+			x: -3.75d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Produce Osmium Ingot. Osmium has atomic number 76."
+			]
+			icon: "gtceu:osmium_ingot"
+			id: "5A5105F9B9C9280F"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Os - 76"
+			tasks: [
+				{
+					id: "1EF1999E4BFAE402"
+					type: "item"
+					item: "gtceu:osmium_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Osmium"
+			x: -2.25d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Produce Iridium Ingot. Iridium has atomic number 77."
+			]
+			icon: "gtceu:iridium_ingot"
+			id: "049F0A4117FD5051"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Ir - 77"
+			tasks: [
+				{
+					id: "094EBFC4C786894A"
+					type: "item"
+					item: "gtceu:iridium_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Iridium"
+			x: -0.75d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Produce Platinum Ingot. Platinum has atomic number 78."
+			]
+			icon: "gtceu:platinum_ingot"
+			id: "41E0BA26954AF4CF"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Pt - 78"
+			tasks: [
+				{
+					id: "2692E46EC420AC8B"
+					type: "item"
+					item: "gtceu:platinum_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Platinum"
+			x: 0.75d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Produce Gold Ingot. Gold has atomic number 79."
+			]
+			icon: "minecraft:gold_ingot"
+			id: "5EE9004C294C4B73"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Au - 79"
+			tasks: [
+				{
+					id: "2D1584500E42D7B1"
+					type: "item"
+					item: "minecraft:gold_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Gold"
+			x: 2.25d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Produce Mercury Bucket. Mercury has atomic number 80."
+			]
+			icon: "gtceu:mercury_bucket"
+			id: "44892AE6D20FC47E"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Hg - 80"
+			tasks: [
+				{
+					id: "4D4222740F6B88C6"
+					type: "item"
+					item: "gtceu:mercury_bucket"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Mercury"
+			x: 3.75d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Thallium has atomic number 81. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "754876A70CABDF5D"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Tl - 81"
+			tasks: [
+				{
+					id: "2EC027F0C0B11B65"
+					type: "checkmark"
+				}
+			]
+			title: "Thallium"
+			x: 5.25d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Produce Lead Ingot. Lead has atomic number 82."
+			]
+			icon: "gtceu:lead_ingot"
+			id: "5291B7E5F83C1D90"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Pb - 82"
+			tasks: [
+				{
+					id: "33B4CCFA04ABA4BA"
+					type: "item"
+					item: "gtceu:lead_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Lead"
+			x: 6.75d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Produce Bismuth Ingot. Bismuth has atomic number 83."
+			]
+			icon: "gtceu:bismuth_ingot"
+			id: "5F46B73E28C67821"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Bi - 83"
+			tasks: [
+				{
+					id: "22CDC2E528A1FB57"
+					type: "item"
+					item: "gtceu:bismuth_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Bismuth"
+			x: 8.25d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Polonium has atomic number 84. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "104A9A7BCD7C4C21"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Po - 84"
+			tasks: [
+				{
+					id: "3149A5B11055DE4E"
+					type: "checkmark"
+				}
+			]
+			title: "Polonium"
+			x: 9.75d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Astatine has atomic number 85. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "03FE74ED7989D383"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "At - 85"
+			tasks: [
+				{
+					id: "4BA4B5E54A80EE99"
+					type: "checkmark"
+				}
+			]
+			title: "Astatine"
+			x: 11.25d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Produce Radon Bucket. Radon has atomic number 86."
+			]
+			icon: "gtceu:radon_bucket"
+			id: "68F28D46A5521BFE"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Rn - 86"
+			tasks: [
+				{
+					id: "45B639455E155D85"
+					type: "item"
+					item: "gtceu:radon_bucket"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Radon"
+			x: 12.75d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Francium has atomic number 87. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "1994BF05DF64C319"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Fr - 87"
+			tasks: [
+				{
+					id: "371B642468F388B7"
+					type: "checkmark"
+				}
+			]
+			title: "Francium"
+			x: -12.75d
+			y: 10.5d
+		}
+		{
+			description: [
+				"Radium has atomic number 88. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "0EF6F6F8C88D940E"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Ra - 88"
+			tasks: [
+				{
+					id: "0D412F87394F698C"
+					type: "checkmark"
+				}
+			]
+			title: "Radium"
+			x: -11.25d
+			y: 10.5d
+		}
+		{
+			description: [
+				"Actinium has atomic number 89. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "4A7E5E97480F8DB8"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Ac - 89"
+			tasks: [
+				{
+					id: "5EBFB9D40B0DB38A"
+					type: "checkmark"
+				}
+			]
+			title: "Actinium"
+			x: -9.75d
+			y: 15.0d
+		}
+		{
+			description: [
+				"Produce Thorium Ingot. Thorium has atomic number 90."
+			]
+			icon: "gtceu:thorium_ingot"
+			id: "7785FE8135252508"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Th - 90"
+			tasks: [
+				{
+					id: "7025206C4AB6C5D4"
+					type: "item"
+					item: "gtceu:thorium_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Thorium"
+			x: -8.25d
+			y: 15.0d
+		}
+		{
+			description: [
+				"Protactinium has atomic number 91. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "5114EB719B516BA2"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Pa - 91"
+			tasks: [
+				{
+					id: "25D4B5C3EA544535"
+					type: "checkmark"
+				}
+			]
+			title: "Protactinium"
+			x: -6.75d
+			y: 15.0d
+		}
+		{
+			description: [
+				"Produce Uranium Ingot. Uranium-238 has atomic number 92."
+			]
+			icon: "gtceu:uranium_ingot"
+			id: "48719C511D9E9693"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "U - 92"
+			tasks: [
+				{
+					id: "247BC4BDC96139D2"
+					type: "item"
+					item: "gtceu:uranium_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Uranium-238"
+			x: -5.25d
+			y: 15.0d
+		}
+		{
+			description: [
+				"Neptunium has atomic number 93. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "1EF2B30DE6783F3B"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Np - 93"
+			tasks: [
+				{
+					id: "5C0753593ACCD358"
+					type: "checkmark"
+				}
+			]
+			title: "Neptunium"
+			x: -3.75d
+			y: 15.0d
+		}
+		{
+			description: [
+				"Produce Plutonium Ingot. Plutonium-239 has atomic number 94."
+			]
+			icon: "gtceu:plutonium_ingot"
+			id: "179B95DBA47529EE"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Pu - 94"
+			tasks: [
+				{
+					id: "11AC7DB101657A99"
+					type: "item"
+					item: "gtceu:plutonium_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Plutonium-239"
+			x: -2.25d
+			y: 15.0d
+		}
+		{
+			description: [
+				"Produce Americium Ingot. Americium has atomic number 95."
+			]
+			icon: "gtceu:americium_ingot"
+			id: "22AA7749D48C8148"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Am - 95"
+			tasks: [
+				{
+					id: "52F2B6DACAA92B8C"
+					type: "item"
+					item: "gtceu:americium_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Americium"
+			x: -0.75d
+			y: 15.0d
+		}
+		{
+			description: [
+				"Curium has atomic number 96. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "7D883B92261A7F35"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Cm - 96"
+			tasks: [
+				{
+					id: "6D7A605EE79BF152"
+					type: "checkmark"
+				}
+			]
+			title: "Curium"
+			x: 0.75d
+			y: 15.0d
+		}
+		{
+			description: [
+				"Berkelium has atomic number 97. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "2FFDC775FCCD291F"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Bk - 97"
+			tasks: [
+				{
+					id: "33C1861C2BD75FA8"
+					type: "checkmark"
+				}
+			]
+			title: "Berkelium"
+			x: 2.25d
+			y: 15.0d
+		}
+		{
+			description: [
+				"Californium has atomic number 98. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "7C7AC3F37EFB69EE"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Cf - 98"
+			tasks: [
+				{
+					id: "426341778C662608"
+					type: "checkmark"
+				}
+			]
+			title: "Californium"
+			x: 3.75d
+			y: 15.0d
+		}
+		{
+			description: [
+				"Einsteinium has atomic number 99. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "3D9785BEE3ACD1E5"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Es - 99"
+			tasks: [
+				{
+					id: "5427795F54257FEC"
+					type: "checkmark"
+				}
+			]
+			title: "Einsteinium"
+			x: 5.25d
+			y: 15.0d
+		}
+		{
+			description: [
+				"Fermium has atomic number 100. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "2402D7064262412B"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Fm - 100"
+			tasks: [
+				{
+					id: "3CD86E23CFC24DFA"
+					type: "checkmark"
+				}
+			]
+			title: "Fermium"
+			x: 6.75d
+			y: 15.0d
+		}
+		{
+			description: [
+				"Mendelevium has atomic number 101. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "3F53A95131902C57"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Md - 101"
+			tasks: [
+				{
+					id: "634F26D1AC2C601D"
+					type: "checkmark"
+				}
+			]
+			title: "Mendelevium"
+			x: 8.25d
+			y: 15.0d
+		}
+		{
+			description: [
+				"Nobelium has atomic number 102. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "4F6D153DEE7C5063"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "No - 102"
+			tasks: [
+				{
+					id: "133E885A5CB1DD25"
+					type: "checkmark"
+				}
+			]
+			title: "Nobelium"
+			x: 9.75d
+			y: 15.0d
+		}
+		{
+			description: [
+				"Lawrencium has atomic number 103. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "310EF3B311380E14"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Lr - 103"
+			tasks: [
+				{
+					id: "6F6CEF27AE3CE188"
+					type: "checkmark"
+				}
+			]
+			title: "Lawrencium"
+			x: 11.25d
+			y: 15.0d
+		}
+		{
+			description: [
+				"Rutherfordium has atomic number 104. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "08B82F8EEE03CAD2"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Rf - 104"
+			tasks: [
+				{
+					id: "5E6B5E6B1B70FBA2"
+					type: "checkmark"
+				}
+			]
+			title: "Rutherfordium"
+			x: -8.25d
+			y: 10.5d
+		}
+		{
+			description: [
+				"Dubnium has atomic number 105. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "2743E411DDC43EB2"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Db - 105"
+			tasks: [
+				{
+					id: "6360C2C134F8F059"
+					type: "checkmark"
+				}
+			]
+			title: "Dubnium"
+			x: -6.75d
+			y: 10.5d
+		}
+		{
+			description: [
+				"Seaborgium has atomic number 106. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "7282456022F8C014"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Sg - 106"
+			tasks: [
+				{
+					id: "06157E98A1B20526"
+					type: "checkmark"
+				}
+			]
+			title: "Seaborgium"
+			x: -5.25d
+			y: 10.5d
+		}
+		{
+			description: [
+				"Bohrium has atomic number 107. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "642C01E66017D5C2"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Bh - 107"
+			tasks: [
+				{
+					id: "3D806C73D65CB257"
+					type: "checkmark"
+				}
+			]
+			title: "Bohrium"
+			x: -3.75d
+			y: 10.5d
+		}
+		{
+			description: [
+				"Hassium has atomic number 108. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "69183A895E310978"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Hs - 108"
+			tasks: [
+				{
+					id: "66738A9600F50976"
+					type: "checkmark"
+				}
+			]
+			title: "Hassium"
+			x: -2.25d
+			y: 10.5d
+		}
+		{
+			description: [
+				"Meitnerium has atomic number 109. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "5E1B497B66B912F1"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Mt - 109"
+			tasks: [
+				{
+					id: "5D3C10E9A041A4EE"
+					type: "checkmark"
+				}
+			]
+			title: "Meitnerium"
+			x: -0.75d
+			y: 10.5d
+		}
+		{
+			description: [
+				"Produce Darmstadtium Ingot. Darmstadtium has atomic number 110."
+			]
+			icon: "gtceu:darmstadtium_ingot"
+			id: "3B36230CA34830AA"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Ds - 110"
+			tasks: [
+				{
+					id: "3ED846D4F8A4A53E"
+					type: "item"
+					item: "gtceu:darmstadtium_ingot"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Darmstadtium"
+			x: 0.75d
+			y: 10.5d
+		}
+		{
+			description: [
+				"Roentgenium has atomic number 111. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "42D30490040AD17A"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Rg - 111"
+			tasks: [
+				{
+					id: "448BDAEAB8823DF2"
+					type: "checkmark"
+				}
+			]
+			title: "Roentgenium"
+			x: 2.25d
+			y: 10.5d
+		}
+		{
+			description: [
+				"Copernicium has atomic number 112. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "1F01694F8401AB2A"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Cn - 112"
+			tasks: [
+				{
+					id: "1D8B499AE93AAA32"
+					type: "checkmark"
+				}
+			]
+			title: "Copernicium"
+			x: 3.75d
+			y: 10.5d
+		}
+		{
+			description: [
+				"Nihonium has atomic number 113. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "69A489F2B37A5BDA"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Nh - 113"
+			tasks: [
+				{
+					id: "6C4CE35D2A9E6144"
+					type: "checkmark"
+				}
+			]
+			title: "Nihonium"
+			x: 5.25d
+			y: 10.5d
+		}
+		{
+			description: [
+				"Flerovium has atomic number 114. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "266116F6A903D8BC"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Fl - 114"
+			tasks: [
+				{
+					id: "23D6D3E607DC06C9"
+					type: "checkmark"
+				}
+			]
+			title: "Flerovium"
+			x: 6.75d
+			y: 10.5d
+		}
+		{
+			description: [
+				"Moscovium has atomic number 115. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "643111E5FD772F1D"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Mc - 115"
+			tasks: [
+				{
+					id: "3827E4EB92162167"
+					type: "checkmark"
+				}
+			]
+			title: "Moscovium"
+			x: 8.25d
+			y: 10.5d
+		}
+		{
+			description: [
+				"Livermorium has atomic number 116. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "39E9BF042704ED2C"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Lv - 116"
+			tasks: [
+				{
+					id: "70513950436D89E1"
+					type: "checkmark"
+				}
+			]
+			title: "Livermorium"
+			x: 9.75d
+			y: 10.5d
+		}
+		{
+			description: [
+				"Tennessine has atomic number 117. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "20E6FD418E1EA0E8"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Ts - 117"
+			tasks: [
+				{
+					id: "6A7895E56F5E70CA"
+					type: "checkmark"
+				}
+			]
+			title: "Tennessine"
+			x: 11.25d
+			y: 10.5d
+		}
+		{
+			description: [
+				"Oganesson has atomic number 118. It has no item in the pack yet, so check it off yourself."
+			]
+			icon: "minecraft:paper"
+			id: "562E6F556E643F62"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Og - 118"
+			tasks: [
+				{
+					id: "4BF05A3AD227ECE1"
+					type: "checkmark"
+				}
+			]
+			title: "Oganesson"
+			x: 12.75d
+			y: 10.5d
+		}
+	]
+	title: "Periodic Table"
+}

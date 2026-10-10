@@ -1,0 +1,250 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "wireless"
+	group: "3FDC799CF6961510"
+	icon: "gtna:nexus_flux_matrix"
+	id: "487DBCBE771EF57D"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"GTNA moves steam and electricity through the air. Steam hatches share steam over a wireless network. Electricity goes through the Nexus Flux Matrix: generators deposit energy into it and machines draw energy from it."
+			]
+			icon: "gtna:nexus_flux_matrix"
+			id: "5C019B5E2846B9D4"
+			rewards: [ ]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Steam and electricity without pipes or cables."
+			tasks: [
+				{
+					id: "5FCC10EC91343010"
+					type: "checkmark"
+					title: "Begin"
+				}
+			]
+			title: "Wireless Networks"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5C019B5E2846B9D4"
+			]
+			description: [
+				"Put the output hatch next to a boiler and its steam goes into the wireless network instead of into pipes."
+			]
+			icon: "gtna:wireless_steam_output_hatch"
+			id: "66FE9D53EFC5809F"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Send steam into the network."
+			tasks: [
+				{
+					id: "2D71E677E55E3AF4"
+					type: "item"
+					item: "gtna:wireless_steam_output_hatch"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Wireless Steam Output Hatch"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"66FE9D53EFC5809F"
+			]
+			description: [
+				"Put the input hatch on a steam machine and it draws the steam it needs from the network."
+			]
+			icon: "gtna:wireless_steam_input_hatch"
+			id: "3AEF99284092055C"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Draw steam from the network."
+			tasks: [
+				{
+					id: "616CD7D7B343E8BE"
+					type: "item"
+					item: "gtna:wireless_steam_input_hatch"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Wireless Steam Input Hatch"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3AEF99284092055C"
+			]
+			description: [
+				"The Steel versions of the wireless steam hatches hold far more steam than the Bronze ones, which matters once you run several large machines."
+			]
+			icon: "gtna:wireless_steam_input_hatch_steel"
+			id: "51BA7FA5C93FFC0A"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "More capacity."
+			tasks: [
+				{
+					id: "45465EAC0E81CF18"
+					type: "item"
+					item: "gtna:wireless_steam_input_hatch_steel"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Steel Wireless Steam Hatches"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"51BA7FA5C93FFC0A"
+			]
+			description: [
+				"The Nexus Flux Matrix is a large multiblock that stores EU and shares it wirelessly. Fill its interior with Nexus Capacitors: more and better capacitors mean more storage."
+			]
+			icon: "gtna:nexus_flux_matrix"
+			id: "2696A2F1B3139C12"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "A wireless battery for the factory."
+			tasks: [
+				{
+					id: "3F7D11E37F2F8CE9"
+					type: "item"
+					item: "gtna:nexus_flux_matrix"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Nexus Flux Matrix"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"2696A2F1B3139C12"
+			]
+			description: [
+				"Nexus Capacitors fill the interior of the Flux Matrix. The basic one stores 160,000 EU; higher tiers store far more."
+			]
+			icon: "gtna:nexus_capacitor_lv"
+			id: "62B6515FA46E9E07"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Storage for the matrix."
+			tasks: [
+				{
+					id: "0A3DD71A384EF23E"
+					type: "item"
+					item: "gtna:nexus_capacitor_lv"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Nexus Capacitor"
+			x: -3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"2696A2F1B3139C12"
+			]
+			description: [
+				"The Nexus Linker connects hatches to the Flux Matrix. Shift-click the matrix controller, then click the hatch you want to link."
+			]
+			icon: "gtna:nexus_linker"
+			id: "5BDAE697615BCBC7"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Tie a hatch to the matrix."
+			tasks: [
+				{
+					id: "085339B0B09282AA"
+					type: "item"
+					item: "gtna:nexus_linker"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Nexus Linker"
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"5BDAE697615BCBC7"
+			]
+			description: [
+				"Put a Wireless Dynamo Hatch on a generator and link it with the Nexus Linker: the generator deposits its energy into the Flux Matrix."
+			]
+			icon: "gtna:wireless_dynamo_hatch_1a_lv"
+			id: "6B4A626EEB7C8149"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Deposit energy into the matrix."
+			tasks: [
+				{
+					id: "5983BBD067B63D6A"
+					type: "item"
+					item: "gtna:wireless_dynamo_hatch_1a_lv"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Wireless Dynamo Hatch"
+			x: 3.0d
+			y: 9.75d
+		}
+		{
+			dependencies: [
+				"5BDAE697615BCBC7"
+			]
+			description: [
+				"Put a Wireless Energy Hatch on a machine and link it with the Nexus Linker: the machine draws power from the Flux Matrix with no cable at all."
+			]
+			icon: "gtna:wireless_energy_hatch_1a_lv"
+			id: "37121221C77746A4"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Draw energy from the matrix."
+			tasks: [
+				{
+					id: "27CDA15BE7D07940"
+					type: "item"
+					item: "gtna:wireless_energy_hatch_1a_lv"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "Wireless Energy Hatch"
+			x: 4.5d
+			y: 9.75d
+		}
+	]
+	title: "Wireless Networks"
+}

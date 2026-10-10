@@ -1,0 +1,25 @@
+title = "MV · Bayer and Hall-Héroult (aluminium the real way)"
+node = [
+  { id = "bauxite", kind = "material", label = "1 Bauxite Dust" },
+  { id = "naoh", kind = "material", label = "1 Sodium Hydroxide<BR/>(Diaphragm Cell)" },
+  { id = "water", kind = "material", label = "1,000 mB Water<BR/>+ 1,000 mB Steam" },
+  { id = "dig", kind = "machine", label = "Bayer Digester", note = "circuit 1 · 15 s · MV" },
+  { id = "aluminate", kind = "material", label = "1,000 mB<BR/>Sodium Aluminate" },
+  { id = "redmud", kind = "residue", label = "red mud" },
+  { id = "prec", kind = "machine", label = "Bayer Digester", note = "circuit 2 · 10 s" },
+  { id = "hydroxide", kind = "material", label = "2 Aluminium Hydroxide" },
+  { id = "naoh2", kind = "material", label = "~0.9 NaOH back" },
+  { id = "kiln", kind = "machine", label = "Lime Kiln", note = "Steam Age · 20 s" },
+  { id = "alumina", kind = "material", label = "1 Alumina" },
+  { id = "anode", kind = "material", label = "Carbon Anode<BR/>(coke + wood tar)", area = "cell" },
+  { id = "cryo", kind = "material", label = "Cryolite bath<BR/>(5% used per run)", area = "cell" },
+  { id = "hh", kind = "machine", label = "Hall-Héroult Cell", note = "MV · 30 s", area = "cell" },
+  { id = "al", kind = "material", label = "4 Aluminium Ingots<BR/>per 2 Alumina", area = "cell" },
+  { id = "co2", kind = "residue", label = "CO₂", area = "cell" },
+]
+area = [ { id = "cell", label = "Reduction (2 Al₂O₃ + 3 C → 4 Al + 3 CO₂)", colour = "brown" } ]
+edge = [
+  ["bauxite","dig"], ["naoh","dig"], ["water","dig"], ["dig","aluminate"], ["dig","redmud"],
+  ["aluminate","prec"], ["prec","hydroxide"], ["prec","naoh2"], ["naoh2","dig","recycle"],
+  ["hydroxide","kiln","2"], ["kiln","alumina"], ["alumina","hh","2"], ["anode","hh"], ["cryo","hh"], ["hh","al"], ["hh","co2"],
+]

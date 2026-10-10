@@ -1,0 +1,865 @@
+[chapter]
+title = "Medium Voltage Age"
+icon = "gtceu:mv_machine_hull"
+
+[entry]
+x = 0
+y = 0
+reward = [{ item = "gtceu:aluminium_ingot", count = 16 }]
+subtitle = "Ascension III"
+requires = ["lv:exit", "lv:lv_polarizer", "lv:lv_lathe", "lv:lv_mixer", "lv:lv_electrolyzer", "lv:lv_centrifuge", "lv:lv_chem_reactor", "lv:lv_fluid_heater", "lv:lv_extractor", "lv:lv_solidifier", "lv:blast_furnace", "lv:polyethylene", "lv:hydrochloric_acid", "lv:lv_wiremill", "lv:lv_bender", "lv:lv_assembler", "lv:lv_circuit_assembler"]
+text = """
+Medium Voltage is where the factory starts to look like an industry: silicon becomes chips, and the old processes of real chemistry plants arrive. Bauxite into aluminium, sulfur into acid, air into ammonia. This Ascension ends with an [item]Advanced Integrated Circuit[/] and an [item]HV Machine Hull[/].
+"""
+
+[[quest]]
+key = "mv_motor"
+title = "MV Electric Motor"
+role = "spine"
+task = [{ item = "gtceu:mv_electric_motor", count = 2 }]
+deps = ["entry"]
+x = 2
+y = 0
+subtitle = "Aluminium rods, steel magnets."
+text = """
+Cupronickel coils around a magnetic steel rod. Every MV machine starts here.
+"""
+
+[[quest]]
+key = "mv_parts"
+title = "MV Components"
+role = "spine"
+task = [{ item = "gtceu:mv_electric_piston" }, { item = "gtceu:mv_electric_pump" }, { item = "gtceu:mv_conveyor_module" }, { item = "gtceu:mv_robot_arm" }]
+deps = ["mv_power"]
+x = 6
+y = 0
+subtitle = "The same four, a tier up."
+text = """
+Piston, pump, conveyor and robot arm at MV.
+"""
+
+[[quest]]
+key = "mv_power"
+title = "MV Steam Turbine"
+role = "spine"
+task = [{ item = "gtceu:mv_steam_turbine" }]
+deps = ["mv_motor"]
+x = 4
+y = 0
+subtitle = "128 V from the same steam."
+text = """
+Your boilers again, at Medium Voltage. Or check Power Generation for combustion and gas.
+"""
+
+[[quest]]
+key = "mv_assembler"
+title = "MV Assembler"
+role = "side"
+task = [{ item = "gtceu:mv_assembler" }]
+deps = ["mv_parts"]
+x = 4
+y = -2.5
+group = "mvshop"
+subtitle = "Faster, and MV recipes."
+text = """
+Transistors and integrated circuits need an MV Assembler.
+"""
+
+[[quest]]
+key = "mv_mixer"
+title = "MV Mixer"
+role = "side"
+task = [{ item = "gtceu:mv_mixer" }]
+deps = ["mv_parts"]
+x = 8
+y = 0
+group = "mvshop"
+subtitle = "Four ingredients at once."
+text = """
+Stainless Steel, Kanthal and Vanadium Steel dusts all need an MV Mixer.
+"""
+
+[[quest]]
+key = "chemical_bath"
+title = "MV Chemical Bath"
+role = "detail"
+task = [{ item = "gtceu:mv_chemical_bath" }]
+deps = ["mv_assembler"]
+x = 24
+y = -2.5
+group = "ebf"
+hide_lines = true
+subtitle = "A cold bath for hot metal."
+text = """
+Besides washing ores in chemicals, it quenches hot ingots in water: Kanthal comes out of the furnace too hot to touch.
+"""
+
+[[quest]]
+key = "kanthal"
+title = "Kanthal Coils"
+role = "side"
+task = [{ item = "gtceu:kanthal_coil_block", count = 8 }]
+deps = ["mv_hatch", "chemical_bath"]
+x = 21.5
+y = -2.5
+group = "ebf"
+subtitle = "2700 K."
+text = """
+Kanthal smelts hot in the Electric Blast Furnace; quench the hot ingot in the Chemical Bath, then wire it with Aluminium foil and copper. The furnace is ready for the hotter metals of High Voltage.
+
+[tip]Real fact:[/] Kanthal (iron, chromium, aluminium) was invented in Sweden in the 1930s and still heats most toasters on Earth.
+"""
+
+[[quest]]
+key = "vanadium_steel"
+title = "Vanadium Steel"
+role = "side"
+task = [{ item = "gtceu:vanadium_steel_ingot", count = 4 }]
+deps = ["mv_mixer"]
+x = 10
+y = 0
+group = "mvshop"
+subtitle = "Tough steel for blades."
+text = """
+Vanadium, Chromium and Steel, mixed and smelted. The MV Cutter's saw blade is made of it.
+"""
+
+[[quest]]
+key = "mv_cutter"
+title = "MV Cutter"
+role = "side"
+task = [{ item = "gtceu:mv_cutter" }]
+deps = ["vanadium_steel"]
+x = 12
+y = 0
+group = "mvshop"
+subtitle = "Slices of silicon."
+text = """
+A Vanadium Steel buzz saw. It cuts silicon boules into wafers and wafers into chips.
+"""
+
+[[quest]]
+key = "mv_extruder"
+title = "Extruder"
+role = "side"
+task = [{ item = "gtceu:mv_extruder" }]
+deps = ["mv_assembler"]
+x = 26
+y = 9
+group = "mvshop"
+hide_lines = true
+subtitle = "Shapes from a die."
+text = """
+Plates, rods, pipes and more from one ingot and the right shape.
+"""
+
+[[quest]]
+key = "mv_chem_reactor"
+title = "MV Chemical Reactor"
+role = "side"
+task = [{ item = "gtceu:mv_chemical_reactor" }]
+deps = ["mv_parts"]
+x = 6
+y = 2.5
+group = "mvshop"
+subtitle = "Hotter chemistry."
+text = """
+Cryolite, the Bayer line and the vanadium catalyst start here.
+"""
+
+[[quest]]
+key = "mv_electrolyzer"
+title = "MV Electrolyzer"
+role = "detail"
+task = [{ item = "gtceu:mv_electrolyzer" }]
+deps = ["mv_chem_reactor"]
+x = 6
+y = 4.5
+group = "mvshop"
+subtitle = "Harder splits."
+text = """
+Mica, Lepidolite and Topaz give up their fluorine only at MV.
+"""
+
+[[quest]]
+key = "mv_lathe"
+title = "MV Lathe"
+role = "detail"
+task = [{ item = "gtceu:mv_lathe" }]
+deps = ["emerald"]
+x = 11.5
+y = -7
+group = "mvshop"
+subtitle = "Lenses."
+text = """
+Turns exquisite gems into the lenses of the Laser Engraver.
+"""
+
+[[quest]]
+key = "ore_washer"
+title = "Ore Washer"
+role = "detail"
+task = [{ item = "gtceu:lv_ore_washer" }]
+deps = ["mv_parts"]
+x = 6
+y = -2.5
+group = "mvshop"
+subtitle = "Clean ore, more ore."
+text = """
+Washing crushed ore gives purified ore and its first byproducts.
+"""
+
+[[quest]]
+key = "sifter"
+title = "Sifter"
+role = "detail"
+task = [{ item = "gtceu:lv_sifter" }]
+deps = ["ore_washer"]
+x = 6
+y = -5
+group = "mvshop"
+subtitle = "Grades your gems."
+text = """
+Purified gem ores through a Sifter come out as gems of every quality.
+"""
+
+[[quest]]
+key = "lv_cutter"
+title = "LV Cutter"
+role = "detail"
+task = [{ item = "gtceu:lv_cutter" }]
+deps = ["ore_washer"]
+x = 8
+y = -2.5
+group = "mvshop"
+hide_lines = true
+subtitle = "Plates from gems."
+text = """
+Cuts gem blocks into plates: Lazurite plates make fluid filters.
+"""
+
+[[quest]]
+key = "emerald"
+title = "Flawless Emerald"
+role = "detail"
+task = [{ item = "gtceu:flawless_emerald_gem" }]
+deps = ["sifter"]
+x = 9
+y = -5
+group = "mvshop"
+subtitle = "Sift for the good ones."
+text = """
+A Sifter grades purified gem ores. The emitter needs a flawless emerald.
+"""
+
+[[quest]]
+key = "mv_emitter"
+title = "MV Emitter"
+role = "detail"
+task = [{ item = "gtceu:mv_emitter" }]
+deps = ["emerald"]
+x = 11.5
+y = -5
+group = "mvshop"
+subtitle = "A focused beam."
+text = """
+The heart of the Laser Engraver.
+"""
+
+[[quest]]
+key = "mv_engraver"
+title = "Laser Engraver"
+role = "side"
+task = [{ item = "gtceu:mv_laser_engraver" }]
+deps = ["mv_emitter"]
+x = 14
+y = -4
+group = "mvshop"
+subtitle = "Light that writes."
+text = """
+With a lens, it prints circuits onto silicon wafers.
+"""
+
+[[quest]]
+key = "lenses"
+title = "Lenses"
+role = "detail"
+task = [{ item = "gtceu:ruby_lens" }, { item = "gtceu:emerald_lens" }, { item = "gtceu:sapphire_lens" }]
+deps = ["mv_lathe"]
+x = 15
+y = -6.5
+group = "circuit"
+subtitle = "Red, green, blue."
+text = """
+Ruby for logic, emerald for memory, sapphire for the power chips. Exquisite gems on the MV Lathe.
+"""
+
+[[quest]]
+key = "ulpic"
+title = "ULPIC Chips"
+role = "detail"
+task = [{ item = "gtceu:ulpic_chip", count = 2 }]
+deps = ["wafer", "mv_engraver", "lenses"]
+x = 16.5
+y = -2.5
+group = "ebf"
+subtitle = "Power management on a chip."
+text = """
+A sapphire lens and a silicon wafer. MV Energy Hatches need them.
+"""
+
+[[quest]]
+key = "voltage_coil"
+title = "MV Voltage Coil"
+role = "detail"
+task = [{ item = "gtceu:mv_voltage_coil", count = 2 }]
+deps = ["mv_assembler"]
+x = 19
+y = -2.5
+group = "ebf"
+hide_lines = true
+subtitle = "A magnet, wound."
+text = """
+Fine copper wire around a magnetic steel rod.
+"""
+
+[[quest]]
+key = "mv_hatch"
+title = "MV Energy Hatches"
+role = "side"
+task = [{ item = "gtceu:mv_energy_input_hatch", count = 2 }]
+deps = ["ulpic", "voltage_coil"]
+x = 19
+y = 0
+group = "ebf"
+subtitle = "Two of them."
+text = """
+Two MV Energy Hatches push the Electric Blast Furnace to High Voltage recipes: Stainless Steel and Kanthal.
+"""
+
+[[quest]]
+key = "stainless_steel"
+title = "Stainless Steel"
+role = "spine"
+task = [{ item = "gtceu:stainless_steel_ingot", count = 8 }]
+deps = ["mv_hatch", "mv_mixer"]
+x = 21.5
+y = 0
+group = "ebf"
+subtitle = "Iron that does not rust."
+text = """
+Iron, Nickel, Manganese and Chromium, mixed and smelted in the Electric Blast Furnace at MV.
+
+[tip]Real fact:[/] stainless steel was found in 1913 by Harry Brearley, looking for a better gun barrel. He got cutlery instead.
+"""
+
+[[quest]]
+key = "silicon_boule"
+title = "Silicon Boule"
+role = "gate"
+task = [{ item = "gtceu:silicon_boule" }]
+deps = ["mv_mixer"]
+x = 12
+y = -2.5
+group = "circuit"
+subtitle = "One big crystal."
+text = """
+Silicon dust and a pinch of Gallium Arsenide, grown in the Electric Blast Furnace.
+
+[tip]Real fact:[/] this is the Czochralski process, from 1916; Jan Czochralski found it by dipping his pen into molten tin instead of the inkwell.
+"""
+
+[[quest]]
+key = "wafer"
+title = "Silicon Wafers"
+role = "detail"
+task = [{ item = "gtceu:silicon_wafer", count = 16 }]
+deps = ["silicon_boule", "mv_cutter"]
+x = 14
+y = 0
+group = "circuit"
+subtitle = "Sliced thin."
+text = """
+One boule, many wafers. Everything electronic from now on starts as one of these.
+"""
+
+[[quest]]
+key = "ilc"
+title = "Integrated Logic Circuits"
+role = "detail"
+task = [{ item = "gtceu:ilc_chip", count = 4 }]
+deps = ["ulpic"]
+x = 16.5
+y = 2.5
+group = "circuit"
+subtitle = "The first chips."
+text = """
+Engrave a wafer with a red lens and cut it into chips.
+"""
+
+[[quest]]
+key = "ram"
+title = "RAM Chips"
+role = "detail"
+task = [{ item = "gtceu:ram_chip", count = 2 }]
+deps = ["ilc"]
+x = 18.5
+y = 2.5
+group = "circuit"
+subtitle = "Memory."
+text = """
+A different lens, a different chip.
+"""
+
+[[quest]]
+key = "transistor"
+title = "Transistors"
+role = "side"
+task = [{ item = "gtceu:transistor", count = 4 }]
+deps = ["wafer", "mv_assembler"]
+x = 20.5
+y = 4.5
+group = "circuit"
+hide_lines = true
+subtitle = "The switch that changed everything."
+text = """
+Silicon, fine tin wire and polyethylene.
+
+[tip]Real fact:[/] the first transistor (Bell Labs, 1947) was a lump of germanium with two gold contacts held on by a paperclip.
+"""
+
+[[quest]]
+key = "basic_ic"
+title = "Basic Integrated Circuit"
+role = "detail"
+task = [{ item = "gtceu:basic_integrated_circuit", count = 4 }]
+deps = ["ilc"]
+x = 16.5
+y = 4.5
+group = "circuit"
+subtitle = "A circuit on a chip."
+text = """
+A resin board, an ILC chip, resistors and diodes.
+"""
+
+[[quest]]
+key = "good_ic"
+title = "Good Integrated Circuit"
+role = "detail"
+task = [{ item = "gtceu:good_integrated_circuit", count = 2 }]
+deps = ["basic_ic"]
+x = 16.5
+y = 6.5
+group = "circuit"
+subtitle = "Two become one."
+text = """
+Two basic integrated circuits on a phenolic board, with gold wire and silver bolts.
+"""
+
+[[quest]]
+key = "arc_furnace"
+title = "Arc Furnace"
+role = "detail"
+task = [{ item = "gtceu:lv_arc_furnace" }]
+deps = ["mv_assembler"]
+x = 2
+y = -2.5
+group = "mvshop"
+subtitle = "Lightning in a box."
+text = """
+Melts metal with an electric arc. With Oxygen, copper comes out annealed; it also recycles old machines into ingots.
+"""
+
+[[quest]]
+key = "annealed_copper"
+title = "Annealed Copper"
+role = "detail"
+task = [{ item = "gtceu:annealed_copper_ingot", count = 4 }]
+deps = ["nitrogen", "arc_furnace"]
+x = 18.5
+y = 8.5
+group = "circuit"
+hide_lines = true
+subtitle = "Softer copper, better wire."
+text = """
+Copper through the Arc Furnace with Oxygen from your air separation.
+"""
+
+[[quest]]
+key = "hv_circuit"
+title = "Advanced Integrated Circuit"
+role = "milestone"
+task = [{ item = "gtceu:advanced_integrated_circuit" }]
+deps = ["good_ic", "ram", "transistor", "annealed_copper"]
+x = 18.5
+y = 6.5
+group = "circuit"
+subtitle = "The HV circuit."
+text = """
+Two good integrated circuits, ILC and RAM chips, transistors, electrum wire and annealed copper bolts.
+"""
+
+[[quest]]
+key = "stainless_plate"
+title = "Stainless Steel Plates"
+role = "detail"
+task = [{ item = "gtceu:stainless_steel_plate", count = 9 }]
+deps = ["stainless_steel"]
+x = 24
+y = 0
+group = "hull"
+subtitle = "Nine plates."
+text = """
+Eight for the casing and one for the hull.
+"""
+
+[[quest]]
+key = "hv_casing"
+title = "HV Machine Casing"
+role = "spine"
+task = [{ item = "gtceu:hv_machine_casing" }]
+deps = ["stainless_plate"]
+x = 24
+y = 2.5
+group = "hull"
+subtitle = "Eight Stainless Steel Plates."
+text = """
+The shell of every High Voltage machine.
+"""
+
+[[quest]]
+key = "gold_cable"
+title = "Gold Cable"
+role = "detail"
+task = [{ item = "gtceu:gold_single_cable", count = 2 }]
+deps = ["mv_assembler"]
+x = 26
+y = 5
+group = "hull"
+hide_lines = true
+subtitle = "HV needs gold."
+text = """
+Gold wire in rubber.
+"""
+
+[[quest]]
+key = "pe_plate"
+title = "Polyethylene Plates"
+role = "detail"
+task = [{ item = "gtceu:polyethylene_plate", count = 2 }]
+deps = ["mv_extruder"]
+x = 26
+y = 7
+group = "hull"
+hide_lines = true
+subtitle = "Plastic, finally useful."
+text = """
+Solidify the Polyethylene from your LV line into plates.
+"""
+
+[[quest]]
+key = "hv_hull"
+title = "HV Machine Hull"
+role = "milestone"
+task = [{ item = "gtceu:hv_machine_hull" }]
+deps = ["hv_casing", "gold_cable", "pe_plate"]
+x = 24
+y = 5
+group = "hull"
+subtitle = "The body of every HV machine."
+text = """
+Casing, two Gold Cables, two Polyethylene Plates and a Stainless Steel Plate.
+"""
+
+[[quest]]
+key = "bayer"
+title = "Bayer Digester"
+role = "side"
+task = [{ item = "gtia:bayer_digester" }]
+deps = ["mv_chem_reactor"]
+x = 8
+y = 2.5
+group = "bayer"
+subtitle = "Bauxite in hot caustic soda."
+text = """
+Circuit 1 digests [num]1 Bauxite[/], [num]1 Sodium Hydroxide[/], water and steam into [num]1,000 mB[/] of Sodium Aluminate, leaving red mud. Circuit 2 precipitates it into [num]2 Aluminium Hydroxide[/] and gives back most of the soda.
+
+Provisional structure: a hollow [num]3×3×3[/] of Solid Steel Machine Casings with hatches in the walls.
+
+[tip]Real fact:[/] Karl Josef Bayer patented the process in 1888. Nearly all the world's alumina is still made this way.
+"""
+
+[[quest]]
+key = "alumina"
+title = "Alumina"
+role = "detail"
+task = [{ item = "gtia:alumina_dust", count = 4 }]
+deps = ["bayer", "steam:lime_kiln"]
+x = 10
+y = 2.5
+group = "bayer"
+hide_lines = true
+subtitle = "Calcined in the Lime Kiln."
+text = """
+Your old Lime Kiln calcines [num]2 Aluminium Hydroxide[/] into [num]1 Alumina[/]. The Steam Age is still working for you.
+"""
+
+[[quest]]
+key = "cryolite"
+title = "Cryolite"
+role = "detail"
+task = [{ item = "gtia:cryolite_dust" }]
+deps = ["bayer", "fluorine", "mv_chem_reactor"]
+x = 8
+y = 6.5
+group = "bayer"
+subtitle = "The molten bath."
+text = """
+Aluminium Hydroxide, Sodium Hydroxide and Hydrofluoric Acid in a Chemical Reactor. Alumina dissolves in it at a much lower temperature.
+"""
+
+[[quest]]
+key = "anode"
+title = "Carbon Anode"
+role = "detail"
+task = [{ item = "gtia:carbon_anode", count = 4 }]
+deps = ["mv_mixer", "steam:charcoal_byproducts"]
+x = 12
+y = 6.5
+group = "bayer"
+hide_lines = true
+subtitle = "Coke and tar."
+text = """
+Coke dust bound with Wood Tar in a Mixer. It burns away in the cell, one per run.
+"""
+
+[[quest]]
+key = "hall_heroult"
+title = "Hall-Héroult Cell"
+role = "side"
+task = [{ item = "gtia:hall_heroult_cell" }]
+deps = ["alumina", "cryolite", "anode"]
+x = 10
+y = 6.5
+group = "bayer"
+subtitle = "Aluminium the real way."
+text = """
+[num]2 Alumina[/] and a Carbon Anode become [num]4 Aluminium Ingots[/] and CO₂, with a small chance to use up the cryolite bath. No blast furnace needed.
+
+[tip]Real fact:[/] Charles Hall and Paul Héroult found the same process in 1886, independently, on two continents. Both were 22.
+"""
+
+[[quest]]
+key = "gas_collector"
+title = "Gas Collector"
+role = "detail"
+task = [{ item = "gtceu:lv_gas_collector" }]
+deps = ["lv_cutter"]
+x = 2
+y = 4.5
+group = "acid"
+hide_lines = true
+subtitle = "Bottled air."
+text = """
+It pulls Air from the world around it. Its fluid filter is a Lazurite plate.
+"""
+
+[[quest]]
+key = "nitrogen"
+title = "Nitrogen"
+role = "detail"
+task = [{ item = "gtceu:nitrogen_bucket" }]
+deps = ["gas_collector"]
+x = 2
+y = 6.5
+group = "acid"
+subtitle = "Four fifths of the air."
+text = """
+A Centrifuge splits Air into Nitrogen and Oxygen.
+"""
+
+[[quest]]
+key = "fluorine"
+title = "Hydrofluoric Acid"
+role = "detail"
+task = [{ item = "gtceu:hydrofluoric_acid_bucket" }]
+deps = ["mv_electrolyzer"]
+x = 6
+y = 6.5
+group = "bayer"
+subtitle = "Handle with care."
+text = """
+Fluorine from Mica or Lepidolite in the MV Electrolyzer, burnt with Hydrogen into Hydrofluoric Acid.
+"""
+
+[[quest]]
+key = "vanadium_pentoxide"
+title = "Vanadium Pentoxide"
+role = "detail"
+task = [{ item = "gtia:vanadium_pentoxide_dust" }]
+deps = ["mv_chem_reactor"]
+x = 4
+y = 2.5
+group = "acid"
+subtitle = "The catalyst."
+text = """
+Vanadium dust burnt in oxygen. It is never used up.
+"""
+
+[[quest]]
+key = "contact"
+title = "Contact Converter"
+role = "side"
+task = [{ item = "gtia:contact_converter" }]
+deps = ["vanadium_pentoxide"]
+x = 4
+y = 4.5
+group = "acid"
+subtitle = "Sulfur into acid, and steam for free."
+text = """
+Sulfur, oxygen and water over Vanadium Pentoxide: [num]1,000 mB[/] of Sulfuric Acid and [num]2,000 mB[/] of steam per run. The reaction is hot enough to feed your turbines.
+
+[tip]Real fact:[/] sulfuric acid is the most produced chemical in the world; economists once used it to measure how industrial a country was.
+"""
+
+[[quest]]
+key = "haber"
+title = "Ammonia Converter"
+role = "side"
+task = [{ item = "gtia:ammonia_converter" }]
+deps = ["nitrogen"]
+x = 2
+y = 8.5
+group = "acid"
+subtitle = "Bread from air."
+text = """
+Nitrogen and Hydrogen over an iron (Magnetite) catalyst become Ammonia, with a little steam. Your Diaphragm Cell already makes the hydrogen.
+
+[tip]Real fact:[/] the Haber-Bosch process feeds about half of humanity: most of the nitrogen in your body passed through one.
+"""
+
+[[quest]]
+key = "solvay"
+title = "Solvay Tower"
+role = "side"
+task = [{ item = "gtia:solvay_tower" }]
+deps = ["ammonia"]
+x = 6
+y = 8.5
+group = "acid"
+subtitle = "Soda from salt and lime."
+text = """
+Brine, Ammonia and CO₂ give Sodium Bicarbonate and Ammonium Chloride. The Lime Kiln calcines the bicarbonate into Soda Ash, and Quicklime gets the ammonia back.
+
+[tip]Real fact:[/] Ernest Solvay's process (1861) made soda ash so cheap that glass windows became normal houses' business.
+"""
+
+[[quest]]
+key = "sulfuric_acid"
+title = "Sulfuric Acid"
+role = "detail"
+task = [{ item = "gtceu:sulfuric_acid_bucket", count = 4 }]
+deps = ["contact"]
+x = 4
+y = 6.5
+group = "acid"
+subtitle = "The most useful acid."
+text = """
+From now on, make it in bulk.
+"""
+
+[[quest]]
+key = "ammonia"
+title = "Ammonia"
+role = "detail"
+task = [{ item = "gtceu:ammonia_bucket", count = 4 }]
+deps = ["haber"]
+x = 4
+y = 8.5
+group = "acid"
+subtitle = "Bread from air, by the bucket."
+text = """
+Fertiliser, explosives, rocket fuel, and the Solvay Tower.
+"""
+
+[[quest]]
+key = "soda_ash"
+title = "Soda Ash"
+role = "detail"
+task = [{ item = "gtceu:soda_ash_dust", count = 8 }]
+deps = ["solvay", "steam:lime_kiln"]
+x = 8
+y = 8.5
+group = "acid"
+hide_lines = true
+subtitle = "Calcined bicarbonate."
+text = """
+Sodium Bicarbonate from the tower, calcined in your Lime Kiln.
+"""
+
+[[quest]]
+key = "pyrolyse"
+title = "Pyrolyse Oven"
+role = "side"
+task = [{ item = "gtceu:pyrolyse_oven" }]
+deps = ["mv_parts"]
+x = 2
+y = 2.5
+group = "wood"
+subtitle = "The Retort, grown up."
+text = """
+Logs and nitrogen in, charcoal and far more byproducts out. The efficient route for your wood chemistry.
+"""
+
+[[quest]]
+key = "distillery"
+title = "Distillery"
+role = "detail"
+task = [{ item = "gtceu:mv_distillery" }]
+deps = ["pyrolyse"]
+x = 0
+y = 2.5
+group = "wood"
+subtitle = "The Still, grown up."
+text = """
+Much more Methanol and Acetic Acid from the same Wood Vinegar.
+"""
+
+[[quest]]
+key = "autocrafting"
+title = "Autocrafting"
+role = "side"
+task = [{ item = "ae2:pattern_provider" }, { item = "ae2:molecular_assembler" }, { item = "ae2:crafting_unit" }]
+deps = ["mv_assembler", "lv:ae2_start"]
+x = 2
+y = -5
+hide_lines = true
+subtitle = "The network starts working for you."
+text = """
+Pattern Providers, Molecular Assemblers and Crafting Units. Teach the network a recipe once and it makes it forever.
+"""
+
+[[quest]]
+key = "greenhouse"
+title = "Greenhouse"
+role = "optional"
+task = [{ item = "gtna:greenhouse" }]
+deps = ["mv_parts"]
+x = 0
+y = -2.5
+group = "bio"
+hide_lines = true
+subtitle = "Crops on a conveyor."
+text = """
+A GTNA multiblock that grows plants for your Fermentation Vats and wood lines.
+"""
+
+[exit]
+x = 21
+y = 8.5
+title = "Ascend to High Voltage"
+subtitle = "Stainless steel and a chip that thinks."
+deps = ["hv_circuit", "hv_hull"]
+text = """
+Integrated circuits, stainless steel and Kanthal coils. High Voltage is next.
+"""
