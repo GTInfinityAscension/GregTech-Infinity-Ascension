@@ -94,9 +94,9 @@ def cmd_server(out: Path, version: str | None) -> Path:
     with zipfile.ZipFile(target, "w", zipfile.ZIP_DEFLATED) as z:
         for path in sorted(root.rglob("*")):
             if path.is_file():
-                info_entry = zipfile.ZipInfo.from_file(path, path.relative_to(root).as_posix())
-                if path.name == "install.sh":
-                    info_entry.external_attr = 0o755 << 16
+                # Fixed timestamp: Nix sets every file to 1970, which zip cannot store, and it keeps builds reproducible.
+                info_entry = zipfile.ZipInfo(path.relative_to(root).as_posix(), (1980, 1, 1, 0, 0, 0))
+                info_entry.external_attr = (0o755 if path.name == "install.sh" else 0o644) << 16
                 z.writestr(info_entry, path.read_bytes(), zipfile.ZIP_DEFLATED)
     shutil.rmtree(work)
     shutil.rmtree(root)
