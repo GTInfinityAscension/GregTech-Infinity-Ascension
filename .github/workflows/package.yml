@@ -77,4 +77,4 @@ jobs:
             gh release delete nightly --yes --cleanup-tag || true
           fi
           gh release create "$TAG" $FLAGS --title "$TITLE" --notes-file .github/release-notes.md \
-            --target "$GITHUB_SHA" dist/*.zip
+            --target "$GITHUB_SHA" $(find dist -name "*.zip")
