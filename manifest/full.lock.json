@@ -867,7 +867,7 @@
     {
       "mod_id": "gtna",
       "filename": "gtna-0.5.3.jar",
-      "sha256": "0a2460d110a9e667db0051300f56234fa0c7f2248317f9743d523fc8716217d2",
+      "sha256": "049e82c5c1d5e9331b9a4c03d278c55bd1ee7e8401c83a15c85bf4937623f8e2",
       "source": "local-build",
       "path": "/home/raishxn/MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.5.3.jar",
       "requires": []
