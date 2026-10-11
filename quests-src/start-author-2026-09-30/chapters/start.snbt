@@ -14,24 +14,17 @@
 			rewards: [
 				{
 					id: "27F543A7FB625F00"
-					item: {
-						Count: 1
-						id: "ae2:fluix_axe"
-						tag: {
-							Damage: 0
-						}
-					}
+					item: "gtceu:vanadium_steel_axe"
 					type: "item"
 				}
 				{
 					id: "7F82185C25C25A3A"
-					item: {
-						Count: 1
-						id: "ae2:fluix_pickaxe"
-						tag: {
-							Damage: 0
-						}
-					}
+					item: "gtceu:vanadium_steel_pickaxe"
+					type: "item"
+				}
+				{
+					id: "3E9B1C4A7D2F5061"
+					item: "gtceu:vanadium_steel_shovel"
 					type: "item"
 				}
 			]
@@ -184,6 +177,11 @@
 				{
 					id: "2BE20D8D4A5A2701"
 					item: "minecraft:crying_obsidian"
+					type: "item"
+				}
+				{
+					id: "59CC94CAE75F034B"
+					item: "modernspace:personal_space_portal"
 					type: "item"
 				}
 			]

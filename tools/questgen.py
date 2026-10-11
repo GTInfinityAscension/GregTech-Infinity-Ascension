@@ -585,9 +585,80 @@ def check_reachability(book, quests_by_id, chapter_of, all_ids, errors, notes) -
             errors.append(f"{all_ids[qid]}: {message}")
 
 
+LANG_SRC = SRC / "lang"
+LANG_PACK = PACK / "config" / "openloader" / "resources" / "gtia_quests"
+LANGUAGES = ("pt_br", "zh_cn")
+
+
+def translatable(line: str) -> bool:
+    """Plain text lines get a key; empty lines and FTB tags such as {image:...} or {@pagebreak} stay as they are."""
+    stripped = line.strip()
+    return bool(stripped) and not (stripped.startswith("{") and stripped.endswith("}"))
+
+
+def localize(chapters: dict[str, dict], groups: dict) -> dict[str, str]:
+    """Replaces every player-facing text with a {key} that FTB Quests translates, and returns the English text."""
+    english: dict[str, str] = {}
+
+    def key(name: str, text: str) -> str:
+        english[name] = text
+        return "{" + name + "}"
+
+    for data in chapters.values():
+        chapter_id = data["id"]
+        if data.get("title"):
+            data["title"] = key(f"gtia.quest.chapter.{chapter_id}", data["title"])
+        if data.get("subtitle"):
+            data["subtitle"] = [key(f"gtia.quest.chapter.{chapter_id}.subtitle.{i}", line) if translatable(line)
+                                else line for i, line in enumerate(data["subtitle"])] \
+                if isinstance(data["subtitle"], list) else key(f"gtia.quest.chapter.{chapter_id}.subtitle",
+                                                               data["subtitle"])
+        for quest in data["quests"]:
+            base = f"gtia.quest.{quest['id']}"
+            for field in ("title", "subtitle"):
+                if quest.get(field):
+                    quest[field] = key(f"{base}.{field}", quest[field])
+            if quest.get("description"):
+                quest["description"] = [key(f"{base}.desc.{i}", line) if translatable(line) else line
+                                        for i, line in enumerate(quest["description"])]
+            for task in quest.get("tasks", []):
+                if task.get("title"):
+                    task["title"] = key(f"{base}.task.{task['id']}", task["title"])
+            for reward in quest.get("rewards", []):
+                if reward.get("title"):
+                    reward["title"] = key(f"{base}.reward.{reward['id']}", reward["title"])
+    for group in groups["chapter_groups"]:
+        group["title"] = key(f"gtia.quest.group.{group['id']}", group["title"])
+    return english
+
+
+def write_languages(english: dict[str, str]) -> None:
+    """en_us from the source text; other languages from quests-src/lang/<lang>.json ({English text: translation})."""
+    lang_dir = LANG_PACK / "assets" / "gtia_quests" / "lang"
+    lang_dir.mkdir(parents=True, exist_ok=True)
+    (LANG_PACK / "pack.mcmeta").write_text(json.dumps(
+        {"pack": {"description": "GTIA quest book text", "pack_format": 15}}, indent=2) + "\n", encoding="utf-8")
+    (lang_dir / "en_us.json").write_text(json.dumps(english, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    for lang in LANGUAGES:
+        source = LANG_SRC / f"{lang}.json"
+        table = json.loads(source.read_text(encoding="utf-8")) if source.exists() else {}
+        missing = sorted({text for text in english.values() if text not in table})
+        translated = {name: table.get(text, text) for name, text in english.items()}
+        (lang_dir / f"{lang}.json").write_text(json.dumps(translated, ensure_ascii=False, indent=1) + "\n",
+                                               encoding="utf-8")
+        print(f"wrote lang/{lang}.json ({len(english) - sum(1 for t in english.values() if t not in table)}"
+              f"/{len(english)} translated)")
+        (LANG_SRC / f"{lang}.missing.json").write_text(
+            json.dumps({text: "" for text in missing}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8") \
+            if missing else (LANG_SRC / f"{lang}.missing.json").unlink(missing_ok=True)
+
+
 def cmd_build() -> int:
     book = Book()
     chapters = book.build()
+    groups = book.groups_snbt()
+    english = localize(chapters, groups)
+    write_languages(english)
     chapters_dir = OUT / "chapters"
     chapters_dir.mkdir(parents=True, exist_ok=True)
     for file, data in chapters.items():
@@ -602,7 +673,6 @@ def cmd_build() -> int:
         for table_id, table in book.reward_tables.items():
             (tables_dir / f"{table_id.lower()}.snbt").write_text(snbt.dumps(table), encoding="utf-8")
         print(f"wrote {len(book.reward_tables)} reward table(s)")
-    groups = book.groups_snbt()
     text = "{\n\tchapter_groups: [\n" + "\n".join(
         f'\t\t{{ id: "{g["id"]}", title: "{g["title"]}" }}' for g in groups["chapter_groups"]) + "\n\t]\n}\n"
     (OUT / "chapter_groups.snbt").write_text(text, encoding="utf-8")

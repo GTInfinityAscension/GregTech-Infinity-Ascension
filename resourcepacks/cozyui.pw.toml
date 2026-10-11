@@ -1,0 +1,13 @@
+name = "CozyUI+"
+filename = "§cCozyUI§b+ §7v1.8§c no-fonts §0.zip"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "1534238731a7aca8c3483204695efc63851d1085"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6809370
+project-id = 1152016

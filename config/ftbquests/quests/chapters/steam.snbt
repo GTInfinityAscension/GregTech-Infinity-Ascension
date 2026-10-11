@@ -22,24 +22,24 @@
 				"64D91166C361698D"
 			]
 			description: [
-				"&6Bronze&r and &6Coke&r got you here. Now water becomes steam, and steam drives your first machines."
+				"{gtia.quest.777C50D80E2DDE50.desc.0}"
 				""
-				"Each quest asks for one thing, and each branch starts from what it is made of. The road runs left to right to &6Steel&r and the first circuit. Gears are the stops that matter; diamonds are optional."
+				"{gtia.quest.777C50D80E2DDE50.desc.2}"
 			]
 			icon: "gtceu:lp_steam_solid_boiler"
 			id: "777C50D80E2DDE50"
 			rewards: [ ]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "Ascension I"
+			subtitle: "{gtia.quest.777C50D80E2DDE50.subtitle}"
 			tasks: [
 				{
 					id: "4E24CAD891AE926A"
 					type: "checkmark"
-					title: "Begin"
+					title: "{gtia.quest.777C50D80E2DDE50.task.4E24CAD891AE926A}"
 				}
 			]
-			title: "Steam Age"
+			title: "{gtia.quest.777C50D80E2DDE50.title}"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -48,13 +48,13 @@
 				"777C50D80E2DDE50"
 			]
 			description: [
-				"You already carry &6Bronze&r from Start, so this completes as soon as you open the chapter. Everything in this tier grows from it."
+				"{gtia.quest.20D6FC1CBD24554B.desc.0}"
 			]
 			id: "20D6FC1CBD24554B"
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "Where the Steam age begins."
+			subtitle: "{gtia.quest.20D6FC1CBD24554B.subtitle}"
 			tasks: [
 				{
 					id: "6E89A2C500EDDB17"
@@ -65,7 +65,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Bronze Age"
+			title: "{gtia.quest.20D6FC1CBD24554B.title}"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -74,9 +74,9 @@
 				"777C50D80E2DDE50"
 			]
 			description: [
-				"- Every steam machine has an &dexhaust&r. &cKeep the block in front of it empty&r, or the machine stops after one operation."
-				"- Low-pressure machines take &etwice as long&r as high-pressure ones. High pressure needs &6Steel&r."
-				"- A steam machine refuses any recipe above &e32 EU/t&r (Low Voltage). Those recipes wait for electricity."
+				"{gtia.quest.044777D8A6ACACE5.desc.0}"
+				"{gtia.quest.044777D8A6ACACE5.desc.1}"
+				"{gtia.quest.044777D8A6ACACE5.desc.2}"
 			]
 			icon: "gtceu:steam_machine_casing"
 			id: "044777D8A6ACACE5"
@@ -84,15 +84,15 @@
 			rewards: [ ]
 			shape: "pentagon"
 			size: 1.25d
-			subtitle: "Three rules worth knowing first."
+			subtitle: "{gtia.quest.044777D8A6ACACE5.subtitle}"
 			tasks: [
 				{
 					id: "548F2E3B58E368AD"
 					type: "checkmark"
-					title: "Understood"
+					title: "{gtia.quest.044777D8A6ACACE5.task.548F2E3B58E368AD}"
 				}
 			]
-			title: "How Steam Machines Work"
+			title: "{gtia.quest.044777D8A6ACACE5.title}"
 			x: 0.0d
 			y: -2.5d
 		}
@@ -101,9 +101,9 @@
 				"20D6FC1CBD24554B"
 			]
 			description: [
-				"&eFive&r &6Bronze Plates&r around a &6Furnace&r, over &etwo&r &6Brick&r blocks, turned with a wrench. Give it &6Water&r, burn &6Coal&r or &6Coke&r, and it fills with &6Steam&r."
+				"{gtia.quest.10F6BF82785B0F48.desc.0}"
 				""
-				"&cIf it runs dry while hot, let it cool before adding water: water poured into a hot, empty boiler makes it explode.&r"
+				"{gtia.quest.10F6BF82785B0F48.desc.2}"
 			]
 			icon: "gtceu:lp_steam_solid_boiler"
 			id: "10F6BF82785B0F48"
@@ -117,7 +117,7 @@
 			]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "Five plates around a furnace."
+			subtitle: "{gtia.quest.10F6BF82785B0F48.subtitle}"
 			tasks: [
 				{
 					id: "30B36EC8339D57D3"
@@ -128,7 +128,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Boil Water"
+			title: "{gtia.quest.10F6BF82785B0F48.title}"
 			x: 4.0d
 			y: 0.0d
 		}
@@ -137,7 +137,7 @@
 				"10F6BF82785B0F48"
 			]
 			description: [
-				"A furnace that runs on the steam you already make, so your &6Coal&r goes to the boiler only."
+				"{gtia.quest.309831FDDA2D16A3.desc.0}"
 			]
 			icon: "gtceu:lp_steam_furnace"
 			id: "309831FDDA2D16A3"
@@ -145,7 +145,7 @@
 			rewards: [ ]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "Smelting without fuel."
+			subtitle: "{gtia.quest.309831FDDA2D16A3.subtitle}"
 			tasks: [
 				{
 					id: "23025C3881EA2438"
@@ -156,7 +156,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Steam Furnace"
+			title: "{gtia.quest.309831FDDA2D16A3.title}"
 			x: 4.0d
 			y: 2.0d
 		}
@@ -165,16 +165,16 @@
 				"10F6BF82785B0F48"
 			]
 			description: [
-				"A boiler drinks a lot. The &6Primitive Pump&r draws &6Water&r from the world into its &6Pump Hatch&r; pipe it to your boilers. It is built from &6Treated Wood&r, so your Creosote finally has a use."
+				"{gtia.quest.0D4E8CC3245E6800.desc.0}"
 				""
-				"&o&7It does not have to stand in water.&r"
+				"{gtia.quest.0D4E8CC3245E6800.desc.2}"
 			]
 			icon: "gtceu:primitive_pump"
 			id: "0D4E8CC3245E6800"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Water without buckets."
+			subtitle: "{gtia.quest.0D4E8CC3245E6800.subtitle}"
 			tasks: [
 				{
 					id: "26FD4519F93747F8"
@@ -193,7 +193,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Primitive Pump"
+			title: "{gtia.quest.0D4E8CC3245E6800.title}"
 			x: 4.0d
 			y: -2.0d
 		}
@@ -202,12 +202,12 @@
 				"0D4E8CC3245E6800"
 			]
 			description: [
-				"- &6Solid Boiler&r: Coal, Coke, Charcoal. Its Steel version makes more steam."
-				"- &6Liquid Boiler&r: burns Creosote and lava. Needs &6Glass&r."
-				"- &6Solar Boiler&r: &ano fuel at all&r, &cnothing at night&r. Needs &6Glass&r."
-				"- &6Large Bronze Boiler&r: a multiblock, once you have circuits."
+				"{gtia.quest.0FF5E90023F5FCFD.desc.0}"
+				"{gtia.quest.0FF5E90023F5FCFD.desc.1}"
+				"{gtia.quest.0FF5E90023F5FCFD.desc.2}"
+				"{gtia.quest.0FF5E90023F5FCFD.desc.3}"
 				""
-				"&aThe Power Generation chapter puts them side by side.&r"
+				"{gtia.quest.0FF5E90023F5FCFD.desc.5}"
 			]
 			icon: "gtceu:lp_steam_solar_boiler"
 			id: "0FF5E90023F5FCFD"
@@ -215,15 +215,15 @@
 			rewards: [ ]
 			shape: "pentagon"
 			size: 1.25d
-			subtitle: "Pick by the fuel you have."
+			subtitle: "{gtia.quest.0FF5E90023F5FCFD.subtitle}"
 			tasks: [
 				{
 					id: "651F41F50E567053"
 					type: "checkmark"
-					title: "Understood"
+					title: "{gtia.quest.0FF5E90023F5FCFD.task.651F41F50E567053}"
 				}
 			]
-			title: "More Ways to Make Steam"
+			title: "{gtia.quest.0FF5E90023F5FCFD.title}"
 			x: 4.0d
 			y: -4.0d
 		}
@@ -232,14 +232,14 @@
 				"10F6BF82785B0F48"
 			]
 			description: [
-				"&eTwo&r &6Furnaces&r and a &6Bronze Brick Casing&r in a ring of small bronze pipes. It melts two ingredients into one, and with a &dmold&r it casts glass and rubber."
+				"{gtia.quest.520AD237AC3B724D.desc.0}"
 			]
 			icon: "gtceu:lp_steam_alloy_smelter"
 			id: "520AD237AC3B724D"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Two inputs, one new metal."
+			subtitle: "{gtia.quest.520AD237AC3B724D.subtitle}"
 			tasks: [
 				{
 					id: "7F031FA0987826F9"
@@ -250,7 +250,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Alloy Smelter"
+			title: "{gtia.quest.520AD237AC3B724D.title}"
 			x: 6.0d
 			y: 0.0d
 		}
@@ -259,14 +259,14 @@
 				"520AD237AC3B724D"
 			]
 			description: [
-				"&6Copper&r and &efour&r &6Redstone&r in the Alloy Smelter make &6Red Alloy&r, the conductor of the Ultra Low Voltage tier."
+				"{gtia.quest.130B22C46670AED8.desc.0}"
 			]
 			icon: "gtceu:red_alloy_ingot"
 			id: "130B22C46670AED8"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Copper and redstone."
+			subtitle: "{gtia.quest.130B22C46670AED8.subtitle}"
 			tasks: [
 				{
 					id: "5A57A385162A5197"
@@ -277,7 +277,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Red Alloy"
+			title: "{gtia.quest.130B22C46670AED8.title}"
 			x: 6.0d
 			y: -2.0d
 		}
@@ -286,14 +286,14 @@
 				"130B22C46670AED8"
 			]
 			description: [
-				"Hammer &6Red Alloy&r into a plate and cut it with the &6Wire Cutter&r. With rubber, after Steel, it becomes a cable."
+				"{gtia.quest.25B8076FDC395763.desc.0}"
 			]
 			icon: "gtceu:red_alloy_single_wire"
 			id: "25B8076FDC395763"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Plate and wire cutter."
+			subtitle: "{gtia.quest.25B8076FDC395763.subtitle}"
 			tasks: [
 				{
 					id: "3831FEB630E85901"
@@ -304,7 +304,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Red Alloy Wire"
+			title: "{gtia.quest.25B8076FDC395763.title}"
 			x: 6.0d
 			y: -4.0d
 		}
@@ -313,7 +313,7 @@
 				"61C301395A3CD5BF"
 			]
 			description: [
-				"&6Phase Matrix&r deposits sit in the stone of the Overworld between &eY 40 and 60&r, marked by indicators on the surface. Your Prospector finds them too."
+				"{gtia.quest.30EDF167593F2578.desc.0}"
 			]
 			icon: "gtia:raw_phase_matrix"
 			id: "30EDF167593F2578"
@@ -321,7 +321,7 @@
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Infinity Ascension's own ore."
+			subtitle: "{gtia.quest.30EDF167593F2578.subtitle}"
 			tasks: [
 				{
 					id: "2B28B17BC6ADC024"
@@ -332,7 +332,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Phase Matrix"
+			title: "{gtia.quest.30EDF167593F2578.title}"
 			x: 10.0d
 			y: -2.0d
 		}
@@ -341,16 +341,16 @@
 				"30EDF167593F2578"
 			]
 			description: [
-				"The &6Macerator&r crushes the raw matrix; crush the result again for &6Impure Phase Matrix Dust&r. A hand hammer does the second step too."
+				"{gtia.quest.363987BE26B78FE4.desc.0}"
 				""
-				"&o&7The recipe viewer shows how much each step yields.&r"
+				"{gtia.quest.363987BE26B78FE4.desc.2}"
 			]
 			icon: "gtia:impure_phase_matrix_dust"
 			id: "363987BE26B78FE4"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Crushed, then crushed again."
+			subtitle: "{gtia.quest.363987BE26B78FE4.subtitle}"
 			tasks: [
 				{
 					id: "0B5E4337D997D536"
@@ -369,7 +369,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Impure Phase Dust"
+			title: "{gtia.quest.363987BE26B78FE4.title}"
 			x: 10.0d
 			y: -4.0d
 		}
@@ -378,16 +378,16 @@
 				"363987BE26B78FE4"
 			]
 			description: [
-				"&eOne&r &6Iron Ingot&r and &eone&r &6Impure Phase Matrix Dust&r in the Alloy Smelter make one &6Pulsating Alloy&r."
+				"{gtia.quest.0E0958673BA3B92E.desc.0}"
 				""
-				"&o&7An Ender Pearl in place of the dust works too.&r"
+				"{gtia.quest.0E0958673BA3B92E.desc.2}"
 			]
 			icon: "gtia:pulsating_alloy_ingot"
 			id: "0E0958673BA3B92E"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Iron plus phase."
+			subtitle: "{gtia.quest.0E0958673BA3B92E.subtitle}"
 			tasks: [
 				{
 					id: "5ED4C6B197A5C90C"
@@ -398,7 +398,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Pulsating Alloy"
+			title: "{gtia.quest.0E0958673BA3B92E.title}"
 			x: 8.0d
 			y: -4.0d
 		}
@@ -408,7 +408,7 @@
 				"130B22C46670AED8"
 			]
 			description: [
-				"&6Red Alloy&r and &6Pulsating Alloy&r smelt into &etwo&r &6Conductive Alloy&r. Its wire carries Ultra Low Voltage at &e4 amps&r with &ano loss over distance&r."
+				"{gtia.quest.236448436A2E4C33.desc.0}"
 			]
 			icon: "gtia:conductive_alloy_ingot"
 			id: "236448436A2E4C33"
@@ -416,7 +416,7 @@
 			rewards: [ ]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "A wire that loses nothing."
+			subtitle: "{gtia.quest.236448436A2E4C33.subtitle}"
 			tasks: [
 				{
 					id: "456EFFD0591C5068"
@@ -427,7 +427,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Conductive Alloy"
+			title: "{gtia.quest.236448436A2E4C33.title}"
 			x: 8.0d
 			y: -6.0d
 		}
@@ -436,14 +436,14 @@
 				"520AD237AC3B724D"
 			]
 			description: [
-				"The Compressor takes &etwo&r &6Pistons&r, the Macerator &etwo&r, the Forge Hammer &eone&r. Iron works; Bronze and Steel are alternatives for the metal in the middle."
+				"{gtia.quest.3565931FCE2A770E.desc.0}"
 			]
 			icon: "minecraft:piston"
 			id: "3565931FCE2A770E"
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "Every steam machine that moves."
+			subtitle: "{gtia.quest.3565931FCE2A770E.subtitle}"
 			tasks: [
 				{
 					id: "247DB674355112EC"
@@ -454,7 +454,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Pistons"
+			title: "{gtia.quest.3565931FCE2A770E.title}"
 			x: 8.0d
 			y: 0.0d
 		}
@@ -463,14 +463,14 @@
 				"3565931FCE2A770E"
 			]
 			description: [
-				"&eTwo&r &6Pistons&r and &etwo&r &6Diamonds&r. It grinds ore, bricks, clay and wood into dust without wearing out your mortar, and it is the first step of the &6Phase Matrix&r."
+				"{gtia.quest.61C301395A3CD5BF.desc.0}"
 			]
 			icon: "gtceu:lp_steam_macerator"
 			id: "61C301395A3CD5BF"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Two diamonds well spent."
+			subtitle: "{gtia.quest.61C301395A3CD5BF.subtitle}"
 			tasks: [
 				{
 					id: "110372353CE4E33E"
@@ -481,7 +481,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Macerator"
+			title: "{gtia.quest.61C301395A3CD5BF.title}"
 			x: 10.0d
 			y: 0.0d
 		}
@@ -490,16 +490,16 @@
 				"61C301395A3CD5BF"
 			]
 			description: [
-				"Your &6Macerator&r, &etwo&r &6Potin Gears&r and &6Steam Machine Casings&r (&esix&r Bronze Plates around a Brick make two) form the &6Steam Grinder&r. It processes &dseveral items at once&r."
+				"{gtia.quest.45ABA36DDF417F2D.desc.0}"
 				""
-				"&o&7Its preview in the recipe viewer gives the casing count.&r"
+				"{gtia.quest.45ABA36DDF417F2D.desc.2}"
 			]
 			icon: "gtceu:steam_grinder"
 			id: "45ABA36DDF417F2D"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "A macerator grown into a multiblock."
+			subtitle: "{gtia.quest.45ABA36DDF417F2D.subtitle}"
 			tasks: [
 				{
 					id: "4B617FB3969A73C4"
@@ -526,7 +526,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Steam Grinder"
+			title: "{gtia.quest.45ABA36DDF417F2D.title}"
 			x: 10.0d
 			y: 2.0d
 		}
@@ -535,14 +535,14 @@
 				"61C301395A3CD5BF"
 			]
 			description: [
-				"&eTwo&r &6Pistons&r and a &6Bronze Machine Casing&r. It presses dust into plates, &6Fireclay&r into raw bricks and &enine&r &6Iron Ingots&r into an &6Iron Block&r."
+				"{gtia.quest.4717128674ADBA89.desc.0}"
 			]
 			icon: "gtceu:lp_steam_compressor"
 			id: "4717128674ADBA89"
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "Squeeze dust into shape."
+			subtitle: "{gtia.quest.4717128674ADBA89.subtitle}"
 			tasks: [
 				{
 					id: "3DA52947FCA03D5F"
@@ -553,7 +553,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Compressor"
+			title: "{gtia.quest.4717128674ADBA89.title}"
 			x: 12.0d
 			y: 0.0d
 		}
@@ -562,14 +562,14 @@
 				"4717128674ADBA89"
 			]
 			description: [
-				"&cNine ingots on a crafting table do not make an Iron Block in this pack.&r The Compressor does."
+				"{gtia.quest.012E53ECB697D9F3.desc.0}"
 			]
 			icon: "minecraft:iron_block"
 			id: "012E53ECB697D9F3"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Only the Compressor makes them."
+			subtitle: "{gtia.quest.012E53ECB697D9F3.subtitle}"
 			tasks: [
 				{
 					id: "69C6823E76B7C2DD"
@@ -580,7 +580,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Iron Blocks"
+			title: "{gtia.quest.012E53ECB697D9F3.title}"
 			x: 12.0d
 			y: -2.0d
 		}
@@ -589,14 +589,14 @@
 				"012E53ECB697D9F3"
 			]
 			description: [
-				"&eFive&r &6Iron Blocks&r, &6Iron Screws&r and &6Iron Plates&r. The Forge Hammer is built around it."
+				"{gtia.quest.69D73C20940013E3.desc.0}"
 			]
 			icon: "minecraft:anvil"
 			id: "69D73C20940013E3"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Five blocks, screws and plates."
+			subtitle: "{gtia.quest.69D73C20940013E3.subtitle}"
 			tasks: [
 				{
 					id: "4D10B3B9027AADB8"
@@ -607,7 +607,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Anvil"
+			title: "{gtia.quest.69D73C20940013E3.title}"
 			x: 12.0d
 			y: -4.0d
 		}
@@ -616,14 +616,14 @@
 				"69D73C20940013E3"
 			]
 			description: [
-				"An &6Anvil&r and a &6Piston&r in bronze pipes. &eThree&r ingots become &etwo&r plates, where the hand hammer needs two ingots for one. It crushes ore too."
+				"{gtia.quest.0BE3526B1728A13F.desc.0}"
 			]
 			icon: "gtceu:lp_steam_forge_hammer"
 			id: "0BE3526B1728A13F"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Three ingots, two plates."
+			subtitle: "{gtia.quest.0BE3526B1728A13F.subtitle}"
 			tasks: [
 				{
 					id: "5EA3B4979C4A23E6"
@@ -634,7 +634,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Forge Hammer"
+			title: "{gtia.quest.0BE3526B1728A13F.title}"
 			x: 14.0d
 			y: -4.0d
 		}
@@ -643,7 +643,7 @@
 				"0BE3526B1728A13F"
 			]
 			description: [
-				"&eEight&r &6Wrought Iron Plates&r make an &6Ultra Low Voltage Machine Casing&r, later in this chapter."
+				"{gtia.quest.2E1B5CB58E08EB29.desc.0}"
 			]
 			icon: "gtceu:wrought_iron_plate"
 			id: "2E1B5CB58E08EB29"
@@ -651,7 +651,7 @@
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "The first job for the hammer."
+			subtitle: "{gtia.quest.2E1B5CB58E08EB29.subtitle}"
 			tasks: [
 				{
 					id: "1753C7868930099B"
@@ -662,7 +662,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Wrought Iron Plates"
+			title: "{gtia.quest.2E1B5CB58E08EB29.title}"
 			x: 5.5d
 			y: 13.0d
 		}
@@ -671,14 +671,14 @@
 				"4717128674ADBA89"
 			]
 			description: [
-				"Grind &6Bricks&r and &6Clay&r into dust, with the mortar or the Macerator, and mix one of each into &etwo&r &6Fireclay Dust&r."
+				"{gtia.quest.63D808F9077FA81E.desc.0}"
 			]
 			icon: "gtceu:fireclay_dust"
 			id: "63D808F9077FA81E"
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "Brick dust and clay dust."
+			subtitle: "{gtia.quest.63D808F9077FA81E.subtitle}"
 			tasks: [
 				{
 					id: "2994C7DC882302E8"
@@ -689,7 +689,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Fireclay"
+			title: "{gtia.quest.63D808F9077FA81E.title}"
 			x: 14.0d
 			y: 0.0d
 		}
@@ -698,16 +698,16 @@
 				"63D808F9077FA81E"
 			]
 			description: [
-				"Compress &6Fireclay Dust&r, bake it in a furnace into a &6Firebrick&r, and set &efour&r Firebricks into one &6Firebricks&r block."
+				"{gtia.quest.7DA696110A273CA4.desc.0}"
 				""
-				"&aOpen the blast furnace's multiblock preview for the exact count before you start baking.&r"
+				"{gtia.quest.7DA696110A273CA4.desc.2}"
 			]
 			icon: "gtceu:firebricks"
 			id: "7DA696110A273CA4"
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "Compress, bake, stack."
+			subtitle: "{gtia.quest.7DA696110A273CA4.subtitle}"
 			tasks: [
 				{
 					id: "751294BA590CF88E"
@@ -726,7 +726,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Firebricks"
+			title: "{gtia.quest.7DA696110A273CA4.title}"
 			x: 16.0d
 			y: 0.0d
 		}
@@ -735,9 +735,9 @@
 				"7DA696110A273CA4"
 			]
 			description: [
-				"Build the furnace around its controller. It turns &6Iron&r and fuel into &6Steel&r without any steam at all, slowly."
+				"{gtia.quest.3713CBE1F33AC0E6.desc.0}"
 				""
-				"&aWrought Iron is much faster than plain Iron:&r with Coke, a Steel ingot takes &e600 ticks&r from Wrought Iron and &e1500&r from Iron."
+				"{gtia.quest.3713CBE1F33AC0E6.desc.2}"
 			]
 			icon: "gtceu:primitive_blast_furnace"
 			id: "3713CBE1F33AC0E6"
@@ -751,7 +751,7 @@
 			]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "Your first furnace for Steel."
+			subtitle: "{gtia.quest.3713CBE1F33AC0E6.subtitle}"
 			tasks: [
 				{
 					id: "1E3CD22F00A3C11E"
@@ -762,7 +762,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Primitive Blast Furnace"
+			title: "{gtia.quest.3713CBE1F33AC0E6.title}"
 			x: 18.0d
 			y: 0.0d
 		}
@@ -771,7 +771,7 @@
 				"3713CBE1F33AC0E6"
 			]
 			description: [
-				"Your first &6Steel&r ingot. From here on Steel is in nearly everything: molds, bolts, high-pressure machines, GTNA's large steam machines and the first circuit."
+				"{gtia.quest.707CBC0C69EAFA06.desc.0}"
 			]
 			id: "707CBC0C69EAFA06"
 			rewards: [
@@ -783,7 +783,7 @@
 			]
 			shape: "gear"
 			size: 2.25d
-			subtitle: "The metal of the rest of the game."
+			subtitle: "{gtia.quest.707CBC0C69EAFA06.subtitle}"
 			tasks: [
 				{
 					id: "7B6F9EDE689EEE20"
@@ -794,7 +794,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Steel"
+			title: "{gtia.quest.707CBC0C69EAFA06.title}"
 			x: 20.5d
 			y: 0.0d
 		}
@@ -803,7 +803,7 @@
 				"707CBC0C69EAFA06"
 			]
 			description: [
-				"With &6Steel&r you can build the high-pressure boiler and high-pressure versions of every steam machine. They finish recipes in &ehalf the time&r and burn more steam doing it."
+				"{gtia.quest.237E6A27D526CE57.desc.0}"
 			]
 			icon: "gtceu:hp_steam_solid_boiler"
 			id: "237E6A27D526CE57"
@@ -811,7 +811,7 @@
 			rewards: [ ]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "Steel boilers, faster machines."
+			subtitle: "{gtia.quest.237E6A27D526CE57.subtitle}"
 			tasks: [
 				{
 					id: "18965FDFAA9B3553"
@@ -822,7 +822,7 @@
 					match_nbt: false
 				}
 			]
-			title: "High Pressure"
+			title: "{gtia.quest.237E6A27D526CE57.title}"
 			x: 20.5d
 			y: -2.5d
 		}
@@ -831,14 +831,14 @@
 				"707CBC0C69EAFA06"
 			]
 			description: [
-				"&6Bronze&r and &6Steel&r in the Alloy Smelter make &6Stronze&r, the metal of GTNA's large steam machines."
+				"{gtia.quest.53C413FEC2C1001C.desc.0}"
 			]
 			icon: "gtna:stronze_ingot"
 			id: "53C413FEC2C1001C"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Bronze and Steel together."
+			subtitle: "{gtia.quest.53C413FEC2C1001C.subtitle}"
 			tasks: [
 				{
 					id: "51337E0FD2548719"
@@ -849,7 +849,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Stronze"
+			title: "{gtia.quest.53C413FEC2C1001C.title}"
 			x: 23.0d
 			y: -2.0d
 		}
@@ -858,14 +858,14 @@
 				"53C413FEC2C1001C"
 			]
 			description: [
-				"Bronze gears, rods and springs around &eone&r small &6Steel Spring&r. Every Large steam controller of GTNA takes one or more; the Leap Forward furnace takes &efour&r."
+				"{gtia.quest.0C9BA2223F3D4D33.desc.0}"
 			]
 			icon: "gtna:precision_steam_component"
 			id: "0C9BA2223F3D4D33"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Every Large machine needs it."
+			subtitle: "{gtia.quest.0C9BA2223F3D4D33.subtitle}"
 			tasks: [
 				{
 					id: "4BFB45EC29F90612"
@@ -876,7 +876,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Precision Steam Component"
+			title: "{gtia.quest.0C9BA2223F3D4D33.title}"
 			x: 25.0d
 			y: -2.0d
 		}
@@ -885,14 +885,14 @@
 				"707CBC0C69EAFA06"
 			]
 			description: [
-				"&eTwo&r &6Bronze Dust&r and &eone&r &6Steel Dust&r on a crafting table make &ethree&r &6Breel Dust&r; a furnace turns it into ingots. Its tiny pipes go into several Large steam machines."
+				"{gtia.quest.00BBCDAF61B4507A.desc.0}"
 			]
 			icon: "gtna:breel_ingot"
 			id: "00BBCDAF61B4507A"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Bronze and Steel, mixed by hand."
+			subtitle: "{gtia.quest.00BBCDAF61B4507A.subtitle}"
 			tasks: [
 				{
 					id: "7529FA8CE68C8B5C"
@@ -911,7 +911,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Breel"
+			title: "{gtia.quest.00BBCDAF61B4507A.title}"
 			x: 23.0d
 			y: 2.0d
 		}
@@ -920,16 +920,16 @@
 				"7DA696110A273CA4"
 			]
 			description: [
-				"Wrought Iron rods, screws and a double plate around a &6Coke Oven Hatch&r. The structure is &6Firebricks&r, Bricks and Stone Bricks; check its preview."
+				"{gtia.quest.2859530E8F91C14C.desc.0}"
 				""
-				"It fires bricks from compressed clay and coal without any steam, and it is where &6Clay Compound&r comes from."
+				"{gtia.quest.2859530E8F91C14C.desc.2}"
 			]
 			icon: "gtna:brick_kiln"
 			id: "2859530E8F91C14C"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "A primitive kiln for ceramics."
+			subtitle: "{gtia.quest.2859530E8F91C14C.subtitle}"
 			tasks: [
 				{
 					id: "5D6FDEA726754478"
@@ -940,7 +940,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Brick Kiln"
+			title: "{gtia.quest.2859530E8F91C14C.title}"
 			x: 16.0d
 			y: 2.0d
 		}
@@ -949,14 +949,14 @@
 				"2859530E8F91C14C"
 			]
 			description: [
-				"&eEight&r each of &6Clay Dust&r, &6Stone Dust&r (from the Macerator) and &6Flint Dust&r in the Brick Kiln make &esixteen&r &6Clay Compound&r ingots. Hammer them into plates and gears for hydraulic parts."
+				"{gtia.quest.124C8D9FDCCC00E1.desc.0}"
 			]
 			icon: "gtna:clay_compound_ingot"
 			id: "124C8D9FDCCC00E1"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Clay, stone and flint, fired."
+			subtitle: "{gtia.quest.124C8D9FDCCC00E1.subtitle}"
 			tasks: [
 				{
 					id: "0E3DE5CABB9763C5"
@@ -967,7 +967,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Clay Compound"
+			title: "{gtia.quest.124C8D9FDCCC00E1.title}"
 			x: 18.0d
 			y: 2.0d
 		}
@@ -976,7 +976,7 @@
 				"124C8D9FDCCC00E1"
 			]
 			description: [
-				"A &6Hydraulic Motor&r is bronze gears and tiny pipes around an iron rotor. Add &ethree&r &6Clay Compound Plates&r and it becomes a &6Hydraulic Piston&r, the moving part of GTNA's Large steam machines."
+				"{gtia.quest.60E0845A289BE078.desc.0}"
 			]
 			icon: "gtna:hydraulic_piston"
 			id: "60E0845A289BE078"
@@ -984,7 +984,7 @@
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Clay Compound in motion."
+			subtitle: "{gtia.quest.60E0845A289BE078.subtitle}"
 			tasks: [
 				{
 					id: "6CFA4C533E877E7D"
@@ -1003,7 +1003,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Hydraulic Piston"
+			title: "{gtia.quest.60E0845A289BE078.title}"
 			x: 22.5d
 			y: 4.5d
 		}
@@ -1013,14 +1013,14 @@
 				"52E07B2FAD21E496"
 			]
 			description: [
-				"A belt of &6Rubber&r driven by a &6Hydraulic Motor&r. Four Large machines move their work with it: the Alloy Smelter, the Wiremill, the Cutter and the Bender."
+				"{gtia.quest.13E1320EF38F3A65.desc.0}"
 			]
 			id: "13E1320EF38F3A65"
 			hide_dependency_lines: true
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Rubber belts, steam muscles."
+			subtitle: "{gtia.quest.13E1320EF38F3A65.subtitle}"
 			tasks: [
 				{
 					id: "6A9D6258ECFC003B"
@@ -1031,7 +1031,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Hydraulic Conveyor"
+			title: "{gtia.quest.13E1320EF38F3A65.title}"
 			x: 25.0d
 			y: 5.0d
 		}
@@ -1042,9 +1042,9 @@
 				"00BBCDAF61B4507A"
 			]
 			description: [
-				"Every Large steam machine GTNA makes possible in this age, in one place. Each is the multiblock version of a machine you already know and runs its recipes &din parallel&r, up to &e32 EU/t&r."
+				"{gtia.quest.10043917A6960AA3.desc.0}"
 				""
-				"They all start from a &6Precision Steam Component&r; several need &6Hydraulic Pistons&r (Clay Compound from the Brick Kiln) or &6Breel&r pipes. &o&7Build the ones your factory is short of; none of them is required.&r"
+				"{gtia.quest.10043917A6960AA3.desc.2}"
 			]
 			icon: "gtna:precision_steam_component"
 			id: "10043917A6960AA3"
@@ -1052,15 +1052,15 @@
 			rewards: [ ]
 			shape: "pentagon"
 			size: 1.25d
-			subtitle: "GTNA's Large machines, side by side."
+			subtitle: "{gtia.quest.10043917A6960AA3.subtitle}"
 			tasks: [
 				{
 					id: "77AECE0EDA4AD9BB"
 					type: "checkmark"
-					title: "Open the gallery"
+					title: "{gtia.quest.10043917A6960AA3.task.77AECE0EDA4AD9BB}"
 				}
 			]
-			title: "Steam Multiblocks"
+			title: "{gtia.quest.10043917A6960AA3.title}"
 			x: 25.0d
 			y: 2.0d
 		}
@@ -1070,14 +1070,14 @@
 				"45ABA36DDF417F2D"
 			]
 			description: [
-				"Crushes ore in parallel. Four Steam Grinders, Stronze Plates and a Precision Steam Component. It opens GTNA's Large steam line."
+				"{gtia.quest.6961142793AE9F7B.desc.0}"
 			]
 			id: "6961142793AE9F7B"
 			hide_dependency_lines: true
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Four grinders in one machine."
+			subtitle: "{gtia.quest.6961142793AE9F7B.subtitle}"
 			tasks: [
 				{
 					id: "50174B354ABAC2E7"
@@ -1088,7 +1088,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Large Steam Machines"
+			title: "{gtia.quest.6961142793AE9F7B.title}"
 			x: 28.0d
 			y: -3.5d
 		}
@@ -1098,7 +1098,7 @@
 				"13E1320EF38F3A65"
 			]
 			description: [
-				"Alloys in parallel. Its &6Hydraulic Conveyor&r needs Rubber Sheets."
+				"{gtia.quest.6CD0424A8F315036.desc.0}"
 			]
 			icon: "gtna:large_steam_alloy_smelter"
 			id: "6CD0424A8F315036"
@@ -1107,7 +1107,7 @@
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Alloy Smelter, multiblock."
+			subtitle: "{gtia.quest.6CD0424A8F315036.subtitle}"
 			tasks: [
 				{
 					id: "3B65AE44F6BC0F89"
@@ -1118,7 +1118,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Large Steam Alloy Smelter"
+			title: "{gtia.quest.6CD0424A8F315036.title}"
 			x: 29.6d
 			y: 3.3d
 		}
@@ -1127,7 +1127,7 @@
 				"10043917A6960AA3"
 			]
 			description: [
-				"Plates, blocks and bricks in bulk. Two &6Hydraulic Pistons&r and Stronze."
+				"{gtia.quest.6BABFB2B1E621605.desc.0}"
 			]
 			icon: "gtna:large_steam_compressor"
 			id: "6BABFB2B1E621605"
@@ -1136,7 +1136,7 @@
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Compressor, multiblock."
+			subtitle: "{gtia.quest.6BABFB2B1E621605.subtitle}"
 			tasks: [
 				{
 					id: "5D3B4F9E2461B431"
@@ -1147,7 +1147,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Large Steam Compressor"
+			title: "{gtia.quest.6BABFB2B1E621605.title}"
 			x: 28.0d
 			y: -0.5d
 		}
@@ -1157,7 +1157,7 @@
 				"0BE3526B1728A13F"
 			]
 			description: [
-				"Plates and crushed ore in bulk, built around your Forge Hammer and an Anvil."
+				"{gtia.quest.24A0C4B65EF45179.desc.0}"
 			]
 			icon: "gtna:large_steam_hammer"
 			id: "24A0C4B65EF45179"
@@ -1166,7 +1166,7 @@
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Hammer, multiblock."
+			subtitle: "{gtia.quest.24A0C4B65EF45179.subtitle}"
 			tasks: [
 				{
 					id: "7F50E42D375BFFD8"
@@ -1177,7 +1177,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Large Steam Hammer"
+			title: "{gtia.quest.24A0C4B65EF45179.title}"
 			x: 29.6d
 			y: 0.30000000000000004d
 		}
@@ -1187,7 +1187,7 @@
 				"309831FDDA2D16A3"
 			]
 			description: [
-				"Smelting in bulk, with Stronze and &6Breel&r pipes."
+				"{gtia.quest.4477A45D4485478D.desc.0}"
 			]
 			icon: "gtna:large_steam_furnace"
 			id: "4477A45D4485478D"
@@ -1196,7 +1196,7 @@
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Furnace, multiblock."
+			subtitle: "{gtia.quest.4477A45D4485478D.subtitle}"
 			tasks: [
 				{
 					id: "4BCF74909A85BE7A"
@@ -1207,7 +1207,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Large Steam Furnace"
+			title: "{gtia.quest.4477A45D4485478D.title}"
 			x: 28.0d
 			y: 2.5d
 		}
@@ -1217,7 +1217,7 @@
 				"2C599B6E18221391"
 			]
 			description: [
-				"Rubber in bulk. Glass, a Hydraulic Pump and a Hydraulic Piston."
+				"{gtia.quest.4BDCE20E098F475E.desc.0}"
 			]
 			icon: "gtna:large_steam_extractor"
 			id: "4BDCE20E098F475E"
@@ -1226,7 +1226,7 @@
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Extractor, multiblock."
+			subtitle: "{gtia.quest.4BDCE20E098F475E.subtitle}"
 			tasks: [
 				{
 					id: "78150BC9ECA57E0E"
@@ -1237,7 +1237,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Large Steam Extractor"
+			title: "{gtia.quest.4BDCE20E098F475E.title}"
 			x: 36.0d
 			y: 3.3d
 		}
@@ -1247,7 +1247,7 @@
 				"3F1DCA7419D19774"
 			]
 			description: [
-				"&aThe Steam age's only mixer&r: Breel, Clay Compound and every mixer recipe up to &e32 EU/t&r."
+				"{gtia.quest.54115CC7B051BD9E.desc.0}"
 			]
 			icon: "gtna:large_steam_mixer"
 			id: "54115CC7B051BD9E"
@@ -1256,7 +1256,7 @@
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Mixer, multiblock."
+			subtitle: "{gtia.quest.54115CC7B051BD9E.subtitle}"
 			tasks: [
 				{
 					id: "04FF54E7FBB72FB2"
@@ -1267,7 +1267,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Large Steam Mixer"
+			title: "{gtia.quest.54115CC7B051BD9E.title}"
 			x: 31.2d
 			y: 2.5d
 		}
@@ -1276,7 +1276,7 @@
 				"6961142793AE9F7B"
 			]
 			description: [
-				"Splits dusts, resin and mixtures into their parts."
+				"{gtia.quest.2A82174C947F4C30.desc.0}"
 			]
 			icon: "gtna:large_steam_centrifuge"
 			id: "2A82174C947F4C30"
@@ -1285,7 +1285,7 @@
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Centrifuge, multiblock."
+			subtitle: "{gtia.quest.2A82174C947F4C30.subtitle}"
 			tasks: [
 				{
 					id: "27F72AC98854E029"
@@ -1296,7 +1296,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Large Steam Centrifuge"
+			title: "{gtia.quest.2A82174C947F4C30.title}"
 			x: 34.4d
 			y: -3.5d
 		}
@@ -1305,7 +1305,7 @@
 				"6961142793AE9F7B"
 			]
 			description: [
-				"Heats purified ore apart for the byproducts the Macerator leaves behind."
+				"{gtia.quest.6641AFACBF378E6D.desc.0}"
 			]
 			icon: "gtna:large_steam_thermal_centrifuge"
 			id: "6641AFACBF378E6D"
@@ -1314,7 +1314,7 @@
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Thermal Centrifuge, multiblock."
+			subtitle: "{gtia.quest.6641AFACBF378E6D.subtitle}"
 			tasks: [
 				{
 					id: "715FC564D9A4706A"
@@ -1325,7 +1325,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Large Steam Thermal Centrifuge"
+			title: "{gtia.quest.6641AFACBF378E6D.title}"
 			x: 31.2d
 			y: -3.5d
 		}
@@ -1334,7 +1334,7 @@
 				"6961142793AE9F7B"
 			]
 			description: [
-				"Washes crushed ore into purified ore, with water."
+				"{gtia.quest.1B5B8702CD8CD184.desc.0}"
 			]
 			icon: "gtna:large_steam_ore_washer"
 			id: "1B5B8702CD8CD184"
@@ -1343,7 +1343,7 @@
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Ore Washer, multiblock."
+			subtitle: "{gtia.quest.1B5B8702CD8CD184.subtitle}"
 			tasks: [
 				{
 					id: "55762C68245ABDAA"
@@ -1354,7 +1354,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Large Steam Ore Washer"
+			title: "{gtia.quest.1B5B8702CD8CD184.title}"
 			x: 29.6d
 			y: -2.7d
 		}
@@ -1363,7 +1363,7 @@
 				"6961142793AE9F7B"
 			]
 			description: [
-				"Sifts purified ore for gems."
+				"{gtia.quest.07B87A06EAA80D2E.desc.0}"
 			]
 			icon: "gtna:large_steam_sifter"
 			id: "07B87A06EAA80D2E"
@@ -1372,7 +1372,7 @@
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Sifter, multiblock."
+			subtitle: "{gtia.quest.07B87A06EAA80D2E.subtitle}"
 			tasks: [
 				{
 					id: "100909ADA4ABE76B"
@@ -1383,7 +1383,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Large Steam Sifter"
+			title: "{gtia.quest.07B87A06EAA80D2E.title}"
 			x: 32.8d
 			y: -2.7d
 		}
@@ -1392,7 +1392,7 @@
 				"10043917A6960AA3"
 			]
 			description: [
-				"Rods and screws in bulk."
+				"{gtia.quest.3F22F9968DD21376.desc.0}"
 			]
 			icon: "gtna:large_steam_lathe"
 			id: "3F22F9968DD21376"
@@ -1401,7 +1401,7 @@
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Lathe, multiblock."
+			subtitle: "{gtia.quest.3F22F9968DD21376.subtitle}"
 			tasks: [
 				{
 					id: "59D4310E1B385653"
@@ -1412,7 +1412,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Large Steam Lathe"
+			title: "{gtia.quest.3F22F9968DD21376.title}"
 			x: 34.4d
 			y: -0.5d
 		}
@@ -1422,7 +1422,7 @@
 				"13E1320EF38F3A65"
 			]
 			description: [
-				"Wires straight from ingots, without the wire cutter."
+				"{gtia.quest.0F86C18F9B565DBA.desc.0}"
 			]
 			icon: "gtna:large_steam_wiremill"
 			id: "0F86C18F9B565DBA"
@@ -1431,7 +1431,7 @@
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Wiremill, multiblock."
+			subtitle: "{gtia.quest.0F86C18F9B565DBA.subtitle}"
 			tasks: [
 				{
 					id: "02C01BADF7F20F58"
@@ -1442,7 +1442,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Large Steam Wiremill"
+			title: "{gtia.quest.0F86C18F9B565DBA.title}"
 			x: 36.0d
 			y: 0.30000000000000004d
 		}
@@ -1452,7 +1452,7 @@
 				"13E1320EF38F3A65"
 			]
 			description: [
-				"Cuts blocks into plates and rods into bolts, with water."
+				"{gtia.quest.10D4D19D6393D70F.desc.0}"
 			]
 			icon: "gtna:large_steam_cutting"
 			id: "10D4D19D6393D70F"
@@ -1461,7 +1461,7 @@
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Cutting Machine, multiblock."
+			subtitle: "{gtia.quest.10D4D19D6393D70F.subtitle}"
 			tasks: [
 				{
 					id: "57D5655BC9272EA9"
@@ -1472,7 +1472,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Large Steam Cutting Machine"
+			title: "{gtia.quest.10D4D19D6393D70F.title}"
 			x: 37.6d
 			y: -0.5d
 		}
@@ -1482,7 +1482,7 @@
 				"13E1320EF38F3A65"
 			]
 			description: [
-				"Bends ingots into plates and foils."
+				"{gtia.quest.30F6363FBD790EBB.desc.0}"
 			]
 			icon: "gtna:large_steam_bending"
 			id: "30F6363FBD790EBB"
@@ -1491,7 +1491,7 @@
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Bender, multiblock."
+			subtitle: "{gtia.quest.30F6363FBD790EBB.subtitle}"
 			tasks: [
 				{
 					id: "78C3DB1A96B100BB"
@@ -1502,7 +1502,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Large Steam Bender"
+			title: "{gtia.quest.30F6363FBD790EBB.title}"
 			x: 31.2d
 			y: -0.5d
 		}
@@ -1511,7 +1511,7 @@
 				"10043917A6960AA3"
 			]
 			description: [
-				"Presses shapes with molds."
+				"{gtia.quest.12A3F0BDB61C4738.desc.0}"
 			]
 			icon: "gtna:large_steam_forming_press"
 			id: "12A3F0BDB61C4738"
@@ -1520,7 +1520,7 @@
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Forming Press, multiblock."
+			subtitle: "{gtia.quest.12A3F0BDB61C4738.subtitle}"
 			tasks: [
 				{
 					id: "029D63D15B88FAF7"
@@ -1531,7 +1531,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Large Steam Forming Press"
+			title: "{gtia.quest.12A3F0BDB61C4738.title}"
 			x: 32.8d
 			y: 0.30000000000000004d
 		}
@@ -1541,7 +1541,7 @@
 				"237E6A27D526CE57"
 			]
 			description: [
-				"&aSteam from the sun at scale&r: no fuel, &cnothing at night&r."
+				"{gtia.quest.0B6B99B114BE146C.desc.0}"
 			]
 			icon: "gtna:large_steam_solar_boiler"
 			id: "0B6B99B114BE146C"
@@ -1550,7 +1550,7 @@
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Solar Boiler, multiblock."
+			subtitle: "{gtia.quest.0B6B99B114BE146C.subtitle}"
 			tasks: [
 				{
 					id: "3ABDA2218E67BB3B"
@@ -1561,7 +1561,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Large Steam Solar Boiler"
+			title: "{gtia.quest.0B6B99B114BE146C.title}"
 			x: 34.4d
 			y: 2.5d
 		}
@@ -1570,7 +1570,7 @@
 				"10043917A6960AA3"
 			]
 			description: [
-				"Your Primitive Blast Furnace and &efour&r Precision Steam Components make GTNA's giant blast furnace: the same Steel recipes, many at once. &o&7The structure is huge; check its preview.&r"
+				"{gtia.quest.41D6A548289FF42F.desc.0}"
 			]
 			icon: "gtna:leap_forward_one_blast_furnace"
 			id: "41D6A548289FF42F"
@@ -1579,7 +1579,7 @@
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Leap Forward Blast Furnace, multiblock."
+			subtitle: "{gtia.quest.41D6A548289FF42F.subtitle}"
 			tasks: [
 				{
 					id: "72626A5435B2517E"
@@ -1590,7 +1590,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Leap Forward Blast Furnace"
+			title: "{gtia.quest.41D6A548289FF42F.title}"
 			x: 32.8d
 			y: 3.3d
 		}
@@ -1599,7 +1599,7 @@
 				"10F6BF82785B0F48"
 			]
 			description: [
-				"A primitive multiblock furnace."
+				"{gtia.quest.2890D60ACDE4959D.desc.0}"
 			]
 			icon: "gtna:primitive_stone_furnace"
 			id: "2890D60ACDE4959D"
@@ -1607,7 +1607,7 @@
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Primitive Stone Furnace, multiblock."
+			subtitle: "{gtia.quest.2890D60ACDE4959D.subtitle}"
 			tasks: [
 				{
 					id: "5787F15CD6541719"
@@ -1618,7 +1618,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Primitive Stone Furnace"
+			title: "{gtia.quest.2890D60ACDE4959D.title}"
 			x: 2.0d
 			y: -2.0d
 		}
@@ -1627,7 +1627,7 @@
 				"10043917A6960AA3"
 			]
 			description: [
-				"Cactus, bronze brick casings and a Hydraulic Regulator. It burns carbon fuels into steam: &e8000 mB&r per Coal or Charcoal, &e90000&r per block, &e16000&r per Coke, &e180000&r per Coke block."
+				"{gtia.quest.15C7D95DE420E74C.desc.0}"
 			]
 			icon: "gtna:steam_cactus_wonder"
 			id: "15C7D95DE420E74C"
@@ -1636,7 +1636,7 @@
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Cactus Wonder, multiblock."
+			subtitle: "{gtia.quest.15C7D95DE420E74C.subtitle}"
 			tasks: [
 				{
 					id: "490417DBCEC97BD1"
@@ -1647,7 +1647,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Cactus Wonder"
+			title: "{gtia.quest.15C7D95DE420E74C.title}"
 			x: 37.6d
 			y: 2.5d
 		}
@@ -1656,14 +1656,14 @@
 				"707CBC0C69EAFA06"
 			]
 			description: [
-				"The Forge Hammer gets &etwo&r plates out of &ethree&r ingots. Molds, bolts and every Low Voltage hull start here."
+				"{gtia.quest.10A2B48FED1F6AC6.desc.0}"
 			]
 			icon: "gtceu:steel_plate"
 			id: "10A2B48FED1F6AC6"
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "Hammer them, do not waste them."
+			subtitle: "{gtia.quest.10A2B48FED1F6AC6.subtitle}"
 			tasks: [
 				{
 					id: "1B213E201E771540"
@@ -1674,7 +1674,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Steel Plates"
+			title: "{gtia.quest.10A2B48FED1F6AC6.title}"
 			x: 20.5d
 			y: 5.0d
 		}
@@ -1683,16 +1683,16 @@
 				"10A2B48FED1F6AC6"
 			]
 			description: [
-				"&eFour&r &6Steel Plates&r with a hammer and a file. Hammer an Empty Mold again to give it a shape."
+				"{gtia.quest.0EBD82984EF14E81.desc.0}"
 				""
-				"&aMolds are never used up. One of each shape is enough.&r"
+				"{gtia.quest.0EBD82984EF14E81.desc.2}"
 			]
 			icon: "gtceu:empty_mold"
 			id: "0EBD82984EF14E81"
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "Four plates, a hammer and a file."
+			subtitle: "{gtia.quest.0EBD82984EF14E81.subtitle}"
 			tasks: [
 				{
 					id: "40EE8DF5670FAAF8"
@@ -1703,7 +1703,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Empty Mold"
+			title: "{gtia.quest.0EBD82984EF14E81.title}"
 			x: 18.0d
 			y: 7.0d
 		}
@@ -1712,14 +1712,14 @@
 				"0EBD82984EF14E81"
 			]
 			description: [
-				"In the Alloy Smelter, the &6Block&r mold turns &6Glass Dust&r into &6Glass&r."
+				"{gtia.quest.392F0978473E4D96.desc.0}"
 			]
 			icon: "gtceu:block_casting_mold"
 			id: "392F0978473E4D96"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "For glass."
+			subtitle: "{gtia.quest.392F0978473E4D96.subtitle}"
 			tasks: [
 				{
 					id: "057152BD66993FEF"
@@ -1730,7 +1730,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Block Mold"
+			title: "{gtia.quest.392F0978473E4D96.title}"
 			x: 20.5d
 			y: 9.0d
 		}
@@ -1739,14 +1739,14 @@
 				"0EBD82984EF14E81"
 			]
 			description: [
-				"In the Alloy Smelter, the &6Plate&r mold turns &etwo&r &6Rubber Bars&r into a &6Rubber Sheet&r."
+				"{gtia.quest.5BB7C360D019CF54.desc.0}"
 			]
 			icon: "gtceu:plate_casting_mold"
 			id: "5BB7C360D019CF54"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "For rubber sheets."
+			subtitle: "{gtia.quest.5BB7C360D019CF54.subtitle}"
 			tasks: [
 				{
 					id: "1B0EFDE7D42481E2"
@@ -1757,7 +1757,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Plate Mold"
+			title: "{gtia.quest.5BB7C360D019CF54.title}"
 			x: 18.0d
 			y: 9.0d
 		}
@@ -1766,14 +1766,14 @@
 				"0EBD82984EF14E81"
 			]
 			description: [
-				"In the Alloy Smelter, the &6Ball&r mold turns &6Glass Dust&r into a &6Glass Tube&r."
+				"{gtia.quest.42A7A0ACDDB1588D.desc.0}"
 			]
 			icon: "gtceu:ball_casting_mold"
 			id: "42A7A0ACDDB1588D"
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "For glass tubes."
+			subtitle: "{gtia.quest.42A7A0ACDDB1588D.subtitle}"
 			tasks: [
 				{
 					id: "5DF7A2CA79BF6F73"
@@ -1784,7 +1784,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Ball Mold"
+			title: "{gtia.quest.42A7A0ACDDB1588D.title}"
 			x: 16.0d
 			y: 7.0d
 		}
@@ -1793,14 +1793,14 @@
 				"392F0978473E4D96"
 			]
 			description: [
-				"&cSand does not smelt into Glass in this pack.&r Grind &6Sand&r into &6Quartz Sand&r and &6Flint&r into &6Flint Dust&r with the mortar, mix them into &6Glass Dust&r, and cast it with the Block mold."
+				"{gtia.quest.3F1DCA7419D19774.desc.0}"
 			]
 			icon: "minecraft:glass"
 			id: "3F1DCA7419D19774"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "No furnace makes it here."
+			subtitle: "{gtia.quest.3F1DCA7419D19774.subtitle}"
 			tasks: [
 				{
 					id: "41F533F56F339CD1"
@@ -1819,7 +1819,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Glass"
+			title: "{gtia.quest.3F1DCA7419D19774.title}"
 			x: 20.5d
 			y: 11.0d
 		}
@@ -1828,14 +1828,14 @@
 				"3F1DCA7419D19774"
 			]
 			description: [
-				"A &6Piston&r, a pane of &6Glass&r and bronze pipes. It pulls &ethree&r &6Raw Rubber Dust&r out of each &6Sticky Resin&r."
+				"{gtia.quest.2C599B6E18221391.desc.0}"
 			]
 			icon: "gtceu:lp_steam_extractor"
 			id: "2C599B6E18221391"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "It needs a pane of glass."
+			subtitle: "{gtia.quest.2C599B6E18221391.subtitle}"
 			tasks: [
 				{
 					id: "46376551026D5A4E"
@@ -1846,7 +1846,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Extractor"
+			title: "{gtia.quest.2C599B6E18221391.title}"
 			x: 18.0d
 			y: 11.0d
 		}
@@ -1855,14 +1855,14 @@
 				"2C599B6E18221391"
 			]
 			description: [
-				"&6Sticky Resin&r gives the most; rubber logs, saplings and leaves give a little."
+				"{gtia.quest.30B5CF8757F9BF2D.desc.0}"
 			]
 			icon: "gtceu:raw_rubber_dust"
 			id: "30B5CF8757F9BF2D"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "The rubber trees pay off."
+			subtitle: "{gtia.quest.30B5CF8757F9BF2D.subtitle}"
 			tasks: [
 				{
 					id: "08C198BB0476B63A"
@@ -1873,7 +1873,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Raw Rubber"
+			title: "{gtia.quest.30B5CF8757F9BF2D.title}"
 			x: 16.0d
 			y: 11.0d
 		}
@@ -1882,16 +1882,16 @@
 				"30B5CF8757F9BF2D"
 			]
 			description: [
-				"&eThree&r &6Raw Rubber Dust&r and &eone&r &6Sulfur Dust&r in the Alloy Smelter."
+				"{gtia.quest.625DD74AEAFA5AA4.desc.0}"
 				""
-				"&o&7The recipe viewer shows where Sulfur comes from.&r"
+				"{gtia.quest.625DD74AEAFA5AA4.desc.2}"
 			]
 			icon: "gtceu:rubber_ingot"
 			id: "625DD74AEAFA5AA4"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Dust and sulfur."
+			subtitle: "{gtia.quest.625DD74AEAFA5AA4.subtitle}"
 			tasks: [
 				{
 					id: "1782FE05500EA918"
@@ -1910,7 +1910,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Rubber Bar"
+			title: "{gtia.quest.625DD74AEAFA5AA4.title}"
 			x: 14.0d
 			y: 11.0d
 		}
@@ -1919,14 +1919,14 @@
 				"625DD74AEAFA5AA4"
 			]
 			description: [
-				"&eTwo&r &6Rubber Bars&r and the Plate mold in the Alloy Smelter."
+				"{gtia.quest.52E07B2FAD21E496.desc.0}"
 			]
 			icon: "gtceu:rubber_plate"
 			id: "52E07B2FAD21E496"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Insulation for wires."
+			subtitle: "{gtia.quest.52E07B2FAD21E496.subtitle}"
 			tasks: [
 				{
 					id: "176FFD97E8ADBE8C"
@@ -1937,7 +1937,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Rubber Sheet"
+			title: "{gtia.quest.52E07B2FAD21E496.title}"
 			x: 12.0d
 			y: 11.0d
 		}
@@ -1946,14 +1946,14 @@
 				"52E07B2FAD21E496"
 			]
 			description: [
-				"A &6Red Alloy Wire&r and a &6Rubber Sheet&r, crafted together. &cBare wires shock whoever touches them.&r"
+				"{gtia.quest.04D883B83F0A5B75.desc.0}"
 			]
 			icon: "gtceu:red_alloy_single_cable"
 			id: "04D883B83F0A5B75"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "A wire you can touch."
+			subtitle: "{gtia.quest.04D883B83F0A5B75.subtitle}"
 			tasks: [
 				{
 					id: "333194561CFFAAE1"
@@ -1964,7 +1964,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Red Alloy Cable"
+			title: "{gtia.quest.04D883B83F0A5B75.title}"
 			x: 9.5d
 			y: 9.25d
 		}
@@ -1973,14 +1973,14 @@
 				"42A7A0ACDDB1588D"
 			]
 			description: [
-				"&6Glass Dust&r and the Ball mold in the Alloy Smelter."
+				"{gtia.quest.5A2F18CD6FB50ABA.desc.0}"
 			]
 			icon: "gtceu:glass_tube"
 			id: "5A2F18CD6FB50ABA"
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "Glass dust in the Ball mold."
+			subtitle: "{gtia.quest.5A2F18CD6FB50ABA.subtitle}"
 			tasks: [
 				{
 					id: "2FCF17A4E3BCD441"
@@ -1991,7 +1991,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Glass Tube"
+			title: "{gtia.quest.5A2F18CD6FB50ABA.title}"
 			x: 14.0d
 			y: 7.0d
 		}
@@ -2000,14 +2000,14 @@
 				"5A2F18CD6FB50ABA"
 			]
 			description: [
-				"A &6Glass Tube&r, &etwo&r &6Steel Bolts&r and &ethree&r &6Copper Wires&r. A saw cuts Steel Rods into bolts."
+				"{gtia.quest.39008B4252E18D4F.desc.0}"
 			]
 			icon: "gtceu:vacuum_tube"
 			id: "39008B4252E18D4F"
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "The first electronic part."
+			subtitle: "{gtia.quest.39008B4252E18D4F.subtitle}"
 			tasks: [
 				{
 					id: "60EA3D2D23033AE8"
@@ -2018,7 +2018,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Vacuum Tube"
+			title: "{gtia.quest.39008B4252E18D4F.title}"
 			x: 12.0d
 			y: 7.0d
 		}
@@ -2027,14 +2027,14 @@
 				"39008B4252E18D4F"
 			]
 			description: [
-				"&6Sticky Resin&r, &6Paper&r, &6Copper Wire&r and &6Coal&r or &6Charcoal Dust&r make &etwo&r &6Resistors&r by hand."
+				"{gtia.quest.09CD4AE957693FF7.desc.0}"
 			]
 			icon: "gtceu:resistor"
 			id: "09CD4AE957693FF7"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Paper, resin, carbon and copper."
+			subtitle: "{gtia.quest.09CD4AE957693FF7.subtitle}"
 			tasks: [
 				{
 					id: "71FC283F067A1C34"
@@ -2045,7 +2045,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Resistors"
+			title: "{gtia.quest.09CD4AE957693FF7.title}"
 			x: 11.0d
 			y: 5.0d
 		}
@@ -2054,7 +2054,7 @@
 				"39008B4252E18D4F"
 			]
 			description: [
-				"&6Wood Plates&r (wood dust from the Macerator, pressed in the Compressor) coated in &6Sticky Resin&r make a &6Resin Circuit Board&r. &eEight&r &6Copper Wires&r around it print the circuit."
+				"{gtia.quest.1462856644D0B984.desc.0}"
 			]
 			icon: "gtceu:resin_printed_circuit_board"
 			id: "1462856644D0B984"
@@ -2062,7 +2062,7 @@
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Wood, resin and copper."
+			subtitle: "{gtia.quest.1462856644D0B984.subtitle}"
 			tasks: [
 				{
 					id: "604DF42ADC90E0CF"
@@ -2081,7 +2081,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Circuit Board"
+			title: "{gtia.quest.1462856644D0B984.title}"
 			x: 11.0d
 			y: 9.0d
 		}
@@ -2092,7 +2092,7 @@
 				"04D883B83F0A5B75"
 			]
 			description: [
-				"&eTwo&r &6Vacuum Tubes&r, &etwo&r &6Resistors&r, the printed board, a &6Steel Plate&r and &ethree&r &6Red Alloy Cables&r: the &6Basic Electronic Circuit&r. Every Low Voltage machine needs at least one."
+				"{gtia.quest.6953C899271F3796.desc.0}"
 			]
 			id: "6953C899271F3796"
 			rewards: [
@@ -2104,7 +2104,7 @@
 			]
 			shape: "gear"
 			size: 2.25d
-			subtitle: "The key to Low Voltage."
+			subtitle: "{gtia.quest.6953C899271F3796.subtitle}"
 			tasks: [
 				{
 					id: "25278AF3742D598E"
@@ -2115,7 +2115,7 @@
 					match_nbt: false
 				}
 			]
-			title: "The First Circuit"
+			title: "{gtia.quest.6953C899271F3796.title}"
 			x: 7.5d
 			y: 7.0d
 		}
@@ -2124,7 +2124,7 @@
 				"6953C899271F3796"
 			]
 			description: [
-				"Its controller asks for &6Basic Electronic Circuits&r and &6Tin Cables&r. The Power Generation chapter compares it with the other ways of making steam."
+				"{gtia.quest.69CA084126822E92.desc.0}"
 			]
 			icon: "gtceu:bronze_large_boiler"
 			id: "69CA084126822E92"
@@ -2132,7 +2132,7 @@
 			rewards: [ ]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "A first job for your circuits."
+			subtitle: "{gtia.quest.69CA084126822E92.subtitle}"
 			tasks: [
 				{
 					id: "2E19C47253AE7F63"
@@ -2143,7 +2143,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Large Bronze Boiler"
+			title: "{gtia.quest.69CA084126822E92.title}"
 			x: 7.5d
 			y: 4.5d
 		}
@@ -2152,14 +2152,14 @@
 				"10A2B48FED1F6AC6"
 			]
 			description: [
-				"The shell of every Low Voltage machine: &e8 Steel Plates&r bent around a wrench. It is the reason your Steel line has to keep running."
+				"{gtia.quest.41499D4881126224.desc.0}"
 			]
 			id: "41499D4881126224"
 			hide_dependency_lines: true
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "Eight Steel Plates and a wrench."
+			subtitle: "{gtia.quest.41499D4881126224.subtitle}"
 			tasks: [
 				{
 					id: "1DB80F0FDC2BDE18"
@@ -2170,7 +2170,7 @@
 					match_nbt: false
 				}
 			]
-			title: "LV Machine Casing"
+			title: "{gtia.quest.41499D4881126224.title}"
 			x: 7.5d
 			y: 13.0d
 		}
@@ -2179,13 +2179,13 @@
 				"52E07B2FAD21E496"
 			]
 			description: [
-				"A &6Tin Wire&r wrapped in a &6Rubber Sheet&r. Bare wires hurt; cables do not. The LV hull takes two."
+				"{gtia.quest.5AF28B9BC8D75791.desc.0}"
 			]
 			id: "5AF28B9BC8D75791"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Insulated, at last."
+			subtitle: "{gtia.quest.5AF28B9BC8D75791.subtitle}"
 			tasks: [
 				{
 					id: "02EC5E8303D77624"
@@ -2196,7 +2196,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Tin Cable"
+			title: "{gtia.quest.5AF28B9BC8D75791.title}"
 			x: 10.0d
 			y: 11.0d
 		}
@@ -2207,13 +2207,13 @@
 				"2E1B5CB58E08EB29"
 			]
 			description: [
-				"Casing, &etwo&r Tin Cables, &etwo&r Wrought Iron Plates and a Steel Plate. With a circuit in the other hand, Low Voltage is one step away."
+				"{gtia.quest.0714D70458EEC997.desc.0}"
 			]
 			id: "0714D70458EEC997"
 			rewards: [ ]
 			shape: "gear"
 			size: 2.25d
-			subtitle: "The body of every electric machine."
+			subtitle: "{gtia.quest.0714D70458EEC997.subtitle}"
 			tasks: [
 				{
 					id: "567DE439CC959F79"
@@ -2224,7 +2224,7 @@
 					match_nbt: false
 				}
 			]
-			title: "LV Machine Hull"
+			title: "{gtia.quest.0714D70458EEC997.title}"
 			x: 7.5d
 			y: 11.0d
 		}
@@ -2233,17 +2233,17 @@
 				"7DA696110A273CA4"
 			]
 			description: [
-				"A furnace burns wood. A &6Wood Retort&r cooks it in a sealed box, and the wood comes apart: &e4 logs&r give &e3 Charcoal&r and &e1,000 mB&r of &6Charcoal Byproducts&r every &e30 s&r, with no fuel at all."
+				"{gtia.quest.1470DD8318DF0F60.desc.0}"
 				""
-				"Build it like a Coke Oven, but taller: a hollow &e3×3×4&r of &6Firebricks&r with the controller in the middle of a face. Coke Oven Hatches in the walls automate it."
+				"{gtia.quest.1470DD8318DF0F60.desc.2}"
 				""
-				"&aReal fact:&r until the 1920s, almost all of the world's methanol came from cooking wood. That is why it was called wood alcohol."
+				"{gtia.quest.1470DD8318DF0F60.desc.4}"
 			]
 			id: "1470DD8318DF0F60"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Cook wood without air."
+			subtitle: "{gtia.quest.1470DD8318DF0F60.subtitle}"
 			tasks: [
 				{
 					id: "06B58864CFD3503F"
@@ -2254,7 +2254,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Wood Retort"
+			title: "{gtia.quest.1470DD8318DF0F60.title}"
 			x: 14.0d
 			y: 2.0d
 		}
@@ -2263,15 +2263,15 @@
 				"1470DD8318DF0F60"
 			]
 			description: [
-				"The liquid in the Retort's tank is a mix of wood vinegar and tar. You cannot separate it yet: keep it in tanks. In Low Voltage, a &6Still&r turns it into acid, alcohol and creosote."
+				"{gtia.quest.278E9258DFD1E67A.desc.0}"
 				""
-				"&eThree Retorts&r fill exactly one Still."
+				"{gtia.quest.278E9258DFD1E67A.desc.2}"
 			]
 			id: "278E9258DFD1E67A"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Smells like a campfire with a chemistry degree."
+			subtitle: "{gtia.quest.278E9258DFD1E67A.subtitle}"
 			tasks: [
 				{
 					id: "43F762F667A94111"
@@ -2282,7 +2282,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Charcoal Byproducts"
+			title: "{gtia.quest.278E9258DFD1E67A.title}"
 			x: 14.0d
 			y: 4.0d
 		}
@@ -2291,17 +2291,17 @@
 				"3713CBE1F33AC0E6"
 			]
 			description: [
-				"Calcite is limestone. Burn it and it becomes &6Quicklime&r: &e4 Calcite Dust&r and one Charcoal, Coal or Coke give &e4 Quicklime&r in &e20 s&r; the CO₂ goes up the shaft."
+				"{gtia.quest.6637F16316206C88.desc.0}"
 				""
-				"Calcite blocks line dripstone caves and amethyst geodes; the Steam Macerator turns them into dust. Build a hollow &e3×3×5&r shaft of &6Firebricks&r, open at the top, controller low on a face."
+				"{gtia.quest.6637F16316206C88.desc.2}"
 				""
-				"&aReal fact:&r lime kilns are older than writing."
+				"{gtia.quest.6637F16316206C88.desc.4}"
 			]
 			id: "6637F16316206C88"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Rocks in, hotter rocks out."
+			subtitle: "{gtia.quest.6637F16316206C88.subtitle}"
 			tasks: [
 				{
 					id: "5320B0648E317717"
@@ -2312,7 +2312,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Lime Kiln"
+			title: "{gtia.quest.6637F16316206C88.title}"
 			x: 18.0d
 			y: -2.0d
 		}
@@ -2321,17 +2321,17 @@
 				"6637F16316206C88"
 			]
 			description: [
-				"Add Quicklime to the Primitive Blast Furnace: &e2 Wrought Iron&r, &e2 Charcoal&r (or Coal) and &e1 Quicklime&r give &e2 Steel&r in &e50 s&r. That is &e2.4 Steel&r a minute per furnace, against &e1.5&r without it."
+				"{gtia.quest.724D0AD550E0BFFE.desc.0}"
 				""
-				"One Lime Kiln keeps about ten furnaces fluxed."
+				"{gtia.quest.724D0AD550E0BFFE.desc.2}"
 				""
-				"&aReal fact:&r real blast furnaces add limestone as flux. It grabs the sulfur and the sand and floats them off as slag."
+				"{gtia.quest.724D0AD550E0BFFE.desc.4}"
 			]
 			id: "724D0AD550E0BFFE"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Faster steel, same furnace."
+			subtitle: "{gtia.quest.724D0AD550E0BFFE.subtitle}"
 			tasks: [
 				{
 					id: "62FB0E4BD03D9AE2"
@@ -2342,7 +2342,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Fluxed Steel"
+			title: "{gtia.quest.724D0AD550E0BFFE.title}"
 			x: 18.0d
 			y: -4.0d
 		}
@@ -2352,25 +2352,25 @@
 				"0714D70458EEC997"
 			]
 			description: [
-				"You hold a circuit. Your boilers keep running: the Low Voltage chapter turns their steam into electricity and builds the first electric machines."
+				"{gtia.quest.7E683D21CB6D6CCD.desc.0}"
 			]
 			icon: "gtceu:lp_steam_solid_boiler"
 			id: "7E683D21CB6D6CCD"
 			rewards: [ ]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "Steam stays; electricity begins."
+			subtitle: "{gtia.quest.7E683D21CB6D6CCD.subtitle}"
 			tasks: [
 				{
 					id: "485276C506C3334E"
 					type: "checkmark"
-					title: "Ascend"
+					title: "{gtia.quest.7E683D21CB6D6CCD.task.485276C506C3334E}"
 				}
 			]
-			title: "Ascend to Low Voltage"
+			title: "{gtia.quest.7E683D21CB6D6CCD.title}"
 			x: 4.5d
 			y: 9.0d
 		}
 	]
-	title: "Steam Age"
+	title: "{gtia.quest.chapter.3C14547D33CC8C24}"
 }

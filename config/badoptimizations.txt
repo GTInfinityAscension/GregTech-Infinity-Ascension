@@ -19,7 +19,7 @@ enable_sky_color_caching: true
 # be recalculated when not between biome borders. Higher values will result in
 # the sky updating less frequently, but slightly better performance.
 # Values below 2 will all have the same effect.
-skycolor_time_change_needed_for_update: 3
+skycolor_time_change_needed_for_update: 20
 
 # Whether we should avoid calling debug renderers
 # if there are no debug entries to render or process.

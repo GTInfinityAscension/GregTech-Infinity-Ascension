@@ -1,7 +1,9 @@
 name: Package
 
-# Every push to main builds a "nightly" pre-release. A tagged release (dev -> pre -> alpha -> beta) is built by
-# running this workflow by hand with the tag, e.g. 0.1.0-dev-1, 0.1.0-pre-1, 0.1.0-alpha, 0.1.0-beta.
+# Every push to main builds the zips as a workflow artifact (no release). A release (dev -> pre -> alpha -> beta) is
+# built by running this workflow by hand with the tag, e.g. 0.1.0-dev-1, 0.1.0-pre-1, 0.1.0-alpha, 0.1.0-beta.
+# Only two releases are kept, like GregTech Odyssey: the newest beta and the newest dev/pre/alpha. Publishing one
+# deletes the older releases (and tags) of its own group.
 on:
   push:
     branches: [main]
@@ -54,6 +56,7 @@ jobs:
 
   publish:
     needs: package
+    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -69,12 +72,15 @@ jobs:
           merge-multiple: true
       - name: Publish
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            TAG="$VERSION"; TITLE="GregTech Infinity Ascension $VERSION"
-            case "$VERSION" in *-beta*) FLAGS="";; *) FLAGS="--prerelease";; esac
-          else
-            TAG="nightly"; TITLE="GregTech Infinity Ascension nightly ($VERSION)"; FLAGS="--prerelease"
-            gh release delete nightly --yes --cleanup-tag || true
-          fi
-          gh release create "$TAG" $FLAGS --title "$TITLE" --notes-file .github/release-notes.md \
+          TAG="$VERSION"; TITLE="GregTech Infinity Ascension $VERSION"
+          case "$VERSION" in *-beta*) FLAGS=""; GROUP=beta;; *) FLAGS="--prerelease"; GROUP=pre;; esac
+          cp .github/release-notes.md notes.md
+          if [ -f .github/changelog.md ]; then printf '\n' >> notes.md; cat .github/changelog.md >> notes.md; fi
+          gh release create "$TAG" $FLAGS --title "$TITLE" --notes-file notes.md \
             --target "$GITHUB_SHA" $(find dist -name "*.zip")
+          # Keep only the newest release of this group (beta, or dev/pre/alpha including old nightlies).
+          gh release list --limit 200 --json tagName --jq '.[].tagName' | while read -r old; do
+            [ "$old" = "$TAG" ] && continue
+            case "$old" in *-beta*) OLD_GROUP=beta;; *) OLD_GROUP=pre;; esac
+            [ "$OLD_GROUP" = "$GROUP" ] && gh release delete "$old" --yes --cleanup-tag
+          done

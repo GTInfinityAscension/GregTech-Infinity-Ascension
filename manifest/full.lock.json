@@ -29,9 +29,11 @@
     "controlling",
     "coroutil",
     "craftingtweaks",
+    "craftpresence",
     "creativecore",
     "cryonicconfig",
     "culllessleaves",
+    "defaultoptions",
     "doespotatotick",
     "duplicationless",
     "easy_villagers",
@@ -46,6 +48,7 @@
     "explorerscompass",
     "extendedae_plus",
     "extremesoundmuffler",
+    "fabricate",
     "factory_blocks",
     "fastbench",
     "fastfurnace",
@@ -103,6 +106,7 @@
     "no_telemetry",
     "nolijium",
     "oculus",
+    "openloader",
     "packmenu",
     "particlerain",
     "pipez",
@@ -129,6 +133,7 @@
     "toofast",
     "toolbelt",
     "trashcans",
+    "unilib",
     "usclb",
     "xaerominimap",
     "xaeroworldmap",
@@ -400,6 +405,17 @@
       ]
     },
     {
+      "mod_id": "craftpresence",
+      "filename": "CraftPresence-2.7.1+1.20.1-forge.jar",
+      "sha256": "ace7656dcf8878cf05e02b2691eccb5163fe9de94424fe83008901a9cd0679a7",
+      "source": "curseforge",
+      "project_id": 297038,
+      "file_id": 7704742,
+      "requires": [
+        "unilib"
+      ]
+    },
+    {
       "mod_id": "creativecore",
       "filename": "CreativeCore_FORGE_v2.12.40_mc1.20.1.jar",
       "sha256": "936de62489c0d6fbe74202486cbe2b191b8629b02bab1d480acfdb03690f33f4",
@@ -425,6 +441,17 @@
       "project_id": 840788,
       "file_id": 4917082,
       "requires": []
+    },
+    {
+      "mod_id": "defaultoptions",
+      "filename": "defaultoptions-forge-1.20.1-18.0.5.jar",
+      "sha256": "28a34106f7dc91015bc202924593e7a375c9d4dd2681aec58f5abd06fa5eaeee",
+      "source": "curseforge",
+      "project_id": 232131,
+      "file_id": 8286304,
+      "requires": [
+        "balm"
+      ]
     },
     {
       "mod_id": "doespotatotick",
@@ -563,6 +590,15 @@
       "source": "curseforge",
       "project_id": 363363,
       "file_id": 7469697,
+      "requires": []
+    },
+    {
+      "mod_id": "fabricate",
+      "filename": "fabricate-1.0.5.jar",
+      "sha256": "5f1dd544ee881e044f2c0e3761877a38d6160b7bd257b40099952a1771d289dc",
+      "source": "curseforge",
+      "project_id": 1549672,
+      "file_id": 8957564,
       "requires": []
     },
     {
@@ -861,7 +897,7 @@
     {
       "mod_id": "gtia",
       "filename": "gtia-0.1.0.jar",
-      "sha256": "b6b2c8d20c966e84b13de8d0980433c8ccc9540d4b3696cf75adf448666b974e",
+      "sha256": "301134437214bbe83ace90db42a3acbc03158f3eb76dfa3895669ae8b0bdb615",
       "source": "local-build",
       "path": "/home/raishxn/MineProjects/GTIA/core/build/libs/gtia-0.1.0.jar",
       "requires": []
@@ -869,7 +905,7 @@
     {
       "mod_id": "gtna",
       "filename": "gtna-0.5.3.jar",
-      "sha256": "a3cbf1d9ccb9d859209e613f67a3f0de52c47c19204ee66c54f5011b52f4561e",
+      "sha256": "456b4cd6fcb5e5637de605a470c5faabc0a334b297547b3bd09bcb7af2ce489e",
       "source": "local-build",
       "path": "/home/raishxn/MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.5.3.jar",
       "requires": []
@@ -1120,6 +1156,15 @@
       "requires": []
     },
     {
+      "mod_id": "openloader",
+      "filename": "OpenLoader-Forge-1.20.1-19.0.5.jar",
+      "sha256": "56da03448ce1c63cb0f41e99ae38c5857d663886f9249c234f18b7c0de44b151",
+      "source": "curseforge",
+      "project_id": 354339,
+      "file_id": 7613218,
+      "requires": []
+    },
+    {
       "mod_id": "packmenu",
       "filename": "PackMenu-1.20.1-6.1.2.jar",
       "sha256": "fc33c41205dc2fd432dd07d5b5f28d105d7a99dced19220e9b3c6529c2f2af55",
@@ -1350,6 +1395,15 @@
         "supermartijn642configlib",
         "supermartijn642corelib"
       ]
+    },
+    {
+      "mod_id": "unilib",
+      "filename": "UniLib-1.2.1+1.20.1-forge.jar",
+      "sha256": "10a239c60c12e7df14d10d23911b240249d3692ccc8db268ef8d7d9f93390b8a",
+      "source": "curseforge",
+      "project_id": 1056812,
+      "file_id": 7703340,
+      "requires": []
     },
     {
       "mod_id": "usclb",

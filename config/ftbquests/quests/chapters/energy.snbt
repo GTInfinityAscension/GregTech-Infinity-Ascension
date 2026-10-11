@@ -10,24 +10,24 @@
 	quests: [
 		{
 			description: [
-				"Read this chapter as a table. Each row is an era of the game and opens when you reach that era's chapter. Each column is one way of making energy."
+				"{gtia.quest.44A46278A3F8D21A.desc.0}"
 				""
-				"Across a row: what you can build right now, and how the options compare. Down a column: how one family grows. The cards on top list each generator's fuels with the EU one bucket gives, taken from this pack's recipes."
+				"{gtia.quest.44A46278A3F8D21A.desc.2}"
 			]
 			icon: "gtceu:lv_steam_turbine"
 			id: "44A46278A3F8D21A"
 			rewards: [ ]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "Every way to make EU, side by side."
+			subtitle: "{gtia.quest.44A46278A3F8D21A.subtitle}"
 			tasks: [
 				{
 					id: "67355657F668B969"
 					type: "checkmark"
-					title: "Begin"
+					title: "{gtia.quest.44A46278A3F8D21A.task.67355657F668B969}"
 				}
 			]
-			title: "Power Generation"
+			title: "{gtia.quest.44A46278A3F8D21A.title}"
 			x: -2.5d
 			y: 0.0d
 		}
@@ -36,7 +36,7 @@
 				"777C50D80E2DDE50"
 			]
 			description: [
-				"Steam is your only energy at first, and the &6Primitive Steam Turbine&r turns some of it into Ultra Low Voltage power."
+				"{gtia.quest.59BFC8519082F00F.desc.0}"
 			]
 			icon: "gtceu:steam_machine_casing"
 			id: "59BFC8519082F00F"
@@ -44,15 +44,15 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.25d
-			subtitle: "Before the first circuit."
+			subtitle: "{gtia.quest.59BFC8519082F00F.subtitle}"
 			tasks: [
 				{
 					id: "6C0FD6AE5157F177"
 					type: "checkmark"
-					title: "Open the row"
+					title: "{gtia.quest.59BFC8519082F00F.task.6C0FD6AE5157F177}"
 				}
 			]
-			title: "Steam Era"
+			title: "{gtia.quest.59BFC8519082F00F.title}"
 			x: 0.0d
 			y: 2.0d
 		}
@@ -61,7 +61,7 @@
 				"5122FC31C1635F38"
 			]
 			description: [
-				"Low Voltage machines take up to &e32 V&r. Every column has something to offer here; pick by the fuel you can make in quantity."
+				"{gtia.quest.2A3ACA2C3D46971B.desc.0}"
 			]
 			icon: "gtceu:lv_machine_hull"
 			id: "2A3ACA2C3D46971B"
@@ -69,15 +69,15 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.25d
-			subtitle: "32 V."
+			subtitle: "{gtia.quest.2A3ACA2C3D46971B.subtitle}"
 			tasks: [
 				{
 					id: "0241D36E6BF32972"
 					type: "checkmark"
-					title: "Open the row"
+					title: "{gtia.quest.2A3ACA2C3D46971B.task.0241D36E6BF32972}"
 				}
 			]
-			title: "Low Voltage"
+			title: "{gtia.quest.2A3ACA2C3D46971B.title}"
 			x: 0.0d
 			y: 3.5d
 		}
@@ -86,7 +86,7 @@
 				"504EF8C3140CAD5D"
 			]
 			description: [
-				"Medium Voltage machines take up to &e128 V&r. Feed them with generators of this row, or step up power from a lower row with a &6Transformer&r."
+				"{gtia.quest.67603F6319B6BE99.desc.0}"
 			]
 			icon: "gtceu:mv_machine_hull"
 			id: "67603F6319B6BE99"
@@ -94,15 +94,15 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.25d
-			subtitle: "128 V."
+			subtitle: "{gtia.quest.67603F6319B6BE99.subtitle}"
 			tasks: [
 				{
 					id: "11090A8C2B174EAE"
 					type: "checkmark"
-					title: "Open the row"
+					title: "{gtia.quest.67603F6319B6BE99.task.11090A8C2B174EAE}"
 				}
 			]
-			title: "Medium Voltage"
+			title: "{gtia.quest.67603F6319B6BE99.title}"
 			x: 0.0d
 			y: 5.0d
 		}
@@ -111,7 +111,7 @@
 				"31AF3AD2C78D4901"
 			]
 			description: [
-				"High Voltage machines take up to &e512 V&r. This is where the large multiblock turbines start to pay off."
+				"{gtia.quest.561B52AF01F909B0.desc.0}"
 			]
 			icon: "gtceu:hv_machine_hull"
 			id: "561B52AF01F909B0"
@@ -119,24 +119,24 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.25d
-			subtitle: "512 V."
+			subtitle: "{gtia.quest.561B52AF01F909B0.subtitle}"
 			tasks: [
 				{
 					id: "10F13DE54B01FF9C"
 					type: "checkmark"
-					title: "Open the row"
+					title: "{gtia.quest.561B52AF01F909B0.task.10F13DE54B01FF9C}"
 				}
 			]
-			title: "High Voltage"
+			title: "{gtia.quest.561B52AF01F909B0.title}"
 			x: 0.0d
 			y: 6.5d
 		}
 		{
 			description: [
-				"Turbines eat the steam of the column to their left. A boiler that keeps up with them is the real limit."
+				"{gtia.quest.6825BD9BBB0C7299.desc.0}"
 				""
-				"EU per bucket, from the recipes in this pack:"
-				"&6Steam&r: 500 EU"
+				"{gtia.quest.6825BD9BBB0C7299.desc.2}"
+				"{gtia.quest.6825BD9BBB0C7299.desc.3}"
 			]
 			icon: "gtceu:steam_bucket"
 			id: "6825BD9BBB0C7299"
@@ -144,36 +144,36 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.25d
-			subtitle: "Steam, and nothing else."
+			subtitle: "{gtia.quest.6825BD9BBB0C7299.subtitle}"
 			tasks: [
 				{
 					id: "260AE1B86DE3F790"
 					type: "checkmark"
-					title: "Read"
+					title: "{gtia.quest.6825BD9BBB0C7299.task.260AE1B86DE3F790}"
 				}
 			]
-			title: "What Steam Turbines Burn"
+			title: "{gtia.quest.6825BD9BBB0C7299.title}"
 			x: 3.5d
 			y: 0.0d
 		}
 		{
 			description: [
-				"Combustion Generators burn liquid fuels. The cheapest ones, &6Ethanol&r and &6Biodiesel&r, need no oil at all."
+				"{gtia.quest.245DCFF675F471FD.desc.0}"
 				""
-				"EU per bucket, from the recipes in this pack:"
-				"&6High Octane Gasoline&r: 3,200,000 EU"
-				"&6Gasoline&r: 1,600,000 EU"
-				"&6Cetane Boosted Diesel&r: 720,000 EU"
-				"&6Diesel&r: 480,000 EU"
-				"&6Toluene&r: 320,000 EU"
-				"&6Naphtha&r: 320,000 EU"
-				"&6Light Fuel&r: 320,000 EU"
-				"&6Bio Diesel&r: 256,000 EU"
-				"&6Rocket Fuel&r: 250,000 EU"
-				"&6Ethanol&r: 192,000 EU"
-				"&6Octane&r: 80,000 EU"
-				"&6Methanol&r: 64,000 EU"
-				"...and 3 more; the recipe viewer lists them all."
+				"{gtia.quest.245DCFF675F471FD.desc.2}"
+				"{gtia.quest.245DCFF675F471FD.desc.3}"
+				"{gtia.quest.245DCFF675F471FD.desc.4}"
+				"{gtia.quest.245DCFF675F471FD.desc.5}"
+				"{gtia.quest.245DCFF675F471FD.desc.6}"
+				"{gtia.quest.245DCFF675F471FD.desc.7}"
+				"{gtia.quest.245DCFF675F471FD.desc.8}"
+				"{gtia.quest.245DCFF675F471FD.desc.9}"
+				"{gtia.quest.245DCFF675F471FD.desc.10}"
+				"{gtia.quest.245DCFF675F471FD.desc.11}"
+				"{gtia.quest.245DCFF675F471FD.desc.12}"
+				"{gtia.quest.245DCFF675F471FD.desc.13}"
+				"{gtia.quest.245DCFF675F471FD.desc.14}"
+				"{gtia.quest.245DCFF675F471FD.desc.15}"
 			]
 			icon: "gtceu:diesel_bucket"
 			id: "245DCFF675F471FD"
@@ -181,36 +181,36 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.25d
-			subtitle: "Liquid fuels, best first."
+			subtitle: "{gtia.quest.245DCFF675F471FD.subtitle}"
 			tasks: [
 				{
 					id: "1EEFF7F4F64B6DC7"
 					type: "checkmark"
-					title: "Read"
+					title: "{gtia.quest.245DCFF675F471FD.task.1EEFF7F4F64B6DC7}"
 				}
 			]
-			title: "What Combustion Burns"
+			title: "{gtia.quest.245DCFF675F471FD.title}"
 			x: 6.5d
 			y: 0.0d
 		}
 		{
 			description: [
-				"Gas Turbines burn gases and light hydrocarbons. Several of them come out of the same distillation that makes combustion fuel, so the two columns grow together."
+				"{gtia.quest.6888AA3D8B43F8F1.desc.0}"
 				""
-				"EU per bucket, from the recipes in this pack:"
-				"&6Nitrobenzene&r: 1,280,000 EU"
-				"&6Benzene&r: 352,000 EU"
-				"&6Lpg&r: 320,000 EU"
-				"&6Butane&r: 296,000 EU"
-				"&6Phenol&r: 288,000 EU"
-				"&6Butene&r: 256,000 EU"
-				"&6Propane&r: 232,000 EU"
-				"&6Butadiene&r: 204,000 EU"
-				"&6Propene&r: 192,000 EU"
-				"&6Ethane&r: 168,000 EU"
-				"&6Refinery Gas&r: 160,000 EU"
-				"&6Ethylene&r: 128,000 EU"
-				"...and 6 more; the recipe viewer lists them all."
+				"{gtia.quest.6888AA3D8B43F8F1.desc.2}"
+				"{gtia.quest.6888AA3D8B43F8F1.desc.3}"
+				"{gtia.quest.6888AA3D8B43F8F1.desc.4}"
+				"{gtia.quest.6888AA3D8B43F8F1.desc.5}"
+				"{gtia.quest.6888AA3D8B43F8F1.desc.6}"
+				"{gtia.quest.6888AA3D8B43F8F1.desc.7}"
+				"{gtia.quest.6888AA3D8B43F8F1.desc.8}"
+				"{gtia.quest.6888AA3D8B43F8F1.desc.9}"
+				"{gtia.quest.6888AA3D8B43F8F1.desc.10}"
+				"{gtia.quest.6888AA3D8B43F8F1.desc.11}"
+				"{gtia.quest.6888AA3D8B43F8F1.desc.12}"
+				"{gtia.quest.6888AA3D8B43F8F1.desc.13}"
+				"{gtia.quest.6888AA3D8B43F8F1.desc.14}"
+				"{gtia.quest.6888AA3D8B43F8F1.desc.15}"
 			]
 			icon: "gtceu:methane_bucket"
 			id: "6888AA3D8B43F8F1"
@@ -218,23 +218,23 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.25d
-			subtitle: "Gases, best first."
+			subtitle: "{gtia.quest.6888AA3D8B43F8F1.subtitle}"
 			tasks: [
 				{
 					id: "4406E1DAF565FD1B"
 					type: "checkmark"
-					title: "Read"
+					title: "{gtia.quest.6888AA3D8B43F8F1.task.4406E1DAF565FD1B}"
 				}
 			]
-			title: "What Gas Turbines Burn"
+			title: "{gtia.quest.6888AA3D8B43F8F1.title}"
 			x: 8.0d
 			y: 0.0d
 		}
 		{
 			description: [
-				"Boilers burn fuel and turn &6Water&r into &6Steam&r. They make no EU themselves: the turbines of the next column do."
+				"{gtia.quest.57C8F6D2AFFC13D0.desc.0}"
 				""
-				"&aCount your boilers first. A turbine is only as good as the steam behind it.&r"
+				"{gtia.quest.57C8F6D2AFFC13D0.desc.2}"
 			]
 			icon: "gtceu:lp_steam_solid_boiler"
 			id: "57C8F6D2AFFC13D0"
@@ -242,21 +242,21 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.25d
-			subtitle: "Boilers feed the steam column."
+			subtitle: "{gtia.quest.57C8F6D2AFFC13D0.subtitle}"
 			tasks: [
 				{
 					id: "2A683D043DC07580"
 					type: "checkmark"
-					title: "Read"
+					title: "{gtia.quest.57C8F6D2AFFC13D0.task.2A683D043DC07580}"
 				}
 			]
-			title: "Steam Sources"
+			title: "{gtia.quest.57C8F6D2AFFC13D0.title}"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
 			description: [
-				"Solar boilers heat water with the sun. &aNo fuel at all&r, but &cnothing at night&r, and little steam per block. They help a boiler line; they rarely replace it."
+				"{gtia.quest.1856DF81C57045AD.desc.0}"
 			]
 			icon: "gtceu:lp_steam_solar_boiler"
 			id: "1856DF81C57045AD"
@@ -264,21 +264,21 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.25d
-			subtitle: "No fuel, only daylight."
+			subtitle: "{gtia.quest.1856DF81C57045AD.subtitle}"
 			tasks: [
 				{
 					id: "49241760D6BED425"
 					type: "checkmark"
-					title: "Read"
+					title: "{gtia.quest.1856DF81C57045AD.task.49241760D6BED425}"
 				}
 			]
-			title: "Solar Steam"
+			title: "{gtia.quest.1856DF81C57045AD.title}"
 			x: 5.0d
 			y: 0.0d
 		}
 		{
 			description: [
-				"Multiblock generators burn the same fuels as the columns to their left, in larger amounts. Their output depends on the &ddynamo hatch&r you give them, and turbines also on their &drotor&r."
+				"{gtia.quest.29385E8F8A503528.desc.0}"
 			]
 			icon: "gtna:generator_array"
 			id: "29385E8F8A503528"
@@ -286,15 +286,15 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.25d
-			subtitle: "When one block is not enough."
+			subtitle: "{gtia.quest.29385E8F8A503528.subtitle}"
 			tasks: [
 				{
 					id: "0EE8DB0CB0999358"
 					type: "checkmark"
-					title: "Read"
+					title: "{gtia.quest.29385E8F8A503528.task.0EE8DB0CB0999358}"
 				}
 			]
-			title: "Multiblock Generators"
+			title: "{gtia.quest.29385E8F8A503528.title}"
 			x: 9.5d
 			y: 0.0d
 		}
@@ -303,7 +303,7 @@
 				"59BFC8519082F00F"
 			]
 			description: [
-				"The first steam source. Its high-pressure Steel version makes more steam from the same fuel."
+				"{gtia.quest.3AAA180E09437A9E.desc.0}"
 			]
 			icon: "gtceu:lp_steam_solid_boiler"
 			id: "3AAA180E09437A9E"
@@ -311,7 +311,7 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.0d
-			subtitle: "Coal, Coke, anything that burns."
+			subtitle: "{gtia.quest.3AAA180E09437A9E.subtitle}"
 			tasks: [
 				{
 					id: "304B2806C70D92BC"
@@ -322,7 +322,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Small Boiler"
+			title: "{gtia.quest.3AAA180E09437A9E.title}"
 			x: 2.0d
 			y: 2.0d
 		}
@@ -332,7 +332,7 @@
 				"3F1DCA7419D19774"
 			]
 			description: [
-				"No fuel at all: the sun heats the water. It needs Glass, so it comes after the Block mold. It makes little steam and none at night, so it helps a boiler rather than replacing it."
+				"{gtia.quest.6BCC9A6A869B0CEE.desc.0}"
 			]
 			icon: "gtceu:lp_steam_solar_boiler"
 			id: "6BCC9A6A869B0CEE"
@@ -341,7 +341,7 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.0d
-			subtitle: "Free steam under the sun."
+			subtitle: "{gtia.quest.6BCC9A6A869B0CEE.subtitle}"
 			tasks: [
 				{
 					id: "7DCFD7DD6D6A2A09"
@@ -352,7 +352,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Solar Boiler"
+			title: "{gtia.quest.6BCC9A6A869B0CEE.title}"
 			x: 5.0d
 			y: 2.0d
 		}
@@ -362,7 +362,7 @@
 				"3AAA180E09437A9E"
 			]
 			description: [
-				"The first multiblock boiler. Its controller asks for circuits, which is why it sits in this row and not the one above."
+				"{gtia.quest.7E7DA01CE9FCB06D.desc.0}"
 			]
 			icon: "gtceu:bronze_large_boiler"
 			id: "7E7DA01CE9FCB06D"
@@ -370,7 +370,7 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.0d
-			subtitle: "A multiblock steam source."
+			subtitle: "{gtia.quest.7E7DA01CE9FCB06D.subtitle}"
 			tasks: [
 				{
 					id: "7AE9615F754B861C"
@@ -381,7 +381,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Large Bronze Boiler"
+			title: "{gtia.quest.7E7DA01CE9FCB06D.title}"
 			x: 2.0d
 			y: 3.5d
 		}
@@ -391,7 +391,7 @@
 				"3AAA180E09437A9E"
 			]
 			description: [
-				"The easiest LV generator: you already make the steam. Its card above shows how much steam one EU costs, so count your boilers before you count your turbines."
+				"{gtia.quest.43074C8C716C9325.desc.0}"
 			]
 			icon: "gtceu:lv_steam_turbine"
 			id: "43074C8C716C9325"
@@ -399,7 +399,7 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.0d
-			subtitle: "Your boilers, now at 32 V."
+			subtitle: "{gtia.quest.43074C8C716C9325.subtitle}"
 			tasks: [
 				{
 					id: "6F731EC2B6BFFDEF"
@@ -410,7 +410,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Steam Turbine"
+			title: "{gtia.quest.43074C8C716C9325.title}"
 			x: 3.5d
 			y: 3.5d
 		}
@@ -420,7 +420,7 @@
 				"6BCC9A6A869B0CEE"
 			]
 			description: [
-				"The Steel solar boiler makes more steam than the bronze one, still only in daylight."
+				"{gtia.quest.02BD89F42EEA3A2F.desc.0}"
 			]
 			icon: "gtceu:hp_steam_solar_boiler"
 			id: "02BD89F42EEA3A2F"
@@ -429,7 +429,7 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.0d
-			subtitle: "Steel catches more sun."
+			subtitle: "{gtia.quest.02BD89F42EEA3A2F.subtitle}"
 			tasks: [
 				{
 					id: "2770B603BAE1707E"
@@ -440,7 +440,7 @@
 					match_nbt: false
 				}
 			]
-			title: "High-Pressure Solar Boiler"
+			title: "{gtia.quest.02BD89F42EEA3A2F.title}"
 			x: 5.0d
 			y: 3.5d
 		}
@@ -449,7 +449,7 @@
 				"2A3ACA2C3D46971B"
 			]
 			description: [
-				"Burns the fuels of the card above. &6Ethanol&r from Infinity Ascension's &6Fermentation Vats&r is the one you can make without oil."
+				"{gtia.quest.3F0AF891DBF5592B.desc.0}"
 			]
 			icon: "gtceu:lv_combustion"
 			id: "3F0AF891DBF5592B"
@@ -457,7 +457,7 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.0d
-			subtitle: "Liquid fuel at 32 V."
+			subtitle: "{gtia.quest.3F0AF891DBF5592B.subtitle}"
 			tasks: [
 				{
 					id: "23A207779F90963E"
@@ -468,7 +468,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Combustion Generator"
+			title: "{gtia.quest.3F0AF891DBF5592B.title}"
 			x: 6.5d
 			y: 3.5d
 		}
@@ -477,7 +477,7 @@
 				"2A3ACA2C3D46971B"
 			]
 			description: [
-				"Burns the gases of the card above. The &6Catalytic Dehydrator&r's &6Ethylene&r is one of them."
+				"{gtia.quest.54E397E3A3102798.desc.0}"
 			]
 			icon: "gtceu:lv_gas_turbine"
 			id: "54E397E3A3102798"
@@ -485,7 +485,7 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.0d
-			subtitle: "Gas at 32 V."
+			subtitle: "{gtia.quest.54E397E3A3102798.subtitle}"
 			tasks: [
 				{
 					id: "7D3261EBFB1CBC90"
@@ -496,7 +496,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Gas Turbine"
+			title: "{gtia.quest.54E397E3A3102798.title}"
 			x: 8.0d
 			y: 3.5d
 		}
@@ -506,7 +506,7 @@
 				"7E7DA01CE9FCB06D"
 			]
 			description: [
-				"The Steel multiblock boiler. Pair it with Large Steam Turbines or a wall of singleblock turbines."
+				"{gtia.quest.7E1D8EFB2FDE7648.desc.0}"
 			]
 			icon: "gtceu:steel_large_boiler"
 			id: "7E1D8EFB2FDE7648"
@@ -514,7 +514,7 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.0d
-			subtitle: "More steam per block."
+			subtitle: "{gtia.quest.7E1D8EFB2FDE7648.subtitle}"
 			tasks: [
 				{
 					id: "7E86F9B4E65F56D0"
@@ -525,7 +525,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Large Steel Boiler"
+			title: "{gtia.quest.7E1D8EFB2FDE7648.title}"
 			x: 2.0d
 			y: 5.0d
 		}
@@ -535,7 +535,7 @@
 				"43074C8C716C9325"
 			]
 			description: [
-				"Burns steam faster to put out &e128 V&r. Steam stays a fine choice as long as your boilers keep up."
+				"{gtia.quest.450D882E5F3A898F.desc.0}"
 			]
 			icon: "gtceu:mv_steam_turbine"
 			id: "450D882E5F3A898F"
@@ -543,7 +543,7 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.0d
-			subtitle: "Same steam, higher voltage."
+			subtitle: "{gtia.quest.450D882E5F3A898F.subtitle}"
 			tasks: [
 				{
 					id: "632C3A783E5EE7DB"
@@ -554,7 +554,7 @@
 					match_nbt: false
 				}
 			]
-			title: "MV Steam Turbine"
+			title: "{gtia.quest.450D882E5F3A898F.title}"
 			x: 3.5d
 			y: 5.0d
 		}
@@ -564,7 +564,7 @@
 				"3F0AF891DBF5592B"
 			]
 			description: [
-				"At this voltage the better fuels of the card start to matter: &6Light Fuel&r, &6Diesel&r and &6Gasoline&r come from oil."
+				"{gtia.quest.05DA28115DE19755.desc.0}"
 			]
 			icon: "gtceu:mv_combustion"
 			id: "05DA28115DE19755"
@@ -572,7 +572,7 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.0d
-			subtitle: "Time to refine oil."
+			subtitle: "{gtia.quest.05DA28115DE19755.subtitle}"
 			tasks: [
 				{
 					id: "4E81E461DE6090A4"
@@ -583,7 +583,7 @@
 					match_nbt: false
 				}
 			]
-			title: "MV Combustion Generator"
+			title: "{gtia.quest.05DA28115DE19755.title}"
 			x: 6.5d
 			y: 5.0d
 		}
@@ -593,7 +593,7 @@
 				"54E397E3A3102798"
 			]
 			description: [
-				"Oil refining leaves gases behind; this turbine turns them into &e128 V&r instead of waste."
+				"{gtia.quest.4CB01F660D55F64D.desc.0}"
 			]
 			icon: "gtceu:mv_gas_turbine"
 			id: "4CB01F660D55F64D"
@@ -601,7 +601,7 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.0d
-			subtitle: "Refinery gases."
+			subtitle: "{gtia.quest.4CB01F660D55F64D.subtitle}"
 			tasks: [
 				{
 					id: "73795AAFCBE0EC16"
@@ -612,7 +612,7 @@
 					match_nbt: false
 				}
 			]
-			title: "MV Gas Turbine"
+			title: "{gtia.quest.4CB01F660D55F64D.title}"
 			x: 8.0d
 			y: 5.0d
 		}
@@ -622,7 +622,7 @@
 				"450D882E5F3A898F"
 			]
 			description: [
-				"&e512 V&r from steam. Beyond this, steam power continues only as a multiblock."
+				"{gtia.quest.376D75A1D2CBA365.desc.0}"
 			]
 			icon: "gtceu:hv_steam_turbine"
 			id: "376D75A1D2CBA365"
@@ -630,7 +630,7 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.0d
-			subtitle: "The last singleblock steam turbine."
+			subtitle: "{gtia.quest.376D75A1D2CBA365.subtitle}"
 			tasks: [
 				{
 					id: "393FB6A6CCF30B62"
@@ -641,7 +641,7 @@
 					match_nbt: false
 				}
 			]
-			title: "HV Steam Turbine"
+			title: "{gtia.quest.376D75A1D2CBA365.title}"
 			x: 3.5d
 			y: 6.5d
 		}
@@ -651,7 +651,7 @@
 				"05DA28115DE19755"
 			]
 			description: [
-				"Burns the same fuels faster. A steady &6Diesel&r or &6Gasoline&r line keeps it fed."
+				"{gtia.quest.1512A8817E04B678.desc.0}"
 			]
 			icon: "gtceu:hv_combustion"
 			id: "1512A8817E04B678"
@@ -659,7 +659,7 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.0d
-			subtitle: "512 V from liquid fuel."
+			subtitle: "{gtia.quest.1512A8817E04B678.subtitle}"
 			tasks: [
 				{
 					id: "336987ECE849BDFD"
@@ -670,7 +670,7 @@
 					match_nbt: false
 				}
 			]
-			title: "HV Combustion Generator"
+			title: "{gtia.quest.1512A8817E04B678.title}"
 			x: 6.5d
 			y: 6.5d
 		}
@@ -680,7 +680,7 @@
 				"4CB01F660D55F64D"
 			]
 			description: [
-				"The last singleblock gas turbine. &6Benzene&r is among the best fuels on its card."
+				"{gtia.quest.399AB73AFD2C5FF3.desc.0}"
 			]
 			icon: "gtceu:hv_gas_turbine"
 			id: "399AB73AFD2C5FF3"
@@ -688,7 +688,7 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.0d
-			subtitle: "512 V from gas."
+			subtitle: "{gtia.quest.399AB73AFD2C5FF3.subtitle}"
 			tasks: [
 				{
 					id: "4ADB84481376AD71"
@@ -699,7 +699,7 @@
 					match_nbt: false
 				}
 			]
-			title: "HV Gas Turbine"
+			title: "{gtia.quest.399AB73AFD2C5FF3.title}"
 			x: 8.0d
 			y: 6.5d
 		}
@@ -710,7 +710,7 @@
 				"7E1D8EFB2FDE7648"
 			]
 			description: [
-				"A multiblock turbine: its output depends on the rotor you put in its holder and on the dynamo hatch it feeds. The rotor wears out and has to be replaced."
+				"{gtia.quest.454E7912C2206322.desc.0}"
 			]
 			icon: "gtceu:steam_large_turbine"
 			id: "454E7912C2206322"
@@ -718,7 +718,7 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.0d
-			subtitle: "Rotors and a dynamo hatch."
+			subtitle: "{gtia.quest.454E7912C2206322.subtitle}"
 			tasks: [
 				{
 					id: "29BF1F3AD58B0599"
@@ -729,7 +729,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Large Steam Turbine"
+			title: "{gtia.quest.454E7912C2206322.title}"
 			x: 9.5d
 			y: 6.5d
 		}
@@ -739,7 +739,7 @@
 				"3B201ABFAD079376"
 			]
 			description: [
-				"Carry a bucket of &6Ethanol&r from your Fermentation Vat. It is the combustion fuel you can make from plants alone."
+				"{gtia.quest.0DC1DE34C1447B26.desc.0}"
 			]
 			icon: "gtceu:ethanol_bucket"
 			id: "0DC1DE34C1447B26"
@@ -748,7 +748,7 @@
 			rewards: [ ]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "Fuel from plants."
+			subtitle: "{gtia.quest.0DC1DE34C1447B26.subtitle}"
 			tasks: [
 				{
 					amount: 1000L
@@ -757,7 +757,7 @@
 					type: "fluid"
 				}
 			]
-			title: "Ethanol"
+			title: "{gtia.quest.0DC1DE34C1447B26.title}"
 			x: 6.5d
 			y: 8.25d
 		}
@@ -767,7 +767,7 @@
 				"531706A7A114B6AC"
 			]
 			description: [
-				"Carry a bucket of &6Ethylene&r from the &6Catalytic Dehydrator&r. Burn it in a Gas Turbine, or keep it: it is also the base of plastics later on."
+				"{gtia.quest.5B3CD6418743CBCD.desc.0}"
 			]
 			icon: "gtceu:ethylene_bucket"
 			id: "5B3CD6418743CBCD"
@@ -776,7 +776,7 @@
 			rewards: [ ]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "Ethanol, one step further."
+			subtitle: "{gtia.quest.5B3CD6418743CBCD.subtitle}"
 			tasks: [
 				{
 					amount: 1000L
@@ -785,7 +785,7 @@
 					type: "fluid"
 				}
 			]
-			title: "Ethylene"
+			title: "{gtia.quest.5B3CD6418743CBCD.title}"
 			x: 8.0d
 			y: 8.25d
 		}
@@ -794,7 +794,7 @@
 				"2A3ACA2C3D46971B"
 			]
 			description: [
-				"A cable has a voltage limit and an amperage limit, and loses a little energy per block. Too much of either and it burns."
+				"{gtia.quest.362BC27422A49172.desc.0}"
 			]
 			icon: "gtceu:tin_single_cable"
 			id: "362BC27422A49172"
@@ -802,7 +802,7 @@
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Every cable has a limit."
+			subtitle: "{gtia.quest.362BC27422A49172.subtitle}"
 			tasks: [
 				{
 					id: "0B70346E74D82610"
@@ -813,7 +813,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Cables"
+			title: "{gtia.quest.362BC27422A49172.title}"
 			x: 0.0d
 			y: 10.0d
 		}
@@ -822,14 +822,14 @@
 				"362BC27422A49172"
 			]
 			description: [
-				"A &6Battery Buffer&r holds batteries and evens out the difference between what your generators make and what your machines draw."
+				"{gtia.quest.7DE3FF6591EB9D2C.desc.0}"
 			]
 			icon: "gtceu:lv_battery_buffer_4x"
 			id: "7DE3FF6591EB9D2C"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Store what you do not use yet."
+			subtitle: "{gtia.quest.7DE3FF6591EB9D2C.subtitle}"
 			tasks: [
 				{
 					id: "686242B343FE0DA2"
@@ -840,7 +840,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Battery Buffer"
+			title: "{gtia.quest.7DE3FF6591EB9D2C.title}"
 			x: 2.0d
 			y: 10.0d
 		}
@@ -850,14 +850,14 @@
 				"41D96BAED3CA1B2C"
 			]
 			description: [
-				"A &6Transformer&r steps voltage up or down by one tier. It is how a row of cheap generators feeds the machines of the next row."
+				"{gtia.quest.1475602FFABD8D61.desc.0}"
 			]
 			icon: "gtceu:lv_transformer_1a"
 			id: "1475602FFABD8D61"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Move power between rows."
+			subtitle: "{gtia.quest.1475602FFABD8D61.subtitle}"
 			tasks: [
 				{
 					id: "1DCBB9939BB47F30"
@@ -868,7 +868,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Transformer"
+			title: "{gtia.quest.1475602FFABD8D61.title}"
 			x: 3.5d
 			y: 10.0d
 		}
@@ -877,14 +877,14 @@
 				"1475602FFABD8D61"
 			]
 			description: [
-				"Multiblocks take power through &6Energy Hatches&r. Its voltage coil comes out of an electric Assembler. The hatch's tier decides the voltage the whole machine runs at."
+				"{gtia.quest.3B2E5EB89E167E4B.desc.0}"
 			]
 			icon: "gtceu:lv_energy_input_hatch"
 			id: "3B2E5EB89E167E4B"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "How multiblocks take power."
+			subtitle: "{gtia.quest.3B2E5EB89E167E4B.subtitle}"
 			tasks: [
 				{
 					id: "3189A5B0E8A2448C"
@@ -895,7 +895,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Energy Hatch"
+			title: "{gtia.quest.3B2E5EB89E167E4B.title}"
 			x: 5.0d
 			y: 10.0d
 		}
@@ -907,7 +907,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"GTNA's &6Generator Array&r takes singleblock steam turbines, combustion generators or gas turbines and runs them inside one multiblock. Any one of the three columns opens it."
+				"{gtia.quest.0E180AC8A31597FD.desc.0}"
 			]
 			icon: "gtna:generator_array"
 			id: "0E180AC8A31597FD"
@@ -915,7 +915,7 @@
 			rewards: [ ]
 			shape: "square"
 			size: 1.0d
-			subtitle: "Any column, many at once."
+			subtitle: "{gtia.quest.0E180AC8A31597FD.subtitle}"
 			tasks: [
 				{
 					id: "041A10C7E64CFCA7"
@@ -926,10 +926,10 @@
 					match_nbt: false
 				}
 			]
-			title: "Generator Array"
+			title: "{gtia.quest.0E180AC8A31597FD.title}"
 			x: 9.5d
 			y: 3.5d
 		}
 	]
-	title: "Power Generation"
+	title: "{gtia.quest.chapter.070C71496CB9ADE0}"
 }

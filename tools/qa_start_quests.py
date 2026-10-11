@@ -41,7 +41,7 @@ def audit():
  d=Parser((source/'chapters/start.snbt').read_text()).parse()
  old=Parser((backup/'chapters/start.snbt').read_text()).parse()
  qs={q['id']:q for q in d['quests']}
- assert len(qs)==len(d['quests'])==30  # the 29 approved quests plus The Research Tree, added by questgen
+ assert len(qs)==len(d['quests'])==29  # the 29 approved quests (The Research Tree was removed with GTIA-D-226)
  ids=[d['id']]
  for q in qs.values():
   ids.append(q['id'])

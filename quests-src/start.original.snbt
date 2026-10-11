@@ -85,24 +85,17 @@
 			rewards: [
 				{
 					id: "27F543A7FB625F00"
-					item: {
-						Count: 1
-						id: "ae2:fluix_axe"
-						tag: {
-							Damage: 0
-						}
-					}
+					item: "gtceu:vanadium_steel_axe"
 					type: "item"
 				}
 				{
 					id: "7F82185C25C25A3A"
-					item: {
-						Count: 1
-						id: "ae2:fluix_pickaxe"
-						tag: {
-							Damage: 0
-						}
-					}
+					item: "gtceu:vanadium_steel_pickaxe"
+					type: "item"
+				}
+				{
+					id: "3E9B1C4A7D2F5061"
+					item: "gtceu:vanadium_steel_shovel"
 					type: "item"
 				}
 			]
@@ -123,7 +116,7 @@
 				""
 				"Follow the central path from top to bottom. Side branches introduce useful supplies, tools and building aids. Open a quest to read its instructions; hover over a task or reward to see the item it uses."
 				""
-				"Check this task and claim your Fluix Axe and Fluix Pickaxe. Keep them for gathering wood and mining your first resources."
+				"Check this task and claim your Vanadium Steel Axe, Pickaxe and Shovel. They last about twice as long as Fluix tools and mine everything up to diamond level, so keep them for gathering wood and your first resources."
 			]
 			shape: "circle"
 		}
@@ -169,6 +162,11 @@
 					item: "minecraft:crying_obsidian"
 					type: "item"
 				}
+				{
+					id: "59CC94CAE75F034B"
+					item: "modernspace:personal_space_portal"
+					type: "item"
+				}
 			]
 			tasks: [
 				{
@@ -186,6 +184,8 @@
 				"Your factory will need more space than a small shelter. Plan a flat work area with room for storage, machines, pipes and future expansions."
 				""
 				"Claim the Platform Builder, Industrial Platform and construction supplies. Use the Construction Wand and its Angel Core to help place blocks; check their tooltips and key bindings before building."
+				""
+				"The Personal Space portal opens your own dimension: an empty, flat world (configurable: void, superflat, layers) where you can build the factory without terrain in the way. Place it, then right-click it to set the dimension up."
 				""
 				"This is an optional building kit. Take the space to plan your workshop, then acknowledge the task to collect it."
 			]

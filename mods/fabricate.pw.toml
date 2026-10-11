@@ -1,0 +1,13 @@
+name = "Fabricate"
+filename = "fabricate-1.0.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b96f5ad70dee68eb280a8524c61f1ce04263c5e0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8957564
+project-id = 1549672

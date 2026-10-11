@@ -54,11 +54,15 @@ hash = "ee0bd5bafefccd005a17e3b30e62ada945e1d1aa13e938e163c5f53ebfd1eb01"
 
 [[files]]
 file = "config/badoptimizations.txt"
-hash = "cae5ba66971b2f61e0b523c5aeb8b8d4fa806f0bea8a1709860e4fea94426ac9"
+hash = "4d104e54c118f7a2698c88267d1fa1d491223b17bcf37582001d716f707f8eea"
 
 [[files]]
 file = "config/buildinggadgets2-common.toml"
 hash = "cd34bf34ff49c47333b435be7523979037df203f9572bfd0ea5b5f961c86445f"
+
+[[files]]
+file = "config/chloride-client.toml"
+hash = "f5bf3e5861eaba33589492d32c94a7aba08639f9bd44911ab386dce676fa54b1"
 
 [[files]]
 file = "config/configured-client.toml"
@@ -71,6 +75,10 @@ hash = "ce4b1ee1c526478b563ad61344ce1fc75d518c33dfb6fb3fce3c46531578fe1b"
 [[files]]
 file = "config/craftingtweaks-common.toml"
 hash = "04a3493f1a07ccd33117de519c82ce4e6465b3e0b28f39919dafd17c3353fc96"
+
+[[files]]
+file = "config/defaultoptions/options.txt"
+hash = "f021c7a7802ccafbbfc723c54a5d244fdfcdb2896c7f54c61dd4da6b9d6c39dd"
 
 [[files]]
 file = "config/doespotatotick-client.toml"
@@ -178,39 +186,39 @@ hash = "7e88163a0edc7f75f7b0d79bc700f262cb80d6bf522f1dc150369069e54805da"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "3ab355b3dda368d3c16656f58972d1d1035dbe2bb18773aa9bbed226e3470657"
+hash = "a591cef12157c4cd00f7d32ea87a62cf829eb37881bb899d33cd59d8236596af"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/energy.snbt"
-hash = "6a588077cba2c89b2bc2993145cbc7c2b2c451d9df06c3cb4f8424e151c46105"
+hash = "ddcbd128e12839ff90aa704010912fc3f15ae0d98fd4662d00b32aafb3290340"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/hv.snbt"
-hash = "394183c688a729d9f1f0ab1debf40fefe0e2b0eb47b932f0062efe9a31371888"
+hash = "c136aa395d36e45da0146ad499cca354f6e035be7b4dc34074f93ba1a0197d77"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/lv.snbt"
-hash = "ec15633c8a7a16d57124b0d23f443bb5143351645c9aa6933391b69804316328"
+hash = "1a992d14e9cecd2c276f78155c68efa89c16e3d6544af1cbd4bbbff989d494b4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mv.snbt"
-hash = "e9f20d64a97d842bf5ba4a413b790d604c876c3825a474f22b329791ce0c6713"
+hash = "1ae0f26848c7da876b0f9604c6ff1ebe7b51663c746c72523b976f798d293316"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/periodic.snbt"
-hash = "036519670eaf97137997317d28db042be957c1eb0f2190db20a5ebdbb5fcc422"
+hash = "b01f9e0d0fc611d29b20cf031e31d15176ccdd963afb84a4d19ca68c0b63abc8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/start.snbt"
-hash = "1985710aa7f8a79557852914450ac58e938fc7f43553413ae633d9b0a731a698"
+hash = "a2fe3ba7be09ae9e09b53a0b1cc635020c6241e25d3a9166743c0e7e54346dd6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/steam.snbt"
-hash = "3251721e72cd44948fcc2b027a1c4ed4344f66dc96c1925de7f1241b53dc5222"
+hash = "1f520a7effcbb53061ab4b4815caa3710118950cf5740b190caf8dc2dc864930"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/wireless.snbt"
-hash = "eebcca2eac7a8df3aee342a6e6c241ab359a6d2ee4aba783c4127705696f8448"
+hash = "705c268976912cd8f62f29d1ac85c37de5370752cfda456cf865397bbf2acc55"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -238,7 +246,7 @@ hash = "72f71cbf0bdfd501f7c5f3f0dc2309e5d08d2c017937643c46eee270ae77985d"
 
 [[files]]
 file = "config/gtna.yaml"
-hash = "d29eef7ffdf7c8646e7fa9a813ede48ebf7b0ef80f8232edabf958df8421a81d"
+hash = "e183f9e75dbcfeb578a229f1c3e9df57deaf532bd8080abc660bac1f071dd8cb"
 
 [[files]]
 file = "config/gtna/balance/void_fluid_drill.json"
@@ -317,6 +325,26 @@ file = "config/nolijium.json5"
 hash = "835b5b27307830e2166517f505fd005f49967507fe03c5089f0a8384bead3a93"
 
 [[files]]
+file = "config/openloader/advanced_options.json"
+hash = "d08c3a750d2f50f0d6e66217e92bbbecc102ad91f66b8a263e48d1b6388bba3e"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/lang/en_us.json"
+hash = "c9aba54e42195e87dbac357e308a125bed8cb450948643dfb6d39be3f1f002d6"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/lang/pt_br.json"
+hash = "a53d15efb5db7debeb9e11ae8c90b8c8af773385519ea6b8007cb118b40b4e06"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/lang/zh_cn.json"
+hash = "5172de7d51d89d13f5e070b11dd49e653ed3ca9b64c5d861378be9c555ef5a60"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/pack.mcmeta"
+hash = "eb411edb33ad2e71187d3a3838d7d550c79234013152c1a5315745c9bce9281d"
+
+[[files]]
 file = "config/packmenu.cfg"
 hash = "81fcc4522bf2ccbdfea2384dd4f91c3c735624988c4cd3ce1773990b81e8e271"
 
@@ -359,6 +387,10 @@ hash = "908873dd92d8295837f6385b26b0dd4788af995899a509f7b482685934b624c2"
 [[files]]
 file = "config/sophisticatedstorage-common.toml"
 hash = "c28b85c07cc46de89e8d4e18db0386be880e7c62badaebc60973afa5f687632b"
+
+[[files]]
+file = "config/spark/config.json"
+hash = "808735d966e11fe08ccae1cf008c2e1a121b9fcfbf6a48150c5975cd27efa0cf"
 
 [[files]]
 file = "config/structure_layout_optimizer.jsonc"
@@ -550,6 +582,11 @@ hash = "91bcce6c7d33ab3bd15217c4fd84aa04ddfaf929dda1219f351d27aeeb3ecc91"
 metafile = true
 
 [[files]]
+file = "mods/craftpresence.pw.toml"
+hash = "3c8757864fb4ca4ad7e98c2795b63ab3a962fe9519bea78ea09760336f6d35db"
+metafile = true
+
+[[files]]
 file = "mods/creativecore.pw.toml"
 hash = "23ee78721a3b10820048c827c4fdc2be3275c8f79463a8bc8e90096af2640654"
 metafile = true
@@ -562,6 +599,11 @@ metafile = true
 [[files]]
 file = "mods/culllessleaves.pw.toml"
 hash = "225182cc2f9781b8382e79c9a2b9380c2e7891015ac8c3ef78529783a09bf6bc"
+metafile = true
+
+[[files]]
+file = "mods/defaultoptions.pw.toml"
+hash = "3e8187acf1eb48228597648ee3bee178123bef8ece1b3dac80144467747b647b"
 metafile = true
 
 [[files]]
@@ -632,6 +674,11 @@ metafile = true
 [[files]]
 file = "mods/extremesoundmuffler.pw.toml"
 hash = "f09a77994d4344c66ce6c81b2835ca459252f98e0a585af44128291df2fd82a1"
+metafile = true
+
+[[files]]
+file = "mods/fabricate.pw.toml"
+hash = "ad364255da61a57281583b25ae052e35f136aef4982bc2560a6070dd4b386915"
 metafile = true
 
 [[files]]
@@ -776,11 +823,11 @@ metafile = true
 
 [[files]]
 file = "mods/gtia-0.1.0.jar"
-hash = "b6b2c8d20c966e84b13de8d0980433c8ccc9540d4b3696cf75adf448666b974e"
+hash = "301134437214bbe83ace90db42a3acbc03158f3eb76dfa3895669ae8b0bdb615"
 
 [[files]]
 file = "mods/gtna-0.5.3.jar"
-hash = "a3cbf1d9ccb9d859209e613f67a3f0de52c47c19204ee66c54f5011b52f4561e"
+hash = "456b4cd6fcb5e5637de605a470c5faabc0a334b297547b3bd09bcb7af2ce489e"
 
 [[files]]
 file = "mods/guideme.pw.toml"
@@ -912,6 +959,11 @@ hash = "200f79b635a087841698c85ac7028f0a1fac2cc4ffae1d59ff3f07a94abfe70e"
 metafile = true
 
 [[files]]
+file = "mods/openloader.pw.toml"
+hash = "dd36471409fda726249713090a9c3e3e29a70869ddc7af217f3904bcae6e35fc"
+metafile = true
+
+[[files]]
 file = "mods/packmenu.pw.toml"
 hash = "055c3536f83ada17dd53effd46617ddcc7fe03b7165f47ff594e46311470641e"
 metafile = true
@@ -1032,6 +1084,11 @@ hash = "0108a1c080b2092b14dd32e6250a60863634a50578b8c081756a615ef7fbf47f"
 metafile = true
 
 [[files]]
+file = "mods/unilib.pw.toml"
+hash = "6368c2585158f7443cf30188eef5d713ede1e3ec550e152f45f5121e56195c2a"
+metafile = true
+
+[[files]]
 file = "mods/usclb.pw.toml"
 hash = "12f89bc6c0fda77ce685281c42f038bb5b2fa78aa23e15234fecf22aff4f3454"
 metafile = true
@@ -1057,6 +1114,11 @@ hash = "7dbe376c64d52ddc3e52ca6ce6b07d8c5d76bf9ef68d58267bb9e9c6d8fb2c09"
 metafile = true
 
 [[files]]
+file = "resourcepacks/cozyui.pw.toml"
+hash = "b72530a1a3100b602af4b705a063931ae1dec261f49d6c49826b11a9df738046"
+metafile = true
+
+[[files]]
 file = "restore-backup.bat"
 hash = "a83232ab09ba35893184caa9a2728df2643e6b5939f8eaf45a133dbc13bd958f"
 
@@ -1067,3 +1129,8 @@ hash = "b2ed4db8b4a81a999cad44d27335c24fbb59ad625814c80b1825e3a1717c305f"
 [[files]]
 file = "restore-backup.sh"
 hash = "880d3cc726f503b51a0e480b9725c516ca7eab29371ec0cc7de4213a3a16b569"
+
+[[files]]
+file = "shaderpacks/complementary-reimagined.pw.toml"
+hash = "7513bf8234406adf6dc90f9ba76a83929cfa154971489f76a392508c2f846dcc"
+metafile = true

@@ -25,7 +25,7 @@
 				"50EA9AC05C27F284"
 			]
 			description: [
-				"Medium Voltage is where the factory starts to look like an industry: silicon becomes chips, and the old processes of real chemistry plants arrive. Bauxite into aluminium, sulfur into acid, air into ammonia. This Ascension ends with an &6Advanced Integrated Circuit&r and an &6HV Machine Hull&r."
+				"{gtia.quest.504EF8C3140CAD5D.desc.0}"
 			]
 			icon: "gtceu:mv_machine_hull"
 			id: "504EF8C3140CAD5D"
@@ -39,15 +39,15 @@
 			]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "Ascension III"
+			subtitle: "{gtia.quest.504EF8C3140CAD5D.subtitle}"
 			tasks: [
 				{
 					id: "2DD1633C52634B10"
 					type: "checkmark"
-					title: "Begin"
+					title: "{gtia.quest.504EF8C3140CAD5D.task.2DD1633C52634B10}"
 				}
 			]
-			title: "Medium Voltage Age"
+			title: "{gtia.quest.504EF8C3140CAD5D.title}"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -56,13 +56,13 @@
 				"504EF8C3140CAD5D"
 			]
 			description: [
-				"Cupronickel coils around a magnetic steel rod. Every MV machine starts here."
+				"{gtia.quest.5B8ECE2B3E043A46.desc.0}"
 			]
 			id: "5B8ECE2B3E043A46"
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "Aluminium rods, steel magnets."
+			subtitle: "{gtia.quest.5B8ECE2B3E043A46.subtitle}"
 			tasks: [
 				{
 					id: "6CEB931CC63DE05B"
@@ -73,7 +73,7 @@
 					match_nbt: false
 				}
 			]
-			title: "MV Electric Motor"
+			title: "{gtia.quest.5B8ECE2B3E043A46.title}"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -82,13 +82,13 @@
 				"6D1F91AD527835FA"
 			]
 			description: [
-				"Piston, pump, conveyor and robot arm at MV."
+				"{gtia.quest.10DB8940D99766BF.desc.0}"
 			]
 			id: "10DB8940D99766BF"
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "The same four, a tier up."
+			subtitle: "{gtia.quest.10DB8940D99766BF.subtitle}"
 			tasks: [
 				{
 					id: "45BCBAB7026BAB4F"
@@ -123,7 +123,7 @@
 					match_nbt: false
 				}
 			]
-			title: "MV Components"
+			title: "{gtia.quest.10DB8940D99766BF.title}"
 			x: 6.0d
 			y: 0.0d
 		}
@@ -132,13 +132,13 @@
 				"5B8ECE2B3E043A46"
 			]
 			description: [
-				"Your boilers again, at Medium Voltage. Or check Power Generation for combustion and gas."
+				"{gtia.quest.6D1F91AD527835FA.desc.0}"
 			]
 			id: "6D1F91AD527835FA"
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "128 V from the same steam."
+			subtitle: "{gtia.quest.6D1F91AD527835FA.subtitle}"
 			tasks: [
 				{
 					id: "1E4E1995667EBCFE"
@@ -149,7 +149,7 @@
 					match_nbt: false
 				}
 			]
-			title: "MV Steam Turbine"
+			title: "{gtia.quest.6D1F91AD527835FA.title}"
 			x: 4.0d
 			y: 0.0d
 		}
@@ -158,13 +158,13 @@
 				"10DB8940D99766BF"
 			]
 			description: [
-				"Transistors and integrated circuits need an MV Assembler."
+				"{gtia.quest.1B0581FFF976E579.desc.0}"
 			]
 			id: "1B0581FFF976E579"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Faster, and MV recipes."
+			subtitle: "{gtia.quest.1B0581FFF976E579.subtitle}"
 			tasks: [
 				{
 					id: "0D89D6BBC41B439B"
@@ -175,7 +175,7 @@
 					match_nbt: false
 				}
 			]
-			title: "MV Assembler"
+			title: "{gtia.quest.1B0581FFF976E579.title}"
 			x: 4.0d
 			y: -2.5d
 		}
@@ -184,13 +184,13 @@
 				"10DB8940D99766BF"
 			]
 			description: [
-				"Stainless Steel, Kanthal and Vanadium Steel dusts all need an MV Mixer."
+				"{gtia.quest.279278CBBD75789E.desc.0}"
 			]
 			id: "279278CBBD75789E"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Four ingredients at once."
+			subtitle: "{gtia.quest.279278CBBD75789E.subtitle}"
 			tasks: [
 				{
 					id: "7C866E12D4DBC568"
@@ -201,7 +201,7 @@
 					match_nbt: false
 				}
 			]
-			title: "MV Mixer"
+			title: "{gtia.quest.279278CBBD75789E.title}"
 			x: 8.0d
 			y: 0.0d
 		}
@@ -210,14 +210,14 @@
 				"1B0581FFF976E579"
 			]
 			description: [
-				"Besides washing ores in chemicals, it quenches hot ingots in water: Kanthal comes out of the furnace too hot to touch."
+				"{gtia.quest.16E3D00500A5BB0B.desc.0}"
 			]
 			id: "16E3D00500A5BB0B"
 			hide_dependency_lines: true
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "A cold bath for hot metal."
+			subtitle: "{gtia.quest.16E3D00500A5BB0B.subtitle}"
 			tasks: [
 				{
 					id: "46321CAB9085EC6F"
@@ -228,7 +228,7 @@
 					match_nbt: false
 				}
 			]
-			title: "MV Chemical Bath"
+			title: "{gtia.quest.16E3D00500A5BB0B.title}"
 			x: 24.0d
 			y: -2.5d
 		}
@@ -238,15 +238,15 @@
 				"16E3D00500A5BB0B"
 			]
 			description: [
-				"Kanthal smelts hot in the Electric Blast Furnace; quench the hot ingot in the Chemical Bath, then wire it with Aluminium foil and copper. The furnace is ready for the hotter metals of High Voltage."
+				"{gtia.quest.5CCA3C01B051A1CF.desc.0}"
 				""
-				"&aReal fact:&r Kanthal (iron, chromium, aluminium) was invented in Sweden in the 1930s and still heats most toasters on Earth."
+				"{gtia.quest.5CCA3C01B051A1CF.desc.2}"
 			]
 			id: "5CCA3C01B051A1CF"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "2700 K."
+			subtitle: "{gtia.quest.5CCA3C01B051A1CF.subtitle}"
 			tasks: [
 				{
 					id: "20FFEE7A3F4CD592"
@@ -257,7 +257,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Kanthal Coils"
+			title: "{gtia.quest.5CCA3C01B051A1CF.title}"
 			x: 21.5d
 			y: -2.5d
 		}
@@ -266,13 +266,13 @@
 				"279278CBBD75789E"
 			]
 			description: [
-				"Vanadium, Chromium and Steel, mixed and smelted. The MV Cutter's saw blade is made of it."
+				"{gtia.quest.3EA592967D9E9E3F.desc.0}"
 			]
 			id: "3EA592967D9E9E3F"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Tough steel for blades."
+			subtitle: "{gtia.quest.3EA592967D9E9E3F.subtitle}"
 			tasks: [
 				{
 					id: "0704038C9392A4FB"
@@ -283,7 +283,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Vanadium Steel"
+			title: "{gtia.quest.3EA592967D9E9E3F.title}"
 			x: 10.0d
 			y: 0.0d
 		}
@@ -292,13 +292,13 @@
 				"3EA592967D9E9E3F"
 			]
 			description: [
-				"A Vanadium Steel buzz saw. It cuts silicon boules into wafers and wafers into chips."
+				"{gtia.quest.5090547B46FCE73D.desc.0}"
 			]
 			id: "5090547B46FCE73D"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Slices of silicon."
+			subtitle: "{gtia.quest.5090547B46FCE73D.subtitle}"
 			tasks: [
 				{
 					id: "410864F655AB2F2F"
@@ -309,7 +309,7 @@
 					match_nbt: false
 				}
 			]
-			title: "MV Cutter"
+			title: "{gtia.quest.5090547B46FCE73D.title}"
 			x: 12.0d
 			y: 0.0d
 		}
@@ -318,14 +318,14 @@
 				"1B0581FFF976E579"
 			]
 			description: [
-				"Plates, rods, pipes and more from one ingot and the right shape."
+				"{gtia.quest.6318999D0393E359.desc.0}"
 			]
 			id: "6318999D0393E359"
 			hide_dependency_lines: true
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Shapes from a die."
+			subtitle: "{gtia.quest.6318999D0393E359.subtitle}"
 			tasks: [
 				{
 					id: "3C779419AFB8A527"
@@ -336,7 +336,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Extruder"
+			title: "{gtia.quest.6318999D0393E359.title}"
 			x: 26.0d
 			y: 9.0d
 		}
@@ -345,13 +345,13 @@
 				"10DB8940D99766BF"
 			]
 			description: [
-				"Cryolite, the Bayer line and the vanadium catalyst start here."
+				"{gtia.quest.52E80D9614D45259.desc.0}"
 			]
 			id: "52E80D9614D45259"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Hotter chemistry."
+			subtitle: "{gtia.quest.52E80D9614D45259.subtitle}"
 			tasks: [
 				{
 					id: "34368B3E06D28FF0"
@@ -362,7 +362,7 @@
 					match_nbt: false
 				}
 			]
-			title: "MV Chemical Reactor"
+			title: "{gtia.quest.52E80D9614D45259.title}"
 			x: 6.0d
 			y: 2.5d
 		}
@@ -371,13 +371,13 @@
 				"52E80D9614D45259"
 			]
 			description: [
-				"Mica, Lepidolite and Topaz give up their fluorine only at MV."
+				"{gtia.quest.3DA44F536F2625FA.desc.0}"
 			]
 			id: "3DA44F536F2625FA"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Harder splits."
+			subtitle: "{gtia.quest.3DA44F536F2625FA.subtitle}"
 			tasks: [
 				{
 					id: "43FBDE25C28EAF6F"
@@ -388,7 +388,7 @@
 					match_nbt: false
 				}
 			]
-			title: "MV Electrolyzer"
+			title: "{gtia.quest.3DA44F536F2625FA.title}"
 			x: 6.0d
 			y: 4.5d
 		}
@@ -397,13 +397,13 @@
 				"667980415CD32F36"
 			]
 			description: [
-				"Turns exquisite gems into the lenses of the Laser Engraver."
+				"{gtia.quest.4158F988E5A49BA4.desc.0}"
 			]
 			id: "4158F988E5A49BA4"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Lenses."
+			subtitle: "{gtia.quest.4158F988E5A49BA4.subtitle}"
 			tasks: [
 				{
 					id: "6C10F7E0EC801092"
@@ -414,7 +414,7 @@
 					match_nbt: false
 				}
 			]
-			title: "MV Lathe"
+			title: "{gtia.quest.4158F988E5A49BA4.title}"
 			x: 11.5d
 			y: -7.0d
 		}
@@ -423,13 +423,13 @@
 				"10DB8940D99766BF"
 			]
 			description: [
-				"Washing crushed ore gives purified ore and its first byproducts."
+				"{gtia.quest.68F7AD3FF14593D4.desc.0}"
 			]
 			id: "68F7AD3FF14593D4"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Clean ore, more ore."
+			subtitle: "{gtia.quest.68F7AD3FF14593D4.subtitle}"
 			tasks: [
 				{
 					id: "2BBE8DDD26530FE7"
@@ -440,7 +440,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Ore Washer"
+			title: "{gtia.quest.68F7AD3FF14593D4.title}"
 			x: 6.0d
 			y: -2.5d
 		}
@@ -449,13 +449,13 @@
 				"68F7AD3FF14593D4"
 			]
 			description: [
-				"Purified gem ores through a Sifter come out as gems of every quality."
+				"{gtia.quest.250587E03F0576B8.desc.0}"
 			]
 			id: "250587E03F0576B8"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Grades your gems."
+			subtitle: "{gtia.quest.250587E03F0576B8.subtitle}"
 			tasks: [
 				{
 					id: "40908EE8A085F297"
@@ -466,7 +466,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Sifter"
+			title: "{gtia.quest.250587E03F0576B8.title}"
 			x: 6.0d
 			y: -5.0d
 		}
@@ -475,14 +475,14 @@
 				"68F7AD3FF14593D4"
 			]
 			description: [
-				"Cuts gem blocks into plates: Lazurite plates make fluid filters."
+				"{gtia.quest.2AB2176EAB4E58A3.desc.0}"
 			]
 			id: "2AB2176EAB4E58A3"
 			hide_dependency_lines: true
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Plates from gems."
+			subtitle: "{gtia.quest.2AB2176EAB4E58A3.subtitle}"
 			tasks: [
 				{
 					id: "7B79C95140B61704"
@@ -493,7 +493,7 @@
 					match_nbt: false
 				}
 			]
-			title: "LV Cutter"
+			title: "{gtia.quest.2AB2176EAB4E58A3.title}"
 			x: 8.0d
 			y: -2.5d
 		}
@@ -502,13 +502,13 @@
 				"250587E03F0576B8"
 			]
 			description: [
-				"A Sifter grades purified gem ores. The emitter needs a flawless emerald."
+				"{gtia.quest.667980415CD32F36.desc.0}"
 			]
 			id: "667980415CD32F36"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Sift for the good ones."
+			subtitle: "{gtia.quest.667980415CD32F36.subtitle}"
 			tasks: [
 				{
 					id: "0BBD53F7DBF78833"
@@ -519,7 +519,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Flawless Emerald"
+			title: "{gtia.quest.667980415CD32F36.title}"
 			x: 9.0d
 			y: -5.0d
 		}
@@ -528,13 +528,13 @@
 				"667980415CD32F36"
 			]
 			description: [
-				"The heart of the Laser Engraver."
+				"{gtia.quest.6885D38E766965B4.desc.0}"
 			]
 			id: "6885D38E766965B4"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "A focused beam."
+			subtitle: "{gtia.quest.6885D38E766965B4.subtitle}"
 			tasks: [
 				{
 					id: "041F52B8743CF517"
@@ -545,7 +545,7 @@
 					match_nbt: false
 				}
 			]
-			title: "MV Emitter"
+			title: "{gtia.quest.6885D38E766965B4.title}"
 			x: 11.5d
 			y: -5.0d
 		}
@@ -554,13 +554,13 @@
 				"6885D38E766965B4"
 			]
 			description: [
-				"With a lens, it prints circuits onto silicon wafers."
+				"{gtia.quest.5033C713FFFE6453.desc.0}"
 			]
 			id: "5033C713FFFE6453"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Light that writes."
+			subtitle: "{gtia.quest.5033C713FFFE6453.subtitle}"
 			tasks: [
 				{
 					id: "79FD0E1E27B4E605"
@@ -571,7 +571,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Laser Engraver"
+			title: "{gtia.quest.5033C713FFFE6453.title}"
 			x: 14.0d
 			y: -4.0d
 		}
@@ -580,13 +580,13 @@
 				"4158F988E5A49BA4"
 			]
 			description: [
-				"Ruby for logic, emerald for memory, sapphire for the power chips. Exquisite gems on the MV Lathe."
+				"{gtia.quest.051A7A471D165640.desc.0}"
 			]
 			id: "051A7A471D165640"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Red, green, blue."
+			subtitle: "{gtia.quest.051A7A471D165640.subtitle}"
 			tasks: [
 				{
 					id: "08131780CB1CA9A4"
@@ -613,7 +613,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Lenses"
+			title: "{gtia.quest.051A7A471D165640.title}"
 			x: 15.0d
 			y: -6.5d
 		}
@@ -624,13 +624,13 @@
 				"051A7A471D165640"
 			]
 			description: [
-				"A sapphire lens and a silicon wafer. MV Energy Hatches need them."
+				"{gtia.quest.28369DD5349AA123.desc.0}"
 			]
 			id: "28369DD5349AA123"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Power management on a chip."
+			subtitle: "{gtia.quest.28369DD5349AA123.subtitle}"
 			tasks: [
 				{
 					id: "6C30C36C3AC04698"
@@ -641,7 +641,7 @@
 					match_nbt: false
 				}
 			]
-			title: "ULPIC Chips"
+			title: "{gtia.quest.28369DD5349AA123.title}"
 			x: 16.5d
 			y: -2.5d
 		}
@@ -650,14 +650,14 @@
 				"1B0581FFF976E579"
 			]
 			description: [
-				"Fine copper wire around a magnetic steel rod."
+				"{gtia.quest.6860F84D7172B7C0.desc.0}"
 			]
 			id: "6860F84D7172B7C0"
 			hide_dependency_lines: true
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "A magnet, wound."
+			subtitle: "{gtia.quest.6860F84D7172B7C0.subtitle}"
 			tasks: [
 				{
 					id: "0ADF60DCD9633C5C"
@@ -668,7 +668,7 @@
 					match_nbt: false
 				}
 			]
-			title: "MV Voltage Coil"
+			title: "{gtia.quest.6860F84D7172B7C0.title}"
 			x: 19.0d
 			y: -2.5d
 		}
@@ -678,13 +678,13 @@
 				"6860F84D7172B7C0"
 			]
 			description: [
-				"Two MV Energy Hatches push the Electric Blast Furnace to High Voltage recipes: Stainless Steel and Kanthal."
+				"{gtia.quest.113D6C3E66EBCDC4.desc.0}"
 			]
 			id: "113D6C3E66EBCDC4"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Two of them."
+			subtitle: "{gtia.quest.113D6C3E66EBCDC4.subtitle}"
 			tasks: [
 				{
 					id: "6A76D7899F592A47"
@@ -695,7 +695,7 @@
 					match_nbt: false
 				}
 			]
-			title: "MV Energy Hatches"
+			title: "{gtia.quest.113D6C3E66EBCDC4.title}"
 			x: 19.0d
 			y: 0.0d
 		}
@@ -704,15 +704,15 @@
 				"113D6C3E66EBCDC4"
 			]
 			description: [
-				"Iron, Nickel, Manganese and Chromium, mixed and smelted in the Electric Blast Furnace at MV."
+				"{gtia.quest.1BCFA3BDB989211E.desc.0}"
 				""
-				"&aReal fact:&r stainless steel was found in 1913 by Harry Brearley, looking for a better gun barrel. He got cutlery instead."
+				"{gtia.quest.1BCFA3BDB989211E.desc.2}"
 			]
 			id: "1BCFA3BDB989211E"
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "Iron that does not rust."
+			subtitle: "{gtia.quest.1BCFA3BDB989211E.subtitle}"
 			tasks: [
 				{
 					id: "7037488989DB37A7"
@@ -723,7 +723,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Stainless Steel"
+			title: "{gtia.quest.1BCFA3BDB989211E.title}"
 			x: 21.5d
 			y: 0.0d
 		}
@@ -732,15 +732,15 @@
 				"279278CBBD75789E"
 			]
 			description: [
-				"Silicon dust and a pinch of Gallium Arsenide, grown in the Electric Blast Furnace."
+				"{gtia.quest.026E490AA8A54AF6.desc.0}"
 				""
-				"&aReal fact:&r this is the Czochralski process, from 1916; Jan Czochralski found it by dipping his pen into molten tin instead of the inkwell."
+				"{gtia.quest.026E490AA8A54AF6.desc.2}"
 			]
 			id: "026E490AA8A54AF6"
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.75d
-			subtitle: "One big crystal."
+			subtitle: "{gtia.quest.026E490AA8A54AF6.subtitle}"
 			tasks: [
 				{
 					id: "7391DF634E570859"
@@ -751,7 +751,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Silicon Boule"
+			title: "{gtia.quest.026E490AA8A54AF6.title}"
 			x: 12.0d
 			y: -2.5d
 		}
@@ -761,13 +761,13 @@
 				"5090547B46FCE73D"
 			]
 			description: [
-				"One boule, many wafers. Everything electronic from now on starts as one of these."
+				"{gtia.quest.2D7B8E89436888F6.desc.0}"
 			]
 			id: "2D7B8E89436888F6"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Sliced thin."
+			subtitle: "{gtia.quest.2D7B8E89436888F6.subtitle}"
 			tasks: [
 				{
 					id: "1198ADFD62253C31"
@@ -778,7 +778,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Silicon Wafers"
+			title: "{gtia.quest.2D7B8E89436888F6.title}"
 			x: 14.0d
 			y: 0.0d
 		}
@@ -787,13 +787,13 @@
 				"28369DD5349AA123"
 			]
 			description: [
-				"Engrave a wafer with a red lens and cut it into chips."
+				"{gtia.quest.2A555A4FBDABFF70.desc.0}"
 			]
 			id: "2A555A4FBDABFF70"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "The first chips."
+			subtitle: "{gtia.quest.2A555A4FBDABFF70.subtitle}"
 			tasks: [
 				{
 					id: "7AA963BEB01FE3EA"
@@ -804,7 +804,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Integrated Logic Circuits"
+			title: "{gtia.quest.2A555A4FBDABFF70.title}"
 			x: 16.5d
 			y: 2.5d
 		}
@@ -813,13 +813,13 @@
 				"2A555A4FBDABFF70"
 			]
 			description: [
-				"A different lens, a different chip."
+				"{gtia.quest.5AE004D0EBF12D31.desc.0}"
 			]
 			id: "5AE004D0EBF12D31"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Memory."
+			subtitle: "{gtia.quest.5AE004D0EBF12D31.subtitle}"
 			tasks: [
 				{
 					id: "613C6E99D32E8A8F"
@@ -830,7 +830,7 @@
 					match_nbt: false
 				}
 			]
-			title: "RAM Chips"
+			title: "{gtia.quest.5AE004D0EBF12D31.title}"
 			x: 18.5d
 			y: 2.5d
 		}
@@ -840,16 +840,16 @@
 				"1B0581FFF976E579"
 			]
 			description: [
-				"Silicon, fine tin wire and polyethylene."
+				"{gtia.quest.497B83134062A1F3.desc.0}"
 				""
-				"&aReal fact:&r the first transistor (Bell Labs, 1947) was a lump of germanium with two gold contacts held on by a paperclip."
+				"{gtia.quest.497B83134062A1F3.desc.2}"
 			]
 			id: "497B83134062A1F3"
 			hide_dependency_lines: true
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "The switch that changed everything."
+			subtitle: "{gtia.quest.497B83134062A1F3.subtitle}"
 			tasks: [
 				{
 					id: "6502214063C42904"
@@ -860,7 +860,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Transistors"
+			title: "{gtia.quest.497B83134062A1F3.title}"
 			x: 20.5d
 			y: 4.5d
 		}
@@ -869,13 +869,13 @@
 				"2A555A4FBDABFF70"
 			]
 			description: [
-				"A resin board, an ILC chip, resistors and diodes."
+				"{gtia.quest.5A436C6D4DEA53EC.desc.0}"
 			]
 			id: "5A436C6D4DEA53EC"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "A circuit on a chip."
+			subtitle: "{gtia.quest.5A436C6D4DEA53EC.subtitle}"
 			tasks: [
 				{
 					id: "35A23447E636B6CD"
@@ -886,7 +886,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Basic Integrated Circuit"
+			title: "{gtia.quest.5A436C6D4DEA53EC.title}"
 			x: 16.5d
 			y: 4.5d
 		}
@@ -895,13 +895,13 @@
 				"5A436C6D4DEA53EC"
 			]
 			description: [
-				"Two basic integrated circuits on a phenolic board, with gold wire and silver bolts."
+				"{gtia.quest.080AD3BD18BF385F.desc.0}"
 			]
 			id: "080AD3BD18BF385F"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Two become one."
+			subtitle: "{gtia.quest.080AD3BD18BF385F.subtitle}"
 			tasks: [
 				{
 					id: "1597D28CAB5075E6"
@@ -912,7 +912,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Good Integrated Circuit"
+			title: "{gtia.quest.080AD3BD18BF385F.title}"
 			x: 16.5d
 			y: 6.5d
 		}
@@ -921,13 +921,13 @@
 				"1B0581FFF976E579"
 			]
 			description: [
-				"Melts metal with an electric arc. With Oxygen, copper comes out annealed; it also recycles old machines into ingots."
+				"{gtia.quest.431A285F135D870A.desc.0}"
 			]
 			id: "431A285F135D870A"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Lightning in a box."
+			subtitle: "{gtia.quest.431A285F135D870A.subtitle}"
 			tasks: [
 				{
 					id: "599A1C59B17CB800"
@@ -938,7 +938,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Arc Furnace"
+			title: "{gtia.quest.431A285F135D870A.title}"
 			x: 2.0d
 			y: -2.5d
 		}
@@ -948,14 +948,14 @@
 				"431A285F135D870A"
 			]
 			description: [
-				"Copper through the Arc Furnace with Oxygen from your air separation."
+				"{gtia.quest.26D50B16FF390132.desc.0}"
 			]
 			id: "26D50B16FF390132"
 			hide_dependency_lines: true
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Softer copper, better wire."
+			subtitle: "{gtia.quest.26D50B16FF390132.subtitle}"
 			tasks: [
 				{
 					id: "274155E573A1CBE3"
@@ -966,7 +966,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Annealed Copper"
+			title: "{gtia.quest.26D50B16FF390132.title}"
 			x: 18.5d
 			y: 8.5d
 		}
@@ -978,13 +978,13 @@
 				"26D50B16FF390132"
 			]
 			description: [
-				"Two good integrated circuits, ILC and RAM chips, transistors, electrum wire and annealed copper bolts."
+				"{gtia.quest.7FFDD6C6357E1A46.desc.0}"
 			]
 			id: "7FFDD6C6357E1A46"
 			rewards: [ ]
 			shape: "gear"
 			size: 2.25d
-			subtitle: "The HV circuit."
+			subtitle: "{gtia.quest.7FFDD6C6357E1A46.subtitle}"
 			tasks: [
 				{
 					id: "045D9CFFB6B3E74F"
@@ -995,7 +995,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Advanced Integrated Circuit"
+			title: "{gtia.quest.7FFDD6C6357E1A46.title}"
 			x: 18.5d
 			y: 6.5d
 		}
@@ -1004,13 +1004,13 @@
 				"1BCFA3BDB989211E"
 			]
 			description: [
-				"Eight for the casing and one for the hull."
+				"{gtia.quest.4038D5A4305BB335.desc.0}"
 			]
 			id: "4038D5A4305BB335"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Nine plates."
+			subtitle: "{gtia.quest.4038D5A4305BB335.subtitle}"
 			tasks: [
 				{
 					id: "3E78FF47E60FBB50"
@@ -1021,7 +1021,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Stainless Steel Plates"
+			title: "{gtia.quest.4038D5A4305BB335.title}"
 			x: 24.0d
 			y: 0.0d
 		}
@@ -1030,13 +1030,13 @@
 				"4038D5A4305BB335"
 			]
 			description: [
-				"The shell of every High Voltage machine."
+				"{gtia.quest.079EEE28B8E29B84.desc.0}"
 			]
 			id: "079EEE28B8E29B84"
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "Eight Stainless Steel Plates."
+			subtitle: "{gtia.quest.079EEE28B8E29B84.subtitle}"
 			tasks: [
 				{
 					id: "7F435E38DD1010F4"
@@ -1047,7 +1047,7 @@
 					match_nbt: false
 				}
 			]
-			title: "HV Machine Casing"
+			title: "{gtia.quest.079EEE28B8E29B84.title}"
 			x: 24.0d
 			y: 2.5d
 		}
@@ -1056,14 +1056,14 @@
 				"1B0581FFF976E579"
 			]
 			description: [
-				"Gold wire in rubber."
+				"{gtia.quest.2A5AE184AEE54737.desc.0}"
 			]
 			id: "2A5AE184AEE54737"
 			hide_dependency_lines: true
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "HV needs gold."
+			subtitle: "{gtia.quest.2A5AE184AEE54737.subtitle}"
 			tasks: [
 				{
 					id: "1A5E453520D08CCA"
@@ -1074,7 +1074,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Gold Cable"
+			title: "{gtia.quest.2A5AE184AEE54737.title}"
 			x: 26.0d
 			y: 5.0d
 		}
@@ -1083,14 +1083,14 @@
 				"6318999D0393E359"
 			]
 			description: [
-				"Solidify the Polyethylene from your LV line into plates."
+				"{gtia.quest.07C6486B77AD2972.desc.0}"
 			]
 			id: "07C6486B77AD2972"
 			hide_dependency_lines: true
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Plastic, finally useful."
+			subtitle: "{gtia.quest.07C6486B77AD2972.subtitle}"
 			tasks: [
 				{
 					id: "5D384BC403DE7CE3"
@@ -1101,7 +1101,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Polyethylene Plates"
+			title: "{gtia.quest.07C6486B77AD2972.title}"
 			x: 26.0d
 			y: 7.0d
 		}
@@ -1112,13 +1112,13 @@
 				"07C6486B77AD2972"
 			]
 			description: [
-				"Casing, two Gold Cables, two Polyethylene Plates and a Stainless Steel Plate."
+				"{gtia.quest.6904837F2ACA3A37.desc.0}"
 			]
 			id: "6904837F2ACA3A37"
 			rewards: [ ]
 			shape: "gear"
 			size: 2.25d
-			subtitle: "The body of every HV machine."
+			subtitle: "{gtia.quest.6904837F2ACA3A37.subtitle}"
 			tasks: [
 				{
 					id: "24E5A064D908AA87"
@@ -1129,7 +1129,7 @@
 					match_nbt: false
 				}
 			]
-			title: "HV Machine Hull"
+			title: "{gtia.quest.6904837F2ACA3A37.title}"
 			x: 24.0d
 			y: 5.0d
 		}
@@ -1138,17 +1138,17 @@
 				"52E80D9614D45259"
 			]
 			description: [
-				"Circuit 1 digests &e1 Bauxite&r, &e1 Sodium Hydroxide&r, water and steam into &e1,000 mB&r of Sodium Aluminate, leaving red mud. Circuit 2 precipitates it into &e2 Aluminium Hydroxide&r and gives back most of the soda."
+				"{gtia.quest.53FEE3DE0FB95AF5.desc.0}"
 				""
-				"Provisional structure: a hollow &e3×3×3&r of Solid Steel Machine Casings with hatches in the walls."
+				"{gtia.quest.53FEE3DE0FB95AF5.desc.2}"
 				""
-				"&aReal fact:&r Karl Josef Bayer patented the process in 1888. Nearly all the world's alumina is still made this way."
+				"{gtia.quest.53FEE3DE0FB95AF5.desc.4}"
 			]
 			id: "53FEE3DE0FB95AF5"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Bauxite in hot caustic soda."
+			subtitle: "{gtia.quest.53FEE3DE0FB95AF5.subtitle}"
 			tasks: [
 				{
 					id: "222EFA94EAFEDD89"
@@ -1159,7 +1159,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Bayer Digester"
+			title: "{gtia.quest.53FEE3DE0FB95AF5.title}"
 			x: 8.0d
 			y: 2.5d
 		}
@@ -1169,14 +1169,14 @@
 				"6637F16316206C88"
 			]
 			description: [
-				"Your old Lime Kiln calcines &e2 Aluminium Hydroxide&r into &e1 Alumina&r. The Steam Age is still working for you."
+				"{gtia.quest.3C3CB2122CD34909.desc.0}"
 			]
 			id: "3C3CB2122CD34909"
 			hide_dependency_lines: true
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Calcined in the Lime Kiln."
+			subtitle: "{gtia.quest.3C3CB2122CD34909.subtitle}"
 			tasks: [
 				{
 					id: "6F5F9FB9FF45F0A6"
@@ -1187,7 +1187,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Alumina"
+			title: "{gtia.quest.3C3CB2122CD34909.title}"
 			x: 10.0d
 			y: 2.5d
 		}
@@ -1197,13 +1197,13 @@
 				"174F3AD8908B1D3D"
 			]
 			description: [
-				"Aluminium Hydroxide, Sodium Hydroxide and Hydrofluoric Acid in a Chemical Reactor. Alumina dissolves in it at a much lower temperature."
+				"{gtia.quest.4E4B848A1FA81753.desc.0}"
 			]
 			id: "4E4B848A1FA81753"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "The molten bath."
+			subtitle: "{gtia.quest.4E4B848A1FA81753.subtitle}"
 			tasks: [
 				{
 					id: "0FC2D5E032BED312"
@@ -1214,7 +1214,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Cryolite"
+			title: "{gtia.quest.4E4B848A1FA81753.title}"
 			x: 8.0d
 			y: 6.5d
 		}
@@ -1224,14 +1224,14 @@
 				"278E9258DFD1E67A"
 			]
 			description: [
-				"Coke dust bound with Wood Tar in a Mixer. It burns away in the cell, one per run."
+				"{gtia.quest.754D2ACD373583C8.desc.0}"
 			]
 			id: "754D2ACD373583C8"
 			hide_dependency_lines: true
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Coke and tar."
+			subtitle: "{gtia.quest.754D2ACD373583C8.subtitle}"
 			tasks: [
 				{
 					id: "22126DF088D50671"
@@ -1242,7 +1242,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Carbon Anode"
+			title: "{gtia.quest.754D2ACD373583C8.title}"
 			x: 12.0d
 			y: 6.5d
 		}
@@ -1253,15 +1253,15 @@
 				"754D2ACD373583C8"
 			]
 			description: [
-				"&e2 Alumina&r and a Carbon Anode become &e4 Aluminium Ingots&r and CO₂, with a small chance to use up the cryolite bath. No blast furnace needed."
+				"{gtia.quest.67175118C46ADF68.desc.0}"
 				""
-				"&aReal fact:&r Charles Hall and Paul Héroult found the same process in 1886, independently, on two continents. Both were 22."
+				"{gtia.quest.67175118C46ADF68.desc.2}"
 			]
 			id: "67175118C46ADF68"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Aluminium the real way."
+			subtitle: "{gtia.quest.67175118C46ADF68.subtitle}"
 			tasks: [
 				{
 					id: "0129D22E36147124"
@@ -1272,7 +1272,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Hall-Héroult Cell"
+			title: "{gtia.quest.67175118C46ADF68.title}"
 			x: 10.0d
 			y: 6.5d
 		}
@@ -1281,14 +1281,14 @@
 				"2AB2176EAB4E58A3"
 			]
 			description: [
-				"It pulls Air from the world around it. Its fluid filter is a Lazurite plate."
+				"{gtia.quest.491EA78EB371D651.desc.0}"
 			]
 			id: "491EA78EB371D651"
 			hide_dependency_lines: true
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Bottled air."
+			subtitle: "{gtia.quest.491EA78EB371D651.subtitle}"
 			tasks: [
 				{
 					id: "128CDCCF7E0A7A64"
@@ -1299,7 +1299,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Gas Collector"
+			title: "{gtia.quest.491EA78EB371D651.title}"
 			x: 2.0d
 			y: 4.5d
 		}
@@ -1308,13 +1308,13 @@
 				"491EA78EB371D651"
 			]
 			description: [
-				"A Centrifuge splits Air into Nitrogen and Oxygen."
+				"{gtia.quest.0623071762390A9E.desc.0}"
 			]
 			id: "0623071762390A9E"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Four fifths of the air."
+			subtitle: "{gtia.quest.0623071762390A9E.subtitle}"
 			tasks: [
 				{
 					id: "3F4603BC38D99903"
@@ -1325,7 +1325,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Nitrogen"
+			title: "{gtia.quest.0623071762390A9E.title}"
 			x: 2.0d
 			y: 6.5d
 		}
@@ -1334,13 +1334,13 @@
 				"3DA44F536F2625FA"
 			]
 			description: [
-				"Fluorine from Mica or Lepidolite in the MV Electrolyzer, burnt with Hydrogen into Hydrofluoric Acid."
+				"{gtia.quest.174F3AD8908B1D3D.desc.0}"
 			]
 			id: "174F3AD8908B1D3D"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Handle with care."
+			subtitle: "{gtia.quest.174F3AD8908B1D3D.subtitle}"
 			tasks: [
 				{
 					id: "2EAB808CBF23CF6C"
@@ -1351,7 +1351,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Hydrofluoric Acid"
+			title: "{gtia.quest.174F3AD8908B1D3D.title}"
 			x: 6.0d
 			y: 6.5d
 		}
@@ -1360,13 +1360,13 @@
 				"52E80D9614D45259"
 			]
 			description: [
-				"Vanadium dust burnt in oxygen. It is never used up."
+				"{gtia.quest.1EA9675F5B507531.desc.0}"
 			]
 			id: "1EA9675F5B507531"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "The catalyst."
+			subtitle: "{gtia.quest.1EA9675F5B507531.subtitle}"
 			tasks: [
 				{
 					id: "2CDA35A9F94A351B"
@@ -1377,7 +1377,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Vanadium Pentoxide"
+			title: "{gtia.quest.1EA9675F5B507531.title}"
 			x: 4.0d
 			y: 2.5d
 		}
@@ -1386,15 +1386,15 @@
 				"1EA9675F5B507531"
 			]
 			description: [
-				"Sulfur, oxygen and water over Vanadium Pentoxide: &e1,000 mB&r of Sulfuric Acid and &e2,000 mB&r of steam per run. The reaction is hot enough to feed your turbines."
+				"{gtia.quest.7C9302B22901B3EC.desc.0}"
 				""
-				"&aReal fact:&r sulfuric acid is the most produced chemical in the world; economists once used it to measure how industrial a country was."
+				"{gtia.quest.7C9302B22901B3EC.desc.2}"
 			]
 			id: "7C9302B22901B3EC"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Sulfur into acid, and steam for free."
+			subtitle: "{gtia.quest.7C9302B22901B3EC.subtitle}"
 			tasks: [
 				{
 					id: "46531B74CB11CE6E"
@@ -1405,7 +1405,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Contact Converter"
+			title: "{gtia.quest.7C9302B22901B3EC.title}"
 			x: 4.0d
 			y: 4.5d
 		}
@@ -1414,15 +1414,15 @@
 				"0623071762390A9E"
 			]
 			description: [
-				"Nitrogen and Hydrogen over an iron (Magnetite) catalyst become Ammonia, with a little steam. Your Diaphragm Cell already makes the hydrogen."
+				"{gtia.quest.0B0DFAAC23E69912.desc.0}"
 				""
-				"&aReal fact:&r the Haber-Bosch process feeds about half of humanity: most of the nitrogen in your body passed through one."
+				"{gtia.quest.0B0DFAAC23E69912.desc.2}"
 			]
 			id: "0B0DFAAC23E69912"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Bread from air."
+			subtitle: "{gtia.quest.0B0DFAAC23E69912.subtitle}"
 			tasks: [
 				{
 					id: "20153CED7A75EDBE"
@@ -1433,7 +1433,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Ammonia Converter"
+			title: "{gtia.quest.0B0DFAAC23E69912.title}"
 			x: 2.0d
 			y: 8.5d
 		}
@@ -1442,15 +1442,15 @@
 				"3EB8DF95318F1354"
 			]
 			description: [
-				"Brine, Ammonia and CO₂ give Sodium Bicarbonate and Ammonium Chloride. The Lime Kiln calcines the bicarbonate into Soda Ash, and Quicklime gets the ammonia back."
+				"{gtia.quest.0D8B6A761A3480E0.desc.0}"
 				""
-				"&aReal fact:&r Ernest Solvay's process (1861) made soda ash so cheap that glass windows became normal houses' business."
+				"{gtia.quest.0D8B6A761A3480E0.desc.2}"
 			]
 			id: "0D8B6A761A3480E0"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "Soda from salt and lime."
+			subtitle: "{gtia.quest.0D8B6A761A3480E0.subtitle}"
 			tasks: [
 				{
 					id: "3C10003A87159F1A"
@@ -1461,7 +1461,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Solvay Tower"
+			title: "{gtia.quest.0D8B6A761A3480E0.title}"
 			x: 6.0d
 			y: 8.5d
 		}
@@ -1470,13 +1470,13 @@
 				"7C9302B22901B3EC"
 			]
 			description: [
-				"From now on, make it in bulk."
+				"{gtia.quest.69150765E99F67F2.desc.0}"
 			]
 			id: "69150765E99F67F2"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "The most useful acid."
+			subtitle: "{gtia.quest.69150765E99F67F2.subtitle}"
 			tasks: [
 				{
 					id: "709EEF0EDEB9F067"
@@ -1487,7 +1487,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Sulfuric Acid"
+			title: "{gtia.quest.69150765E99F67F2.title}"
 			x: 4.0d
 			y: 6.5d
 		}
@@ -1496,13 +1496,13 @@
 				"0B0DFAAC23E69912"
 			]
 			description: [
-				"Fertiliser, explosives, rocket fuel, and the Solvay Tower."
+				"{gtia.quest.3EB8DF95318F1354.desc.0}"
 			]
 			id: "3EB8DF95318F1354"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Bread from air, by the bucket."
+			subtitle: "{gtia.quest.3EB8DF95318F1354.subtitle}"
 			tasks: [
 				{
 					id: "7CD096E2C6463D02"
@@ -1513,7 +1513,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Ammonia"
+			title: "{gtia.quest.3EB8DF95318F1354.title}"
 			x: 4.0d
 			y: 8.5d
 		}
@@ -1523,14 +1523,14 @@
 				"6637F16316206C88"
 			]
 			description: [
-				"Sodium Bicarbonate from the tower, calcined in your Lime Kiln."
+				"{gtia.quest.102F7E1E812EEB90.desc.0}"
 			]
 			id: "102F7E1E812EEB90"
 			hide_dependency_lines: true
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "Calcined bicarbonate."
+			subtitle: "{gtia.quest.102F7E1E812EEB90.subtitle}"
 			tasks: [
 				{
 					id: "31B02525F235BB65"
@@ -1541,7 +1541,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Soda Ash"
+			title: "{gtia.quest.102F7E1E812EEB90.title}"
 			x: 8.0d
 			y: 8.5d
 		}
@@ -1550,13 +1550,13 @@
 				"10DB8940D99766BF"
 			]
 			description: [
-				"Logs and nitrogen in, charcoal and far more byproducts out. The efficient route for your wood chemistry."
+				"{gtia.quest.5AA47704DF2B114A.desc.0}"
 			]
 			id: "5AA47704DF2B114A"
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "The Retort, grown up."
+			subtitle: "{gtia.quest.5AA47704DF2B114A.subtitle}"
 			tasks: [
 				{
 					id: "5DAE33A3CB220A46"
@@ -1567,7 +1567,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Pyrolyse Oven"
+			title: "{gtia.quest.5AA47704DF2B114A.title}"
 			x: 2.0d
 			y: 2.5d
 		}
@@ -1576,13 +1576,13 @@
 				"5AA47704DF2B114A"
 			]
 			description: [
-				"Much more Methanol and Acetic Acid from the same Wood Vinegar."
+				"{gtia.quest.332697480439D566.desc.0}"
 			]
 			id: "332697480439D566"
 			rewards: [ ]
 			shape: "circle"
 			size: 0.75d
-			subtitle: "The Still, grown up."
+			subtitle: "{gtia.quest.332697480439D566.subtitle}"
 			tasks: [
 				{
 					id: "5C0D75B7E07489FC"
@@ -1593,7 +1593,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Distillery"
+			title: "{gtia.quest.332697480439D566.title}"
 			x: 0.0d
 			y: 2.5d
 		}
@@ -1603,14 +1603,14 @@
 				"355578D8EBE7AC17"
 			]
 			description: [
-				"Pattern Providers, Molecular Assemblers and Crafting Units. Teach the network a recipe once and it makes it forever."
+				"{gtia.quest.52BA60C2A0378DFA.desc.0}"
 			]
 			id: "52BA60C2A0378DFA"
 			hide_dependency_lines: true
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
-			subtitle: "The network starts working for you."
+			subtitle: "{gtia.quest.52BA60C2A0378DFA.subtitle}"
 			tasks: [
 				{
 					id: "5D12E5DE23B19661"
@@ -1637,7 +1637,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Autocrafting"
+			title: "{gtia.quest.52BA60C2A0378DFA.title}"
 			x: 2.0d
 			y: -5.0d
 		}
@@ -1646,7 +1646,7 @@
 				"10DB8940D99766BF"
 			]
 			description: [
-				"A GTNA multiblock that grows plants for your Fermentation Vats and wood lines."
+				"{gtia.quest.0E02FEAC26E15F37.desc.0}"
 			]
 			id: "0E02FEAC26E15F37"
 			hide_dependency_lines: true
@@ -1654,7 +1654,7 @@
 			rewards: [ ]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "Crops on a conveyor."
+			subtitle: "{gtia.quest.0E02FEAC26E15F37.subtitle}"
 			tasks: [
 				{
 					id: "13BDBD9B2BAE2F3C"
@@ -1665,7 +1665,7 @@
 					match_nbt: false
 				}
 			]
-			title: "Greenhouse"
+			title: "{gtia.quest.0E02FEAC26E15F37.title}"
 			x: 0.0d
 			y: -2.5d
 		}
@@ -1675,25 +1675,25 @@
 				"6904837F2ACA3A37"
 			]
 			description: [
-				"Integrated circuits, stainless steel and Kanthal coils. High Voltage is next."
+				"{gtia.quest.65075BFD98BEAF73.desc.0}"
 			]
 			icon: "gtceu:mv_machine_hull"
 			id: "65075BFD98BEAF73"
 			rewards: [ ]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "Stainless steel and a chip that thinks."
+			subtitle: "{gtia.quest.65075BFD98BEAF73.subtitle}"
 			tasks: [
 				{
 					id: "79603579C1B8C21C"
 					type: "checkmark"
-					title: "Ascend"
+					title: "{gtia.quest.65075BFD98BEAF73.task.79603579C1B8C21C}"
 				}
 			]
-			title: "Ascend to High Voltage"
+			title: "{gtia.quest.65075BFD98BEAF73.title}"
 			x: 21.0d
 			y: 8.5d
 		}
 	]
-	title: "Medium Voltage Age"
+	title: "{gtia.quest.chapter.42654D02C0065973}"
 }

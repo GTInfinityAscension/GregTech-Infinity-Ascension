@@ -9,6 +9,10 @@ gameplay:
   # Pt: Self restraint desabilita itens restritos e com cara de cheat do GTNA.
   selfRestraint: false
 
+  # En: Research tree (K key, tree screen and research commands). Packs without research nodes can turn it off.
+  # Pt: Arvore de pesquisa (tecla K, tela e comandos). Packs sem nos de pesquisa podem desligar.
+  researchTree: false
+
 # En: Client Settings
 # Pt: Configuracoes do cliente
 client:

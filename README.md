@@ -24,19 +24,20 @@ Download the latest build from [Releases](https://github.com/Raishxn/GregTech-In
 | `GregTech-Infinity-Ascension-<version>.zip` | **Client.** Import it in Prism Launcher (*Add Instance → Import*), the CurseForge app or ATLauncher. |
 | `GregTech-Infinity-Ascension-server-<version>.zip` | **Dedicated server.** Unzip, run `install.sh` / `install.bat`, see `README-SERVER.md`. |
 
-Java 17+ and 8 GB of RAM or more are recommended.
+**Java 21** and 8 GB of RAM or more are recommended. Java 21 gives steadier frame times than Java 17; the pack also runs on Java 17. Java 25 is not supported yet (spark's profiler crashes on it). In Prism Launcher: *Edit Instance → Settings → Java*, pick a Java 21 install and set the memory there.
+
+The pack ships the **CozyUI+** resource pack enabled by default and the **Complementary Reimagined** shaders (pick them in *Video Settings → Shader Packs*; Euphoria Patches are applied on top automatically).
 
 ### Release channels
 
 | Channel | Tag | What to expect |
 | --- | --- | --- |
-| nightly | `nightly` (version `X.Y.Z-dev-<commit>`) | Built on every change to `main`. Can break anything. |
 | dev | `X.Y.Z-dev-N` | Snapshot for the team and testers. |
 | pre | `X.Y.Z-pre-N` | Feature-complete for the version and being tested. |
 | alpha | `X.Y.Z-alpha[-N]` | First public test of the version. |
 | beta | `X.Y.Z-beta[-N]` | **Stable** for the version. |
 
-A version moves dev → pre → alpha → beta. Only beta releases are not marked as pre-release. Always say the exact version when reporting a bug.
+A version moves dev → pre → alpha → beta. Only two releases are kept at a time: the newest beta and the newest dev/pre/alpha (a new one replaces the previous one of its group). Every change to `main` is also built by CI as a downloadable workflow artifact. Always say the exact version when reporting a bug.
 
 ### Other ways to install
 

@@ -1,0 +1,2 @@
+resourcePacks:["vanilla","mod_resources","file/§cCozyUI§b+ §7v1.8§c no-fonts §0.zip"]
+incompatibleResourcePacks:[]

@@ -10,7 +10,7 @@ GTIA's own mods:
 
 No quest text, texture or config was copied from other modpacks (GTO, GTL, GTNH, Monifactory, ForgeBorn). They were only used as layout and design references.
 
-## Mods in the full pack (127)
+## Mods in the full pack (132)
 
 | Mod ID | File | Source |
 | --- | --- | --- |
@@ -39,9 +39,11 @@ No quest text, texture or config was copied from other modpacks (GTO, GTL, GTNH,
 | `controlling` | Controlling-forge-1.20.1-12.0.2.jar | [CurseForge](https://www.curseforge.com/projects/250398) |
 | `coroutil` | coroutil-forge-1.20.1-1.3.7.jar | [CurseForge](https://www.curseforge.com/projects/237749) |
 | `craftingtweaks` | craftingtweaks-forge-1.20.1-18.2.9.jar | [CurseForge](https://www.curseforge.com/projects/233071) |
+| `craftpresence` | CraftPresence-2.7.1+1.20.1-forge.jar | [CurseForge](https://www.curseforge.com/projects/297038) |
 | `creativecore` | CreativeCore_FORGE_v2.12.40_mc1.20.1.jar | [CurseForge](https://www.curseforge.com/projects/257814) |
 | `cryonicconfig` | cryonicconfig-forge-1.0.0+mc1.20.1.jar | [CurseForge](https://www.curseforge.com/projects/1208896) |
 | `culllessleaves` | CullLessLeaves-Reforged-1.20.1-1.0.5.jar | [CurseForge](https://www.curseforge.com/projects/840788) |
+| `defaultoptions` | defaultoptions-forge-1.20.1-18.0.5.jar | [CurseForge](https://www.curseforge.com/projects/232131) |
 | `doespotatotick` | doespotatotick-1.20.1-5.6.3.jar | [CurseForge](https://www.curseforge.com/projects/825355) |
 | `duplicationless` | duplicationless-1.20.1-1.2.1.jar | [CurseForge](https://www.curseforge.com/projects/1380105) |
 | `easy_villagers` | easy-villagers-forge-1.20.1-1.1.39.jar | [CurseForge](https://www.curseforge.com/projects/400514) |
@@ -56,6 +58,7 @@ No quest text, texture or config was copied from other modpacks (GTO, GTL, GTNH,
 | `explorerscompass` | ExplorersCompass-1.20.1-1.4.0-forge.jar | [CurseForge](https://www.curseforge.com/projects/491794) |
 | `extendedae_plus` | extendedae_plus-1.6.2.jar | [CurseForge](https://www.curseforge.com/projects/1337639) |
 | `extremesoundmuffler` | ExtremeSoundMuffler-3.51-forge-1.20.1.jar | [CurseForge](https://www.curseforge.com/projects/363363) |
+| `fabricate` | fabricate-1.0.5.jar | [CurseForge](https://www.curseforge.com/projects/1549672) |
 | `factory_blocks` | factory_blocks-forge-1.4.0+mc1.20.1.jar | [CurseForge](https://www.curseforge.com/projects/640001) |
 | `fastbench` | FastWorkbench-1.20.1-8.0.4.jar | [CurseForge](https://www.curseforge.com/projects/288885) |
 | `fastfurnace` | FastFurnace-1.20.1-8.0.2.jar | [CurseForge](https://www.curseforge.com/projects/299540) |
@@ -112,6 +115,7 @@ No quest text, texture or config was copied from other modpacks (GTO, GTL, GTNH,
 | `no_telemetry` | no-telemetry-1.10.0.jar | [CurseForge](https://www.curseforge.com/projects/530816) |
 | `nolijium` | nolijium-0.5.6.jar | [CurseForge](https://www.curseforge.com/projects/969602) |
 | `oculus` | oculus-mc1.20.1-1.8.0.jar | [CurseForge](https://www.curseforge.com/projects/581495) |
+| `openloader` | OpenLoader-Forge-1.20.1-19.0.5.jar | [CurseForge](https://www.curseforge.com/projects/354339) |
 | `packmenu` | PackMenu-1.20.1-6.1.2.jar | [CurseForge](https://www.curseforge.com/projects/358191) |
 | `pipez` | pipez-forge-1.20.1-1.2.26.jar | [CurseForge](https://www.curseforge.com/projects/443900) |
 | `placebo` | Placebo-1.20.1-8.6.3.jar | [CurseForge](https://www.curseforge.com/projects/283644) |
@@ -136,8 +140,15 @@ No quest text, texture or config was copied from other modpacks (GTO, GTL, GTNH,
 | `toofast` | toofast-1.20-0.4.3.5.jar | [CurseForge](https://www.curseforge.com/projects/550678) |
 | `toolbelt` | ToolBelt-1.20.1-1.20.03.jar | [CurseForge](https://www.curseforge.com/projects/260262) |
 | `trashcans` | trashcans-1.1.1-forge-mc1.20.4.jar | [CurseForge](https://www.curseforge.com/projects/394535) |
+| `unilib` | UniLib-1.2.1+1.20.1-forge.jar | [CurseForge](https://www.curseforge.com/projects/1056812) |
 | `usclb` | usclb-0.0.26.jar | [CurseForge](https://www.curseforge.com/projects/664224) |
 | `xaerominimap` | xaerominimap-forge-1.20.1-26.5.0.jar | [CurseForge](https://www.curseforge.com/projects/263420) |
 | `xaeroworldmap` | xaeroworldmap-forge-1.20.1-1.46.0.jar | [CurseForge](https://www.curseforge.com/projects/317780) |
 | `xtonesreworked` | xtonesreworked-1.0.4-F_1.20.1-47.2.0.jar | [CurseForge](https://www.curseforge.com/projects/694231) |
 | `yeetusexperimentus` | YeetusExperimentus-Forge-2.3.1-build.6+mc1.20.1.jar | [CurseForge](https://www.curseforge.com/projects/635427) |
+
+
+## Resource packs and shaders
+
+- **CozyUI+** by 零雾〇五Fogg05 (GPL-3.0), enabled by default, downloaded from [CurseForge](https://www.curseforge.com/projects/1152016).
+- **Complementary Shaders - Reimagined** by Complementary Development ([license](https://github.com/ComplementaryDevelopment/ComplementaryReimagined/blob/main/License.txt)), included through CurseForge and not enabled by default. Problems caused by including it are the pack's responsibility, not Complementary's.
