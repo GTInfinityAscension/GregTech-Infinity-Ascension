@@ -110,6 +110,7 @@
     "polylib",
     "polymorph",
     "radium",
+    "renderblender",
     "resourcefulconfig",
     "resourcefullib",
     "rubidium",
@@ -1177,6 +1178,15 @@
       "source": "curseforge",
       "project_id": 1649038,
       "file_id": 8923124,
+      "requires": []
+    },
+    {
+      "mod_id": "renderblender",
+      "filename": "renderblender-1.1.1.jar",
+      "sha256": "a0c35efff951f6e669aeba0d5666566f5bad4e92f53af96b79bd968af8d74c46",
+      "source": "curseforge",
+      "project_id": 1346485,
+      "file_id": 7035162,
       "requires": []
     },
     {

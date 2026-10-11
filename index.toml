@@ -94,7 +94,7 @@ hash = "b4b0aaec74cd2c37a2d0d384a4195768d8d7cbc9f86c7d993694e394fa35664d"
 
 [[files]]
 file = "config/emi.css"
-hash = "9fa24b9307a960428865fddf89bf18ad0659141055e918cd113a3e510a2d2b7f"
+hash = "713570064e0401adfded747aead2f910a55106692515eba64001fdcb49f99767"
 
 [[files]]
 file = "config/emi_ores-client.json"
@@ -330,7 +330,7 @@ hash = "47b287f97fc61a322d7a19087bc9e9696de5b8f6060a5a2eda73d3d4ab3805c2"
 
 [[files]]
 file = "config/sidebar_buttons.json"
-hash = "33c7071e289295153b0457303c2d903f24d538ab9d10fdcf959e2a1cccd819ed"
+hash = "27c681124ae380c434cc65ab1437f9472d67ac20536afef6c718c7cc808f0045"
 
 [[files]]
 file = "config/sodium-extra-options.json"
@@ -943,6 +943,11 @@ hash = "b1a5cee0c0a6bee7b32f67fd229b0db844383d5425e155cc910cd41ed7d08317"
 metafile = true
 
 [[files]]
+file = "mods/renderblender.pw.toml"
+hash = "2657eb1e5f90cbe5528e87116417b78775abb813aa442158ba5cbfe8b33e4d15"
+metafile = true
+
+[[files]]
 file = "mods/resourcefulconfig.pw.toml"
 hash = "e3b0e22390446c123109208209b74267dfbcf6012962860335db0d463570db07"
 metafile = true
@@ -1046,3 +1051,15 @@ metafile = true
 file = "mods/yeetusexperimentus.pw.toml"
 hash = "7dbe376c64d52ddc3e52ca6ce6b07d8c5d76bf9ef68d58267bb9e9c6d8fb2c09"
 metafile = true
+
+[[files]]
+file = "restore-backup.bat"
+hash = "a83232ab09ba35893184caa9a2728df2643e6b5939f8eaf45a133dbc13bd958f"
+
+[[files]]
+file = "restore-backup.ps1"
+hash = "b2ed4db8b4a81a999cad44d27335c24fbb59ad625814c80b1825e3a1717c305f"
+
+[[files]]
+file = "restore-backup.sh"
+hash = "880d3cc726f503b51a0e480b9725c516ca7eab29371ec0cc7de4213a3a16b569"

@@ -87,6 +87,8 @@ def cmd_server(out: Path, version: str | None) -> Path:
     for name in ("install.sh", "install.bat", "README-SERVER.md"):
         shutil.copy2(SERVER_FILES / name, root / name)
     (root / "install.sh").chmod(0o755)
+    for name in ("restore-backup.sh", "restore-backup.bat", "restore-backup.ps1"):
+        shutil.copy2(work / name, root / name)
     shutil.copy2(work / "LICENSE.txt", root / "LICENSE.txt")
     (root / "gtia-installer" / "versions.txt").write_text(
         f"pack={info['version']}\nminecraft={info['minecraft']}\nforge={info['forge']}\n")
@@ -96,7 +98,7 @@ def cmd_server(out: Path, version: str | None) -> Path:
             if path.is_file():
                 # Fixed timestamp: Nix sets every file to 1970, which zip cannot store, and it keeps builds reproducible.
                 info_entry = zipfile.ZipInfo(path.relative_to(root).as_posix(), (1980, 1, 1, 0, 0, 0))
-                info_entry.external_attr = (0o100755 if path.name == "install.sh" else 0o100644) << 16
+                info_entry.external_attr = (0o100755 if path.name in ("install.sh", "restore-backup.sh") else 0o100644) << 16
                 z.writestr(info_entry, path.read_bytes(), zipfile.ZIP_DEFLATED)
     shutil.rmtree(work)
     shutil.rmtree(root)

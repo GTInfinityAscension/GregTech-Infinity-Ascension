@@ -10,7 +10,7 @@ GTIA's own mods:
 
 No quest text, texture or config was copied from other modpacks (GTO, GTL, GTNH, Monifactory, ForgeBorn). They were only used as layout and design references.
 
-## Mods in the full pack (125)
+## Mods in the full pack (126)
 
 | Mod ID | File | Source |
 | --- | --- | --- |
@@ -118,6 +118,7 @@ No quest text, texture or config was copied from other modpacks (GTO, GTL, GTNH,
 | `polylib` | polylib-forge-2000.0.3-build.143.jar | [CurseForge](https://www.curseforge.com/projects/576589) |
 | `polymorph` | polymorph-forge-0.49.11+1.20.1.jar | [CurseForge](https://www.curseforge.com/projects/388800) |
 | `radium` | radium-re-reforged-mc1.20.1-0.14.3+git.e141a47.jar | [CurseForge](https://www.curseforge.com/projects/1649038) |
+| `renderblender` | renderblender-1.1.1.jar (LGPL-3.0, required by GTNA item models) | [CurseForge](https://www.curseforge.com/projects/1346485) |
 | `resourcefulconfig` | resourcefulconfig-forge-1.20.1-2.1.3.jar | [CurseForge](https://www.curseforge.com/projects/714059) |
 | `resourcefullib` | resourcefullib-forge-1.20.1-2.1.29.jar | [CurseForge](https://www.curseforge.com/projects/570073) |
 | `searchables` | Searchables-forge-1.20.1-1.0.3.jar | [CurseForge](https://www.curseforge.com/projects/858542) |

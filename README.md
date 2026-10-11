@@ -42,7 +42,36 @@ A version moves dev → pre → alpha → beta. Only beta releases are not marke
 
 - **packwiz-installer:** point [packwiz-installer](https://packwiz.infra.link/tutorials/installing/packwiz-installer/) at `pack.toml` from this repo (raw URL or a local clone) to install and auto-update an instance.
 - **Export it yourself:** install [packwiz](https://github.com/packwiz/packwiz), clone the repo and run `packwiz curseforge export`.
-- **Nix (flake):** `nix build .#curseforge` or `nix build .#server`. `nix develop` gives you packwiz, Python and JDK 17.
+- **Nix (flake):** see [Building with Nix](#building-with-nix).
+
+### Building with Nix
+
+The repo is a Nix flake (flakes must be enabled: `experimental-features = nix-command flakes`). Nothing is downloaded at build time besides the flake inputs, because the zips reference the mods instead of bundling them.
+
+```sh
+git clone https://github.com/Raishxn/GregTech-Infinity-Ascension.git
+cd GregTech-Infinity-Ascension
+
+nix build .#curseforge          # client zip  -> result/GregTech-Infinity-Ascension-<version>.zip
+nix build .#server -o server    # server zip  -> server/GregTech-Infinity-Ascension-server-<version>.zip
+nix develop                     # shell with packwiz, Python 3, JDK 17 and yq for working on the pack
+```
+
+`nix build .` is the same as `.#curseforge`. Each build leaves a `result` (or the name given with `-o`) symlink to the Nix store; copy the zip out of it before you change anything, because the next build replaces the link.
+
+- **Client:** in Prism Launcher choose *Add Instance → Import* and pick the zip (or drag it onto the window). The CurseForge app and ATLauncher import the same zip. The mods are downloaded on the first import.
+- **Server:** unzip it into an empty folder, run `install.sh` (Linux/macOS) or `install.bat` (Windows), then follow `README-SERVER.md`.
+
+The version comes from `pack.toml`. You can also run the same steps without Nix: `python3 tools/release.py curseforge OUT` or `python3 tools/release.py server OUT`, with packwiz on your `PATH`.
+
+### Restoring a backup
+
+FTB Backups 2 saves the world every 30 minutes (the last 5 are kept) as zips in the `backups/` folder of the instance or server. To go back to one of them, close the game (or stop the server) and run, from that same folder:
+
+- **Windows:** double-click `restore-backup.bat`.
+- **Linux/macOS:** `./restore-backup.sh` (run `chmod +x restore-backup.sh` once if it is not executable).
+
+The script lists the backups, newest first, checks the chosen zip against the checksum FTB Backups recorded, and restores the world. The current world is never deleted: it is renamed to `<world>.before-restore-<date>`, so you can undo by swapping the folders back. You can pass a zip directly: `./restore-backup.sh backups/2026-10-11_2-0-0.zip`.
 
 ## Development
 
