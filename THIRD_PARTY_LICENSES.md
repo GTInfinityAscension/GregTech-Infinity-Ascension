@@ -85,7 +85,7 @@ No quest text, texture or config was copied from other modpacks (GTO, GTL, GTNH,
 | `gpumemleakfix` | gpumemleakfix-1.20.1-1.8.jar | [CurseForge](https://www.curseforge.com/projects/882495) |
 | `gtceu` | gtceu-1.20.1-7.5.3.jar | [CurseForge](https://www.curseforge.com/projects/890405) |
 | `gtia` | gtia-0.1.0.jar | local build |
-| `gtna` | gtna-0.5.1.jar | local build |
+| `gtna` | gtna-0.5.3.jar | local build |
 | `guideme` | guideme-20.1.15.jar | [CurseForge](https://www.curseforge.com/projects/1173950) |
 | `immediatelyfast` | ImmediatelyFast-Forge-1.5.5+1.20.4.jar | [CurseForge](https://www.curseforge.com/projects/686911) |
 | `industrial_platform` | Industrial Platform-1.20.1-2.0.1.jar | [CurseForge](https://www.curseforge.com/projects/1350900) |
