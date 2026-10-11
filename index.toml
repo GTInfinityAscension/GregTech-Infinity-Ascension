@@ -77,6 +77,10 @@ file = "config/craftingtweaks-common.toml"
 hash = "04a3493f1a07ccd33117de519c82ce4e6465b3e0b28f39919dafd17c3353fc96"
 
 [[files]]
+file = "config/defaultoptions/extra/config/xaerohud.txt"
+hash = "8d13c5f398016036aa4fdefb366ef3926d89f96ca104155bc9f6e5a7ec682ecd"
+
+[[files]]
 file = "config/defaultoptions/options.txt"
 hash = "f021c7a7802ccafbbfc723c54a5d244fdfcdb2896c7f54c61dd4da6b9d6c39dd"
 
@@ -577,6 +581,10 @@ hash = "9f2bb57e05bad305f03c25c275c6d11e952835a41b2da68dba10a0bd1f3f6261"
 metafile = true
 
 [[files]]
+file = "mods/craftingchain-0.1.0.jar"
+hash = "818980c159d8b45bfd7fe58f879bae7783b5ed8766c2e6b834650823f2ec1ff3"
+
+[[files]]
 file = "mods/craftingtweaks.pw.toml"
 hash = "91bcce6c7d33ab3bd15217c4fd84aa04ddfaf929dda1219f351d27aeeb3ecc91"
 metafile = true
@@ -674,11 +682,6 @@ metafile = true
 [[files]]
 file = "mods/extremesoundmuffler.pw.toml"
 hash = "f09a77994d4344c66ce6c81b2835ca459252f98e0a585af44128291df2fd82a1"
-metafile = true
-
-[[files]]
-file = "mods/fabricate.pw.toml"
-hash = "ad364255da61a57281583b25ae052e35f136aef4982bc2560a6070dd4b386915"
 metafile = true
 
 [[files]]
@@ -823,11 +826,11 @@ metafile = true
 
 [[files]]
 file = "mods/gtia-0.1.0.jar"
-hash = "f94e257be0d07c019fecf563ec10061fcc7f8676a5d799171f3584dbf928fab9"
+hash = "c1a4da8410d169782a308fb9d1f7588327a8eca9c7f7bbc2265ff68ba21c3b60"
 
 [[files]]
-file = "mods/gtna-0.5.4.jar"
-hash = "48f8256e0b97226717d7540e3b3053f98348789737c2aa80dc12cd9146bc2c27"
+file = "mods/gtna-0.5.5.jar"
+hash = "b4388ece380f8a0286b8e29f76d77958652319b59308fe36956ec677d115e977"
 
 [[files]]
 file = "mods/guideme.pw.toml"

@@ -6,7 +6,7 @@ GTIA's own mods:
 
 - **GTIACore** (`gtia`): LGPL-3.0.
 - **GregTech Nexus Addon** (`gtna`): see https://github.com/Raishxn/GregTech-Nexus-Addon.
-- **ModernSpace** (`modernspace`) and **ModernManipulator** (`modern_manipulator`): by the same author, see https://github.com/Raishxn/ModernSpace and https://github.com/Raishxn/ModernManipulator.
+- **ModernSpace** (`modernspace`), **ModernManipulator** (`modern_manipulator`) and **Crafting Chain** (`craftingchain`): by the same author, see https://github.com/Raishxn/ModernSpace, https://github.com/Raishxn/ModernManipulator and https://github.com/Raishxn/CraftingChain.
 
 No quest text, texture or config was copied from other modpacks (GTO, GTL, GTNH, Monifactory, ForgeBorn). They were only used as layout and design references.
 
@@ -38,6 +38,7 @@ No quest text, texture or config was copied from other modpacks (GTO, GTL, GTNH,
 | `constructionwand` | constructionwand-1.20.1-2.15.8.jar | [CurseForge](https://www.curseforge.com/projects/1382688) |
 | `controlling` | Controlling-forge-1.20.1-12.0.2.jar | [CurseForge](https://www.curseforge.com/projects/250398) |
 | `coroutil` | coroutil-forge-1.20.1-1.3.7.jar | [CurseForge](https://www.curseforge.com/projects/237749) |
+| `craftingchain` | craftingchain-0.1.0.jar | [GitHub](https://github.com/Raishxn/CraftingChain/releases/tag/v0.1.0) (shipped in the pack until it is on CurseForge) |
 | `craftingtweaks` | craftingtweaks-forge-1.20.1-18.2.9.jar | [CurseForge](https://www.curseforge.com/projects/233071) |
 | `craftpresence` | CraftPresence-2.7.1+1.20.1-forge.jar | [CurseForge](https://www.curseforge.com/projects/297038) |
 | `creativecore` | CreativeCore_FORGE_v2.12.40_mc1.20.1.jar | [CurseForge](https://www.curseforge.com/projects/257814) |
@@ -58,7 +59,6 @@ No quest text, texture or config was copied from other modpacks (GTO, GTL, GTNH,
 | `explorerscompass` | ExplorersCompass-1.20.1-1.4.0-forge.jar | [CurseForge](https://www.curseforge.com/projects/491794) |
 | `extendedae_plus` | extendedae_plus-1.6.2.jar | [CurseForge](https://www.curseforge.com/projects/1337639) |
 | `extremesoundmuffler` | ExtremeSoundMuffler-3.51-forge-1.20.1.jar | [CurseForge](https://www.curseforge.com/projects/363363) |
-| `fabricate` | fabricate-1.0.5.jar | [CurseForge](https://www.curseforge.com/projects/1549672) |
 | `factory_blocks` | factory_blocks-forge-1.4.0+mc1.20.1.jar | [CurseForge](https://www.curseforge.com/projects/640001) |
 | `fastbench` | FastWorkbench-1.20.1-8.0.4.jar | [CurseForge](https://www.curseforge.com/projects/288885) |
 | `fastfurnace` | FastFurnace-1.20.1-8.0.2.jar | [CurseForge](https://www.curseforge.com/projects/299540) |
@@ -88,7 +88,7 @@ No quest text, texture or config was copied from other modpacks (GTO, GTL, GTNH,
 | `gpumemleakfix` | gpumemleakfix-1.20.1-1.8.jar | [CurseForge](https://www.curseforge.com/projects/882495) |
 | `gtceu` | gtceu-1.20.1-7.5.3.jar | [CurseForge](https://www.curseforge.com/projects/890405) |
 | `gtia` | gtia-0.1.0.jar | local build |
-| `gtna` | gtna-0.5.4.jar | [GitHub](https://github.com/Raishxn/GregTech-Nexus-Addon/releases/tag/v0.5.4) |
+| `gtna` | gtna-0.5.5.jar | [GitHub](https://github.com/Raishxn/GregTech-Nexus-Addon/releases/tag/v0.5.5) |
 | `guideme` | guideme-20.1.15.jar | [CurseForge](https://www.curseforge.com/projects/1173950) |
 | `immediatelyfast` | ImmediatelyFast-Forge-1.5.5+1.20.4.jar | [CurseForge](https://www.curseforge.com/projects/686911) |
 | `industrial_platform` | Industrial Platform-1.20.1-2.0.1.jar | [CurseForge](https://www.curseforge.com/projects/1350900) |

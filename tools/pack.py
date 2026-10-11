@@ -48,10 +48,14 @@ BUILT_IN = {"forge", "minecraft"}
 LOCAL_BUILDS = {
     "gtia": Path(os.environ.get("GTIA_JAR", ROOT / "core/build/libs/gtia-0.1.0.jar")),
     "gtna": Path(os.environ.get(
-        "GTNA_JAR", Path.home() / "MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.5.4.jar")),
+        "GTNA_JAR", Path.home() / "MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.5.5.jar")),
     # Until ModernSpace 0.3.0 is on CurseForge, the GitHub release jar ships in the pack like the two above.
     "modernspace": Path(os.environ.get(
         "MODERNSPACE_JAR", ROOT.parent / "GTIA-arquivo/jar-backups/2026-10-11-modernspace-0.3.1/modernspace-0.3.1.jar")),
+    # Crafting Chain replaces Fabricate (GTIA-D-257); shipped in the pack until it is on CurseForge.
+    "craftingchain": Path(os.environ.get(
+        "CRAFTINGCHAIN_JAR",
+        ROOT.parent / "GTIA-arquivo/jar-backups/2026-10-11-craftingchain-0.1.0/craftingchain-0.1.0.jar")),
 }
 
 

@@ -28,6 +28,7 @@
     "constructionwand",
     "controlling",
     "coroutil",
+    "craftingchain",
     "craftingtweaks",
     "craftpresence",
     "creativecore",
@@ -142,6 +143,7 @@
   ],
   "excluded": [
     "avaritia",
+    "fabricate",
     "gtmthings",
     "particlerain"
   ],
@@ -394,6 +396,14 @@
       "requires": []
     },
     {
+      "mod_id": "craftingchain",
+      "filename": "craftingchain-0.1.0.jar",
+      "sha256": "818980c159d8b45bfd7fe58f879bae7783b5ed8766c2e6b834650823f2ec1ff3",
+      "source": "local-build",
+      "path": "/home/raishxn/MineProjects/GTIA-arquivo/jar-backups/2026-10-11-craftingchain-0.1.0/craftingchain-0.1.0.jar",
+      "requires": []
+    },
+    {
       "mod_id": "craftingtweaks",
       "filename": "craftingtweaks-forge-1.20.1-18.2.9.jar",
       "sha256": "1cc83c8c0bee73a2ffa3428ce28e3c17d7f95e26e1a820d8bd7270e0931f8974",
@@ -590,15 +600,6 @@
       "source": "curseforge",
       "project_id": 363363,
       "file_id": 7469697,
-      "requires": []
-    },
-    {
-      "mod_id": "fabricate",
-      "filename": "fabricate-1.0.5.jar",
-      "sha256": "5f1dd544ee881e044f2c0e3761877a38d6160b7bd257b40099952a1771d289dc",
-      "source": "curseforge",
-      "project_id": 1549672,
-      "file_id": 8957564,
       "requires": []
     },
     {
@@ -897,17 +898,17 @@
     {
       "mod_id": "gtia",
       "filename": "gtia-0.1.0.jar",
-      "sha256": "f94e257be0d07c019fecf563ec10061fcc7f8676a5d799171f3584dbf928fab9",
+      "sha256": "c1a4da8410d169782a308fb9d1f7588327a8eca9c7f7bbc2265ff68ba21c3b60",
       "source": "local-build",
       "path": "/home/raishxn/MineProjects/GTIA/core/build/libs/gtia-0.1.0.jar",
       "requires": []
     },
     {
       "mod_id": "gtna",
-      "filename": "gtna-0.5.4.jar",
-      "sha256": "48f8256e0b97226717d7540e3b3053f98348789737c2aa80dc12cd9146bc2c27",
+      "filename": "gtna-0.5.5.jar",
+      "sha256": "b4388ece380f8a0286b8e29f76d77958652319b59308fe36956ec677d115e977",
       "source": "local-build",
-      "path": "/home/raishxn/MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.5.4.jar",
+      "path": "/home/raishxn/MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.5.5.jar",
       "requires": []
     },
     {
