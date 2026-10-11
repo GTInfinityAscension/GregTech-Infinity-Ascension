@@ -897,17 +897,17 @@
     {
       "mod_id": "gtia",
       "filename": "gtia-0.1.0.jar",
-      "sha256": "f09523b0b8a4fc2a9a4cc08bb4cc836f8bbff630d24c766cdecb63990acc3566",
+      "sha256": "f94e257be0d07c019fecf563ec10061fcc7f8676a5d799171f3584dbf928fab9",
       "source": "local-build",
       "path": "/home/raishxn/MineProjects/GTIA/core/build/libs/gtia-0.1.0.jar",
       "requires": []
     },
     {
       "mod_id": "gtna",
-      "filename": "gtna-0.5.3.jar",
-      "sha256": "456b4cd6fcb5e5637de605a470c5faabc0a334b297547b3bd09bcb7af2ce489e",
+      "filename": "gtna-0.5.4.jar",
+      "sha256": "48f8256e0b97226717d7540e3b3053f98348789737c2aa80dc12cd9146bc2c27",
       "source": "local-build",
-      "path": "/home/raishxn/MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.5.3.jar",
+      "path": "/home/raishxn/MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.5.4.jar",
       "requires": []
     },
     {

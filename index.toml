@@ -823,11 +823,11 @@ metafile = true
 
 [[files]]
 file = "mods/gtia-0.1.0.jar"
-hash = "f09523b0b8a4fc2a9a4cc08bb4cc836f8bbff630d24c766cdecb63990acc3566"
+hash = "f94e257be0d07c019fecf563ec10061fcc7f8676a5d799171f3584dbf928fab9"
 
 [[files]]
-file = "mods/gtna-0.5.3.jar"
-hash = "456b4cd6fcb5e5637de605a470c5faabc0a334b297547b3bd09bcb7af2ce489e"
+file = "mods/gtna-0.5.4.jar"
+hash = "48f8256e0b97226717d7540e3b3053f98348789737c2aa80dc12cd9146bc2c27"
 
 [[files]]
 file = "mods/guideme.pw.toml"

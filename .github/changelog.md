@@ -6,8 +6,8 @@
 - **Fabricate**: click an item in EMI to hand-craft it and every intermediate step from your inventory, like the crafting helper of GTNH's NEI.
 - **Discord Rich Presence** (CraftPresence): shows that you are playing GregTech Infinity Ascension, the dimension you are in, singleplayer or server, and the main menu.
 - **CozyUI+** resource pack, enabled by default for new installs, and **Complementary Reimagined** shaders included (this also fixes the `_0EuphoriaPatches_ErrorShader` entry).
-- **ModernSpace 0.3.1** imports the personal dimensions of worlds made with GTNA 0.5.2 or older; **GTNA 0.5.3** is the published release.
-- **Translations**: the whole quest book in Portuguese (pt_br) and Simplified Chinese (zh_cn); GTNA, GTIACore, ModernSpace and ModernManipulator in Simplified Chinese.
+- **ModernSpace 0.3.1** imports the personal dimensions of worlds made with GTNA 0.5.2 or older; **GTNA 0.5.4** is the published release (its pt_br translation is now complete).
+- **Translations**: the whole quest book in Portuguese (pt_br) and Simplified Chinese (zh_cn); GTNA, GTIACore, ModernSpace and ModernManipulator in Simplified Chinese and Brazilian Portuguese.
 
 ### Changes
 - **Start**: the welcome reward is now a Vanadium Steel Axe, Pickaxe and Shovel (about twice the durability of the Fluix tools it replaces). *Room for a Factory* gives the Personal Space portal again.
