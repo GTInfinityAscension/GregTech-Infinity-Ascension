@@ -88,6 +88,7 @@
     "ldlib",
     "leanobject",
     "littletiles",
+    "meplacementtool",
     "merequester",
     "mobtimizations",
     "modelfix",
@@ -860,7 +861,7 @@
     {
       "mod_id": "gtia",
       "filename": "gtia-0.1.0.jar",
-      "sha256": "c646c4f49960e5f15320e2f637205a3d0c07dc190f79285200b0fbbfeb0117f6",
+      "sha256": "b6b2c8d20c966e84b13de8d0980433c8ccc9540d4b3696cf75adf448666b974e",
       "source": "local-build",
       "path": "/home/raishxn/MineProjects/GTIA/core/build/libs/gtia-0.1.0.jar",
       "requires": []
@@ -868,7 +869,7 @@
     {
       "mod_id": "gtna",
       "filename": "gtna-0.5.3.jar",
-      "sha256": "049e82c5c1d5e9331b9a4c03d278c55bd1ee7e8401c83a15c85bf4937623f8e2",
+      "sha256": "a3cbf1d9ccb9d859209e613f67a3f0de52c47c19204ee66c54f5011b52f4561e",
       "source": "local-build",
       "path": "/home/raishxn/MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.5.3.jar",
       "requires": []
@@ -977,6 +978,17 @@
       ]
     },
     {
+      "mod_id": "meplacementtool",
+      "filename": "meplacementtool-2.1.4-forge1.20.1.jar",
+      "sha256": "a5722272c5197d48fe4e7ababbea348b86e785490e6359d32a4b5c1c7f25cfad",
+      "source": "curseforge",
+      "project_id": 1408718,
+      "file_id": 8097758,
+      "requires": [
+        "ae2"
+      ]
+    },
+    {
       "mod_id": "merequester",
       "filename": "merequester-forge-1.20.1-1.2.1.jar",
       "sha256": "490de12be0237e5699aba8ae57d9c40a97ae7491d6ae33ecb1fc5d3b30f391ea",
@@ -1029,14 +1041,11 @@
     },
     {
       "mod_id": "modernspace",
-      "filename": "modernspace-0.2.0.jar",
-      "sha256": "25ad8f0c34efd3f679b4284a98fbaf7e4e00de6cd4cb2d8c8fc5980688f4f04f",
-      "source": "curseforge",
-      "project_id": 1735000,
-      "file_id": 9116779,
-      "requires": [
-        "infiniverse"
-      ]
+      "filename": "modernspace-0.3.0.jar",
+      "sha256": "e8cb03a8d863ae59d969d3987e5482471a06c0f421795ec929568bcdddbb4425",
+      "source": "local-build",
+      "path": "/home/raishxn/MineProjects/GTIA-arquivo/jar-backups/2026-10-11-modernspace-0.3.0/modernspace-0.3.0.jar",
+      "requires": []
     },
     {
       "mod_id": "modernui",

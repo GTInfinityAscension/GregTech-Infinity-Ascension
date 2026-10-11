@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import os
 import shutil
 import subprocess
@@ -40,7 +41,10 @@ def display_name(jar: Path, fallback: str) -> str:
     for line in text.splitlines():
         line = line.strip()
         if line.startswith("displayName"):
-            value = line.split("=", 1)[1].strip().strip('"').strip("'")
+            value = line.split("=", 1)[1].strip()
+            # Keep only the quoted string: some mods.toml put a comment after it (displayName="X" #mandatory).
+            quoted = re.match(r'"([^"]*)"|\'([^\']*)\'', value)
+            value = next(g for g in quoted.groups() if g is not None) if quoted else value
             if value and "${" not in value:
                 return value
     return fallback

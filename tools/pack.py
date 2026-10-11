@@ -49,6 +49,9 @@ LOCAL_BUILDS = {
     "gtia": Path(os.environ.get("GTIA_JAR", ROOT / "core/build/libs/gtia-0.1.0.jar")),
     "gtna": Path(os.environ.get(
         "GTNA_JAR", Path.home() / "MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.5.1.jar")),
+    # Until ModernSpace 0.3.0 is on CurseForge, the GitHub release jar ships in the pack like the two above.
+    "modernspace": Path(os.environ.get(
+        "MODERNSPACE_JAR", ROOT.parent / "GTIA-arquivo/jar-backups/2026-10-11-modernspace-0.3.0/modernspace-0.3.0.jar")),
 }
 
 

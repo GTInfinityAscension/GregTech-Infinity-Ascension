@@ -1,4 +1,4 @@
-name = "Gpu memory leak fix\" #mandatory"
+name = "Gpu memory leak fix"
 filename = "gpumemleakfix-1.20.1-1.8.jar"
 side = "both"
 

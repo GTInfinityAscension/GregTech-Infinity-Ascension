@@ -10,7 +10,7 @@ GTIA's own mods:
 
 No quest text, texture or config was copied from other modpacks (GTO, GTL, GTNH, Monifactory, ForgeBorn). They were only used as layout and design references.
 
-## Mods in the full pack (126)
+## Mods in the full pack (127)
 
 | Mod ID | File | Source |
 | --- | --- | --- |
@@ -97,12 +97,13 @@ No quest text, texture or config was copied from other modpacks (GTO, GTL, GTNH,
 | `ldlib` | ldlib-forge-1.20.1-1.0.52.a.jar | [CurseForge](https://www.curseforge.com/projects/626676) |
 | `leanobject` | leanobject-1.20-26.9.2-forge.jar | [CurseForge](https://www.curseforge.com/projects/1703183) |
 | `littletiles` | LittleTiles_BETA_v1.6.0-pre161_mc1.20.1.jar | [CurseForge](https://www.curseforge.com/projects/257818) |
+| `meplacementtool` | meplacementtool-2.1.4-forge1.20.1.jar | [CurseForge](https://www.curseforge.com/projects/1408718) |
 | `merequester` | merequester-forge-1.20.1-1.2.1.jar | [CurseForge](https://www.curseforge.com/projects/688367) |
 | `mobtimizations` | mobtimizations-forge-1.20.1-1.0.1.jar | [CurseForge](https://www.curseforge.com/projects/974401) |
 | `modelfix` | modelfix-1.15.jar | [CurseForge](https://www.curseforge.com/projects/676136) |
 | `modern_manipulator` | modern-manipulator-0.2.0.jar | [CurseForge](https://www.curseforge.com/projects/1735042) |
 | `modernfix` | modernfix-forge-5.27.83+mc1.20.1.jar | [CurseForge](https://www.curseforge.com/projects/790626) |
-| `modernspace` | modernspace-0.2.0.jar | [CurseForge](https://www.curseforge.com/projects/1735000) |
+| `modernspace` | modernspace-0.3.0.jar | [GitHub](https://github.com/Raishxn/ModernSpace/releases/tag/v0.3.0) (shipped in the pack until it is on CurseForge) |
 | `modernui` | ModernUI-Forge-1.20.1-3.12.0.1-universal.jar | [CurseForge](https://www.curseforge.com/projects/352491) |
 | `moremorelang` | moremorelang-1.0.5.jar | [CurseForge](https://www.curseforge.com/projects/1444917) |
 | `mousetweaks` | MouseTweaks-forge-mc1.20.1-2.25.1.jar | [CurseForge](https://www.curseforge.com/projects/60089) |
