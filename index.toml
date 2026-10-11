@@ -823,7 +823,7 @@ metafile = true
 
 [[files]]
 file = "mods/gtia-0.1.0.jar"
-hash = "983348d9651fc9fa602f4123f2e9e4eae7359f3ea4b0b122b8c73455c0da34a7"
+hash = "f09523b0b8a4fc2a9a4cc08bb4cc836f8bbff630d24c766cdecb63990acc3566"
 
 [[files]]
 file = "mods/gtna-0.5.3.jar"
@@ -915,8 +915,8 @@ hash = "5996e886bd284d7a20287355ab42a7f5df7f6cce90fe74b04223cd55a4fd6c5d"
 metafile = true
 
 [[files]]
-file = "mods/modernspace-0.3.0.jar"
-hash = "e8cb03a8d863ae59d969d3987e5482471a06c0f421795ec929568bcdddbb4425"
+file = "mods/modernspace-0.3.1.jar"
+hash = "c0cffd4cf2978625682a6a0576246ae5014c2440297e247e1948102624db4e30"
 
 [[files]]
 file = "mods/modernui.pw.toml"

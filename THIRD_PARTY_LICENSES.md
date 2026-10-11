@@ -106,7 +106,7 @@ No quest text, texture or config was copied from other modpacks (GTO, GTL, GTNH,
 | `modelfix` | modelfix-1.15.jar | [CurseForge](https://www.curseforge.com/projects/676136) |
 | `modern_manipulator` | modern-manipulator-0.2.0.jar | [CurseForge](https://www.curseforge.com/projects/1735042) |
 | `modernfix` | modernfix-forge-5.27.83+mc1.20.1.jar | [CurseForge](https://www.curseforge.com/projects/790626) |
-| `modernspace` | modernspace-0.3.0.jar | [GitHub](https://github.com/Raishxn/ModernSpace/releases/tag/v0.3.0) (shipped in the pack until it is on CurseForge) |
+| `modernspace` | modernspace-0.3.1.jar | [GitHub](https://github.com/Raishxn/ModernSpace/releases/tag/v0.3.1) (shipped in the pack until it is on CurseForge) |
 | `modernui` | ModernUI-Forge-1.20.1-3.12.0.1-universal.jar | [CurseForge](https://www.curseforge.com/projects/352491) |
 | `moremorelang` | moremorelang-1.0.5.jar | [CurseForge](https://www.curseforge.com/projects/1444917) |
 | `mousetweaks` | MouseTweaks-forge-mc1.20.1-2.25.1.jar | [CurseForge](https://www.curseforge.com/projects/60089) |

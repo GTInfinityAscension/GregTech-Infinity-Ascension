@@ -897,7 +897,7 @@
     {
       "mod_id": "gtia",
       "filename": "gtia-0.1.0.jar",
-      "sha256": "983348d9651fc9fa602f4123f2e9e4eae7359f3ea4b0b122b8c73455c0da34a7",
+      "sha256": "f09523b0b8a4fc2a9a4cc08bb4cc836f8bbff630d24c766cdecb63990acc3566",
       "source": "local-build",
       "path": "/home/raishxn/MineProjects/GTIA/core/build/libs/gtia-0.1.0.jar",
       "requires": []
@@ -1077,10 +1077,10 @@
     },
     {
       "mod_id": "modernspace",
-      "filename": "modernspace-0.3.0.jar",
-      "sha256": "e8cb03a8d863ae59d969d3987e5482471a06c0f421795ec929568bcdddbb4425",
+      "filename": "modernspace-0.3.1.jar",
+      "sha256": "c0cffd4cf2978625682a6a0576246ae5014c2440297e247e1948102624db4e30",
       "source": "local-build",
-      "path": "/home/raishxn/MineProjects/GTIA-arquivo/jar-backups/2026-10-11-modernspace-0.3.0/modernspace-0.3.0.jar",
+      "path": "/home/raishxn/MineProjects/GTIA-arquivo/jar-backups/2026-10-11-modernspace-0.3.1/modernspace-0.3.1.jar",
       "requires": []
     },
     {
