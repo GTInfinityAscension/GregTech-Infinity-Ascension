@@ -17,6 +17,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import shutil
 import tempfile
 import urllib.request
@@ -46,7 +47,9 @@ def alternative_file(alt: dict) -> dict:
     """The primary file of a given Modrinth project version (same mod version, different upload)."""
     request = urllib.request.Request(f"{API}/project/{alt['project']}/version", headers=UA)
     for version in json.load(urllib.request.urlopen(request, timeout=60)):
-        if version["version_number"] == alt["version"]:
+        # The same version number is often published for Fabric and NeoForge too; only the Forge 1.20.1 build loads.
+        if (version["version_number"] == alt["version"] and "forge" in version["loaders"]
+                and "1.20.1" in version["game_versions"]):
             file = next((f for f in version["files"] if f["primary"]), version["files"][0])
             return {"path": f"mods/{file['filename']}", "hashes": file["hashes"],
                     "env": {"client": "required", "server": "required"},
@@ -91,6 +94,25 @@ def main() -> int:
         if mod["source"] == "local-build" and mod["mod_id"] not in server_only:
             overrides.append(Path(mod["path"]))
 
+    # Resource packs and shader packs are packwiz metadata; link the real zip from Modrinth by its SHA-1.
+    for folder in ("resourcepacks", "shaderpacks"):
+        metas = sorted((PACK / folder).glob("*.pw.toml")) if (PACK / folder).is_dir() else []
+        wanted = {}
+        for meta in metas:
+            text = meta.read_text()
+            wanted[re.search(r'^hash = "([0-9a-f]+)"', text, re.M).group(1)] = meta
+        if not wanted:
+            continue
+        found_packs = modrinth_files(list(wanted))
+        for sha, meta in wanted.items():
+            info = found_packs.get(sha)
+            if not info:
+                raise SystemExit(f"{meta.name}: the {folder[:-1]} is not on Modrinth; it can't be linked")
+            file = next(f for f in info["files"] if f["hashes"]["sha1"] == sha)
+            files.append({"path": f"{folder}/{file['filename']}", "hashes": file["hashes"],
+                          "env": {"client": "required", "server": "unsupported"},
+                          "downloads": [file["url"]], "fileSize": file["size"]})
+
     index = {"formatVersion": 1, "game": "minecraft", "versionId": version,
              "name": "GregTech Infinity Ascension", "summary": "GregTech where the factory is the star",
              "files": files, "dependencies": {"minecraft": lock["minecraft"], "forge": lock["forge"]}}
@@ -105,7 +127,8 @@ def main() -> int:
             src = PACK / folder
             if src.is_dir():
                 for path in src.rglob("*"):
-                    if path.is_file():
+                    # packwiz metadata (*.pw.toml) is resolved into real files below, never shipped as is.
+                    if path.is_file() and not path.name.endswith(".pw.toml"):
                         z.write(path, f"overrides/{path.relative_to(PACK)}")
     (args.out / "missing-mods.txt").write_text(
         "".join(f"{m['mod_id']}\t{m['filename']}\thttps://www.curseforge.com/projects/{m.get('project_id', '')}\n"
