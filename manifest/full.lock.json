@@ -915,16 +915,16 @@
     },
     {
       "mod_id": "gtialib",
-      "filename": "gtialib-0.4.0.jar",
-      "sha256": "b3ebe357e7f40dc597587424305f3e634002f909fe48c3f0b6a8aa1dc2c4d76b",
+      "filename": "gtialib-0.5.0.jar",
+      "sha256": "f5b2c0e441ee5cd374c2dd89aa772845f4b8213febcea58c8560a55c26051784",
       "source": "local-build",
-      "path": "/home/raishxn/MineProjects/GTIA-arquivo/jar-backups/2026-10-16-gtialib-0.4.0/gtialib-0.4.0.jar",
+      "path": "/home/raishxn/MineProjects/GTIA-arquivo/jar-backups/2026-10-16-gtialib-0.5.0/gtialib-0.5.0.jar",
       "requires": []
     },
     {
       "mod_id": "gtna",
       "filename": "gtna-0.6.0.jar",
-      "sha256": "434b43e45e216a169a11d6cbaaebc45eaa52f2f0f71b302d7fe769d10fca88ce",
+      "sha256": "b417ecc111678d41654207d0439e73a827941632a46ccb0fa25cb50d64b3f2c9",
       "source": "local-build",
       "path": "/home/raishxn/MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.6.0.jar",
       "requires": []

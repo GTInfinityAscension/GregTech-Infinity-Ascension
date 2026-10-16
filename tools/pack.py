@@ -51,7 +51,7 @@ LOCAL_BUILDS = {
         "GTNA_JAR", Path.home() / "MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.6.0.jar")),
     # Shared library of the org's mods (GTIA-D-262); GTIACore and GTNA require it.
     "gtialib": Path(os.environ.get(
-        "GTIALIB_JAR", ROOT.parent / "GTIA-arquivo/jar-backups/2026-10-16-gtialib-0.4.0/gtialib-0.4.0.jar")),
+        "GTIALIB_JAR", ROOT.parent / "GTIA-arquivo/jar-backups/2026-10-16-gtialib-0.5.0/gtialib-0.5.0.jar")),
     # Measured performance fixes (GTIA-D-263).
     "ascopt": Path(os.environ.get(
         "ASCOPT_JAR", ROOT.parent / "GTIA-arquivo/jar-backups/2026-10-16-ascopt-0.2.0/ascopt-0.2.0.jar")),

@@ -833,12 +833,12 @@ file = "mods/gtia-0.1.0.jar"
 hash = "f3169c2c702027cd770560ae24e7f8d61e72f37e92fb443ced9299f1264eba98"
 
 [[files]]
-file = "mods/gtialib-0.4.0.jar"
-hash = "b3ebe357e7f40dc597587424305f3e634002f909fe48c3f0b6a8aa1dc2c4d76b"
+file = "mods/gtialib-0.5.0.jar"
+hash = "f5b2c0e441ee5cd374c2dd89aa772845f4b8213febcea58c8560a55c26051784"
 
 [[files]]
 file = "mods/gtna-0.6.0.jar"
-hash = "434b43e45e216a169a11d6cbaaebc45eaa52f2f0f71b302d7fe769d10fca88ce"
+hash = "b417ecc111678d41654207d0439e73a827941632a46ccb0fa25cb50d64b3f2c9"
 
 [[files]]
 file = "mods/guideme.pw.toml"
