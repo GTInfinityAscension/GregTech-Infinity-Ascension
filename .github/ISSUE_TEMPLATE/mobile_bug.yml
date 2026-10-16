@@ -1,0 +1,25 @@
+name: Bug report (mobile)
+description: A problem when playing on Android
+labels: [bug, mobile]
+body:
+  - type: markdown
+    attributes: { value: "Only the Amethyst launcher with the official `.mrpack` and default configs is supported." }
+  - type: input
+    id: version
+    attributes: { label: Pack version }
+    validations: { required: true }
+  - type: input
+    id: device
+    attributes: { label: Device, Android version and RAM, placeholder: "Pixel 7, Android 14, 8 GB" }
+    validations: { required: true }
+  - type: input
+    id: memory
+    attributes: { label: RAM given to Minecraft in Amethyst, placeholder: 4096 MB }
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: What happened }
+    validations: { required: true }
+  - type: textarea
+    id: logs
+    attributes: { label: Logs }
