@@ -310,7 +310,7 @@ hash = "d40a0510a5eaf56e3c48e881348d7d826c5a1f61aa29b69cf0fc33dd96d6fdcd"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
-hash = "19f33c011465f194716f1c304d56a441c360e8f2952d0efba1820e75c3103b32"
+hash = "3dcc0b0d00a7b7ad5ae7464a4d51e24f4d9530d7a220861e8e61dca80d4a7022"
 
 [[files]]
 file = "config/moremorelang-client.toml"
@@ -838,7 +838,7 @@ hash = "b3ebe357e7f40dc597587424305f3e634002f909fe48c3f0b6a8aa1dc2c4d76b"
 
 [[files]]
 file = "mods/gtna-0.6.0.jar"
-hash = "6fc0019304134a13bccfb946fbc0544c076a3ccd8748d631b9507b440dc62809"
+hash = "a8aa825939137fef2e2c12d64737229693f8879b3bfa2c90ff07cf28e046e84e"
 
 [[files]]
 file = "mods/guideme.pw.toml"
@@ -887,7 +887,7 @@ metafile = true
 
 [[files]]
 file = "mods/leanobject.pw.toml"
-hash = "21fb12932655c41985952aa68091c1e43d74c6c6db6b75919f4b69cd4efb5388"
+hash = "a33d7b16b9ec43586a6c12ca8b35a8c6d8c81cbb99244df28082f0e3153627e1"
 metafile = true
 
 [[files]]

@@ -10,7 +10,8 @@ of the lock and the SHA-1 of the cached jar, so packwiz never resolves a differe
 Local builds are shipped as jars inside mods/, like GTOCore in GregTech Odyssey.
 
 `manifest/client-only.txt` lists the mods a dedicated server must not load (`side = "client"`); `server_smoke.py`
-prints them as "left out because they are client-only".
+prints them as "left out because they are client-only". `manifest/server-only.txt` lists mods only the server
+loads (`side = "server"`), left out of the client export.
 """
 
 from __future__ import annotations
@@ -28,6 +29,7 @@ from pathlib import Path
 PACK = Path(__file__).resolve().parents[1]
 LOCK = PACK / "manifest" / "full.lock.json"
 CLIENT_ONLY = PACK / "manifest" / "client-only.txt"
+SERVER_ONLY = PACK / "manifest" / "server-only.txt"
 MODS = PACK / "mods"
 CACHE = Path(os.environ.get("GTIA_MOD_CACHE", Path.home() / "MineProjects" / "GTIA-arquivo" / "mod-cache"))
 
@@ -58,6 +60,7 @@ def expected() -> dict[str, str | Path]:
     """File name in mods/ -> .pw.toml text, or -> the local jar to copy."""
     lock = json.loads(LOCK.read_text(encoding="utf-8"))
     client = {line.split("#", 1)[0].strip() for line in CLIENT_ONLY.read_text().splitlines()} - {""}
+    server = {line.split("#", 1)[0].strip() for line in SERVER_ONLY.read_text().splitlines()} - {""}
     files: dict[str, str | Path] = {}
     for mod in lock["mods"]:
         jar = CACHE / mod["filename"]
@@ -67,7 +70,7 @@ def expected() -> dict[str, str | Path]:
         if not jar.exists():
             raise SystemExit(f"missing in cache: {jar} (run `python3 tools/pack.py fetch`)")
         sha1 = hashlib.sha1(jar.read_bytes()).hexdigest()
-        side = "client" if mod["mod_id"] in client else "both"
+        side = "client" if mod["mod_id"] in client else "server" if mod["mod_id"] in server else "both"
         files[f"{mod['mod_id']}.pw.toml"] = (
             f"name = {quote(display_name(jar, mod['mod_id']))}\n"
             f"filename = {quote(mod['filename'])}\n"

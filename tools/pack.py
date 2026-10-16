@@ -73,6 +73,11 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def server_only_ids() -> set[str]:
+    path = MANIFEST / "server-only.txt"
+    return set(read_list(path)) if path.exists() else set()
+
+
 def read_list(path: Path) -> list[str]:
     lines = [line.split("#", 1)[0].strip() for line in path.read_text(encoding="utf-8").splitlines()]
     return [line.split()[0] for line in lines if line]
@@ -231,6 +236,8 @@ def cmd_verify(args) -> int:
     for entry in lock["mods"]:
         path = folder / entry["filename"]
         if not path.exists():
+            if args.folder and entry["mod_id"] in server_only_ids():
+                continue  # a client instance leaves the server-only mods out on purpose
             problems.append(f"missing {entry['filename']}")
         elif sha256(path) != entry["sha256"]:
             problems.append(f"hash differs {entry['filename']}")
@@ -262,7 +269,10 @@ def cmd_instance(args) -> int:
     lines = [line for line in cfg.splitlines() if not line.startswith(("name=", "InstanceAccountId="))]
     lines.append(f"name={name}")
     (target / "instance.cfg").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    server_only = server_only_ids()
     for entry in lock["mods"]:
+        if entry["mod_id"] in server_only:
+            continue  # the client instance gets what the client pack gets
         shutil.copy2(CACHE / entry["filename"], target / "minecraft" / "mods" / entry["filename"])
     # Settings the pack has not moved into this project yet still live in the test instance. Copy the ones that
     # belong to the pack, never saves, logs, maps or personal files. The project's own config is laid on top.

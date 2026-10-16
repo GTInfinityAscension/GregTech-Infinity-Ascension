@@ -137,6 +137,7 @@ def main() -> int:
     ap.add_argument("--extra", type=Path)
     ap.add_argument("--jvm", default="-Xms1G -Xmx4G")
     ap.add_argument("--replace", action="append", default=[], help="mod_id=path/to.jar instead of the locked jar")
+    ap.add_argument("--remove", action="append", default=[], help="locked mod_id to leave out")
     ap.add_argument("--off", action="append", default=[], help="Ascension Optimizer feature to turn off")
     ap.add_argument("--tick", help="machine_id:count, e.g. gtceu:lv_electric_furnace:2000 (needs GTIA Lib)")
     args = ap.parse_args()
@@ -145,7 +146,7 @@ def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     results = []
     for i in range(args.runs):
-        r = one_run(lock, client_only(), args.extra, args.jvm.split(), OUT / f"{args.label}-histogram.txt", args.tick,
+        r = one_run(lock, client_only() | set(args.remove), args.extra, args.jvm.split(), OUT / f"{args.label}-histogram.txt", args.tick,
                     {k: Path(v) for k, v in (r.split("=", 1) for r in args.replace)}, args.off)
         r.update(label=args.label, run=i + 1, jvm=args.jvm, time=time.strftime("%Y-%m-%d %H:%M"))
         print(json.dumps(r))

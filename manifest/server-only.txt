@@ -1,0 +1,4 @@
+# Mods only the dedicated server loads (written as side = "server" in mods/*.pw.toml; left out of the client pack).
+# leanobject: -51 MB live heap on the server, but on the client it blocks ModernFix dynamic_resources (-380 MB).
+# Measured 2026-10-16 with tools/perf_bench.py (server) and the client bench (GTIA-arquivo/perf/client.jsonl).
+leanobject
