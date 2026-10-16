@@ -1,0 +1,2 @@
+# Mods not on Modrinth whose jar may ship inside the .mrpack (licence or author allows it).
+modern_manipulator  # the pack author's own port

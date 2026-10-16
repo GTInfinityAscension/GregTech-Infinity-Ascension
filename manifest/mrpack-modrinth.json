@@ -1,0 +1,35 @@
+{
+  "_comment": "Mods whose exact jar is not on Modrinth, but the same version is (different upload). The .mrpack links this Modrinth file instead; checked by name and version on 2026-10-16.",
+  "balm": {
+    "project": "balm",
+    "version": "7.3.44+forge-1.20.1"
+  },
+  "betterp2p": {
+    "project": "betterp2p",
+    "version": "1.5.0"
+  },
+  "controlling": {
+    "project": "controlling",
+    "version": "12.0.2"
+  },
+  "easy_villagers": {
+    "project": "easy-villagers",
+    "version": "forge-1.20.1-1.1.39"
+  },
+  "glitchcore": {
+    "project": "glitchcore",
+    "version": "0.0.1.1"
+  },
+  "pipez": {
+    "project": "pipez",
+    "version": "forge-1.20.1-1.2.26"
+  },
+  "searchables": {
+    "project": "searchables",
+    "version": "1.0.3"
+  },
+  "terrablender": {
+    "project": "terrablender",
+    "version": "3.0.1.10"
+  }
+}
