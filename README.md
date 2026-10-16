@@ -1,6 +1,6 @@
 # GregTech Infinity Ascension (GTIA)
 
-A GregTech modpack for Minecraft 1.20.1 built on **GTCEu Modern**, **[GregTech Nexus Addon (GTNA)](https://github.com/Raishxn/GregTech-Nexus-Addon)** and **[GTIACore](https://github.com/Raishxn/GTIACore)**.
+A GregTech modpack for Minecraft 1.20.1 built on **GTCEu Modern**, **[GregTech Nexus Addon (GTNA)](https://github.com/GTInfinityAscension/GregTech-Nexus-Addon)** and **[GTIACore](https://github.com/GTInfinityAscension/GTIACore)**.
 
 GTIA is guided GregTech where the factory is the star: Satisfactory-style megafactories, real industrial chemistry and long production lines. You start in Steam, go electric, head to space and keep scaling. Large machines, wireless power and AE2 are part of the main path, not side content. The quest book is the main guide, and it's written with a sense of humour.
 
@@ -17,7 +17,7 @@ GTIA is guided GregTech where the factory is the star: Satisfactory-style megafa
 
 ## How to play
 
-Download the latest build from [Releases](https://github.com/Raishxn/GregTech-Infinity-Ascension/releases):
+Download the latest build from [Releases](https://github.com/GTInfinityAscension/GregTech-Infinity-Ascension/releases):
 
 | File | Use it for |
 | --- | --- |
@@ -50,7 +50,7 @@ A version moves dev → pre → alpha → beta. Only two releases are kept at a 
 The repo is a Nix flake (flakes must be enabled: `experimental-features = nix-command flakes`). Nothing is downloaded at build time besides the flake inputs, because the zips reference the mods instead of bundling them.
 
 ```sh
-git clone https://github.com/Raishxn/GregTech-Infinity-Ascension.git
+git clone https://github.com/GTInfinityAscension/GregTech-Infinity-Ascension.git
 cd GregTech-Infinity-Ascension
 
 nix build .#curseforge          # client zip  -> result/GregTech-Infinity-Ascension-<version>.zip

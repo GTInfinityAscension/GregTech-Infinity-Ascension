@@ -5,7 +5,7 @@ GTIA does not redistribute third-party mods in this repository. `manifest/full.l
 GTIA's own mods:
 
 - **GTIACore** (`gtia`): LGPL-3.0.
-- **GregTech Nexus Addon** (`gtna`): see https://github.com/Raishxn/GregTech-Nexus-Addon.
+- **GregTech Nexus Addon** (`gtna`): see https://github.com/GTInfinityAscension/GregTech-Nexus-Addon.
 - **ModernSpace** (`modernspace`), **ModernManipulator** (`modern_manipulator`) and **Crafting Chain** (`craftingchain`): by the same author, see https://github.com/Raishxn/ModernSpace, https://github.com/Raishxn/ModernManipulator and https://github.com/Raishxn/CraftingChain.
 
 No quest text, texture or config was copied from other modpacks (GTO, GTL, GTNH, Monifactory, ForgeBorn). They were only used as layout and design references.
@@ -88,7 +88,7 @@ No quest text, texture or config was copied from other modpacks (GTO, GTL, GTNH,
 | `gpumemleakfix` | gpumemleakfix-1.20.1-1.8.jar | [CurseForge](https://www.curseforge.com/projects/882495) |
 | `gtceu` | gtceu-1.20.1-7.5.3.jar | [CurseForge](https://www.curseforge.com/projects/890405) |
 | `gtia` | gtia-0.1.0.jar | local build |
-| `gtna` | gtna-0.5.5.jar | [GitHub](https://github.com/Raishxn/GregTech-Nexus-Addon/releases/tag/v0.5.5) |
+| `gtna` | gtna-0.5.5.jar | [GitHub](https://github.com/GTInfinityAscension/GregTech-Nexus-Addon/releases/tag/v0.5.5) |
 | `guideme` | guideme-20.1.15.jar | [CurseForge](https://www.curseforge.com/projects/1173950) |
 | `immediatelyfast` | ImmediatelyFast-Forge-1.5.5+1.20.4.jar | [CurseForge](https://www.curseforge.com/projects/686911) |
 | `industrial_platform` | Industrial Platform-1.20.1-2.0.1.jar | [CurseForge](https://www.curseforge.com/projects/1350900) |
