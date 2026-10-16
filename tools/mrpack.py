@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build a Modrinth pack (.mrpack) of the locked mods, for Android launchers such as Amethyst (GTNH does the same).
 
-    mrpack.py OUT_DIR [--version V] [--include-unlisted]
+    mrpack.py OUT_DIR [--version V] [--test]
 
 - Mods whose exact jar (same SHA-1) is on Modrinth are referenced by link, as the format requires.
 - The organisation's own mods (local builds, LGPL-3.0) ship inside the pack as overrides.
@@ -9,6 +9,8 @@
   unless their licence allows redistribution (manifest/mrpack-redistributable.txt). They are printed at the end and
   written to OUT_DIR/missing-mods.txt so the pack stays honest about what is missing.
 Server-only mods (manifest/server-only.txt) are left out, as in the client pack.
+--test puts every CurseForge-only jar inside too and names the file *-TEST.mrpack: for our own device tests only,
+never for publishing (redistribution permission is still pending for several mods).
 """
 from __future__ import annotations
 
@@ -56,6 +58,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("out", type=Path)
     ap.add_argument("--version", default=None)
+    ap.add_argument("--test", action="store_true", help="embed CurseForge-only jars (private tests only)")
     args = ap.parse_args()
     lock = json.loads((MANIFEST / "full.lock.json").read_text())
     pack_toml = (PACK / "pack.toml").read_text()
@@ -80,7 +83,7 @@ def main() -> int:
                           "downloads": [file["url"]], "fileSize": file["size"]})
         elif mod["mod_id"] in alternatives:
             files.append(alternative_file(alternatives[mod["mod_id"]]))
-        elif mod["mod_id"] in redistributable:
+        elif mod["mod_id"] in redistributable or args.test:
             overrides.append(jar)
         else:
             missing.append(mod)
@@ -92,7 +95,8 @@ def main() -> int:
              "name": "GregTech Infinity Ascension", "summary": "GregTech where the factory is the star",
              "files": files, "dependencies": {"minecraft": lock["minecraft"], "forge": lock["forge"]}}
     args.out.mkdir(parents=True, exist_ok=True)
-    target = args.out / f"GregTech-Infinity-Ascension-{version}.mrpack"
+    suffix = "-TEST" if args.test else ""
+    target = args.out / f"GregTech-Infinity-Ascension-{version}{suffix}.mrpack"
     with zipfile.ZipFile(target, "w", zipfile.ZIP_DEFLATED) as z:
         z.writestr("modrinth.index.json", json.dumps(index, indent=2))
         for jar in overrides:
