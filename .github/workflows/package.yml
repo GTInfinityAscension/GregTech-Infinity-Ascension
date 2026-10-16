@@ -1,6 +1,6 @@
 name: Package
 
-# Every push to main builds the zips as a workflow artifact (no release). A release (dev -> pre -> alpha -> beta) is
+# Every push to main builds the zips and replaces the rolling `nightly` pre-release (daily builds for testers). A release (dev -> pre -> alpha -> beta) is
 # built by running this workflow by hand with the tag, e.g. 0.1.0-dev-1, 0.1.0-pre-1, 0.1.0-alpha, 0.1.0-beta.
 # Only two releases are kept, like GregTech Odyssey: the newest beta and the newest dev/pre/alpha. Publishing one
 # deletes the older releases (and tags) of its own group.
@@ -80,7 +80,29 @@ jobs:
             --target "$GITHUB_SHA" $(find dist -name "*.zip")
           # Keep only the newest release of this group (beta, or dev/pre/alpha including old nightlies).
           gh release list --limit 200 --json tagName --jq '.[].tagName' | while read -r old; do
-            [ "$old" = "$TAG" ] && continue
+            [ "$old" = "$TAG" ] || [ "$old" = nightly ] && continue
             case "$old" in *-beta*) OLD_GROUP=beta;; *) OLD_GROUP=pre;; esac
             [ "$OLD_GROUP" = "$GROUP" ] && gh release delete "$old" --yes --cleanup-tag
           done
+
+  nightly:
+    needs: package
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      VERSION: ${{ needs.package.outputs.version }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+      - name: Replace the nightly release
+        run: |
+          gh release delete nightly --yes --cleanup-tag || true
+          printf 'Automatic build of `main` at %s (%s). Untested; for testers only.\n' "${GITHUB_SHA:0:7}" "$VERSION" > notes.md
+          gh release create nightly --prerelease --latest=false --title "Nightly $VERSION" \
+            --notes-file notes.md --target "$GITHUB_SHA" $(find dist -name "*.zip")
