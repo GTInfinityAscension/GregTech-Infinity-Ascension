@@ -54,7 +54,7 @@ LOCAL_BUILDS = {
         "GTIALIB_JAR", ROOT.parent / "GTIA-arquivo/jar-backups/2026-10-16-gtialib-0.4.0/gtialib-0.4.0.jar")),
     # Measured performance fixes (GTIA-D-263).
     "ascopt": Path(os.environ.get(
-        "ASCOPT_JAR", ROOT.parent / "GTIA-arquivo/jar-backups/2026-10-16-ascopt-0.1.0/ascopt-0.1.0.jar")),
+        "ASCOPT_JAR", ROOT.parent / "GTIA-arquivo/jar-backups/2026-10-16-ascopt-0.2.0/ascopt-0.2.0.jar")),
     # Until ModernSpace 0.3.0 is on CurseForge, the GitHub release jar ships in the pack like the two above.
     "modernspace": Path(os.environ.get(
         "MODERNSPACE_JAR", ROOT.parent / "GTIA-arquivo/jar-backups/2026-10-11-modernspace-0.3.1/modernspace-0.3.1.jar")),

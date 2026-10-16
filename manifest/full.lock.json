@@ -250,10 +250,10 @@
     },
     {
       "mod_id": "ascopt",
-      "filename": "ascopt-0.1.0.jar",
-      "sha256": "933389cd641d04dca58c544632fcf52c3cf596a55ef44595e0810534d3404256",
+      "filename": "ascopt-0.2.0.jar",
+      "sha256": "f058ddbf17e7b9fefa929da956f1d4ca28d8969522cf71287055923c1b37943d",
       "source": "local-build",
-      "path": "/home/raishxn/MineProjects/GTIA-arquivo/jar-backups/2026-10-16-ascopt-0.1.0/ascopt-0.1.0.jar",
+      "path": "/home/raishxn/MineProjects/GTIA-arquivo/jar-backups/2026-10-16-ascopt-0.2.0/ascopt-0.2.0.jar",
       "requires": []
     },
     {
@@ -924,7 +924,7 @@
     {
       "mod_id": "gtna",
       "filename": "gtna-0.6.0.jar",
-      "sha256": "a8aa825939137fef2e2c12d64737229693f8879b3bfa2c90ff07cf28e046e84e",
+      "sha256": "f3f4bdb5b17f082adffe12d1038d30450232e5d98106e407cddb176a67198579",
       "source": "local-build",
       "path": "/home/raishxn/MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.6.0.jar",
       "requires": []
