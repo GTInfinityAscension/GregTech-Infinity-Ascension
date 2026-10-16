@@ -12,7 +12,7 @@ GregTech Infinity Ascension runs on Android phones and tablets through the **Ame
 | **Launcher** | [Amethyst](https://github.com/AngelAuraMC/Amethyst-Android/releases/latest) (free, open source) |
 | **Pack** | `GregTech-Infinity-Ascension-<version>.mrpack` from the [releases page](https://github.com/GTInfinityAscension/GregTech-Infinity-Ascension/releases) |
 | **Account** | A Minecraft: Java Edition account |
-| **Memory** | About **3 GB less than your phone's total RAM**, and no more than 3 GB: 2.5 GB on an 8 GB phone, 3 GB on 12 GB or more. Joining a server needs about 0.5 GB less |
+| **Memory** | **2.5 GB** on an 8 GB phone, **3 GB** on 12 GB or more (not more: see Tips). Joining a server needs about 0.5 GB less |
 | **Internet** | Wi-Fi: the first launch downloads several hundred MB |
 
 ## Install

@@ -79,6 +79,31 @@ def set_cfg(heap: int, jvm_args: str = "") -> None:
     CFG.write_text(text)
 
 
+def smaps_summary(pid: int) -> dict:
+    """RSS in MB grouped by mapping: java heap/anon, GPU (/dev/dri, driver libs), other libraries, files."""
+    groups: dict[str, int] = {}
+    name = ""
+    for line in Path(f"/proc/{pid}/smaps").read_text(errors="replace").splitlines():
+        parts = line.split()
+        if parts and "-" in parts[0] and len(parts) >= 5 and not parts[0].endswith(":"):
+            path = parts[5] if len(parts) > 5 else ""
+            if path.startswith("/dev/dri") or "drm" in path:
+                name = "gpu_device"
+            elif any(k in path for k in ("libnvidia", "dri/", "libLLVM", "radeonsi", "iris", "libGLX", "libEGL", "mesa")):
+                name = "gpu_driver_libs"
+            elif path.endswith(".so") or ".so." in path:
+                name = "other_libs"
+            elif path.startswith("["):
+                name = path
+            elif path:
+                name = "files"
+            else:
+                name = "anon"
+        elif line.startswith("Rss:"):
+            groups[name] = groups.get(name, 0) + int(parts[1])
+    return {k: v // 1024 for k, v in sorted(groups.items(), key=lambda kv: -kv[1])}
+
+
 def jcmd(pid: int) -> str:
     return str(Path(os.readlink(f"/proc/{pid}/exe")).with_name("jcmd"))
 
@@ -117,6 +142,12 @@ def run(heap: int, world: str, wait: int, jvm_args: str = "", jfr_dump: str = ""
         info = subprocess.run([jcmd(pid), str(pid), "GC.heap_info"], capture_output=True, text=True).stdout
         used = re.search(r"used (\d+)K", info)
         result["live_heap_mb"] = int(used.group(1)) // 1024 if used else None
+        result["smaps_mb"] = smaps_summary(pid)
+        nmt = subprocess.run([jcmd(pid), str(pid), "VM.native_memory", "summary"], capture_output=True,
+                             text=True).stdout
+        total = re.search(r"Total: reserved=\d+KB, committed=(\d+)KB", nmt)
+        if total:
+            result["jvm_committed_mb"] = int(total.group(1)) // 1024
         for line in Path(f"/proc/{pid}/status").read_text().splitlines():
             if line.startswith("VmRSS:"):
                 result["rss_mb"] = int(line.split()[1]) // 1024
