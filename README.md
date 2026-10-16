@@ -23,6 +23,7 @@ Download the latest build from [Releases](https://github.com/GTInfinityAscension
 | --- | --- |
 | `GregTech-Infinity-Ascension-<version>.zip` | **Client.** Import it in Prism Launcher (*Add Instance → Import*), the CurseForge app or ATLauncher. |
 | `GregTech-Infinity-Ascension-server-<version>.zip` | **Dedicated server.** Unzip, run `install.sh` / `install.bat`, see `README-SERVER.md`. |
+| `GregTech-Infinity-Ascension-<version>.mrpack` | **Android** (Amethyst launcher). See the [mobile guide](docs/MOBILE.md). Coming soon. |
 
 **Java 21** and 8 GB of RAM or more are recommended. Java 21 gives steadier frame times than Java 17; the pack also runs on Java 17. Java 25 is not supported yet (spark's profiler crashes on it). In Prism Launcher: *Edit Instance → Settings → Java*, pick a Java 21 install and set the memory there.
 
