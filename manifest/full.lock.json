@@ -12,6 +12,7 @@
     "alltheleaks",
     "alternate_current",
     "architectury",
+    "ascopt",
     "asynclocator",
     "asyncparticles",
     "avaritia",
@@ -79,6 +80,7 @@
     "gpumemleakfix",
     "gtceu",
     "gtia",
+    "gtialib",
     "gtmthings",
     "gtna",
     "guideme",
@@ -244,6 +246,14 @@
       "source": "curseforge",
       "project_id": 419699,
       "file_id": 5137938,
+      "requires": []
+    },
+    {
+      "mod_id": "ascopt",
+      "filename": "ascopt-0.1.0.jar",
+      "sha256": "933389cd641d04dca58c544632fcf52c3cf596a55ef44595e0810534d3404256",
+      "source": "local-build",
+      "path": "/home/raishxn/MineProjects/GTIA-arquivo/jar-backups/2026-10-16-ascopt-0.1.0/ascopt-0.1.0.jar",
       "requires": []
     },
     {
@@ -898,17 +908,25 @@
     {
       "mod_id": "gtia",
       "filename": "gtia-0.1.0.jar",
-      "sha256": "c1a4da8410d169782a308fb9d1f7588327a8eca9c7f7bbc2265ff68ba21c3b60",
+      "sha256": "f3169c2c702027cd770560ae24e7f8d61e72f37e92fb443ced9299f1264eba98",
       "source": "local-build",
       "path": "/home/raishxn/MineProjects/GTIA/core/build/libs/gtia-0.1.0.jar",
       "requires": []
     },
     {
-      "mod_id": "gtna",
-      "filename": "gtna-0.5.5.jar",
-      "sha256": "b4388ece380f8a0286b8e29f76d77958652319b59308fe36956ec677d115e977",
+      "mod_id": "gtialib",
+      "filename": "gtialib-0.4.0.jar",
+      "sha256": "b3ebe357e7f40dc597587424305f3e634002f909fe48c3f0b6a8aa1dc2c4d76b",
       "source": "local-build",
-      "path": "/home/raishxn/MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.5.5.jar",
+      "path": "/home/raishxn/MineProjects/GTIA-arquivo/jar-backups/2026-10-16-gtialib-0.4.0/gtialib-0.4.0.jar",
+      "requires": []
+    },
+    {
+      "mod_id": "gtna",
+      "filename": "gtna-0.6.0.jar",
+      "sha256": "6fc0019304134a13bccfb946fbc0544c076a3ccd8748d631b9507b440dc62809",
+      "source": "local-build",
+      "path": "/home/raishxn/MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.6.0.jar",
       "requires": []
     },
     {
