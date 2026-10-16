@@ -16,6 +16,7 @@ on:
       - 'index.toml'
       - 'tools/release.py'
       - '.github/server/**'
+      - '.github/workflows/package.yml'
   workflow_dispatch:
     inputs:
       tag_name:
