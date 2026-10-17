@@ -486,6 +486,10 @@ hash = "0f4c2198603cd84a14dc6741729d0b0dcf509574776e620c36c3e7180082db32"
 metafile = true
 
 [[files]]
+file = "mods/agronomica-0.1.0.jar"
+hash = "983497a9100efc7ed7eb1364d012e39c8af948bba64afbe53a3fd0934876de8d"
+
+[[files]]
 file = "mods/aiimprovements.pw.toml"
 hash = "586fbaf086d45f3aec70670dd0ba0a7f7f8c82cc88be1cfacbbbf0dd94f07a42"
 metafile = true
@@ -830,7 +834,7 @@ metafile = true
 
 [[files]]
 file = "mods/gtia-0.1.0.jar"
-hash = "f3169c2c702027cd770560ae24e7f8d61e72f37e92fb443ced9299f1264eba98"
+hash = "43d12525d4803f04c4f3530beaed835e595b29dd9973365e36da45e38b9eb3e6"
 
 [[files]]
 file = "mods/gtialib-0.5.0.jar"
@@ -838,7 +842,7 @@ hash = "f5b2c0e441ee5cd374c2dd89aa772845f4b8213febcea58c8560a55c26051784"
 
 [[files]]
 file = "mods/gtna-0.6.0.jar"
-hash = "b417ecc111678d41654207d0439e73a827941632a46ccb0fa25cb50d64b3f2c9"
+hash = "042e065ea01a26ff99372385928e03108b09ff952b23c9eb4374a7d294730061"
 
 [[files]]
 file = "mods/guideme.pw.toml"
@@ -1002,6 +1006,11 @@ metafile = true
 [[files]]
 file = "mods/polymorph.pw.toml"
 hash = "d9986c3798db028db0e1ab30851f7fab87ce12094448685ef7c4ba64374cbfa0"
+metafile = true
+
+[[files]]
+file = "mods/productivebees.pw.toml"
+hash = "fa7f33f39be5d6dfac5bfa366bc629c374c15d532016c9505dfcc853ccfcce2e"
 metafile = true
 
 [[files]]

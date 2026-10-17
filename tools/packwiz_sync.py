@@ -56,6 +56,15 @@ def quote(value: str) -> str:
     return json.dumps(value, ensure_ascii=False)
 
 
+# EN: Local builds whose licence forbids shipping the jar: packwiz downloads them from Modrinth instead.
+# PT: Builds locais cuja licença proíbe redistribuir o jar: o packwiz baixa do Modrinth.
+# ZH: 许可证禁止再分发 jar 的本地构建：由 packwiz 从 Modrinth 下载。
+MODRINTH = {
+    "productivebees": ("jH6iiqkd", "mywVOObd",
+                       "https://cdn.modrinth.com/data/jH6iiqkd/versions/mywVOObd/productivebees-1.20.1-12.6.0.jar"),
+}
+
+
 def expected() -> dict[str, str | Path]:
     """File name in mods/ -> .pw.toml text, or -> the local jar to copy."""
     lock = json.loads(LOCK.read_text(encoding="utf-8"))
@@ -64,6 +73,22 @@ def expected() -> dict[str, str | Path]:
     files: dict[str, str | Path] = {}
     for mod in lock["mods"]:
         jar = CACHE / mod["filename"]
+        if mod["mod_id"] in MODRINTH:
+            project, version, url = MODRINTH[mod["mod_id"]]
+            files[f"{mod['mod_id']}.pw.toml"] = (
+                f"name = {quote(display_name(jar, mod['mod_id']))}\n"
+                f"filename = {quote(mod['filename'])}\n"
+                "side = \"both\"\n\n"
+                "[download]\n"
+                f"url = {quote(url)}\n"
+                "hash-format = \"sha1\"\n"
+                f"hash = \"{hashlib.sha1(jar.read_bytes()).hexdigest()}\"\n\n"
+                "[update]\n"
+                "[update.modrinth]\n"
+                f"mod-id = \"{project}\"\n"
+                f"version = \"{version}\"\n"
+            )
+            continue
         if mod["source"] == "local-build":
             files[mod["filename"]] = jar
             continue

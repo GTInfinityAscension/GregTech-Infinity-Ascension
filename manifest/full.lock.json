@@ -8,6 +8,7 @@
     "ad_astra_rocketed",
     "adastraextra",
     "ae2",
+    "agronomica",
     "aiimprovements",
     "alltheleaks",
     "alternate_current",
@@ -117,6 +118,7 @@
     "polyeng",
     "polylib",
     "polymorph",
+    "productivebees",
     "radium",
     "renderblender",
     "resourcefulconfig",
@@ -211,6 +213,14 @@
       "requires": [
         "guideme"
       ]
+    },
+    {
+      "mod_id": "agronomica",
+      "filename": "agronomica-0.1.0.jar",
+      "sha256": "983497a9100efc7ed7eb1364d012e39c8af948bba64afbe53a3fd0934876de8d",
+      "source": "local-build",
+      "path": "/home/raishxn/MineProjects/Agronomica/build/libs/agronomica-0.1.0.jar",
+      "requires": []
     },
     {
       "mod_id": "aiimprovements",
@@ -908,7 +918,7 @@
     {
       "mod_id": "gtia",
       "filename": "gtia-0.1.0.jar",
-      "sha256": "f3169c2c702027cd770560ae24e7f8d61e72f37e92fb443ced9299f1264eba98",
+      "sha256": "43d12525d4803f04c4f3530beaed835e595b29dd9973365e36da45e38b9eb3e6",
       "source": "local-build",
       "path": "/home/raishxn/MineProjects/GTIA/core/build/libs/gtia-0.1.0.jar",
       "requires": []
@@ -924,7 +934,7 @@
     {
       "mod_id": "gtna",
       "filename": "gtna-0.6.0.jar",
-      "sha256": "b417ecc111678d41654207d0439e73a827941632a46ccb0fa25cb50d64b3f2c9",
+      "sha256": "042e065ea01a26ff99372385928e03108b09ff952b23c9eb4374a7d294730061",
       "source": "local-build",
       "path": "/home/raishxn/MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.6.0.jar",
       "requires": []
@@ -1242,6 +1252,14 @@
       "source": "curseforge",
       "project_id": 388800,
       "file_id": 8854504,
+      "requires": []
+    },
+    {
+      "mod_id": "productivebees",
+      "filename": "productivebees-1.20.1-12.6.0.jar",
+      "sha256": "b728e5640fcfd0bd7137cabf475455588452ace89a3dd136333a60fdf7049af4",
+      "source": "local-build",
+      "path": "/home/raishxn/MineProjects/GTIA-arquivo/jar-backups/2026-10-16-productivebees-12.6.0/productivebees-1.20.1-12.6.0.jar",
       "requires": []
     },
     {

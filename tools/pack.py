@@ -58,6 +58,13 @@ LOCAL_BUILDS = {
     # Until ModernSpace 0.3.0 is on CurseForge, the GitHub release jar ships in the pack like the two above.
     "modernspace": Path(os.environ.get(
         "MODERNSPACE_JAR", ROOT.parent / "GTIA-arquivo/jar-backups/2026-10-11-modernspace-0.3.1/modernspace-0.3.1.jar")),
+    # Org crop mod (GTIA-D-260, D-267); local build until its first release.
+    "agronomica": Path(os.environ.get(
+        "AGRONOMICA_JAR", Path.home() / "MineProjects/Agronomica/build/libs/agronomica-0.1.0.jar")),
+    # Productive Bees for the HV bee line (GTIA-D-259, D-268), Modrinth jar kept in the archive.
+    "productivebees": Path(os.environ.get(
+        "PRODUCTIVEBEES_JAR",
+        ROOT.parent / "GTIA-arquivo/jar-backups/2026-10-16-productivebees-12.6.0/productivebees-1.20.1-12.6.0.jar")),
     # Crafting Chain replaces Fabricate (GTIA-D-257); shipped in the pack until it is on CurseForge.
     "craftingchain": Path(os.environ.get(
         "CRAFTINGCHAIN_JAR",

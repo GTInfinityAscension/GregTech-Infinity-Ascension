@@ -75,6 +75,14 @@ FTB Backups 2 saves the world every 30 minutes (the last 5 are kept) as zips in 
 
 The script lists the backups, newest first, checks the chosen zip against the checksum FTB Backups recorded, and restores the world. The current world is never deleted: it is renamed to `<world>.before-restore-<date>`, so you can undo by swapping the folders back. You can pass a zip directly: `./restore-backup.sh backups/2026-10-11_2-0-0.zip`.
 
+### Recommended client memory settings
+
+Measured on the full pack inside a world (4 GB heap, 2 runs each, `tools/client_bench.py`): process memory went from about 6.0 GB to 4.4 GB with the same live heap and no OutOfMemory.
+
+- Java arguments: `-XX:G1PeriodicGCInterval=10000 -XX:MaxHeapFreeRatio=30 -XX:MinHeapFreeRatio=10` (the heap gives unused memory back instead of keeping it).
+- Environment variable (Prism: *Settings → Environment variables*): `MALLOC_ARENA_MAX=2` (about 250 MB less native memory).
+- 4 GB of heap is enough; the pack also runs with 1.5 GB.
+
 ## Development
 
 ### Repository layout

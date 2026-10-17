@@ -19,6 +19,7 @@ No quest text, texture or config was copied from other modpacks (GTO, GTL, GTNH,
 | `ad_astra_rocketed` | ad_astra_rocketed-forge-1.20.1-1.0.5.jar | [CurseForge](https://www.curseforge.com/projects/996980) |
 | `adastraextra` | adastraextra-forge-1.20.1-1.2.3.jar | [CurseForge](https://www.curseforge.com/projects/957097) |
 | `ae2` | appliedenergistics2-forge-15.4.10.jar | [CurseForge](https://www.curseforge.com/projects/223794) |
+| `agronomica` | agronomica-0.1.0.jar | [GitHub](https://github.com/GTInfinityAscension/Agronomica) (org mod, LGPL-3.0; shipped in the pack until its first release) |
 | `aiimprovements` | AI-Improvements-1.20-0.5.2.jar | [CurseForge](https://www.curseforge.com/projects/233019) |
 | `alltheleaks` | alltheleaks-1.1.3+1.20.1-forge.jar | [CurseForge](https://www.curseforge.com/projects/1091339) |
 | `alternate_current` | alternate_current-mc1.20-1.7.0.jar | [CurseForge](https://www.curseforge.com/projects/548115) |
@@ -122,6 +123,7 @@ No quest text, texture or config was copied from other modpacks (GTO, GTL, GTNH,
 | `polyeng` | polyeng-forge-0.1.1-1.20.1.jar | [CurseForge](https://www.curseforge.com/projects/941096) |
 | `polylib` | polylib-forge-2000.0.3-build.143.jar | [CurseForge](https://www.curseforge.com/projects/576589) |
 | `polymorph` | polymorph-forge-0.49.11+1.20.1.jar | [CurseForge](https://www.curseforge.com/projects/388800) |
+| `productivebees` | productivebees-1.20.1-12.6.0.jar | [Modrinth](https://modrinth.com/mod/productivebees) (All Rights Reserved: downloaded by the launcher, never shipped) |
 | `radium` | radium-re-reforged-mc1.20.1-0.14.3+git.e141a47.jar | [CurseForge](https://www.curseforge.com/projects/1649038) |
 | `renderblender` | renderblender-1.1.1.jar (LGPL-3.0, required by GTNA item models) | [CurseForge](https://www.curseforge.com/projects/1346485) |
 | `resourcefulconfig` | resourcefulconfig-forge-1.20.1-2.1.3.jar | [CurseForge](https://www.curseforge.com/projects/714059) |
