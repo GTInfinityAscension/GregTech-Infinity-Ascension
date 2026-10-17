@@ -2,7 +2,7 @@
 
 GregTech Infinity Ascension runs on Android phones and tablets through the **Amethyst** launcher, the same way GregTech: New Horizons does.
 
-> **Status:** the mobile pack (`.mrpack`) ships with every release from 0.1.0-dev-4 on. Mods that are only on CurseForge are included inside it; if a mod's author asks us to remove theirs, we will at once.
+> **Status:** the mobile pack (`.mrpack`) ships with every release from 0.1.0-dev-5 on. Mods that are only on CurseForge are included inside it; if a mod's author asks us to remove theirs, we will at once.
 
 ## What you need
 

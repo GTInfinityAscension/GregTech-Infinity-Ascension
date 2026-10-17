@@ -190,7 +190,7 @@ hash = "48ab29f9273b13fcc766bfbb6aca335e92775ae1a68ce26c7ecfb273fdb09d79"
 
 [[files]]
 file = "config/fancymenu/options.txt"
-hash = "af60628cb2b432f5c2f4f659ba32954ecb1047f0a07575c230d8e58cdb15d0e1"
+hash = "45b360d155863ebd9a3c9a042d625c3f669fd036435470d580f81c5a7de374bc"
 
 [[files]]
 file = "config/fast_recipe_search.toml"

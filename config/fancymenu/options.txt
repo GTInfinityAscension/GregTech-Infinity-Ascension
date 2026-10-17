@@ -28,7 +28,7 @@ S:custom_game_intro_skip_text = '';
 B:show_custom_window_icon = 'true';
 S:custom_window_icon_macos = 'config/fancymenu/assets/gtia_icon_mac.png';
 S:custom_window_icon_32 = 'config/fancymenu/assets/gtia_icon_32.png';
-S:custom_window_title = 'GregTech: Infinity Ascension 0.1.0-dev-4';
+S:custom_window_title = 'GregTech: Infinity Ascension';
 S:custom_window_icon_16 = 'config/fancymenu/assets/gtia_icon_16.png';
 
 
