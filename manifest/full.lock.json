@@ -918,7 +918,7 @@
     {
       "mod_id": "gtia",
       "filename": "gtia-0.1.0.jar",
-      "sha256": "34fed797049f3a186aeccd177fe3704fd213b8aad1d52a06cc84ada8ab832654",
+      "sha256": "d12c386da1794c2f224034742b55b0e946f40c206c161cd01cc5d3bdef0e3ca3",
       "source": "local-build",
       "path": "/home/raishxn/MineProjects/GTIA/core/build/libs/gtia-0.1.0.jar",
       "requires": []
