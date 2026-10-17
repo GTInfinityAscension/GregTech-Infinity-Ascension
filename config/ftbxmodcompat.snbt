@@ -9,5 +9,5 @@
 	# DEFAULT: use KubeJS, Game Stages, vanilla in preference order, depending on mod availability
 	# Default: "default"
 	# Valid values: "default", "vanilla", "kubejs", "gamestages"
-	stage_selector: "default"
+	stage_selector: "vanilla"
 }

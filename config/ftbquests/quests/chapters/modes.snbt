@@ -1,0 +1,50 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: true
+	default_quest_shape: "circle"
+	filename: "modes"
+	id: "01D7D2371DDF8A7B"
+	order_index: 99
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"{gtia.quest.270B3B2AA4C678D7.desc.0}"
+			]
+			id: "270B3B2AA4C678D7"
+			invisible: true
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "578FCA23F86513F8"
+					stage: "gtia_journey"
+					type: "gamestage"
+				}
+			]
+			title: "{gtia.quest.270B3B2AA4C678D7.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{gtia.quest.4231C12C585214A4.desc.0}"
+			]
+			id: "4231C12C585214A4"
+			invisible: true
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "1D980816000AF020"
+					stage: "gtia_normal"
+					type: "gamestage"
+				}
+			]
+			title: "{gtia.quest.4231C12C585214A4.title}"
+			x: 2.0d
+			y: 0.0d
+		}
+	]
+	title: "{gtia.quest.chapter.01D7D2371DDF8A7B}"
+}

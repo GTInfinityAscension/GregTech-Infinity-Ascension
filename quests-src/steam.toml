@@ -1,20 +1,10 @@
-# Steam Age, one item per quest. Every branch starts at the item it is made from (the Piston leads to the
-# Compressor and the Macerator, the Compressor to Iron Blocks and the blast-furnace bricks), so the tree reads as
-# "what you just made opens this". A road runs left to right through the stops (boiler, Piston, Compressor,
-# Fireclay, blast furnace, Steel, molds, glass, the first circuit); side branches go up and down from it. GTNA's
-# Large steam machines (and the Leap Forward furnace, the Primitive Stone Furnace and the Cactus Wonder) sit side by
-# side in a gallery at the top, GTO style; their parts (Precision Steam Component, Brick Kiln -> Clay Compound ->
-# Hydraulic Piston, Breel) stay in the tree. Not in this chapter, by the author's call:
-# the Ancient World, GTNA's vaults and the Cactus Wonder. Facts come from the pack's recipes or GTIACore's docs.
-# Colours: [item] [num] [warn] [tip] [mech] [note] (see questgen.COLOURS).
-
 [chapter]
 title = "Steam Age"
 icon = "gtceu:lp_steam_solid_boiler"
 
 [entry]
-x = 0
-y = 0
+x = -0.5
+y = 8
 subtitle = "Ascension I"
 requires = ["start/Ready for Steam"]
 text = """
@@ -23,27 +13,91 @@ text = """
 Each quest asks for one thing, and each branch starts from what it is made of. The road runs left to right to [item]Steel[/] and the first circuit. Gears are the stops that matter; diamonds are optional.
 """
 
+[exit]
+x = 23.5
+y = 13.5
+title = "Ascend to Low Voltage"
+subtitle = "Steam stays; electricity begins."
+deps = ["first_circuit", "lv_hull"]
+text = """
+You hold a circuit. Your boilers keep running: the Low Voltage chapter turns their steam into electricity and builds the first electric machines.
+"""
+
 [[quest]]
 key = "bronze_age"
-x = 2
-y = 0
 title = "Bronze Age"
 role = "spine"
-task = [{ item = "gtceu:bronze_ingot" }]
+x = 2.0
+y = 8.0
+shape = "circle"
+size = 2
 deps = ["entry"]
 subtitle = "Where the Steam age begins."
+task = [{ item = "gtceu:bronze_ingot" }]
 text = """
 You already carry [item]Bronze[/] from Start, so this completes as soon as you open the chapter. Everything in this tier grows from it.
 """
 
 [[quest]]
+key = "bronze_pipe"
+title = "Bronze Pipes"
+role = "side"
+icon = "gtceu:bronze_small_fluid_pipe"
+x = 0.0
+y = 6.0
+shape = "circle"
+size = 1
+deps = ["bronze_age"]
+subtitle = "Every steam machine starts here."
+task = [{ item = "gtceu:bronze_small_fluid_pipe" }]
+text = """
+Small Bronze Fluid Pipes carry the steam. Every steam machine in this chapter has a ring of them around its casing.
+"""
+
+[[quest]]
+key = "bronze_hull"
+title = "Bronze Machine Casing"
+role = "side"
+icon = "gtceu:bronze_machine_casing"
+x = -0.5
+y = 10.0
+shape = "circle"
+size = 1
+deps = ["bronze_age"]
+subtitle = "The body of a steam machine."
+task = [{ item = "gtceu:bronze_machine_casing" }]
+hide_dependents = true
+text = """
+Bronze plates around bricks. The Macerator, Compressor, Forge Hammer and Extractor are built on this casing.
+"""
+
+[[quest]]
+key = "brick_hull"
+title = "Bricked Bronze Casing"
+role = "side"
+icon = "gtceu:bronze_brick_casing"
+x = 1.0
+y = 10.0
+shape = "circle"
+size = 1
+deps = ["bronze_age"]
+subtitle = "For the machines that burn."
+task = [{ item = "gtceu:bronze_brick_casing" }]
+hide_dependents = true
+text = """
+Bronze plates over three bricks. The Steam Furnace and the Alloy Smelter sit on this casing.
+"""
+
+[[quest]]
 key = "steam_rules"
-x = 0
-y = -2.5
-role = "hint"
-deps = ["entry"]
-icon = "gtceu:steam_machine_casing"
 title = "How Steam Machines Work"
+role = "hint"
+icon = "gtceu:steam_machine_casing"
+x = 4.0
+y = 10.0
+shape = "diamond"
+size = 1
+deps = ["bronze_age"]
 subtitle = "Three rules worth knowing first."
 checkmark = "Understood"
 text = """
@@ -52,16 +106,16 @@ text = """
 - A steam machine refuses any recipe above [num]32 EU/t[/] (Low Voltage). Those recipes wait for electricity.
 """
 
-# ------------------------------------------------------------------ the boiler
-
 [[quest]]
 key = "boiler"
-x = 4
-y = 0
-role = "spine"
-deps = ["bronze_age"]
-icon = "gtceu:lp_steam_solid_boiler"
 title = "Boil Water"
+role = "spine"
+icon = "gtceu:lp_steam_solid_boiler"
+x = 7.0
+y = 6.0
+shape = "circle"
+size = 2
+deps = ["bronze_age"]
 subtitle = "Five plates around a furnace."
 task = [{ item = "gtceu:lp_steam_solid_boiler" }]
 reward = [{ item = "minecraft:bucket", count = 2 }]
@@ -73,26 +127,31 @@ text = """
 
 [[quest]]
 key = "steam_furnace"
-x = 4
-y = 2
-role = "optional"
-deps = ["boiler"]
-icon = "gtceu:lp_steam_furnace"
 title = "Steam Furnace"
+role = "optional"
+icon = "gtceu:lp_steam_furnace"
+x = 7.5
+y = 9.0
+shape = "hexagon"
+size = 1.25
+deps = ["boiler", "brick_hull"]
 subtitle = "Smelting without fuel."
 task = [{ item = "gtceu:lp_steam_furnace" }]
+hide_dependents = true
 text = """
 A furnace that runs on the steam you already make, so your [item]Coal[/] goes to the boiler only.
 """
 
 [[quest]]
 key = "pump"
-x = 4
-y = -2
-role = "side"
-deps = ["boiler"]
-icon = "gtceu:primitive_pump"
 title = "Primitive Pump"
+role = "side"
+icon = "gtceu:primitive_pump"
+x = 4.0
+y = 6.0
+shape = "gear"
+size = 1.5
+deps = ["bronze_age"]
 subtitle = "Water without buckets."
 task = [{ item = "gtceu:primitive_pump" }, { item = "gtceu:pump_hatch" }]
 text = """
@@ -103,12 +162,14 @@ A boiler drinks a lot. The [item]Primitive Pump[/] draws [item]Water[/] from the
 
 [[quest]]
 key = "steam_sources"
-x = 4
-y = -4
-role = "hint"
-deps = ["pump"]
-icon = "gtceu:lp_steam_solar_boiler"
 title = "More Ways to Make Steam"
+role = "hint"
+icon = "gtceu:lp_steam_solar_boiler"
+x = 5.0
+y = 4.5
+shape = "diamond"
+size = 1
+deps = ["boiler"]
 subtitle = "Pick by the fuel you have."
 checkmark = "Understood"
 text = """
@@ -120,16 +181,16 @@ text = """
 [tip]The Power Generation chapter puts them side by side.[/]
 """
 
-# ------------------------------------------------------------------ the Alloy Smelter and its alloys (below)
-
 [[quest]]
 key = "alloy"
-x = 6
-y = 0
-role = "side"
-deps = ["boiler"]
-icon = "gtceu:lp_steam_alloy_smelter"
 title = "Alloy Smelter"
+role = "side"
+icon = "gtceu:lp_steam_alloy_smelter"
+x = 13.5
+y = 5.5
+shape = "hexagon"
+size = 1.25
+deps = ["boiler", "brick_hull"]
 subtitle = "Two inputs, one new metal."
 task = [{ item = "gtceu:lp_steam_alloy_smelter" }]
 text = """
@@ -138,12 +199,14 @@ text = """
 
 [[quest]]
 key = "red_alloy"
-x = 6
-y = -2
-role = "side"
-deps = ["alloy"]
-icon = "gtceu:red_alloy_ingot"
 title = "Red Alloy"
+role = "side"
+icon = "gtceu:red_alloy_ingot"
+x = 13.5
+y = 4.0
+shape = "circle"
+size = 1
+deps = ["alloy"]
 subtitle = "Copper and redstone."
 task = [{ item = "gtceu:red_alloy_ingot", count = 4 }]
 text = """
@@ -152,12 +215,14 @@ text = """
 
 [[quest]]
 key = "red_wire"
-x = 6
-y = -4
-role = "detail"
-deps = ["red_alloy"]
-icon = "gtceu:red_alloy_single_wire"
 title = "Red Alloy Wire"
+role = "detail"
+icon = "gtceu:red_alloy_single_wire"
+x = 11.0
+y = 7.0
+shape = "circle"
+size = 1
+deps = ["red_alloy"]
 subtitle = "Plate and wire cutter."
 task = [{ item = "gtceu:red_alloy_single_wire", count = 4 }]
 text = """
@@ -166,13 +231,14 @@ Hammer [item]Red Alloy[/] into a plate and cut it with the [item]Wire Cutter[/].
 
 [[quest]]
 key = "phase_ore"
-x = 10
-y = -2
-role = "side"
-deps = ["macerator"]
-hide_lines = true
-icon = "gtia:raw_phase_matrix"
 title = "Phase Matrix"
+role = "side"
+icon = "gtia:raw_phase_matrix"
+x = 3.5
+y = 4.5
+shape = "circle"
+size = 1
+deps = ["bronze_age"]
 subtitle = "Infinity Ascension's own ore."
 task = [{ item = "gtia:raw_phase_matrix", count = 4 }]
 text = """
@@ -181,12 +247,14 @@ text = """
 
 [[quest]]
 key = "phase_dust"
-x = 10
-y = -4
-role = "detail"
-deps = ["phase_ore"]
-icon = "gtia:impure_phase_matrix_dust"
 title = "Impure Phase Dust"
+role = "detail"
+icon = "gtia:impure_phase_matrix_dust"
+x = 6.5
+y = 2.5
+shape = "circle"
+size = 1
+deps = ["phase_ore", "macerator"]
 subtitle = "Crushed, then crushed again."
 task = [{ item = "gtia:crushed_phase_matrix_ore" }, { item = "gtia:impure_phase_matrix_dust", count = 2 }]
 text = """
@@ -197,12 +265,14 @@ The [item]Macerator[/] crushes the raw matrix; crush the result again for [item]
 
 [[quest]]
 key = "pulsating"
-x = 8
-y = -4
-role = "side"
-deps = ["phase_dust", "alloy"]
-icon = "gtia:pulsating_alloy_ingot"
 title = "Pulsating Alloy"
+role = "side"
+icon = "gtia:pulsating_alloy_ingot"
+x = 10.5
+y = 5.0
+shape = "circle"
+size = 1
+deps = ["phase_dust", "alloy"]
 subtitle = "Iron plus phase."
 task = [{ item = "gtia:pulsating_alloy_ingot", count = 2 }]
 text = """
@@ -213,42 +283,47 @@ text = """
 
 [[quest]]
 key = "conductive"
-x = 8
-y = -6
-role = "optional"
-deps = ["pulsating", "red_alloy"]
-icon = "gtia:conductive_alloy_ingot"
 title = "Conductive Alloy"
+role = "optional"
+icon = "gtia:conductive_alloy_ingot"
+x = 9.0
+y = 7.5
+shape = "diamond"
+size = 1
+deps = ["pulsating", "red_alloy"]
 subtitle = "A wire that loses nothing."
 task = [{ item = "gtia:conductive_alloy_ingot", count = 2 }]
 text = """
 [item]Red Alloy[/] and [item]Pulsating Alloy[/] smelt into [num]two[/] [item]Conductive Alloy[/]. Its wire carries Ultra Low Voltage at [num]4 amps[/] with [tip]no loss over distance[/].
 """
 
-# ------------------------------------------------------------------ the Piston and what it opens
-
 [[quest]]
 key = "piston"
-x = 8
-y = 0
-role = "spine"
-deps = ["boiler", "alloy"]
-icon = "minecraft:piston"
 title = "Pistons"
+role = "spine"
+icon = "minecraft:piston"
+x = 1.5
+y = 6.0
+shape = "circle"
+size = 1
+deps = ["bronze_age"]
 subtitle = "Every steam machine that moves."
 task = [{ item = "minecraft:piston", count = 4 }]
+hide_dependents = true
 text = """
 The Compressor takes [num]two[/] [item]Pistons[/], the Macerator [num]two[/], the Forge Hammer [num]one[/]. Iron works; Bronze and Steel are alternatives for the metal in the middle.
 """
 
 [[quest]]
 key = "macerator"
-x = 10
-y = 0
-role = "side"
-deps = ["piston"]
-icon = "gtceu:lp_steam_macerator"
 title = "Macerator"
+role = "side"
+icon = "gtceu:lp_steam_macerator"
+x = 10.5
+y = 2.5
+shape = "hexagon"
+size = 1.25
+deps = ["boiler", "bronze_hull", "piston"]
 subtitle = "Two diamonds well spent."
 task = [{ item = "gtceu:lp_steam_macerator" }]
 text = """
@@ -257,14 +332,17 @@ text = """
 
 [[quest]]
 key = "grinder"
-x = 10
-y = 2
-role = "side"
-deps = ["macerator"]
-icon = "gtceu:steam_grinder"
 title = "Steam Grinder"
+role = "side"
+icon = "gtceu:steam_grinder"
+x = 12.0
+y = 3.5
+shape = "circle"
+size = 1
+deps = ["macerator"]
 subtitle = "A macerator grown into a multiblock."
 task = [{ item = "gtceu:steam_machine_casing", count = 8 }, { item = "gtceu:potin_gear", count = 2 }, { item = "gtceu:steam_grinder" }]
+hide_dependents = true
 text = """
 Your [item]Macerator[/], [num]two[/] [item]Potin Gears[/] and [item]Steam Machine Casings[/] ([num]six[/] Bronze Plates around a Brick make two) form the [item]Steam Grinder[/]. It processes [mech]several items at once[/].
 
@@ -273,12 +351,14 @@ Your [item]Macerator[/], [num]two[/] [item]Potin Gears[/] and [item]Steam Machin
 
 [[quest]]
 key = "compressor"
-deps = ["macerator"]
-x = 12
-y = 0
+title = "Compressor"
 role = "spine"
 icon = "gtceu:lp_steam_compressor"
-title = "Compressor"
+x = 7.0
+y = 4.0
+shape = "hexagon"
+size = 1.25
+deps = ["boiler", "bronze_hull", "piston"]
 subtitle = "Squeeze dust into shape."
 task = [{ item = "gtceu:lp_steam_compressor" }]
 text = """
@@ -287,12 +367,14 @@ text = """
 
 [[quest]]
 key = "iron_block"
-x = 12
-y = -2
-role = "detail"
-deps = ["compressor"]
-icon = "minecraft:iron_block"
 title = "Iron Blocks"
+role = "detail"
+icon = "minecraft:iron_block"
+x = 9.5
+y = -1.0
+shape = "circle"
+size = 1
+deps = ["compressor"]
 subtitle = "Only the Compressor makes them."
 task = [{ item = "minecraft:iron_block", count = 5 }]
 text = """
@@ -301,26 +383,31 @@ text = """
 
 [[quest]]
 key = "anvil"
-x = 12
-y = -4
-role = "detail"
-deps = ["iron_block"]
-icon = "minecraft:anvil"
 title = "Anvil"
+role = "detail"
+icon = "minecraft:anvil"
+x = 9.5
+y = -3.0
+shape = "circle"
+size = 1
+deps = ["iron_block"]
 subtitle = "Five blocks, screws and plates."
 task = [{ item = "minecraft:anvil" }]
+hide_dependents = true
 text = """
 [num]Five[/] [item]Iron Blocks[/], [item]Iron Screws[/] and [item]Iron Plates[/]. The Forge Hammer is built around it.
 """
 
 [[quest]]
 key = "hammer"
-x = 14
-y = -4
-role = "side"
-deps = ["anvil"]
-icon = "gtceu:lp_steam_forge_hammer"
 title = "Forge Hammer"
+role = "side"
+icon = "gtceu:lp_steam_forge_hammer"
+x = 9.0
+y = 5.0
+shape = "hexagon"
+size = 1.25
+deps = ["boiler", "bronze_hull", "anvil"]
 subtitle = "Three ingots, two plates."
 task = [{ item = "gtceu:lp_steam_forge_hammer" }]
 text = """
@@ -329,29 +416,30 @@ An [item]Anvil[/] and a [item]Piston[/] in bronze pipes. [num]Three[/] ingots be
 
 [[quest]]
 key = "wrought_plates"
-deps = ["hammer"]
-hide_lines = true
-x = 5.5
-y = 13
+title = "Wrought Iron Plates"
 role = "detail"
 icon = "gtceu:wrought_iron_plate"
-title = "Wrought Iron Plates"
+x = 11.5
+y = -5.0
+shape = "circle"
+size = 1
+deps = ["hammer"]
 subtitle = "The first job for the hammer."
 task = [{ item = "gtceu:wrought_iron_plate", count = 8 }]
 text = """
 [num]Eight[/] [item]Wrought Iron Plates[/] make an [item]Ultra Low Voltage Machine Casing[/], later in this chapter.
 """
 
-# ------------------------------------------------------------------ Fireclay, the blast furnace and Steel
-
 [[quest]]
 key = "fireclay"
-x = 14
-y = 0
-role = "spine"
-deps = ["compressor"]
-icon = "gtceu:fireclay_dust"
 title = "Fireclay"
+role = "spine"
+icon = "gtceu:fireclay_dust"
+x = 8.0
+y = 0.0
+shape = "circle"
+size = 1
+deps = ["compressor"]
 subtitle = "Brick dust and clay dust."
 task = [{ item = "gtceu:fireclay_dust", count = 4 }]
 text = """
@@ -360,12 +448,14 @@ Grind [item]Bricks[/] and [item]Clay[/] into dust, with the mortar or the Macera
 
 [[quest]]
 key = "firebricks"
-x = 16
-y = 0
-role = "spine"
-deps = ["fireclay"]
-icon = "gtceu:firebricks"
 title = "Firebricks"
+role = "spine"
+icon = "gtceu:firebricks"
+x = 7.0
+y = -1.5
+shape = "circle"
+size = 1
+deps = ["fireclay"]
 subtitle = "Compress, bake, stack."
 task = [{ item = "gtceu:compressed_fireclay" }, { item = "gtceu:firebricks", count = 4 }]
 text = """
@@ -376,12 +466,14 @@ Compress [item]Fireclay Dust[/], bake it in a furnace into a [item]Firebrick[/],
 
 [[quest]]
 key = "pbf"
-x = 18
-y = 0
-role = "spine"
-deps = ["firebricks"]
-icon = "gtceu:primitive_blast_furnace"
 title = "Primitive Blast Furnace"
+role = "spine"
+icon = "gtceu:primitive_blast_furnace"
+x = 6.5
+y = 1.0
+shape = "gear"
+size = 1.5
+deps = ["firebricks"]
 subtitle = "Your first furnace for Steel."
 task = [{ item = "gtceu:primitive_blast_furnace" }]
 reward = [{ item = "minecraft:coal_block", count = 8 }]
@@ -393,13 +485,15 @@ Build the furnace around its controller. It turns [item]Iron[/] and fuel into [i
 
 [[quest]]
 key = "steel_age"
-x = 20.5
-y = 0
-task = [{ item = "gtceu:steel_ingot" }]
-role = "milestone"
-deps = ["bronze_age", "pbf"]
 title = "Steel"
+role = "milestone"
+x = 15.0
+y = 8.0
+shape = "circle"
+size = 2
+deps = ["bronze_age", "pbf"]
 subtitle = "The metal of the rest of the game."
+task = [{ item = "gtceu:steel_ingot" }]
 reward = [{ title = "More fuel or more iron", choice = [{ item = "gtceu:coke_block", count = 8 }, { item = "minecraft:coal_block", count = 16 }, { item = "gtceu:wrought_iron_ingot", count = 16 }] }]
 text = """
 Your first [item]Steel[/] ingot. From here on Steel is in nearly everything: molds, bolts, high-pressure machines, GTNA's large steam machines and the first circuit.
@@ -407,28 +501,31 @@ Your first [item]Steel[/] ingot. From here on Steel is in nearly everything: mol
 
 [[quest]]
 key = "high_pressure"
-x = 20.5
-y = -2.5
-role = "optional"
-deps = ["steel_age"]
-icon = "gtceu:hp_steam_solid_boiler"
 title = "High Pressure"
+role = "optional"
+icon = "gtceu:hp_steam_solid_boiler"
+x = 15.0
+y = 0.0
+shape = "hexagon"
+size = 1.25
+deps = ["steel_age"]
 subtitle = "Steel boilers, faster machines."
 task = [{ item = "gtceu:hp_steam_solid_boiler" }]
+hide_dependents = true
 text = """
 With [item]Steel[/] you can build the high-pressure boiler and high-pressure versions of every steam machine. They finish recipes in [num]half the time[/] and burn more steam doing it.
 """
 
-# ------------------------------------------------------------------ GTNA's Large steam machines (above Steel)
-
 [[quest]]
 key = "stronze"
-x = 23
-y = -2
-role = "side"
-deps = ["steel_age"]
-icon = "gtna:stronze_ingot"
 title = "Stronze"
+role = "side"
+icon = "gtna:stronze_ingot"
+x = 16.5
+y = 6.0
+shape = "circle"
+size = 1
+deps = ["steel_age", "alloy"]
 subtitle = "Bronze and Steel together."
 task = [{ item = "gtna:stronze_ingot", count = 3 }]
 text = """
@@ -437,12 +534,15 @@ text = """
 
 [[quest]]
 key = "precision"
-x = 25
-y = -2
-role = "side"
-deps = ["stronze"]
-icon = "gtna:precision_steam_component"
+hide_dependents = true
 title = "Precision Steam Component"
+role = "side"
+icon = "gtna:precision_steam_component"
+x = 17.5
+y = 8.0
+shape = "circle"
+size = 1
+deps = ["steel_age"]
 subtitle = "Every Large machine needs it."
 task = [{ item = "gtna:precision_steam_component", count = 2 }]
 text = """
@@ -451,26 +551,31 @@ Bronze gears, rods and springs around [num]one[/] small [item]Steel Spring[/]. E
 
 [[quest]]
 key = "breel"
-x = 23
-y = 2
-role = "side"
-deps = ["steel_age"]
-icon = "gtna:breel_ingot"
 title = "Breel"
+role = "side"
+icon = "gtna:breel_ingot"
+x = 18.0
+y = 9.5
+shape = "circle"
+size = 1
+deps = ["steel_age"]
 subtitle = "Bronze and Steel, mixed by hand."
 task = [{ item = "gtna:breel_dust", count = 3 }, { item = "gtna:breel_ingot", count = 3 }]
+hide_dependents = true
 text = """
 [num]Two[/] [item]Bronze Dust[/] and [num]one[/] [item]Steel Dust[/] on a crafting table make [num]three[/] [item]Breel Dust[/]; a furnace turns it into ingots. Its tiny pipes go into several Large steam machines.
 """
 
 [[quest]]
 key = "kiln"
-x = 16
-y = 2
-role = "side"
-deps = ["firebricks"]
-icon = "gtna:brick_kiln"
 title = "Brick Kiln"
+role = "side"
+icon = "gtna:brick_kiln"
+x = 12.0
+y = -1.0
+shape = "gear"
+size = 1.5
+deps = ["wrought_plates"]
 subtitle = "A primitive kiln for ceramics."
 task = [{ item = "gtna:brick_kiln" }]
 text = """
@@ -481,12 +586,14 @@ It fires bricks from compressed clay and coal without any steam, and it is where
 
 [[quest]]
 key = "clay_compound"
-x = 18
-y = 2
-role = "side"
-deps = ["kiln", "macerator"]
-icon = "gtna:clay_compound_ingot"
 title = "Clay Compound"
+role = "side"
+icon = "gtna:clay_compound_ingot"
+x = 14.5
+y = 1.5
+shape = "circle"
+size = 1
+deps = ["kiln", "macerator"]
 subtitle = "Clay, stone and flint, fired."
 task = [{ item = "gtna:clay_compound_ingot", count = 16 }]
 text = """
@@ -495,47 +602,49 @@ text = """
 
 [[quest]]
 key = "hydraulic_piston"
-deps = ["clay_compound"]
-hide_lines = true
-x = 22.5
-y = 4.5
+title = "Hydraulic Piston"
 role = "side"
 icon = "gtna:hydraulic_piston"
-title = "Hydraulic Piston"
+x = 16.5
+y = 0.0
+shape = "circle"
+size = 1
+deps = ["clay_compound"]
 subtitle = "Clay Compound in motion."
 task = [{ item = "gtna:hydraulic_motor", count = 2 }, { item = "gtna:hydraulic_piston", count = 2 }]
 text = """
 A [item]Hydraulic Motor[/] is bronze gears and tiny pipes around an iron rotor. Add [num]three[/] [item]Clay Compound Plates[/] and it becomes a [item]Hydraulic Piston[/], the moving part of GTNA's Large steam machines.
 """
 
-# ------------------------------------------------------------------ the steam multiblock gallery (top)
-
 [[quest]]
 key = "hydraulic_conveyor"
-deps = ["hydraulic_piston", "rubber_sheet"]
-hide_lines = true
-x = 25
-y = 5
-role = "detail"
-group = "large"
 title = "Hydraulic Conveyor"
+role = "detail"
+x = 17.0
+y = 4.5
+shape = "circle"
+size = 1
+deps = ["hydraulic_piston", "rubber_sheet"]
 subtitle = "Rubber belts, steam muscles."
 task = [{ item = "gtna:hydraulic_conveyor" }]
+group = "large"
 text = """
 A belt of [item]Rubber[/] driven by a [item]Hydraulic Motor[/]. Four Large machines move their work with it: the Alloy Smelter, the Wiremill, the Cutter and the Bender.
 """
 
 [[quest]]
 key = "gallery"
-x = 25
-y = 2
-deps = ["precision", "hydraulic_piston", "breel"]
-group = "large"
+title = "Steam Multiblocks"
 role = "hint"
 icon = "gtna:precision_steam_component"
-title = "Steam Multiblocks"
+x = 22.0
+y = 4.5
+shape = "circle"
+size = 2
+deps = ["precision", "hydraulic_piston", "breel"]
 subtitle = "GTNA's Large machines, side by side."
 checkmark = "Open the gallery"
+group = "large"
 text = """
 Every Large steam machine GTNA makes possible in this age, in one place. Each is the multiblock version of a machine you already know and runs its recipes [mech]in parallel[/], up to [num]32 EU/t[/].
 
@@ -544,300 +653,321 @@ They all start from a [item]Precision Steam Component[/]; several need [item]Hyd
 
 [[quest]]
 key = "large_steam"
-deps = ["gallery", "grinder"]
-hide_lines = true
-x = 28.0
-y = -3.5
-group = "ore"
 title = "Large Steam Machines"
-task = [{ item = "gtna:large_steam_crusher" }]
 role = "gallery"
-optional = false
+x = 22.0
+y = 9.0
+shape = "gear"
+size = 1.5
+deps = ["gallery", "grinder", "alloy"]
 subtitle = "Four grinders in one machine."
+task = [{ item = "gtna:large_steam_crusher" }]
+group = "ore"
+optional = false
 text = """
 Crushes ore in parallel. Four Steam Grinders, Stronze Plates and a Precision Steam Component. It opens GTNA's Large steam line.
 """
 
 [[quest]]
 key = "large_alloy"
-deps = ["gallery", "hydraulic_conveyor"]
-hide_lines = true
-x = 29.6
-y = 3.3
-group = "heat"
+title = "Large Steam Alloy Smelter"
 role = "gallery"
 icon = "gtna:large_steam_alloy_smelter"
-title = "Large Steam Alloy Smelter"
+x = 16.0
+y = 2.5
+shape = "gear"
+size = 1.5
+deps = ["gallery", "hydraulic_conveyor"]
 subtitle = "Alloy Smelter, multiblock."
 task = [{ item = "gtna:large_steam_alloy_smelter" }]
+group = "heat"
 text = """
 Alloys in parallel. Its [item]Hydraulic Conveyor[/] needs Rubber Sheets.
 """
 
 [[quest]]
 key = "large_compressor"
-deps = ["gallery"]
-hide_lines = true
-x = 28.0
-y = -0.5
-group = "forming"
+title = "Large Steam Compressor"
 role = "gallery"
 icon = "gtna:large_steam_compressor"
-title = "Large Steam Compressor"
+x = 25.0
+y = 5.5
+shape = "gear"
+size = 1.5
+deps = ["gallery", "alloy"]
 subtitle = "Compressor, multiblock."
 task = [{ item = "gtna:large_steam_compressor" }]
+group = "forming"
 text = """
 Plates, blocks and bricks in bulk. Two [item]Hydraulic Pistons[/] and Stronze.
 """
 
 [[quest]]
 key = "large_hammer"
-deps = ["gallery", "hammer"]
-hide_lines = true
-x = 29.6
-y = 0.30000000000000004
-group = "forming"
+title = "Large Steam Hammer"
 role = "gallery"
 icon = "gtna:large_steam_hammer"
-title = "Large Steam Hammer"
+x = 27.0
+y = 4.5
+shape = "gear"
+size = 1.5
+deps = ["gallery"]
 subtitle = "Hammer, multiblock."
 task = [{ item = "gtna:large_steam_hammer" }]
+group = "forming"
 text = """
 Plates and crushed ore in bulk, built around your Forge Hammer and an Anvil.
 """
 
 [[quest]]
 key = "large_furnace"
-deps = ["gallery", "steam_furnace"]
-hide_lines = true
-x = 28.0
-y = 2.5
-group = "heat"
+title = "Large Steam Furnace"
 role = "gallery"
 icon = "gtna:large_steam_furnace"
-title = "Large Steam Furnace"
+x = 18.5
+y = -6.0
+shape = "gear"
+size = 1.5
+deps = ["gallery", "steam_furnace", "alloy"]
 subtitle = "Furnace, multiblock."
 task = [{ item = "gtna:large_steam_furnace" }]
+group = "heat"
 text = """
 Smelting in bulk, with Stronze and [item]Breel[/] pipes.
 """
 
 [[quest]]
 key = "large_extractor"
-deps = ["gallery", "extractor"]
 hide_lines = true
-x = 36.0
-y = 3.3
-group = "heat"
+title = "Large Steam Extractor"
 role = "gallery"
 icon = "gtna:large_steam_extractor"
-title = "Large Steam Extractor"
+x = 23.5
+y = 2.5
+shape = "gear"
+size = 1.5
+deps = ["gallery", "extractor"]
 subtitle = "Extractor, multiblock."
 task = [{ item = "gtna:large_steam_extractor" }]
+group = "heat"
 text = """
 Rubber in bulk. Glass, a Hydraulic Pump and a Hydraulic Piston.
 """
 
 [[quest]]
 key = "large_mixer"
-deps = ["gallery", "glass"]
-hide_lines = true
-x = 31.2
-y = 2.5
-group = "heat"
+title = "Large Steam Mixer"
 role = "gallery"
 icon = "gtna:large_steam_mixer"
-title = "Large Steam Mixer"
+x = 20.5
+y = 7.0
+shape = "gear"
+size = 1.5
+deps = ["gallery", "glass"]
 subtitle = "Mixer, multiblock."
 task = [{ item = "gtna:large_steam_mixer" }]
+group = "heat"
 text = """
 [tip]The Steam age's only mixer[/]: Breel, Clay Compound and every mixer recipe up to [num]32 EU/t[/].
 """
 
 [[quest]]
 key = "large_centrifuge"
-deps = ["large_steam"]
-hide_lines = true
-x = 34.4
-y = -3.5
-group = "ore"
+title = "Large Steam Centrifuge"
 role = "gallery"
 icon = "gtna:large_steam_centrifuge"
-title = "Large Steam Centrifuge"
+x = 25.5
+y = 12.0
+shape = "gear"
+size = 1.5
+deps = ["large_steam"]
 subtitle = "Centrifuge, multiblock."
 task = [{ item = "gtna:large_steam_centrifuge" }]
+group = "ore"
 text = """
 Splits dusts, resin and mixtures into their parts.
 """
 
 [[quest]]
 key = "large_thermal"
-deps = ["large_steam"]
-hide_lines = true
-x = 31.2
-y = -3.5
-group = "ore"
+title = "Large Steam Thermal Centrifuge"
 role = "gallery"
 icon = "gtna:large_steam_thermal_centrifuge"
-title = "Large Steam Thermal Centrifuge"
+x = 26.5
+y = 8.5
+shape = "gear"
+size = 1.5
+deps = ["large_steam"]
 subtitle = "Thermal Centrifuge, multiblock."
 task = [{ item = "gtna:large_steam_thermal_centrifuge" }]
+group = "ore"
 text = """
 Heats purified ore apart for the byproducts the Macerator leaves behind.
 """
 
 [[quest]]
 key = "large_washer"
-deps = ["large_steam"]
-hide_lines = true
-x = 29.6
-y = -2.7
-group = "ore"
+title = "Large Steam Ore Washer"
 role = "gallery"
 icon = "gtna:large_steam_ore_washer"
-title = "Large Steam Ore Washer"
+x = 20.0
+y = 9.0
+shape = "gear"
+size = 1.5
+deps = ["large_steam"]
 subtitle = "Ore Washer, multiblock."
 task = [{ item = "gtna:large_steam_ore_washer" }]
+group = "ore"
 text = """
 Washes crushed ore into purified ore, with water.
 """
 
 [[quest]]
 key = "large_sifter"
-deps = ["large_steam"]
-hide_lines = true
-x = 32.8
-y = -2.7
-group = "ore"
+title = "Large Steam Sifter"
 role = "gallery"
 icon = "gtna:large_steam_sifter"
-title = "Large Steam Sifter"
+x = 27.0
+y = 6.5
+shape = "gear"
+size = 1.5
+deps = ["large_steam"]
 subtitle = "Sifter, multiblock."
 task = [{ item = "gtna:large_steam_sifter" }]
+group = "ore"
 text = """
 Sifts purified ore for gems.
 """
 
 [[quest]]
 key = "large_lathe"
-deps = ["gallery"]
-hide_lines = true
-x = 34.4
-y = -0.5
-group = "forming"
+title = "Large Steam Lathe"
 role = "gallery"
 icon = "gtna:large_steam_lathe"
-title = "Large Steam Lathe"
+x = 24.0
+y = -1.0
+shape = "gear"
+size = 1.5
+deps = ["gallery"]
 subtitle = "Lathe, multiblock."
 task = [{ item = "gtna:large_steam_lathe" }]
+group = "forming"
 text = """
 Rods and screws in bulk.
 """
 
 [[quest]]
 key = "large_wiremill"
-deps = ["gallery", "hydraulic_conveyor"]
-hide_lines = true
-x = 36.0
-y = 0.30000000000000004
-group = "forming"
+title = "Large Steam Wiremill"
 role = "gallery"
 icon = "gtna:large_steam_wiremill"
-title = "Large Steam Wiremill"
+x = 18.5
+y = 6.5
+shape = "gear"
+size = 1.5
+deps = ["gallery", "hydraulic_conveyor"]
 subtitle = "Wiremill, multiblock."
 task = [{ item = "gtna:large_steam_wiremill" }]
+group = "forming"
 text = """
 Wires straight from ingots, without the wire cutter.
 """
 
 [[quest]]
 key = "large_cutting"
-deps = ["gallery", "glass", "hydraulic_conveyor"]
-hide_lines = true
-x = 37.6
-y = -0.5
-group = "forming"
+title = "Large Steam Cutting Machine"
 role = "gallery"
 icon = "gtna:large_steam_cutting"
-title = "Large Steam Cutting Machine"
+x = 22.0
+y = 0.5
+shape = "gear"
+size = 1.5
+deps = ["gallery", "glass", "hydraulic_conveyor"]
 subtitle = "Cutting Machine, multiblock."
 task = [{ item = "gtna:large_steam_cutting" }]
+group = "forming"
 text = """
 Cuts blocks into plates and rods into bolts, with water.
 """
 
 [[quest]]
 key = "large_bending"
-deps = ["gallery", "hydraulic_conveyor"]
-hide_lines = true
-x = 31.2
-y = -0.5
-group = "forming"
+title = "Large Steam Bender"
 role = "gallery"
 icon = "gtna:large_steam_bending"
-title = "Large Steam Bender"
+x = 19.5
+y = -0.5
+shape = "gear"
+size = 1.5
+deps = ["gallery", "hydraulic_conveyor"]
 subtitle = "Bender, multiblock."
 task = [{ item = "gtna:large_steam_bending" }]
+group = "forming"
 text = """
 Bends ingots into plates and foils.
 """
 
 [[quest]]
 key = "large_press"
-deps = ["gallery"]
-hide_lines = true
-x = 32.8
-y = 0.30000000000000004
-group = "forming"
+title = "Large Steam Forming Press"
 role = "gallery"
 icon = "gtna:large_steam_forming_press"
-title = "Large Steam Forming Press"
+x = 18.5
+y = 4.5
+shape = "gear"
+size = 1.5
+deps = ["gallery"]
 subtitle = "Forming Press, multiblock."
 task = [{ item = "gtna:large_steam_forming_press" }]
+group = "forming"
 text = """
 Presses shapes with molds.
 """
 
 [[quest]]
 key = "large_solar"
-deps = ["gallery", "high_pressure"]
-hide_lines = true
-x = 34.4
-y = 2.5
-group = "heat"
+title = "Large Steam Solar Boiler"
 role = "gallery"
 icon = "gtna:large_steam_solar_boiler"
-title = "Large Steam Solar Boiler"
+x = 19.5
+y = 1.5
+shape = "gear"
+size = 1.5
+deps = ["gallery", "high_pressure", "alloy"]
 subtitle = "Solar Boiler, multiblock."
 task = [{ item = "gtna:large_steam_solar_boiler" }]
+group = "heat"
 text = """
 [tip]Steam from the sun at scale[/]: no fuel, [warn]nothing at night[/].
 """
 
 [[quest]]
 key = "leap_forward"
-deps = ["gallery", "pbf"]
-hide_lines = true
-x = 32.8
-y = 3.3
-group = "heat"
+title = "Leap Forward Blast Furnace"
 role = "gallery"
 icon = "gtna:leap_forward_one_blast_furnace"
-title = "Leap Forward Blast Furnace"
+x = 26.0
+y = 2.5
+shape = "gear"
+size = 1.5
+deps = ["gallery"]
 subtitle = "Leap Forward Blast Furnace, multiblock."
 task = [{ item = "gtna:leap_forward_one_blast_furnace" }]
+group = "heat"
 text = """
 Your Primitive Blast Furnace and [num]four[/] Precision Steam Components make GTNA's giant blast furnace: the same Steel recipes, many at once. [note]The structure is huge; check its preview.[/]
 """
 
 [[quest]]
 key = "stone_furnace"
-x = 2
-y = -2
-deps = ["boiler"]
+title = "Primitive Stone Furnace"
 role = "gallery"
 icon = "gtna:primitive_stone_furnace"
-title = "Primitive Stone Furnace"
+x = 2.5
+y = 10.5
+shape = "diamond"
+size = 1
+deps = ["bronze_age"]
 subtitle = "Primitive Stone Furnace, multiblock."
 task = [{ item = "gtna:primitive_stone_furnace" }]
 text = """
@@ -846,48 +976,51 @@ A primitive multiblock furnace.
 
 [[quest]]
 key = "cactus_wonder"
-deps = ["gallery"]
-hide_lines = true
-x = 37.6
-y = 2.5
-group = "heat"
+title = "Cactus Wonder"
 role = "gallery"
 icon = "gtna:steam_cactus_wonder"
-title = "Cactus Wonder"
+x = 23.0
+y = 7.0
+shape = "gear"
+size = 1.5
+deps = ["gallery"]
 subtitle = "Cactus Wonder, multiblock."
 task = [{ item = "gtna:steam_cactus_wonder" }]
+group = "heat"
 text = """
 Cactus, bronze brick casings and a Hydraulic Regulator. It burns carbon fuels into steam: [num]8000 mB[/] per Coal or Charcoal, [num]90000[/] per block, [num]16000[/] per Coke, [num]180000[/] per Coke block.
 """
 
-# ------------------------------------------------------------------ Steel plate, molds, glass and rubber
-
 [[quest]]
 key = "steel_plate"
-x = 20.5
-y = 5
-group = "hull"
-role = "spine"
-deps = ["steel_age"]
-icon = "gtceu:steel_plate"
 title = "Steel Plates"
+role = "spine"
+icon = "gtceu:steel_plate"
+x = 14.5
+y = 11.5
+shape = "circle"
+size = 1
+deps = ["steel_age"]
 subtitle = "Hammer them, do not waste them."
 task = [{ item = "gtceu:steel_plate", count = 8 }]
+group = "hull"
 text = """
 The Forge Hammer gets [num]two[/] plates out of [num]three[/] ingots. Molds, bolts and every Low Voltage hull start here.
 """
 
 [[quest]]
 key = "empty_mold"
-x = 18
-y = 7
-group = "circuit"
-role = "spine"
-deps = ["steel_plate"]
-icon = "gtceu:empty_mold"
 title = "Empty Mold"
+role = "spine"
+icon = "gtceu:empty_mold"
+x = 12.5
+y = 12.5
+shape = "circle"
+size = 1
+deps = ["steel_plate"]
 subtitle = "Four plates, a hammer and a file."
 task = [{ item = "gtceu:empty_mold", count = 3 }]
+group = "circuit"
 text = """
 [num]Four[/] [item]Steel Plates[/] with a hammer and a file. Hammer an Empty Mold again to give it a shape.
 
@@ -896,12 +1029,14 @@ text = """
 
 [[quest]]
 key = "block_mold"
-x = 20.5
-y = 9
-role = "detail"
-deps = ["empty_mold"]
-icon = "gtceu:block_casting_mold"
 title = "Block Mold"
+role = "detail"
+icon = "gtceu:block_casting_mold"
+x = 9.0
+y = 9.0
+shape = "circle"
+size = 1
+deps = ["empty_mold"]
 subtitle = "For glass."
 task = [{ item = "gtceu:block_casting_mold" }]
 text = """
@@ -910,12 +1045,14 @@ In the Alloy Smelter, the [item]Block[/] mold turns [item]Glass Dust[/] into [it
 
 [[quest]]
 key = "plate_mold"
-x = 18
-y = 9
-role = "detail"
-deps = ["empty_mold"]
-icon = "gtceu:plate_casting_mold"
 title = "Plate Mold"
+role = "detail"
+icon = "gtceu:plate_casting_mold"
+x = 9.0
+y = 10.5
+shape = "circle"
+size = 1
+deps = ["empty_mold"]
 subtitle = "For rubber sheets."
 task = [{ item = "gtceu:plate_casting_mold" }]
 text = """
@@ -924,41 +1061,48 @@ In the Alloy Smelter, the [item]Plate[/] mold turns [num]two[/] [item]Rubber Bar
 
 [[quest]]
 key = "ball_mold"
-x = 16
-y = 7
-group = "circuit"
-role = "spine"
-deps = ["empty_mold"]
-icon = "gtceu:ball_casting_mold"
 title = "Ball Mold"
+role = "spine"
+icon = "gtceu:ball_casting_mold"
+x = 10.5
+y = 13.5
+shape = "circle"
+size = 1
+deps = ["empty_mold"]
 subtitle = "For glass tubes."
 task = [{ item = "gtceu:ball_casting_mold" }]
+group = "circuit"
 text = """
 In the Alloy Smelter, the [item]Ball[/] mold turns [item]Glass Dust[/] into a [item]Glass Tube[/].
 """
 
 [[quest]]
 key = "glass"
-x = 20.5
-y = 11
-role = "side"
-deps = ["block_mold"]
-icon = "minecraft:glass"
 title = "Glass"
+role = "side"
+icon = "minecraft:glass"
+x = 10.5
+y = 9.0
+shape = "circle"
+size = 1
+deps = ["block_mold", "alloy"]
 subtitle = "No furnace makes it here."
 task = [{ item = "gtceu:glass_dust", count = 4 }, { item = "minecraft:glass", count = 4 }]
+hide_dependents = true
 text = """
 [warn]Sand does not smelt into Glass in this pack.[/] Grind [item]Sand[/] into [item]Quartz Sand[/] and [item]Flint[/] into [item]Flint Dust[/] with the mortar, mix them into [item]Glass Dust[/], and cast it with the Block mold.
 """
 
 [[quest]]
 key = "extractor"
-x = 18
-y = 11
-role = "side"
-deps = ["glass"]
-icon = "gtceu:lp_steam_extractor"
 title = "Extractor"
+role = "side"
+icon = "gtceu:lp_steam_extractor"
+x = 16.5
+y = 10.0
+shape = "hexagon"
+size = 1.25
+deps = ["boiler", "bronze_hull", "glass"]
 subtitle = "It needs a pane of glass."
 task = [{ item = "gtceu:lp_steam_extractor" }]
 text = """
@@ -966,13 +1110,31 @@ A [item]Piston[/], a pane of [item]Glass[/] and bronze pipes. It pulls [num]thre
 """
 
 [[quest]]
+key = "sticky_resin"
+title = "Sticky Resin"
+role = "side"
+icon = "gtceu:sticky_resin"
+x = 10.5
+y = 12.0
+shape = "circle"
+size = 1
+deps = ["bronze_age"]
+subtitle = "Tap the rubber trees."
+task = [{ item = "gtceu:sticky_resin" }]
+text = """
+Rubber trees give Sticky Resin. It becomes Resistors, the resin Circuit Board and, in the Extractor, Raw Rubber.
+"""
+
+[[quest]]
 key = "raw_rubber"
-x = 16
-y = 11
-role = "detail"
-deps = ["extractor"]
-icon = "gtceu:raw_rubber_dust"
 title = "Raw Rubber"
+role = "detail"
+icon = "gtceu:raw_rubber_dust"
+x = 15.0
+y = 14.5
+shape = "circle"
+size = 1
+deps = ["extractor", "sticky_resin"]
 subtitle = "The rubber trees pay off."
 task = [{ item = "gtceu:raw_rubber_dust", count = 6 }]
 text = """
@@ -981,12 +1143,14 @@ text = """
 
 [[quest]]
 key = "rubber_bar"
-x = 14
-y = 11
-role = "detail"
-deps = ["raw_rubber"]
-icon = "gtceu:rubber_ingot"
 title = "Rubber Bar"
+role = "detail"
+icon = "gtceu:rubber_ingot"
+x = 17.0
+y = 14.5
+shape = "circle"
+size = 1
+deps = ["raw_rubber"]
 subtitle = "Dust and sulfur."
 task = [{ item = "gtceu:sulfur_dust" }, { item = "gtceu:rubber_ingot", count = 2 }]
 text = """
@@ -997,12 +1161,14 @@ text = """
 
 [[quest]]
 key = "rubber_sheet"
-x = 12
-y = 11
-role = "detail"
-deps = ["rubber_bar"]
-icon = "gtceu:rubber_plate"
 title = "Rubber Sheet"
+role = "detail"
+icon = "gtceu:rubber_plate"
+x = 20.0
+y = 14.0
+shape = "circle"
+size = 1
+deps = ["rubber_bar"]
 subtitle = "Insulation for wires."
 task = [{ item = "gtceu:rubber_plate", count = 4 }]
 text = """
@@ -1011,91 +1177,101 @@ text = """
 
 [[quest]]
 key = "cable"
-x = 9.5
-y = 9.25
-group = "circuit"
-role = "side"
-deps = ["rubber_sheet"]
-icon = "gtceu:red_alloy_single_cable"
 title = "Red Alloy Cable"
+role = "side"
+icon = "gtceu:red_alloy_single_cable"
+x = 21.5
+y = 15.5
+shape = "circle"
+size = 1
+deps = ["rubber_sheet"]
 subtitle = "A wire you can touch."
 task = [{ item = "gtceu:red_alloy_single_cable", count = 4 }]
+group = "circuit"
+hide_dependents = true
 text = """
 A [item]Red Alloy Wire[/] and a [item]Rubber Sheet[/], crafted together. [warn]Bare wires shock whoever touches them.[/]
 """
 
-# ------------------------------------------------------------------ the first circuit
-
 [[quest]]
 key = "glass_tube"
-x = 14
-y = 7
-group = "circuit"
-role = "spine"
-deps = ["ball_mold"]
-icon = "gtceu:glass_tube"
 title = "Glass Tube"
+role = "spine"
+icon = "gtceu:glass_tube"
+x = 14.0
+y = 13.0
+shape = "circle"
+size = 1
+deps = ["ball_mold", "alloy"]
 subtitle = "Glass dust in the Ball mold."
 task = [{ item = "gtceu:glass_tube", count = 4 }]
+group = "circuit"
 text = """
 [item]Glass Dust[/] and the Ball mold in the Alloy Smelter.
 """
 
 [[quest]]
 key = "vacuum_tube"
-x = 12
-y = 7
-group = "circuit"
-role = "spine"
-deps = ["glass_tube"]
-icon = "gtceu:vacuum_tube"
 title = "Vacuum Tube"
+role = "spine"
+icon = "gtceu:vacuum_tube"
+x = 18.0
+y = 13.0
+shape = "circle"
+size = 1
+deps = ["glass_tube"]
 subtitle = "The first electronic part."
 task = [{ item = "gtceu:vacuum_tube", count = 2 }]
+group = "circuit"
 text = """
 A [item]Glass Tube[/], [num]two[/] [item]Steel Bolts[/] and [num]three[/] [item]Copper Wires[/]. A saw cuts Steel Rods into bolts.
 """
 
 [[quest]]
 key = "resistor"
-x = 11
-y = 5
-group = "circuit"
-role = "detail"
-deps = ["vacuum_tube"]
-icon = "gtceu:resistor"
 title = "Resistors"
+role = "detail"
+icon = "gtceu:resistor"
+x = 16.5
+y = 12.0
+shape = "circle"
+size = 1
+deps = ["sticky_resin"]
 subtitle = "Paper, resin, carbon and copper."
 task = [{ item = "gtceu:resistor", count = 2 }]
+group = "circuit"
 text = """
 [item]Sticky Resin[/], [item]Paper[/], [item]Copper Wire[/] and [item]Coal[/] or [item]Charcoal Dust[/] make [num]two[/] [item]Resistors[/] by hand.
 """
 
 [[quest]]
 key = "board"
-x = 11
-y = 9
-group = "circuit"
-role = "detail"
-deps = ["vacuum_tube", "macerator"]
-hide_lines = true
-icon = "gtceu:resin_printed_circuit_board"
 title = "Circuit Board"
+role = "detail"
+icon = "gtceu:resin_printed_circuit_board"
+x = 13.0
+y = 10.5
+shape = "circle"
+size = 1
+deps = ["sticky_resin", "macerator", "compressor"]
 subtitle = "Wood, resin and copper."
 task = [{ item = "gtceu:resin_circuit_board" }, { item = "gtceu:resin_printed_circuit_board" }]
+group = "circuit"
 text = """
 [item]Wood Plates[/] (wood dust from the Macerator, pressed in the Compressor) coated in [item]Sticky Resin[/] make a [item]Resin Circuit Board[/]. [num]Eight[/] [item]Copper Wires[/] around it print the circuit.
 """
 
 [[quest]]
 key = "first_circuit"
-x = 7.5
-y = 7
-deps = ["vacuum_tube", "resistor", "board", "cable"]
-task = [{ item = "gtceu:basic_electronic_circuit" }]
-role = "milestone"
 title = "The First Circuit"
+role = "milestone"
+x = 22.0
+y = 11.5
+shape = "circle"
+size = 2
+deps = ["vacuum_tube", "resistor", "board", "cable"]
 subtitle = "The key to Low Voltage."
+task = [{ item = "gtceu:basic_electronic_circuit" }]
 reward = [{ xp_levels = 10 }]
 text = """
 [num]Two[/] [item]Vacuum Tubes[/], [num]two[/] [item]Resistors[/], the printed board, a [item]Steel Plate[/] and [num]three[/] [item]Red Alloy Cables[/]: the [item]Basic Electronic Circuit[/]. Every Low Voltage machine needs at least one.
@@ -1103,12 +1279,14 @@ text = """
 
 [[quest]]
 key = "large_boiler"
-x = 7.5
-y = 4.5
-role = "optional"
-deps = ["first_circuit"]
-icon = "gtceu:bronze_large_boiler"
 title = "Large Bronze Boiler"
+role = "optional"
+icon = "gtceu:bronze_large_boiler"
+x = 21.5
+y = 14.0
+shape = "gear"
+size = 1.5
+deps = ["first_circuit"]
 subtitle = "A first job for your circuits."
 task = [{ item = "gtceu:bronze_large_boiler" }]
 text = """
@@ -1117,69 +1295,65 @@ Its controller asks for [item]Basic Electronic Circuits[/] and [item]Tin Cables[
 
 [[quest]]
 key = "lv_casing"
-deps = ["steel_plate"]
-hide_lines = true
-x = 7.5
-y = 13
-role = "spine"
-group = "hull"
 title = "LV Machine Casing"
+role = "spine"
+x = 20.0
+y = 10.5
+shape = "circle"
+size = 1
+deps = ["steel_plate"]
 subtitle = "Eight Steel Plates and a wrench."
 task = [{ item = "gtceu:lv_machine_casing" }]
+group = "hull"
 text = """
 The shell of every Low Voltage machine: [num]8 Steel Plates[/] bent around a wrench. It is the reason your Steel line has to keep running.
 """
 
 [[quest]]
 key = "tin_cable"
-x = 10
-y = 11
-role = "side"
-deps = ["rubber_sheet"]
-group = "hull"
 title = "Tin Cable"
+role = "side"
+x = 20.0
+y = 16.0
+shape = "circle"
+size = 1
+deps = ["rubber_sheet"]
 subtitle = "Insulated, at last."
 task = [{ item = "gtceu:tin_single_cable", count = 2 }]
+group = "hull"
+hide_dependents = true
 text = """
 A [item]Tin Wire[/] wrapped in a [item]Rubber Sheet[/]. Bare wires hurt; cables do not. The LV hull takes two.
 """
 
 [[quest]]
 key = "lv_hull"
-x = 7.5
-y = 11
-role = "milestone"
-deps = ["lv_casing", "tin_cable", "wrought_plates"]
-group = "hull"
 title = "LV Machine Hull"
+role = "milestone"
+x = 24.5
+y = 10.0
+shape = "diamond"
+size = 1.75
+deps = ["lv_casing", "tin_cable", "wrought_plates"]
 subtitle = "The body of every electric machine."
 task = [{ item = "gtceu:lv_machine_hull" }]
+group = "hull"
 text = """
 Casing, [num]two[/] Tin Cables, [num]two[/] Wrought Iron Plates and a Steel Plate. With a circuit in the other hand, Low Voltage is one step away.
 """
 
-[exit]
-x = 4.5
-y = 9
-title = "Ascend to Low Voltage"
-subtitle = "Steam stays; electricity begins."
-deps = ["first_circuit", "lv_hull"]
-text = """
-You hold a circuit. Your boilers keep running: the Low Voltage chapter turns their steam into electricity and builds the first electric machines.
-"""
-
-# ------------------------------------------------------------------ chemistry slice 01: wood chemistry and lime (GTIA-D-229)
-
 [[quest]]
 key = "wood_retort"
-x = 14
-y = 2
-deps = ["firebricks"]
-group = "wood"
-role = "side"
 title = "Wood Retort"
+role = "side"
+x = 7.5
+y = -4.0
+shape = "gear"
+size = 1.5
+deps = ["firebricks"]
 subtitle = "Cook wood without air."
 task = [{ item = "gtia:wood_retort" }]
+group = "wood"
 text = """
 A furnace burns wood. A [item]Wood Retort[/] cooks it in a sealed box, and the wood comes apart: [num]4 logs[/] give [num]3 Charcoal[/] and [num]1,000 mB[/] of [item]Charcoal Byproducts[/] every [num]30 s[/], with no fuel at all.
 
@@ -1190,14 +1364,16 @@ Build it like a Coke Oven, but taller: a hollow [num]3×3×4[/] of [item]Firebri
 
 [[quest]]
 key = "charcoal_byproducts"
-x = 14
-y = 4
-deps = ["wood_retort"]
-group = "wood"
-role = "detail"
 title = "Charcoal Byproducts"
+role = "detail"
+x = 8.0
+y = -6.5
+shape = "circle"
+size = 1
+deps = ["wood_retort"]
 subtitle = "Smells like a campfire with a chemistry degree."
 task = [{ item = "gtceu:charcoal_byproducts_bucket" }]
+group = "wood"
 text = """
 The liquid in the Retort's tank is a mix of wood vinegar and tar. You cannot separate it yet: keep it in tanks. In Low Voltage, a [item]Still[/] turns it into acid, alcohol and creosote.
 
@@ -1206,14 +1382,16 @@ The liquid in the Retort's tank is a mix of wood vinegar and tar. You cannot sep
 
 [[quest]]
 key = "lime_kiln"
-deps = ["pbf", "macerator"]
-x = 18
-y = -2
-group = "lime"
-role = "side"
 title = "Lime Kiln"
+role = "side"
+x = 11.5
+y = 1.0
+shape = "gear"
+size = 1.5
+deps = ["pbf", "macerator"]
 subtitle = "Rocks in, hotter rocks out."
 task = [{ item = "gtia:lime_kiln" }]
+group = "lime"
 text = """
 Calcite is limestone. Burn it and it becomes [item]Quicklime[/]: [num]4 Calcite Dust[/] and one Charcoal, Coal or Coke give [num]4 Quicklime[/] in [num]20 s[/]; the CO₂ goes up the shaft.
 
@@ -1224,14 +1402,16 @@ Calcite blocks line dripstone caves and amethyst geodes; the Steam Macerator tur
 
 [[quest]]
 key = "fluxed_steel"
-x = 18
-y = -4
-deps = ["lime_kiln"]
-group = "lime"
-role = "side"
 title = "Fluxed Steel"
+role = "side"
+x = 13.0
+y = 1.0
+shape = "circle"
+size = 1
+deps = ["lime_kiln"]
 subtitle = "Faster steel, same furnace."
 task = [{ item = "gtceu:quicklime_dust", count = 4 }]
+group = "lime"
 text = """
 Add Quicklime to the Primitive Blast Furnace: [num]2 Wrought Iron[/], [num]2 Charcoal[/] (or Coal) and [num]1 Quicklime[/] give [num]2 Steel[/] in [num]50 s[/]. That is [num]2.4 Steel[/] a minute per furnace, against [num]1.5[/] without it.
 
@@ -1239,4 +1419,3 @@ One Lime Kiln keeps about ten furnaces fluxed.
 
 [tip]Real fact:[/] real blast furnaces add limestone as flux. It grabs the sulfur and the sand and floats them off as slag.
 """
-

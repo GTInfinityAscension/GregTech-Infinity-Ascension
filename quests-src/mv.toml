@@ -3,8 +3,8 @@ title = "Medium Voltage Age"
 icon = "gtceu:mv_machine_hull"
 
 [entry]
-x = 0
-y = 0
+x = -0.5
+y = 8
 reward = [{ item = "gtceu:aluminium_ingot", count = 16 }]
 subtitle = "Ascension III"
 requires = ["lv:exit", "lv:lv_polarizer", "lv:lv_lathe", "lv:lv_mixer", "lv:lv_electrolyzer", "lv:lv_centrifuge", "lv:lv_chem_reactor", "lv:lv_fluid_heater", "lv:lv_extractor", "lv:lv_solidifier", "lv:blast_furnace", "lv:polyethylene", "lv:hydrochloric_acid", "lv:lv_wiremill", "lv:lv_bender", "lv:lv_assembler", "lv:lv_circuit_assembler"]
@@ -12,41 +12,126 @@ text = """
 Medium Voltage is where the factory starts to look like an industry: silicon becomes chips, and the old processes of real chemistry plants arrive. Bauxite into aluminium, sulfur into acid, air into ammonia. This Ascension ends with an [item]Advanced Integrated Circuit[/] and an [item]HV Machine Hull[/].
 """
 
+[exit]
+x = 19.5
+y = 3.75
+title = "Ascend to High Voltage"
+subtitle = "Stainless steel and a chip that thinks."
+deps = ["hv_circuit", "hv_hull"]
+text = """
+Integrated circuits, stainless steel and Kanthal coils. High Voltage is next.
+"""
+
 [[quest]]
 key = "mv_motor"
 title = "MV Electric Motor"
 role = "spine"
-task = [{ item = "gtceu:mv_electric_motor", count = 2 }]
+x = 2.0
+y = 8.0
+shape = "circle"
+size = 2
 deps = ["entry"]
-x = 2
-y = 0
 subtitle = "Aluminium rods, steel magnets."
+task = [{ item = "gtceu:mv_electric_motor", count = 2 }]
 text = """
 Cupronickel coils around a magnetic steel rod. Every MV machine starts here.
 """
 
 [[quest]]
-key = "mv_parts"
-title = "MV Components"
-role = "spine"
-task = [{ item = "gtceu:mv_electric_piston" }, { item = "gtceu:mv_electric_pump" }, { item = "gtceu:mv_conveyor_module" }, { item = "gtceu:mv_robot_arm" }]
-deps = ["mv_power"]
-x = 6
-y = 0
-subtitle = "The same four, a tier up."
+key = "mv_piston"
+title = "MV Electric Piston"
+role = "side"
+icon = "gtceu:mv_electric_piston"
+x = 1.0
+y = 10.0
+shape = "circle"
+size = 1
+deps = ["mv_motor"]
+subtitle = "Push harder."
+task = [{ item = "gtceu:mv_electric_piston" }]
+hide_dependents = true
 text = """
-Piston, pump, conveyor and robot arm at MV.
+An MV motor with aluminium plates. Lathes, Extruders and the MV Robot Arm need it.
+"""
+
+[[quest]]
+key = "mv_pump"
+title = "MV Electric Pump"
+role = "side"
+icon = "gtceu:mv_electric_pump"
+x = 2.0
+y = 6.0
+shape = "circle"
+size = 1
+deps = ["mv_motor"]
+subtitle = "Move more fluid."
+task = [{ item = "gtceu:mv_electric_pump" }]
+hide_dependents = true
+text = """
+An MV motor, a bronze rotor and a steel pipe. The Chemical Bath and the Pyrolyse Oven use it.
+"""
+
+[[quest]]
+key = "mv_conveyor"
+title = "MV Conveyor Module"
+role = "side"
+icon = "gtceu:mv_conveyor_module"
+x = 2.5
+y = 10.0
+shape = "circle"
+size = 1
+deps = ["mv_motor"]
+subtitle = "Move more items."
+task = [{ item = "gtceu:mv_conveyor_module" }]
+hide_dependents = true
+text = """
+Two MV motors and rubber. The MV Assembler, Cutter and Chemical Bath need it.
+"""
+
+[[quest]]
+key = "mv_arm"
+title = "MV Robot Arm"
+role = "side"
+icon = "gtceu:mv_robot_arm"
+x = 4.0
+y = 7.0
+shape = "circle"
+size = 1
+deps = ["mv_motor", "mv_piston"]
+subtitle = "A steadier hand."
+task = [{ item = "gtceu:mv_robot_arm" }]
+hide_dependents = true
+text = """
+Two MV motors, an MV piston and a good circuit. The MV Assembler needs two.
+"""
+
+[[quest]]
+key = "electrum"
+title = "Electrum Rods"
+role = "side"
+icon = "gtceu:electrum_rod"
+x = -0.5
+y = 10.0
+shape = "circle"
+size = 1
+deps = ["mv_motor"]
+subtitle = "Silver and gold."
+task = [{ item = "gtceu:electrum_rod" }]
+text = """
+Electrum, the alloy of silver and gold, made into rods. The MV Sensor and Emitter are framed with them.
 """
 
 [[quest]]
 key = "mv_power"
 title = "MV Steam Turbine"
 role = "spine"
-task = [{ item = "gtceu:mv_steam_turbine" }]
+x = 6.5
+y = 7.5
+shape = "circle"
+size = 2
 deps = ["mv_motor"]
-x = 4
-y = 0
 subtitle = "128 V from the same steam."
+task = [{ item = "gtceu:mv_steam_turbine" }]
 text = """
 Your boilers again, at Medium Voltage. Or check Power Generation for combustion and gas.
 """
@@ -55,12 +140,14 @@ Your boilers again, at Medium Voltage. Or check Power Generation for combustion 
 key = "mv_assembler"
 title = "MV Assembler"
 role = "side"
-task = [{ item = "gtceu:mv_assembler" }]
-deps = ["mv_parts"]
-x = 4
-y = -2.5
-group = "mvshop"
+x = 9.0
+y = 7.0
+shape = "hexagon"
+size = 1.25
+deps = ["mv_power", "mv_arm", "mv_conveyor"]
 subtitle = "Faster, and MV recipes."
+task = [{ item = "gtceu:mv_assembler" }]
+group = "mvshop"
 text = """
 Transistors and integrated circuits need an MV Assembler.
 """
@@ -69,12 +156,14 @@ Transistors and integrated circuits need an MV Assembler.
 key = "mv_mixer"
 title = "MV Mixer"
 role = "side"
-task = [{ item = "gtceu:mv_mixer" }]
-deps = ["mv_parts"]
-x = 8
-y = 0
-group = "mvshop"
+x = 10.0
+y = 5.5
+shape = "hexagon"
+size = 1.25
+deps = ["mv_power"]
 subtitle = "Four ingredients at once."
+task = [{ item = "gtceu:mv_mixer" }]
+group = "mvshop"
 text = """
 Stainless Steel, Kanthal and Vanadium Steel dusts all need an MV Mixer.
 """
@@ -83,27 +172,47 @@ Stainless Steel, Kanthal and Vanadium Steel dusts all need an MV Mixer.
 key = "chemical_bath"
 title = "MV Chemical Bath"
 role = "detail"
-task = [{ item = "gtceu:mv_chemical_bath" }]
-deps = ["mv_assembler"]
-x = 24
-y = -2.5
-group = "ebf"
-hide_lines = true
+x = 8.5
+y = 11.5
+shape = "hexagon"
+size = 1.25
+deps = ["mv_power", "mv_conveyor", "mv_pump"]
 subtitle = "A cold bath for hot metal."
+task = [{ item = "gtceu:mv_chemical_bath" }]
+group = "ebf"
+hide_dependents = true
 text = """
 Besides washing ores in chemicals, it quenches hot ingots in water: Kanthal comes out of the furnace too hot to touch.
+"""
+
+[[quest]]
+key = "kanthal_ingot"
+title = "Kanthal"
+role = "side"
+icon = "gtceu:kanthal_ingot"
+x = 11.5
+y = 5.0
+shape = "circle"
+size = 1
+deps = ["mv_mixer", "chemical_bath"]
+subtitle = "Iron, aluminium, chromium."
+task = [{ item = "gtceu:kanthal_ingot" }]
+text = """
+Mix iron, aluminium and chromium, then blast the dust. Kanthal wire is what the next coil is made of.
 """
 
 [[quest]]
 key = "kanthal"
 title = "Kanthal Coils"
 role = "side"
-task = [{ item = "gtceu:kanthal_coil_block", count = 8 }]
-deps = ["mv_hatch", "chemical_bath"]
-x = 21.5
-y = -2.5
-group = "ebf"
+x = 9.5
+y = 3.5
+shape = "circle"
+size = 1
+deps = ["kanthal_ingot", "mv_assembler"]
 subtitle = "2700 K."
+task = [{ item = "gtceu:kanthal_coil_block", count = 8 }]
+group = "ebf"
 text = """
 Kanthal smelts hot in the Electric Blast Furnace; quench the hot ingot in the Chemical Bath, then wire it with Aluminium foil and copper. The furnace is ready for the hotter metals of High Voltage.
 
@@ -114,12 +223,15 @@ Kanthal smelts hot in the Electric Blast Furnace; quench the hot ingot in the Ch
 key = "vanadium_steel"
 title = "Vanadium Steel"
 role = "side"
-task = [{ item = "gtceu:vanadium_steel_ingot", count = 4 }]
+x = 8.0
+y = 3.0
+shape = "circle"
+size = 1
 deps = ["mv_mixer"]
-x = 10
-y = 0
-group = "mvshop"
 subtitle = "Tough steel for blades."
+task = [{ item = "gtceu:vanadium_steel_ingot", count = 4 }]
+group = "mvshop"
+hide_dependents = true
 text = """
 Vanadium, Chromium and Steel, mixed and smelted. The MV Cutter's saw blade is made of it.
 """
@@ -128,12 +240,15 @@ Vanadium, Chromium and Steel, mixed and smelted. The MV Cutter's saw blade is ma
 key = "mv_cutter"
 title = "MV Cutter"
 role = "side"
-task = [{ item = "gtceu:mv_cutter" }]
-deps = ["vanadium_steel"]
-x = 12
-y = 0
-group = "mvshop"
+x = 6.5
+y = 5.5
+shape = "hexagon"
+size = 1.25
+deps = ["mv_power", "mv_conveyor", "vanadium_steel"]
 subtitle = "Slices of silicon."
+task = [{ item = "gtceu:mv_cutter" }]
+group = "mvshop"
+hide_dependents = true
 text = """
 A Vanadium Steel buzz saw. It cuts silicon boules into wafers and wafers into chips.
 """
@@ -142,13 +257,14 @@ A Vanadium Steel buzz saw. It cuts silicon boules into wafers and wafers into ch
 key = "mv_extruder"
 title = "Extruder"
 role = "side"
-task = [{ item = "gtceu:mv_extruder" }]
-deps = ["mv_assembler"]
-x = 26
-y = 9
-group = "mvshop"
-hide_lines = true
+x = 8.5
+y = 5.0
+shape = "hexagon"
+size = 1.25
+deps = ["mv_power", "mv_piston"]
 subtitle = "Shapes from a die."
+task = [{ item = "gtceu:mv_extruder" }]
+group = "mvshop"
 text = """
 Plates, rods, pipes and more from one ingot and the right shape.
 """
@@ -157,12 +273,14 @@ Plates, rods, pipes and more from one ingot and the right shape.
 key = "mv_chem_reactor"
 title = "MV Chemical Reactor"
 role = "side"
-task = [{ item = "gtceu:mv_chemical_reactor" }]
-deps = ["mv_parts"]
-x = 6
-y = 2.5
-group = "mvshop"
+x = 10.5
+y = 12.5
+shape = "hexagon"
+size = 1.25
+deps = ["mv_power"]
 subtitle = "Hotter chemistry."
+task = [{ item = "gtceu:mv_chemical_reactor" }]
+group = "mvshop"
 text = """
 Cryolite, the Bayer line and the vanadium catalyst start here.
 """
@@ -171,12 +289,14 @@ Cryolite, the Bayer line and the vanadium catalyst start here.
 key = "mv_electrolyzer"
 title = "MV Electrolyzer"
 role = "detail"
-task = [{ item = "gtceu:mv_electrolyzer" }]
-deps = ["mv_chem_reactor"]
-x = 6
-y = 4.5
-group = "mvshop"
+x = 11.5
+y = 9.5
+shape = "hexagon"
+size = 1.25
+deps = ["mv_power"]
 subtitle = "Harder splits."
+task = [{ item = "gtceu:mv_electrolyzer" }]
+group = "mvshop"
 text = """
 Mica, Lepidolite and Topaz give up their fluorine only at MV.
 """
@@ -185,12 +305,14 @@ Mica, Lepidolite and Topaz give up their fluorine only at MV.
 key = "mv_lathe"
 title = "MV Lathe"
 role = "detail"
-task = [{ item = "gtceu:mv_lathe" }]
-deps = ["emerald"]
-x = 11.5
-y = -7
-group = "mvshop"
+x = 4.5
+y = 9.0
+shape = "hexagon"
+size = 1.25
+deps = ["mv_power", "mv_piston"]
 subtitle = "Lenses."
+task = [{ item = "gtceu:mv_lathe" }]
+group = "mvshop"
 text = """
 Turns exquisite gems into the lenses of the Laser Engraver.
 """
@@ -199,12 +321,14 @@ Turns exquisite gems into the lenses of the Laser Engraver.
 key = "ore_washer"
 title = "Ore Washer"
 role = "detail"
-task = [{ item = "gtceu:lv_ore_washer" }]
-deps = ["mv_parts"]
-x = 6
-y = -2.5
-group = "mvshop"
+x = 6.0
+y = 11.5
+shape = "hexagon"
+size = 1.25
+deps = ["mv_power"]
 subtitle = "Clean ore, more ore."
+task = [{ item = "gtceu:lv_ore_washer" }]
+group = "mvshop"
 text = """
 Washing crushed ore gives purified ore and its first byproducts.
 """
@@ -213,12 +337,14 @@ Washing crushed ore gives purified ore and its first byproducts.
 key = "sifter"
 title = "Sifter"
 role = "detail"
-task = [{ item = "gtceu:lv_sifter" }]
+x = 5.0
+y = 13.5
+shape = "hexagon"
+size = 1.25
 deps = ["ore_washer"]
-x = 6
-y = -5
-group = "mvshop"
 subtitle = "Grades your gems."
+task = [{ item = "gtceu:lv_sifter" }]
+group = "mvshop"
 text = """
 Purified gem ores through a Sifter come out as gems of every quality.
 """
@@ -227,13 +353,14 @@ Purified gem ores through a Sifter come out as gems of every quality.
 key = "lv_cutter"
 title = "LV Cutter"
 role = "detail"
-task = [{ item = "gtceu:lv_cutter" }]
-deps = ["ore_washer"]
-x = 8
-y = -2.5
-group = "mvshop"
-hide_lines = true
+x = 4.5
+y = 10.5
+shape = "hexagon"
+size = 1.25
+deps = ["mv_power"]
 subtitle = "Plates from gems."
+task = [{ item = "gtceu:lv_cutter" }]
+group = "mvshop"
 text = """
 Cuts gem blocks into plates: Lazurite plates make fluid filters.
 """
@@ -242,12 +369,14 @@ Cuts gem blocks into plates: Lazurite plates make fluid filters.
 key = "emerald"
 title = "Flawless Emerald"
 role = "detail"
-task = [{ item = "gtceu:flawless_emerald_gem" }]
+x = 2.5
+y = 13.0
+shape = "circle"
+size = 1
 deps = ["sifter"]
-x = 9
-y = -5
-group = "mvshop"
 subtitle = "Sift for the good ones."
+task = [{ item = "gtceu:flawless_emerald_gem" }]
+group = "mvshop"
 text = """
 A Sifter grades purified gem ores. The emitter needs a flawless emerald.
 """
@@ -256,26 +385,48 @@ A Sifter grades purified gem ores. The emitter needs a flawless emerald.
 key = "mv_emitter"
 title = "MV Emitter"
 role = "detail"
-task = [{ item = "gtceu:mv_emitter" }]
-deps = ["emerald"]
-x = 11.5
-y = -5
-group = "mvshop"
+x = 0.5
+y = 11.5
+shape = "circle"
+size = 1
+deps = ["emerald", "electrum"]
 subtitle = "A focused beam."
+task = [{ item = "gtceu:mv_emitter" }]
+group = "mvshop"
+hide_dependents = true
 text = """
 The heart of the Laser Engraver.
+"""
+
+[[quest]]
+key = "mv_sensor"
+title = "MV Sensor"
+role = "side"
+icon = "gtceu:mv_sensor"
+x = 0.0
+y = 13.0
+shape = "circle"
+size = 1
+deps = ["emerald", "electrum"]
+subtitle = "A sharper eye."
+task = [{ item = "gtceu:mv_sensor" }]
+text = """
+A Flawless Emerald, an electrum rod, aluminium plates and a good circuit.
 """
 
 [[quest]]
 key = "mv_engraver"
 title = "Laser Engraver"
 role = "side"
-task = [{ item = "gtceu:mv_laser_engraver" }]
-deps = ["mv_emitter"]
-x = 14
-y = -4
-group = "mvshop"
+x = 5.0
+y = 5.5
+shape = "hexagon"
+size = 1.25
+deps = ["mv_power", "mv_emitter", "mv_piston"]
 subtitle = "Light that writes."
+task = [{ item = "gtceu:mv_laser_engraver" }]
+group = "mvshop"
+hide_dependents = true
 text = """
 With a lens, it prints circuits onto silicon wafers.
 """
@@ -284,12 +435,15 @@ With a lens, it prints circuits onto silicon wafers.
 key = "lenses"
 title = "Lenses"
 role = "detail"
-task = [{ item = "gtceu:ruby_lens" }, { item = "gtceu:emerald_lens" }, { item = "gtceu:sapphire_lens" }]
-deps = ["mv_lathe"]
-x = 15
-y = -6.5
-group = "circuit"
+x = 0.5
+y = 14.5
+shape = "circle"
+size = 1
+deps = ["emerald", "mv_lathe"]
 subtitle = "Red, green, blue."
+task = [{ item = "gtceu:ruby_lens" }, { item = "gtceu:emerald_lens" }, { item = "gtceu:sapphire_lens" }]
+group = "circuit"
+hide_dependents = true
 text = """
 Ruby for logic, emerald for memory, sapphire for the power chips. Exquisite gems on the MV Lathe.
 """
@@ -298,12 +452,14 @@ Ruby for logic, emerald for memory, sapphire for the power chips. Exquisite gems
 key = "ulpic"
 title = "ULPIC Chips"
 role = "detail"
-task = [{ item = "gtceu:ulpic_chip", count = 2 }]
+x = 13.5
+y = 8.5
+shape = "circle"
+size = 1
 deps = ["wafer", "mv_engraver", "lenses"]
-x = 16.5
-y = -2.5
-group = "ebf"
 subtitle = "Power management on a chip."
+task = [{ item = "gtceu:ulpic_chip", count = 2 }]
+group = "ebf"
 text = """
 A sapphire lens and a silicon wafer. MV Energy Hatches need them.
 """
@@ -312,13 +468,14 @@ A sapphire lens and a silicon wafer. MV Energy Hatches need them.
 key = "voltage_coil"
 title = "MV Voltage Coil"
 role = "detail"
-task = [{ item = "gtceu:mv_voltage_coil", count = 2 }]
+x = 12.5
+y = 6.5
+shape = "circle"
+size = 1
 deps = ["mv_assembler"]
-x = 19
-y = -2.5
-group = "ebf"
-hide_lines = true
 subtitle = "A magnet, wound."
+task = [{ item = "gtceu:mv_voltage_coil", count = 2 }]
+group = "ebf"
 text = """
 Fine copper wire around a magnetic steel rod.
 """
@@ -327,12 +484,14 @@ Fine copper wire around a magnetic steel rod.
 key = "mv_hatch"
 title = "MV Energy Hatches"
 role = "side"
-task = [{ item = "gtceu:mv_energy_input_hatch", count = 2 }]
+x = 13.0
+y = 5.0
+shape = "hexagon"
+size = 1.25
 deps = ["ulpic", "voltage_coil"]
-x = 19
-y = 0
-group = "ebf"
 subtitle = "Two of them."
+task = [{ item = "gtceu:mv_energy_input_hatch", count = 2 }]
+group = "ebf"
 text = """
 Two MV Energy Hatches push the Electric Blast Furnace to High Voltage recipes: Stainless Steel and Kanthal.
 """
@@ -341,12 +500,14 @@ Two MV Energy Hatches push the Electric Blast Furnace to High Voltage recipes: S
 key = "stainless_steel"
 title = "Stainless Steel"
 role = "spine"
-task = [{ item = "gtceu:stainless_steel_ingot", count = 8 }]
-deps = ["mv_hatch", "mv_mixer"]
-x = 21.5
-y = 0
-group = "ebf"
+x = 15.0
+y = 3.5
+shape = "circle"
+size = 2
+deps = ["mv_hatch"]
 subtitle = "Iron that does not rust."
+task = [{ item = "gtceu:stainless_steel_ingot", count = 8 }]
+group = "ebf"
 text = """
 Iron, Nickel, Manganese and Chromium, mixed and smelted in the Electric Blast Furnace at MV.
 
@@ -357,12 +518,14 @@ Iron, Nickel, Manganese and Chromium, mixed and smelted in the Electric Blast Fu
 key = "silicon_boule"
 title = "Silicon Boule"
 role = "gate"
-task = [{ item = "gtceu:silicon_boule" }]
+x = 15.5
+y = 6.0
+shape = "diamond"
+size = 1.5
 deps = ["mv_mixer"]
-x = 12
-y = -2.5
-group = "circuit"
 subtitle = "One big crystal."
+task = [{ item = "gtceu:silicon_boule" }]
+group = "circuit"
 text = """
 Silicon dust and a pinch of Gallium Arsenide, grown in the Electric Blast Furnace.
 
@@ -373,12 +536,14 @@ Silicon dust and a pinch of Gallium Arsenide, grown in the Electric Blast Furnac
 key = "wafer"
 title = "Silicon Wafers"
 role = "detail"
-task = [{ item = "gtceu:silicon_wafer", count = 16 }]
+x = 17.5
+y = 8.5
+shape = "circle"
+size = 1
 deps = ["silicon_boule", "mv_cutter"]
-x = 14
-y = 0
-group = "circuit"
 subtitle = "Sliced thin."
+task = [{ item = "gtceu:silicon_wafer", count = 16 }]
+group = "circuit"
 text = """
 One boule, many wafers. Everything electronic from now on starts as one of these.
 """
@@ -387,12 +552,14 @@ One boule, many wafers. Everything electronic from now on starts as one of these
 key = "ilc"
 title = "Integrated Logic Circuits"
 role = "detail"
-task = [{ item = "gtceu:ilc_chip", count = 4 }]
-deps = ["ulpic"]
-x = 16.5
-y = 2.5
-group = "circuit"
+x = 17.0
+y = 7.0
+shape = "circle"
+size = 1
+deps = ["wafer", "lenses", "mv_engraver"]
 subtitle = "The first chips."
+task = [{ item = "gtceu:ilc_chip", count = 4 }]
+group = "circuit"
 text = """
 Engrave a wafer with a red lens and cut it into chips.
 """
@@ -401,12 +568,14 @@ Engrave a wafer with a red lens and cut it into chips.
 key = "ram"
 title = "RAM Chips"
 role = "detail"
-task = [{ item = "gtceu:ram_chip", count = 2 }]
-deps = ["ilc"]
-x = 18.5
-y = 2.5
-group = "circuit"
+x = 19.0
+y = 9.0
+shape = "circle"
+size = 1
+deps = ["wafer", "lenses", "mv_engraver"]
 subtitle = "Memory."
+task = [{ item = "gtceu:ram_chip", count = 2 }]
+group = "circuit"
 text = """
 A different lens, a different chip.
 """
@@ -415,13 +584,14 @@ A different lens, a different chip.
 key = "transistor"
 title = "Transistors"
 role = "side"
-task = [{ item = "gtceu:transistor", count = 4 }]
-deps = ["wafer", "mv_assembler"]
-x = 20.5
-y = 4.5
-group = "circuit"
-hide_lines = true
+x = 15.0
+y = 7.5
+shape = "circle"
+size = 1
+deps = ["silicon_boule", "mv_assembler"]
 subtitle = "The switch that changed everything."
+task = [{ item = "gtceu:transistor", count = 4 }]
+group = "circuit"
 text = """
 Silicon, fine tin wire and polyethylene.
 
@@ -432,12 +602,14 @@ Silicon, fine tin wire and polyethylene.
 key = "basic_ic"
 title = "Basic Integrated Circuit"
 role = "detail"
-task = [{ item = "gtceu:basic_integrated_circuit", count = 4 }]
+x = 18.0
+y = 5.5
+shape = "circle"
+size = 1
 deps = ["ilc"]
-x = 16.5
-y = 4.5
-group = "circuit"
 subtitle = "A circuit on a chip."
+task = [{ item = "gtceu:basic_integrated_circuit", count = 4 }]
+group = "circuit"
 text = """
 A resin board, an ILC chip, resistors and diodes.
 """
@@ -446,12 +618,14 @@ A resin board, an ILC chip, resistors and diodes.
 key = "good_ic"
 title = "Good Integrated Circuit"
 role = "detail"
-task = [{ item = "gtceu:good_integrated_circuit", count = 2 }]
+x = 21.0
+y = 6.0
+shape = "circle"
+size = 1
 deps = ["basic_ic"]
-x = 16.5
-y = 6.5
-group = "circuit"
 subtitle = "Two become one."
+task = [{ item = "gtceu:good_integrated_circuit", count = 2 }]
+group = "circuit"
 text = """
 Two basic integrated circuits on a phenolic board, with gold wire and silver bolts.
 """
@@ -460,12 +634,15 @@ Two basic integrated circuits on a phenolic board, with gold wire and silver bol
 key = "arc_furnace"
 title = "Arc Furnace"
 role = "detail"
-task = [{ item = "gtceu:lv_arc_furnace" }]
+x = 12.0
+y = 8.0
+shape = "hexagon"
+size = 1.25
 deps = ["mv_assembler"]
-x = 2
-y = -2.5
-group = "mvshop"
 subtitle = "Lightning in a box."
+task = [{ item = "gtceu:lv_arc_furnace" }]
+group = "mvshop"
+hide_dependents = true
 text = """
 Melts metal with an electric arc. With Oxygen, copper comes out annealed; it also recycles old machines into ingots.
 """
@@ -474,13 +651,15 @@ Melts metal with an electric arc. With Oxygen, copper comes out annealed; it als
 key = "annealed_copper"
 title = "Annealed Copper"
 role = "detail"
-task = [{ item = "gtceu:annealed_copper_ingot", count = 4 }]
+x = 22.5
+y = 8.0
+shape = "circle"
+size = 1
 deps = ["nitrogen", "arc_furnace"]
-x = 18.5
-y = 8.5
-group = "circuit"
-hide_lines = true
 subtitle = "Softer copper, better wire."
+task = [{ item = "gtceu:annealed_copper_ingot", count = 4 }]
+group = "circuit"
+hide_dependents = true
 text = """
 Copper through the Arc Furnace with Oxygen from your air separation.
 """
@@ -489,12 +668,14 @@ Copper through the Arc Furnace with Oxygen from your air separation.
 key = "hv_circuit"
 title = "Advanced Integrated Circuit"
 role = "milestone"
-task = [{ item = "gtceu:advanced_integrated_circuit" }]
+x = 20.5
+y = 8.0
+shape = "diamond"
+size = 1.5
 deps = ["good_ic", "ram", "transistor", "annealed_copper"]
-x = 18.5
-y = 6.5
-group = "circuit"
 subtitle = "The HV circuit."
+task = [{ item = "gtceu:advanced_integrated_circuit" }]
+group = "circuit"
 text = """
 Two good integrated circuits, ILC and RAM chips, transistors, electrum wire and annealed copper bolts.
 """
@@ -503,12 +684,14 @@ Two good integrated circuits, ILC and RAM chips, transistors, electrum wire and 
 key = "stainless_plate"
 title = "Stainless Steel Plates"
 role = "detail"
-task = [{ item = "gtceu:stainless_steel_plate", count = 9 }]
+x = 17.0
+y = 2.0
+shape = "circle"
+size = 1
 deps = ["stainless_steel"]
-x = 24
-y = 0
-group = "hull"
 subtitle = "Nine plates."
+task = [{ item = "gtceu:stainless_steel_plate", count = 9 }]
+group = "hull"
 text = """
 Eight for the casing and one for the hull.
 """
@@ -517,12 +700,14 @@ Eight for the casing and one for the hull.
 key = "hv_casing"
 title = "HV Machine Casing"
 role = "spine"
-task = [{ item = "gtceu:hv_machine_casing" }]
+x = 16.0
+y = 0.5
+shape = "circle"
+size = 1
 deps = ["stainless_plate"]
-x = 24
-y = 2.5
-group = "hull"
 subtitle = "Eight Stainless Steel Plates."
+task = [{ item = "gtceu:hv_machine_casing" }]
+group = "hull"
 text = """
 The shell of every High Voltage machine.
 """
@@ -531,13 +716,14 @@ The shell of every High Voltage machine.
 key = "gold_cable"
 title = "Gold Cable"
 role = "detail"
-task = [{ item = "gtceu:gold_single_cable", count = 2 }]
+x = 6.0
+y = 2.5
+shape = "circle"
+size = 1
 deps = ["mv_assembler"]
-x = 26
-y = 5
-group = "hull"
-hide_lines = true
 subtitle = "HV needs gold."
+task = [{ item = "gtceu:gold_single_cable", count = 2 }]
+group = "hull"
 text = """
 Gold wire in rubber.
 """
@@ -546,13 +732,14 @@ Gold wire in rubber.
 key = "pe_plate"
 title = "Polyethylene Plates"
 role = "detail"
-task = [{ item = "gtceu:polyethylene_plate", count = 2 }]
+x = 12.5
+y = 3.5
+shape = "circle"
+size = 1
 deps = ["mv_extruder"]
-x = 26
-y = 7
-group = "hull"
-hide_lines = true
 subtitle = "Plastic, finally useful."
+task = [{ item = "gtceu:polyethylene_plate", count = 2 }]
+group = "hull"
 text = """
 Solidify the Polyethylene from your LV line into plates.
 """
@@ -561,12 +748,14 @@ Solidify the Polyethylene from your LV line into plates.
 key = "hv_hull"
 title = "HV Machine Hull"
 role = "milestone"
-task = [{ item = "gtceu:hv_machine_hull" }]
+x = 14.0
+y = 1.5
+shape = "diamond"
+size = 1.75
 deps = ["hv_casing", "gold_cable", "pe_plate"]
-x = 24
-y = 5
-group = "hull"
 subtitle = "The body of every HV machine."
+task = [{ item = "gtceu:hv_machine_hull" }]
+group = "hull"
 text = """
 Casing, two Gold Cables, two Polyethylene Plates and a Stainless Steel Plate.
 """
@@ -575,12 +764,14 @@ Casing, two Gold Cables, two Polyethylene Plates and a Stainless Steel Plate.
 key = "bayer"
 title = "Bayer Digester"
 role = "side"
-task = [{ item = "gtia:bayer_digester" }]
+x = 14.5
+y = 15.5
+shape = "gear"
+size = 1.5
 deps = ["mv_chem_reactor"]
-x = 8
-y = 2.5
-group = "bayer"
 subtitle = "Bauxite in hot caustic soda."
+task = [{ item = "gtia:bayer_digester" }]
+group = "bayer"
 text = """
 Circuit 1 digests [num]1 Bauxite[/], [num]1 Sodium Hydroxide[/], water and steam into [num]1,000 mB[/] of Sodium Aluminate, leaving red mud. Circuit 2 precipitates it into [num]2 Aluminium Hydroxide[/] and gives back most of the soda.
 
@@ -593,13 +784,14 @@ Provisional structure: a hollow [num]3×3×3[/] of Solid Steel Machine Casings w
 key = "alumina"
 title = "Alumina"
 role = "detail"
-task = [{ item = "gtia:alumina_dust", count = 4 }]
+x = 16.0
+y = 15.5
+shape = "circle"
+size = 1
 deps = ["bayer", "steam:lime_kiln"]
-x = 10
-y = 2.5
-group = "bayer"
-hide_lines = true
 subtitle = "Calcined in the Lime Kiln."
+task = [{ item = "gtia:alumina_dust", count = 4 }]
+group = "bayer"
 text = """
 Your old Lime Kiln calcines [num]2 Aluminium Hydroxide[/] into [num]1 Alumina[/]. The Steam Age is still working for you.
 """
@@ -608,12 +800,14 @@ Your old Lime Kiln calcines [num]2 Aluminium Hydroxide[/] into [num]1 Alumina[/]
 key = "cryolite"
 title = "Cryolite"
 role = "detail"
-task = [{ item = "gtia:cryolite_dust" }]
-deps = ["bayer", "fluorine", "mv_chem_reactor"]
-x = 8
-y = 6.5
-group = "bayer"
+x = 18.0
+y = 13.0
+shape = "circle"
+size = 1
+deps = ["bayer", "fluorine"]
 subtitle = "The molten bath."
+task = [{ item = "gtia:cryolite_dust" }]
+group = "bayer"
 text = """
 Aluminium Hydroxide, Sodium Hydroxide and Hydrofluoric Acid in a Chemical Reactor. Alumina dissolves in it at a much lower temperature.
 """
@@ -622,13 +816,14 @@ Aluminium Hydroxide, Sodium Hydroxide and Hydrofluoric Acid in a Chemical Reacto
 key = "anode"
 title = "Carbon Anode"
 role = "detail"
-task = [{ item = "gtia:carbon_anode", count = 4 }]
+x = 9.5
+y = 14.0
+shape = "circle"
+size = 1
 deps = ["mv_mixer", "steam:charcoal_byproducts"]
-x = 12
-y = 6.5
-group = "bayer"
-hide_lines = true
 subtitle = "Coke and tar."
+task = [{ item = "gtia:carbon_anode", count = 4 }]
+group = "bayer"
 text = """
 Coke dust bound with Wood Tar in a Mixer. It burns away in the cell, one per run.
 """
@@ -637,12 +832,14 @@ Coke dust bound with Wood Tar in a Mixer. It burns away in the cell, one per run
 key = "hall_heroult"
 title = "Hall-Héroult Cell"
 role = "side"
-task = [{ item = "gtia:hall_heroult_cell" }]
+x = 16.5
+y = 13.0
+shape = "gear"
+size = 1.5
 deps = ["alumina", "cryolite", "anode"]
-x = 10
-y = 6.5
-group = "bayer"
 subtitle = "Aluminium the real way."
+task = [{ item = "gtia:hall_heroult_cell" }]
+group = "bayer"
 text = """
 [num]2 Alumina[/] and a Carbon Anode become [num]4 Aluminium Ingots[/] and CO₂, with a small chance to use up the cryolite bath. No blast furnace needed.
 
@@ -653,13 +850,14 @@ text = """
 key = "gas_collector"
 title = "Gas Collector"
 role = "detail"
-task = [{ item = "gtceu:lv_gas_collector" }]
-deps = ["lv_cutter"]
-x = 2
-y = 4.5
-group = "acid"
-hide_lines = true
+x = 17.0
+y = 10.0
+shape = "hexagon"
+size = 1.25
+deps = ["mv_power", "mv_cutter"]
 subtitle = "Bottled air."
+task = [{ item = "gtceu:lv_gas_collector" }]
+group = "acid"
 text = """
 It pulls Air from the world around it. Its fluid filter is a Lazurite plate.
 """
@@ -668,12 +866,14 @@ It pulls Air from the world around it. Its fluid filter is a Lazurite plate.
 key = "nitrogen"
 title = "Nitrogen"
 role = "detail"
-task = [{ item = "gtceu:nitrogen_bucket" }]
+x = 20.5
+y = 10.0
+shape = "circle"
+size = 1
 deps = ["gas_collector"]
-x = 2
-y = 6.5
-group = "acid"
 subtitle = "Four fifths of the air."
+task = [{ item = "gtceu:nitrogen_bucket" }]
+group = "acid"
 text = """
 A Centrifuge splits Air into Nitrogen and Oxygen.
 """
@@ -682,12 +882,14 @@ A Centrifuge splits Air into Nitrogen and Oxygen.
 key = "fluorine"
 title = "Hydrofluoric Acid"
 role = "detail"
-task = [{ item = "gtceu:hydrofluoric_acid_bucket" }]
+x = 14.5
+y = 10.5
+shape = "circle"
+size = 1
 deps = ["mv_electrolyzer"]
-x = 6
-y = 6.5
-group = "bayer"
 subtitle = "Handle with care."
+task = [{ item = "gtceu:hydrofluoric_acid_bucket" }]
+group = "bayer"
 text = """
 Fluorine from Mica or Lepidolite in the MV Electrolyzer, burnt with Hydrogen into Hydrofluoric Acid.
 """
@@ -696,12 +898,14 @@ Fluorine from Mica or Lepidolite in the MV Electrolyzer, burnt with Hydrogen int
 key = "vanadium_pentoxide"
 title = "Vanadium Pentoxide"
 role = "detail"
-task = [{ item = "gtia:vanadium_pentoxide_dust" }]
+x = 12.5
+y = 15.0
+shape = "circle"
+size = 1
 deps = ["mv_chem_reactor"]
-x = 4
-y = 2.5
-group = "acid"
 subtitle = "The catalyst."
+task = [{ item = "gtia:vanadium_pentoxide_dust" }]
+group = "acid"
 text = """
 Vanadium dust burnt in oxygen. It is never used up.
 """
@@ -710,12 +914,14 @@ Vanadium dust burnt in oxygen. It is never used up.
 key = "contact"
 title = "Contact Converter"
 role = "side"
-task = [{ item = "gtia:contact_converter" }]
+x = 14.0
+y = 17.5
+shape = "gear"
+size = 1.5
 deps = ["vanadium_pentoxide"]
-x = 4
-y = 4.5
-group = "acid"
 subtitle = "Sulfur into acid, and steam for free."
+task = [{ item = "gtia:contact_converter" }]
+group = "acid"
 text = """
 Sulfur, oxygen and water over Vanadium Pentoxide: [num]1,000 mB[/] of Sulfuric Acid and [num]2,000 mB[/] of steam per run. The reaction is hot enough to feed your turbines.
 
@@ -726,12 +932,14 @@ Sulfur, oxygen and water over Vanadium Pentoxide: [num]1,000 mB[/] of Sulfuric A
 key = "haber"
 title = "Ammonia Converter"
 role = "side"
-task = [{ item = "gtia:ammonia_converter" }]
+x = 23.5
+y = 10.5
+shape = "gear"
+size = 1.5
 deps = ["nitrogen"]
-x = 2
-y = 8.5
-group = "acid"
 subtitle = "Bread from air."
+task = [{ item = "gtia:ammonia_converter" }]
+group = "acid"
 text = """
 Nitrogen and Hydrogen over an iron (Magnetite) catalyst become Ammonia, with a little steam. Your Diaphragm Cell already makes the hydrogen.
 
@@ -742,12 +950,14 @@ Nitrogen and Hydrogen over an iron (Magnetite) catalyst become Ammonia, with a l
 key = "solvay"
 title = "Solvay Tower"
 role = "side"
-task = [{ item = "gtia:solvay_tower" }]
+x = 29.0
+y = 12.0
+shape = "gear"
+size = 1.5
 deps = ["ammonia"]
-x = 6
-y = 8.5
-group = "acid"
 subtitle = "Soda from salt and lime."
+task = [{ item = "gtia:solvay_tower" }]
+group = "acid"
 text = """
 Brine, Ammonia and CO₂ give Sodium Bicarbonate and Ammonium Chloride. The Lime Kiln calcines the bicarbonate into Soda Ash, and Quicklime gets the ammonia back.
 
@@ -758,12 +968,15 @@ Brine, Ammonia and CO₂ give Sodium Bicarbonate and Ammonium Chloride. The Lime
 key = "sulfuric_acid"
 title = "Sulfuric Acid"
 role = "detail"
-task = [{ item = "gtceu:sulfuric_acid_bucket", count = 4 }]
+x = 16.5
+y = 17.5
+shape = "circle"
+size = 1
 deps = ["contact"]
-x = 4
-y = 6.5
-group = "acid"
 subtitle = "The most useful acid."
+task = [{ item = "gtceu:sulfuric_acid_bucket", count = 4 }]
+group = "acid"
+hide_dependents = true
 text = """
 From now on, make it in bulk.
 """
@@ -772,12 +985,14 @@ From now on, make it in bulk.
 key = "ammonia"
 title = "Ammonia"
 role = "detail"
-task = [{ item = "gtceu:ammonia_bucket", count = 4 }]
+x = 26.5
+y = 11.0
+shape = "circle"
+size = 1
 deps = ["haber"]
-x = 4
-y = 8.5
-group = "acid"
 subtitle = "Bread from air, by the bucket."
+task = [{ item = "gtceu:ammonia_bucket", count = 4 }]
+group = "acid"
 text = """
 Fertiliser, explosives, rocket fuel, and the Solvay Tower.
 """
@@ -786,13 +1001,14 @@ Fertiliser, explosives, rocket fuel, and the Solvay Tower.
 key = "soda_ash"
 title = "Soda Ash"
 role = "detail"
-task = [{ item = "gtceu:soda_ash_dust", count = 8 }]
+x = 31.5
+y = 12.5
+shape = "circle"
+size = 1
 deps = ["solvay", "steam:lime_kiln"]
-x = 8
-y = 8.5
-group = "acid"
-hide_lines = true
 subtitle = "Calcined bicarbonate."
+task = [{ item = "gtceu:soda_ash_dust", count = 8 }]
+group = "acid"
 text = """
 Sodium Bicarbonate from the tower, calcined in your Lime Kiln.
 """
@@ -801,12 +1017,14 @@ Sodium Bicarbonate from the tower, calcined in your Lime Kiln.
 key = "pyrolyse"
 title = "Pyrolyse Oven"
 role = "side"
-task = [{ item = "gtceu:pyrolyse_oven" }]
-deps = ["mv_parts"]
-x = 2
-y = 2.5
-group = "wood"
+x = 12.5
+y = 11.0
+shape = "gear"
+size = 1.5
+deps = ["mv_power"]
 subtitle = "The Retort, grown up."
+task = [{ item = "gtceu:pyrolyse_oven" }]
+group = "wood"
 text = """
 Logs and nitrogen in, charcoal and far more byproducts out. The efficient route for your wood chemistry.
 """
@@ -815,12 +1033,14 @@ Logs and nitrogen in, charcoal and far more byproducts out. The efficient route 
 key = "distillery"
 title = "Distillery"
 role = "detail"
-task = [{ item = "gtceu:mv_distillery" }]
+x = 17.5
+y = 11.5
+shape = "hexagon"
+size = 1.25
 deps = ["pyrolyse"]
-x = 0
-y = 2.5
-group = "wood"
 subtitle = "The Still, grown up."
+task = [{ item = "gtceu:mv_distillery" }]
+group = "wood"
 text = """
 Much more Methanol and Acetic Acid from the same Wood Vinegar.
 """
@@ -829,12 +1049,13 @@ Much more Methanol and Acetic Acid from the same Wood Vinegar.
 key = "autocrafting"
 title = "Autocrafting"
 role = "side"
-task = [{ item = "ae2:pattern_provider" }, { item = "ae2:molecular_assembler" }, { item = "ae2:crafting_unit" }]
+x = 7.0
+y = 10.0
+shape = "circle"
+size = 1
 deps = ["mv_assembler", "lv:ae2_start"]
-x = 2
-y = -5
-hide_lines = true
 subtitle = "The network starts working for you."
+task = [{ item = "ae2:pattern_provider" }, { item = "ae2:molecular_assembler" }, { item = "ae2:crafting_unit" }]
 text = """
 Pattern Providers, Molecular Assemblers and Crafting Units. Teach the network a recipe once and it makes it forever.
 """
@@ -843,23 +1064,127 @@ Pattern Providers, Molecular Assemblers and Crafting Units. Teach the network a 
 key = "greenhouse"
 title = "Greenhouse"
 role = "optional"
-task = [{ item = "gtna:greenhouse" }]
-deps = ["mv_parts"]
-x = 0
-y = -2.5
-group = "bio"
-hide_lines = true
+x = 10.5
+y = 11.0
+shape = "gear"
+size = 1.5
+deps = ["mv_power"]
 subtitle = "Crops on a conveyor."
+task = [{ item = "gtna:greenhouse" }]
+group = "bio"
 text = """
 A GTNA multiblock that grows plants for your Fermentation Vats and wood lines.
 """
 
-[exit]
-x = 21
-y = 8.5
-title = "Ascend to High Voltage"
-subtitle = "Stainless steel and a chip that thinks."
-deps = ["hv_circuit", "hv_hull"]
+[[quest]]
+key = "vinyl_chloride"
+title = "Vinyl Chloride"
+role = "side"
+icon = "gtceu:vinyl_chloride_bucket"
+x = 12.0
+y = 12.5
+shape = "circle"
+size = 1
+deps = ["lv:dehydrator", "mv_chem_reactor"]
+subtitle = "Ethylene meets chlorine."
+task = [{ item = "gtceu:vinyl_chloride_bucket" }]
 text = """
-Integrated circuits, stainless steel and Kanthal coils. High Voltage is next.
+Ethylene from the Catalytic Dehydrator and chlorine from the Diaphragm Cell, in the Chemical Reactor.
+"""
+
+[[quest]]
+key = "pvc"
+title = "Polyvinyl Chloride"
+role = "side"
+icon = "gtceu:polyvinyl_chloride_ingot"
+x = 13.5
+y = 12.5
+shape = "circle"
+size = 1
+deps = ["vinyl_chloride"]
+subtitle = "A harder plastic."
+task = [{ item = "gtceu:polyvinyl_chloride_ingot" }]
+text = """
+Vinyl chloride and oxygen make PVC. Its plates are the base of the plastic circuit board.
+"""
+
+[[quest]]
+key = "plastic_board"
+title = "Plastic Circuit Board"
+role = "side"
+icon = "gtceu:plastic_circuit_board"
+x = 15.0
+y = 12.0
+shape = "circle"
+size = 1
+deps = ["pvc", "sulfuric_acid"]
+subtitle = "PVC, copper and acid."
+task = [{ item = "gtceu:plastic_circuit_board" }]
+text = """
+A PVC plate, copper foil and sulfuric acid in the Chemical Reactor.
+"""
+
+[[quest]]
+key = "plastic_printed"
+title = "Plastic Printed Circuit Board"
+role = "side"
+icon = "gtceu:plastic_printed_circuit_board"
+x = 14.0
+y = 14.0
+shape = "circle"
+size = 1
+deps = ["plastic_board", "lv:iron_chloride"]
+subtitle = "Etched with iron chloride."
+task = [{ item = "gtceu:plastic_printed_circuit_board" }]
+text = """
+Etch the plastic board with copper foil and iron(III) chloride. Microprocessors are built on it.
+"""
+
+[[quest]]
+key = "diamond_lens"
+title = "Diamond Lens"
+role = "side"
+icon = "gtceu:diamond_lens"
+x = 2.0
+y = 11.5
+shape = "circle"
+size = 1
+deps = ["mv_lathe", "mv_cutter"]
+subtitle = "Turn it on the lathe."
+task = [{ item = "gtceu:diamond_lens" }]
+hide_dependents = true
+text = """
+An exquisite diamond on the MV Lathe. The laser engraver uses it to draw CPUs.
+"""
+
+[[quest]]
+key = "cpu_wafer"
+title = "CPU Wafer"
+role = "side"
+icon = "gtceu:cpu_wafer"
+x = 19.5
+y = 6.5
+shape = "circle"
+size = 1
+deps = ["wafer", "diamond_lens", "mv_engraver"]
+subtitle = "Draw the processor."
+task = [{ item = "gtceu:cpu_wafer" }]
+text = """
+Engrave a silicon wafer through the diamond lens in the MV Laser Engraver.
+"""
+
+[[quest]]
+key = "cpu_chip"
+title = "CPU Chip"
+role = "side"
+icon = "gtceu:cpu_chip"
+x = 18.0
+y = 4.0
+shape = "circle"
+size = 1
+deps = ["cpu_wafer", "mv_cutter"]
+subtitle = "Cut it free."
+task = [{ item = "gtceu:cpu_chip" }]
+text = """
+Cut the CPU wafer in the MV Cutter. Each chip becomes the heart of a Microprocessor in High Voltage.
 """

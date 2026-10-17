@@ -25,8 +25,8 @@
 					title: "{gtia.quest.1C80807B0037B387.task.1E84DFB212F83727}"
 				}
 			]
-			x: -1.5d
-			y: -2.0d
+			x: 1.5d
+			y: 7.0d
 			title: "{gtia.quest.1C80807B0037B387.title}"
 			subtitle: "{gtia.quest.1C80807B0037B387.subtitle}"
 			icon: "minecraft:map"
@@ -50,8 +50,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 0.0d
-			y: -2.0d
+			x: 2.5d
+			y: 4.5d
 			title: "{gtia.quest.4EB24270ABDDBEB7.title}"
 			subtitle: "{gtia.quest.4EB24270ABDDBEB7.subtitle}"
 			icon: "minecraft:crafting_table"
@@ -75,8 +75,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 1.5d
-			y: -2.0d
+			x: 1.0d
+			y: 3.0d
 			title: "{gtia.quest.13B25D31A4A94152.title}"
 			subtitle: "{gtia.quest.13B25D31A4A94152.subtitle}"
 			icon: "minecraft:book"
@@ -94,23 +94,7 @@
 		{
 			icon: "minecraft:grass_block"
 			id: "48ED4F35ECCFD529"
-			rewards: [
-				{
-					id: "27F543A7FB625F00"
-					item: "gtceu:vanadium_steel_axe"
-					type: "item"
-				}
-				{
-					id: "7F82185C25C25A3A"
-					item: "gtceu:vanadium_steel_pickaxe"
-					type: "item"
-				}
-				{
-					id: "3E9B1C4A7D2F5061"
-					item: "gtceu:vanadium_steel_shovel"
-					type: "item"
-				}
-			]
+			rewards: [ ]
 			size: 2.0d
 			tasks: [
 				{
@@ -120,7 +104,7 @@
 				}
 			]
 			x: 0.0d
-			y: 0.0d
+			y: 5.0d
 			title: "{gtia.quest.48ED4F35ECCFD529.title}"
 			subtitle: "{gtia.quest.48ED4F35ECCFD529.subtitle}"
 			description: [
@@ -187,8 +171,8 @@
 					title: "{gtia.quest.290D8F8D57B5FA44.task.2B3F7B039A5B79C1}"
 				}
 			]
-			x: -1.5d
-			y: 1.75d
+			x: -2.5d
+			y: 7.0d
 			title: "{gtia.quest.290D8F8D57B5FA44.title}"
 			subtitle: "{gtia.quest.290D8F8D57B5FA44.subtitle}"
 			icon: "industrial_platform:platform_builder"
@@ -209,19 +193,7 @@
 				"48ED4F35ECCFD529"
 			]
 			id: "147A54175ED9413E"
-			rewards: [
-				{
-					id: "4FE6FE1D204B6057"
-					item: {
-						Count: 1
-						id: "gtceu:prospector.hv"
-						tag: {
-							Charge: 1600000L
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [ ]
 			tasks: [
 				{
 					id: "7739768AC2EB1515"
@@ -232,8 +204,8 @@
 					title: "{gtia.quest.147A54175ED9413E.task.7739768AC2EB1515}"
 				}
 			]
-			x: 0.0d
-			y: 1.75d
+			x: -0.5d
+			y: 7.5d
 			title: "{gtia.quest.147A54175ED9413E.title}"
 			subtitle: "{gtia.quest.147A54175ED9413E.subtitle}"
 			icon: "minecraft:crafting_table"
@@ -269,8 +241,8 @@
 					title: "{gtia.quest.79F9D0A994CF9EDB.task.5096CBC8A0297816}"
 				}
 			]
-			x: 3.0d
-			y: 1.75d
+			x: -2.0d
+			y: 8.5d
 			title: "{gtia.quest.79F9D0A994CF9EDB.title}"
 			subtitle: "{gtia.quest.79F9D0A994CF9EDB.subtitle}"
 			icon: "minecraft:clock"
@@ -314,8 +286,8 @@
 					title: "{gtia.quest.19DF2EC1E5BB67FE.task.4FACC8A3B1E34722}"
 				}
 			]
-			x: -1.5d
-			y: 3.0d
+			x: 3.5d
+			y: 10.0d
 			title: "{gtia.quest.19DF2EC1E5BB67FE.title}"
 			subtitle: "{gtia.quest.19DF2EC1E5BB67FE.subtitle}"
 			icon: "gtceu:rubber_sapling"
@@ -343,8 +315,8 @@
 					title: "{gtia.quest.02CCA65BFEC1A8C1.task.424DFA692A536C58}"
 				}
 			]
-			x: 0.0d
-			y: 3.0d
+			x: 1.5d
+			y: 9.0d
 			title: "{gtia.quest.02CCA65BFEC1A8C1.title}"
 			subtitle: "{gtia.quest.02CCA65BFEC1A8C1.subtitle}"
 			icon: "minecraft:cobblestone"
@@ -378,8 +350,8 @@
 					title: "{gtia.quest.4B0F76331F09E588.task.035D14259BEFAAB1}"
 				}
 			]
-			x: 3.0d
-			y: 3.0d
+			x: -2.0d
+			y: 5.5d
 			title: "{gtia.quest.4B0F76331F09E588.title}"
 			subtitle: "{gtia.quest.4B0F76331F09E588.subtitle}"
 			icon: "minecraft:sunflower"
@@ -415,8 +387,8 @@
 					title: "{gtia.quest.022919E7FDBA0A44.task.543123F13A0F456D}"
 				}
 			]
-			x: 0.0d
-			y: 4.5d
+			x: 3.0d
+			y: 8.0d
 			title: "{gtia.quest.022919E7FDBA0A44.title}"
 			subtitle: "{gtia.quest.022919E7FDBA0A44.subtitle}"
 			icon: "minecraft:furnace"
@@ -450,8 +422,8 @@
 					title: "{gtia.quest.75F8535E4B2326CE.task.13A362E087AE314C}"
 				}
 			]
-			x: 3.0d
-			y: 4.5d
+			x: 0.0d
+			y: 9.0d
 			title: "{gtia.quest.75F8535E4B2326CE.title}"
 			subtitle: "{gtia.quest.75F8535E4B2326CE.subtitle}"
 			icon: "minecraft:golden_carrot"
@@ -549,8 +521,8 @@
 					title: "{gtia.quest.6B586DEF6A83F004.task.2B2677555BD88866}"
 				}
 			]
-			x: -1.5d
-			y: 6.0d
+			x: 7.0d
+			y: 9.0d
 			title: "{gtia.quest.6B586DEF6A83F004.title}"
 			subtitle: "{gtia.quest.6B586DEF6A83F004.subtitle}"
 			icon: "sophisticatedbackpacks:backpack"
@@ -588,8 +560,8 @@
 					title: "{gtia.quest.4717F1E89DEA5262.task.17B6318C0F867B1D}"
 				}
 			]
-			x: 0.0d
-			y: 6.0d
+			x: 5.5d
+			y: 7.0d
 			title: "{gtia.quest.4717F1E89DEA5262.title}"
 			subtitle: "{gtia.quest.4717F1E89DEA5262.subtitle}"
 			icon: "gtceu:raw_coal"
@@ -623,8 +595,8 @@
 					title: "{gtia.quest.367AFA23E2694F7F.task.0D84E501422C17D9}"
 				}
 			]
-			x: -4.5d
-			y: 7.5d
+			x: 10.5d
+			y: 9.0d
 			title: "{gtia.quest.367AFA23E2694F7F.title}"
 			subtitle: "{gtia.quest.367AFA23E2694F7F.subtitle}"
 			description: [
@@ -653,8 +625,8 @@
 					title: "{gtia.quest.5AB14981CED18306.task.7ED014DA16F31DF3}"
 				}
 			]
-			x: -3.0d
-			y: 7.5d
+			x: 9.0d
+			y: 8.0d
 			title: "{gtia.quest.5AB14981CED18306.title}"
 			subtitle: "{gtia.quest.5AB14981CED18306.subtitle}"
 			description: [
@@ -681,8 +653,8 @@
 					title: "{gtia.quest.1579E463F7A8F104.task.15DDE4AD61B416FB}"
 				}
 			]
-			x: -1.5d
-			y: 7.5d
+			x: 9.0d
+			y: 5.5d
 			title: "{gtia.quest.1579E463F7A8F104.title}"
 			subtitle: "{gtia.quest.1579E463F7A8F104.subtitle}"
 			icon: "gtceu:wrought_iron_ingot"
@@ -745,8 +717,8 @@
 					title: "{gtia.quest.05ED48B8EAD12485.task.0D9D559342A3AEA2}"
 				}
 			]
-			x: 0.0d
-			y: 7.5d
+			x: 6.5d
+			y: 5.0d
 			title: "{gtia.quest.05ED48B8EAD12485.title}"
 			subtitle: "{gtia.quest.05ED48B8EAD12485.subtitle}"
 			icon: "minecraft:iron_ingot"
@@ -807,8 +779,8 @@
 					title: "{gtia.quest.5ACCF4B9A48CCFFB.task.61A412B99CA191C9}"
 				}
 			]
-			x: 1.5d
-			y: 7.5d
+			x: 8.0d
+			y: 6.5d
 			title: "{gtia.quest.5ACCF4B9A48CCFFB.title}"
 			subtitle: "{gtia.quest.5ACCF4B9A48CCFFB.subtitle}"
 			icon: "minecraft:diamond"
@@ -825,6 +797,745 @@
 				"5C7ADFB010AED3FF"
 			]
 			id: "487911F0F530BC5C"
+			rewards: [ ]
+			tasks: [
+				{
+					id: "28C414B64A4B5445"
+					item: "gtceu:iron_wire_cutter"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "{gtia.quest.487911F0F530BC5C.task.28C414B64A4B5445}"
+				}
+				{
+					id: "76BAE6F1B72719C6"
+					item: "gtceu:iron_screwdriver"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "{gtia.quest.487911F0F530BC5C.task.76BAE6F1B72719C6}"
+				}
+				{
+					id: "2536F9290B4740D4"
+					item: "gtceu:iron_saw"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "{gtia.quest.487911F0F530BC5C.task.2536F9290B4740D4}"
+				}
+				{
+					id: "664754FC5299856E"
+					item: "gtceu:iron_knife"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "{gtia.quest.487911F0F530BC5C.task.664754FC5299856E}"
+				}
+				{
+					id: "29E98ECAEAD5D3E1"
+					item: "gtceu:iron_wrench"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "{gtia.quest.487911F0F530BC5C.task.29E98ECAEAD5D3E1}"
+				}
+				{
+					id: "6072223A7E9BBFB3"
+					item: "gtceu:wood_mallet"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "{gtia.quest.487911F0F530BC5C.task.6072223A7E9BBFB3}"
+				}
+				{
+					id: "09E6C21814F5ACE5"
+					item: "gtceu:iron_crowbar"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "{gtia.quest.487911F0F530BC5C.task.09E6C21814F5ACE5}"
+				}
+			]
+			x: 9.5d
+			y: 3.5d
+			title: "{gtia.quest.487911F0F530BC5C.title}"
+			subtitle: "{gtia.quest.487911F0F530BC5C.subtitle}"
+			icon: "gtceu:iron_wrench"
+			description: [
+				"{gtia.quest.487911F0F530BC5C.desc.0}"
+				""
+				"{gtia.quest.487911F0F530BC5C.desc.2}"
+				""
+				"{gtia.quest.487911F0F530BC5C.desc.4}"
+			]
+			size: 1.0d
+			shape: "circle"
+		}
+		{
+			dependencies: [
+				"05ED48B8EAD12485"
+			]
+			id: "5C7ADFB010AED3FF"
+			rewards: [ ]
+			tasks: [
+				{
+					id: "62D907EECE92F2A2"
+					item: "gtceu:iron_hammer"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "{gtia.quest.5C7ADFB010AED3FF.task.62D907EECE92F2A2}"
+				}
+				{
+					id: "75090EBC0CEE5576"
+					item: "gtceu:iron_file"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "{gtia.quest.5C7ADFB010AED3FF.task.75090EBC0CEE5576}"
+				}
+				{
+					id: "7615FA692ECEFF96"
+					item: "gtceu:iron_mortar"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "{gtia.quest.5C7ADFB010AED3FF.task.7615FA692ECEFF96}"
+				}
+			]
+			x: 8.0d
+			y: 3.0d
+			title: "{gtia.quest.5C7ADFB010AED3FF.title}"
+			subtitle: "{gtia.quest.5C7ADFB010AED3FF.subtitle}"
+			icon: "gtceu:iron_hammer"
+			description: [
+				"{gtia.quest.5C7ADFB010AED3FF.desc.0}"
+				""
+				"{gtia.quest.5C7ADFB010AED3FF.desc.2}"
+				""
+				"{gtia.quest.5C7ADFB010AED3FF.desc.4}"
+			]
+			size: 1.0d
+			shape: "hexagon"
+		}
+		{
+			dependencies: [
+				"5C7ADFB010AED3FF"
+			]
+			id: "6D37924AE8C4B647"
+			rewards: [
+				{
+					count: 64
+					id: "0FAADC64523AB5C0"
+					item: "gtceu:bronze_dust"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1748BB82BF70647B"
+					item: "gtceu:iron_dust"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "{gtia.quest.6D37924AE8C4B647.task.1748BB82BF70647B}"
+				}
+				{
+					id: "5BB7BF0CE2F3F0A2"
+					item: "gtceu:copper_dust"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "{gtia.quest.6D37924AE8C4B647.task.5BB7BF0CE2F3F0A2}"
+				}
+			]
+			x: 10.0d
+			y: 1.5d
+			title: "{gtia.quest.6D37924AE8C4B647.title}"
+			subtitle: "{gtia.quest.6D37924AE8C4B647.subtitle}"
+			icon: "gtceu:copper_dust"
+			description: [
+				"{gtia.quest.6D37924AE8C4B647.desc.0}"
+				""
+				"{gtia.quest.6D37924AE8C4B647.desc.2}"
+			]
+			size: 1.0d
+			shape: "circle"
+		}
+		{
+			dependencies: [
+				"0B2619CBDA9424C6"
+			]
+			id: "44B99A5358D9A1A0"
+			tasks: [
+				{
+					id: "3DD46F864BD9EC55"
+					type: "item"
+					title: "{gtia.quest.44B99A5358D9A1A0.task.3DD46F864BD9EC55}"
+					item: "gtceu:creosote_bucket"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			x: 12.0d
+			y: 3.0d
+			title: "{gtia.quest.44B99A5358D9A1A0.title}"
+			subtitle: "{gtia.quest.44B99A5358D9A1A0.subtitle}"
+			icon: "gtceu:creosote_bucket"
+			description: [
+				"{gtia.quest.44B99A5358D9A1A0.desc.0}"
+				""
+				"{gtia.quest.44B99A5358D9A1A0.desc.2}"
+				""
+				"{gtia.quest.44B99A5358D9A1A0.desc.4}"
+			]
+			size: 1.0d
+			shape: "circle"
+		}
+		{
+			dependencies: [
+				"487911F0F530BC5C"
+			]
+			id: "0B2619CBDA9424C6"
+			rewards: [
+				{
+					count: 75
+					id: "6A1170689E76A584"
+					item: "gtceu:coke_oven_bricks"
+					type: "item"
+				}
+				{
+					count: 6
+					id: "620A4EFC4AB6BDAA"
+					item: "gtceu:coke_oven_hatch"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "3E1194C8177A7352"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6E7D2C03942FB710"
+					item: "gtceu:coke_oven"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "{gtia.quest.0B2619CBDA9424C6.task.6E7D2C03942FB710}"
+				}
+				{
+					id: "41ADCEEACAC0B04D"
+					item: "gtceu:coke_oven_bricks"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "{gtia.quest.0B2619CBDA9424C6.task.41ADCEEACAC0B04D}"
+				}
+			]
+			x: 11.0d
+			y: 4.5d
+			title: "{gtia.quest.0B2619CBDA9424C6.title}"
+			subtitle: "{gtia.quest.0B2619CBDA9424C6.subtitle}"
+			icon: "gtceu:coke_oven"
+			description: [
+				"{gtia.quest.0B2619CBDA9424C6.desc.0}"
+				""
+				"{gtia.quest.0B2619CBDA9424C6.desc.2}"
+				""
+				"{gtia.quest.0B2619CBDA9424C6.desc.4}"
+				""
+				"{gtia.quest.0B2619CBDA9424C6.desc.6}"
+			]
+			size: 1.0d
+			shape: "hexagon"
+		}
+		{
+			dependencies: [
+				"6D37924AE8C4B647"
+			]
+			id: "01780714D3006B80"
+			rewards: [
+				{
+					id: "75934748D442A23C"
+					item: "gtceu:bronze_ingot"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "42571A89EC4D3B33"
+					item: "gtceu:bronze_ingot"
+					type: "item"
+					match_nbt: false
+					consume_items: false
+					title: "{gtia.quest.01780714D3006B80.task.42571A89EC4D3B33}"
+				}
+			]
+			x: 12.5d
+			y: 1.5d
+			title: "{gtia.quest.01780714D3006B80.title}"
+			subtitle: "{gtia.quest.01780714D3006B80.subtitle}"
+			icon: "gtceu:bronze_ingot"
+			description: [
+				"{gtia.quest.01780714D3006B80.desc.0}"
+				""
+				"{gtia.quest.01780714D3006B80.desc.2}"
+			]
+			size: 1.0d
+			shape: "hexagon"
+		}
+		{
+			dependencies: [
+				"0B2619CBDA9424C6"
+				"01780714D3006B80"
+			]
+			icon: "gtceu:lp_steam_solid_boiler"
+			id: "64D91166C361698D"
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1EC5EB803E73695D"
+					type: "item"
+					title: "{gtia.quest.64D91166C361698D.task.1EC5EB803E73695D}"
+					item: "gtceu:coke_gem"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			x: 13.5d
+			y: 4.0d
+			title: "{gtia.quest.64D91166C361698D.title}"
+			subtitle: "{gtia.quest.64D91166C361698D.subtitle}"
+			description: [
+				"{gtia.quest.64D91166C361698D.desc.0}"
+				""
+				"{gtia.quest.64D91166C361698D.desc.2}"
+				""
+				"{gtia.quest.64D91166C361698D.desc.4}"
+			]
+		}
+		{
+			dependencies: [
+				"64D91166C361698D"
+			]
+			id: "0DE85EE72D07751E"
+			rewards: [
+				{
+					count: 64
+					id: "6C0A8FC1FF0006F6"
+					item: "gtceu:coke_block"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "10CA831FAB5C6CBC"
+					type: "checkmark"
+					title: "{gtia.quest.0DE85EE72D07751E.task.10CA831FAB5C6CBC}"
+				}
+			]
+			x: 15.5d
+			y: 5.0d
+			title: "{gtia.quest.0DE85EE72D07751E.title}"
+			subtitle: "{gtia.quest.0DE85EE72D07751E.subtitle}"
+			icon: "gtceu:coke_block"
+			description: [
+				"{gtia.quest.0DE85EE72D07751E.desc.0}"
+				""
+				"{gtia.quest.0DE85EE72D07751E.desc.2}"
+			]
+			size: 1.0d
+			shape: "circle"
+		}
+		{
+			dependencies: [
+				"64D91166C361698D"
+			]
+			id: "64DF9933496200C6"
+			rewards: [
+				{
+					count: 64
+					id: "4504FBE6988D7AAD"
+					item: "gtceu:bronze_ingot"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "78C527396B484836"
+					type: "checkmark"
+					title: "{gtia.quest.64DF9933496200C6.task.78C527396B484836}"
+				}
+			]
+			x: 14.0d
+			y: 6.5d
+			title: "{gtia.quest.64DF9933496200C6.title}"
+			subtitle: "{gtia.quest.64DF9933496200C6.subtitle}"
+			icon: "gtceu:bronze_ingot"
+			description: [
+				"{gtia.quest.64DF9933496200C6.desc.0}"
+				""
+				"{gtia.quest.64DF9933496200C6.desc.2}"
+			]
+			size: 1.0d
+			shape: "circle"
+		}
+		{
+			dependencies: [
+				"64D91166C361698D"
+			]
+			id: "4E13E66E679BAE62"
+			rewards: [
+				{
+					id: "18D502FED2FB8DD3"
+					item: {
+						Count: 1
+						id: "gtna:echoite_vajra"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								DisableShields: 1b
+								Mode: 2b
+								RelocateMinedBlocks: 1b
+								RelocateMobDrops: 1b
+								TreeFelling: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								HarvestLevel: 6
+								MaxDamage: 63
+								ToolSpeed: 12.0f
+							}
+							HideFlags: 2
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "753580F74BD97812"
+					type: "checkmark"
+					title: "{gtia.quest.4E13E66E679BAE62.task.753580F74BD97812}"
+				}
+			]
+			x: 15.0d
+			y: 3.0d
+			title: "{gtia.quest.4E13E66E679BAE62.title}"
+			subtitle: "{gtia.quest.4E13E66E679BAE62.subtitle}"
+			icon: "gtna:echoite_vajra"
+			description: [
+				"{gtia.quest.4E13E66E679BAE62.desc.0}"
+				""
+				"{gtia.quest.4E13E66E679BAE62.desc.2}"
+			]
+			size: 1.0d
+			shape: "circle"
+		}
+		{
+			dependencies: [
+				"48ED4F35ECCFD529"
+				"270B3B2AA4C678D7"
+			]
+			description: [
+				"{gtia.quest.781C717CA1C571FD.desc.0}"
+			]
+			id: "781C717CA1C571FD"
+			rewards: [
+				{
+					id: "27F543A7FB625F00"
+					item: "gtceu:vanadium_steel_axe"
+					type: "item"
+				}
+				{
+					id: "7F82185C25C25A3A"
+					item: "gtceu:vanadium_steel_pickaxe"
+					type: "item"
+				}
+				{
+					id: "3E9B1C4A7D2F5061"
+					item: "gtceu:vanadium_steel_shovel"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "{gtia.quest.781C717CA1C571FD.subtitle}"
+			tasks: [
+				{
+					id: "17F916286AAE0C41"
+					type: "checkmark"
+					title: "{gtia.quest.781C717CA1C571FD.task.17F916286AAE0C41}"
+				}
+			]
+			title: "{gtia.quest.781C717CA1C571FD.title}"
+			x: -1.0d
+			y: 3.5d
+			icon: "gtceu:vanadium_steel_axe"
+			hide_until_deps_complete: true
+		}
+		{
+			dependencies: [
+				"48ED4F35ECCFD529"
+				"4231C12C585214A4"
+			]
+			description: [
+				"{gtia.quest.4AB61B15543297E5.desc.0}"
+			]
+			id: "4AB61B15543297E5"
+			rewards: [
+				{
+					id: "3C309A8CC944A20F"
+					item: "gtceu:steel_axe"
+					type: "item"
+				}
+				{
+					id: "17BA0D3C7538049F"
+					item: "gtceu:steel_pickaxe"
+					type: "item"
+				}
+				{
+					id: "49CA7BEADA161820"
+					item: "gtceu:steel_shovel"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "{gtia.quest.4AB61B15543297E5.subtitle}"
+			tasks: [
+				{
+					id: "49FE37DB8F3E2F86"
+					type: "checkmark"
+					title: "{gtia.quest.4AB61B15543297E5.task.49FE37DB8F3E2F86}"
+				}
+			]
+			title: "{gtia.quest.4AB61B15543297E5.title}"
+			x: -1.0d
+			y: 3.5d
+			icon: "gtceu:steel_axe"
+			hide_until_deps_complete: true
+		}
+		{
+			dependencies: [
+				"147A54175ED9413E"
+				"270B3B2AA4C678D7"
+			]
+			description: [
+				"{gtia.quest.7B23BB93A5AE5637.desc.0}"
+			]
+			id: "7B23BB93A5AE5637"
+			rewards: [
+				{
+					id: "4FE6FE1D204B6057"
+					item: {
+						Count: 1
+						id: "gtceu:prospector.hv"
+						tag: {
+							Charge: 1600000L
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "{gtia.quest.7B23BB93A5AE5637.subtitle}"
+			tasks: [
+				{
+					id: "5C6E91D5A15688E9"
+					type: "checkmark"
+					title: "{gtia.quest.7B23BB93A5AE5637.task.5C6E91D5A15688E9}"
+				}
+			]
+			title: "{gtia.quest.7B23BB93A5AE5637.title}"
+			x: -4.0d
+			y: 7.0d
+			icon: "gtceu:prospector.hv"
+			hide_until_deps_complete: true
+		}
+		{
+			dependencies: [
+				"147A54175ED9413E"
+				"4231C12C585214A4"
+			]
+			description: [
+				"{gtia.quest.7E4196105B820CBE.desc.0}"
+			]
+			id: "7E4196105B820CBE"
+			rewards: [
+				{
+					id: "140FA537362086A2"
+					item: "gtceu:prospector.lv"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "{gtia.quest.7E4196105B820CBE.subtitle}"
+			tasks: [
+				{
+					id: "7D89DE741511E7F5"
+					type: "checkmark"
+					title: "{gtia.quest.7E4196105B820CBE.task.7D89DE741511E7F5}"
+				}
+			]
+			title: "{gtia.quest.7E4196105B820CBE.title}"
+			x: -4.0d
+			y: 7.0d
+			icon: "gtceu:prospector.lv"
+			hide_until_deps_complete: true
+		}
+		{
+			dependencies: [
+				"5C7ADFB010AED3FF"
+				"270B3B2AA4C678D7"
+			]
+			description: [
+				"{gtia.quest.049A6787856B1B72.desc.0}"
+			]
+			id: "049A6787856B1B72"
+			rewards: [
+				{
+					id: "4F4C4AB5694B40BE"
+					item: {
+						Count: 1
+						id: "gtceu:neutronium_hammer"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								RelocateMinedBlocks: 1b
+								RelocateMobDrops: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								HarvestLevel: 6
+								MaxDamage: 65534
+								ToolSpeed: 184.0f
+							}
+							HideFlags: 2
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3642BB7AA7EDA1CF"
+					item: {
+						Count: 1
+						id: "gtceu:neutronium_file"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								RelocateMinedBlocks: 1b
+								RelocateMobDrops: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								MaxDamage: 65534
+							}
+							HideFlags: 2
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "56276BCDBD6A1D61"
+					item: {
+						Count: 1
+						id: "gtceu:damascus_steel_mortar"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								MaxDamage: 1023
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "{gtia.quest.049A6787856B1B72.subtitle}"
+			tasks: [
+				{
+					id: "4433C43618F9C5C8"
+					type: "checkmark"
+					title: "{gtia.quest.049A6787856B1B72.task.4433C43618F9C5C8}"
+				}
+			]
+			title: "{gtia.quest.049A6787856B1B72.title}"
+			x: 8.0d
+			y: 1.5d
+			icon: "gtceu:neutronium_hammer"
+			hide_until_deps_complete: true
+		}
+		{
+			dependencies: [
+				"5C7ADFB010AED3FF"
+				"4231C12C585214A4"
+			]
+			description: [
+				"{gtia.quest.38F3A101D368347D.desc.0}"
+			]
+			id: "38F3A101D368347D"
+			rewards: [
+				{
+					id: "64C93FF74892B6A7"
+					item: "gtceu:steel_hammer"
+					type: "item"
+				}
+				{
+					id: "6A80D3432340C524"
+					item: "gtceu:steel_file"
+					type: "item"
+				}
+				{
+					id: "1F38108A1A5C9D19"
+					item: "gtceu:steel_mortar"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "{gtia.quest.38F3A101D368347D.subtitle}"
+			tasks: [
+				{
+					id: "7A9538A7A98B5E0B"
+					type: "checkmark"
+					title: "{gtia.quest.38F3A101D368347D.task.7A9538A7A98B5E0B}"
+				}
+			]
+			title: "{gtia.quest.38F3A101D368347D.title}"
+			x: 8.0d
+			y: 1.5d
+			icon: "gtceu:steel_hammer"
+			hide_until_deps_complete: true
+		}
+		{
+			dependencies: [
+				"487911F0F530BC5C"
+				"270B3B2AA4C678D7"
+			]
+			description: [
+				"{gtia.quest.3E9DCE26606F372C.desc.0}"
+			]
+			id: "3E9DCE26606F372C"
 			rewards: [
 				{
 					id: "05CE7CBCAF8014C8"
@@ -987,512 +1698,83 @@
 					type: "item"
 				}
 			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "{gtia.quest.3E9DCE26606F372C.subtitle}"
 			tasks: [
 				{
-					id: "28C414B64A4B5445"
-					item: "gtceu:iron_wire_cutter"
-					type: "item"
-					match_nbt: false
-					consume_items: false
-					title: "{gtia.quest.487911F0F530BC5C.task.28C414B64A4B5445}"
-				}
-				{
-					id: "76BAE6F1B72719C6"
-					item: "gtceu:iron_screwdriver"
-					type: "item"
-					match_nbt: false
-					consume_items: false
-					title: "{gtia.quest.487911F0F530BC5C.task.76BAE6F1B72719C6}"
-				}
-				{
-					id: "2536F9290B4740D4"
-					item: "gtceu:iron_saw"
-					type: "item"
-					match_nbt: false
-					consume_items: false
-					title: "{gtia.quest.487911F0F530BC5C.task.2536F9290B4740D4}"
-				}
-				{
-					id: "664754FC5299856E"
-					item: "gtceu:iron_knife"
-					type: "item"
-					match_nbt: false
-					consume_items: false
-					title: "{gtia.quest.487911F0F530BC5C.task.664754FC5299856E}"
-				}
-				{
-					id: "29E98ECAEAD5D3E1"
-					item: "gtceu:iron_wrench"
-					type: "item"
-					match_nbt: false
-					consume_items: false
-					title: "{gtia.quest.487911F0F530BC5C.task.29E98ECAEAD5D3E1}"
-				}
-				{
-					id: "6072223A7E9BBFB3"
-					item: "gtceu:wood_mallet"
-					type: "item"
-					match_nbt: false
-					consume_items: false
-					title: "{gtia.quest.487911F0F530BC5C.task.6072223A7E9BBFB3}"
-				}
-				{
-					id: "09E6C21814F5ACE5"
-					item: "gtceu:iron_crowbar"
-					type: "item"
-					match_nbt: false
-					consume_items: false
-					title: "{gtia.quest.487911F0F530BC5C.task.09E6C21814F5ACE5}"
+					id: "4F0050D8099DC7A4"
+					type: "checkmark"
+					title: "{gtia.quest.3E9DCE26606F372C.task.4F0050D8099DC7A4}"
 				}
 			]
-			x: -1.5d
-			y: 9.0d
-			title: "{gtia.quest.487911F0F530BC5C.title}"
-			subtitle: "{gtia.quest.487911F0F530BC5C.subtitle}"
-			icon: "gtceu:iron_wrench"
-			description: [
-				"{gtia.quest.487911F0F530BC5C.desc.0}"
-				""
-				"{gtia.quest.487911F0F530BC5C.desc.2}"
-				""
-				"{gtia.quest.487911F0F530BC5C.desc.4}"
-			]
-			size: 1.0d
-			shape: "circle"
-		}
-		{
-			dependencies: [
-				"05ED48B8EAD12485"
-			]
-			id: "5C7ADFB010AED3FF"
-			rewards: [
-				{
-					id: "4F4C4AB5694B40BE"
-					item: {
-						Count: 1
-						id: "gtceu:neutronium_hammer"
-						tag: {
-							Damage: 0
-							DisallowContainerItem: 0b
-							GT.Behaviours: {
-								RelocateMinedBlocks: 1b
-								RelocateMobDrops: 1b
-							}
-							GT.Tool: {
-								DefaultEnchantments: [ ]
-								HarvestLevel: 6
-								MaxDamage: 65534
-								ToolSpeed: 184.0f
-							}
-							HideFlags: 2
-							Unbreakable: 1b
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "3642BB7AA7EDA1CF"
-					item: {
-						Count: 1
-						id: "gtceu:neutronium_file"
-						tag: {
-							Damage: 0
-							DisallowContainerItem: 0b
-							GT.Behaviours: {
-								RelocateMinedBlocks: 1b
-								RelocateMobDrops: 1b
-							}
-							GT.Tool: {
-								DefaultEnchantments: [ ]
-								MaxDamage: 65534
-							}
-							HideFlags: 2
-							Unbreakable: 1b
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "56276BCDBD6A1D61"
-					item: {
-						Count: 1
-						id: "gtceu:damascus_steel_mortar"
-						tag: {
-							Damage: 0
-							DisallowContainerItem: 0b
-							GT.Behaviours: { }
-							GT.Tool: {
-								DefaultEnchantments: [ ]
-								MaxDamage: 1023
-							}
-							HideFlags: 2
-						}
-					}
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					id: "62D907EECE92F2A2"
-					item: "gtceu:iron_hammer"
-					type: "item"
-					match_nbt: false
-					consume_items: false
-					title: "{gtia.quest.5C7ADFB010AED3FF.task.62D907EECE92F2A2}"
-				}
-				{
-					id: "75090EBC0CEE5576"
-					item: "gtceu:iron_file"
-					type: "item"
-					match_nbt: false
-					consume_items: false
-					title: "{gtia.quest.5C7ADFB010AED3FF.task.75090EBC0CEE5576}"
-				}
-				{
-					id: "7615FA692ECEFF96"
-					item: "gtceu:iron_mortar"
-					type: "item"
-					match_nbt: false
-					consume_items: false
-					title: "{gtia.quest.5C7ADFB010AED3FF.task.7615FA692ECEFF96}"
-				}
-			]
-			x: 0.0d
-			y: 9.0d
-			title: "{gtia.quest.5C7ADFB010AED3FF.title}"
-			subtitle: "{gtia.quest.5C7ADFB010AED3FF.subtitle}"
-			icon: "gtceu:iron_hammer"
-			description: [
-				"{gtia.quest.5C7ADFB010AED3FF.desc.0}"
-				""
-				"{gtia.quest.5C7ADFB010AED3FF.desc.2}"
-				""
-				"{gtia.quest.5C7ADFB010AED3FF.desc.4}"
-			]
-			size: 1.0d
-			shape: "hexagon"
-		}
-		{
-			dependencies: [
-				"5C7ADFB010AED3FF"
-			]
-			id: "6D37924AE8C4B647"
-			rewards: [
-				{
-					count: 64
-					id: "0FAADC64523AB5C0"
-					item: "gtceu:bronze_dust"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					id: "1748BB82BF70647B"
-					item: "gtceu:iron_dust"
-					type: "item"
-					match_nbt: false
-					consume_items: false
-					title: "{gtia.quest.6D37924AE8C4B647.task.1748BB82BF70647B}"
-				}
-				{
-					id: "5BB7BF0CE2F3F0A2"
-					item: "gtceu:copper_dust"
-					type: "item"
-					match_nbt: false
-					consume_items: false
-					title: "{gtia.quest.6D37924AE8C4B647.task.5BB7BF0CE2F3F0A2}"
-				}
-			]
-			x: 1.5d
-			y: 9.0d
-			title: "{gtia.quest.6D37924AE8C4B647.title}"
-			subtitle: "{gtia.quest.6D37924AE8C4B647.subtitle}"
-			icon: "gtceu:copper_dust"
-			description: [
-				"{gtia.quest.6D37924AE8C4B647.desc.0}"
-				""
-				"{gtia.quest.6D37924AE8C4B647.desc.2}"
-			]
-			size: 1.0d
-			shape: "circle"
-		}
-		{
-			dependencies: [
-				"0B2619CBDA9424C6"
-			]
-			id: "44B99A5358D9A1A0"
-			tasks: [
-				{
-					id: "3DD46F864BD9EC55"
-					type: "item"
-					title: "{gtia.quest.44B99A5358D9A1A0.task.3DD46F864BD9EC55}"
-					item: "gtceu:creosote_bucket"
-					count: 1L
-					consume_items: false
-					match_nbt: false
-				}
-			]
-			x: -1.5d
-			y: 10.5d
-			title: "{gtia.quest.44B99A5358D9A1A0.title}"
-			subtitle: "{gtia.quest.44B99A5358D9A1A0.subtitle}"
-			icon: "gtceu:creosote_bucket"
-			description: [
-				"{gtia.quest.44B99A5358D9A1A0.desc.0}"
-				""
-				"{gtia.quest.44B99A5358D9A1A0.desc.2}"
-				""
-				"{gtia.quest.44B99A5358D9A1A0.desc.4}"
-			]
-			size: 1.0d
-			shape: "circle"
+			title: "{gtia.quest.3E9DCE26606F372C.title}"
+			x: 11.0d
+			y: 2.0d
+			icon: "gtceu:neutronium_wire_cutter"
+			hide_until_deps_complete: true
 		}
 		{
 			dependencies: [
 				"487911F0F530BC5C"
+				"4231C12C585214A4"
 			]
-			id: "0B2619CBDA9424C6"
+			description: [
+				"{gtia.quest.10FF1800F1CF2FCF.desc.0}"
+			]
+			id: "10FF1800F1CF2FCF"
 			rewards: [
 				{
-					count: 75
-					id: "6A1170689E76A584"
-					item: "gtceu:coke_oven_bricks"
+					id: "6720911C9972A163"
+					item: "gtceu:steel_wire_cutter"
 					type: "item"
 				}
 				{
-					count: 6
-					id: "620A4EFC4AB6BDAA"
-					item: "gtceu:coke_oven_hatch"
+					id: "07D64BD571E9F183"
+					item: "gtceu:steel_screwdriver"
 					type: "item"
 				}
 				{
-					count: 2
-					id: "3E1194C8177A7352"
-					item: "gtceu:coke_oven"
+					id: "2AAFDC93234B9890"
+					item: "gtceu:steel_saw"
+					type: "item"
+				}
+				{
+					id: "74B00F20A508799C"
+					item: "gtceu:steel_knife"
+					type: "item"
+				}
+				{
+					id: "208310462A047FE2"
+					item: "gtceu:steel_wrench"
+					type: "item"
+				}
+				{
+					id: "63AC9890A558DDDF"
+					item: "gtceu:steel_crowbar"
+					type: "item"
+				}
+				{
+					id: "07DD7787AA6B2ABD"
+					item: "gtceu:rubber_mallet"
 					type: "item"
 				}
 			]
-			tasks: [
-				{
-					id: "6E7D2C03942FB710"
-					item: "gtceu:coke_oven"
-					type: "item"
-					match_nbt: false
-					consume_items: false
-					title: "{gtia.quest.0B2619CBDA9424C6.task.6E7D2C03942FB710}"
-				}
-				{
-					id: "41ADCEEACAC0B04D"
-					item: "gtceu:coke_oven_bricks"
-					type: "item"
-					match_nbt: false
-					consume_items: false
-					title: "{gtia.quest.0B2619CBDA9424C6.task.41ADCEEACAC0B04D}"
-				}
-			]
-			x: 0.0d
-			y: 10.5d
-			title: "{gtia.quest.0B2619CBDA9424C6.title}"
-			subtitle: "{gtia.quest.0B2619CBDA9424C6.subtitle}"
-			icon: "gtceu:coke_oven"
-			description: [
-				"{gtia.quest.0B2619CBDA9424C6.desc.0}"
-				""
-				"{gtia.quest.0B2619CBDA9424C6.desc.2}"
-				""
-				"{gtia.quest.0B2619CBDA9424C6.desc.4}"
-				""
-				"{gtia.quest.0B2619CBDA9424C6.desc.6}"
-			]
+			shape: "diamond"
 			size: 1.0d
-			shape: "hexagon"
-		}
-		{
-			dependencies: [
-				"6D37924AE8C4B647"
-			]
-			id: "01780714D3006B80"
-			rewards: [
-				{
-					id: "75934748D442A23C"
-					item: "gtceu:bronze_ingot"
-					type: "item"
-				}
-			]
+			subtitle: "{gtia.quest.10FF1800F1CF2FCF.subtitle}"
 			tasks: [
 				{
-					id: "42571A89EC4D3B33"
-					item: "gtceu:bronze_ingot"
-					type: "item"
-					match_nbt: false
-					consume_items: false
-					title: "{gtia.quest.01780714D3006B80.task.42571A89EC4D3B33}"
-				}
-			]
-			x: 1.5d
-			y: 10.5d
-			title: "{gtia.quest.01780714D3006B80.title}"
-			subtitle: "{gtia.quest.01780714D3006B80.subtitle}"
-			icon: "gtceu:bronze_ingot"
-			description: [
-				"{gtia.quest.01780714D3006B80.desc.0}"
-				""
-				"{gtia.quest.01780714D3006B80.desc.2}"
-			]
-			size: 1.0d
-			shape: "hexagon"
-		}
-		{
-			dependencies: [
-				"0B2619CBDA9424C6"
-				"01780714D3006B80"
-			]
-			icon: "gtceu:lp_steam_solid_boiler"
-			id: "64D91166C361698D"
-			shape: "gear"
-			size: 1.5d
-			tasks: [
-				{
-					id: "1EC5EB803E73695D"
-					type: "item"
-					title: "{gtia.quest.64D91166C361698D.task.1EC5EB803E73695D}"
-					item: "gtceu:coke_gem"
-					count: 1L
-					consume_items: false
-					match_nbt: false
-				}
-			]
-			x: 0.0d
-			y: 12.5d
-			title: "{gtia.quest.64D91166C361698D.title}"
-			subtitle: "{gtia.quest.64D91166C361698D.subtitle}"
-			description: [
-				"{gtia.quest.64D91166C361698D.desc.0}"
-				""
-				"{gtia.quest.64D91166C361698D.desc.2}"
-				""
-				"{gtia.quest.64D91166C361698D.desc.4}"
-			]
-		}
-		{
-			dependencies: [
-				"64D91166C361698D"
-			]
-			id: "0DE85EE72D07751E"
-			rewards: [
-				{
-					count: 64
-					id: "6C0A8FC1FF0006F6"
-					item: "gtceu:coke_block"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					id: "10CA831FAB5C6CBC"
+					id: "549960CABEB72BC7"
 					type: "checkmark"
-					title: "{gtia.quest.0DE85EE72D07751E.task.10CA831FAB5C6CBC}"
+					title: "{gtia.quest.10FF1800F1CF2FCF.task.549960CABEB72BC7}"
 				}
 			]
-			x: -1.5d
-			y: 14.5d
-			title: "{gtia.quest.0DE85EE72D07751E.title}"
-			subtitle: "{gtia.quest.0DE85EE72D07751E.subtitle}"
-			icon: "gtceu:coke_block"
-			description: [
-				"{gtia.quest.0DE85EE72D07751E.desc.0}"
-				""
-				"{gtia.quest.0DE85EE72D07751E.desc.2}"
-			]
-			size: 1.0d
-			shape: "circle"
-		}
-		{
-			dependencies: [
-				"64D91166C361698D"
-			]
-			id: "64DF9933496200C6"
-			rewards: [
-				{
-					count: 64
-					id: "4504FBE6988D7AAD"
-					item: "gtceu:bronze_ingot"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					id: "78C527396B484836"
-					type: "checkmark"
-					title: "{gtia.quest.64DF9933496200C6.task.78C527396B484836}"
-				}
-			]
-			x: 0.0d
-			y: 14.5d
-			title: "{gtia.quest.64DF9933496200C6.title}"
-			subtitle: "{gtia.quest.64DF9933496200C6.subtitle}"
-			icon: "gtceu:bronze_ingot"
-			description: [
-				"{gtia.quest.64DF9933496200C6.desc.0}"
-				""
-				"{gtia.quest.64DF9933496200C6.desc.2}"
-			]
-			size: 1.0d
-			shape: "circle"
-		}
-		{
-			dependencies: [
-				"64D91166C361698D"
-			]
-			id: "4E13E66E679BAE62"
-			rewards: [
-				{
-					id: "18D502FED2FB8DD3"
-					item: {
-						Count: 1
-						id: "gtna:echoite_vajra"
-						tag: {
-							Damage: 0
-							DisallowContainerItem: 0b
-							GT.Behaviours: {
-								DisableShields: 1b
-								Mode: 2b
-								RelocateMinedBlocks: 1b
-								RelocateMobDrops: 1b
-								TreeFelling: 1b
-							}
-							GT.Tool: {
-								DefaultEnchantments: [ ]
-								HarvestLevel: 6
-								MaxDamage: 63
-								ToolSpeed: 12.0f
-							}
-							HideFlags: 2
-							Unbreakable: 1b
-						}
-					}
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					id: "753580F74BD97812"
-					type: "checkmark"
-					title: "{gtia.quest.4E13E66E679BAE62.task.753580F74BD97812}"
-				}
-			]
-			x: 1.5d
-			y: 14.5d
-			title: "{gtia.quest.4E13E66E679BAE62.title}"
-			subtitle: "{gtia.quest.4E13E66E679BAE62.subtitle}"
-			icon: "gtna:echoite_vajra"
-			description: [
-				"{gtia.quest.4E13E66E679BAE62.desc.0}"
-				""
-				"{gtia.quest.4E13E66E679BAE62.desc.2}"
-			]
-			size: 1.0d
-			shape: "circle"
+			title: "{gtia.quest.10FF1800F1CF2FCF.title}"
+			x: 11.0d
+			y: 2.0d
+			icon: "gtceu:steel_wire_cutter"
+			hide_until_deps_complete: true
 		}
 	]
 	title: "{gtia.quest.chapter.6B6832B924E60048}"

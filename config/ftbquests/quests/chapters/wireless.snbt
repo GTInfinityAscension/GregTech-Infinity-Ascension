@@ -32,6 +32,8 @@
 		{
 			dependencies: [
 				"5C019B5E2846B9D4"
+				"44D8CABA778F9F26"
+				"2D7482D6B779CB3D"
 			]
 			description: [
 				"{gtia.quest.66FE9D53EFC5809F.desc.0}"
@@ -40,7 +42,7 @@
 			id: "66FE9D53EFC5809F"
 			rewards: [ ]
 			shape: "hexagon"
-			size: 1.0d
+			size: 1.25d
 			subtitle: "{gtia.quest.66FE9D53EFC5809F.subtitle}"
 			tasks: [
 				{
@@ -53,7 +55,7 @@
 				}
 			]
 			title: "{gtia.quest.66FE9D53EFC5809F.title}"
-			x: 0.0d
+			x: -3.0d
 			y: 1.5d
 		}
 		{
@@ -67,7 +69,7 @@
 			id: "3AEF99284092055C"
 			rewards: [ ]
 			shape: "hexagon"
-			size: 1.0d
+			size: 1.25d
 			subtitle: "{gtia.quest.3AEF99284092055C.subtitle}"
 			tasks: [
 				{
@@ -86,6 +88,34 @@
 		{
 			dependencies: [
 				"3AEF99284092055C"
+				"20EC7F7C7CE0AE76"
+			]
+			description: [
+				"{gtia.quest.51A80DE0F5320E35.desc.0}"
+			]
+			icon: "gtna:steam_manufacturer"
+			id: "51A80DE0F5320E35"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "{gtia.quest.51A80DE0F5320E35.subtitle}"
+			tasks: [
+				{
+					id: "69AEF9F1393FF964"
+					type: "item"
+					item: "gtna:steam_manufacturer"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "{gtia.quest.51A80DE0F5320E35.title}"
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"51A80DE0F5320E35"
 			]
 			description: [
 				"{gtia.quest.51BA7FA5C93FFC0A.desc.0}"
@@ -94,7 +124,7 @@
 			id: "51BA7FA5C93FFC0A"
 			rewards: [ ]
 			shape: "hexagon"
-			size: 1.0d
+			size: 1.25d
 			subtitle: "{gtia.quest.51BA7FA5C93FFC0A.subtitle}"
 			tasks: [
 				{
@@ -112,7 +142,36 @@
 		}
 		{
 			dependencies: [
-				"51BA7FA5C93FFC0A"
+				"3AEF99284092055C"
+				"6D1F91AD527835FA"
+			]
+			description: [
+				"{gtia.quest.28B3E457A1246B30.desc.0}"
+			]
+			icon: "gtceu:mv_bender"
+			id: "28B3E457A1246B30"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "{gtia.quest.28B3E457A1246B30.subtitle}"
+			tasks: [
+				{
+					id: "1B8618112A78937C"
+					type: "item"
+					item: "gtceu:mv_bender"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "{gtia.quest.28B3E457A1246B30.title}"
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"28B3E457A1246B30"
+				"5090547B46FCE73D"
 			]
 			description: [
 				"{gtia.quest.2696A2F1B3139C12.desc.0}"
@@ -121,7 +180,7 @@
 			id: "2696A2F1B3139C12"
 			rewards: [ ]
 			shape: "hexagon"
-			size: 1.0d
+			size: 1.25d
 			subtitle: "{gtia.quest.2696A2F1B3139C12.subtitle}"
 			tasks: [
 				{

@@ -10,10 +10,10 @@ GTNA moves steam and electricity through the air. Steam hatches share steam over
 
 [[quest]]
 key = "steam_output"
-lane = "spine"
+lane = "materials"
 row = 1
 role = "spine"
-deps = ["entry"]
+deps = ["entry", "lv:lv_centrifuge", "lv:lv_assembler"]
 icon = "gtna:wireless_steam_output_hatch"
 title = "Wireless Steam Output Hatch"
 subtitle = "Send steam into the network."
@@ -27,7 +27,7 @@ key = "steam_input"
 lane = "spine"
 row = 2
 role = "spine"
-deps = ["steam_output"]
+deps = ["steam_output", "lv:lv_centrifuge", "lv:lv_assembler"]
 icon = "gtna:wireless_steam_input_hatch"
 title = "Wireless Steam Input Hatch"
 subtitle = "Draw steam from the network."
@@ -37,11 +37,25 @@ Put the input hatch on a steam machine and it draws the steam it needs from the 
 """
 
 [[quest]]
+key = "steam_manufacturer"
+lane = "materials"
+row = 3
+role = "spine"
+deps = ["steam_input", "lv:lv_mixer"]
+icon = "gtna:steam_manufacturer"
+title = "Steam Manufacturer"
+subtitle = "Hydraulic assembly."
+task = [{ item = "gtna:steam_manufacturer" }]
+text = """
+The Steam Manufacturer assembles hydraulic parts and upgrades steam hatches. It runs on steam alone, 16 per parallel, whatever the recipe says.
+"""
+
+[[quest]]
 key = "steam_steel"
 lane = "spine"
 row = 3
 role = "spine"
-deps = ["steam_input"]
+deps = ["steam_input", "steam_manufacturer"]
 icon = "gtna:wireless_steam_input_hatch_steel"
 title = "Steel Wireless Steam Hatches"
 subtitle = "More capacity."
@@ -51,11 +65,25 @@ The Steel versions of the wireless steam hatches hold far more steam than the Br
 """
 
 [[quest]]
+key = "mv_bender"
+lane = "materials"
+row = 4
+role = "spine"
+deps = ["steam_input", "mv:mv_power"]
+icon = "gtceu:mv_bender"
+title = "MV Bender"
+subtitle = "Dense plates."
+task = [{ item = "gtceu:mv_bender" }]
+text = """
+The Flux Matrix is built from dense steel plates, and only an MV Bender presses nine plates into one.
+"""
+
+[[quest]]
 key = "flux_matrix"
 lane = "spine"
 row = 5
 role = "spine"
-deps = ["steam_steel"]
+deps = ["mv_bender", "mv:mv_cutter"]
 icon = "gtna:nexus_flux_matrix"
 title = "Nexus Flux Matrix"
 subtitle = "A wireless battery for the factory."
@@ -69,7 +97,7 @@ key = "capacitor"
 lane = "materials"
 row = 5
 role = "side"
-deps = ["flux_matrix"]
+deps = ["flux_matrix", "lv:blast_furnace"]
 icon = "gtna:nexus_capacitor_lv"
 title = "Nexus Capacitor"
 subtitle = "Storage for the matrix."
@@ -97,7 +125,7 @@ key = "dynamo"
 lane = "machines"
 row = 6.5
 role = "side"
-deps = ["linker"]
+deps = ["linker", "mv:mv_cutter"]
 icon = "gtna:wireless_dynamo_hatch_1a_lv"
 title = "Wireless Dynamo Hatch"
 subtitle = "Deposit energy into the matrix."
@@ -112,7 +140,7 @@ lane = "machines"
 col = 1
 row = 6.5
 role = "side"
-deps = ["linker"]
+deps = ["linker", "mv:mv_cutter"]
 icon = "gtna:wireless_energy_hatch_1a_lv"
 title = "Wireless Energy Hatch"
 subtitle = "Draw energy from the matrix."

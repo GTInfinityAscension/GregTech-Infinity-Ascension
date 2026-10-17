@@ -41,14 +41,17 @@ def audit():
  d=Parser((source/'chapters/start.snbt').read_text()).parse()
  old=Parser((backup/'chapters/start.snbt').read_text()).parse()
  qs={q['id']:q for q in d['quests']}
- assert len(qs)==len(d['quests'])==29  # the 29 approved quests (The Research Tree was removed with GTIA-D-226)
+ mq=Parser((source/'chapters/modes.snbt').read_text()).parse()['quests']; modes={q['id'] for q in mq}; journey_id=mq[0]['id']
+ mode_of=lambda q:next((m for m in q.get('dependencies',[]) if m in modes),None)
+ kits={q['id']:q for q in qs.values() if mode_of(q)}  # Starting Kits per mode (GTIA-D-279)
+ assert len(qs)-len(kits)==29  # the 29 approved quests (The Research Tree was removed with GTIA-D-226)
  ids=[d['id']]
  for q in qs.values():
   ids.append(q['id'])
   assert q['title'] and q['subtitle'] and q['icon']
   assert len(q['subtitle'])<=70
   assert any(q['description']) and all(isinstance(t,str) and t.isascii() for t in q['description'])
-  assert all(dep in qs and dep!=q['id'] for dep in q.get('dependencies',[]))
+  assert all((dep in qs or dep in modes) and dep!=q['id'] for dep in q.get('dependencies',[]))
   assert q['tasks']
   for t in q['tasks']:
    ids.append(t['id']);assert t['title']
@@ -64,16 +67,20 @@ def audit():
   assert i not in visiting,'Dependency cycle'
   if i in visited:return
   visiting.add(i)
-  for dep in qs[i].get('dependencies',[]):visit(dep)
+  for dep in qs[i].get('dependencies',[]):
+   if dep in qs:visit(dep)
   visiting.remove(i);visited.add(i)
  for i in qs:visit(i)
  def number(q,k):return float(str(q[k]).rstrip('d'))
  for a,b in itertools.combinations(qs.values(),2):
+  if mode_of(a) and mode_of(b) and mode_of(a)!=mode_of(b):continue
   assert math.hypot(number(a,'x')-number(b,'x'),number(a,'y')-number(b,'y'))>(number(a,'size')+number(b,'size'))/2, 'Overlapping nodes'
  for a in old['quests']:
   b=qs[a['id']]
   assert {t['id'] for t in a['tasks']}=={t['id'] for t in b['tasks']}
-  if any(r['type']=='item' for r in a.get('rewards',[])):assert a['rewards']==b['rewards'],'Author item reward changed'
+  if any(r['type']=='item' for r in a.get('rewards',[])):
+   journey=[k for k in kits.values() if a['id'] in k['dependencies'] and journey_id in k['dependencies']]
+   assert a['rewards']==b['rewards'] or (not b['rewards'] and journey and journey[0]['rewards']==a['rewards']),'Author item reward changed'
  # The main route must be reachable without the optional branches.
  gate=qs['64D91166C361698D'];ancestors=set()
  def collect(i):

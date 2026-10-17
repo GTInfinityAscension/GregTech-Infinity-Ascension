@@ -81,6 +81,7 @@ class Model:
             if self.recipe_eu(recipe):
                 free_types.discard(recipe["type"])
         multiblock_tiers = config.get("generators", {})
+        steam_any_eu = set(config.get("steam_any_eu", {}).get("machines", []))
         self.unknown_generators: list[str] = []
 
         for machine in self.machines:
@@ -107,8 +108,9 @@ class Model:
                 continue
             for recipe_type in types:
                 if "steam" in path or path.startswith(("lp_", "hp_")):
+                    top = MAX_TIER if machine["item"] in steam_any_eu else STEAM_TIER
                     self.rule([(item,), (STEAM,)], [f"c:{recipe_type}:free"] +
-                              [f"c:{recipe_type}:{k}" for k in range(STEAM_TIER + 1)], "steam machine")
+                              [f"c:{recipe_type}:{k}" for k in range(top + 1)], "steam machine")
                 elif recipe_type in free_types or (machine["multiblock"] and machine["tier"] == 0
                                                    and recipe_type in free_types):
                     self.rule([(item,)], [f"c:{recipe_type}:free"], "primitive machine")

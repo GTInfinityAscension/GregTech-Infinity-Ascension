@@ -5,172 +5,1619 @@ icon = "gtceu:hv_machine_hull"
 [entry]
 subtitle = "Ascension IV"
 requires = ["mv:exit"]
+x = 1.5
+y = 7
 text = """
 High Voltage opens chemistry: distillation, cracking, plastics and the Cleanroom. Nichrome and Titanium raise your furnace ceiling.
 """
 
+[exit]
+title = "The Road Ahead"
+subtitle = "More tiers are on their way."
+deps = ["ev_hull", "mainframe"]
+x = 25
+y = 2.5
+text = """
+You have reached the end of the chapters written so far. Extreme Voltage, space and the larger machines come next.
+"""
+
 [[quest]]
-key = "hv_age"
+key = "hv_hull"
 title = "High Voltage Age"
-role = "spine"
-task = [{ item = "gtceu:hv_machine_hull" }]
-deps = ["mv:transistor"]
-lane = "spine"
-row = 1
+role = "side"
+icon = "gtceu:hv_machine_hull"
+x = 4
+y = 7
+shape = "circle"
+size = 2
+deps = ["entry"]
 subtitle = "The frame of High Voltage."
+task = [{ item = "gtceu:hv_machine_hull" }]
 text = """
-The HV Machine Hull opens the High Voltage tier. It takes Stainless Steel, so make sure the alloy is ready.
+The HV Machine Hull: stainless steel casing, gold cables and polyethylene. The Advanced Integrated Circuit from the end of MV is your HV circuit.
 """
 
 [[quest]]
-key = "nichrome"
-title = "Nichrome Smelting"
-role = "gate"
-task = [{ item = "gtceu:nichrome_dust" }]
-deps = ["hv_age"]
-lane = "spine"
-row = 2.5
-subtitle = "Raises the furnace ceiling."
+key = "hv_power"
+title = "HV Steam Turbine"
+role = "side"
+icon = "gtceu:hv_steam_turbine"
+x = 3.5
+y = 10
+shape = "hexagon"
+size = 1.25
+deps = ["hv_hull", "hv_motor"]
+subtitle = "Power for High Voltage."
+task = [{ item = "gtceu:hv_steam_turbine" }]
 text = """
-Nichrome makes the hottest coil in the tier. Smelting it needs a Kanthal-coil furnace at 2700 K.
+Two HV motors, stainless pipes and rotors. Every 480 EU/t machine in this chapter runs on HV power.
 """
 
 [[quest]]
-key = "titanium"
-title = "Titanium Smelting"
-role = "gate"
-task = [{ item = "gtceu:titanium_dust" }]
-deps = ["nichrome"]
-lane = "spine"
-row = 4.5
-subtitle = "A strong, light metal."
+key = "hv_motor"
+title = "HV Electric Motor"
+role = "side"
+icon = "gtceu:hv_electric_motor"
+x = 7
+y = 7.5
+shape = "circle"
+size = 1.25
+deps = ["hv_hull"]
+subtitle = "Stainless steel and silver."
+task = [{ item = "gtceu:hv_electric_motor" }]
 text = """
-Titanium is a strong and light metal. Hot ingots from the blast furnace cool in the Vacuum Freezer.
+Stainless steel rods, a magnetic steel rod, electrum wire and silver cables. Every HV part starts here.
 """
 
 [[quest]]
-key = "large_chemical_reactor"
-title = "Large Chemical Reactor"
-role = "spine"
-task = [{ item = "gtceu:large_chemical_reactor" }]
-lane = "spine"
-row = 6
-deps = ["hv_age", "titanium"]
-subtitle = "Chemistry in parallel."
+key = "hv_pump"
+title = "HV Electric Pump"
+role = "side"
+icon = "gtceu:hv_electric_pump"
+x = 8
+y = 5.5
+shape = "circle"
+size = 1
+deps = ["hv_motor"]
+subtitle = "Move fluids at HV."
+task = [{ item = "gtceu:hv_electric_pump" }]
+hide_dependents = true
 text = """
-The Large Chemical Reactor runs chemical recipes at scale with several inputs at once.
+An HV motor with a stainless steel pipe and rubber rings. The Vacuum Freezer and the Distillation Tower need it.
 """
 
 [[quest]]
-key = "ptfe"
-title = "PTFE"
-role = "spine"
-task = [{ item = "gtceu:polytetrafluoroethylene_dust" }]
-deps = ["large_chemical_reactor"]
-lane = "spine"
-row = 7.5
-subtitle = "A chemically inert plastic."
+key = "hv_piston"
+title = "HV Electric Piston"
+role = "side"
+icon = "gtceu:hv_electric_piston"
+x = 7.5
+y = 9
+shape = "circle"
+size = 1
+deps = ["hv_motor"]
+subtitle = "Push at HV."
+task = [{ item = "gtceu:hv_electric_piston" }]
 text = """
-PTFE is a chemically inert plastic. Making it takes a Large Chemical Reactor.
+An HV motor, stainless plates, rods and a small gear.
+"""
+
+[[quest]]
+key = "hv_arm"
+title = "HV Robot Arm"
+role = "side"
+icon = "gtceu:hv_robot_arm"
+x = 5
+y = 10
+shape = "circle"
+size = 1
+deps = ["hv_motor", "hv_piston"]
+subtitle = "The HV hand."
+task = [{ item = "gtceu:hv_robot_arm" }]
+text = """
+Two HV motors, an HV piston and an HV circuit. The HV Assembler needs two.
+"""
+
+[[quest]]
+key = "hv_conveyor"
+title = "HV Conveyor Module"
+role = "side"
+icon = "gtceu:hv_conveyor_module"
+x = 6.5
+y = 10.5
+shape = "circle"
+size = 1
+deps = ["hv_motor", "silicone"]
+subtitle = "Rubber is not enough anymore."
+task = [{ item = "gtceu:hv_conveyor_module" }]
+text = """
+Two HV motors and silicone rubber (or styrene-butadiene rubber). Plain rubber no longer works here.
+"""
+
+[[quest]]
+key = "ender_eye"
+title = "Eye of Ender"
+role = "side"
+icon = "minecraft:ender_eye"
+x = 3
+y = 4.5
+shape = "circle"
+size = 1
+deps = ["hv_hull"]
+subtitle = "The eye of HV sensors."
+task = [{ item = "minecraft:ender_eye" }]
+text = """
+Ender Pearl and Blaze Powder. The HV Sensor and Emitter look through it.
+"""
+
+[[quest]]
+key = "chromium"
+title = "Chromium"
+role = "side"
+icon = "gtceu:chromium_rod"
+x = 4
+y = 3
+shape = "circle"
+size = 1
+deps = ["hv_hull"]
+subtitle = "From chromite."
+task = [{ item = "gtceu:chromium_rod" }]
+text = """
+Chromium dust from chromite, blasted into ingots and turned into rods.
+"""
+
+[[quest]]
+key = "hv_sensor"
+title = "HV Sensor"
+role = "side"
+icon = "gtceu:hv_sensor"
+x = 2.5
+y = 2.5
+shape = "circle"
+size = 1
+deps = ["ender_eye", "chromium"]
+subtitle = "Sees farther."
+task = [{ item = "gtceu:hv_sensor" }]
+text = """
+An Eye of Ender, a chromium rod, stainless plates and an HV circuit.
+"""
+
+[[quest]]
+key = "hv_emitter"
+title = "HV Emitter"
+role = "side"
+icon = "gtceu:hv_emitter"
+x = 5.5
+y = 3.5
+shape = "circle"
+size = 1
+deps = ["ender_eye", "chromium"]
+subtitle = "Sends farther."
+task = [{ item = "gtceu:hv_emitter" }]
+hide_dependents = true
+text = """
+Chromium rods around an Eye of Ender. The HV Laser Engraver and Circuit Assembler need it.
+"""
+
+[[quest]]
+key = "stainless"
+title = "Stainless Steel Parts"
+role = "side"
+icon = "gtceu:stainless_steel_rotor"
+x = 1.5
+y = 4
+shape = "circle"
+size = 1
+deps = ["hv_hull"]
+subtitle = "Rotors and screws."
+task = [{ item = "gtceu:stainless_steel_rotor" }]
+hide_dependents = true
+text = """
+Stainless steel rotors go into the Cleanroom and the Large Chemical Reactor.
+"""
+
+[[quest]]
+key = "hv_mixer"
+title = "HV Mixer"
+role = "side"
+icon = "gtceu:hv_mixer"
+x = 5
+y = 5
+shape = "hexagon"
+size = 1.25
+deps = ["hv_motor"]
+subtitle = "Optional: faster, not required."
+task = [{ item = "gtceu:hv_mixer" }]
+text = """
+Nothing in High Voltage needs the HV Mixer. Build it when your lines want more speed.
+"""
+
+[[quest]]
+key = "hv_centrifuge"
+title = "HV Centrifuge"
+role = "side"
+icon = "gtceu:hv_centrifuge"
+x = 6.5
+y = 5
+shape = "hexagon"
+size = 1.25
+deps = ["hv_motor"]
+subtitle = "Optional: faster, not required."
+task = [{ item = "gtceu:hv_centrifuge" }]
+text = """
+Nothing in High Voltage needs the HV Centrifuge. Build it when your lines want more speed.
+"""
+
+[[quest]]
+key = "hv_electrolyzer"
+title = "HV Electrolyzer"
+role = "side"
+icon = "gtceu:hv_electrolyzer"
+x = 1
+y = 10
+shape = "hexagon"
+size = 1.25
+deps = ["hv_hull"]
+subtitle = "Optional: faster, not required."
+task = [{ item = "gtceu:hv_electrolyzer" }]
+hide_dependents = true
+text = """
+Nothing in High Voltage needs the HV Electrolyzer. Build it when your lines want more speed.
+"""
+
+[[quest]]
+key = "hv_extruder"
+title = "HV Extruder"
+role = "side"
+icon = "gtceu:hv_extruder"
+x = 8
+y = 10.5
+shape = "hexagon"
+size = 1.25
+deps = ["hv_piston", "hv_bath"]
+subtitle = "Optional: faster, not required."
+task = [{ item = "gtceu:hv_extruder" }]
+text = """
+Nothing in High Voltage needs the HV Extruder. Build it when your lines want more speed.
+"""
+
+[[quest]]
+key = "hv_macerator"
+title = "HV Macerator"
+role = "side"
+icon = "gtceu:hv_macerator"
+x = 9.5
+y = 9.5
+shape = "hexagon"
+size = 1.25
+deps = ["hv_piston"]
+subtitle = "Optional: faster, not required."
+task = [{ item = "gtceu:hv_macerator" }]
+text = """
+Nothing in High Voltage needs the HV Macerator. Build it when your lines want more speed.
+"""
+
+[[quest]]
+key = "chloromethane"
+title = "Chloromethane"
+role = "side"
+icon = "gtceu:chloromethane_bucket"
+x = -0.25
+y = 9
+shape = "circle"
+size = 1
+hide_lines = true
+deps = ["hv_hull"]
+subtitle = "Methane meets chlorine."
+task = [{ item = "gtceu:chloromethane_bucket" }]
+text = """
+Chlorine and methane in the Chemical Reactor. It starts the silicone line.
+"""
+
+[[quest]]
+key = "dmdcs"
+title = "Dimethyldichlorosilane"
+role = "side"
+icon = "gtceu:dimethyldichlorosilane_bucket"
+x = -2
+y = 10.5
+shape = "circle"
+size = 1
+deps = ["chloromethane", "hv_cr"]
+subtitle = "The Müller-Rochow step."
+task = [{ item = "gtceu:dimethyldichlorosilane_bucket" }]
+text = """
+Silicon dust and chloromethane. Water turns it into polydimethylsiloxane.
+"""
+
+[[quest]]
+key = "pdms"
+title = "Polydimethylsiloxane"
+role = "side"
+icon = "gtceu:polydimethylsiloxane_dust"
+x = 2.5
+y = 11.5
+shape = "circle"
+size = 1
+deps = ["dmdcs"]
+subtitle = "Raw silicone."
+task = [{ item = "gtceu:polydimethylsiloxane_dust" }]
+text = """
+From dimethyldichlorosilane and water, or straight from silicon, HCl and methanol.
+"""
+
+[[quest]]
+key = "silicone"
+title = "Silicone Rubber"
+role = "side"
+icon = "gtceu:silicone_rubber_plate"
+x = 5
+y = 11.5
+shape = "circle"
+size = 1
+deps = ["pdms"]
+subtitle = "Vulcanized with sulfur."
+task = [{ item = "gtceu:silicone_rubber_plate" }]
+text = """
+Nine PDMS and one sulfur. HV conveyors, pump rings and SMD capacitors use it.
+"""
+
+[[quest]]
+key = "hv_assembler"
+title = "HV Assembler"
+role = "side"
+icon = "gtceu:hv_assembler"
+x = 6.5
+y = 12
+shape = "hexagon"
+size = 1.25
+deps = ["hv_arm", "hv_conveyor"]
+subtitle = "Needed: 480 EU/t parts."
+task = [{ item = "gtceu:hv_assembler" }]
+text = """
+SMD components, the HV Energy Hatch and the Nichrome coil only assemble at 480 EU/t.
+"""
+
+[[quest]]
+key = "red_steel"
+title = "Red Steel"
+role = "side"
+icon = "gtceu:red_steel_ingot"
+x = 9
+y = 13.5
+shape = "circle"
+size = 1
+hide_lines = true
+deps = ["hv_hull", "hv_bath"]
+subtitle = "A blade for HV."
+task = [{ item = "gtceu:red_steel_ingot" }]
+text = """
+Rose gold, brass, black steel and steel, mixed and blasted. Its buzzsaw blade goes into the HV Cutter.
+"""
+
+[[quest]]
+key = "hv_cutter"
+title = "HV Cutter"
+role = "side"
+icon = "gtceu:hv_cutter"
+x = 9
+y = 12
+shape = "hexagon"
+size = 1.25
+deps = ["hv_conveyor", "red_steel"]
+subtitle = "Needed: wafers and chips."
+task = [{ item = "gtceu:hv_cutter" }]
+text = """
+Phosphorus wafers, LPIC and NOR/NAND chips are cut at 480 and 192 EU/t, inside the Cleanroom.
+"""
+
+[[quest]]
+key = "hv_bath"
+title = "HV Chemical Bath"
+role = "side"
+icon = "gtceu:hv_chemical_bath"
+x = 12.5
+y = 12.5
+shape = "hexagon"
+size = 1.25
+hide_lines = true
+deps = ["hv_conveyor", "hv_pump"]
+subtitle = "Needed: dyed lenses."
+task = [{ item = "gtceu:hv_chemical_bath" }]
+text = """
+Glass lenses are dyed at 480 EU/t: orange for LPIC, pink for NOR, gray for NAND.
+"""
+
+[[quest]]
+key = "hv_engraver"
+title = "HV Laser Engraver"
+role = "side"
+icon = "gtceu:hv_laser_engraver"
+x = 12.5
+y = 15.5
+shape = "hexagon"
+size = 1.25
+hide_lines = true
+deps = ["hv_emitter", "hv_piston"]
+subtitle = "Needed: memory wafers."
+task = [{ item = "gtceu:hv_laser_engraver" }]
+text = """
+NOR and NAND patterns are engraved on the phosphorus wafer at 480 EU/t.
+"""
+
+[[quest]]
+key = "hv_cr"
+title = "HV Chemical Reactor"
+role = "side"
+icon = "gtceu:hv_chemical_reactor"
+x = 20
+y = 1.5
+shape = "hexagon"
+size = 1.25
+hide_lines = true
+deps = ["hv_motor"]
+subtitle = "Needed: HV chemistry."
+task = [{ item = "gtceu:hv_chemical_reactor" }]
+text = """
+Tetrafluoroethylene (240 EU/t) and dimethylhydrazine (480 EU/t) do not run in the MV reactor.
 """
 
 [[quest]]
 key = "cleanroom"
 title = "Cleanroom"
 role = "spine"
-task = [{ item = "gtceu:cleanroom" }]
-deps = ["ptfe"]
-lane = "spine"
-row = 9
+x = 10
+y = 7
+shape = "circle"
+size = 2
+deps = ["hv_motor", "stainless"]
 subtitle = "A sealed room with filtered air."
+task = [{ item = "gtceu:cleanroom" }]
 text = """
 Circuits above the first tiers need a clean room: a sealed room with filtered air.
 """
 
 [[quest]]
-key = "plastic_circuit_board"
-title = "Plastic Circuit Board"
-role = "spine"
-task = [{ item = "gtceu:plastic_circuit_board" }]
-deps = ["cleanroom"]
-lane = "spine"
-row = 10.5
-subtitle = "The base of advanced circuits."
+key = "mv_circuit_asm"
+title = "MV Circuit Assembler"
+role = "side"
+icon = "gtceu:mv_circuit_assembler"
+x = 7
+y = 3.5
+shape = "hexagon"
+size = 1.25
+deps = ["mv:mv_power", "mv:arc_furnace", "mv:mv_engraver", "mv:mv_cutter"]
+subtitle = "The microprocessor runs at 60 EU/t."
+task = [{ item = "gtceu:mv_circuit_assembler" }]
 text = """
-Plastic Circuit Boards are the base of the advanced circuits made in the Cleanroom.
+The LV Circuit Assembler stops at 32 EU/t. The microprocessor, the first step of the HV circuit ladder, needs this one.
 """
 
 [[quest]]
-key = "implosion_compressor"
-title = "Implosion Compressor"
-role = "spine"
-task = [{ item = "gtceu:implosion_compressor" }]
-deps = ["hv_age"]
-lane = "machines"
-row = 2.5
-subtitle = "Explosives turn gems into hard materials."
+key = "microprocessor"
+title = "Microprocessor"
+role = "side"
+icon = "gtceu:micro_processor"
+x = 9.5
+y = 4
+shape = "circle"
+size = 1
+deps = ["mv_circuit_asm", "mv:cpu_chip", "mv:plastic_printed", "mv:mv_assembler"]
+subtitle = "A cheap LV circuit."
+task = [{ item = "gtceu:micro_processor" }]
 text = """
-The Implosion Compressor uses explosives to compress gems into hard materials such as industrial diamonds.
+A CPU chip on a plastic printed board with small parts. Two of them make a Processor Assembly.
+"""
+
+[[quest]]
+key = "proc_assembly"
+title = "Processor Assembly"
+role = "side"
+icon = "gtceu:micro_processor_assembly"
+x = 11
+y = 3.5
+shape = "circle"
+size = 1.25
+deps = ["microprocessor", "mv:mv_assembler"]
+subtitle = "A cheaper HV circuit."
+task = [{ item = "gtceu:micro_processor_assembly" }]
+text = """
+Two microprocessors with inductors, capacitors and RAM. An HV circuit cheaper than the Advanced Integrated one.
+"""
+
+[[quest]]
+key = "workstation"
+title = "Workstation"
+role = "gate"
+icon = "gtceu:micro_processor_computer"
+x = 13.5
+y = 5.5
+shape = "diamond"
+size = 1.5
+deps = ["cleanroom", "proc_assembly"]
+subtitle = "Your first EV circuit."
+task = [{ item = "gtceu:micro_processor_computer" }]
+text = """
+Two Processor Assemblies, made in the Cleanroom. The Vacuum Freezer, the Distillation Tower and the HV Circuit Assembler need it.
+"""
+
+[[quest]]
+key = "hv_circuit_asm"
+title = "HV Circuit Assembler"
+role = "side"
+icon = "gtceu:hv_circuit_assembler"
+x = 12.5
+y = 3.5
+shape = "hexagon"
+size = 1.25
+deps = ["workstation", "hv_emitter"]
+subtitle = "Needed: the Mainframe."
+task = [{ item = "gtceu:hv_circuit_assembler" }]
+text = """
+The Mainframe only assembles at 480 EU/t.
+"""
+
+[[quest]]
+key = "mainframe"
+title = "Mainframe"
+role = "gate"
+icon = "gtceu:micro_processor_mainframe"
+x = 16
+y = -1.5
+shape = "diamond"
+size = 1.5
+deps = ["hv_circuit_asm", "energy:hv_steam"]
+subtitle = "Your first IV circuit."
+task = [{ item = "gtceu:micro_processor_mainframe" }]
+text = """
+Two Workstations, aluminium frames, RAM, inductors and capacitors at 480 EU/t. Insane Voltage starts here.
+"""
+
+[[quest]]
+key = "lenses"
+title = "Dyed Glass Lenses"
+role = "side"
+icon = "gtceu:orange_glass_lens"
+x = 13.5
+y = 14
+shape = "circle"
+size = 1
+deps = ["hv_bath", "energy:hv_steam"]
+subtitle = "Orange, pink and gray."
+task = [{ item = "gtceu:orange_glass_lens" }, { item = "gtceu:pink_glass_lens" }, { item = "gtceu:gray_glass_lens" }]
+hide_dependents = true
+text = """
+Glass lenses dyed in the HV Chemical Bath. Each colour engraves a different chip.
+"""
+
+[[quest]]
+key = "lpic"
+title = "Low Power IC"
+role = "side"
+icon = "gtceu:lpic_chip"
+x = 11
+y = 9.5
+shape = "circle"
+size = 1
+deps = ["cleanroom", "hv_cutter", "lenses", "energy:hv_steam"]
+subtitle = "Inside every HV hatch."
+task = [{ item = "gtceu:lpic_chip" }]
+text = """
+A silicon wafer engraved with the orange lens and cut in the Cleanroom.
+"""
+
+[[quest]]
+key = "nak"
+title = "Sodium-Potassium"
+role = "side"
+icon = "gtceu:sodium_potassium_bucket"
+x = 16
+y = 10
+shape = "circle"
+size = 1
+hide_lines = true
+deps = ["hv_hull"]
+subtitle = "A liquid metal coolant."
+task = [{ item = "gtceu:sodium_potassium_bucket" }]
+text = """
+Sodium and potassium dust make NaK. The HV Energy Hatch is filled with it.
+"""
+
+[[quest]]
+key = "hv_hatch"
+title = "HV Energy Hatch"
+role = "side"
+icon = "gtceu:hv_energy_input_hatch"
+x = 14.5
+y = 9
+shape = "circle"
+size = 1.25
+deps = ["lpic", "nak", "hv_assembler", "energy:hv_steam"]
+subtitle = "Power for HV multiblocks."
+task = [{ item = "gtceu:hv_energy_input_hatch" }]
+text = """
+Two LPIC chips, an HV voltage coil and NaK. Your Blast Furnace can now run 480 EU/t recipes.
+"""
+
+[[quest]]
+key = "two_hatches"
+title = "Two Hatches, One Tier Up"
+role = "optional"
+icon = "gtceu:hv_energy_input_hatch"
+x = 14.5
+y = 11
+shape = "diamond"
+size = 1
+deps = ["hv_hatch"]
+subtitle = "Tip: EV recipes at HV."
+task = [{ item = "gtceu:hv_energy_input_hatch" }]
+text = """
+Two HV Energy Hatches on the same multiblock let it run 1,920 EU/t recipes, one tier above.
+"""
+
+[[quest]]
+key = "nichrome"
+title = "Nichrome Smelting"
+role = "gate"
+x = 16.5
+y = 11.5
+shape = "circle"
+size = 1
+deps = ["two_hatches"]
+subtitle = "Raises the furnace ceiling."
+task = [{ item = "gtceu:nichrome_dust" }]
+text = """
+Nichrome makes the hottest coil in the tier. Smelting it needs a Kanthal-coil furnace at 2700 K.
+"""
+
+[[quest]]
+key = "nichrome_coil"
+title = "Nichrome Coil Block"
+role = "side"
+icon = "gtceu:nichrome_coil_block"
+x = 17.5
+y = 10
+shape = "circle"
+size = 1.25
+deps = ["nichrome", "lv:liquefaction", "vacuum_freezer", "energy:hv_steam"]
+subtitle = "Raise the furnace ceiling."
+task = [{ item = "gtceu:nichrome_coil_block" }]
+text = """
+Nichrome wire and stainless foil, assembled at 480 EU/t.
+"""
+
+[[quest]]
+key = "p_boule"
+title = "Phosphorus-Doped Boule"
+role = "side"
+icon = "gtceu:phosphorus_boule"
+x = 11
+y = 11
+shape = "circle"
+size = 1
+deps = ["hv_hatch"]
+subtitle = "Silicon with phosphorus."
+task = [{ item = "gtceu:phosphorus_boule" }]
+text = """
+Silicon, phosphorus and gallium arsenide in the Blast Furnace at 480 EU/t: it needs the HV Energy Hatch.
+"""
+
+[[quest]]
+key = "p_wafer"
+title = "Phosphorus-Doped Wafer"
+role = "side"
+icon = "gtceu:phosphorus_wafer"
+x = 10.5
+y = 12.5
+shape = "circle"
+size = 1
+deps = ["p_boule", "hv_cutter", "energy:hv_steam"]
+subtitle = "Slice the boule."
+task = [{ item = "gtceu:phosphorus_wafer" }]
+text = """
+Cut the boule in the HV Cutter, inside the Cleanroom.
+"""
+
+[[quest]]
+key = "nor"
+title = "NOR Memory Chips"
+role = "side"
+icon = "gtceu:nor_memory_chip"
+x = 12
+y = 14
+shape = "circle"
+size = 1
+deps = ["p_wafer", "hv_engraver", "lenses", "energy:hv_steam"]
+subtitle = "Fast memory."
+task = [{ item = "gtceu:nor_memory_chip" }]
+text = """
+Engrave the phosphorus wafer with the pink lens, then cut it.
+"""
+
+[[quest]]
+key = "nand"
+title = "NAND Memory Chips"
+role = "side"
+icon = "gtceu:nand_memory_chip"
+x = 10.5
+y = 14
+shape = "circle"
+size = 1
+deps = ["p_wafer", "hv_engraver", "lenses", "energy:hv_steam"]
+subtitle = "Dense memory."
+task = [{ item = "gtceu:nand_memory_chip" }]
+text = """
+Engrave the phosphorus wafer with the gray lens, then cut it. Data Sticks are made from them.
+"""
+
+[[quest]]
+key = "data_stick"
+title = "Data Stick"
+role = "side"
+icon = "gtceu:data_stick"
+x = 12.5
+y = 11
+shape = "circle"
+size = 1
+deps = ["nand", "hv_circuit_asm"]
+subtitle = "Store research."
+task = [{ item = "gtceu:data_stick" }]
+text = """
+Made in the Circuit Assembler inside the Cleanroom, with NAND chips.
+"""
+
+[[quest]]
+key = "smd_resistor"
+title = "SMD Resistor"
+role = "side"
+icon = "gtceu:smd_resistor"
+x = 3.5
+y = 13
+shape = "circle"
+size = 1
+deps = ["hv_assembler", "energy:hv_steam"]
+subtitle = "Small parts, better circuits."
+task = [{ item = "gtceu:smd_resistor" }]
+text = """
+Made from carbon and fine electrum wire in polyethylene, in the HV Assembler at 480 EU/t.
+"""
+
+[[quest]]
+key = "smd_transistor"
+title = "SMD Transistor"
+role = "side"
+icon = "gtceu:smd_transistor"
+x = 4.75
+y = 13.5
+shape = "circle"
+size = 1
+deps = ["hv_assembler", "energy:hv_steam"]
+subtitle = "Small parts, better circuits."
+task = [{ item = "gtceu:smd_transistor" }]
+text = """
+Made from gallium foil and fine tantalum wire in polyethylene, in the HV Assembler at 480 EU/t.
+"""
+
+[[quest]]
+key = "smd_capacitor"
+title = "SMD Capacitor"
+role = "side"
+icon = "gtceu:smd_capacitor"
+x = 4.75
+y = 14.75
+shape = "circle"
+size = 1
+deps = ["hv_assembler", "energy:hv_steam"]
+subtitle = "Small parts, better circuits."
+task = [{ item = "gtceu:smd_capacitor" }]
+text = """
+Made from silicone rubber foil and aluminium foil in polyethylene, in the HV Assembler at 480 EU/t.
+"""
+
+[[quest]]
+key = "smd_inductor"
+title = "SMD Inductor"
+role = "side"
+icon = "gtceu:smd_inductor"
+x = 6.25
+y = 13.75
+shape = "circle"
+size = 1
+deps = ["hv_assembler", "energy:hv_steam"]
+subtitle = "Small parts, better circuits."
+task = [{ item = "gtceu:smd_inductor" }]
+text = """
+Made from a nickel-zinc ferrite ring and fine wire in polyethylene, in the HV Assembler at 480 EU/t.
+"""
+
+[[quest]]
+key = "smd_diode"
+title = "SMD Diode"
+role = "side"
+icon = "gtceu:smd_diode"
+x = 7.5
+y = 13.75
+shape = "circle"
+size = 1
+deps = ["hv_assembler", "platinum", "energy:hv_steam"]
+subtitle = "Small parts, better circuits."
+task = [{ item = "gtceu:smd_diode" }]
+text = """
+Made from gallium arsenide and fine platinum wire in polyethylene, in the HV Assembler at 480 EU/t.
 """
 
 [[quest]]
 key = "vacuum_freezer"
 title = "Vacuum Freezer"
 role = "spine"
-task = [{ item = "gtceu:vacuum_freezer" }]
-deps = ["titanium"]
-lane = "machines"
-row = 4.5
+x = 13.5
+y = 7.25
+shape = "gear"
+size = 1.5
+deps = ["workstation", "hv_pump"]
 subtitle = "Cools hot ingots."
+task = [{ item = "gtceu:vacuum_freezer" }]
+hide_dependents = true
 text = """
 The Vacuum Freezer cools the hot ingots that come out of the blast furnace into their normal form.
 """
 
 [[quest]]
-key = "distillation_tower"
-title = "Distillation Tower"
-role = "spine"
-task = [{ item = "gtceu:distillation_tower" }]
-lane = "machines"
-row = 6
-subtitle = "Splits fluids into fractions."
-deps = ["hv_age", "vacuum_freezer"]
+key = "oil"
+title = "Oil"
+role = "side"
+icon = "gtceu:oil_bucket"
+x = 15.5
+y = 7.5
+shape = "circle"
+size = 1
+hide_lines = true
+deps = ["hv_hull"]
+subtitle = "Black gold."
+task = [{ item = "gtceu:oil_bucket" }]
 text = """
-The Distillation Tower splits fluids such as oil into their fractions.
+Oil from the Fluid Drilling Rig, oil sands or soul sand in the centrifuge.
+"""
+
+[[quest]]
+key = "distillation"
+title = "Distillation Tower"
+role = "side"
+icon = "gtceu:distillation_tower"
+x = 15.5
+y = 5.5
+shape = "gear"
+size = 1.75
+deps = ["workstation", "oil", "hv_pump"]
+subtitle = "Splits fluids into fractions."
+task = [{ item = "gtceu:distillation_tower" }]
+text = """
+Four Workstations, two HV pumps and large stainless pipes. Petrochemistry starts here.
+"""
+
+[[quest]]
+key = "fractions"
+title = "Oil Fractions"
+role = "side"
+icon = "gtceu:naphtha_bucket"
+x = 17.5
+y = 3.5
+shape = "circle"
+size = 1
+deps = ["distillation"]
+subtitle = "Naphtha and fuels."
+task = [{ item = "gtceu:naphtha_bucket" }]
+text = """
+Oil splits into sulfuric naphtha, light and heavy fuels and refinery gas.
+"""
+
+[[quest]]
+key = "desulf"
+title = "Desulfurization"
+role = "side"
+icon = "gtceu:hydrogen_sulfide_bucket"
+x = 17
+y = 7.5
+shape = "circle"
+size = 1
+deps = ["distillation"]
+subtitle = "Take the sulfur out."
+task = [{ item = "gtceu:hydrogen_sulfide_bucket" }]
+text = """
+Sulfuric fractions plus hydrogen give clean fractions and hydrogen sulfide, which goes back to sulfuric acid.
 """
 
 [[quest]]
 key = "cracker"
 title = "Cracker"
 role = "spine"
-task = [{ item = "gtceu:cracker" }]
-deps = ["distillation_tower"]
-lane = "machines"
-row = 7.5
+x = 17.5
+y = 5.5
+shape = "gear"
+size = 1.75
+deps = ["distillation"]
 subtitle = "Breaks long hydrocarbons into lighter ones."
+task = [{ item = "gtceu:cracker" }]
 text = """
 The Cracker breaks long hydrocarbons into lighter ones using hydrogen or steam.
 """
 
 [[quest]]
-key = "rocket_t1"
-title = "Rocket Tier 1"
-role = "spine"
-task = [{ item = "ad_astra:tier_1_rocket" }]
-deps = ["titanium"]
-lane = "machines"
-col = 1
-row = 4.5
-subtitle = "The first step off the planet."
+key = "fuels"
+title = "Diesel and Gasoline"
+role = "side"
+icon = "gtceu:diesel_bucket"
+x = 19.5
+y = 8
+shape = "octagon"
+size = 1
+deps = ["desulf"]
+subtitle = "Bridge: power."
+task = [{ item = "gtceu:diesel_bucket" }]
 text = """
-The Tier 1 Rocket, from Ad Astra, takes you to the Moon.
+Light and heavy fuels mix into diesel for the combustion generators. See the energy chapter.
 """
 
-[exit]
-row = 12.5
-title = "The Road Ahead"
-subtitle = "More tiers are on their way."
-deps = ["plastic_circuit_board"]
+[[quest]]
+key = "ethylene"
+title = "Ethylene and Propene"
+role = "side"
+icon = "gtceu:ethylene_bucket"
+x = 19.5
+y = 3.5
+shape = "circle"
+size = 1
+deps = ["cracker"]
+subtitle = "From cracked naphtha."
+task = [{ item = "gtceu:ethylene_bucket" }]
 text = """
-You have reached the end of the chapters written so far. Extreme Voltage, space and the larger machines come next.
+Distill steam-cracked naphtha: ethylene, propene, butadiene, benzene, toluene.
+"""
+
+[[quest]]
+key = "butadiene"
+title = "Butadiene"
+role = "side"
+icon = "gtceu:butadiene_bucket"
+x = 20
+y = 6.5
+shape = "circle"
+size = 1
+deps = ["cracker"]
+subtitle = "Half of SBR."
+task = [{ item = "gtceu:butadiene_bucket" }]
+text = """
+From cracked naphtha. With styrene it becomes styrene-butadiene rubber.
+"""
+
+[[quest]]
+key = "benzene"
+title = "Benzene"
+role = "side"
+icon = "gtceu:benzene_bucket"
+x = 19.5
+y = 5
+shape = "circle"
+size = 1
+deps = ["cracker"]
+subtitle = "The aromatic ring."
+task = [{ item = "gtceu:benzene_bucket" }]
+text = """
+From cracked naphtha. Styrene, phenol and epoxy all start from it.
+"""
+
+[[quest]]
+key = "styrene"
+title = "Styrene"
+role = "side"
+icon = "gtceu:styrene_bucket"
+x = 21
+y = 5
+shape = "circle"
+size = 1
+deps = ["benzene", "ethylene"]
+subtitle = "Ethylene plus benzene."
+task = [{ item = "gtceu:styrene_bucket" }]
+text = """
+Ethylene and benzene in the Chemical Reactor, or ethylbenzene from coal gas.
+"""
+
+[[quest]]
+key = "raw_sbr"
+title = "Raw Styrene-Butadiene Rubber"
+role = "side"
+icon = "gtceu:raw_styrene_butadiene_rubber_dust"
+x = 22.5
+y = 6.5
+shape = "circle"
+size = 1
+deps = ["styrene", "butadiene", "hv_cr", "energy:hv_steam"]
+subtitle = "Polymerize it."
+task = [{ item = "gtceu:raw_styrene_butadiene_rubber_dust" }]
+text = """
+Butadiene, styrene and air in the Large Chemical Reactor at 240 EU/t.
+"""
+
+[[quest]]
+key = "sbr"
+title = "Styrene-Butadiene Rubber"
+role = "side"
+icon = "gtceu:styrene_butadiene_rubber_plate"
+x = 22.5
+y = 8
+shape = "circle"
+size = 1
+deps = ["raw_sbr"]
+subtitle = "The other HV rubber."
+task = [{ item = "gtceu:styrene_butadiene_rubber_plate" }]
+text = """
+Vulcanize raw SBR with sulfur. It can replace silicone in HV conveyors.
+"""
+
+[[quest]]
+key = "chloroform"
+title = "Chloroform"
+role = "side"
+icon = "gtceu:chloroform_bucket"
+x = 21.5
+y = 1.5
+shape = "circle"
+size = 1
+hide_lines = true
+deps = ["hv_hull"]
+subtitle = "Methane, fully chlorinated."
+task = [{ item = "gtceu:chloroform_bucket" }]
+text = """
+Six buckets of chlorine and one of methane in the Chemical Reactor.
+"""
+
+[[quest]]
+key = "tfe"
+title = "Tetrafluoroethylene"
+role = "side"
+icon = "gtceu:tetrafluoroethylene_bucket"
+x = 22
+y = 0
+shape = "circle"
+size = 1
+deps = ["chloroform", "hv_cr", "hv_electrolyzer", "energy:hv_steam"]
+subtitle = "Needs the HV reactor."
+task = [{ item = "gtceu:tetrafluoroethylene_bucket" }]
+text = """
+Chloroform and hydrofluoric acid at 240 EU/t.
+"""
+
+[[quest]]
+key = "ptfe"
+title = "PTFE"
+role = "spine"
+x = 23.5
+y = 0.5
+shape = "circle"
+size = 1.25
+deps = ["tfe"]
+subtitle = "A chemically inert plastic."
+task = [{ item = "gtceu:polytetrafluoroethylene_dust" }]
+text = """
+PTFE is a chemically inert plastic. Making it takes a Large Chemical Reactor.
+"""
+
+[[quest]]
+key = "ptfe_casing"
+title = "PTFE Pipe Casing"
+role = "side"
+icon = "gtceu:ptfe_pipe_casing"
+x = 23.5
+y = 2.5
+shape = "circle"
+size = 1
+deps = ["ptfe"]
+subtitle = "The walls of the big reactor."
+task = [{ item = "gtceu:ptfe_pipe_casing" }]
+text = """
+PTFE plates, pipes and a frame. The Large Chemical Reactor is built from it.
+"""
+
+[[quest]]
+key = "lcr"
+title = "Large Chemical Reactor"
+role = "side"
+icon = "gtceu:large_chemical_reactor"
+x = 25
+y = 4.5
+shape = "circle"
+size = 2
+deps = ["ptfe_casing"]
+subtitle = "Chemistry in parallel."
+task = [{ item = "gtceu:large_chemical_reactor" }]
+text = """
+PTFE pipes, a stainless rotor, an HV motor and four HV circuits.
+"""
+
+[[quest]]
+key = "phenol"
+title = "Phenol and Acetone"
+role = "side"
+icon = "gtceu:phenol_bucket"
+x = 22
+y = 3.5
+shape = "circle"
+size = 1
+deps = ["benzene"]
+subtitle = "From cumene."
+task = [{ item = "gtceu:phenol_bucket" }]
+text = """
+Cumene and oxygen give phenol and acetone; benzene, chlorine and water is the other way.
+"""
+
+[[quest]]
+key = "epichlorohydrin"
+title = "Epichlorohydrin"
+role = "side"
+icon = "gtceu:epichlorohydrin_bucket"
+x = 25.5
+y = 7.5
+shape = "circle"
+size = 1
+deps = ["lcr"]
+subtitle = "Glycerol or propene."
+task = [{ item = "gtceu:epichlorohydrin_bucket" }]
+text = """
+Glycerol and HCl, or propene, chlorine, hypochlorous acid and sodium hydroxide.
+"""
+
+[[quest]]
+key = "epoxy"
+title = "Epoxy"
+role = "side"
+icon = "gtceu:epoxy_ingot"
+x = 23
+y = 5
+shape = "circle"
+size = 1.25
+deps = ["phenol", "epichlorohydrin"]
+subtitle = "Resin for the next boards."
+task = [{ item = "gtceu:epoxy_ingot" }]
+text = """
+Epichlorohydrin, bisphenol A and sodium hydroxide in the Large Chemical Reactor.
+"""
+
+[[quest]]
+key = "epoxy_board"
+title = "Epoxy Printed Circuit Board"
+role = "side"
+icon = "gtceu:epoxy_printed_circuit_board"
+x = 24
+y = 7.5
+shape = "circle"
+size = 1
+deps = ["epoxy"]
+subtitle = "The board of nano circuits."
+task = [{ item = "gtceu:epoxy_printed_circuit_board" }]
+text = """
+The board of the EV nanoprocessors. It points the way out of High Voltage.
+"""
+
+[[quest]]
+key = "ammonia_link"
+title = "Ammonia"
+role = "side"
+icon = "gtceu:ammonia_bucket"
+x = 15.5
+y = 14.5
+shape = "octagon"
+size = 1
+hide_lines = true
+deps = ["hv_hull", "hv_cr", "energy:hv_steam"]
+subtitle = "From the Ammonia Converter."
+task = [{ item = "gtceu:ammonia_bucket" }]
+text = """
+The Haber-Bosch ammonia from Medium Voltage starts the nitrogen line.
+"""
+
+[[quest]]
+key = "no"
+title = "Nitric Oxide"
+role = "side"
+icon = "gtceu:nitric_oxide_bucket"
+x = 16
+y = 13
+shape = "circle"
+size = 1
+deps = ["ammonia_link"]
+subtitle = "Burn ammonia."
+task = [{ item = "gtceu:nitric_oxide_bucket" }]
+text = """
+Two ammonia and five oxygen give nitric oxide and water.
+"""
+
+[[quest]]
+key = "no2"
+title = "Nitrogen Dioxide"
+role = "side"
+icon = "gtceu:nitrogen_dioxide_bucket"
+x = 18
+y = 12.5
+shape = "circle"
+size = 1
+deps = ["no"]
+subtitle = "One more oxygen."
+task = [{ item = "gtceu:nitrogen_dioxide_bucket" }]
+text = """
+Nitric oxide and oxygen.
+"""
+
+[[quest]]
+key = "hno3"
+title = "Nitric Acid"
+role = "side"
+icon = "gtceu:nitric_acid_bucket"
+x = 20
+y = 12
+shape = "circle"
+size = 1
+deps = ["no2"]
+subtitle = "The Ostwald process."
+task = [{ item = "gtceu:nitric_acid_bucket" }]
+text = """
+Nitrogen dioxide and water give nitric acid; the leftover nitric oxide goes back in.
+"""
+
+[[quest]]
+key = "n2o4"
+title = "Dinitrogen Tetroxide"
+role = "side"
+icon = "gtceu:dinitrogen_tetroxide_bucket"
+x = 18
+y = 14.5
+shape = "circle"
+size = 1
+deps = ["ammonia_link"]
+subtitle = "Rocket oxidizer."
+task = [{ item = "gtceu:dinitrogen_tetroxide_bucket" }]
+text = """
+Ammonia and oxygen. It burns the rocket fuel.
+"""
+
+[[quest]]
+key = "hocl"
+title = "Hypochlorous Acid"
+role = "side"
+icon = "gtceu:hypochlorous_acid_bucket"
+x = 15.5
+y = 16
+shape = "circle"
+size = 1
+deps = ["ammonia_link"]
+subtitle = "Chlorine in water."
+task = [{ item = "gtceu:hypochlorous_acid_bucket" }]
+text = """
+Water and chlorine. It goes into dimethylhydrazine and epichlorohydrin.
+"""
+
+[[quest]]
+key = "dmh"
+title = "Dimethylhydrazine"
+role = "side"
+icon = "gtceu:dimethylhydrazine_bucket"
+x = 17.5
+y = 16
+shape = "circle"
+size = 1
+deps = ["hocl", "ammonia_link", "energy:hv_steam"]
+subtitle = "Needs the HV reactor."
+task = [{ item = "gtceu:dimethylhydrazine_bucket" }]
+text = """
+Methanol, ammonia and hypochlorous acid at 480 EU/t.
+"""
+
+[[quest]]
+key = "rocket_fuel"
+title = "Rocket Fuel"
+role = "side"
+icon = "gtceu:rocket_fuel_bucket"
+x = 20
+y = 15.5
+shape = "circle"
+size = 1.25
+deps = ["n2o4", "dmh"]
+subtitle = "Hypergolic."
+task = [{ item = "gtceu:rocket_fuel_bucket" }]
+text = """
+Dimethylhydrazine and dinitrogen tetroxide in the Mixer.
+"""
+
+[[quest]]
+key = "rocket_parts"
+title = "Rocket Parts"
+role = "side"
+icon = "ad_astra:rocket_nose_cone"
+x = 21
+y = 10.5
+shape = "circle"
+size = 1
+hide_lines = true
+deps = ["vacuum_freezer"]
+subtitle = "Nose cone, fins, tank, engine."
+task = [{ item = "ad_astra:rocket_nose_cone" }]
+text = """
+The steel parts of the first rocket.
+"""
+
+[[quest]]
+key = "rocket_asm"
+title = "Rocket Assembler"
+role = "side"
+x = 22.5
+y = 12
+shape = "gear"
+size = 1.5
+deps = ["rocket_parts"]
+subtitle = "Coming soon."
+task = [{ item = "gtia:rocket_assembler" }]
+text = """
+Our own rocket assembly multiblock is on its way. Until then, the rocket is built in the NASA Workbench.
+"""
+
+[[quest]]
+key = "space_suit"
+title = "Space Suit"
+role = "side"
+icon = "ad_astra:space_suit"
+x = 22
+y = 18
+shape = "circle"
+size = 1
+hide_lines = true
+deps = ["hv_hull"]
+subtitle = "Air to breathe."
+task = [{ item = "ad_astra:space_suit" }]
+text = """
+Steel plates, oxygen tanks and wool.
+"""
+
+[[quest]]
+key = "oxygen"
+title = "Oxygen Loader"
+role = "side"
+icon = "ad_astra:oxygen_loader"
+x = 24.5
+y = 17
+shape = "circle"
+size = 1
+deps = ["space_suit"]
+subtitle = "Fill suit and rocket."
+task = [{ item = "ad_astra:oxygen_loader" }]
+text = """
+It fills the space suit and the rocket with oxygen.
+"""
+
+[[quest]]
+key = "rocket"
+title = "Tier 1 Rocket"
+role = "side"
+icon = "ad_astra:tier_1_rocket"
+x = 22.5
+y = 14.5
+shape = "circle"
+size = 2
+deps = ["rocket_asm", "rocket_fuel"]
+subtitle = "The first step off the planet."
+task = [{ item = "ad_astra:tier_1_rocket" }]
+text = """
+Fuel it, climb in and launch.
+"""
+
+[[quest]]
+key = "launch_pad"
+title = "Launch Pad"
+role = "optional"
+icon = "ad_astra:launch_pad"
+x = 23
+y = 16.5
+shape = "diamond"
+size = 1
+deps = ["rocket"]
+subtitle = "Optional: a proper pad."
+task = [{ item = "ad_astra:launch_pad" }]
+text = """
+Place the rocket on a launch pad to launch it.
+"""
+
+[[quest]]
+key = "moon"
+title = "The Moon"
+role = "side"
+icon = "ad_astra:moon_globe"
+x = 25.5
+y = 14.5
+shape = "circle"
+size = 2
+deps = ["rocket", "oxygen"]
+subtitle = "New ores."
+task = [{ item = "ad_astra:moon_globe" }]
+pending = "the reachability model has no dimensions (Moon)"
+text = """
+Bauxite and ilmenite, sheldonite with platinum, pitchblende, monazite and chromite.
+"""
+
+[[quest]]
+key = "moon_base"
+title = "A First Base"
+role = "optional"
+icon = "ad_astra:moon_stone"
+x = 27
+y = 16.5
+shape = "diamond"
+size = 1
+deps = ["moon"]
+subtitle = "Optional: stay a while."
+task = [{ item = "ad_astra:moon_stone" }]
+pending = "Moon blocks"
+text = """
+Oxygen, power and a place to sleep on the Moon.
+"""
+
+[[quest]]
+key = "ilmenite"
+title = "Lunar Bauxite and Ilmenite"
+role = "side"
+icon = "gtceu:raw_ilmenite"
+x = 27
+y = 12.5
+shape = "circle"
+size = 1
+deps = ["moon"]
+subtitle = "The titanium ores."
+task = [{ item = "gtceu:raw_ilmenite" }]
+pending = "lunar ore"
+text = """
+The Moon's bauxite vein carries bauxite, ilmenite and aluminium.
+"""
+
+[[quest]]
+key = "rutile"
+title = "Rutile"
+role = "side"
+icon = "gtceu:rutile_dust"
+x = 28.5
+y = 12.5
+shape = "circle"
+size = 1
+deps = ["ilmenite"]
+subtitle = "Titanium dioxide."
+task = [{ item = "gtceu:rutile_dust" }]
+text = """
+Centrifuge the purified ilmenite or bauxite dust.
+"""
+
+[[quest]]
+key = "ticl4"
+title = "Titanium Tetrachloride"
+role = "side"
+icon = "gtceu:titanium_tetrachloride_bucket"
+x = 27.5
+y = 11
+shape = "circle"
+size = 1
+deps = ["rutile", "lcr"]
+subtitle = "Chlorinate the rutile."
+task = [{ item = "gtceu:titanium_tetrachloride_bucket" }]
+text = """
+Rutile, carbon and chlorine at 480 EU/t.
+"""
+
+[[quest]]
+key = "magnesium"
+title = "Magnesium"
+role = "side"
+icon = "gtceu:magnesium_dust"
+x = 26
+y = 10
+shape = "circle"
+size = 1
+hide_lines = true
+deps = ["hv_hull"]
+subtitle = "The Kroll reductant."
+task = [{ item = "gtceu:magnesium_dust" }]
+text = """
+From talc and soapstone, or from the magnesium chloride the titanium process gives back.
+"""
+
+[[quest]]
+key = "titanium"
+title = "Titanium Smelting"
+role = "gate"
+x = 28.5
+y = 9
+shape = "circle"
+size = 2
+deps = ["ticl4", "magnesium", "vacuum_freezer", "hv_hatch"]
+subtitle = "A strong, light metal."
+task = [{ item = "gtceu:titanium_dust" }]
+text = """
+Titanium is a strong and light metal. Hot ingots from the blast furnace cool in the Vacuum Freezer.
+"""
+
+[[quest]]
+key = "ev_hull"
+title = "EV Machine Hull"
+role = "gate"
+icon = "gtceu:ev_machine_hull"
+x = 28.5
+y = 6.5
+shape = "diamond"
+size = 1.75
+deps = ["titanium"]
+subtitle = "The way out of High Voltage."
+task = [{ item = "gtceu:ev_machine_hull" }]
+text = """
+Titanium plates, aluminium cables and polyethylene. Extreme Voltage begins.
+"""
+
+[[quest]]
+key = "platinum"
+title = "Platinum"
+role = "side"
+icon = "gtceu:platinum_dust"
+x = 24.5
+y = 12.5
+shape = "circle"
+size = 1
+deps = ["moon"]
+subtitle = "From lunar sheldonite."
+task = [{ item = "gtceu:platinum_dust" }]
+pending = "lunar sheldonite"
+hide_dependents = true
+text = """
+Sheldonite gives platinum and palladium. Fine platinum wire goes into the SMD diode.
+"""
+
+[[quest]]
+key = "desh"
+title = "Desh"
+role = "optional"
+icon = "ad_astra:raw_desh"
+x = 27.5
+y = 15
+shape = "diamond"
+size = 1
+deps = ["moon"]
+subtitle = "Optional: a preview of EV."
+task = [{ item = "ad_astra:raw_desh" }]
+pending = "lunar ore"
+text = """
+A lunar ore for the tier 2 rocket.
+"""
+
+[[quest]]
+key = "bees"
+title = "Industrial Apiary"
+role = "side"
+icon = "gtia:hv_industrial_apiary"
+x = 1
+y = 12
+shape = "octagon"
+size = 1
+deps = ["hv_hull"]
+subtitle = "Bridge: Bees."
+task = [{ item = "gtia:hv_industrial_apiary" }]
+text = """
+Metal bees and combs start in High Voltage. See the Bees chapter.
+"""
+
+[[quest]]
+key = "agro"
+title = "HV Seed Analyzer"
+role = "side"
+icon = "gtia:hv_seed_analyzer"
+x = 0
+y = 5
+shape = "octagon"
+size = 1
+deps = ["hv_hull"]
+subtitle = "Bridge: Agriculture."
+task = [{ item = "gtia:hv_seed_analyzer" }]
+text = """
+The HV analyzer, the mutation chamber and the HV fermentation vat continue in the Agriculture chapter.
 """

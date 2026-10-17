@@ -61,3 +61,8 @@ fluids = ["minecraft:water", "minecraft:lava", "minecraft:milk"]
 "gtna:rocket_large_turbine" = 5
 "gtna:supercritical_steam_turbine" = 6
 "gtna:annihilate_generator" = 13
+
+# Steam multiblocks whose recipe logic charges a fixed steam cost and ignores the recipe's EU/t, so they run recipes
+# of any tier (GTNA SteamManufacturer: 16 steam per parallel).
+[steam_any_eu]
+machines = ["gtna:steam_manufacturer"]

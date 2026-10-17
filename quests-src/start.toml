@@ -31,3 +31,101 @@ link_y = 16.5
 "Coke for the First Boilers" = "side"
 "Bronze for the First Machines" = "side"
 "A Tool for the Next Stage" = "side"
+
+[positions]
+# Layout v7 (D-276): só a posição muda; texto, tarefas e recompensas são os do autor (D-191).
+"How to Read This Chapter" = [1.5, 7]
+"Before You Begin" = [2.5, 4.5]
+"About the Pack" = [1, 3]
+"Welcome to Infinity Ascension" = [0, 5]
+"Room for a Factory" = [-2.5, 7]
+"Your First Workbench" = [-0.5, 7.5]
+"Freeze Daylight" = [-2, 8.5]
+"Plant for the Future" = [3.5, 10]
+"A Stack of Stone" = [1.5, 9]
+"Freeze Weather" = [-2, 5.5]
+"Fire Up the Furnace" = [3, 8]
+"Night Vision" = [0, 9]
+"Carry and Store More" = [7, 9]
+"Fuel for the Workshop" = [5.5, 7]
+"The Nexus Structure Terminal" = [10.5, 9]
+"The GregTech Terminal" = [9, 8]
+"Wrought Iron" = [9, 5.5]
+"The First Metals" = [6.5, 5]
+"A Wider Mineral Collection" = [8, 6.5]
+"Complete the Tool Kit" = [9.5, 3.5]
+"The First GregTech Tools" = [8, 3]
+"Metals into Dust" = [10, 1.5]
+"Collect the Creosote" = [12, 3]
+"Build a Coke Oven" = [11, 4.5]
+"Your First Bronze" = [12.5, 1.5]
+"Ready for Steam" = [13.5, 4]
+"Coke for the First Boilers" = [15.5, 5]
+"Bronze for the First Machines" = [14, 6.5]
+"A Tool for the Next Stage" = [15, 3]
+
+[[mode_reward]]
+key = "welcome_kit"
+title = "Welcome to Infinity Ascension"
+reward_title = "Starting Kit"
+x = -1.0
+y = 3.5
+journey_subtitle = "Journey kit."
+journey_text = "Journey worlds start strong: these are the tools the author picked."
+normal_subtitle = "Normal kit."
+normal_text = "Normal worlds get tools of the age: steel, built to last the Steam Age."
+normal = [
+    { item = "gtceu:steel_axe" },
+    { item = "gtceu:steel_pickaxe" },
+    { item = "gtceu:steel_shovel" },
+]
+
+[[mode_reward]]
+key = "workbench_kit"
+title = "Your First Workbench"
+reward_title = "Starting Kit"
+x = -4.0
+y = 7.0
+journey_subtitle = "Journey kit."
+journey_text = "Journey worlds start strong: these are the tools the author picked."
+normal_subtitle = "Normal kit."
+normal_text = "Normal worlds get tools of the age: steel, built to last the Steam Age."
+normal = [
+    { item = "gtceu:prospector.lv" },
+]
+
+[[mode_reward]]
+key = "tools_kit"
+title = "The First GregTech Tools"
+reward_title = "Starting Kit"
+x = 8.0
+y = 1.5
+journey_subtitle = "Journey kit."
+journey_text = "Journey worlds start strong: these are the tools the author picked."
+normal_subtitle = "Normal kit."
+normal_text = "Normal worlds get tools of the age: steel, built to last the Steam Age."
+normal = [
+    { item = "gtceu:steel_hammer" },
+    { item = "gtceu:steel_file" },
+    { item = "gtceu:steel_mortar" },
+]
+
+[[mode_reward]]
+key = "toolkit_kit"
+title = "Complete the Tool Kit"
+reward_title = "Starting Kit"
+x = 11.0
+y = 2.0
+journey_subtitle = "Journey kit."
+journey_text = "Journey worlds start strong: these are the tools the author picked."
+normal_subtitle = "Normal kit."
+normal_text = "Normal worlds get tools of the age: steel, built to last the Steam Age."
+normal = [
+    { item = "gtceu:steel_wire_cutter" },
+    { item = "gtceu:steel_screwdriver" },
+    { item = "gtceu:steel_saw" },
+    { item = "gtceu:steel_knife" },
+    { item = "gtceu:steel_wrench" },
+    { item = "gtceu:steel_crowbar" },
+    { item = "gtceu:rubber_mallet" },
+]

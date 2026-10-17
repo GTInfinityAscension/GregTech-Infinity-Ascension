@@ -47,7 +47,6 @@ next = "hv"
 [[chapter]]
 file = "hv"
 kind = "generated"
-legacy = true          # not rewritten yet (2026-10-04): reachability findings are notes, not errors
 group = "ascensions"
 order = 4
 
@@ -60,7 +59,6 @@ order = 5
 [[chapter]]
 file = "wireless"
 kind = "generated"
-legacy = true          # not rewritten yet (2026-10-04): reachability findings are notes, not errors
 group = "systems"
 order = 6
 

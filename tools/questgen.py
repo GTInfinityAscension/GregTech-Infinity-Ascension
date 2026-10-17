@@ -155,6 +155,30 @@ def periodic_cell(z: int) -> tuple[float, int]:
     raise ValueError(f"no cell for element {z}")
 
 
+# GTIA-D-254/D-279: a world is Journey or Normal. GTIACore tags the player (gtia_journey / gtia_normal); one hidden
+# quest per mode checks that tag as an FTB Quests stage, and mode-only quests depend on it.
+MODES = ("journey", "normal")
+
+
+def mode_quest(mode: str) -> str:
+    return ident(f"quest:modes:{mode}")
+
+
+def modes_chapter() -> dict:
+    quests = [{"description": [f"Done in {m.capitalize()} worlds."], "id": mode_quest(m), "invisible": Raw("true"), "shape": "circle", "size": double(1.0),
+               "tasks": [{"id": ident(f"task:modes:{m}"), "stage": f"gtia_{m}", "type": "gamestage"}],
+               "title": m.capitalize(), "x": double(2.0 * i), "y": double(0.0)} for i, m in enumerate(MODES)]
+    return {"always_invisible": Raw("true"), "default_hide_dependency_lines": Raw("true"),
+            "default_quest_shape": "circle", "filename": "modes", "id": ident("chapter:modes"),
+            "order_index": Raw("99"), "quest_links": [], "quests": quests, "title": "Modes"}
+
+
+def add_mode(quest: dict, mode: str) -> None:
+    """Show the quest only in worlds of that mode."""
+    quest.setdefault("dependencies", []).append(mode_quest(mode))
+    quest["hide_until_deps_complete"] = Raw("true")
+
+
 class Book:
     def __init__(self):
         spec = tomllib.loads((SRC / "book.toml").read_text(encoding="utf-8"))
@@ -262,7 +286,7 @@ class Book:
 
         def extra_of(quest):
             extra = {k: quest[k] for k in ("shape", "size", "optional", "dep_mode", "min_deps", "hide_lines",
-                                            "hidden", "allow_machine_reward", "pending") if k in quest}
+                                            "hidden", "hide_dependents", "allow_machine_reward", "pending", "mode") if k in quest}
             if "column" in quest or "x" in quest:
                 extra["x"] = quest["x"] if "x" in quest else spec["columns"][quest["column"]]
                 extra["y"] = quest["y"] if "y" in quest else spec["rows"][quest["grid_row"]]
@@ -290,6 +314,8 @@ class Book:
             q["id"] = self.qid(file, key)
             if extra.get("hide_lines"):
                 q["hide_dependency_lines"] = Raw("true")
+            if extra.get("hide_dependents"):
+                q["hide_dependent_lines"] = Raw("true")
             if extra.get("hidden"):
                 q["hide_until_deps_visible"] = Raw("true")
             if style.get("optional"):
@@ -306,6 +332,8 @@ class Book:
                 x, y = lane_x(lane, col), row * ROW
             q["x"] = double(x)
             q["y"] = double(y)
+            if extra.get("mode"):
+                add_mode(q, extra["mode"])
             quests.append(q)
             positions.append((key, x, y, style["size"]))
             if extra.get("pending"):
@@ -367,7 +395,11 @@ class Book:
         start = snbt.loads((SRC / "start.original.snbt").read_text(encoding="utf-8"))
         meta = tomllib.loads((SRC / "start.toml").read_text(encoding="utf-8"))
         roles = meta["roles"]
+        # D-276: the approved Start keeps its text, tasks and rewards; only its layout comes from start.toml.
+        positions = meta.get("positions", {})
         for quest in start["quests"]:
+            if quest.get("title") in positions:
+                quest["x"], quest["y"] = (double(v) for v in positions[quest["title"]])
             role = roles.get(quest["title"])
             if role is None:
                 raise SystemExit(f"start.toml has no role for the Start quest {quest['title']!r}")
@@ -396,6 +428,26 @@ class Book:
             if new.get("icon"):
                 quest["icon"] = new["icon"]
             start["quests"].append(quest)
+        # D-279: some Start rewards depend on the mode. Journey keeps the author's rewards; Normal gets tier ones.
+        by_title = {q.get("title"): q for q in start["quests"]}
+        for spec in meta.get("mode_reward", []):
+            base = by_title[spec["title"]]
+            journey_rewards, base["rewards"] = base.get("rewards", []), []
+            for mode, rewards, dx in (("journey", journey_rewards, 0.0), ("normal", None, 0.0)):
+                key = f"{spec['key']}_{mode}"
+                if rewards is None:
+                    rewards = [{**({"count": Raw(str(r["count"]))} if r.get("count", 1) > 1 else {}),
+                                "id": ident(f"reward:start:{key}:{i}"), "item": r["item"], "type": "item"}
+                               for i, r in enumerate(spec["normal"])]
+                quest = {"dependencies": [base["id"]], "description": paragraphs(spec[f"{mode}_text"]),
+                         "id": ident("quest:start:" + key), "rewards": rewards, "shape": "diamond",
+                         "size": double(1.0), "subtitle": spec[f"{mode}_subtitle"],
+                         "tasks": [{"id": ident(f"task:start:{key}"), "type": "checkmark", "title": "Claim"}],
+                         "title": spec["reward_title"], "x": double(spec["x"] + dx), "y": double(spec["y"])}
+                first = rewards[0].get("item") if rewards else None
+                quest["icon"] = first if isinstance(first, str) else (first or {}).get("id") or base.get("icon", "minecraft:chest")
+                add_mode(quest, mode)
+                start["quests"].append(quest)
         start["group"] = self.group_id(chapter["group"])
         start["order_index"] = Raw(str(chapter["order"]))
         nxt = chapter.get("next")
@@ -461,6 +513,7 @@ class Book:
             else:
                 chapters_out[chapter["file"]] = self.build_chapter(chapter)[0]
         self.reduce_dependencies(chapters_out)
+        chapters_out["modes"] = modes_chapter()
         return chapters_out
 
     def reduce_dependencies(self, chapters_out) -> None:
@@ -495,7 +548,10 @@ class Book:
 
 def load_registry():
     """(item ids, namespaces) from manifest/registry, or (None, None) when there is no export."""
-    path = REGISTRY / "items.txt"
+    # The full-pack export (server_smoke.py --export-recipes) is newer and covers every mod; the core copy is the fallback.
+    path = REGISTRY / "pack" / "items.txt"
+    if not path.exists():
+        path = REGISTRY / "items.txt"
     if not path.exists():
         return None, None
     items = set(path.read_text(encoding="utf-8").split())
@@ -518,9 +574,10 @@ def check_reward_rules(book, quests_by_id, chapter_of, all_ids, errors) -> None:
 MAX_LINE = 5.0  # longer dependency lines read as noise; hide them or move the quests closer
 
 
-def check_layout(book, quests_by_id, chapter_of, errors) -> None:
+def check_layout(book, quests_by_id, chapter_of, errors, notes) -> None:
     """The drawn dependency lines of a rewritten chapter must not cross, run over another quest or run across the
-    whole chapter. (The approved Start, the Periodic Table and the chapters not rewritten yet are left out.)"""
+    whole chapter. (The approved Start, the Periodic Table and the chapters not rewritten yet are left out.)
+    D-275/D-276: like GTO's books, crossings and long lines are allowed (reported as notes); a line over a quest is not."""
     import math
     checked = {c["file"] for c in book.chapters if c["kind"] == "generated" and not c.get("legacy")}
     for file in sorted(checked):
@@ -531,14 +588,14 @@ def check_layout(book, quests_by_id, chapter_of, errors) -> None:
             if q.get("hide_dependency_lines") == "true":
                 continue
             for dep in q.get("dependencies", []):
-                if dep in quests:
+                if dep in quests and quests[dep].get("hide_dependent_lines") != "true":
                     lines.append((dep, qid))
         title = lambda qid: quests[qid].get("title", qid)
         for a, b in lines:
             (ax, ay, _), (bx, by, _) = pos[a][:3], pos[b][:3]
             length = math.hypot(bx - ax, by - ay)
             if length > MAX_LINE:
-                errors.append(f"{file}: line {title(a)!r} -> {title(b)!r} is {length:.1f} long (max {MAX_LINE})")
+                notes.append(f"{file}: line {title(a)!r} -> {title(b)!r} is {length:.1f} long")
             for c, (cx, cy, size) in pos.items():
                 if c in (a, b) or length == 0:
                     continue
@@ -554,7 +611,7 @@ def check_layout(book, quests_by_id, chapter_of, errors) -> None:
                 if {a, b} & {c, d_}:
                     continue
                 if cross(pos[a][:2], pos[b][:2], pos[c][:2], pos[d_][:2]):
-                    errors.append(f"{file}: lines {title(a)!r} -> {title(b)!r} and {title(c)!r} -> {title(d_)!r} cross")
+                    notes.append(f"{file}: lines {title(a)!r} -> {title(b)!r} and {title(c)!r} -> {title(d_)!r} cross")
 
 
 def check_reachability(book, quests_by_id, chapter_of, all_ids, errors, notes) -> None:
@@ -732,10 +789,14 @@ def cmd_check() -> int:
                 check_item(item, where)
                 if isinstance(item, str) and not re.fullmatch(r"[a-z0-9_.-]+:[a-z0-9_./-]+", item):
                     errors.append(f"{where}: malformed item id {item!r}")
-            positions.append((q.get("title"), snbt.number(q["x"]), snbt.number(q["y"]), snbt.number(q.get("size", "1.0d"))))
-        for i, (a, ax, ay, asize) in enumerate(positions):
-            for b, bx, by, bsize in positions[i + 1:]:
+            mode = next((m for m in MODES if mode_quest(m) in q.get("dependencies", [])), None)
+            positions.append((q.get("title"), snbt.number(q["x"]), snbt.number(q["y"]), snbt.number(q.get("size", "1.0d")),
+                              mode))
+        for i, (a, ax, ay, asize, am) in enumerate(positions):
+            for b, bx, by, bsize, bm in positions[i + 1:]:
                 reach = (asize + bsize) / 2
+                if am and bm and am != bm:
+                    continue  # quests of different modes never show together / modos diferentes nunca aparecem juntos
                 if abs(ax - bx) < reach and abs(ay - by) < reach:
                     errors.append(f"{path.stem}: {a!r} and {b!r} overlap")
     for qid, q in quests_by_id.items():
@@ -770,7 +831,7 @@ def cmd_check() -> int:
     check_reward_rules(book, quests_by_id, chapter_of, all_ids, errors)
     notes: list[str] = []
     check_reachability(book, quests_by_id, chapter_of, all_ids, errors, notes)
-    check_layout(book, quests_by_id, chapter_of, errors)
+    check_layout(book, quests_by_id, chapter_of, errors, notes)
     for line in errors:
         print("ERROR:", line)
     for line in notes:
