@@ -141,6 +141,58 @@ file = "config/extremesoundmuffler-client.toml"
 hash = "1b411abdba711cc22542812c34d840a686c8ff50eac65e3917c8e27934fbdfb3"
 
 [[files]]
+file = "config/fancymenu/assets/gtia_background.gif"
+hash = "a1474100b2e55fce8096c929fc1357a54f4bf3464f5a0560e6302b81c2138c3a"
+
+[[files]]
+file = "config/fancymenu/assets/gtia_button_hover.png"
+hash = "20fc875b3e1f8c7df6db426c75546225beb715db9fe9bfaf2fefe158702246d2"
+
+[[files]]
+file = "config/fancymenu/assets/gtia_button_normal.png"
+hash = "c62ba9eeb6f207d7dc62c2cf9649ca91677f888d95e25160fbc319a3812e18f1"
+
+[[files]]
+file = "config/fancymenu/assets/gtia_discord.png"
+hash = "2b83a10afc0d62292c5e7f81f4db153c742f96b5a8155f84a6e52dfccee18c6d"
+
+[[files]]
+file = "config/fancymenu/assets/gtia_discord_hover.png"
+hash = "36f7401383c0bba7cd7ecc77ffeda5fb0a2c1e20d7a69927246c818f37fafc5f"
+
+[[files]]
+file = "config/fancymenu/assets/gtia_emblem.gif"
+hash = "84519938046b6ff313c7cf7406271b844cd5df6eb6634d13355d2c2f86bf3dac"
+
+[[files]]
+file = "config/fancymenu/assets/gtia_icon_16.png"
+hash = "56605d79f83a2169f234e96d47ba25ff2570810783a487e40d0289d5716a0ce1"
+
+[[files]]
+file = "config/fancymenu/assets/gtia_icon_32.png"
+hash = "ddcf95401e30e5f1b649b3fb023ccfd535915044677ee539f4a98ccdd7107e56"
+
+[[files]]
+file = "config/fancymenu/assets/gtia_icon_mac.png"
+hash = "0e3d9e69b0f6ab8932dc4f888a0f8997277241a59d791c6d7fa751e2d2e880b2"
+
+[[files]]
+file = "config/fancymenu/assets/gtia_text_logo.png"
+hash = "c0a8ed3d9ccf0aa64b352f5095bd5da5c98bf985b450f86d781f36d60fed9a3d"
+
+[[files]]
+file = "config/fancymenu/customizablemenus.txt"
+hash = "4c68ab99c906dd487952f61bf33c0635039a8bbff3f02099e3cd8272fe51b4aa"
+
+[[files]]
+file = "config/fancymenu/customization/gtia_title_screen.txt"
+hash = "48ab29f9273b13fcc766bfbb6aca335e92775ae1a68ce26c7ecfb273fdb09d79"
+
+[[files]]
+file = "config/fancymenu/options.txt"
+hash = "af60628cb2b432f5c2f4f659ba32954ecb1047f0a07575c230d8e58cdb15d0e1"
+
+[[files]]
 file = "config/fast_recipe_search.toml"
 hash = "4273903f1262e5b4d2df62e9c915eabc7df93349e75c8b6b9978a746680670fc"
 
@@ -194,19 +246,23 @@ hash = "a591cef12157c4cd00f7d32ea87a62cf829eb37881bb899d33cd59d8236596af"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/energy.snbt"
-hash = "ddcbd128e12839ff90aa704010912fc3f15ae0d98fd4662d00b32aafb3290340"
+hash = "429286db32b8839044595d50d4d1fbc7cd654738acc00dbae062efa582feb2c4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/hv.snbt"
-hash = "c136aa395d36e45da0146ad499cca354f6e035be7b4dc34074f93ba1a0197d77"
+hash = "39aaf26b62a423490d2393c857041636397565eb33a694ef90b616f94bed13dd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/lv.snbt"
-hash = "1a992d14e9cecd2c276f78155c68efa89c16e3d6544af1cbd4bbbff989d494b4"
+hash = "f9527f0eb4486af0e76b7d139fd2842f888a2e8238e8e69f815634291ee52861"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/modes.snbt"
+hash = "197086fbd5fbb078e609c91b3c8340cbfb2aed721574338fcdd93f5fb6741e4e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mv.snbt"
-hash = "1ae0f26848c7da876b0f9604c6ff1ebe7b51663c746c72523b976f798d293316"
+hash = "8e91493d9397eca296242c34e7be3d0da2b524a182dfab4c385f803a6f877b6b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/periodic.snbt"
@@ -214,15 +270,15 @@ hash = "b01f9e0d0fc611d29b20cf031e31d15176ccdd963afb84a4d19ca68c0b63abc8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/start.snbt"
-hash = "a2fe3ba7be09ae9e09b53a0b1cc635020c6241e25d3a9166743c0e7e54346dd6"
+hash = "06af6f97e9432c6d65b5f6df0a6c16ca94460b99817245e083a2c917dc7e7cdc"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/steam.snbt"
-hash = "1f520a7effcbb53061ab4b4815caa3710118950cf5740b190caf8dc2dc864930"
+hash = "da4745217962d1610bb68efea305e8312faae7e944ab679c6c0de88b115645c4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/wireless.snbt"
-hash = "705c268976912cd8f62f29d1ac85c37de5370752cfda456cf865397bbf2acc55"
+hash = "3e69676e68a1fb3a2adc5759694581a41761cab624fb6a97ab8db4b6a9eb0a40"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -234,7 +290,7 @@ hash = "559bfe34ba2edaa727b80731eaa5e53ab47b02a947db216ec4e64ea1b529fe20"
 
 [[files]]
 file = "config/ftbxmodcompat.snbt"
-hash = "774631c740366a8dfef9c646d5f60a9939299f3627180ab9ac4d540c76af4081"
+hash = "2291ae4641c92dbc9b811fef4b309170d70e468101476c2c0b8db62c651ba5b4"
 
 [[files]]
 file = "config/functionalstorage/functionalstorage-client.toml"
@@ -333,24 +389,112 @@ file = "config/openloader/advanced_options.json"
 hash = "d08c3a750d2f50f0d6e66217e92bbbecc102ad91f66b8a263e48d1b6388bba3e"
 
 [[files]]
+file = "config/openloader/resources/gtia_menu/assets/gtia_menu/lang/en_us.json"
+hash = "a46c643ddf241f852c5a029a7caa85f121c470628f72e23058f133056578ecdf"
+
+[[files]]
+file = "config/openloader/resources/gtia_menu/assets/gtia_menu/lang/pt_br.json"
+hash = "7c74270ff0355d288b2ddd2a4cc12a9314a57a9899b24dd725d24d02ea44edaf"
+
+[[files]]
+file = "config/openloader/resources/gtia_menu/assets/gtia_menu/lang/zh_cn.json"
+hash = "1d363e26e8e8b8b3f8c5e93d2e5c6972d5979c370d91e19569ddf5749397ec7f"
+
+[[files]]
+file = "config/openloader/resources/gtia_menu/pack.mcmeta"
+hash = "3d90683b98442451779d53f907e3daaf2a969ce25c47001b338151ef55cb0c79"
+
+[[files]]
 file = "config/openloader/resources/gtia_quests/assets/gtia_quests/lang/en_us.json"
-hash = "c9aba54e42195e87dbac357e308a125bed8cb450948643dfb6d39be3f1f002d6"
+hash = "7c03bd64bf34af9b0a40b1b36f15c8600da8ca404b5d744bf109a9f7c4589caa"
 
 [[files]]
 file = "config/openloader/resources/gtia_quests/assets/gtia_quests/lang/pt_br.json"
-hash = "a53d15efb5db7debeb9e11ae8c90b8c8af773385519ea6b8007cb118b40b4e06"
+hash = "d67974b5f62b9752d1472e54dfdc687a386bbf6064e2d32a57907921cca86d54"
 
 [[files]]
 file = "config/openloader/resources/gtia_quests/assets/gtia_quests/lang/zh_cn.json"
-hash = "5172de7d51d89d13f5e070b11dd49e653ed3ca9b64c5d861378be9c555ef5a60"
+hash = "c274f05dc709057166011b165fc9e047087549f54cfce5a8bf576abfe26671c2"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/ammonia_converter.png"
+hash = "5767e3241c3e3d7e47c05fbac540f1813da056d43e2bcd8097556df17d63a9be"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/bayer_digester.png"
+hash = "9ad127c113c71156213a9bbdab38c9039362154948c5039f82c935c85cfbb0ee"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/claus_unit.png"
+hash = "1862cb662c18917bfaea101c050135f280af9de2f54c7cdbde87dcc7281a3459"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/contact_converter.png"
+hash = "a2839bd888c3db4314b1810ad242e694ee3b39451e6d26dea4127c2b46ac80e7"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/cracker.png"
+hash = "0dd55cdca69a21ab5f52559585979f47c497ebd3edfb2e9cb44b18cd7075015d"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/diaphragm_cell.png"
+hash = "6d85e0140fca08bbc02dedd1e4a4ff5846e9328b05d6fe394e3bd494933e34ca"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/distillation_tower.png"
+hash = "b420934f36b6b328002df63603906f5ee65e9935a97c05f4b08e5c2ce4b7bf59"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/electric_blast_furnace.png"
+hash = "f3c726b97b5a40d56f03bf177ac32c78b8b8278c348e756ce0b22a2f823416c2"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/hall_heroult_cell.png"
+hash = "b4d7d990e845540ee00fc8125a9c2e0fbbb78a7c3328a873444946bfe771da78"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/kroll_reactor.png"
+hash = "79386f56234f920a56efe29654bff081f90c1b387b19d4a751e534ff88710c76"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/large_chemical_reactor.png"
+hash = "25b1cda8d83ef403fd5ed0f9839b6e320bbe651c8027d5e1624dc7ae39695ebd"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/lime_kiln.png"
+hash = "89aef0a1dfd67306390ab109e0e19c08444d997056118eb09e0e98596c509158"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/ostwald_converter.png"
+hash = "ca25f25b5f83d38855d8189f73f5b0697724ebae357dc58b499bc4b7cced05ae"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/rocket_assembler.png"
+hash = "9f3bd2592427ecff68fc0c71b4e3db78aa1abb42e75b369dc0a6d06199ef4add"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/siemens_reactor.png"
+hash = "b9a00fa95dcde5fde3091be5ff77afa5a4b9aa0c0cb5c5b3d00c827c1c152d75"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/solvay_tower.png"
+hash = "da1c0e4413ef3f1416abc5abdc318cd028c9f8ea258842f58d8f8e36c18994cc"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/steel_large_boiler.png"
+hash = "234537c9ab667c6e85c7695b5b1a6546a2f5733120e7eafebd8606ff080c4a3a"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/vacuum_freezer.png"
+hash = "820dd5c761a3ef92474cc217a7c2bf267c353b25008bb42826571d87597d8b38"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/wood_retort.png"
+hash = "33b60040446a142879d993dc3ee36113e9728acaf4ea3d2dd8ae588080b146ba"
 
 [[files]]
 file = "config/openloader/resources/gtia_quests/pack.mcmeta"
 hash = "eb411edb33ad2e71187d3a3838d7d550c79234013152c1a5315745c9bce9281d"
-
-[[files]]
-file = "config/packmenu.cfg"
-hash = "81fcc4522bf2ccbdfea2384dd4f91c3c735624988c4cd3ce1773990b81e8e271"
 
 [[files]]
 file = "config/polymorph-integrations.toml"
@@ -698,6 +842,11 @@ hash = "7911c5a503b4d03de16b3e2d48256a707d4fd3fb99dee8afdc59e9523e68b2ff"
 metafile = true
 
 [[files]]
+file = "mods/fancymenu.pw.toml"
+hash = "69522ac66f116c0f945ec1b7495dc90aeb909715dbe4246d97cb7c08f76ef196"
+metafile = true
+
+[[files]]
 file = "mods/fastbench.pw.toml"
 hash = "3655e4a8b92731c58b3699e03333821790e2bcae50bce27d0724f8fc4f2cb519"
 metafile = true
@@ -834,15 +983,15 @@ metafile = true
 
 [[files]]
 file = "mods/gtia-0.1.0.jar"
-hash = "992028c468f1ba99f43d0ad1b599a35c9dbc9d455609d9041655dc0a23311277"
+hash = "ea2e15dcb13f91cced83c8d33081be1e28592ae65e3fbf7fdf4e19dc542798fe"
 
 [[files]]
 file = "mods/gtialib-0.5.0.jar"
 hash = "f5b2c0e441ee5cd374c2dd89aa772845f4b8213febcea58c8560a55c26051784"
 
 [[files]]
-file = "mods/gtna-0.6.0.jar"
-hash = "042e065ea01a26ff99372385928e03108b09ff952b23c9eb4374a7d294730061"
+file = "mods/gtna-0.6.1.jar"
+hash = "c942f8e277cd3930b8b07aa1feb4d24664a5ac857d731084047db37e83e8312d"
 
 [[files]]
 file = "mods/guideme.pw.toml"
@@ -875,6 +1024,11 @@ hash = "cf44b30f0e6641d1254dd551791adc6e27cdcb01a388e06a6f5f8299fa1cbdb5"
 metafile = true
 
 [[files]]
+file = "mods/konkrete.pw.toml"
+hash = "4069aa1c96b0a4968c00b8b4d8e7dae0c250b50a17213d32b0e699c7543f2fe0"
+metafile = true
+
+[[files]]
 file = "mods/kotlinforforge.pw.toml"
 hash = "1502130fd3184cbef72d393c83d4cb5a66e9efca42daa2c0a16df68ace85c2a7"
 metafile = true
@@ -897,6 +1051,11 @@ metafile = true
 [[files]]
 file = "mods/littletiles.pw.toml"
 hash = "c66129d5a0cdb5fb962aa6c0ce4d72ecab1bc212d03acfaf86c5dcf749cbace6"
+metafile = true
+
+[[files]]
+file = "mods/melody.pw.toml"
+hash = "bd52722f1417e24a4acee3bf4fc59c5bf074627f7aaaaf8fd33056c7ef170bc3"
 metafile = true
 
 [[files]]
@@ -976,11 +1135,6 @@ metafile = true
 [[files]]
 file = "mods/openloader.pw.toml"
 hash = "dd36471409fda726249713090a9c3e3e29a70869ddc7af217f3904bcae6e35fc"
-metafile = true
-
-[[files]]
-file = "mods/packmenu.pw.toml"
-hash = "055c3536f83ada17dd53effd46617ddcc7fe03b7165f47ff594e46311470641e"
 metafile = true
 
 [[files]]

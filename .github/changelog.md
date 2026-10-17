@@ -1,13 +1,21 @@
-## Changes in this build
+## Changes in 0.1.0-dev-4
+
+Start → HV is now playable end to end: every quest asks for something you can make with what the quests before it unlock, including the five Moon quests.
 
 ### New
-- **Crafting Chain** replaces Fabricate. Press **Ctrl+D** or **Ctrl+click** an item or favorite in EMI (or JEI) to craft it together with every intermediate crafting step, like the crafting chain of GTNH's NEI. Hold **Shift** for a full stack. EMI favorites that carry a recipe are crafted with that recipe and are used first for the intermediate items. While a **Crafting Station** is open, the containers on its five sides are used too. Enchanted items are never spent, and when something is missing the chat lists every missing base item.
-- **More GTIA Rules** (44 in all, in seven groups): recipe EU/t, casings per craft, every GregTech "hard recipe" option (wood, iron, redstone, glass, paper, charcoal, circuits, controllers…), small and large boiler steam, fuel efficiency, maintenance, cleanroom, explosions, active transformers, assembly line order, miner speed, electric tool energy and wear, prospector energy, enchanted GregTech tools, ore vein spacing, Electric Void Miner duration, Ultimine limit and keep inventory. Rules marked **[restart]** are read when the game starts: a world that uses different values saves them and asks for a restart.
-- **`/gtia rules`** opens the read-only rules of the world you are in.
-- **GTNA 0.5.5**: fixes the launch crash with JEI 15.32 and newer.
+- **Organs** (ported from GregTech Odyssey 0.6). Right click the **Organ Modifier**: each organ slot sits on its place in a body outline, the eight wing slots on the right, and a readout shows what your set gives. Organs come from the Assembler in four tiers (MV, EV, LuV, UV parts). Your lowest organ is your **organ set tier**: armor and toughness, leg speed, extra reach, a liver that cures poison and wither, lungs that breathe under water, no hunger at tier 3 and flight at tier 4. **Steel**, **Fairy** and **Mechanical** wings fly until they wear out or run out of charge. On Normal, the Moon and Mars hurt a body below organ set tier 1.
+- **New chemistry plants**, with real stoichiometry and closed loops:
+  - **Ostwald Converter** (MV): ammonia → nitric oxide → nitrogen dioxide → nitric acid over a cobalt oxide gauze; the Moon's platinum gives a faster gauze.
+  - **Claus Unit** (HV): hydrogen sulfide from oil desulfurization becomes sulfur over Bayer alumina.
+  - **Kroll Reactor** (HV): the Moon's ilmenite (or rutile) to titanium tetrachloride, then titanium with magnesium under argon.
+  - **Siemens Reactor** (HV): silicon → trichlorosilane → polysilicon; 16 polysilicon grow a silicon boule in the EBF.
+- **GTIA Rules: 54 rules.** Eight match GTO Rules: rubber tree chance, infinite bedrock fluids, require GregTech tools, material hazards, extra regeneration (food threshold and strength), planets need organs, organ cost. Two are GTIA's own, for the chemistry plants: **catalyst wear** (Normal: a catalyst has a 1% chance to wear out per run, so it becomes a supply line; Journey: never) and **heat recovery** (Journey: 1.5× the steam the plants make from their reaction heat).
+- **New main menu**: animated space-factory background, animated GT:IA logo, four buttons in a row and a Discord button. The game window shows the pack name and icon.
+- **Highlight images** in the quest book: isometric pictures of 19 multiblocks, from the Wood Retort to the Rocket Assembler.
+- Quests for the organs, the four new plants and polysilicon.
 
 ### Changes
-- The **GTIA Rules button is gone from the pause menu**; use `/gtia rules`.
-- **Xaero's Minimap** sits in the top-right corner on new installs.
-- **Fuels are no longer worth less energy in faster presets**: the recipe duration rule skips generator and boiler fuels, which follow the new fuel efficiency rule.
-- Journey now also makes recipes cheaper, turns off maintenance and the stricter vanilla recipes, makes 3 casings per craft and keeps your inventory on death.
+- The **Moon quest** now asks you to reach the Moon; the lunar ore quests are no longer marked as pending.
+- The **Large Steel Boiler** quest sits at the end of MV (it needs four HV circuits).
+- **PackMenu** is replaced by **FancyMenu** (with Konkrete and Melody).
+- The Rocket Assembler quest describes the real multiblock.

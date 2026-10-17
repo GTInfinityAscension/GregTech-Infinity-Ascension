@@ -504,9 +504,12 @@
 			dependencies: [
 				"67603F6319B6BE99"
 				"7E7DA01CE9FCB06D"
+				"7FFDD6C6357E1A46"
 			]
 			description: [
-				"{gtia.quest.7E1D8EFB2FDE7648.desc.0}"
+				"{image:gtia_quests:textures/quests/steel_large_boiler.png width:60 height:84 align:center}"
+				""
+				"{gtia.quest.7E1D8EFB2FDE7648.desc.2}"
 			]
 			icon: "gtceu:steel_large_boiler"
 			id: "7E1D8EFB2FDE7648"

@@ -2348,11 +2348,13 @@
 				"7DA696110A273CA4"
 			]
 			description: [
-				"{gtia.quest.1470DD8318DF0F60.desc.0}"
+				"{image:gtia_quests:textures/quests/wood_retort.png width:72 height:78 align:center}"
 				""
 				"{gtia.quest.1470DD8318DF0F60.desc.2}"
 				""
 				"{gtia.quest.1470DD8318DF0F60.desc.4}"
+				""
+				"{gtia.quest.1470DD8318DF0F60.desc.6}"
 			]
 			id: "1470DD8318DF0F60"
 			rewards: [ ]
@@ -2407,11 +2409,13 @@
 				"61C301395A3CD5BF"
 			]
 			description: [
-				"{gtia.quest.6637F16316206C88.desc.0}"
+				"{image:gtia_quests:textures/quests/lime_kiln.png width:60 height:96 align:center}"
 				""
 				"{gtia.quest.6637F16316206C88.desc.2}"
 				""
 				"{gtia.quest.6637F16316206C88.desc.4}"
+				""
+				"{gtia.quest.6637F16316206C88.desc.6}"
 			]
 			id: "6637F16316206C88"
 			rewards: [ ]

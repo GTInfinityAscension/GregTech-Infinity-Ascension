@@ -4,3 +4,4 @@ avaritia        # Re-Avaritia: questionnaire answer 8.6 (C), end-game uses the p
 gtmthings       # GTMThings: questionnaire answer 8.5, extras come from GTNA/GTIACore (GTIA-D-207)
 particlerain    # Pretty Rain: crashed the client on 2026-09-27 and 2026-09-29 (GTIA-F-013)
 fabricate       # Fabricate: replaced by Crafting Chain, crafting chains from EMI/JEI (GTIA-D-257)
+packmenu  # replaced by FancyMenu for the custom main menu (GTIA-D-282)

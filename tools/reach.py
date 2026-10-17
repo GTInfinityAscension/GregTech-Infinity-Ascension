@@ -148,6 +148,7 @@ class Model:
 
         self.world_dimensions = list(config["world"]["dimensions"])
         self.world_items = config["world"]["items"]
+        self.dimension_items = config.get("dimension_items", {})
         self.world_fluids = config["world"]["fluids"]
 
     # -- recipe parsing
@@ -218,6 +219,9 @@ class Model:
         for pattern in self.world_items:
             seeds.extend("i:" + i for i in fnmatch.filter(self.items, pattern))
         seeds.extend("f:" + f for f in self.world_fluids)
+        for dimension in dimensions:
+            for pattern in self.dimension_items.get(dimension, []):
+                seeds.extend("i:" + i for i in fnmatch.filter(self.items, pattern))
         for entry in self.worldgen:
             if not set(entry["dimensions"]) & set(dimensions):
                 continue

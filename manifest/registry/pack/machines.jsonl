@@ -13,6 +13,7 @@
 {"item":"gtna:isa_mill","tier":0,"multiblock":true,"types":["gtna:isa_mill"]}
 {"item":"gtna:wireless_dynamo_hatch_65536a_uiv","tier":11,"multiblock":false,"types":[]}
 {"item":"gtceu:luv_4096a_laser_source_hatch","tier":6,"multiblock":false,"types":[]}
+{"item":"gtia:kroll_reactor","tier":0,"multiblock":true,"types":["gtia:kroll_reactor"]}
 {"item":"gtna:overclock_hatch_uv","tier":8,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_dynamo_hatch_64a_zpm","tier":7,"multiblock":false,"types":[]}
 {"item":"gtceu:uv_dual_input_hatch","tier":8,"multiblock":false,"types":[]}
@@ -446,6 +447,7 @@
 {"item":"gtceu:ev_air_scrubber","tier":4,"multiblock":false,"types":["gtceu:air_scrubber"]}
 {"item":"gtna:wireless_dynamo_hatch_16384a_hv","tier":3,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_dynamo_hatch_4a_zpm","tier":7,"multiblock":false,"types":[]}
+{"item":"gtia:siemens_reactor","tier":0,"multiblock":true,"types":["gtia:siemens_reactor"]}
 {"item":"gtceu:uhv_fluid_solidifier","tier":9,"multiblock":false,"types":["gtceu:fluid_solidifier"]}
 {"item":"gtna:wireless_dynamo_hatch_1a_opv","tier":13,"multiblock":false,"types":[]}
 {"item":"gtceu:ev_substation_input_hatch_64a","tier":4,"multiblock":false,"types":[]}
@@ -929,6 +931,7 @@
 {"item":"gtceu:object_holder","tier":7,"multiblock":false,"types":[]}
 {"item":"gtceu:uv_battery_buffer_16x","tier":8,"multiblock":false,"types":[]}
 {"item":"gtceu:opv_electrolyzer","tier":13,"multiblock":false,"types":["gtceu:electrolyzer"]}
+{"item":"gtia:ostwald_converter","tier":0,"multiblock":true,"types":["gtia:ostwald_converter"]}
 {"item":"gtna:wireless_dynamo_hatch_4a_luv","tier":6,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_dynamo_hatch_1a_hv","tier":3,"multiblock":false,"types":[]}
 {"item":"gtceu:luv_quantum_chest","tier":6,"multiblock":false,"types":[]}
@@ -1703,6 +1706,7 @@
 {"item":"gtceu:luv_scanner","tier":6,"multiblock":false,"types":["gtceu:scanner"]}
 {"item":"gtceu:ev_block_breaker","tier":4,"multiblock":false,"types":[]}
 {"item":"gtceu:opv_autoclave","tier":13,"multiblock":false,"types":["gtceu:autoclave"]}
+{"item":"gtia:claus_unit","tier":0,"multiblock":true,"types":["gtia:claus_unit"]}
 {"item":"gtceu:steel_tank_valve","tier":0,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_energy_hatch_1048576a_zpm","tier":7,"multiblock":false,"types":[]}
 {"item":"gtia:zpm_fermentation_vat","tier":7,"multiblock":false,"types":["gtia:fermentation_vat"]}

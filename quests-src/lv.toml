@@ -499,6 +499,8 @@ task = [{ item = "gtia:diaphragm_cell" }]
 group = "lvchem"
 hide_dependents = true
 text = """
+{image:gtia_quests:textures/quests/diaphragm_cell.png width:60 height:72 align:center}
+
 Electricity through salt water gives [item]Chlorine[/], [item]Hydrogen[/] and a salty caustic [item]Cell Liquor[/]: [num]4,000 mB[/] of Salt Water every [num]15 s[/] at [num]30 EU/t[/].
 
 A [num]3×3×3[/] tank of Solid Steel Machine Casings, with glass windows and iron bars in the middle for the diaphragm. In the casings: an LV Energy Hatch, a Fluid Input Hatch, three Fluid Output Hatches, an Input Bus for the diaphragm and a Maintenance Hatch.
@@ -881,6 +883,8 @@ subtitle = "Hotter than any primitive furnace."
 task = [{ item = "gtceu:electric_blast_furnace" }]
 group = "ebf"
 text = """
+{image:gtia_quests:textures/quests/electric_blast_furnace.png width:60 height:84 align:center}
+
 Coils, casings, an Energy Hatch, Input and Output Buses, a Maintenance Hatch and a Muffler. With [num]two[/] LV Energy Hatches it reaches the voltage Aluminium needs.
 
 [tip]Real fact:[/] the first electric arc furnace for steel ran in 1900. It is still how most recycled steel is made today.

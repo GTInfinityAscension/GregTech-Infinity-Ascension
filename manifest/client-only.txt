@@ -3,3 +3,6 @@
 oculus
 fastquit
 nolijium
+fancymenu
+konkrete
+melody

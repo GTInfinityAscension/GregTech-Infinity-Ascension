@@ -1471,7 +1471,9 @@
 				"3A28137F2C526113"
 			]
 			description: [
-				"{gtia.quest.365628E1E05E7D94.desc.0}"
+				"{image:gtia_quests:textures/quests/vacuum_freezer.png width:60 height:72 align:center}"
+				""
+				"{gtia.quest.365628E1E05E7D94.desc.2}"
 			]
 			id: "365628E1E05E7D94"
 			hide_dependent_lines: true
@@ -1528,7 +1530,9 @@
 				"3A28137F2C526113"
 			]
 			description: [
-				"{gtia.quest.09AEB1FD9B3D1AF2.desc.0}"
+				"{image:gtia_quests:textures/quests/distillation_tower.png width:60 height:72 align:center}"
+				""
+				"{gtia.quest.09AEB1FD9B3D1AF2.desc.2}"
 			]
 			icon: "gtceu:distillation_tower"
 			id: "09AEB1FD9B3D1AF2"
@@ -1609,7 +1613,9 @@
 				"09AEB1FD9B3D1AF2"
 			]
 			description: [
-				"{gtia.quest.165BAE6D86A18898.desc.0}"
+				"{image:gtia_quests:textures/quests/cracker.png width:84 height:84 align:center}"
+				""
+				"{gtia.quest.165BAE6D86A18898.desc.2}"
 			]
 			id: "165BAE6D86A18898"
 			rewards: [ ]
@@ -1939,7 +1945,9 @@
 				"520885F018D114E2"
 			]
 			description: [
-				"{gtia.quest.6301DD637429E34F.desc.0}"
+				"{image:gtia_quests:textures/quests/large_chemical_reactor.png width:60 height:72 align:center}"
+				""
+				"{gtia.quest.6301DD637429E34F.desc.2}"
 			]
 			icon: "gtceu:large_chemical_reactor"
 			id: "6301DD637429E34F"
@@ -2322,7 +2330,9 @@
 				"0D2218E3B2B53113"
 			]
 			description: [
-				"{gtia.quest.2D36D023149FAB9C.desc.0}"
+				"{image:gtia_quests:textures/quests/rocket_assembler.png width:98 height:120 align:center}"
+				""
+				"{gtia.quest.2D36D023149FAB9C.desc.2}"
 			]
 			id: "2D36D023149FAB9C"
 			rewards: [ ]
@@ -2458,6 +2468,7 @@
 			dependencies: [
 				"263C198F162193A8"
 				"29B2A2B06F9C3EB9"
+				"7F900DC79F2734B3"
 			]
 			description: [
 				"{gtia.quest.2229DE31AC7995F4.desc.0}"
@@ -2470,12 +2481,9 @@
 			subtitle: "{gtia.quest.2229DE31AC7995F4.subtitle}"
 			tasks: [
 				{
+					dimension: "ad_astra:moon"
 					id: "489EC9510E39A6C8"
-					type: "item"
-					item: "ad_astra:moon_globe"
-					count: 1L
-					consume_items: false
-					match_nbt: false
+					type: "dimension"
 				}
 			]
 			title: "{gtia.quest.2229DE31AC7995F4.title}"
@@ -2784,6 +2792,294 @@
 			title: "{gtia.quest.3E17ADB02173B934.title}"
 			x: 0.0d
 			y: 5.0d
+		}
+		{
+			dependencies: [
+				"6860F84D7172B7C0"
+			]
+			description: [
+				"{gtia.quest.0F0C544AF45CB0F5.desc.0}"
+			]
+			icon: "gtia:organ_modifier"
+			id: "0F0C544AF45CB0F5"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.25d
+			subtitle: "{gtia.quest.0F0C544AF45CB0F5.subtitle}"
+			tasks: [
+				{
+					id: "5B87EDDF97C2A939"
+					type: "item"
+					item: "gtia:organ_modifier"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "{gtia.quest.0F0C544AF45CB0F5.title}"
+			x: 28.0d
+			y: 19.5d
+		}
+		{
+			dependencies: [
+				"0F0C544AF45CB0F5"
+				"6885D38E766965B4"
+				"458C29C755A275C7"
+			]
+			description: [
+				"{gtia.quest.7F900DC79F2734B3.desc.0}"
+			]
+			icon: "gtia:organ_heart_tier_1"
+			id: "7F900DC79F2734B3"
+			rewards: [ ]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "{gtia.quest.7F900DC79F2734B3.subtitle}"
+			tasks: [
+				{
+					id: "6C2715F88F4F246B"
+					type: "item"
+					item: "gtia:organ_eye_tier_1"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "35F1AF3161CED979"
+					type: "item"
+					item: "gtia:organ_spine_tier_1"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "52D2E99D6E6C7010"
+					type: "item"
+					item: "gtia:organ_lung_tier_1"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "5EDC6BAB10C232ED"
+					type: "item"
+					item: "gtia:organ_liver_tier_1"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "6A4B997801CCEDE6"
+					type: "item"
+					item: "gtia:organ_heart_tier_1"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "690FDD5652D190FD"
+					type: "item"
+					item: "gtia:organ_left_arm_tier_1"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "660BAE90BB30214C"
+					type: "item"
+					item: "gtia:organ_right_arm_tier_1"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "00D4DBDE1D99FEA1"
+					type: "item"
+					item: "gtia:organ_left_leg_tier_1"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "01E1F9177DB53F4B"
+					type: "item"
+					item: "gtia:organ_right_leg_tier_1"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "{gtia.quest.7F900DC79F2734B3.title}"
+			x: 26.0d
+			y: 19.5d
+		}
+		{
+			dependencies: [
+				"0F0C544AF45CB0F5"
+			]
+			description: [
+				"{gtia.quest.01578DF22BC5B994.desc.0}"
+			]
+			icon: "gtia:steel_wing"
+			id: "01578DF22BC5B994"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "{gtia.quest.01578DF22BC5B994.subtitle}"
+			tasks: [
+				{
+					id: "0A2D957309644415"
+					type: "item"
+					item: "gtia:steel_wing"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "{gtia.quest.01578DF22BC5B994.title}"
+			x: 29.5d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"0F0C544AF45CB0F5"
+				"4038D5A4305BB335"
+			]
+			description: [
+				"{gtia.quest.60788473D81AD7D5.desc.0}"
+			]
+			icon: "gtia:fairy_wing"
+			id: "60788473D81AD7D5"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "{gtia.quest.60788473D81AD7D5.subtitle}"
+			tasks: [
+				{
+					id: "036C4CD96E62D3A7"
+					type: "item"
+					item: "gtia:fairy_wing"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "{gtia.quest.60788473D81AD7D5.title}"
+			x: 29.5d
+			y: 20.5d
+		}
+		{
+			dependencies: [
+				"1D13396B916A742C"
+			]
+			description: [
+				"{image:gtia_quests:textures/quests/claus_unit.png width:108 height:96 align:center}"
+				""
+				"{gtia.quest.637A995F8BDDC80B.desc.2}"
+			]
+			id: "637A995F8BDDC80B"
+			rewards: [ ]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "{gtia.quest.637A995F8BDDC80B.subtitle}"
+			tasks: [
+				{
+					id: "1727C0DADBF2E643"
+					type: "item"
+					item: "gtia:claus_unit"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "{gtia.quest.637A995F8BDDC80B.title}"
+			x: 19.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"4952D8F20E1BE95C"
+			]
+			description: [
+				"{image:gtia_quests:textures/quests/kroll_reactor.png width:60 height:96 align:center}"
+				""
+				"{gtia.quest.5EAA295C6CBB7F46.desc.2}"
+			]
+			id: "5EAA295C6CBB7F46"
+			rewards: [ ]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "{gtia.quest.5EAA295C6CBB7F46.subtitle}"
+			tasks: [
+				{
+					id: "1752D55923A06D55"
+					type: "item"
+					item: "gtia:kroll_reactor"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "{gtia.quest.5EAA295C6CBB7F46.title}"
+			x: 30.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"3A28137F2C526113"
+			]
+			description: [
+				"{image:gtia_quests:textures/quests/siemens_reactor.png width:84 height:96 align:center}"
+				""
+				"{gtia.quest.434EA51BE776FAA7.desc.2}"
+			]
+			id: "434EA51BE776FAA7"
+			rewards: [ ]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "{gtia.quest.434EA51BE776FAA7.subtitle}"
+			tasks: [
+				{
+					id: "5FEBED5BAC00CC5D"
+					type: "item"
+					item: "gtia:siemens_reactor"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "{gtia.quest.434EA51BE776FAA7.title}"
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"434EA51BE776FAA7"
+			]
+			description: [
+				"{gtia.quest.33BADC8CE603A384.desc.0}"
+			]
+			icon: "gtia:polysilicon_dust"
+			id: "33BADC8CE603A384"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "{gtia.quest.33BADC8CE603A384.subtitle}"
+			tasks: [
+				{
+					id: "2ECEB140572BDDD8"
+					type: "item"
+					item: "gtia:polysilicon_dust"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "{gtia.quest.33BADC8CE603A384.title}"
+			x: 10.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [

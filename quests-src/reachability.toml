@@ -22,7 +22,7 @@ items = [
     "minecraft:bone", "minecraft:string", "minecraft:rotten_flesh", "minecraft:gunpowder", "minecraft:spider_eye",
     "minecraft:ender_pearl", "minecraft:leather", "minecraft:feather", "minecraft:egg", "minecraft:white_wool",
     "minecraft:ink_sac", "minecraft:slime_ball", "minecraft:beef", "minecraft:porkchop", "minecraft:chicken",
-    "minecraft:mutton", "minecraft:cod", "minecraft:salmon",
+    "minecraft:mutton", "minecraft:cod", "minecraft:salmon", "minecraft:phantom_membrane",
     # the Nether, open from the start (see dimensions)
     "minecraft:netherrack", "minecraft:soul_sand", "minecraft:soul_soil", "minecraft:basalt", "minecraft:blackstone",
     "minecraft:quartz", "minecraft:glowstone_dust", "minecraft:nether_wart", "minecraft:blaze_rod",
@@ -33,6 +33,11 @@ items = [
 ]
 
 fluids = ["minecraft:water", "minecraft:lava", "minecraft:milk"]
+
+# Blocks and ores of other dimensions that are not GregTech veins (Ad Astra places them itself). They count once a
+# quest with a dimension task for that dimension is done.
+[dimension_items]
+"ad_astra:moon" = ["ad_astra:moon_*", "ad_astra:raw_desh", "ad_astra:desh_*", "ad_astra:ice_shard"]
 
 # Recipe types that no GregTech machine runs. The value lists the block that runs them; [] means the player does
 # it by hand. Types missing here are treated as unavailable, so their products have to come from somewhere else.

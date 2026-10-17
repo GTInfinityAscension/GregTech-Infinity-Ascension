@@ -4,16 +4,17 @@ A GregTech modpack for Minecraft 1.20.1 built on **GTCEu Modern**, **[GregTech N
 
 GTIA is guided GregTech where the factory is the star: Satisfactory-style megafactories, real industrial chemistry and long production lines. You start in Steam, go electric, head to space and keep scaling. Large machines, wireless power and AE2 are part of the main path, not side content. The quest book is the main guide, and it's written with a sense of humour.
 
-> **Status: early development.** Builds are for testers. Start → Steam → LV is the first slice we want people to play; see the [roadmap](ROADMAP.md) and the [Start/Steam/LV plan](docs/START_STEAM_LV_PLAN.md).
+> **Status: early development.** Builds are for testers. Start → Steam → LV → MV → HV is playable with the quest book from the first log to the Moon; see the [roadmap](ROADMAP.md) and the [Start → HV plan](docs/START_STEAM_LV_PLAN.md).
 
 ## Design pillars
 
 - **Grind is solved with more factory**, never with more clicking.
 - **Lines get longer every tier:** Steam 2–3 steps, LV/MV 4–6, HV/EV 6–10, IV+ 10+.
-- **Real chemistry, no PhD:** wood distillation, lime kiln, chlor-alkali, Bayer + Hall-Héroult, Contact process, Haber-Bosch, Solvay... Important molecules have an early, expensive route and a later, efficient one.
+- **Real chemistry, no PhD:** wood distillation, lime kiln, chlor-alkali, Bayer + Hall-Héroult, Contact process, Haber-Bosch, Solvay, Ostwald, Claus, Kroll, Siemens... Important molecules have an early, expensive route and a later, efficient one.
 - **No ULV era and no research tree.** The campaign goes Start → Steam → LV → MV → HV → ...
 - **Every quest is reachable.** A checker reads the pack's real recipes and fails the build if a quest asks for something you can't make yet.
-- **Modes:** Normal/Journey are picked at world creation and locked.
+- **Modes:** Normal (the full pack, default) or Journey (gentler), picked at world creation and locked. 52 **GTIA Rules** (`/gtia rules`) show what each mode changes, and some quests and rewards differ by mode.
+- **Space in HV:** build a rocket in the Rocket Assembler and an organ set (ported from GregTech Odyssey) to survive the Moon.
 
 ## How to play
 
@@ -23,7 +24,7 @@ Download the latest build from [Releases](https://github.com/GTInfinityAscension
 | --- | --- |
 | `GregTech-Infinity-Ascension-<version>.zip` | **Client.** Import it in Prism Launcher (*Add Instance → Import*), the CurseForge app or ATLauncher. |
 | `GregTech-Infinity-Ascension-server-<version>.zip` | **Dedicated server.** Unzip, run `install.sh` / `install.bat`, see `README-SERVER.md`. |
-| `GregTech-Infinity-Ascension-<version>.mrpack` | **Android** (Amethyst launcher). See the [mobile guide](docs/MOBILE.md). Coming soon. |
+| `GregTech-Infinity-Ascension-<version>.mrpack` | **Android** (Amethyst launcher). See the [mobile guide](docs/MOBILE.md). |
 
 **Java 21** and 8 GB of RAM or more are recommended. Java 21 gives steadier frame times than Java 17; the pack also runs on Java 17. Java 25 is not supported yet (spark's profiler crashes on it). In Prism Launcher: *Edit Instance → Settings → Java*, pick a Java 21 install and set the memory there.
 

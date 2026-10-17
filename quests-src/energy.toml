@@ -304,23 +304,23 @@ Burns the gases of the card above. The [item]Catalytic Dehydrator[/]'s [item]Eth
 
 [[quest]]
 key = "mv_boiler"
-pending = "the MV chapter is not rewritten yet; its entry does not lead to an MV hull"
 column = "boilers"
 grid_row = "mv"
 role = "cell"
-deps = ["row_mv", "lv_boiler"]
+deps = ["row_mv", "lv_boiler", "mv:hv_circuit"]
 hide_lines = true
 icon = "gtceu:steel_large_boiler"
 title = "Large Steel Boiler"
 subtitle = "More steam per block."
 task = [{ item = "gtceu:steel_large_boiler" }]
 text = """
-The Steel multiblock boiler. Pair it with Large Steam Turbines or a wall of singleblock turbines.
+{image:gtia_quests:textures/quests/steel_large_boiler.png width:60 height:84 align:center}
+
+The Steel multiblock boiler: four HV circuits, so it comes at the end of MV. Pair it with Large Steam Turbines or a wall of singleblock turbines.
 """
 
 [[quest]]
 key = "mv_steam"
-pending = "the MV chapter is not rewritten yet; its entry does not lead to an MV hull"
 column = "steam"
 grid_row = "mv"
 role = "cell"
@@ -336,7 +336,6 @@ Burns steam faster to put out [num]128 V[/]. Steam stays a fine choice as long a
 
 [[quest]]
 key = "mv_combustion"
-pending = "the MV chapter is not rewritten yet; its entry does not lead to an MV hull"
 column = "combustion"
 grid_row = "mv"
 role = "cell"
@@ -352,7 +351,6 @@ At this voltage the better fuels of the card start to matter: [item]Light Fuel[/
 
 [[quest]]
 key = "mv_gas"
-pending = "the MV chapter is not rewritten yet; its entry does not lead to an MV hull"
 column = "gas"
 grid_row = "mv"
 role = "cell"
@@ -370,7 +368,6 @@ Oil refining leaves gases behind; this turbine turns them into [num]128 V[/] ins
 
 [[quest]]
 key = "hv_steam"
-pending = "the MV and HV chapters are not rewritten yet"
 column = "steam"
 grid_row = "hv"
 role = "cell"
@@ -386,7 +383,6 @@ text = """
 
 [[quest]]
 key = "hv_combustion"
-pending = "the MV and HV chapters are not rewritten yet"
 column = "combustion"
 grid_row = "hv"
 role = "cell"
@@ -402,7 +398,6 @@ Burns the same fuels faster. A steady [item]Diesel[/] or [item]Gasoline[/] line 
 
 [[quest]]
 key = "hv_gas"
-pending = "the MV and HV chapters are not rewritten yet"
 column = "gas"
 grid_row = "hv"
 role = "cell"
@@ -418,7 +413,6 @@ The last singleblock gas turbine. [item]Benzene[/] is among the best fuels on it
 
 [[quest]]
 key = "hv_large_steam"
-pending = "the MV and HV chapters are not rewritten yet"
 column = "multiblock"
 grid_row = "hv"
 role = "cell"

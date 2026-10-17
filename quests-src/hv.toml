@@ -859,6 +859,8 @@ subtitle = "Cools hot ingots."
 task = [{ item = "gtceu:vacuum_freezer" }]
 hide_dependents = true
 text = """
+{image:gtia_quests:textures/quests/vacuum_freezer.png width:60 height:72 align:center}
+
 The Vacuum Freezer cools the hot ingots that come out of the blast furnace into their normal form.
 """
 
@@ -892,6 +894,8 @@ deps = ["workstation", "oil", "hv_pump"]
 subtitle = "Splits fluids into fractions."
 task = [{ item = "gtceu:distillation_tower" }]
 text = """
+{image:gtia_quests:textures/quests/distillation_tower.png width:60 height:72 align:center}
+
 Four Workstations, two HV pumps and large stainless pipes. Petrochemistry starts here.
 """
 
@@ -939,6 +943,8 @@ deps = ["distillation"]
 subtitle = "Breaks long hydrocarbons into lighter ones."
 task = [{ item = "gtceu:cracker" }]
 text = """
+{image:gtia_quests:textures/quests/cracker.png width:84 height:84 align:center}
+
 The Cracker breaks long hydrocarbons into lighter ones using hydrogen or steam.
 """
 
@@ -1131,6 +1137,8 @@ deps = ["ptfe_casing"]
 subtitle = "Chemistry in parallel."
 task = [{ item = "gtceu:large_chemical_reactor" }]
 text = """
+{image:gtia_quests:textures/quests/large_chemical_reactor.png width:60 height:72 align:center}
+
 PTFE pipes, a stainless rotor, an HV motor and four HV circuits.
 """
 
@@ -1353,10 +1361,12 @@ y = 12
 shape = "gear"
 size = 1.5
 deps = ["rocket_parts"]
-subtitle = "Coming soon."
+subtitle = "A launch tower of your own."
 task = [{ item = "gtia:rocket_assembler" }]
 text = """
-Our own rocket assembly multiblock is on its way. Until then, the rocket is built in the NASA Workbench.
+{image:gtia_quests:textures/quests/rocket_assembler.png width:98 height:120 align:center}
+
+A 15 × 15 complex of service towers and stainless scaffolding around the rocket. It builds the [item]Tier 1 Rocket[/] at 480 EU/t; JEI shows the structure layer by layer.
 """
 
 [[quest]]
@@ -1433,12 +1443,11 @@ x = 25.5
 y = 14.5
 shape = "circle"
 size = 2
-deps = ["rocket", "oxygen"]
+deps = ["rocket", "oxygen", "organ_set"]
 subtitle = "New ores."
-task = [{ item = "ad_astra:moon_globe" }]
-pending = "the reachability model has no dimensions (Moon)"
+task = [{ dimension = "ad_astra:moon" }]
 text = """
-Bauxite and ilmenite, sheldonite with platinum, pitchblende, monazite and chromite.
+Bauxite and ilmenite, sheldonite with platinum, pitchblende, monazite and chromite. On Normal the Moon tears at a body without a tier 1 organ set, so build it before you launch.
 """
 
 [[quest]]
@@ -1453,7 +1462,6 @@ size = 1
 deps = ["moon"]
 subtitle = "Optional: stay a while."
 task = [{ item = "ad_astra:moon_stone" }]
-pending = "Moon blocks"
 text = """
 Oxygen, power and a place to sleep on the Moon.
 """
@@ -1470,7 +1478,6 @@ size = 1
 deps = ["moon"]
 subtitle = "The titanium ores."
 task = [{ item = "gtceu:raw_ilmenite" }]
-pending = "lunar ore"
 text = """
 The Moon's bauxite vein carries bauxite, ilmenite and aluminium.
 """
@@ -1567,7 +1574,6 @@ size = 1
 deps = ["moon"]
 subtitle = "From lunar sheldonite."
 task = [{ item = "gtceu:platinum_dust" }]
-pending = "lunar sheldonite"
 hide_dependents = true
 text = """
 Sheldonite gives platinum and palladium. Fine platinum wire goes into the SMD diode.
@@ -1585,7 +1591,6 @@ size = 1
 deps = ["moon"]
 subtitle = "Optional: a preview of EV."
 task = [{ item = "ad_astra:raw_desh" }]
-pending = "lunar ore"
 text = """
 A lunar ore for the tier 2 rocket.
 """
@@ -1620,4 +1625,136 @@ subtitle = "Bridge: Agriculture."
 task = [{ item = "gtia:hv_seed_analyzer" }]
 text = """
 The HV analyzer, the mutation chamber and the HV fermentation vat continue in the Agriculture chapter.
+"""
+
+# ------------------------------------------------------------------ organs (GTIA-D-279), HV chemistry (GTIA-D-281)
+
+[[quest]]
+key = "organ_modifier"
+title = "Organ Modifier"
+role = "side"
+icon = "gtia:organ_modifier"
+x = 28
+y = 19.5
+shape = "circle"
+size = 1.25
+deps = ["mv:voltage_coil", "mv:mv_arm"]
+subtitle = "Open yourself up."
+task = [{ item = "gtia:organ_modifier" }]
+text = """
+A voltage coil, two robot arms and MV circuits around a crafting table. Right click it to see your nine organ slots and eight wing slots.
+"""
+
+[[quest]]
+key = "organ_set"
+title = "A Body for Space"
+role = "side"
+icon = "gtia:organ_heart_tier_1"
+x = 26
+y = 19.5
+shape = "diamond"
+size = 1.5
+deps = ["organ_modifier", "mv:mv_emitter", "mv:mv_sensor", "mv:mv_assembler"]
+subtitle = "Nine standard organs."
+task = [{ item = "gtia:organ_eye_tier_1" }, { item = "gtia:organ_spine_tier_1" }, { item = "gtia:organ_lung_tier_1" }, { item = "gtia:organ_liver_tier_1" }, { item = "gtia:organ_heart_tier_1" }, { item = "gtia:organ_left_arm_tier_1" }, { item = "gtia:organ_right_arm_tier_1" }, { item = "gtia:organ_left_leg_tier_1" }, { item = "gtia:organ_right_leg_tier_1" }]
+text = """
+Every organ comes out of the Assembler from MV parts. The lowest organ sets your [num]organ set tier[/]: a full tier 1 set gives +5 armor and lets you survive the Moon and Mars.
+"""
+
+[[quest]]
+key = "steel_wing"
+title = "Steel Wing"
+role = "side"
+icon = "gtia:steel_wing"
+x = 29.5
+y = 18.5
+shape = "circle"
+deps = ["organ_modifier"]
+optional = true
+subtitle = "Fifteen minutes of flight."
+task = [{ item = "gtia:steel_wing" }]
+text = """
+Put it in a wing slot: it wears down one point per second of flight. Phantom membranes, steel and an LV field generator.
+"""
+
+[[quest]]
+key = "fairy_wing"
+title = "Fairy Wing"
+role = "side"
+icon = "gtia:fairy_wing"
+x = 29.5
+y = 20.5
+shape = "circle"
+deps = ["organ_modifier", "mv:stainless_plate"]
+optional = true
+subtitle = "Four hours aloft."
+task = [{ item = "gtia:fairy_wing" }]
+text = """
+Polyethylene foil, stainless steel and an LV field generator: the same flight, sixteen times longer. Wings are used one after the other.
+"""
+
+[[quest]]
+key = "claus"
+title = "Claus Unit"
+role = "side"
+x = 19.5
+y = 10.5
+shape = "gear"
+size = 1.25
+deps = ["desulf"]
+subtitle = "Sulfur from sour gas."
+task = [{ item = "gtia:claus_unit" }]
+text = """
+{image:gtia_quests:textures/quests/claus_unit.png width:108 height:96 align:center}
+
+Desulfurizing oil leaves [item]Hydrogen Sulfide[/]. The Claus Unit burns a third of it and reacts the rest over the [item]Alumina[/] of your Bayer plant: sulfur for the Contact Converter, steam for your boilers.
+"""
+
+[[quest]]
+key = "kroll"
+title = "Kroll Reactor"
+role = "side"
+x = 30
+y = 11
+shape = "gear"
+size = 1.25
+deps = ["ticl4"]
+subtitle = "Titanium the real way."
+task = [{ item = "gtia:kroll_reactor" }]
+text = """
+{image:gtia_quests:textures/quests/kroll_reactor.png width:60 height:96 align:center}
+
+Chlorinates the Moon's [item]Ilmenite[/] straight into [item]Titanium Tetrachloride[/], then reduces it with [item]Magnesium[/] under argon. Electrolyze the [item]Magnesium Chloride[/] to close the loop.
+"""
+
+[[quest]]
+key = "siemens"
+title = "Siemens Reactor"
+role = "side"
+x = 8.5
+y = 1.5
+shape = "gear"
+size = 1.25
+deps = ["hv_pump"]
+subtitle = "Silicon, nine nines."
+task = [{ item = "gtia:siemens_reactor" }]
+text = """
+{image:gtia_quests:textures/quests/siemens_reactor.png width:84 height:96 align:center}
+
+Silicon and hydrochloric acid become [item]Trichlorosilane[/]; on hot rods it deposits [item]Polysilicon[/] and gives the acid back.
+"""
+
+[[quest]]
+key = "polysilicon"
+title = "Polysilicon"
+role = "side"
+icon = "gtia:polysilicon_dust"
+x = 10.5
+y = 1.5
+shape = "circle"
+deps = ["siemens"]
+subtitle = "Half the silicon per boule."
+task = [{ item = "gtia:polysilicon_dust" }]
+text = """
+Sixteen of it grow a [item]Silicon Boule[/] in the Electric Blast Furnace on circuit 3, instead of thirty-two silicon dust.
 """

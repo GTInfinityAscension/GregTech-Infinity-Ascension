@@ -857,11 +857,13 @@
 				"191CB01FF356FA8C"
 			]
 			description: [
-				"{gtia.quest.1FC6DB76FA90EDFD.desc.0}"
+				"{image:gtia_quests:textures/quests/diaphragm_cell.png width:60 height:72 align:center}"
 				""
 				"{gtia.quest.1FC6DB76FA90EDFD.desc.2}"
 				""
 				"{gtia.quest.1FC6DB76FA90EDFD.desc.4}"
+				""
+				"{gtia.quest.1FC6DB76FA90EDFD.desc.6}"
 			]
 			id: "1FC6DB76FA90EDFD"
 			hide_dependent_lines: true
@@ -1495,9 +1497,11 @@
 				"191CB01FF356FA8C"
 			]
 			description: [
-				"{gtia.quest.16DD3A8F254586F7.desc.0}"
+				"{image:gtia_quests:textures/quests/electric_blast_furnace.png width:60 height:84 align:center}"
 				""
 				"{gtia.quest.16DD3A8F254586F7.desc.2}"
+				""
+				"{gtia.quest.16DD3A8F254586F7.desc.4}"
 			]
 			id: "16DD3A8F254586F7"
 			rewards: [ ]

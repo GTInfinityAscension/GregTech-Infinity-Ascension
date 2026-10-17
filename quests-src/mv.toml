@@ -773,6 +773,8 @@ subtitle = "Bauxite in hot caustic soda."
 task = [{ item = "gtia:bayer_digester" }]
 group = "bayer"
 text = """
+{image:gtia_quests:textures/quests/bayer_digester.png width:62 height:120 align:center}
+
 Circuit 1 digests [num]1 Bauxite[/], [num]1 Sodium Hydroxide[/], water and steam into [num]1,000 mB[/] of Sodium Aluminate, leaving red mud. Circuit 2 precipitates it into [num]2 Aluminium Hydroxide[/] and gives back most of the soda.
 
 Provisional structure: a hollow [num]3×3×3[/] of Solid Steel Machine Casings with hatches in the walls.
@@ -841,6 +843,8 @@ subtitle = "Aluminium the real way."
 task = [{ item = "gtia:hall_heroult_cell" }]
 group = "bayer"
 text = """
+{image:gtia_quests:textures/quests/hall_heroult_cell.png width:120 height:110 align:center}
+
 [num]2 Alumina[/] and a Carbon Anode become [num]4 Aluminium Ingots[/] and CO₂, with a small chance to use up the cryolite bath. No blast furnace needed.
 
 [tip]Real fact:[/] Charles Hall and Paul Héroult found the same process in 1886, independently, on two continents. Both were 22.
@@ -923,6 +927,8 @@ subtitle = "Sulfur into acid, and steam for free."
 task = [{ item = "gtia:contact_converter" }]
 group = "acid"
 text = """
+{image:gtia_quests:textures/quests/contact_converter.png width:60 height:120 align:center}
+
 Sulfur, oxygen and water over Vanadium Pentoxide: [num]1,000 mB[/] of Sulfuric Acid and [num]2,000 mB[/] of steam per run. The reaction is hot enough to feed your turbines.
 
 [tip]Real fact:[/] sulfuric acid is the most produced chemical in the world; economists once used it to measure how industrial a country was.
@@ -941,6 +947,8 @@ subtitle = "Bread from air."
 task = [{ item = "gtia:ammonia_converter" }]
 group = "acid"
 text = """
+{image:gtia_quests:textures/quests/ammonia_converter.png width:120 height:86 align:center}
+
 Nitrogen and Hydrogen over an iron (Magnetite) catalyst become Ammonia, with a little steam. Your Diaphragm Cell already makes the hydrogen.
 
 [tip]Real fact:[/] the Haber-Bosch process feeds about half of humanity: most of the nitrogen in your body passed through one.
@@ -959,6 +967,8 @@ subtitle = "Soda from salt and lime."
 task = [{ item = "gtia:solvay_tower" }]
 group = "acid"
 text = """
+{image:gtia_quests:textures/quests/solvay_tower.png width:74 height:120 align:center}
+
 Brine, Ammonia and CO₂ give Sodium Bicarbonate and Ammonium Chloride. The Lime Kiln calcines the bicarbonate into Soda Ash, and Quicklime gets the ammonia back.
 
 [tip]Real fact:[/] Ernest Solvay's process (1861) made soda ash so cheap that glass windows became normal houses' business.
@@ -1187,4 +1197,38 @@ subtitle = "Cut it free."
 task = [{ item = "gtceu:cpu_chip" }]
 text = """
 Cut the CPU wafer in the MV Cutter. Each chip becomes the heart of a Microprocessor in High Voltage.
+"""
+
+# ------------------------------------------------------------------ Ostwald (GTIA-D-281)
+
+[[quest]]
+key = "ostwald"
+title = "Ostwald Converter"
+role = "side"
+x = 27
+y = 13.5
+shape = "gear"
+size = 1.25
+deps = ["ammonia"]
+subtitle = "Ammonia into nitric acid."
+task = [{ item = "gtia:ostwald_converter" }]
+text = """
+{image:gtia_quests:textures/quests/ostwald_converter.png width:60 height:114 align:center}
+
+Burns your [item]Ammonia[/] over a [item]Cobalt Oxide[/] gauze, oxidizes the gas and absorbs it in water. A third of the gas comes back for another round, like in every real plant.
+"""
+
+[[quest]]
+key = "nitric_acid"
+title = "Nitric Acid"
+role = "side"
+icon = "gtceu:nitric_acid_bucket"
+x = 29
+y = 14.5
+shape = "circle"
+deps = ["ostwald"]
+subtitle = "Two thirds per pass."
+task = [{ item = "gtceu:nitric_acid_bucket" }]
+text = """
+Circuit 1 burns, circuit 2 oxidizes, circuit 3 absorbs. With the Moon's platinum, circuit 4 burns faster and gives twice the steam.
 """

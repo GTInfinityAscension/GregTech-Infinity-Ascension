@@ -77,3 +77,9 @@ Also in LV:
 - Check quest text and tone, and later help with PT-BR.
 - Spot recipe shortcuts and circular recipes.
 - Weigh in on the MV chemistry (Bayer, Hall-Héroult, Contact, Haber-Bosch, Solvay). It's already built but hasn't been reviewed in-game.
+
+## MV and HV (built, untested)
+
+- **MV** (75 quests): gems and laser engraving, silicon and chips, stainless steel and Kanthal, and the MV chemistry: Bayer + Hall-Héroult aluminium, Contact sulfuric acid, Haber-Bosch ammonia, Solvay soda ash and the **Ostwald Converter** for nitric acid. Exits at the HV circuit and the HV hull.
+- **HV** (109 quests): distillation and cracking, plastics, the Cleanroom, the circuit ladder up to the EV circuit, the **Claus Unit** (sulfur from sour gas), the **Siemens Reactor** (polysilicon), the **Rocket Assembler**, an organ set and the **Moon**, whose ilmenite feeds the **Kroll Reactor** for titanium and the EV hull.
+- Every quest asks for something the quests before it unlock; `questgen check` runs on the pack's real recipes, Moon included.

@@ -53,6 +53,7 @@
     "extremesoundmuffler",
     "fabricate",
     "factory_blocks",
+    "fancymenu",
     "fastbench",
     "fastfurnace",
     "fastleafdecay",
@@ -90,11 +91,13 @@
     "infiniverse",
     "jade",
     "jadeaddons",
+    "konkrete",
     "kotlinforforge",
     "krypton",
     "ldlib",
     "leanobject",
     "littletiles",
+    "melody",
     "meplacementtool",
     "merequester",
     "mobtimizations",
@@ -111,7 +114,6 @@
     "nolijium",
     "oculus",
     "openloader",
-    "packmenu",
     "particlerain",
     "pipez",
     "placebo",
@@ -149,6 +151,7 @@
     "avaritia",
     "fabricate",
     "gtmthings",
+    "packmenu",
     "particlerain"
   ],
   "mods": [
@@ -634,6 +637,18 @@
       ]
     },
     {
+      "mod_id": "fancymenu",
+      "filename": "fancymenu_forge_3.9.12_MC_1.20.1.jar",
+      "sha256": "60aa6a94e0c021c989bbea978ea6a233ac2e23e364f15825a8beb7b5ab0b94cf",
+      "source": "curseforge",
+      "project_id": 367706,
+      "file_id": 8752289,
+      "requires": [
+        "konkrete",
+        "melody"
+      ]
+    },
+    {
       "mod_id": "fastbench",
       "filename": "FastWorkbench-1.20.1-8.0.4.jar",
       "sha256": "86d20c6879bf86ef76b3fd94998d3e5c3327acb5d5324b6eb0b5348354766620",
@@ -918,7 +933,7 @@
     {
       "mod_id": "gtia",
       "filename": "gtia-0.1.0.jar",
-      "sha256": "7bf17187f9e748ddf7ace132035697fd1b3f99f5bc272b00da551f963ff6cde6",
+      "sha256": "ea2e15dcb13f91cced83c8d33081be1e28592ae65e3fbf7fdf4e19dc542798fe",
       "source": "local-build",
       "path": "/home/raishxn/MineProjects/GTIA/core/build/libs/gtia-0.1.0.jar",
       "requires": []
@@ -933,10 +948,10 @@
     },
     {
       "mod_id": "gtna",
-      "filename": "gtna-0.6.0.jar",
-      "sha256": "042e065ea01a26ff99372385928e03108b09ff952b23c9eb4374a7d294730061",
+      "filename": "gtna-0.6.1.jar",
+      "sha256": "c942f8e277cd3930b8b07aa1feb4d24664a5ac857d731084047db37e83e8312d",
       "source": "local-build",
-      "path": "/home/raishxn/MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.6.0.jar",
+      "path": "/home/raishxn/MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.6.1.jar",
       "requires": []
     },
     {
@@ -996,6 +1011,15 @@
       ]
     },
     {
+      "mod_id": "konkrete",
+      "filename": "konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
+      "sha256": "e78686b92c3761ec26eb9d3c53efdd3d6ca77981cbd3723995e1163b7103ae0b",
+      "source": "curseforge",
+      "project_id": 410295,
+      "file_id": 5028413,
+      "requires": []
+    },
+    {
       "mod_id": "kotlinforforge",
       "filename": "kotlinforforge-4.12.0-all.jar",
       "sha256": "6a66c6a68ec09f8717cdbf06883394f0ee24d7cd826b7134a0f81839e8e720ae",
@@ -1041,6 +1065,15 @@
       "requires": [
         "creativecore"
       ]
+    },
+    {
+      "mod_id": "melody",
+      "filename": "melody_forge_1.0.3_MC_1.20.1-1.20.4.jar",
+      "sha256": "933e2a7e79c4594f965f7f7d00b1f28a98ec2a180ad8f9f90310a266fe5cf5d8",
+      "source": "curseforge",
+      "project_id": 938643,
+      "file_id": 5109692,
+      "requires": []
     },
     {
       "mod_id": "meplacementtool",
@@ -1192,17 +1225,6 @@
       "project_id": 354339,
       "file_id": 7613218,
       "requires": []
-    },
-    {
-      "mod_id": "packmenu",
-      "filename": "PackMenu-1.20.1-6.1.2.jar",
-      "sha256": "fc33c41205dc2fd432dd07d5b5f28d105d7a99dced19220e9b3c6529c2f2af55",
-      "source": "curseforge",
-      "project_id": 358191,
-      "file_id": 5503481,
-      "requires": [
-        "placebo"
-      ]
     },
     {
       "mod_id": "pipez",

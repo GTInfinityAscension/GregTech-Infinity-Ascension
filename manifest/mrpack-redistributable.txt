@@ -1,2 +1,44 @@
 # Mods not on Modrinth whose jar may ship inside the .mrpack (licence or author allows it).
 modern_manipulator  # the pack author's own port
+# Mods only on CurseForge: the pack author allowed shipping their jars (2026-10-17, GTIA-D-285); the owners were told
+# and any of them is removed at once if its owner asks.
+ad_astra_giselle_addon
+ad_astra_rocketed
+adastraextra
+alltheleaks
+buildinggadgets2
+configured
+constructionwand
+craftingtweaks
+defaultoptions
+doespotatotick
+duplicationless
+expatternprovider
+fastleafdecay
+fastnbt
+fastquit
+fastrecipesearch
+fastspawner
+fluidium
+ftbbackups2
+ftbchunks
+ftbessentials
+ftblibrary
+ftbquests
+ftbteams
+ftbultimine
+ftbxmodcompat
+gpumemleakfix
+industrial_platform
+krypton
+mobtimizations
+moremorelang
+nanhealthfixer
+radium
+renderblender
+sophisticatedbackpacks
+sophisticatedcore
+sophisticatedstorage
+toolbelt
+usclb
+xtonesreworked

@@ -3,6 +3,7 @@
 ## Files
 
 - `GregTech-Infinity-Ascension-<version>.zip`: client pack in CurseForge format. Import it in Prism Launcher (Add Instance → Import), the CurseForge app or ATLauncher.
+- `GregTech-Infinity-Ascension-<version>.mrpack`: **Android** pack for the Amethyst launcher. See the [mobile guide](https://github.com/GTInfinityAscension/GregTech-Infinity-Ascension/blob/main/docs/MOBILE.md).
 - `GregTech-Infinity-Ascension-server-<version>.zip`: dedicated server. Unzip it, run `install.sh` / `install.bat` and see `README-SERVER.md`.
 
 ## Channels

@@ -1297,11 +1297,13 @@
 				"52E80D9614D45259"
 			]
 			description: [
-				"{gtia.quest.53FEE3DE0FB95AF5.desc.0}"
+				"{image:gtia_quests:textures/quests/bayer_digester.png width:62 height:120 align:center}"
 				""
 				"{gtia.quest.53FEE3DE0FB95AF5.desc.2}"
 				""
 				"{gtia.quest.53FEE3DE0FB95AF5.desc.4}"
+				""
+				"{gtia.quest.53FEE3DE0FB95AF5.desc.6}"
 			]
 			id: "53FEE3DE0FB95AF5"
 			rewards: [ ]
@@ -1410,9 +1412,11 @@
 				"754D2ACD373583C8"
 			]
 			description: [
-				"{gtia.quest.67175118C46ADF68.desc.0}"
+				"{image:gtia_quests:textures/quests/hall_heroult_cell.png width:120 height:110 align:center}"
 				""
 				"{gtia.quest.67175118C46ADF68.desc.2}"
+				""
+				"{gtia.quest.67175118C46ADF68.desc.4}"
 			]
 			id: "67175118C46ADF68"
 			rewards: [ ]
@@ -1542,9 +1546,11 @@
 				"1EA9675F5B507531"
 			]
 			description: [
-				"{gtia.quest.7C9302B22901B3EC.desc.0}"
+				"{image:gtia_quests:textures/quests/contact_converter.png width:60 height:120 align:center}"
 				""
 				"{gtia.quest.7C9302B22901B3EC.desc.2}"
+				""
+				"{gtia.quest.7C9302B22901B3EC.desc.4}"
 			]
 			id: "7C9302B22901B3EC"
 			rewards: [ ]
@@ -1570,9 +1576,11 @@
 				"0623071762390A9E"
 			]
 			description: [
-				"{gtia.quest.0B0DFAAC23E69912.desc.0}"
+				"{image:gtia_quests:textures/quests/ammonia_converter.png width:120 height:86 align:center}"
 				""
 				"{gtia.quest.0B0DFAAC23E69912.desc.2}"
+				""
+				"{gtia.quest.0B0DFAAC23E69912.desc.4}"
 			]
 			id: "0B0DFAAC23E69912"
 			rewards: [ ]
@@ -1598,9 +1606,11 @@
 				"3EB8DF95318F1354"
 			]
 			description: [
-				"{gtia.quest.0D8B6A761A3480E0.desc.0}"
+				"{image:gtia_quests:textures/quests/solvay_tower.png width:74 height:120 align:center}"
 				""
 				"{gtia.quest.0D8B6A761A3480E0.desc.2}"
+				""
+				"{gtia.quest.0D8B6A761A3480E0.desc.4}"
 			]
 			id: "0D8B6A761A3480E0"
 			rewards: [ ]
@@ -2016,6 +2026,61 @@
 			title: "{gtia.quest.208505FAC95F648B.title}"
 			x: 18.0d
 			y: 4.0d
+		}
+		{
+			dependencies: [
+				"3EB8DF95318F1354"
+			]
+			description: [
+				"{image:gtia_quests:textures/quests/ostwald_converter.png width:60 height:114 align:center}"
+				""
+				"{gtia.quest.7DC9DE30EE29CB8C.desc.2}"
+			]
+			id: "7DC9DE30EE29CB8C"
+			rewards: [ ]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "{gtia.quest.7DC9DE30EE29CB8C.subtitle}"
+			tasks: [
+				{
+					id: "7DF740BEB5EB0DAF"
+					type: "item"
+					item: "gtia:ostwald_converter"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "{gtia.quest.7DC9DE30EE29CB8C.title}"
+			x: 27.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"7DC9DE30EE29CB8C"
+			]
+			description: [
+				"{gtia.quest.4532CBAE5FB845C4.desc.0}"
+			]
+			icon: "gtceu:nitric_acid_bucket"
+			id: "4532CBAE5FB845C4"
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "{gtia.quest.4532CBAE5FB845C4.subtitle}"
+			tasks: [
+				{
+					id: "1C1970983F9863BC"
+					type: "item"
+					item: "gtceu:nitric_acid_bucket"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "{gtia.quest.4532CBAE5FB845C4.title}"
+			x: 29.0d
+			y: 14.5d
 		}
 		{
 			dependencies: [
