@@ -487,7 +487,7 @@ metafile = true
 
 [[files]]
 file = "mods/agronomica-0.1.0.jar"
-hash = "983497a9100efc7ed7eb1364d012e39c8af948bba64afbe53a3fd0934876de8d"
+hash = "ad7965988de50d8266b30264d132691424f61f261c9df6de5830a691404c4bed"
 
 [[files]]
 file = "mods/aiimprovements.pw.toml"
@@ -834,7 +834,7 @@ metafile = true
 
 [[files]]
 file = "mods/gtia-0.1.0.jar"
-hash = "43d12525d4803f04c4f3530beaed835e595b29dd9973365e36da45e38b9eb3e6"
+hash = "34fed797049f3a186aeccd177fe3704fd213b8aad1d52a06cc84ada8ab832654"
 
 [[files]]
 file = "mods/gtialib-0.5.0.jar"

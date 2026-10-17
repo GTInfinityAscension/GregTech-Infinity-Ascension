@@ -217,7 +217,7 @@
     {
       "mod_id": "agronomica",
       "filename": "agronomica-0.1.0.jar",
-      "sha256": "983497a9100efc7ed7eb1364d012e39c8af948bba64afbe53a3fd0934876de8d",
+      "sha256": "ad7965988de50d8266b30264d132691424f61f261c9df6de5830a691404c4bed",
       "source": "local-build",
       "path": "/home/raishxn/MineProjects/Agronomica/build/libs/agronomica-0.1.0.jar",
       "requires": []
@@ -918,7 +918,7 @@
     {
       "mod_id": "gtia",
       "filename": "gtia-0.1.0.jar",
-      "sha256": "43d12525d4803f04c4f3530beaed835e595b29dd9973365e36da45e38b9eb3e6",
+      "sha256": "34fed797049f3a186aeccd177fe3704fd213b8aad1d52a06cc84ada8ab832654",
       "source": "local-build",
       "path": "/home/raishxn/MineProjects/GTIA/core/build/libs/gtia-0.1.0.jar",
       "requires": []
