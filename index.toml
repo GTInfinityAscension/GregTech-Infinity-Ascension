@@ -834,7 +834,7 @@ metafile = true
 
 [[files]]
 file = "mods/gtia-0.1.0.jar"
-hash = "fb7505b32347875c88d7201c6104d6733ed2566ed59e20e0f8bcacc8d8b9a833"
+hash = "992028c468f1ba99f43d0ad1b599a35c9dbc9d455609d9041655dc0a23311277"
 
 [[files]]
 file = "mods/gtialib-0.5.0.jar"
