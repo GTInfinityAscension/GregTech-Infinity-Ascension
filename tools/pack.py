@@ -48,7 +48,7 @@ BUILT_IN = {"forge", "minecraft"}
 LOCAL_BUILDS = {
     "gtia": Path(os.environ.get("GTIA_JAR", ROOT / "core/build/libs/gtia-0.1.0.jar")),
     "gtna": Path(os.environ.get(
-        "GTNA_JAR", Path.home() / "MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.6.0.jar")),
+        "GTNA_JAR", Path.home() / "MineProjects/GregTech-Nexus-Addon/build/libs/gtna-0.6.1.jar")),
     # Shared library of the org's mods (GTIA-D-262); GTIACore and GTNA require it.
     "gtialib": Path(os.environ.get(
         "GTIALIB_JAR", ROOT.parent / "GTIA-arquivo/jar-backups/2026-10-16-gtialib-0.5.0/gtialib-0.5.0.jar")),
