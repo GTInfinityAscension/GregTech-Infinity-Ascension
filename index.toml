@@ -246,11 +246,11 @@ hash = "a591cef12157c4cd00f7d32ea87a62cf829eb37881bb899d33cd59d8236596af"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/agriculture.snbt"
-hash = "87d80d1f7a966424b379b113b43224671668ebb81fae1f3cca3e874d8ab7506e"
+hash = "1c25aca6c386717d43c18f6642c0fddbff8c5de4ff013df69bb459d528d03681"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bees.snbt"
-hash = "12430a5439e023e1b815dfdd650f1602501907fa558e2cd78594065f26809800"
+hash = "a3253e0022946fbadaa4ebd57986724c0c843d71cce53d0a6e37be160d2754f6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/energy.snbt"
