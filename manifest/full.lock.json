@@ -263,10 +263,10 @@
     },
     {
       "mod_id": "ascopt",
-      "filename": "ascopt-0.2.0.jar",
-      "sha256": "f058ddbf17e7b9fefa929da956f1d4ca28d8969522cf71287055923c1b37943d",
+      "filename": "ascopt-0.2.1.jar",
+      "sha256": "525f14f483dcfa1b23e066254f03fc763c06900ac2bfbe216c06f32a275251e1",
       "source": "local-build",
-      "path": "/home/raishxn/MineProjects/GTIA-arquivo/jar-backups/2026-10-16-ascopt-0.2.0/ascopt-0.2.0.jar",
+      "path": "/home/raishxn/MineProjects/GTIA-arquivo/jar-backups/2026-10-17-ascopt-0.2.1/ascopt-0.2.1.jar",
       "requires": []
     },
     {
@@ -933,7 +933,7 @@
     {
       "mod_id": "gtia",
       "filename": "gtia-0.1.0.jar",
-      "sha256": "ea2e15dcb13f91cced83c8d33081be1e28592ae65e3fbf7fdf4e19dc542798fe",
+      "sha256": "1bd700d33e34ef4e14185a5e9f742e02e87e3ce3f6b24c37febb5b1c733a3922",
       "source": "local-build",
       "path": "/home/raishxn/MineProjects/GTIA/core/build/libs/gtia-0.1.0.jar",
       "requires": []

@@ -186,7 +186,7 @@ hash = "4c68ab99c906dd487952f61bf33c0635039a8bbff3f02099e3cd8272fe51b4aa"
 
 [[files]]
 file = "config/fancymenu/customization/gtia_title_screen.txt"
-hash = "48ab29f9273b13fcc766bfbb6aca335e92775ae1a68ce26c7ecfb273fdb09d79"
+hash = "49c855dff12bfb4c97b87cc92b66ddaee6597bdbf0813330a8f4691cc8d7a6c1"
 
 [[files]]
 file = "config/fancymenu/options.txt"
@@ -245,40 +245,56 @@ file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "a591cef12157c4cd00f7d32ea87a62cf829eb37881bb899d33cd59d8236596af"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/agriculture.snbt"
+hash = "87d80d1f7a966424b379b113b43224671668ebb81fae1f3cca3e874d8ab7506e"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/bees.snbt"
+hash = "2614a67ffb2d1863be6ebe71eb6bdbeb9d7a957b032f0af38bd3ddf9b75a27c4"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/energy.snbt"
-hash = "429286db32b8839044595d50d4d1fbc7cd654738acc00dbae062efa582feb2c4"
+hash = "7feccb3c80cc1bffaf89702bd70cd0ce347e31287fcc8ac76d73f3798098a8ce"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/hv.snbt"
-hash = "39aaf26b62a423490d2393c857041636397565eb33a694ef90b616f94bed13dd"
+hash = "78d29be26d03a7a74e6b0fcbf14f93d317e520556c67478a246b85d7c718963d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/lv.snbt"
-hash = "f9527f0eb4486af0e76b7d139fd2842f888a2e8238e8e69f815634291ee52861"
+hash = "e7565f4118f45a8ce8b3db69be33d86ef6565243858195864f4077945275e40b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/modes.snbt"
 hash = "197086fbd5fbb078e609c91b3c8340cbfb2aed721574338fcdd93f5fb6741e4e"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/multiblocks.snbt"
+hash = "6f1099e1bb79402a7aae8b386077c5c3a5c99299978f45eff794f32a82197342"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/mv.snbt"
-hash = "8e91493d9397eca296242c34e7be3d0da2b524a182dfab4c385f803a6f877b6b"
+hash = "13c1bcc31910e19643159ac7f6e17eff81329401f63772acddd46840007a1fc7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/periodic.snbt"
-hash = "b01f9e0d0fc611d29b20cf031e31d15176ccdd963afb84a4d19ca68c0b63abc8"
+hash = "b1e855630e461bdde5be0aa900d5c9f5780f6a155eef8566b81b672abe7cb56a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/start.snbt"
-hash = "06af6f97e9432c6d65b5f6df0a6c16ca94460b99817245e083a2c917dc7e7cdc"
+hash = "0cb98d1bff183aa338549569d24bfcb735dc8b886d137679c9df09d431385618"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/steam.snbt"
-hash = "da4745217962d1610bb68efea305e8312faae7e944ab679c6c0de88b115645c4"
+hash = "fc4a7d901564e23c8799fc6796fa75015b317fc0ab06f8e8d9d48c529a9da139"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/welcome.snbt"
+hash = "713dd2c434d09506c0359ffcc7d6eb2917abbf1dcbc7a59967407bb97315f10a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/wireless.snbt"
-hash = "3e69676e68a1fb3a2adc5759694581a41761cab624fb6a97ab8db4b6a9eb0a40"
+hash = "245afcb638620d2cfb7a1b66434ed4641bed313b5c2cb090d345389f75f5b098"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -405,92 +421,108 @@ file = "config/openloader/resources/gtia_menu/pack.mcmeta"
 hash = "3d90683b98442451779d53f907e3daaf2a969ce25c47001b338151ef55cb0c79"
 
 [[files]]
+file = "config/openloader/resources/gtia_quests/assets/ftbquests/ftb_quests_theme.txt"
+hash = "c937050709b29ba62629f46d03b32a1e27a6c9ff970ad04a7242a4b8eab26e84"
+
+[[files]]
 file = "config/openloader/resources/gtia_quests/assets/gtia_quests/lang/en_us.json"
-hash = "7c03bd64bf34af9b0a40b1b36f15c8600da8ca404b5d744bf109a9f7c4589caa"
+hash = "827f89c0ab5b9b6796f0b7026aaa9b99d4f310e526c66c86d5d4f0d21415b81e"
 
 [[files]]
 file = "config/openloader/resources/gtia_quests/assets/gtia_quests/lang/pt_br.json"
-hash = "d67974b5f62b9752d1472e54dfdc687a386bbf6064e2d32a57907921cca86d54"
+hash = "389c0d62583303871c2581b18fb0b45e0bb5c339ef26e0ff06e90dff55e4e044"
 
 [[files]]
 file = "config/openloader/resources/gtia_quests/assets/gtia_quests/lang/zh_cn.json"
-hash = "c274f05dc709057166011b165fc9e047087549f54cfce5a8bf576abfe26671c2"
+hash = "220839facdb5521adcf009d5c2dc2e44f3faa12fcedb391f1ec59075ec42379a"
 
 [[files]]
-file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/ammonia_converter.png"
-hash = "5767e3241c3e3d7e47c05fbac540f1813da056d43e2bcd8097556df17d63a9be"
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/agronomica_farm.png"
+hash = "4d94fa62d1331aac3841506d5830248441b9f87ea90681e3608af20899e7f3cb"
 
 [[files]]
-file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/bayer_digester.png"
-hash = "9ad127c113c71156213a9bbdab38c9039362154948c5039f82c935c85cfbb0ee"
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/backgrounds/agriculture.png"
+hash = "c54cb94c67a7b350d42bb8ee42cf1effa10d2edd94174b27d79b0033c5f7475c"
 
 [[files]]
-file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/claus_unit.png"
-hash = "1862cb662c18917bfaea101c050135f280af9de2f54c7cdbde87dcc7281a3459"
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/backgrounds/bees.png"
+hash = "e3bd084d2aa5d3b811f17324d7905bdacd3da985f75406e753e6c4d883e6bbd6"
 
 [[files]]
-file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/contact_converter.png"
-hash = "a2839bd888c3db4314b1810ad242e694ee3b39451e6d26dea4127c2b46ac80e7"
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/backgrounds/energy.png"
+hash = "d358f98be8b7cb2da4d7b4b831b991c27cf2e32c9b6f3681cf5a9fecf84331da"
 
 [[files]]
-file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/cracker.png"
-hash = "0dd55cdca69a21ab5f52559585979f47c497ebd3edfb2e9cb44b18cd7075015d"
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/backgrounds/era_grid.png"
+hash = "ca0fa4676d1eb48b5a6783e121b591012ec6528f0c1f97b78e563bf80062731a"
 
 [[files]]
-file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/diaphragm_cell.png"
-hash = "6d85e0140fca08bbc02dedd1e4a4ff5846e9328b05d6fe394e3bd494933e34ca"
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/backgrounds/ev.png"
+hash = "ff6d3e10d9059fc3c9322f4ade8265b1973ad6b5c13529f5a8efe3f734109847"
 
 [[files]]
-file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/distillation_tower.png"
-hash = "b420934f36b6b328002df63603906f5ee65e9935a97c05f4b08e5c2ce4b7bf59"
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/backgrounds/hv.png"
+hash = "e2479aff8cc9b690f935236f7ee15144cba47e96fb63934ecfd76d77ab562eba"
 
 [[files]]
-file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/electric_blast_furnace.png"
-hash = "f3c726b97b5a40d56f03bf177ac32c78b8b8278c348e756ce0b22a2f823416c2"
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/backgrounds/iv.png"
+hash = "7b5b3ddc66df9f03e371a1e6ffca7369cffcf640880881e008f63eeb5e203a32"
 
 [[files]]
-file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/hall_heroult_cell.png"
-hash = "b4d7d990e845540ee00fc8125a9c2e0fbbb78a7c3328a873444946bfe771da78"
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/backgrounds/lv.png"
+hash = "8c7d84062fd1cdd2c1d82762f25fbe342a1e881eaa05486f120ff9ae51ac4763"
 
 [[files]]
-file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/kroll_reactor.png"
-hash = "79386f56234f920a56efe29654bff081f90c1b387b19d4a751e534ff88710c76"
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/backgrounds/mv.png"
+hash = "7b24b960cb6762f73cf000e5413d1de5b1f50d27b8e219d9bb0c94ca2ca4733e"
 
 [[files]]
-file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/large_chemical_reactor.png"
-hash = "25b1cda8d83ef403fd5ed0f9839b6e320bbe651c8027d5e1624dc7ae39695ebd"
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/backgrounds/reference.png"
+hash = "93571dcddeb9bf25926d16615563d96d3b3d53b507b58581239c48da8490379d"
 
 [[files]]
-file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/lime_kiln.png"
-hash = "89aef0a1dfd67306390ab109e0e19c08444d997056118eb09e0e98596c509158"
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/backgrounds/start.png"
+hash = "7f9ed4f804d6ffbb05a0673d7a67ba3609fca595f7c35467c67f5a0ffad3de6d"
 
 [[files]]
-file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/ostwald_converter.png"
-hash = "ca25f25b5f83d38855d8189f73f5b0697724ebae357dc58b499bc4b7cced05ae"
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/backgrounds/steam.png"
+hash = "4883e75d1ccede728a33f3dee9b307b515a8d01bb242952b6d766c171f8770a6"
 
 [[files]]
-file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/rocket_assembler.png"
-hash = "9f3bd2592427ecff68fc0c71b4e3db78aa1abb42e75b369dc0a6d06199ef4add"
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/backgrounds/welcome.png"
+hash = "6cdee584ce24dc7fc4a1670ba066d0c48a066b33ffe23bba7dd4b051a4796e45"
 
 [[files]]
-file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/siemens_reactor.png"
-hash = "b9a00fa95dcde5fde3091be5ff77afa5a4b9aa0c0cb5c5b3d00c827c1c152d75"
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/backgrounds/wireless.png"
+hash = "6cb5660e9e98756e8a018c5ff3be513fe5ecda169b0ebe2e0a3c8ac86a8d15a9"
 
 [[files]]
-file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/solvay_tower.png"
-hash = "da1c0e4413ef3f1416abc5abdc318cd028c9f8ea258842f58d8f8e36c18994cc"
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/banners/agriculture.png"
+hash = "43864a6e3b0c42b1d342ce22df0591ca82b918899abcafbece5150371e6d541f"
 
 [[files]]
-file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/steel_large_boiler.png"
-hash = "234537c9ab667c6e85c7695b5b1a6546a2f5733120e7eafebd8606ff080c4a3a"
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/banners/bees.png"
+hash = "3beed7bf232f696aa58ced29246755e5325ba9ccd1f83f034988a921ae0d718e"
 
 [[files]]
-file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/vacuum_freezer.png"
-hash = "820dd5c761a3ef92474cc217a7c2bf267c353b25008bb42826571d87597d8b38"
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/banners/hv.png"
+hash = "82a081fdc6097dfd4730eb2e9a4d4d3824d9f2ac7a0add26b0c1ae83b546c77f"
 
 [[files]]
-file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/wood_retort.png"
-hash = "33b60040446a142879d993dc3ee36113e9728acaf4ea3d2dd8ae588080b146ba"
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/banners/lv.png"
+hash = "446a5e87c355f4f8909eb5e6fc71eac2e8fd4b3436bfb8815bb4f048780b5167"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/banners/mv.png"
+hash = "e6d0eedf96529ff70556dac3a7307ff282966b00a7232981241a469a0ec205e1"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/banners/start.png"
+hash = "9c2bfde0d0c3415fca245b2a3290d701474b4a879d6bb05a1b776f7bc3594035"
+
+[[files]]
+file = "config/openloader/resources/gtia_quests/assets/gtia_quests/textures/quests/banners/steam.png"
+hash = "ecbf0e78300612c17de0923d29bf46a2a58a1622fb50c59b913eafeaf7b90020"
 
 [[files]]
 file = "config/openloader/resources/gtia_quests/pack.mcmeta"
@@ -654,8 +686,8 @@ hash = "16444ff02bc8bc8169fbad39a317fceb4a5cb30fc121589e817b7ba544bc3723"
 metafile = true
 
 [[files]]
-file = "mods/ascopt-0.2.0.jar"
-hash = "f058ddbf17e7b9fefa929da956f1d4ca28d8969522cf71287055923c1b37943d"
+file = "mods/ascopt-0.2.1.jar"
+hash = "525f14f483dcfa1b23e066254f03fc763c06900ac2bfbe216c06f32a275251e1"
 
 [[files]]
 file = "mods/asynclocator.pw.toml"
@@ -983,7 +1015,7 @@ metafile = true
 
 [[files]]
 file = "mods/gtia-0.1.0.jar"
-hash = "ea2e15dcb13f91cced83c8d33081be1e28592ae65e3fbf7fdf4e19dc542798fe"
+hash = "1bd700d33e34ef4e14185a5e9f742e02e87e3ce3f6b24c37febb5b1c733a3922"
 
 [[files]]
 file = "mods/gtialib-0.5.0.jar"
