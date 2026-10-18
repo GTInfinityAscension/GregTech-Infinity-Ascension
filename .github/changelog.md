@@ -1,6 +1,15 @@
 ## Changes in 0.1.0-dev-7
 
+### New
+- **Wood Retort, Lime Kiln and Diaphragm Cell rebuilt** to look like the real plants. The Retort is a brick bench with an iron retort over a firebox, a gas duct, a water-cooled condenser and a tar decanter (up to 3 Coke Oven Hatches). The Lime Kiln is a banded shaft kiln with a hoist tower and a CO₂ hood (up to 2 Coke Oven Hatches). The Diaphragm Cell is a row of 3 to 9 cells joined by busbars, with a rectifier at the end; each cell is one parallel, as far as your energy allows. The old structures no longer form: rebuild them from the EMI preview.
+- **Pig iron steelmaking**: the Primitive Blast Furnace (and the Leap Forward furnace) or the EBF turn hematite or magnetite, coke and calcite into **Pig Iron** and **Slag**; the LV Arc Furnace blows oxygen through pig iron for steel, faster than the old routes. Slag goes into concrete instead of stone dust.
+- **Two more aluminium routes** at MV: press the dust into **Crude Aluminium** and melt it slowly in the EBF, or reduce Alumina with carbon (half the yield of the Hall-Héroult Cell).
+
 ### Changes
+- The **Integrated Ore Processor** controller is now made on the IV Assembly Line.
+- **Electrolyzer** (as in GTNH): silicates and clays need MV; aluminosilicates and ruby give Alumina for the Hall-Héroult Cell instead of aluminium dust; bastnasite gives Rare Earth instead of cerium.
+- Aluminium dust in the EBF needs HV (480 EU/t).
+- 13 materials that only the EBF makes (Quantum, Shijima, Transcendent Metal and others) no longer melt from dust in the Extractor or the Liquefaction Furnace.
 - **Steam, LV, MV and HV are back on the 0.1.0-dev-5 layout** while the GTNH 2.9 layout is redone: in dev-6 too many dependency lines were hidden and some quests had no line at all. The new tips sit next to the quest they explain.
 
 ## Changes in 0.1.0-dev-6
