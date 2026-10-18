@@ -5,7 +5,7 @@
 	group: "3FDC799CF6961510"
 	icon: "gtna:nexus_flux_matrix"
 	id: "487DBCBE771EF57D"
-	order_index: 6
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{
@@ -206,7 +206,7 @@
 			icon: "gtna:nexus_capacitor_lv"
 			id: "62B6515FA46E9E07"
 			rewards: [ ]
-			shape: "circle"
+			shape: "square"
 			size: 1.0d
 			subtitle: "{gtia.quest.62B6515FA46E9E07.subtitle}"
 			tasks: [
@@ -233,7 +233,7 @@
 			icon: "gtna:nexus_linker"
 			id: "5BDAE697615BCBC7"
 			rewards: [ ]
-			shape: "circle"
+			shape: "square"
 			size: 1.0d
 			subtitle: "{gtia.quest.5BDAE697615BCBC7.subtitle}"
 			tasks: [
@@ -260,7 +260,7 @@
 			icon: "gtna:wireless_dynamo_hatch_1a_lv"
 			id: "6B4A626EEB7C8149"
 			rewards: [ ]
-			shape: "circle"
+			shape: "square"
 			size: 1.0d
 			subtitle: "{gtia.quest.6B4A626EEB7C8149.subtitle}"
 			tasks: [
@@ -287,7 +287,7 @@
 			icon: "gtna:wireless_energy_hatch_1a_lv"
 			id: "37121221C77746A4"
 			rewards: [ ]
-			shape: "circle"
+			shape: "square"
 			size: 1.0d
 			subtitle: "{gtia.quest.37121221C77746A4.subtitle}"
 			tasks: [
@@ -306,4 +306,21 @@
 		}
 	]
 	title: "{gtia.quest.chapter.487DBCBE771EF57D}"
+	images: [
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 71.25d
+			hover: [ ]
+			image: "gtia_quests:textures/quests/backgrounds/wireless.png"
+			order: -100
+			rotation: 0.0d
+			width: 71.25d
+			x: 0.6875d
+			y: 4.625d
+		}
+	]
 }

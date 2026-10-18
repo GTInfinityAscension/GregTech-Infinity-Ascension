@@ -1,0 +1,165 @@
+# Bees (GTIA-D-259, D-268, D-272, D-273): Productive Bees through GregTech machines, from High Voltage on.
+# Positions come from the layered layout (book.toml: layout = "layered").
+
+[chapter]
+title = "Bees"
+icon = "productivebees:bee_cage"
+
+[entry]
+subtitle = "Systems: metal that buzzes."
+requires = ["hv:hv_hull"]
+text = """
+No hives grow in the wild here and no bee works for free. A bee goes into a cage, the cage goes into a machine, and the machine makes combs that turn into ore.
+
+Everything in this chapter runs on High Voltage. The rarer species wait for Extreme Voltage.
+"""
+
+[[quest]]
+key = "cage"
+title = "Bee Cage"
+role = "spine"
+icon = "productivebees:bee_cage"
+deps = ["entry"]
+subtitle = "Steel rods and iron bars."
+task = [{ item = "productivebees:bee_cage", count = 2 }]
+text = """
+Four [item]Steel Rods[/] and four [item]Iron Bars[/] make two cages. Right-click a bee with an empty cage to catch it.
+"""
+
+[[quest]]
+key = "wild_bee"
+title = "A Bee in a Cage"
+role = "side"
+icon = "minecraft:bee_nest"
+deps = ["cage"]
+subtitle = "The vanilla kind will do."
+task = [{ checkmark = "I caught a bee" }]
+text = """
+Ordinary bees still live in [item]Bee Nests[/] on oak and birch trees near flowers. Catch one: every metal species starts from a wild bee.
+"""
+
+[[quest]]
+key = "honey"
+title = "Honey Bottle"
+role = "detail"
+icon = "minecraft:honey_bottle"
+deps = ["entry"]
+subtitle = "From the same nests."
+task = [{ item = "minecraft:honey_bottle" }]
+text = """
+A glass bottle on a full nest. Calm the bees with a campfire under it first.
+"""
+
+[[quest]]
+key = "biomass"
+title = "Biomass for Bees"
+role = "side"
+icon = "gtceu:biomass_bucket"
+deps = ["entry", "lv:fermentation"]
+subtitle = "Breakfast."
+task = [{ fluid = "gtceu:biomass", amount = 1000 }]
+text = """
+[num]1,000 mB[/] of [item]Biomass[/] per new bee. The Fermentation Vat makes it from plants; Elephant Grass from the Agriculture chapter is the best feed.
+"""
+
+[[quest]]
+key = "metal_bee"
+title = "Metal Bee"
+role = "milestone"
+icon = "minecraft:iron_block"
+deps = ["wild_bee", "biomass", "hv:hv_cr"]
+subtitle = "Four blocks of metal and a lot of biomass."
+task = [{ checkmark = "I bred a metal bee" }]
+text = """
+In an HV [item]Chemical Reactor[/]: a caged wild bee, [num]4[/] blocks of the metal and [num]1,000 mB[/] of Biomass give a caged metal bee.
+
+Species: [item]Iron[/], [item]Copper[/], [item]Tin[/], [item]Lead[/], [item]Silver[/], [item]Nickel[/], [item]Zinc[/], [item]Gold[/] and [item]Aluminium[/].
+"""
+
+[[quest]]
+key = "apiary"
+title = "Industrial Apiary"
+role = "gate"
+icon = "gtia:hv_industrial_apiary"
+deps = ["entry", "hv:hv_power"]
+subtitle = "A hive with a power cable."
+task = [{ item = "gtia:hv_industrial_apiary" }]
+text = """
+The caged bee sits in the input as a catalyst and is never used up. With [num]100 mB[/] of water it makes [num]2[/] combs every [num]20[/] seconds at HV, faster with overclocks.
+"""
+
+[[quest]]
+key = "comb"
+title = "Metal Comb"
+role = "spine"
+icon = "productivebees:configurable_honeycomb"
+deps = ["metal_bee", "apiary"]
+subtitle = "Ore that grew."
+task = [{ item = "productivebees:configurable_honeycomb", count = 8 }]
+text = """
+Each species makes its own comb. Two ways to open it, one of them much better.
+"""
+
+[[quest]]
+key = "comb_dust"
+title = "The Lazy Way"
+role = "hint"
+icon = "gtceu:small_iron_dust"
+deps = ["comb"]
+subtitle = "Centrifuge: one small pile."
+text = """
+A [item]Centrifuge[/] turns a comb into a single [item]Small Dust[/]. It works, and it wastes three quarters of the comb.
+"""
+
+[[quest]]
+key = "comb_ore"
+title = "Comb Leaching"
+role = "milestone"
+icon = "gtceu:purified_iron_ore"
+deps = ["comb", "lv:hydrochloric_acid"]
+subtitle = "Four combs, four purified ores."
+task = [{ item = "gtceu:purified_iron_ore", count = 4 }]
+text = """
+[num]4[/] combs and [num]384 mB[/] of [item]Hydrochloric Acid[/] in the Chemical Reactor give [num]4[/] [item]Purified Ore[/] of the metal, straight into your ore line with all its byproducts. This is how GTNH bees pay for themselves.
+
+[note]Zinc has no ore in GregTech, so zinc combs only go through the Centrifuge.[/]
+"""
+
+[[quest]]
+key = "treat"
+title = "Honey Treat"
+role = "side"
+icon = "productivebees:honey_treat"
+deps = ["honey", "hv:hv_mixer"]
+subtitle = "Bribes for the Mutation Chamber."
+task = [{ item = "productivebees:honey_treat", count = 4 }]
+text = """
+A [item]Honey Bottle[/], two [item]Wheat[/] and [item]Sugar[/] in the Mixer give [num]4[/] treats and the bottle back.
+"""
+
+[[quest]]
+key = "mutation"
+title = "Mutation Chamber"
+role = "gate"
+icon = "gtia:hv_mutation_chamber"
+deps = ["apiary", "treat"]
+subtitle = "No luck, only recipes."
+task = [{ item = "gtia:hv_mutation_chamber" }]
+text = """
+Two caged parents (kept), a caged wild bee, [num]4[/] Honey Treats and [num]2[/] blocks of the metal give the new species every time. No random rolls.
+
+[note]The chamber is HV; the species it makes need Extreme Voltage power.[/]
+"""
+
+[[quest]]
+key = "ev_species"
+title = "Species of Extreme Voltage"
+role = "hint"
+icon = "productivebees:bee_cage"
+deps = ["mutation"]
+subtitle = "Five more, one tier later."
+text = """
+[item]Titanium[/] = Iron + Aluminium · [item]Tungsten[/] = Titanium + Tin · [item]Molybdenum[/] = Copper + Lead · [item]Redstone[/] = Copper + Gold · [item]Lapis[/] = Aluminium + Silver.
+
+Their chamber run, their apiary and their combs all need EV power.
+"""

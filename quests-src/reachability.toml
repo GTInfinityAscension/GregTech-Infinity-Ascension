@@ -27,6 +27,13 @@ items = [
     "minecraft:netherrack", "minecraft:soul_sand", "minecraft:soul_soil", "minecraft:basalt", "minecraft:blackstone",
     "minecraft:quartz", "minecraft:glowstone_dust", "minecraft:nether_wart", "minecraft:blaze_rod",
     "minecraft:magma_cream", "minecraft:ghast_tear", "minecraft:gold_nugget",
+    # Agronomica: wild seeds drop from grass; a planted crop gives its harvest by hand, and cross-breeding on crop
+    # sticks gives Elephant Grass and the Rubber Bush (the Agriculture chapter walks through it). The compost barrel
+    # turns plant scraps into compost in the world.
+    "agronomica:seeds", "agronomica:hemp_fiber", "agronomica:oily_seed", "agronomica:biomass_bundle",
+    "agronomica:latex", "agronomica:compost",
+    # vanilla bee nests still generate (only Productive Bees' nests are off, GTIA-D-268)
+    "minecraft:honey_bottle", "minecraft:honeycomb", "minecraft:bee_nest",
     # AE2 meteorites fall in the Overworld: sky stone, certus quartz and the four inscriber presses come from them
     "ae2:sky_stone_block", "ae2:certus_quartz_crystal", "ae2:calculation_processor_press",
     "ae2:engineering_processor_press", "ae2:logic_processor_press", "ae2:silicon_press",

@@ -5,7 +5,7 @@
 	group: "148BC844BA1B4853"
 	icon: "gtceu:iron_ingot"
 	id: "1F979F7F7515CABC"
-	order_index: 7
+	order_index: 11
 	quest_links: [ ]
 	quests: [
 		{
@@ -2780,4 +2780,21 @@
 		}
 	]
 	title: "{gtia.quest.chapter.1F979F7F7515CABC}"
+	images: [
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 86.5d
+			hover: [ ]
+			image: "gtia_quests:textures/quests/backgrounds/reference.png"
+			order: -100
+			rotation: 0.0d
+			width: 86.5d
+			x: 0.0d
+			y: 8.25d
+		}
+	]
 }

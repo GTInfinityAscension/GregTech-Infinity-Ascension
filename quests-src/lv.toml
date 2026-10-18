@@ -499,8 +499,6 @@ task = [{ item = "gtia:diaphragm_cell" }]
 group = "lvchem"
 hide_dependents = true
 text = """
-{image:gtia_quests:textures/quests/diaphragm_cell.png width:60 height:72 align:center}
-
 Electricity through salt water gives [item]Chlorine[/], [item]Hydrogen[/] and a salty caustic [item]Cell Liquor[/]: [num]4,000 mB[/] of Salt Water every [num]15 s[/] at [num]30 EU/t[/].
 
 A [num]3×3×3[/] tank of Solid Steel Machine Casings, with glass windows and iron bars in the middle for the diaphragm. In the casings: an LV Energy Hatch, a Fluid Input Hatch, three Fluid Output Hatches, an Input Bus for the diaphragm and a Maintenance Hatch.
@@ -628,7 +626,7 @@ x = 14.5
 y = 13.5
 shape = "circle"
 size = 1
-deps = ["acetic_methanol", "dehydrator", "lv_chem_reactor"]
+deps = ["acetic_methanol", "dehydrator", "lv_chem_reactor", "lv_electrolyzer"]
 subtitle = "Where the wood meets the plants."
 task = [{ item = "gtceu:vinyl_acetate_bucket" }]
 group = "wood"
@@ -778,7 +776,7 @@ x = 19
 y = 13
 shape = "circle"
 size = 1
-deps = ["dehydrator", "lv_chem_reactor"]
+deps = ["dehydrator", "lv_chem_reactor", "lv_electrolyzer"]
 subtitle = "Your first plastic, from plants."
 task = [{ item = "gtceu:polyethylene_bucket" }]
 group = "bio"
@@ -883,8 +881,6 @@ subtitle = "Hotter than any primitive furnace."
 task = [{ item = "gtceu:electric_blast_furnace" }]
 group = "ebf"
 text = """
-{image:gtia_quests:textures/quests/electric_blast_furnace.png width:60 height:84 align:center}
-
 Coils, casings, an Energy Hatch, Input and Output Buses, a Maintenance Hatch and a Muffler. With [num]two[/] LV Energy Hatches it reaches the voltage Aluminium needs.
 
 [tip]Real fact:[/] the first electric arc furnace for steel ran in 1900. It is still how most recycled steel is made today.
@@ -1179,4 +1175,71 @@ task = [{ item = "gtna:primitive_distillation_tower" }]
 group = "lvmulti"
 text = """
 A GTNA multiblock available from LV.
+"""
+
+# ------------------------------------------------------------------ tips (D-291): next to where the mechanic first shows up
+
+[[quest]]
+key = "tip_voltage"
+title = "Voltage and Amperage"
+role = "hint"
+icon = "gtceu:lv_machine_hull"
+deps = ["electric_age"]
+subtitle = "Power comes in packets."
+text = """
+Every tier has a voltage: [num]32 EU/t[/] for LV, [num]128[/] for MV, [num]512[/] for HV. Power moves in packets of that size, and the amperage is how many packets per tick.
+
+A machine fed a higher voltage than its own [warn]explodes[/]. A machine only draws the amps it needs, so one generator can feed several machines of its tier.
+"""
+
+[[quest]]
+key = "tip_cables"
+title = "Cable Loss"
+role = "hint"
+icon = "gtceu:tin_single_cable"
+deps = ["copper_cable"]
+subtitle = "Short cables, thick cables."
+text = """
+Every cable loses a little EU per block; the tooltip shows how much and how many amps it carries. Keep generators close to the machines.
+
+A bare wire carrying power [warn]shocks[/] whoever touches it. Cover it with rubber to make a cable.
+"""
+
+[[quest]]
+key = "tip_covers"
+title = "Covers"
+role = "hint"
+icon = "gtceu:lv_conveyor_module"
+deps = ["lv_conveyor"]
+subtitle = "Machines that move things by themselves."
+text = """
+Right-click the side of a machine with a [item]Conveyor Module[/] or an [item]Electric Pump[/] to put it there as a cover: it pushes or pulls items or fluids through that side. Open it to set the direction and the rate.
+
+Machines can also push their own output: the wrench sets the output side, and a button in the machine's screen turns auto-output on.
+"""
+
+[[quest]]
+key = "tip_circuits"
+title = "Programmed Circuits"
+role = "hint"
+icon = "gtceu:programmed_circuit"
+deps = ["lv_assembler"]
+subtitle = "Same inputs, different recipe."
+text = """
+When two recipes use the same inputs, a [item]Programmed Circuit[/] picks which one runs. Set its number in the circuit slot of the machine's screen; it is never used up.
+
+EMI shows the circuit number every recipe needs.
+"""
+
+[[quest]]
+key = "tip_coils"
+title = "Coil Temperature"
+role = "hint"
+icon = "gtceu:cupronickel_coil_block"
+deps = ["blast_furnace"]
+subtitle = "Hotter coils, more recipes."
+text = """
+The coils decide the Electric Blast Furnace's heat: [num]1,800 K[/] for Cupronickel, [num]2,700 K[/] for Kanthal, [num]3,600 K[/] for Nichrome. A recipe that needs more heat than you have will not start.
+
+Heat above what a recipe needs makes it cheaper, and far above it, faster.
 """

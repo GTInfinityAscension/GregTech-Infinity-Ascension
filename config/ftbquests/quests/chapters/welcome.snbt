@@ -1,0 +1,617 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "welcome"
+	group: "5CDBA930BF6993C3"
+	icon: "minecraft:grass_block"
+	id: "0215D27F91E7C457"
+	order_index: 0
+	quest_links: [
+		{
+			id: "768A4CE84CAFA36B"
+			linked_quest: "2B745453E6BD37E6"
+			shape: "gear"
+			size: 1.5d
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+	quests: [
+		{
+			id: "1C80807B0037B387"
+			tasks: [
+				{
+					id: "1E84DFB212F83727"
+					type: "checkmark"
+					title: "{gtia.quest.1C80807B0037B387.task.1E84DFB212F83727}"
+				}
+			]
+			x: -3.0d
+			y: -2.0d
+			title: "{gtia.quest.1C80807B0037B387.title}"
+			subtitle: "{gtia.quest.1C80807B0037B387.subtitle}"
+			icon: "minecraft:map"
+			description: [
+				"{gtia.quest.1C80807B0037B387.desc.0}"
+				""
+				"{gtia.quest.1C80807B0037B387.desc.2}"
+				""
+				"{gtia.quest.1C80807B0037B387.desc.4}"
+			]
+			size: 1.0d
+			shape: "pentagon"
+			optional: true
+			dependencies: [
+				"48ED4F35ECCFD529"
+			]
+		}
+		{
+			id: "4EB24270ABDDBEB7"
+			tasks: [
+				{
+					id: "440DFD89CD363167"
+					title: "{gtia.quest.4EB24270ABDDBEB7.task.440DFD89CD363167}"
+					type: "checkmark"
+				}
+			]
+			x: -3.0d
+			y: 0.0d
+			title: "{gtia.quest.4EB24270ABDDBEB7.title}"
+			subtitle: "{gtia.quest.4EB24270ABDDBEB7.subtitle}"
+			icon: "minecraft:crafting_table"
+			description: [
+				"{gtia.quest.4EB24270ABDDBEB7.desc.0}"
+				""
+				"{gtia.quest.4EB24270ABDDBEB7.desc.2}"
+				""
+				"{gtia.quest.4EB24270ABDDBEB7.desc.4}"
+			]
+			size: 1.0d
+			shape: "pentagon"
+			optional: true
+			dependencies: [
+				"48ED4F35ECCFD529"
+			]
+		}
+		{
+			id: "13B25D31A4A94152"
+			tasks: [
+				{
+					id: "007997840AD396E0"
+					title: "{gtia.quest.13B25D31A4A94152.task.007997840AD396E0}"
+					type: "checkmark"
+				}
+			]
+			x: -3.0d
+			y: 2.0d
+			title: "{gtia.quest.13B25D31A4A94152.title}"
+			subtitle: "{gtia.quest.13B25D31A4A94152.subtitle}"
+			icon: "minecraft:book"
+			description: [
+				"{gtia.quest.13B25D31A4A94152.desc.0}"
+				""
+				"{gtia.quest.13B25D31A4A94152.desc.2}"
+				""
+				"{gtia.quest.13B25D31A4A94152.desc.4}"
+			]
+			size: 1.0d
+			shape: "pentagon"
+			optional: true
+			dependencies: [
+				"48ED4F35ECCFD529"
+			]
+		}
+		{
+			icon: "minecraft:grass_block"
+			id: "48ED4F35ECCFD529"
+			rewards: [ ]
+			size: 2.0d
+			tasks: [
+				{
+					id: "38A38D1CE31408C3"
+					title: "{gtia.quest.48ED4F35ECCFD529.task.38A38D1CE31408C3}"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+			title: "{gtia.quest.48ED4F35ECCFD529.title}"
+			subtitle: "{gtia.quest.48ED4F35ECCFD529.subtitle}"
+			description: [
+				"{gtia.quest.48ED4F35ECCFD529.desc.0}"
+				""
+				"{gtia.quest.48ED4F35ECCFD529.desc.2}"
+				""
+				"{gtia.quest.48ED4F35ECCFD529.desc.4}"
+			]
+			shape: "gear"
+		}
+		{
+			dependencies: [
+				"48ED4F35ECCFD529"
+			]
+			id: "290D8F8D57B5FA44"
+			rewards: [
+				{
+					id: "05DED82EA4741E3A"
+					item: "industrial_platform:platform_builder"
+					type: "item"
+				}
+				{
+					id: "126D364F22355363"
+					item: "industrial_platform:industrial_platform"
+					type: "item"
+				}
+				{
+					id: "4F8ED7C5C8A758A1"
+					item: {
+						Count: 1
+						id: "constructionwand:infinity_wand"
+						tag: {
+							wand_options: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "596DDB27E11B1C5E"
+					item: "constructionwand:core_angel"
+					type: "item"
+				}
+				{
+					id: "3AA0835C64FD0ECC"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "2BE20D8D4A5A2701"
+					item: "minecraft:crying_obsidian"
+					type: "item"
+				}
+				{
+					id: "59CC94CAE75F034B"
+					item: "modernspace:personal_space_portal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2B3F7B039A5B79C1"
+					type: "checkmark"
+					title: "{gtia.quest.290D8F8D57B5FA44.task.2B3F7B039A5B79C1}"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+			title: "{gtia.quest.290D8F8D57B5FA44.title}"
+			subtitle: "{gtia.quest.290D8F8D57B5FA44.subtitle}"
+			icon: "industrial_platform:platform_builder"
+			description: [
+				"{gtia.quest.290D8F8D57B5FA44.desc.0}"
+				""
+				"{gtia.quest.290D8F8D57B5FA44.desc.2}"
+				""
+				"{gtia.quest.290D8F8D57B5FA44.desc.4}"
+				""
+				"{gtia.quest.290D8F8D57B5FA44.desc.6}"
+			]
+			size: 1.0d
+			shape: "hexagon"
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"290D8F8D57B5FA44"
+			]
+			id: "79F9D0A994CF9EDB"
+			rewards: [
+				{
+					command: "/gamerule doDaylightCycle false"
+					id: "53F0D8D6CD3DE540"
+					title: "{gtia.quest.79F9D0A994CF9EDB.reward.53F0D8D6CD3DE540}"
+					type: "command"
+					elevate_perms: true
+				}
+			]
+			tasks: [
+				{
+					id: "5096CBC8A0297816"
+					type: "checkmark"
+					title: "{gtia.quest.79F9D0A994CF9EDB.task.5096CBC8A0297816}"
+				}
+			]
+			x: 5.0d
+			y: -1.5d
+			title: "{gtia.quest.79F9D0A994CF9EDB.title}"
+			subtitle: "{gtia.quest.79F9D0A994CF9EDB.subtitle}"
+			icon: "minecraft:clock"
+			description: [
+				"{gtia.quest.79F9D0A994CF9EDB.desc.0}"
+				""
+				"{gtia.quest.79F9D0A994CF9EDB.desc.2}"
+			]
+			size: 1.0d
+			shape: "diamond"
+			optional: true
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"290D8F8D57B5FA44"
+			]
+			id: "4B0F76331F09E588"
+			rewards: [
+				{
+					command: "/gamerule doWeatherCycle false"
+					id: "4BB20BB3B16E53A5"
+					title: "{gtia.quest.4B0F76331F09E588.reward.4BB20BB3B16E53A5}"
+					type: "command"
+					elevate_perms: true
+				}
+			]
+			tasks: [
+				{
+					id: "035D14259BEFAAB1"
+					type: "checkmark"
+					title: "{gtia.quest.4B0F76331F09E588.task.035D14259BEFAAB1}"
+				}
+			]
+			x: 5.0d
+			y: 0.0d
+			title: "{gtia.quest.4B0F76331F09E588.title}"
+			subtitle: "{gtia.quest.4B0F76331F09E588.subtitle}"
+			icon: "minecraft:sunflower"
+			description: [
+				"{gtia.quest.4B0F76331F09E588.desc.0}"
+				""
+				"{gtia.quest.4B0F76331F09E588.desc.2}"
+			]
+			size: 1.0d
+			shape: "diamond"
+			optional: true
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"290D8F8D57B5FA44"
+			]
+			id: "75F8535E4B2326CE"
+			rewards: [
+				{
+					command: "/effect give @s minecraft:night_vision infinite 0 true"
+					id: "0E8AC86CAA830365"
+					title: "{gtia.quest.75F8535E4B2326CE.reward.0E8AC86CAA830365}"
+					type: "command"
+					elevate_perms: true
+				}
+			]
+			tasks: [
+				{
+					id: "13A362E087AE314C"
+					type: "checkmark"
+					title: "{gtia.quest.75F8535E4B2326CE.task.13A362E087AE314C}"
+				}
+			]
+			x: 5.0d
+			y: 1.5d
+			title: "{gtia.quest.75F8535E4B2326CE.title}"
+			subtitle: "{gtia.quest.75F8535E4B2326CE.subtitle}"
+			icon: "minecraft:golden_carrot"
+			description: [
+				"{gtia.quest.75F8535E4B2326CE.desc.0}"
+				""
+				"{gtia.quest.75F8535E4B2326CE.desc.2}"
+			]
+			size: 1.0d
+			shape: "diamond"
+			optional: true
+		}
+		{
+			dependencies: [
+				"48ED4F35ECCFD529"
+			]
+			description: [
+				"{gtia.quest.1E3D206AD1480630.desc.0}"
+				""
+				"{gtia.quest.1E3D206AD1480630.desc.2}"
+			]
+			icon: "minecraft:writable_book"
+			id: "1E3D206AD1480630"
+			optional: true
+			shape: "pentagon"
+			size: 1.0d
+			subtitle: "{gtia.quest.1E3D206AD1480630.subtitle}"
+			tasks: [
+				{
+					id: "714658BBC72907AD"
+					title: "{gtia.quest.1E3D206AD1480630.task.714658BBC72907AD}"
+					type: "checkmark"
+				}
+			]
+			title: "{gtia.quest.1E3D206AD1480630.title}"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"48ED4F35ECCFD529"
+			]
+			description: [
+				"{gtia.quest.4C58C4CD61D5370D.desc.0}"
+				""
+				"{gtia.quest.4C58C4CD61D5370D.desc.2}"
+			]
+			icon: "minecraft:bell"
+			id: "4C58C4CD61D5370D"
+			optional: true
+			shape: "pentagon"
+			size: 1.0d
+			subtitle: "{gtia.quest.4C58C4CD61D5370D.subtitle}"
+			tasks: [
+				{
+					id: "2B594345D19AE8CC"
+					title: "{gtia.quest.4C58C4CD61D5370D.task.2B594345D19AE8CC}"
+					type: "checkmark"
+				}
+			]
+			title: "{gtia.quest.4C58C4CD61D5370D.title}"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"290D8F8D57B5FA44"
+			]
+			description: [
+				"{gtia.quest.76593A77A7CEB2F3.desc.0}"
+			]
+			icon: "minecraft:oak_sapling"
+			id: "76593A77A7CEB2F3"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{gtia.quest.76593A77A7CEB2F3.subtitle}"
+			tasks: [
+				{
+					id: "684810DB627C4E91"
+					title: "{gtia.quest.76593A77A7CEB2F3.task.684810DB627C4E91}"
+					type: "checkmark"
+				}
+			]
+			title: "{gtia.quest.76593A77A7CEB2F3.title}"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1C80807B0037B387"
+			]
+			description: [
+				"{gtia.quest.097B60D5955D7CF7.desc.0}"
+				""
+				"{gtia.quest.097B60D5955D7CF7.desc.2}"
+			]
+			icon: "minecraft:knowledge_book"
+			id: "097B60D5955D7CF7"
+			optional: true
+			shape: "pentagon"
+			size: 1.0d
+			subtitle: "{gtia.quest.097B60D5955D7CF7.subtitle}"
+			tasks: [
+				{
+					id: "3C3BBCFC921D282E"
+					title: "{gtia.quest.097B60D5955D7CF7.task.3C3BBCFC921D282E}"
+					type: "checkmark"
+				}
+			]
+			title: "{gtia.quest.097B60D5955D7CF7.title}"
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"097B60D5955D7CF7"
+			]
+			description: [
+				"{gtia.quest.1F33FD31AC3A4F22.desc.0}"
+				""
+				"{gtia.quest.1F33FD31AC3A4F22.desc.2}"
+			]
+			icon: "minecraft:crafting_table"
+			id: "1F33FD31AC3A4F22"
+			optional: true
+			shape: "pentagon"
+			size: 1.0d
+			subtitle: "{gtia.quest.1F33FD31AC3A4F22.subtitle}"
+			tasks: [
+				{
+					id: "342610EC0CE20637"
+					title: "{gtia.quest.1F33FD31AC3A4F22.task.342610EC0CE20637}"
+					type: "checkmark"
+				}
+			]
+			title: "{gtia.quest.1F33FD31AC3A4F22.title}"
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"48ED4F35ECCFD529"
+			]
+			description: [
+				"{gtia.quest.79C83BFB96453D45.desc.0}"
+				""
+				"{gtia.quest.79C83BFB96453D45.desc.2}"
+			]
+			icon: "minecraft:filled_map"
+			id: "79C83BFB96453D45"
+			optional: true
+			shape: "pentagon"
+			size: 1.0d
+			subtitle: "{gtia.quest.79C83BFB96453D45.subtitle}"
+			tasks: [
+				{
+					id: "1C4CD5C77AF99827"
+					title: "{gtia.quest.79C83BFB96453D45.task.1C4CD5C77AF99827}"
+					type: "checkmark"
+				}
+			]
+			title: "{gtia.quest.79C83BFB96453D45.title}"
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"270B3B2AA4C678D7"
+			]
+			description: [
+				"{gtia.quest.781C717CA1C571FD.desc.0}"
+			]
+			id: "781C717CA1C571FD"
+			rewards: [
+				{
+					id: "27F543A7FB625F00"
+					item: "gtceu:vanadium_steel_axe"
+					type: "item"
+				}
+				{
+					id: "7F82185C25C25A3A"
+					item: "gtceu:vanadium_steel_pickaxe"
+					type: "item"
+				}
+				{
+					id: "3E9B1C4A7D2F5061"
+					item: "gtceu:vanadium_steel_shovel"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "{gtia.quest.781C717CA1C571FD.subtitle}"
+			tasks: [
+				{
+					id: "37B52909AFEE3ABA"
+					title: "{gtia.quest.781C717CA1C571FD.task.37B52909AFEE3ABA}"
+					type: "checkmark"
+				}
+			]
+			title: "{gtia.quest.781C717CA1C571FD.title}"
+			x: 2.5d
+			y: -2.25d
+			icon: "gtceu:vanadium_steel_axe"
+			hide_until_deps_complete: true
+		}
+		{
+			dependencies: [
+				"4231C12C585214A4"
+			]
+			description: [
+				"{gtia.quest.4AB61B15543297E5.desc.0}"
+			]
+			id: "4AB61B15543297E5"
+			rewards: [
+				{
+					id: "3C309A8CC944A20F"
+					item: "gtceu:steel_axe"
+					type: "item"
+				}
+				{
+					id: "17BA0D3C7538049F"
+					item: "gtceu:steel_pickaxe"
+					type: "item"
+				}
+				{
+					id: "49CA7BEADA161820"
+					item: "gtceu:steel_shovel"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "{gtia.quest.4AB61B15543297E5.subtitle}"
+			tasks: [
+				{
+					id: "2E7B0E3C5EB58C9C"
+					title: "{gtia.quest.4AB61B15543297E5.task.2E7B0E3C5EB58C9C}"
+					type: "checkmark"
+				}
+			]
+			title: "{gtia.quest.4AB61B15543297E5.title}"
+			x: 2.5d
+			y: -2.25d
+			icon: "gtceu:steel_axe"
+			hide_until_deps_complete: true
+		}
+		{
+			dependencies: [
+				"270B3B2AA4C678D7"
+			]
+			description: [
+				"{gtia.quest.584AA28B1CB94C4A.desc.0}"
+				""
+				"{gtia.quest.584AA28B1CB94C4A.desc.2}"
+			]
+			icon: "minecraft:totem_of_undying"
+			id: "584AA28B1CB94C4A"
+			rewards: [ ]
+			shape: "square"
+			size: 1.25d
+			subtitle: "{gtia.quest.584AA28B1CB94C4A.subtitle}"
+			tasks: [
+				{
+					id: "0DCEE4E483A70A8E"
+					type: "checkmark"
+					title: "{gtia.quest.584AA28B1CB94C4A.task.0DCEE4E483A70A8E}"
+				}
+			]
+			title: "{gtia.quest.584AA28B1CB94C4A.title}"
+			x: 0.0d
+			y: -3.0d
+			hide_until_deps_complete: true
+		}
+		{
+			dependencies: [
+				"4231C12C585214A4"
+			]
+			description: [
+				"{gtia.quest.4840C870BDD00959.desc.0}"
+				""
+				"{gtia.quest.4840C870BDD00959.desc.2}"
+			]
+			icon: "gtceu:steel_pickaxe"
+			id: "4840C870BDD00959"
+			rewards: [ ]
+			shape: "square"
+			size: 1.25d
+			subtitle: "{gtia.quest.4840C870BDD00959.subtitle}"
+			tasks: [
+				{
+					id: "27EA78A139B7BEF3"
+					type: "checkmark"
+					title: "{gtia.quest.4840C870BDD00959.task.27EA78A139B7BEF3}"
+				}
+			]
+			title: "{gtia.quest.4840C870BDD00959.title}"
+			x: 0.0d
+			y: -3.0d
+			hide_until_deps_complete: true
+		}
+	]
+	title: "{gtia.quest.chapter.0215D27F91E7C457}"
+	images: [
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 74.5d
+			hover: [ ]
+			image: "gtia_quests:textures/quests/backgrounds/welcome.png"
+			order: -100
+			rotation: 0.0d
+			width: 74.5d
+			x: 1.25d
+			y: -1.0d
+		}
+	]
+}

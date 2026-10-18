@@ -1,0 +1,391 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "bees"
+	group: "3FDC799CF6961510"
+	icon: "productivebees:bee_cage"
+	id: "6E798AA6D038ED8A"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"1EA40DE258CB0D37"
+			]
+			description: [
+				"{gtia.quest.534EA0EFEFEF196A.desc.0}"
+				""
+				"{gtia.quest.534EA0EFEFEF196A.desc.2}"
+			]
+			icon: "productivebees:bee_cage"
+			id: "534EA0EFEFEF196A"
+			rewards: [ ]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{gtia.quest.534EA0EFEFEF196A.subtitle}"
+			tasks: [
+				{
+					id: "3575047373EEC194"
+					type: "checkmark"
+					title: "{gtia.quest.534EA0EFEFEF196A.task.3575047373EEC194}"
+				}
+			]
+			title: "{gtia.quest.534EA0EFEFEF196A.title}"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"534EA0EFEFEF196A"
+			]
+			description: [
+				"{gtia.quest.41BEC28E3DE99535.desc.0}"
+			]
+			icon: "productivebees:bee_cage"
+			id: "41BEC28E3DE99535"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "{gtia.quest.41BEC28E3DE99535.subtitle}"
+			tasks: [
+				{
+					id: "2C4C7A1D3D0CF2CD"
+					type: "item"
+					item: "productivebees:bee_cage"
+					count: 2L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "{gtia.quest.41BEC28E3DE99535.title}"
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"41BEC28E3DE99535"
+			]
+			description: [
+				"{gtia.quest.219D196510C59DB9.desc.0}"
+			]
+			icon: "minecraft:bee_nest"
+			id: "219D196510C59DB9"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "{gtia.quest.219D196510C59DB9.subtitle}"
+			tasks: [
+				{
+					id: "6286CC5208AADF9B"
+					type: "checkmark"
+					title: "{gtia.quest.219D196510C59DB9.task.6286CC5208AADF9B}"
+				}
+			]
+			title: "{gtia.quest.219D196510C59DB9.title}"
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"534EA0EFEFEF196A"
+			]
+			description: [
+				"{gtia.quest.57A6FBE224B5D911.desc.0}"
+			]
+			icon: "minecraft:honey_bottle"
+			id: "57A6FBE224B5D911"
+			rewards: [ ]
+			shape: "square"
+			size: 0.75d
+			subtitle: "{gtia.quest.57A6FBE224B5D911.subtitle}"
+			tasks: [
+				{
+					id: "3FC62628B04E0141"
+					type: "item"
+					item: "minecraft:honey_bottle"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "{gtia.quest.57A6FBE224B5D911.title}"
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"534EA0EFEFEF196A"
+			]
+			description: [
+				"{gtia.quest.2C61BAEEE679316E.desc.0}"
+			]
+			icon: "gtceu:biomass_bucket"
+			id: "2C61BAEEE679316E"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "{gtia.quest.2C61BAEEE679316E.subtitle}"
+			tasks: [
+				{
+					amount: 1000L
+					fluid: "gtceu:biomass"
+					id: "0C11431BAD1A1D77"
+					type: "fluid"
+				}
+			]
+			title: "{gtia.quest.2C61BAEEE679316E.title}"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"219D196510C59DB9"
+			]
+			description: [
+				"{gtia.quest.7B40B3F427F9CA07.desc.0}"
+				""
+				"{gtia.quest.7B40B3F427F9CA07.desc.2}"
+			]
+			icon: "minecraft:iron_block"
+			id: "7B40B3F427F9CA07"
+			rewards: [ ]
+			shape: "gear"
+			size: 2.25d
+			subtitle: "{gtia.quest.7B40B3F427F9CA07.subtitle}"
+			tasks: [
+				{
+					id: "70D817AD99FF6EA4"
+					type: "checkmark"
+					title: "{gtia.quest.7B40B3F427F9CA07.task.70D817AD99FF6EA4}"
+				}
+			]
+			title: "{gtia.quest.7B40B3F427F9CA07.title}"
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"667FD8A52B98CABC"
+			]
+			description: [
+				"{gtia.quest.6C8989C00FB54110.desc.0}"
+			]
+			icon: "gtia:hv_industrial_apiary"
+			id: "6C8989C00FB54110"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.75d
+			subtitle: "{gtia.quest.6C8989C00FB54110.subtitle}"
+			tasks: [
+				{
+					id: "5031EE08DFA530F4"
+					type: "item"
+					item: "gtia:hv_industrial_apiary"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "{gtia.quest.6C8989C00FB54110.title}"
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"6C8989C00FB54110"
+			]
+			description: [
+				"{gtia.quest.1D7DEEAD4BE44447.desc.0}"
+			]
+			icon: "productivebees:configurable_honeycomb"
+			id: "1D7DEEAD4BE44447"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "{gtia.quest.1D7DEEAD4BE44447.subtitle}"
+			tasks: [
+				{
+					id: "2CB42CE47EC459DF"
+					type: "item"
+					item: "productivebees:configurable_honeycomb"
+					count: 8L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "{gtia.quest.1D7DEEAD4BE44447.title}"
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"1D7DEEAD4BE44447"
+			]
+			description: [
+				"{gtia.quest.1136E33E3FD99DE1.desc.0}"
+			]
+			icon: "gtceu:small_iron_dust"
+			id: "1136E33E3FD99DE1"
+			optional: true
+			rewards: [ ]
+			shape: "pentagon"
+			size: 1.25d
+			subtitle: "{gtia.quest.1136E33E3FD99DE1.subtitle}"
+			tasks: [
+				{
+					id: "14862C83FBCB991A"
+					type: "checkmark"
+					title: "{gtia.quest.1136E33E3FD99DE1.task.14862C83FBCB991A}"
+				}
+			]
+			title: "{gtia.quest.1136E33E3FD99DE1.title}"
+			x: 8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"1D7DEEAD4BE44447"
+			]
+			description: [
+				"{gtia.quest.21AD28D820DFECB8.desc.0}"
+				""
+				"{gtia.quest.21AD28D820DFECB8.desc.2}"
+			]
+			icon: "gtceu:purified_iron_ore"
+			id: "21AD28D820DFECB8"
+			rewards: [ ]
+			shape: "gear"
+			size: 2.25d
+			subtitle: "{gtia.quest.21AD28D820DFECB8.subtitle}"
+			tasks: [
+				{
+					id: "2B81957D06B8B51F"
+					type: "item"
+					item: "gtceu:purified_iron_ore"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "{gtia.quest.21AD28D820DFECB8.title}"
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"0D0D7FCC02F10731"
+			]
+			description: [
+				"{gtia.quest.0283F4777ECE4253.desc.0}"
+			]
+			icon: "productivebees:honey_treat"
+			id: "0283F4777ECE4253"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "{gtia.quest.0283F4777ECE4253.subtitle}"
+			tasks: [
+				{
+					id: "5FADA0BEC2686E2A"
+					type: "item"
+					item: "productivebees:honey_treat"
+					count: 4L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "{gtia.quest.0283F4777ECE4253.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6C8989C00FB54110"
+			]
+			description: [
+				"{gtia.quest.4D5FE0F95AD07F5E.desc.0}"
+				""
+				"{gtia.quest.4D5FE0F95AD07F5E.desc.2}"
+			]
+			icon: "gtia:hv_mutation_chamber"
+			id: "4D5FE0F95AD07F5E"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.75d
+			subtitle: "{gtia.quest.4D5FE0F95AD07F5E.subtitle}"
+			tasks: [
+				{
+					id: "136880B9674E73A3"
+					type: "item"
+					item: "gtia:hv_mutation_chamber"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "{gtia.quest.4D5FE0F95AD07F5E.title}"
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"4D5FE0F95AD07F5E"
+			]
+			description: [
+				"{gtia.quest.3D8102E26BB79B9D.desc.0}"
+				""
+				"{gtia.quest.3D8102E26BB79B9D.desc.2}"
+			]
+			icon: "productivebees:bee_cage"
+			id: "3D8102E26BB79B9D"
+			optional: true
+			rewards: [ ]
+			shape: "pentagon"
+			size: 1.25d
+			subtitle: "{gtia.quest.3D8102E26BB79B9D.subtitle}"
+			tasks: [
+				{
+					id: "64DC61CE048A4387"
+					type: "checkmark"
+					title: "{gtia.quest.3D8102E26BB79B9D.task.64DC61CE048A4387}"
+				}
+			]
+			title: "{gtia.quest.3D8102E26BB79B9D.title}"
+			x: 5.0d
+			y: 4.0d
+		}
+	]
+	title: "{gtia.quest.chapter.6E798AA6D038ED8A}"
+	images: [
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 74.875d
+			hover: [ ]
+			image: "gtia_quests:textures/quests/backgrounds/bees.png"
+			order: -100
+			rotation: 0.0d
+			width: 74.875d
+			x: 2.5625d
+			y: -2.8125d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 4.25d
+			hover: [ ]
+			image: "gtia_quests:textures/quests/banners/bees.png"
+			order: 0
+			rotation: 0.0d
+			width: 7.0d
+			x: -1.0d
+			y: -8.125d
+		}
+	]
+}

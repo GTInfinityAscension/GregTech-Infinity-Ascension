@@ -11,6 +11,7 @@ import argparse
 import collections
 import io
 import json
+import os
 import sys
 import zipfile
 from pathlib import Path
@@ -34,7 +35,8 @@ CONTROLLER_CASING = {"gtceu:large_chemical_reactor": "gtceu:inert_machine_casing
 class Assets:
     def __init__(self):
         self.zips = {}
-        for jar in sorted(CACHE.glob("*.jar")):
+        extra = [Path(p) for p in os.environ.get("GTIA_EXTRA_JARS", "").split(os.pathsep) if p]
+        for jar in sorted(CACHE.glob("*.jar")) + extra:
             try:
                 z = zipfile.ZipFile(jar)
             except zipfile.BadZipFile:
@@ -137,9 +139,10 @@ def face(texture, size, kind):
     return rgb
 
 
-def render(machine: str, block_px: int, max_px: int | None) -> Image.Image:
-    shapes = json.loads(SHAPES.read_text())
-    blocks = shapes[machine]
+def render(machine: str, block_px: int, max_px: int | None, blocks: list | None = None) -> Image.Image:
+    """Renders a machine from the shape dump, or any block list [[x, y, z, block, facing], ...] given as `blocks`."""
+    if blocks is None:
+        blocks = json.loads(SHAPES.read_text())[machine]
     assets = Assets()
     counts = collections.Counter(b[3] for b in blocks if "casing" in b[3] or "firebox" in b[3])
     majority = counts.most_common(1)[0][0] if counts else "gtceu:solid_machine_casing"

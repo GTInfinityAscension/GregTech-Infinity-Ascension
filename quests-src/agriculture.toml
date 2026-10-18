@@ -1,0 +1,260 @@
+# Agriculture (GTIA-D-260, D-267, D-271, D-273): Agronomica crops from the Steam Age to the MV Greenhouse.
+# Positions come from the layered layout (book.toml: layout = "layered").
+
+[chapter]
+title = "Agriculture"
+icon = "agronomica:crop_sticks"
+
+[entry]
+subtitle = "Systems: plants that work for you."
+requires = ["steam:entry"]
+text = """
+{image:gtia_quests:textures/quests/agronomica_farm.png width:96 height:96 align:center}
+
+Agronomica crops grow on [item]Crop Sticks[/], cross-breed into new species and drain their soil as they grow. They give fibre, oil, latex and biomass: the raw stuff of rope, fuel, rubber and ethanol.
+
+This chapter runs next to the tiers. Each quest names the tier it needs, so come back whenever a new machine opens a step.
+"""
+
+[[quest]]
+key = "crop_sticks"
+title = "Crop Sticks"
+role = "spine"
+deps = ["entry"]
+subtitle = "Four sticks, one farm plot."
+task = [{ item = "agronomica:crop_sticks", count = 8 }]
+text = """
+Till the soil and put [item]Crop Sticks[/] on the farmland. A seed goes on the sticks, never straight in the ground.
+
+[tip]Sticks on sticks[/] make a cross: that is where new plants are born.
+"""
+
+[[quest]]
+key = "wild_seeds"
+title = "Wild Seeds"
+role = "side"
+icon = "agronomica:seeds"
+deps = ["entry"]
+subtitle = "Grass hides them."
+task = [{ item = "agronomica:seeds" }]
+text = """
+Breaking grass has a [num]3%[/] chance to drop [item]Hemp[/] or [item]Rapeseed[/] seeds. Ten minutes in a meadow is usually enough.
+"""
+
+[[quest]]
+key = "hemp"
+title = "Hemp"
+role = "spine"
+icon = "agronomica:hemp_fiber"
+deps = ["crop_sticks", "wild_seeds"]
+subtitle = "Four stages, then fibre."
+task = [{ item = "agronomica:hemp_fiber", count = 8 }]
+text = """
+A ripe plant gives its harvest with a right click and drops back to stage one. [item]Hemp Fiber[/] becomes string and rope; nobody here will ask what else you thought it was for.
+"""
+
+[[quest]]
+key = "rapeseed"
+title = "Rapeseed"
+role = "spine"
+icon = "agronomica:oily_seed"
+deps = ["crop_sticks", "wild_seeds"]
+subtitle = "The oil crop."
+task = [{ item = "agronomica:oily_seed", count = 8 }]
+text = """
+Rapeseed gives [item]Oily Seeds[/], ten times the oil of a wheat seed. Squeeze them in the Extractor.
+"""
+
+[[quest]]
+key = "seed_oil"
+title = "Seed Oil"
+role = "side"
+icon = "gtceu:seed_oil_bucket"
+deps = ["rapeseed", "steam:extractor"]
+subtitle = "Squeezed in the Steam Extractor."
+task = [{ fluid = "gtceu:seed_oil", amount = 1000 }]
+text = """
+[num]100 mB[/] of [item]Seed Oil[/] per Oily Seed, and the Steam Extractor is enough for it.
+"""
+
+[[quest]]
+key = "seed_oil_fuel"
+title = "Oil in the Boiler"
+role = "hint"
+icon = "gtceu:lp_steam_liquid_boiler"
+deps = ["seed_oil"]
+subtitle = "An early fuel, not a better one."
+text = """
+Seed Oil burns in a liquid boiler like Creosote: [num]250 mB[/] for 17.5 seconds. It is a fuel you can farm instead of dig.
+"""
+
+[[quest]]
+key = "fertiliser"
+title = "Tired Soil"
+role = "spine"
+icon = "agronomica:fertilizer_npk"
+deps = ["crop_sticks"]
+subtitle = "Every harvest takes something back."
+task = [{ item = "agronomica:fertilizer_n" }, { item = "agronomica:fertilizer_p" }, { item = "agronomica:fertilizer_k" }]
+text = """
+Each plot starts with [num]24[/] Nitrogen, Phosphorus and Potassium, and each crop eats its own mix. When the soil runs out the plant stops growing.
+
+Hand-made fertilisers come from bone meal: with rotten flesh ([item]N[/]), more bone meal ([item]P[/]) or charcoal or ash ([item]K[/]).
+"""
+
+[[quest]]
+key = "npk_hand"
+title = "NPK by Hand"
+role = "side"
+icon = "agronomica:fertilizer_npk"
+deps = ["fertiliser"]
+subtitle = "All three in one bag."
+task = [{ item = "agronomica:fertilizer_npk" }]
+text = """
+One of each in a crafting grid gives a single [item]NPK Fertiliser[/]. It works, but the Mixer in MV makes three per batch from real chemistry.
+"""
+
+[[quest]]
+key = "compost_barrel"
+title = "Compost Barrel"
+role = "side"
+icon = "agronomica:compost_barrel"
+deps = ["crop_sticks"]
+subtitle = "Scraps in, compost out."
+task = [{ item = "agronomica:compost_barrel" }]
+text = """
+Dark oak and a slab. Drop plant scraps in the barrel and wait: it slowly turns them into [item]Compost[/], the cheap fertiliser of the Greenhouse.
+"""
+
+[[quest]]
+key = "compost"
+title = "Compost"
+role = "detail"
+icon = "agronomica:compost"
+deps = ["compost_barrel"]
+subtitle = "Patience, mostly."
+task = [{ item = "agronomica:compost", count = 4 }]
+text = """
+Collect the [item]Compost[/] from the barrel. Two of them feed one Greenhouse run.
+"""
+
+[[quest]]
+key = "crossing"
+title = "Cross-Breeding"
+role = "milestone"
+icon = "agronomica:biomass_bundle"
+deps = ["hemp", "rapeseed"]
+subtitle = "Two parents, one surprise."
+task = [{ item = "agronomica:biomass_bundle" }]
+text = """
+Put a [item]cross[/] of Crop Sticks between two ripe plants and a child grows there. [item]Hemp[/] next to [item]Rapeseed[/] can give [item]Elephant Grass[/], whose harvest is the [item]Biomass Bundle[/].
+
+The child takes the average of its parents' Growth, Gain and Resistance, give or take a little.
+"""
+
+[[quest]]
+key = "stats"
+title = "Growth, Gain, Resistance"
+role = "hint"
+icon = "minecraft:book"
+deps = ["crossing"]
+subtitle = "Three numbers per seed."
+text = """
+[item]Growth[/] makes the plant faster, [item]Gain[/] gives more per harvest, [item]Resistance[/] keeps weeds away. They go from [num]1[/] to [num]31[/]; above [num]20[/] each point is worth less. Breed the best two you have, again and again.
+"""
+
+[[quest]]
+key = "rubber_bush"
+title = "Rubber Bush"
+role = "spine"
+icon = "agronomica:latex"
+deps = ["crossing"]
+subtitle = "Rapeseed meets Elephant Grass."
+task = [{ item = "agronomica:latex", count = 4 }]
+text = """
+Cross [item]Rapeseed[/] with [item]Elephant Grass[/] for the [item]Rubber Bush[/]. Its [item]Latex[/] is rubber that never saw a tree tap.
+"""
+
+[[quest]]
+key = "vulcanised"
+title = "Vulcanised Rubber"
+role = "side"
+icon = "gtceu:rubber_ingot"
+deps = ["rubber_bush", "steam:alloy"]
+subtitle = "Latex and sulfur, the 1844 way."
+task = [{ item = "gtceu:rubber_ingot", count = 4 }]
+text = """
+Two [item]Latex[/] and a [item]Sulfur Dust[/] in the Alloy Smelter give a [item]Rubber Bar[/]. Dearer than sticky resin, but it grows on a farm.
+"""
+
+[[quest]]
+key = "biomass"
+title = "Biomass"
+role = "side"
+icon = "gtceu:biomass_bucket"
+deps = ["crossing", "lv:fermentation"]
+subtitle = "Grass into fuel."
+task = [{ fluid = "gtceu:biomass", amount = 1000 }]
+text = """
+Four [item]Biomass Bundles[/] and water become [num]500 mB[/] of [item]Biomass[/] in the Fermentation Vat. Ferment it again for ethanol; the High Voltage bees drink it too.
+"""
+
+[[quest]]
+key = "seed_analyzer"
+title = "Seed Analyzer"
+role = "gate"
+icon = "gtia:lv_seed_analyzer"
+deps = ["crossing", "lv:lv_sensor", "lv:lv_emitter"]
+subtitle = "Know what you are breeding."
+task = [{ item = "gtia:lv_seed_analyzer" }]
+text = """
+Reads the Growth, Gain and Resistance of a seed so you breed on purpose instead of by hope. Higher tiers analyse faster.
+"""
+
+[[quest]]
+key = "npk_industrial"
+title = "Industrial NPK"
+role = "side"
+icon = "agronomica:fertilizer_npk"
+deps = ["npk_hand", "mv:haber", "mv:mv_mixer"]
+subtitle = "Ammonia, phosphate, potash."
+task = [{ item = "agronomica:fertilizer_npk", count = 16 }]
+text = """
+Urea from [item]Ammonia[/] and [item]Carbon Dioxide[/], monoammonium phosphate from [item]Phosphoric Acid[/] and [item]Ammonia[/], potassium chloride from [item]Rock Salt[/]. The Mixer turns one of each into [num]3[/] NPK, worth [num]35[/] of every nutrient.
+"""
+
+[[quest]]
+key = "greenhouse"
+title = "Greenhouse"
+role = "milestone"
+icon = "gtia:greenhouse"
+deps = ["seed_analyzer", "mv:mv_sensor", "mv:mv_pump", "mv:mv_power"]
+subtitle = "Hundreds of plants, one block entity."
+task = [{ item = "gtia:greenhouse" }]
+text = """
+A [num]5 x 4 x 5[/] glass house of frost-proof casing on a soil floor. One seed of the crop stays in the input bus as a catalyst; [num]1[/] NPK and [num]1,000 mB[/] of water give [num]8[/] of its harvest every 30 seconds. Compost works too, [num]2[/] per run for [num]6[/].
+"""
+
+[[quest]]
+key = "harvest"
+title = "Harvest by the Stack"
+role = "side"
+icon = "agronomica:hemp_fiber"
+deps = ["greenhouse"]
+subtitle = "No more clicking."
+task = [{ item = "agronomica:hemp_fiber", count = 64 }]
+text = """
+A stack of fibre without a single right click. Feed the Greenhouse from the Mixer and the barrels, and its output into the Fermentation Vats.
+"""
+
+[[quest]]
+key = "hv_analyzer"
+title = "HV Seed Analyzer"
+role = "side"
+icon = "gtia:hv_seed_analyzer"
+deps = ["seed_analyzer", "hv:hv_hull"]
+subtitle = "Faster reading."
+task = [{ item = "gtia:hv_seed_analyzer" }]
+text = """
+The same reading in a fraction of the time, for breeding programs that never stop.
+"""

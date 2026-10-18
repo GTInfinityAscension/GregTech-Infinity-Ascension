@@ -5,7 +5,7 @@
 	group: "3FDC799CF6961510"
 	icon: "gtceu:lv_steam_turbine"
 	id: "070C71496CB9ADE0"
-	order_index: 5
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{
@@ -507,9 +507,7 @@
 				"7FFDD6C6357E1A46"
 			]
 			description: [
-				"{image:gtia_quests:textures/quests/steel_large_boiler.png width:60 height:84 align:center}"
-				""
-				"{gtia.quest.7E1D8EFB2FDE7648.desc.2}"
+				"{gtia.quest.7E1D8EFB2FDE7648.desc.0}"
 			]
 			icon: "gtceu:steel_large_boiler"
 			id: "7E1D8EFB2FDE7648"
@@ -803,7 +801,7 @@
 			id: "362BC27422A49172"
 			hide_dependency_lines: true
 			rewards: [ ]
-			shape: "circle"
+			shape: "square"
 			size: 1.0d
 			subtitle: "{gtia.quest.362BC27422A49172.subtitle}"
 			tasks: [
@@ -830,7 +828,7 @@
 			icon: "gtceu:lv_battery_buffer_4x"
 			id: "7DE3FF6591EB9D2C"
 			rewards: [ ]
-			shape: "circle"
+			shape: "square"
 			size: 1.0d
 			subtitle: "{gtia.quest.7DE3FF6591EB9D2C.subtitle}"
 			tasks: [
@@ -858,7 +856,7 @@
 			icon: "gtceu:lv_transformer_1a"
 			id: "1475602FFABD8D61"
 			rewards: [ ]
-			shape: "circle"
+			shape: "square"
 			size: 1.0d
 			subtitle: "{gtia.quest.1475602FFABD8D61.subtitle}"
 			tasks: [
@@ -885,7 +883,7 @@
 			icon: "gtceu:lv_energy_input_hatch"
 			id: "3B2E5EB89E167E4B"
 			rewards: [ ]
-			shape: "circle"
+			shape: "square"
 			size: 1.0d
 			subtitle: "{gtia.quest.3B2E5EB89E167E4B.subtitle}"
 			tasks: [
@@ -935,4 +933,21 @@
 		}
 	]
 	title: "{gtia.quest.chapter.070C71496CB9ADE0}"
+	images: [
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 73.625d
+			hover: [ ]
+			image: "gtia_quests:textures/quests/backgrounds/energy.png"
+			order: -100
+			rotation: 0.0d
+			width: 73.625d
+			x: 3.3125d
+			y: 4.75d
+		}
+	]
 }

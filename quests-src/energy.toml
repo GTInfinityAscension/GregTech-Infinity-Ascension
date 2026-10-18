@@ -314,8 +314,6 @@ title = "Large Steel Boiler"
 subtitle = "More steam per block."
 task = [{ item = "gtceu:steel_large_boiler" }]
 text = """
-{image:gtia_quests:textures/quests/steel_large_boiler.png width:60 height:84 align:center}
-
 The Steel multiblock boiler: four HV circuits, so it comes at the end of MV. Pair it with Large Steam Turbines or a wall of singleblock turbines.
 """
 

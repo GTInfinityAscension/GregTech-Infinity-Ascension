@@ -46,8 +46,8 @@ ROLES = {
     "milestone": {"shape": "gear", "size": 2.25},     # the stops that matter: Steel, the first circuit
     "gate": {"shape": "hexagon", "size": 1.75},       # the key metal of a tier (Aluminium, Kanthal, Titanium...)
     "spine": {"shape": "hexagon", "size": 1.25},      # the main road
-    "side": {"shape": "circle", "size": 1.0},
-    "detail": {"shape": "circle", "size": 0.75},      # small steps inside a cluster
+    "side": {"shape": "square", "size": 1.0},        # items and materials are squares, as in the GTO book
+    "detail": {"shape": "square", "size": 0.75},      # micro goals: small steps inside a cluster
     "optional": {"shape": "diamond", "size": 1.0, "optional": True},
     "hint": {"shape": "pentagon", "size": 1.25, "optional": True},
     "header": {"shape": "square", "size": 1.25},
@@ -179,6 +179,71 @@ def add_mode(quest: dict, mode: str) -> None:
     quest["hide_until_deps_complete"] = Raw("true")
 
 
+BANNERS = PACK / "config" / "openloader" / "resources" / "gtia_quests" / "assets" / "gtia_quests" / "textures" / "quests" / "banners"
+BANNER_WIDTH = 7.0
+
+
+QUEST_IMAGES = BANNERS.parent
+HIGHLIGHT_HEIGHT = 3.0
+
+
+def png_size(path: Path) -> tuple[int, int]:
+    data = path.read_bytes()
+    return int.from_bytes(data[16:20], "big"), int.from_bytes(data[20:24], "big")
+
+
+def chapter_image(path: str, x: float, y: float, w: float, h: float) -> dict:
+    return {"alpha": Raw("255"), "click": "", "color": Raw("16777215"), "corner": Raw("false"), "dev": Raw("false"),
+            "height": double(h), "hover": [], "image": path, "order": Raw("0"), "rotation": double(0.0),
+            "width": double(w), "x": double(x), "y": double(y)}
+
+
+def free_spot(boxes: list, w: float, h: float, tx: float, ty: float, reach: float = 14.0):
+    """The free place for a w x h image nearest to (tx, ty), on a half-unit grid, clear of every box."""
+    best = None
+    steps = int(reach * 2)
+    for i in range(-steps, steps + 1):
+        for j in range(-steps, steps + 1):
+            x, y = tx + i * 0.5, ty + j * 0.5
+            d = (x - tx) ** 2 + (y - ty) ** 2
+            if best and d >= best[0]:
+                continue
+            if all(abs(x - bx) >= (w + bw) / 2 + 0.25 or abs(y - by) >= (h + bh) / 2 + 0.25 for bx, by, bw, bh in boxes):
+                best = (d, x, y)
+    return (best[1], best[2]) if best else (tx, ty)
+
+
+def place_images(chapter: dict, banner: str | None, entry_id: str | None, background: str | None = None,
+                 texture: str | None = None) -> None:
+    """The era banner in the free space nearest to the top left of the chapter's entry (D-292), and the era's colour
+    as a tinted grid behind the whole chapter (D-293)."""
+    quests = chapter["quests"]
+    boxes = [(snbt.number(q["x"]), snbt.number(q["y"]), snbt.number(q.get("size", "1.0d")),
+              snbt.number(q.get("size", "1.0d"))) for q in quests]
+    images = []
+    if banner:
+        w_px, h_px = png_size(BANNERS / f"{banner}.png")
+        h = round(BANNER_WIDTH * h_px / w_px * 4) / 4
+        entry = next((q for q in quests if q["id"] == entry_id), quests[0])
+        ex, ey = snbt.number(entry["x"]), snbt.number(entry["y"])
+        x, y = free_spot(boxes, BANNER_WIDTH, h, ex - 1.0, ey - h / 2 - 2.0)
+        images.append(chapter_image(f"gtia_quests:textures/quests/banners/{banner}.png", x, y, BANNER_WIDTH, h))
+        boxes.append((x, y, BANNER_WIDTH, h))
+    if background:
+        xs = [b[0] - b[2] / 2 for b in boxes] + [b[0] + b[2] / 2 for b in boxes]
+        ys = [b[1] - b[3] / 2 for b in boxes] + [b[1] + b[3] / 2 for b in boxes]
+        side = max(max(xs) - min(xs), max(ys) - min(ys)) + 60.0
+        image = f"backgrounds/{texture}.png" if texture else "backgrounds/era_grid.png"
+        grid = chapter_image(f"gtia_quests:textures/quests/{image}", (min(xs) + max(xs)) / 2,
+                             (min(ys) + max(ys)) / 2, side, side)
+        if not texture:
+            grid["color"] = Raw(str(int(background.lstrip("#"), 16)))
+        grid["order"] = Raw("-100")
+        images.insert(0, grid)
+    if images:
+        chapter["images"] = images
+
+
 class Book:
     def __init__(self):
         spec = tomllib.loads((SRC / "book.toml").read_text(encoding="utf-8"))
@@ -301,6 +366,8 @@ class Book:
             for field in ("shape", "size", "optional"):
                 if field in extra:
                     style[field] = extra[field]
+            if chapter.get("layout") == "layered" and style["shape"] == "circle":
+                style["shape"] = "square"  # D-292: items are squares, as in the GTO book
             q = {}
             if deps:
                 q["dependencies"] = deps
@@ -412,24 +479,54 @@ class Book:
                 quest["optional"] = Raw("true")
             else:
                 quest.pop("optional", None)
+        # D-291: the Start splits into Welcome and a step-by-step Start, the way GTO opens its book. New quests carry
+        # their own tasks; the author's quests keep id, text, tasks and rewards (dependencies follow the new road).
+        by_title = {q.get("title"): q for q in start["quests"]}
+
+        def ref(name: str) -> str:
+            return ident("quest:start:" + name[4:]) if name.startswith("new:") else by_title[name]["id"]
+
         for new in meta.get("new_quest", []):
             style = ROLES[new["role"]]
-            quest = {"dependencies": [self.start_quest(new["after"])], "description": paragraphs(new["text"]),
+            tasks = []
+            for i, task in enumerate(new.get("task", [])):
+                tid = ident(f"task:start:{new['key']}:{i}")
+                if "item" in task:
+                    tasks.append({"consume_items": snbt.boolean(False), "count": long(task.get("count", 1)), "id": tid,
+                                  "item": task["item"], "match_nbt": snbt.boolean(False), "title": task["title"],
+                                  "type": "item"})
+                else:
+                    tasks.append({"id": tid, "title": task["checkmark"], "type": "checkmark"})
+            quest = {"dependencies": [], "description": paragraphs(new["text"]), "icon": new["icon"],
                      "id": ident("quest:start:" + new["key"])}
             if style.get("optional"):
                 quest["optional"] = Raw("true")
             quest["shape"] = style["shape"]
             quest["size"] = double(LEGACY_SIZES.get(new["role"], style["size"]))
             quest["subtitle"] = new["subtitle"]
-            quest["tasks"] = [{"id": ident("task:start:" + new["key"]), "type": "checkmark", "title": new["task"]}]
+            quest["tasks"] = tasks or [{"id": ident("task:start:" + new["key"]), "title": "Got it",
+                                        "type": "checkmark"}]
             quest["title"] = new["title"]
             quest["x"] = double(new["x"])
             quest["y"] = double(new["y"])
-            if new.get("icon"):
-                quest["icon"] = new["icon"]
+            quest["_deps"] = new.get("deps", [])
+            quest["_chapter"] = new.get("chapter", "start")
             start["quests"].append(quest)
+        for quest in start["quests"]:
+            if "_deps" in quest:
+                quest["dependencies"] = [ref(d) for d in quest.pop("_deps")]
+        for title, deps in meta.get("deps", {}).items():
+            by_title[title]["dependencies"] = [ref(d) for d in deps]
+        for fix in meta.get("text_fix", []):
+            quest = by_title[fix["title"]]
+            lines = quest["description"]
+            hits = [i for i, line in enumerate(lines) if fix["old"] in line]
+            if len(hits) != 1:
+                raise SystemExit(f"start.toml text_fix: {fix['old']!r} found {len(hits)} times in {fix['title']!r}")
+            lines[hits[0]] = lines[hits[0]].replace(fix["old"], fix["new"])
+            if fix.get("new_title"):
+                quest["title"] = fix["new_title"]
         # D-279: some Start rewards depend on the mode. Journey keeps the author's rewards; Normal gets tier ones.
-        by_title = {q.get("title"): q for q in start["quests"]}
         for spec in meta.get("mode_reward", []):
             base = by_title[spec["title"]]
             journey_rewards, base["rewards"] = base.get("rewards", []), []
@@ -439,22 +536,160 @@ class Book:
                     rewards = [{**({"count": Raw(str(r["count"]))} if r.get("count", 1) > 1 else {}),
                                 "id": ident(f"reward:start:{key}:{i}"), "item": r["item"], "type": "item"}
                                for i, r in enumerate(spec["normal"])]
-                quest = {"dependencies": [base["id"]], "description": paragraphs(spec[f"{mode}_text"]),
+                # Visible from the start in worlds of its mode; it completes with the same task as its Start step,
+                # so the kit is claimed when that step is done (a dependency on the step would hide it until then).
+                tasks = [{**task, "id": ident(f"task:start:{key}:{i}")} for i, task in enumerate(base.get("tasks", []))]
+                quest = {"dependencies": [], "description": paragraphs(spec[f"{mode}_text"]),
                          "id": ident("quest:start:" + key), "rewards": rewards, "shape": "diamond",
                          "size": double(1.0), "subtitle": spec[f"{mode}_subtitle"],
-                         "tasks": [{"id": ident(f"task:start:{key}"), "type": "checkmark", "title": "Claim"}],
+                         "tasks": tasks or [{"id": ident(f"task:start:{key}"), "type": "checkmark", "title": "Claim"}],
                          "title": spec["reward_title"], "x": double(spec["x"] + dx), "y": double(spec["y"])}
                 first = rewards[0].get("item") if rewards else None
                 quest["icon"] = first if isinstance(first, str) else (first or {}).get("id") or base.get("icon", "minecraft:chest")
+                quest["_chapter"] = spec.get("chapter", "start")
                 add_mode(quest, mode)
                 start["quests"].append(quest)
+        # D-291: the Steam supplies become per-mode kits in place: the author's quest is Journey's, a twin with
+        # smaller supplies is Normal's.
+        for spec in meta.get("mode_split", []):
+            base = by_title[spec["title"]]
+            twin = {k: v for k, v in base.items() if k not in ("id", "rewards", "tasks", "description", "subtitle")}
+            key = spec["key"] + "_normal"
+            twin["dependencies"] = list(base.get("dependencies", []))
+            twin["id"] = ident("quest:start:" + key)
+            twin["description"] = paragraphs(spec["normal_text"])
+            twin["subtitle"] = spec["normal_subtitle"]
+            twin["tasks"] = [{"id": ident(f"task:start:{key}"), "title": "Claim", "type": "checkmark"}]
+            twin["rewards"] = [{**({"count": Raw(str(r["count"]))} if r.get("count", 1) > 1 else {}),
+                                "id": ident(f"reward:start:{key}:{i}"), "item": r["item"], "type": "item"}
+                               for i, r in enumerate(spec["normal"])]
+            twin["icon"] = spec["normal"][0]["item"]
+            add_mode(base, "journey")
+            add_mode(twin, "normal")
+            start["quests"].append(twin)
+        # D-278: one opening quest per mode says what the world's mode changes.
+        for spec in meta.get("mode_intro", []):
+            for mode in MODES:
+                quest = {"dependencies": [], "description": paragraphs(spec[f"{mode}_text"]),
+                         "icon": spec[f"{mode}_icon"], "id": ident(f"quest:start:{spec['key']}_{mode}"), "rewards": [],
+                         "shape": "square", "size": double(1.25), "subtitle": spec[f"{mode}_subtitle"],
+                         "tasks": [{"id": ident(f"task:start:{spec['key']}_{mode}"), "type": "checkmark",
+                                    "title": "Got it"}],
+                         "title": spec[f"{mode}_title"], "x": double(spec["x"]), "y": double(spec["y"]),
+                         "_chapter": spec.get("chapter", "start")}
+                add_mode(quest, mode)
+                start["quests"].append(quest)
+        # D-291: the quests of the Welcome chapter move out of Start with their ids, so progress stays.
+        moved = set(meta.get("welcome", {}).get("titles", []))
+        here, there = [], []
+        for quest in start["quests"]:
+            chapter_of = quest.pop("_chapter", "welcome" if quest.get("title") in moved else "start")
+            (there if chapter_of == "welcome" else here).append(quest)
+        start["quests"] = here
+        if there:
+            w = meta["welcome"]
+            self.welcome_out = {
+                "default_hide_dependency_lines": Raw("false"), "default_quest_shape": "circle", "filename": "welcome",
+                "group": self.group_id(chapter["group"]), "icon": w["icon"], "id": ident("chapter:welcome"),
+                "order_index": Raw(str(w["order"])),
+                "quest_links": [{"id": ident("link:welcome:start"), "linked_quest": ref(w["link_to"]),
+                                 "shape": "gear", "size": double(1.5), "x": double(w["link_x"]),
+                                 "y": double(w["link_y"])}],
+                "quests": there, "title": w["title"]}
         start["group"] = self.group_id(chapter["group"])
         start["order_index"] = Raw(str(chapter["order"]))
         nxt = chapter.get("next")
         if nxt:
             start["quest_links"] = [{"id": ident(f"link:start:{nxt}"), "linked_quest": self.qid(nxt, "entry"),
-                                     "shape": "gear", "size": double(1.5), "x": double(0.0), "y": double(meta["link_y"])}]
+                                     "shape": "gear", "size": double(1.5), "x": double(meta.get("link_x", 0.0)),
+                                     "y": double(meta["link_y"])}]
         return start
+
+    # -- Multiblock Goals (D-291, after GTNH's): every multiblock of the pack, columns by family, rows by tier
+    def build_multiblocks(self, chapter: dict) -> dict:
+        spec = tomllib.loads((SRC / "multiblocks.toml").read_text(encoding="utf-8"))["multiblock"]
+        rows = ["steam", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv"]
+        families = ["steam", "metal", "chemistry", "ore", "processing", "power", "bio", "data", "space", "other"]
+        names = {"steam": "Steam and Bricks", "metal": "Furnaces and Metals", "chemistry": "Chemistry",
+                 "ore": "Ores and Mining", "processing": "Processing and Assembly", "power": "Power",
+                 "bio": "Farming and Life", "data": "Storage and Data", "space": "Space",
+                 "other": "Wonders and Oddities"}
+        tiers = {"steam": ("Steam Age Goals", "gtceu:lp_steam_solid_boiler", "start/Ready for Steam",
+                           [{"item": "gtceu:bronze_ingot"}]),
+                 "lv": ("LV Goals", "gtceu:lv_machine_hull", "lv:entry", None),
+                 "mv": ("MV Goals", "gtceu:mv_machine_hull", "mv:entry", None),
+                 "hv": ("HV Goals", "gtceu:hv_machine_hull", "hv:entry", None)}
+        for row in rows[4:]:
+            label = "UHV and Beyond Goals" if row == "uhv" else f"{row.upper() if row != 'luv' else 'LuV'} Goals"
+            tiers[row] = (label, f"gtceu:{row}_machine_hull", "hv:exit", None)
+        # D-295: each goal gives a small pack of its row's metal, as GTNH's goals do; the reachability check makes sure
+        # the metal can be made by the time the row opens.
+        pack = {"steam": ("gtceu:bronze_ingot", 4), "lv": ("gtceu:steel_ingot", 4), "mv": ("gtceu:aluminium_ingot", 4),
+                "hv": ("gtceu:stainless_steel_ingot", 4), "ev": ("gtceu:titanium_ingot", 4),
+                "iv": ("gtceu:tungsten_steel_ingot", 4), "luv": ("gtceu:rhodium_plated_palladium_ingot", 2),
+                "zpm": ("gtceu:naquadah_alloy_ingot", 2), "uv": ("gtceu:darmstadtium_ingot", 2),
+                "uhv": ("gtceu:neutronium_ingot", 1)}
+        cells: dict[tuple[str, str], list[dict]] = {}
+        for m in spec:
+            cells.setdefault((m["tier"], m["family"]), []).append(m)
+        width = {f: min(4, max([len(cells.get((r, f), [])) for r in rows] + [1])) for f in families}
+        step, x0, quests = 1.25, 0.0, []
+        col_x = {}
+        for f in families:
+            col_x[f] = x0
+            x0 += width[f] * step + 1.25
+        y = 0.0
+        prev_header = None
+        for row in rows:
+            height = max([-(-len(cells.get((row, f), [])) // width[f]) for f in families] + [1])
+            title, icon, after, header_task = tiers[row]
+            header = {"dependencies": [self.resolve("start", after)] + ([prev_header] if prev_header else []),
+                      "description": paragraphs(
+                          f"The multiblocks whose controllers you can build from {title.removesuffix(' Goals')} on. "
+                          "Each goal is done when you hold the controller; press R on it to see the structure in EMI."),
+                      "hide_dependent_lines": Raw("true"), "icon": icon, "id": ident(f"quest:multiblocks:row:{row}"),
+                      "shape": "square", "size": double(1.5), "subtitle": "A row of goals.",
+                      "tasks": [{"consume_items": snbt.boolean(False), "count": long(1), "id": ident(f"task:multiblocks:row:{row}"),
+                                 "item": (header_task or [{"item": icon}])[0]["item"], "match_nbt": snbt.boolean(False),
+                                 "type": "item"}],
+                      "title": title, "x": double(-2.5), "y": double(y + (height - 1) * step / 2)}
+            quests.append(header)
+            prev_header = header["id"]
+            for f in families:
+                for k, m in enumerate(cells.get((row, f), [])):
+                    ns, path = m["item"].split(":", 1)
+                    text = [f"{{{key}}}" for key in m["text"]]
+                    text += ["", "Press R on the controller to see the structure in EMI."]
+                    reward_item, reward_count = pack[row]
+                    reward = {"id": ident("reward:multiblocks:" + m["item"]), "item": reward_item, "type": "item"}
+                    if reward_count > 1:
+                        reward = {"count": Raw(str(reward_count)), **reward}
+                    quests.append({
+                        "dependencies": [header["id"]], "description": text, "icon": m["item"],
+                        "id": ident("quest:multiblocks:" + m["item"]), "optional": Raw("true"),
+                        "rewards": [reward],
+                        "shape": "gear" if ns == "gtia" else "hexagon", "size": double(1.0),
+                        "subtitle": names[f],
+                        "tasks": [{"consume_items": snbt.boolean(False), "count": long(1),
+                                   "id": ident("task:multiblocks:" + m["item"]), "item": m["item"],
+                                   "match_nbt": snbt.boolean(False), "type": "item"}],
+                        "title": f"{{block.{ns}.{path}}}",
+                        "x": double(col_x[f] + (k % width[f]) * step), "y": double(y + (k // width[f]) * step)})
+            y += height * step + 1.75
+        quests.insert(0, {
+            "description": paragraphs(
+                "A tracker of every multiblock in the pack, the way the GTNH book keeps its Multiblock Goals. Many "
+                "of them can be built earlier than their row says if you find the parts; check back often.\n\n"
+                "Rows go down by tier and open with the machine hull of that tier. Columns, left to right: "
+                + ", ".join(names[f] for f in families) + "."),
+            "icon": "gtceu:terminal", "id": ident("quest:multiblocks:intro"), "shape": "gear", "size": double(2.0),
+            "subtitle": "Every multiblock of the pack.",
+            "tasks": [{"id": ident("task:multiblocks:intro"), "title": "Got it", "type": "checkmark"}],
+            "title": "Multiblock Goals", "x": double(-2.5), "y": double(-3.0)})
+        return {"default_hide_dependency_lines": Raw("true"), "default_quest_shape": "hexagon",
+                "filename": chapter["file"], "group": self.group_id(chapter["group"]), "icon": "gtceu:terminal",
+                "id": self.chapter_id(chapter["file"]), "order_index": Raw(str(chapter["order"])), "quest_links": [],
+                "quests": quests, "title": "Multiblock Goals"}
 
     # -- Periodic Table: one quest per element, laid out like the table, built from the registry export
     def build_periodic(self, chapter: dict) -> dict:
@@ -506,15 +741,130 @@ class Book:
         self.index()
         chapters_out = {}
         for chapter in self.chapters:
+            if chapter["kind"] == "welcome":
+                continue  # built together with the Start, below
             if chapter["kind"] == "migrated":
                 chapters_out[chapter["file"]] = self.build_start(chapter)
+            elif chapter["kind"] == "multiblocks":
+                chapters_out[chapter["file"]] = self.build_multiblocks(chapter)
             elif chapter["kind"] == "periodic":
                 chapters_out[chapter["file"]] = self.build_periodic(chapter)
             else:
                 chapters_out[chapter["file"]] = self.build_chapter(chapter)[0]
+        if getattr(self, "welcome_out", None):
+            chapters_out["welcome"] = self.welcome_out
         self.reduce_dependencies(chapters_out)
+        self.thin_dependencies(chapters_out)
+        self.arrange(chapters_out)
         chapters_out["modes"] = modes_chapter()
         return chapters_out
+
+    def arrange(self, chapters_out) -> None:
+        """Layered chapters get their positions and hidden lines from quest_layout (GTNH-style columns); then every
+        chapter gets its era banner and multiblock pictures in free space (place_images)."""
+        import quest_layout
+        for chapter in self.chapters:
+            file = chapter["file"]
+            out = chapters_out[file]
+            if chapter.get("layout") == "gtnh":
+                self.gtnh_positions(file, out)
+            if chapter.get("layout") == "layered":
+                exit_id = self.qid(file, "exit") if "exit" in self.specs[file] else None
+                quest_layout.layout(out, self.qid(file, "entry"), exit_id)
+                for q in out["quests"]:
+                    q["x"], q["y"] = double(q["x"]), double(q["y"])
+                    for flag in ("hide_dependency_lines", "hide_dependent_lines"):
+                        if q.get(flag) is True:
+                            q[flag] = Raw("true")
+                if exit_id and out["quest_links"]:
+                    end = next(q for q in out["quests"] if q["id"] == exit_id)
+                    out["quest_links"][0]["x"] = double(snbt.number(end["x"]) + 2.5)
+                    out["quest_links"][0]["y"] = end["y"]
+            entry_id = (self.qid(file, "entry") if file in self.specs else
+                        (self.start_quest("Welcome to Infinity Ascension") if file == "welcome" else
+                         ident("quest:start:wood") if file == "start" else None))
+            place_images(out, chapter.get("banner"), entry_id, chapter.get("background"), chapter.get("texture"))
+
+    def gtnh_positions(self, file: str, out: dict) -> None:
+        """D-293: positions from quests-src/layout/<file>.toml, the GTNH 2.9 structure of that tier
+        (design/quests/atlas/tools/gtnh_layout.py). Quests next to their GTNH twin may move to keep their lines off
+        other quests; the ones on a GTNH spot stay."""
+        import quest_layout
+        spec = tomllib.loads((SRC / "layout" / f"{file}.toml").read_text(encoding="utf-8"))
+        fixed = set()
+        by_id = {q["id"]: q for q in out["quests"]}
+        for table in ("gtnh", "near"):
+            for key, place in spec.get(table, {}).items():
+                qid = self.qid(file, key)
+                if qid in by_id:
+                    by_id[qid]["x"], by_id[qid]["y"] = double(place[0]), double(place[1])
+                    if table == "gtnh":
+                        fixed.add(qid)
+                        by_id[qid]["size"] = double(place[2])  # the GTNH quest's own size
+        quests = {q["id"]: q for q in out["quests"]}
+        for q in quests.values():
+            q["x"], q["y"] = snbt.number(q["x"]), snbt.number(q["y"])
+            q.pop("hide_dependency_lines", None)
+            q.pop("hide_dependent_lines", None)
+        quest_layout._resolve_overlaps(quests, [i for i in quests if i not in fixed])
+        quest_layout._repair_lines_over_quests(quests, fixed=fixed)
+        quest_layout._relocate_blocked(quests, fixed)
+        quest_layout._hide_lines_over_quests(quests)
+        for q in quests.values():
+            q["x"], q["y"] = double(q["x"]), double(q["y"])
+            if q.get("hide_dependency_lines") is True:
+                q["hide_dependency_lines"] = Raw("true")
+        exit_id = self.qid(file, "exit")
+        if exit_id in quests and out["quest_links"]:
+            end = quests[exit_id]
+            out["quest_links"][0]["x"] = double(snbt.number(end["x"]) + 2.5)
+            out["quest_links"][0]["y"] = end["y"]
+
+    def thin_dependencies(self, chapters_out) -> None:
+        """D-292: in the layered chapters each quest keeps only the dependencies the reachability check needs, the
+        closest first, so the chapter reads as progression lines the way the GTNH book does."""
+        import reach
+        if not reach.available():
+            return
+        quests = {q["id"]: q for c in chapters_out.values() for q in c["quests"]}
+        depth: dict[str, int] = {}
+
+        def level(qid, trail=()):
+            if qid not in depth:
+                deps = [d for d in quests.get(qid, {}).get("dependencies", []) if d in quests and d not in trail]
+                depth[qid] = 1 + max((level(d, trail + (qid,)) for d in deps), default=0)
+            return depth[qid]
+
+        layered = {c["file"] for c in self.chapters if c.get("layout") in ("layered", "gtnh")}
+        thinnable = {q["id"] for f in layered for q in chapters_out[f]["quests"]}
+        chapter_of = {q["id"]: f for f, c in chapters_out.items() for q in c["quests"]}
+        rank = {}
+        for qid in quests:
+            rank[qid] = level(qid)
+        original = {qid: list(q.get("dependencies", [])) for qid, q in quests.items()}
+        thinned = reach.thin(quests, thinnable, {
+            d: rank[d] + (10000 if chapter_of.get(d) in layered else 0) for d in quests})
+        for qid, deps in thinned.items():
+            quests[qid]["dependencies"] = deps
+        # Two lines together can open what neither opens alone, so the whole book is checked again: a quest that
+        # lost reachability gets back the dependencies of itself or of its nearest thinned ancestors.
+        checked = {qid: q for qid, q in quests.items() if chapter_of[qid] not in ("periodic", "multiblocks")}
+        for _ in range(12):
+            broken = {qid for qid, _msg in reach.check(checked, {}) if qid and chapter_of.get(qid) in layered
+                      | {"energy", "wireless"}}
+            if not broken:
+                return
+            for qid in broken:
+                frontier, seen = [qid], set()
+                while frontier:
+                    cur = frontier.pop()
+                    if cur in seen or cur not in quests:
+                        continue
+                    seen.add(cur)
+                    if cur in thinned and quests[cur]["dependencies"] != original[cur]:
+                        quests[cur]["dependencies"] = original[cur]
+                        continue
+                    frontier += original.get(cur, [])
 
     def reduce_dependencies(self, chapters_out) -> None:
         """Drop a dependency another dependency already implies (A needs B and C, C needs B: A keeps only C).
@@ -626,13 +976,13 @@ def check_reachability(book, quests_by_id, chapter_of, all_ids, errors, notes) -
         return
     book.build()  # fills allowed_machine_rewards
     legacy = {c["file"] for c in book.chapters if c.get("legacy")}
-    quests = {qid: q for qid, q in quests_by_id.items() if chapter_of[qid] != "periodic"}
+    quests = {qid: q for qid, q in quests_by_id.items() if chapter_of[qid] not in ("periodic", "multiblocks")}
     for qid, q in quests.items():
         q["_allow_machine_reward"] = sorted(book.allowed_machine_rewards.get(qid, ()))
     for qid, message in reach.check(quests, all_ids):
         if not qid:
             notes.append(message.removeprefix("note: "))
-        elif chapter_of[qid] == "start":
+        elif chapter_of[qid] in ("start", "welcome"):
             notes.append(f"{all_ids[qid]} (author's chapter, not changed): {message}")
         elif qid in book.pending:
             notes.append(f"{all_ids[qid]} (pending: {book.pending[qid]}): {message}")
@@ -673,7 +1023,7 @@ def localize(chapters: dict[str, dict], groups: dict) -> dict[str, str]:
         for quest in data["quests"]:
             base = f"gtia.quest.{quest['id']}"
             for field in ("title", "subtitle"):
-                if quest.get(field):
+                if quest.get(field) and translatable(quest[field]):  # a "{mod key}" title stays the mod's own
                     quest[field] = key(f"{base}.{field}", quest[field])
             if quest.get("description"):
                 quest["description"] = [key(f"{base}.desc.{i}", line) if translatable(line) else line

@@ -908,7 +908,7 @@ vanilla_button {
 
 element {
   button_element_executable_block_identifier = 7d466ee5-68b4-4d8a-931e-0fb555cf6113-1792267223969
-  [executable_action_instance:cbe95744-3769-41fd-b47c-f0eec48cff9f-1792267223969][action_type:openlink] = https://discord.gg/d3qHufwRxb
+  [executable_action_instance:cbe95744-3769-41fd-b47c-f0eec48cff9f-1792267223969][action_type:openlink] = https://discord.gg/TW5vugknk5
   [executable_block:7d466ee5-68b4-4d8a-931e-0fb555cf6113-1792267223969][type:generic] = [executables:cbe95744-3769-41fd-b47c-f0eec48cff9f-1792267223969;]
   restartbackgroundanimations = true
   nine_slice_custom_background = false

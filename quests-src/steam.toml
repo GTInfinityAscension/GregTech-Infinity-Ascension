@@ -1355,8 +1355,6 @@ subtitle = "Cook wood without air."
 task = [{ item = "gtia:wood_retort" }]
 group = "wood"
 text = """
-{image:gtia_quests:textures/quests/wood_retort.png width:72 height:78 align:center}
-
 A furnace burns wood. A [item]Wood Retort[/] cooks it in a sealed box, and the wood comes apart: [num]4 logs[/] give [num]3 Charcoal[/] and [num]1,000 mB[/] of [item]Charcoal Byproducts[/] every [num]30 s[/], with no fuel at all.
 
 Build it like a Coke Oven, but taller: a hollow [num]3×3×4[/] of [item]Firebricks[/] with the controller in the middle of a face. Coke Oven Hatches in the walls automate it.
@@ -1395,8 +1393,6 @@ subtitle = "Rocks in, hotter rocks out."
 task = [{ item = "gtia:lime_kiln" }]
 group = "lime"
 text = """
-{image:gtia_quests:textures/quests/lime_kiln.png width:60 height:96 align:center}
-
 Calcite is limestone. Burn it and it becomes [item]Quicklime[/]: [num]4 Calcite Dust[/] and one Charcoal, Coal or Coke give [num]4 Quicklime[/] in [num]20 s[/]; the CO₂ goes up the shaft.
 
 Calcite blocks line dripstone caves and amethyst geodes; the Steam Macerator turns them into dust. Build a hollow [num]3×3×5[/] shaft of [item]Firebricks[/], open at the top, controller low on a face.

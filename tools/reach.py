@@ -467,3 +467,84 @@ def unbooked_surface(state: State) -> tuple[State, dict[str, int]]:
             full.add(["q:" + machine])
             if full.have.count(1) > before:
                 opened[machine] = full.have.count(1) - before
+
+
+def thin(quests_by_id: dict[str, dict], thinnable: set[str], rank: dict[str, int]) -> dict[str, list[str]]:
+    """D-292: the fewest dependencies each thinnable quest needs, so the book reads as progression lines (GTNH).
+
+    Walks the book like `check`. For a quest with several dependencies it tries the closest one alone (highest
+    `rank`), then pairs, and keeps a choice only if everything the full set of dependencies made reachable for this
+    quest and every quest after it stays reachable. Returns the new dependency lists of the quests it changed."""
+    model = Model()
+    for entry_dim in {d for e in model.worldgen for d in e["dimensions"]} - set(model.world_dimensions):
+        model.rule([("dim:" + entry_dim,)], model.world_seed([entry_dim]), "dimension " + entry_dim)
+    for quest in quests_by_id.values():
+        for token in quest_content(quest)[0] + quest_content(quest)[1]:
+            model.t(token)
+    model.compile()
+    base = State(model)
+    base.add(model.world_seed(model.world_dimensions))
+
+    order, seen = [], set()
+
+    def visit(qid):
+        if qid in seen:
+            return
+        seen.add(qid)
+        for dep in quests_by_id[qid].get("dependencies", []):
+            if dep in quests_by_id:
+                visit(dep)
+        order.append(qid)
+
+    for qid in quests_by_id:
+        visit(qid)
+    children = {q: 0 for q in quests_by_id}
+    for q in quests_by_id.values():
+        for dep in q.get("dependencies", []):
+            if dep in children:
+                children[dep] += 1
+    task_tokens = {qid: quest_content(q)[0] for qid, q in quests_by_id.items()}
+    later: dict[str, set[str]] = {}
+    for qid in reversed(order):
+        out = set()
+        for other, q in quests_by_id.items():
+            if qid in q.get("dependencies", []):
+                out |= set(task_tokens[other]) | later.get(other, set())
+        later[qid] = out
+
+    def state_of(deps):
+        if not deps:
+            return State(model, base)
+        state = State(model, after[deps[0]])
+        for d in deps[1:]:
+            state.union(after[d])
+        return state
+
+    after: dict[str, State] = {}
+    changed: dict[str, list[str]] = {}
+    for qid in order:
+        quest = quests_by_id[qid]
+        deps = [d for d in quest.get("dependencies", []) if d in after]
+        state = state_of(deps)
+        if qid in thinnable and len(deps) > 1 and not quest.get("dependency_requirement"):
+            tasks, rewards = quest_content(quest)
+            need = [t for t in set(tasks) | set(rewards) | later[qid] if state.has(t)]
+            ranked = sorted(deps, key=lambda d: -rank.get(d, 0))
+            tries = [[d] for d in ranked] + [[a, b] for i, a in enumerate(ranked[:4]) for b in ranked[i + 1:5]]
+            for subset in tries:
+                if len(subset) >= len(deps):
+                    break
+                candidate = state_of(subset)
+                if all(candidate.has(t) for t in need):
+                    state, deps = candidate, subset
+                    changed[qid] = [d for d in quest["dependencies"] if d in subset]
+                    break
+        tasks, rewards = quest_content(quest)
+        state.add(tasks)
+        state.add(rewards)
+        after[qid] = state
+        for dep in [d for d in quest.get("dependencies", []) if d in after]:
+            children[dep] -= 1
+            if children[dep] == 0:
+                del after[dep]
+    return changed

@@ -16,54 +16,122 @@ title = "Systems"
 key = "reference"
 title = "Reference"
 
+# layout = "gtnh": positions from quests-src/layout/<file>.toml, the GTNH 2.9 structure of that tier (D-293).
+# layout = "layered": positions and line visibility come from tools/quest_layout.py (GTNH-style columns).
+# background: the era colour (D-293: Steam bronze, LV grey, MV blue, HV white, EV light purple, IV dark blue).
+# texture: textures/quests/backgrounds/<texture>.png, a pixel-art tile drawn behind the chapter in that colour family;
+# without it the chapter falls back to era_grid.png tinted with background.
+# banner: the era title image (textures/quests/banners/<banner>.png) drawn above the chapter.
+
 [[chapter]]
-file = "start"
-kind = "migrated"      # the author's approved chapter, read from start.original.snbt
+file = "welcome"
+background = "#3B3F46"
+texture = "welcome"
+kind = "welcome"       # built with the Start: the author's reading quests and the world's mode (D-291)
 group = "start"
 order = 0
+
+[[chapter]]
+file = "start"
+background = "#4E4E52"
+texture = "start"
+kind = "migrated"      # the author's approved chapter, read from start.original.snbt
+group = "start"
+order = 1
 next = "steam"
+banner = "start"
 
 [[chapter]]
 file = "steam"
+background = "#7A5126"
+texture = "steam"
 kind = "generated"
 group = "ascensions"
-order = 1
+layout = "gtnh"
+banner = "steam"
+order = 2
 next = "lv"
 
 [[chapter]]
 file = "lv"
+background = "#4C5259"
+texture = "lv"
 kind = "generated"
 group = "ascensions"
-order = 2
+layout = "gtnh"
+banner = "lv"
+order = 3
 next = "mv"
 
 [[chapter]]
 file = "mv"
+background = "#1F4C8C"
+texture = "mv"
 kind = "generated"
 group = "ascensions"
-order = 3
+layout = "gtnh"
+banner = "mv"
+order = 4
 next = "hv"
 
 [[chapter]]
 file = "hv"
+background = "#C9CFD8"
+texture = "hv"
 kind = "generated"
 group = "ascensions"
-order = 4
-
-[[chapter]]
-file = "energy"
-kind = "generated"
-group = "systems"
+layout = "gtnh"
+banner = "hv"
 order = 5
 
 [[chapter]]
-file = "wireless"
+file = "agriculture"
+background = "#2F5A2C"
+texture = "agriculture"
 kind = "generated"
 group = "systems"
 order = 6
+layout = "layered"
+banner = "agriculture"
+
+[[chapter]]
+file = "bees"
+background = "#8A6A1C"
+texture = "bees"
+kind = "generated"
+group = "systems"
+order = 7
+layout = "layered"
+banner = "bees"
+
+[[chapter]]
+file = "energy"
+background = "#5E5220"
+texture = "energy"
+kind = "generated"
+group = "systems"
+order = 8
+
+[[chapter]]
+file = "wireless"
+background = "#1D5E61"
+texture = "wireless"
+kind = "generated"
+group = "systems"
+order = 9
+
+[[chapter]]
+file = "multiblocks"
+background = "#30343B"
+texture = "reference"
+kind = "multiblocks"   # every multiblock of the pack, from quests-src/multiblocks.toml (tools/multiblock_goals.py)
+group = "reference"
+order = 10
 
 [[chapter]]
 file = "periodic"
+background = "#30343B"
+texture = "reference"
 kind = "periodic"      # one quest per element, built from manifest/registry/elements.tsv
 group = "reference"
-order = 7
+order = 11

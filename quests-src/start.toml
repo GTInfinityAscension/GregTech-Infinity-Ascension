@@ -1,12 +1,27 @@
-# How the approved Start chapter is presented. Text, ids, tasks and rewards are never touched here.
-link_y = 16.5
+# How the approved Start chapter is presented (D-276), split into Welcome and a step-by-step Start in the GTO way
+# (D-291). The author's quests keep their ids, text, tasks and rewards; here they get a chapter, a place, a shape and,
+# where the road changed, their dependencies. Quests marked new: are written here.
+link_x = 16.0
+link_y = 7.0
+
+[welcome]
+title = "Welcome"
+icon = "minecraft:grass_block"
+order = 0
+link_to = "new:wood"
+link_x = 10.0
+link_y = 0.0
+titles = [
+    "Welcome to Infinity Ascension", "How to Read the Book", "Before You Begin", "About the Pack",
+    "Room for a Factory", "Freeze Daylight", "Freeze Weather", "Night Vision",
+]
 
 [roles]
 "How to Read This Chapter" = "hint"
 "Before You Begin" = "hint"
 "About the Pack" = "hint"
 "Welcome to Infinity Ascension" = "entry"
-"Room for a Factory" = "side"
+"Room for a Factory" = "spine"
 "Your First Workbench" = "spine"
 "Freeze Daylight" = "optional"
 "Plant for the Future" = "side"
@@ -16,60 +31,393 @@ link_y = 16.5
 "Night Vision" = "optional"
 "Carry and Store More" = "optional"
 "Fuel for the Workshop" = "spine"
-"The Nexus Structure Terminal" = "keep"
+"The Nexus Structure Terminal" = "optional"
 "The GregTech Terminal" = "optional"
 "Wrought Iron" = "side"
-"The First Metals" = "spine"
-"A Wider Mineral Collection" = "side"
-"Complete the Tool Kit" = "side"
+"The First Metals" = "milestone"
+"A Wider Mineral Collection" = "optional"
+"Complete the Tool Kit" = "spine"
 "The First GregTech Tools" = "spine"
-"Metals into Dust" = "side"
+"Metals into Dust" = "spine"
 "Collect the Creosote" = "side"
-"Build a Coke Oven" = "spine"
-"Your First Bronze" = "spine"
-"Ready for Steam" = "exit"
+"Build a Coke Oven" = "milestone"
+"Your First Bronze" = "milestone"
+"Ready for Steam" = "milestone"
 "Coke for the First Boilers" = "side"
 "Bronze for the First Machines" = "side"
 "A Tool for the Next Stage" = "side"
 
 [positions]
-# Layout v7 (D-276): só a posição muda; texto, tarefas e recompensas são os do autor (D-191).
-"How to Read This Chapter" = [1.5, 7]
-"Before You Begin" = [2.5, 4.5]
-"About the Pack" = [1, 3]
-"Welcome to Infinity Ascension" = [0, 5]
-"Room for a Factory" = [-2.5, 7]
-"Your First Workbench" = [-0.5, 7.5]
-"Freeze Daylight" = [-2, 8.5]
-"Plant for the Future" = [3.5, 10]
-"A Stack of Stone" = [1.5, 9]
-"Freeze Weather" = [-2, 5.5]
-"Fire Up the Furnace" = [3, 8]
-"Night Vision" = [0, 9]
-"Carry and Store More" = [7, 9]
-"Fuel for the Workshop" = [5.5, 7]
-"The Nexus Structure Terminal" = [10.5, 9]
-"The GregTech Terminal" = [9, 8]
-"Wrought Iron" = [9, 5.5]
-"The First Metals" = [6.5, 5]
-"A Wider Mineral Collection" = [8, 6.5]
-"Complete the Tool Kit" = [9.5, 3.5]
-"The First GregTech Tools" = [8, 3]
-"Metals into Dust" = [10, 1.5]
-"Collect the Creosote" = [12, 3]
-"Build a Coke Oven" = [11, 4.5]
-"Your First Bronze" = [12.5, 1.5]
-"Ready for Steam" = [13.5, 4]
-"Coke for the First Boilers" = [15.5, 5]
-"Bronze for the First Machines" = [14, 6.5]
-"A Tool for the Next Stage" = [15, 3]
+# Welcome: the welcome quest in the middle, reading on the left, the world's mode above, the workshop on the right.
+"Welcome to Infinity Ascension" = [0, 0]
+"How to Read This Chapter" = [-3, -2]
+"Before You Begin" = [-3, 0]
+"About the Pack" = [-3, 2]
+"Room for a Factory" = [3, 0]
+"Freeze Daylight" = [5, -1.5]
+"Freeze Weather" = [5, 0]
+"Night Vision" = [5, 1.5]
+# Start: a serpentine road. Row 1 runs right, turns down, row 2 runs left, turns down, row 3 runs right.
+"Your First Workbench" = [2.5, 0]
+"A Stack of Stone" = [5, 0]
+"Fire Up the Furnace" = [7.5, 0]
+"Fuel for the Workshop" = [10, 0]
+"The First Metals" = [12.5, 0]
+"The First GregTech Tools" = [12.5, 3.5]
+"Complete the Tool Kit" = [10, 3.5]
+"Metals into Dust" = [5, 3.5]
+"Your First Bronze" = [2.5, 3.5]
+"Build a Coke Oven" = [7.5, 7]
+"Ready for Steam" = [10.5, 7]
+"Plant for the Future" = [5, -2.5]
+"Carry and Store More" = [10, -2.5]
+"Wrought Iron" = [12.5, -2.5]
+"The GregTech Terminal" = [15, -2.5]
+"The Nexus Structure Terminal" = [17.5, -2.5]
+"A Wider Mineral Collection" = [15, 1.25]
+"Collect the Creosote" = [7.5, 9.75]
+"Coke for the First Boilers" = [13.5, 5.5]
+"Bronze for the First Machines" = [13.5, 7]
+"A Tool for the Next Stage" = [13.5, 8.5]
+
+# Dependencies that follow the new road (D-291). Everything else keeps the author's.
+[deps]
+"How to Read This Chapter" = ["Welcome to Infinity Ascension"]
+"Before You Begin" = ["Welcome to Infinity Ascension"]
+"About the Pack" = ["Welcome to Infinity Ascension"]
+"Room for a Factory" = ["Welcome to Infinity Ascension"]
+"Freeze Daylight" = ["Room for a Factory"]
+"Freeze Weather" = ["Room for a Factory"]
+"Night Vision" = ["Room for a Factory"]
+"Your First Workbench" = ["new:wood"]
+"Metals into Dust" = ["new:plates"]
+"Build a Coke Oven" = ["new:bricks", "new:plates"]
+"Ready for Steam" = ["Build a Coke Oven"]
+
+# The two lines that described the old layout, and the kit line that only fit Journey.
+[[text_fix]]
+title = "How to Read This Chapter"
+new_title = "How to Read the Book"
+old = "The central column is the main route."
+new = "In the Start chapter the road is the main route: it runs right, turns down, runs back left and turns again."
+
+[[text_fix]]
+title = "How to Read This Chapter"
+old = "The information quests at the top can be read immediately."
+new = "The information quests in this chapter can be read right away."
+
+[[text_fix]]
+title = "Welcome to Infinity Ascension"
+old = "Follow the central path from top to bottom."
+new = "In the Start chapter, follow the road from left to right and down."
+
+[[text_fix]]
+title = "Welcome to Infinity Ascension"
+old = "Check this task and claim your Vanadium Steel Axe, Pickaxe and Shovel. They last about twice as long as Fluix tools and mine everything up to diamond level, so keep them for gathering wood and your first resources."
+new = "Check this task and claim your Starting Kit next to it; the tools in it depend on your world's mode."
+
+# ------------------------------------------------------------------ Welcome: new quests and tips
+
+[[new_quest]]
+key = "rules"
+chapter = "welcome"
+role = "hint"
+title = "GTIA Rules"
+icon = "minecraft:writable_book"
+x = 0
+y = -5
+deps = ["Welcome to Infinity Ascension"]
+subtitle = "What your world's mode changes."
+text = """
+Type [item]/gtia rules[/] to see every rule of this world: recipe speed and cost, steam, maintenance, tools, ore veins, survival and the rest, each with its Journey and Normal value.
+
+The rules are fixed when the world is made. A few of them are read when the game starts, so a new world with other values asks you to restart first.
+"""
+
+[[new_quest]]
+key = "community"
+chapter = "welcome"
+role = "hint"
+title = "Community and Wiki"
+icon = "minecraft:bell"
+x = 0
+y = 3
+deps = ["Welcome to Infinity Ascension"]
+subtitle = "Questions, bugs and ideas."
+text = """
+The pack's Discord is [item]discord.gg/TW5vugknk5[/]: questions, bug reports and playtesting.
+
+The developer docs (GitHub: GTInfinityAscension/GTIA-Dev-Doc) explain the tiers, the systems and every design decision.
+"""
+
+[[new_quest]]
+key = "go"
+chapter = "welcome"
+role = "milestone"
+title = "Off to Work"
+icon = "minecraft:oak_sapling"
+x = 7.5
+y = 0
+deps = ["Room for a Factory"]
+subtitle = "The Start chapter is next."
+text = """
+That is everything you need to know before the first tree. The Start chapter takes you from a log to your first Coke, one step at a time.
+"""
+
+[[new_quest]]
+key = "emi"
+chapter = "welcome"
+role = "hint"
+title = "Finding Recipes (EMI)"
+icon = "minecraft:knowledge_book"
+x = -5.5
+y = -1
+deps = ["How to Read This Chapter"]
+subtitle = "R for recipes, U for uses."
+text = """
+Hover over any item and press [item]R[/] to see how it is made or [item]U[/] to see what it is used in. [item]A[/] adds it to your favourites on the left.
+
+In a recipe, the [item]+[/] button fills the crafting grid from your inventory. On a multiblock controller, the first tab shows the whole structure, layer by layer.
+"""
+
+[[new_quest]]
+key = "chain"
+chapter = "welcome"
+role = "hint"
+title = "Crafting Chain"
+icon = "minecraft:crafting_table"
+x = -5.5
+y = 1
+deps = ["new:emi"]
+subtitle = "Every step of a recipe at once."
+text = """
+Crafting Chain crafts an item [item]and every intermediate step[/] with one key, from what is in your inventory and the chests next to a Crafting Station. When something is missing it says exactly what.
+
+Check its key in Controls; it starts unbound if another mod already uses it.
+"""
+
+[[new_quest]]
+key = "map"
+chapter = "welcome"
+role = "hint"
+title = "Maps and Claims"
+icon = "minecraft:filled_map"
+x = 2.5
+y = 3
+deps = ["Welcome to Infinity Ascension"]
+subtitle = "Find your way back."
+text = """
+The minimap in the corner and the full map ([item]M[/]) are Xaero's. Add a waypoint at your base and at every ore vein you find.
+
+On a server, claim your base with FTB Chunks from the map so nobody breaks it, and force-load the chunks your machines need to keep running.
+"""
+
+# ------------------------------------------------------------------ Start: new steps
+
+[[new_quest]]
+key = "wood"
+role = "milestone"
+title = "Punch a Tree"
+icon = "minecraft:oak_log"
+x = 0
+y = 0
+deps = ["new:go"]
+subtitle = "It is tradition."
+task = [{ item = "minecraft:oak_log", count = 16, title = "16 Oak Logs" }]
+text = """
+Every factory starts with a tree. Sixteen logs give you a workbench, sticks and your first tools, with some left over for a furnace's fuel.
+
+Normal Minecraft tools work fine here; the GregTech ones come a few steps later.
+"""
+
+[[new_quest]]
+key = "plates"
+role = "spine"
+title = "Hammer Some Plates"
+icon = "gtceu:iron_plate"
+x = 7.5
+y = 3.5
+deps = ["Complete the Tool Kit"]
+subtitle = "GregTech builds with plates."
+task = [{ item = "gtceu:iron_plate", count = 4, title = "4 Iron Plates" }]
+text = """
+Two Iron Ingots and your [item]Hammer[/] in the crafting grid make one [item]Iron Plate[/]. GregTech recipes ask for plates, rods and screws where vanilla would ask for ingots; the Coke Oven controller is your first example.
+
+By hand a plate costs two ingots. The Steam Forge Hammer and the Bender make them for less.
+"""
+
+[[new_quest]]
+key = "clay"
+role = "spine"
+title = "Clay, Sand and a Mold"
+icon = "gtceu:brick_wooden_form"
+x = 2.5
+y = 7
+deps = ["Your First Bronze"]
+subtitle = "What Coke Oven bricks are made of."
+task = [
+    { item = "minecraft:clay_ball", count = 3, title = "3 Clay" },
+    { item = "minecraft:sand", count = 5, title = "5 Sand" },
+    { item = "gtceu:brick_wooden_form", title = "Wooden Brick Form" },
+]
+text = """
+Clay sits under shallow water and in swamps. The [item]Wooden Brick Form[/] is an Empty Wooden Form shaped with your knife, and it is not used up.
+
+Three clay, five sand and the form make three [item]Compressed Coke Clay[/].
+"""
+
+[[new_quest]]
+key = "bricks"
+role = "spine"
+title = "Coke Oven Bricks"
+icon = "gtceu:coke_oven_brick"
+x = 5
+y = 7
+deps = ["new:clay"]
+subtitle = "Fired in the furnace."
+task = [{ item = "gtceu:coke_oven_brick", count = 8, title = "8 Coke Oven Bricks" }]
+text = """
+Smelt [item]Compressed Coke Clay[/] into [item]Coke Oven Bricks[/]; four of them make one casing block. A Coke Oven takes 25 casings, so keep the furnace busy.
+"""
+
+# ------------------------------------------------------------------ Start: tips, next to the step that needs them
+
+[[new_quest]]
+key = "tip_ultimine"
+role = "hint"
+title = "Ultimine"
+icon = "minecraft:iron_axe"
+x = 0
+y = -2.5
+deps = ["new:wood"]
+subtitle = "A whole tree in one swing."
+text = """
+Hold the [item]Ultimine[/] key (grave accent by default) while you break a block and every connected block of the same kind breaks too: a whole tree, a whole ore vein.
+
+It breaks up to [num]128[/] blocks in Journey and [num]64[/] in Normal, and each block still costs hunger and tool durability.
+"""
+
+[[new_quest]]
+key = "tip_veins"
+role = "hint"
+title = "Ore Veins and the Prospector"
+icon = "gtceu:prospector.lv"
+x = 2.5
+y = -2.5
+deps = ["Your First Workbench"]
+subtitle = "Ores come in veins, not in specks."
+text = """
+GregTech ores are placed in large [item]veins[/] of a few related ores, about one vein for every [num]3 x 3[/] chunks. Small ore indicators lie on the surface above a vein.
+
+The [item]Prospector[/] shows the ores under you without digging. Mark every vein you find on the map; you will come back for all of them.
+"""
+
+[[new_quest]]
+key = "tip_phase"
+role = "hint"
+title = "Phase Matrix"
+icon = "gtia:phase_matrix_ore"
+x = 17.5
+y = 1.25
+deps = ["A Wider Mineral Collection"]
+subtitle = "Infinity Ascension's own ore."
+text = """
+[item]Phase Matrix[/] veins sit between [num]Y 40[/] and [num]Y 60[/]. Crushed twice, the ore gives Impure Phase Dust, which turns iron into [item]Pulsating Alloy[/] and, with Red Alloy, into [item]Conductive Alloy[/], a wire that loses nothing.
+
+You will need it in the Steam chapter.
+"""
+
+[[new_quest]]
+key = "tip_tools"
+role = "hint"
+title = "GregTech Tools 101"
+icon = "gtceu:iron_wrench"
+x = 15
+y = 3.5
+deps = ["The First GregTech Tools"]
+subtitle = "Tools stay in the grid."
+text = """
+GregTech tools are ingredients: they stay in the crafting grid and lose durability with each use. The [item]Hammer[/] also crushes ores into Crushed Ore, more than one ingot's worth later on.
+
+The [item]Wrench[/] turns and picks up machines, the [item]Screwdriver[/] changes their modes, the [item]Wire Cutter[/] connects cables. In Normal worlds GregTech blocks need the right tool to drop.
+"""
+
+[[new_quest]]
+key = "tip_fluids"
+role = "hint"
+title = "Buckets, Cells and Tanks"
+icon = "minecraft:bucket"
+x = 5
+y = 9.75
+deps = ["Collect the Creosote"]
+subtitle = "Every fluid is counted in mB."
+text = """
+A bucket holds [num]1,000 mB[/]. GregTech counts every fluid in millibuckets, and machines take them from tanks, cells and pipes, not from your hands.
+
+Creosote burns in a liquid boiler, so keep the oven's output; a Drum or a tank stores it until you need it.
+"""
+
+[[new_quest]]
+key = "tip_multiblock"
+role = "hint"
+title = "Your First Multiblock"
+icon = "gtceu:coke_oven"
+x = 10
+y = 9.75
+deps = ["Build a Coke Oven"]
+subtitle = "Read the structure before you build."
+text = """
+Press [item]R[/] on a controller: the first EMI tab shows the structure. Scroll through the layers, and the buttons on the right show one layer at a time or the parts that accept hatches.
+
+The [item]GregTech Terminal[/] and the [item]Nexus Structure Terminal[/] can place a structure for you. A controller that does not form tells you what is missing when you hover over it. The [item]Coke Oven Hatch[/] lets pipes take the Coke and Creosote out.
+"""
+
+[[new_quest]]
+key = "tip_steam"
+role = "hint"
+title = "Before You Boil"
+icon = "gtceu:lp_steam_solid_boiler"
+x = 13.5
+y = 10
+deps = ["Ready for Steam"]
+subtitle = "Water first, then fire."
+text = """
+A boiler heats up slowly and only makes steam once it is hot. Never let it run dry: water poured into an empty, hot boiler makes it [warn]explode[/].
+
+High Pressure boilers are made of steel and give much more steam from the same fuel. The Steam chapter starts with both.
+"""
+
+# ------------------------------------------------------------------ modes
+
+[[mode_intro]]
+key = "mode"
+chapter = "welcome"
+x = 0
+y = -3
+journey_title = "Journey World"
+journey_subtitle = "A gentler pace."
+journey_icon = "minecraft:totem_of_undying"
+journey_text = """
+This world is [item]Journey[/]. Same quests, same machines, kinder numbers: recipes are faster and cheaper, boilers give more steam, machines need no maintenance, vanilla recipes are simpler, you keep your inventory on death and radioactive materials do not hurt.
+
+[tip]/gtia rules[/] lists every rule and its value. The mode is fixed when the world is made.
+"""
+normal_title = "Normal World"
+normal_subtitle = "The pack as designed."
+normal_icon = "gtceu:steel_pickaxe"
+normal_text = """
+This world is [item]Normal[/]: the full pack, with the numbers it was balanced for. Maintenance, material hazards, catalyst wear and the organ requirements of other planets are all on.
+
+[tip]/gtia rules[/] lists every rule and its value. The mode is fixed when the world is made.
+"""
 
 [[mode_reward]]
 key = "welcome_kit"
+chapter = "welcome"
 title = "Welcome to Infinity Ascension"
 reward_title = "Starting Kit"
-x = -1.0
-y = 3.5
+x = 2.5
+y = -2.25
 journey_subtitle = "Journey kit."
 journey_text = "Journey worlds start strong: these are the tools the author picked."
 normal_subtitle = "Normal kit."
@@ -84,8 +432,8 @@ normal = [
 key = "workbench_kit"
 title = "Your First Workbench"
 reward_title = "Starting Kit"
-x = -4.0
-y = 7.0
+x = 3.75
+y = 1.75
 journey_subtitle = "Journey kit."
 journey_text = "Journey worlds start strong: these are the tools the author picked."
 normal_subtitle = "Normal kit."
@@ -98,8 +446,8 @@ normal = [
 key = "tools_kit"
 title = "The First GregTech Tools"
 reward_title = "Starting Kit"
-x = 8.0
-y = 1.5
+x = 15
+y = 5.5
 journey_subtitle = "Journey kit."
 journey_text = "Journey worlds start strong: these are the tools the author picked."
 normal_subtitle = "Normal kit."
@@ -114,8 +462,8 @@ normal = [
 key = "toolkit_kit"
 title = "Complete the Tool Kit"
 reward_title = "Starting Kit"
-x = 11.0
-y = 2.0
+x = 10
+y = 1.75
 journey_subtitle = "Journey kit."
 journey_text = "Journey worlds start strong: these are the tools the author picked."
 normal_subtitle = "Normal kit."
@@ -129,3 +477,25 @@ normal = [
     { item = "gtceu:steel_crowbar" },
     { item = "gtceu:rubber_mallet" },
 ]
+
+# The Steam supplies are per-mode kits (D-291): the author's quest is Journey's, Normal gets a smaller twin.
+[[mode_split]]
+key = "coke_supply"
+title = "Coke for the First Boilers"
+normal_subtitle = "A starting stock of boiler fuel."
+normal_text = "Claim 16 Coke Blocks to light your first boilers. Keep the Coke Oven running: from here on, fuel is your factory's job."
+normal = [{ item = "gtceu:coke_block", count = 16 }]
+
+[[mode_split]]
+key = "bronze_supply"
+title = "Bronze for the First Machines"
+normal_subtitle = "A starting stock of the Steam alloy."
+normal_text = "Claim 16 Bronze Ingots for your first steam machine parts, then make your own from Copper and Tin."
+normal = [{ item = "gtceu:bronze_ingot", count = 16 }]
+
+[[mode_split]]
+key = "tool_supply"
+title = "A Tool for the Next Stage"
+normal_subtitle = "Equipment for a growing mining operation."
+normal_text = "Claim a Steel Mining Hammer: it breaks a 3 x 3 area at once, a good friend for the long tunnels of the Steam Age."
+normal = [{ item = "gtceu:steel_mining_hammer" }]

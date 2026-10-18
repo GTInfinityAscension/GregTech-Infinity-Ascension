@@ -6,11 +6,13 @@ GTIA is guided GregTech where the factory is the star: Satisfactory-style megafa
 
 > **Status: early development.** Builds are for testers. Start → Steam → LV → MV → HV is playable with the quest book from the first log to the Moon; see the [roadmap](ROADMAP.md) and the [Start → HV plan](docs/START_STEAM_LV_PLAN.md).
 
+Community: [Discord](https://discord.gg/TW5vugknk5) · questions, bug reports and playtesting.
+
 ## Design pillars
 
 - **Grind is solved with more factory**, never with more clicking.
 - **Lines get longer every tier:** Steam 2–3 steps, LV/MV 4–6, HV/EV 6–10, IV+ 10+.
-- **Real chemistry, no PhD:** wood distillation, lime kiln, chlor-alkali, Bayer + Hall-Héroult, Contact process, Haber-Bosch, Solvay, Ostwald, Claus, Kroll, Siemens... Important molecules have an early, expensive route and a later, efficient one.
+- **Real chemistry, no PhD:** wood distillation, lime kiln, chlor-alkali, Bayer + Hall-Héroult, Contact process, Haber-Bosch, Solvay, Ostwald, Claus, Kroll, Siemens... GregTech's one-step shortcuts to the same products are removed, so each base chemical comes from its real plant (or as a by-product of another line).
 - **No ULV era and no research tree.** The campaign goes Start → Steam → LV → MV → HV → ...
 - **Every quest is reachable.** A checker reads the pack's real recipes and fails the build if a quest asks for something you can't make yet.
 - **Modes:** Normal (the full pack, default) or Journey (gentler), picked at world creation and locked. 52 **GTIA Rules** (`/gtia rules`) show what each mode changes, and some quests and rewards differ by mode.

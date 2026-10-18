@@ -582,7 +582,7 @@ x = 13.5
 y = 14
 shape = "circle"
 size = 1
-deps = ["hv_bath", "energy:hv_steam"]
+deps = ["hv_bath", "mv:contact", "energy:hv_steam"]
 subtitle = "Orange, pink and gray."
 task = [{ item = "gtceu:orange_glass_lens" }, { item = "gtceu:pink_glass_lens" }, { item = "gtceu:gray_glass_lens" }]
 hide_dependents = true
@@ -859,8 +859,6 @@ subtitle = "Cools hot ingots."
 task = [{ item = "gtceu:vacuum_freezer" }]
 hide_dependents = true
 text = """
-{image:gtia_quests:textures/quests/vacuum_freezer.png width:60 height:72 align:center}
-
 The Vacuum Freezer cools the hot ingots that come out of the blast furnace into their normal form.
 """
 
@@ -894,8 +892,6 @@ deps = ["workstation", "oil", "hv_pump"]
 subtitle = "Splits fluids into fractions."
 task = [{ item = "gtceu:distillation_tower" }]
 text = """
-{image:gtia_quests:textures/quests/distillation_tower.png width:60 height:72 align:center}
-
 Four Workstations, two HV pumps and large stainless pipes. Petrochemistry starts here.
 """
 
@@ -943,8 +939,6 @@ deps = ["distillation"]
 subtitle = "Breaks long hydrocarbons into lighter ones."
 task = [{ item = "gtceu:cracker" }]
 text = """
-{image:gtia_quests:textures/quests/cracker.png width:84 height:84 align:center}
-
 The Cracker breaks long hydrocarbons into lighter ones using hydrogen or steam.
 """
 
@@ -1137,8 +1131,6 @@ deps = ["ptfe_casing"]
 subtitle = "Chemistry in parallel."
 task = [{ item = "gtceu:large_chemical_reactor" }]
 text = """
-{image:gtia_quests:textures/quests/large_chemical_reactor.png width:60 height:72 align:center}
-
 PTFE pipes, a stainless rotor, an HV motor and four HV circuits.
 """
 
@@ -1216,7 +1208,7 @@ y = 14.5
 shape = "octagon"
 size = 1
 hide_lines = true
-deps = ["hv_hull", "hv_cr", "energy:hv_steam"]
+deps = ["hv_cr", "mv:ammonia", "energy:hv_steam"]
 subtitle = "From the Ammonia Converter."
 task = [{ item = "gtceu:ammonia_bucket" }]
 text = """
@@ -1264,11 +1256,11 @@ x = 20
 y = 12
 shape = "circle"
 size = 1
-deps = ["no2"]
-subtitle = "The Ostwald process."
+deps = ["no2", "mv:ostwald"]
+subtitle = "The Ostwald absorption tower."
 task = [{ item = "gtceu:nitric_acid_bucket" }]
 text = """
-Nitrogen dioxide and water give nitric acid; the leftover nitric oxide goes back in.
+Nitrogen dioxide and water in the Ostwald Converter's absorption stage give nitric acid; the leftover nitric oxide goes back in.
 """
 
 [[quest]]
@@ -1312,7 +1304,7 @@ x = 17.5
 y = 16
 shape = "circle"
 size = 1
-deps = ["hocl", "ammonia_link", "energy:hv_steam"]
+deps = ["hocl", "ammonia_link", "lv:acetic_methanol"]
 subtitle = "Needs the HV reactor."
 task = [{ item = "gtceu:dimethylhydrazine_bucket" }]
 text = """
@@ -1364,8 +1356,6 @@ deps = ["rocket_parts"]
 subtitle = "A launch tower of your own."
 task = [{ item = "gtia:rocket_assembler" }]
 text = """
-{image:gtia_quests:textures/quests/rocket_assembler.png width:98 height:120 align:center}
-
 A 15 × 15 complex of service towers and stainless scaffolding around the rocket. It builds the [item]Tier 1 Rocket[/] at 480 EU/t; JEI shows the structure layer by layer.
 """
 
@@ -1507,11 +1497,11 @@ x = 27.5
 y = 11
 shape = "circle"
 size = 1
-deps = ["rutile", "lcr"]
+deps = ["kroll"]
 subtitle = "Chlorinate the rutile."
 task = [{ item = "gtceu:titanium_tetrachloride_bucket" }]
 text = """
-Rutile, carbon and chlorine at 480 EU/t.
+Rutile, carbon and chlorine in the Kroll Reactor's chlorination stage.
 """
 
 [[quest]]
@@ -1543,7 +1533,7 @@ deps = ["ticl4", "magnesium", "vacuum_freezer", "hv_hatch"]
 subtitle = "A strong, light metal."
 task = [{ item = "gtceu:titanium_dust" }]
 text = """
-Titanium is a strong and light metal. Hot ingots from the blast furnace cool in the Vacuum Freezer.
+Titanium is a strong and light metal. The Kroll Reactor reduces the tetrachloride with magnesium under argon; the titanium dust melts in the blast furnace and the hot ingots cool in the Vacuum Freezer.
 """
 
 [[quest]]
@@ -1705,8 +1695,6 @@ deps = ["desulf"]
 subtitle = "Sulfur from sour gas."
 task = [{ item = "gtia:claus_unit" }]
 text = """
-{image:gtia_quests:textures/quests/claus_unit.png width:108 height:96 align:center}
-
 Desulfurizing oil leaves [item]Hydrogen Sulfide[/]. The Claus Unit burns a third of it and reacts the rest over the [item]Alumina[/] of your Bayer plant: sulfur for the Contact Converter, steam for your boilers.
 """
 
@@ -1718,13 +1706,11 @@ x = 30
 y = 11
 shape = "gear"
 size = 1.25
-deps = ["ticl4"]
+deps = ["rutile", "distillation"]
 subtitle = "Titanium the real way."
 task = [{ item = "gtia:kroll_reactor" }]
 text = """
-{image:gtia_quests:textures/quests/kroll_reactor.png width:60 height:96 align:center}
-
-Chlorinates the Moon's [item]Ilmenite[/] straight into [item]Titanium Tetrachloride[/], then reduces it with [item]Magnesium[/] under argon. Electrolyze the [item]Magnesium Chloride[/] to close the loop.
+Chlorinates [item]Rutile[/], or the Moon's [item]Ilmenite[/], into [item]Titanium Tetrachloride[/], then reduces it with [item]Magnesium[/] under argon. Electrolyze the [item]Magnesium Chloride[/] to close the loop.
 """
 
 [[quest]]
@@ -1739,8 +1725,6 @@ deps = ["hv_pump"]
 subtitle = "Silicon, nine nines."
 task = [{ item = "gtia:siemens_reactor" }]
 text = """
-{image:gtia_quests:textures/quests/siemens_reactor.png width:84 height:96 align:center}
-
 Silicon and hydrochloric acid become [item]Trichlorosilane[/]; on hot rods it deposits [item]Polysilicon[/] and gives the acid back.
 """
 
@@ -1757,4 +1741,52 @@ subtitle = "Half the silicon per boule."
 task = [{ item = "gtia:polysilicon_dust" }]
 text = """
 Sixteen of it grow a [item]Silicon Boule[/] in the Electric Blast Furnace on circuit 3, instead of thirty-two silicon dust.
+"""
+
+# ------------------------------------------------------------------ tips (D-291)
+
+[[quest]]
+key = "tip_cleanroom"
+title = "Working in a Cleanroom"
+role = "hint"
+icon = "gtceu:cleanroom"
+deps = ["cleanroom"]
+subtitle = "Some recipes need clean air."
+text = """
+Recipes marked [item]Cleanroom[/] in EMI only run in a machine that stands inside a formed Cleanroom: plascrete walls, filter casings on the ceiling, a door. Bring power and items through the walls with hatches or Diodes.
+
+The Cleanroom needs power to stay clean; if it loses it, the recipes inside stop.
+"""
+
+[[quest]]
+key = "tip_distillation"
+title = "Distillation and Cracking"
+role = "hint"
+icon = "gtceu:distillation_tower"
+deps = ["distillation"]
+subtitle = "One product per layer."
+text = """
+The Distillation Tower puts one product on each layer, so every layer needs its own Output Hatch. Cracking a fraction first, with Hydrogen or Steam, changes what it splits into.
+"""
+
+[[quest]]
+key = "tip_catalyst"
+title = "Catalyst Wear"
+role = "hint"
+icon = "gtia:alumina_dust"
+deps = ["claus"]
+subtitle = "Normal worlds only."
+text = """
+In [item]Normal[/] worlds the catalyst of a GTIA chemistry plant has a [num]1%[/] chance to wear out on every run, so keep a supply line for it. In [item]Journey[/] worlds catalysts last forever.
+"""
+
+[[quest]]
+key = "tip_organs"
+title = "Organs Before the Moon"
+role = "hint"
+icon = "gtia:organ_modifier"
+deps = ["organ_modifier"]
+subtitle = "Space hurts."
+text = """
+In [item]Normal[/] worlds the Moon and Mars hurt a body whose organ set is below tier [num]1[/]. Fill every organ slot with tier 1 organs before you launch.
 """
