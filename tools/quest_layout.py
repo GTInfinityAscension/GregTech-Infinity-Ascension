@@ -52,7 +52,7 @@ def layout(chapter: dict, entry: str, exit_: str | None) -> dict:
             kids[d].append(i)
     # The skeleton is every quest that unlocks another one in the chapter; the rest are satellites placed in a ring
     # around the quest they hang from, as GTNH draws a hub and the machines it opens.
-    core = {i for i in quests if kids[i] or i in (entry, exit_)}
+    core = dict.fromkeys(i for i in quests if kids[i] or i in (entry, exit_))  # ordered: a set's order changes per run
     # A hub that half the chapter needs (the LV motor, the tier's power) says nothing about where a quest belongs:
     # its lines are hidden and only the more specific prerequisites place a quest, unless it has no other one.
     hubs = {i for i in quests if len(kids[i]) >= HUB and i != entry}
