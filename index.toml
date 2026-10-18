@@ -246,11 +246,11 @@ hash = "a591cef12157c4cd00f7d32ea87a62cf829eb37881bb899d33cd59d8236596af"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/agriculture.snbt"
-hash = "05e89fe57b86747410fb0bd5bf4fffa72ab7f0a059ef1cd9a0cea3d4bc31e1be"
+hash = "87d80d1f7a966424b379b113b43224671668ebb81fae1f3cca3e874d8ab7506e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bees.snbt"
-hash = "2614a67ffb2d1863be6ebe71eb6bdbeb9d7a957b032f0af38bd3ddf9b75a27c4"
+hash = "12430a5439e023e1b815dfdd650f1602501907fa558e2cd78594065f26809800"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/energy.snbt"
@@ -258,11 +258,11 @@ hash = "7feccb3c80cc1bffaf89702bd70cd0ce347e31287fcc8ac76d73f3798098a8ce"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/hv.snbt"
-hash = "ae7ce020bf40b1e40f4992f04efd628e6ffc612d0ff074b92ef89f8e52793244"
+hash = "12f2495f14a8e5cc67f4e93166b6c92dbae6dbd29e7729fb09475c8202c98b35"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/lv.snbt"
-hash = "d1ff0f767f15b223cb9e4b2c4f10ede926aaccaff5540efc15f998cf67c0a062"
+hash = "0a43bf53089bf799d35546d67b5eb3f253dc760e249673a3cd47d445f01adf01"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/modes.snbt"
@@ -274,7 +274,7 @@ hash = "336ea334612b33b30b457b4ad8ae250a0c4c25b2c36391abc4f376d42cc0d723"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mv.snbt"
-hash = "c12eb2835da55b57d80cba6df7dcac49adc29d7a35e5b29ea389bddf87b37a9d"
+hash = "de9bed7b361e714b93c1ee526005cc27a034f9374300dfb1f438aad6d6c1ee88"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/periodic.snbt"
@@ -286,7 +286,7 @@ hash = "0cb98d1bff183aa338549569d24bfcb735dc8b886d137679c9df09d431385618"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/steam.snbt"
-hash = "27afd7cbdad231f3e7fd8570478abf116c105f7ca6072ae5fdbdc7c48b50094f"
+hash = "e8acbd8a7ee458426d1521ae1fb4ad5a54c6af59f6dc8619d7853b35f9a64100"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"

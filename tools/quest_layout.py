@@ -454,7 +454,7 @@ def _crossing_pairs(quests: dict[str, dict], edges: list[tuple[str, str]]) -> li
     return out
 
 
-def _runs_over(quests: dict[str, dict], dep: str, kid: str) -> bool:
+def _runs_over(quests: dict[str, dict], dep: str, kid: str, margin: float = 0.1, scale: float = 0.5) -> bool:
     a, b = quests[dep], quests[kid]
     ax, ay, bx, by = _f(a["x"]), _f(a["y"]), _f(b["x"]), _f(b["y"])
     length = math.hypot(bx - ax, by - ay)
@@ -465,9 +465,18 @@ def _runs_over(quests: dict[str, dict], dep: str, kid: str) -> bool:
             continue
         cx, cy = _f(c["x"]), _f(c["y"])
         u = max(0.0, min(1.0, ((cx - ax) * (bx - ax) + (cy - ay) * (by - ay)) / length ** 2))
-        if math.hypot(ax + u * (bx - ax) - cx, ay + u * (by - ay) - cy) < _f(c.get("size", 1.0)) * 0.5 + 0.1:
+        if math.hypot(ax + u * (bx - ax) - cx, ay + u * (by - ay) - cy) < _f(c.get("size", 1.0)) * scale + margin:
             return True
     return False
+
+
+def _blocked(quests: dict[str, dict], i: str) -> bool:
+    """A line of quest i runs over another quest, or a drawn line runs over quest i."""
+    q = quests[i]
+    mine = [(d, i) for d in q.get("dependencies", []) if d in quests and d != i]
+    mine += [(i, k) for k, b in quests.items() if i in b.get("dependencies", [])]
+    return any(_runs_over(quests, d, k) for d, k in mine) or \
+        any(i not in (d, k) and _over_one(quests, d, k, i) for d, k in _visible_edges(quests))
 
 
 def _blockers(quests: dict[str, dict]) -> list[tuple[str, str, str]]:

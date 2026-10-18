@@ -12,8 +12,8 @@
 			linked_quest: "5122FC31C1635F38"
 			shape: "gear"
 			size: 1.5d
-			x: 16.5d
-			y: 24.5d
+			x: 25.5d
+			y: 13.5d
 		}
 	]
 	quests: [
@@ -40,7 +40,7 @@
 				}
 			]
 			title: "{gtia.quest.777C50D80E2DDE50.title}"
-			x: 7.5d
+			x: -0.5d
 			y: 8.0d
 		}
 		{
@@ -53,7 +53,7 @@
 			id: "20D6FC1CBD24554B"
 			rewards: [ ]
 			shape: "circle"
-			size: 1.0d
+			size: 2.0d
 			subtitle: "{gtia.quest.20D6FC1CBD24554B.subtitle}"
 			tasks: [
 				{
@@ -66,8 +66,8 @@
 				}
 			]
 			title: "{gtia.quest.20D6FC1CBD24554B.title}"
-			x: 3.5d
-			y: 6.5d
+			x: 2.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -93,8 +93,8 @@
 				}
 			]
 			title: "{gtia.quest.3A1582A1094F567F.title}"
-			x: 4.0d
-			y: 8.0d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -105,6 +105,7 @@
 			]
 			icon: "gtceu:bronze_machine_casing"
 			id: "484D474834EAB639"
+			hide_dependent_lines: true
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
@@ -120,9 +121,8 @@
 				}
 			]
 			title: "{gtia.quest.484D474834EAB639.title}"
-			x: 16.0d
-			y: 6.5d
-			hide_dependency_lines: true
+			x: -0.5d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -133,6 +133,7 @@
 			]
 			icon: "gtceu:bronze_brick_casing"
 			id: "4F4CB4AD090721C1"
+			hide_dependent_lines: true
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
@@ -148,8 +149,8 @@
 				}
 			]
 			title: "{gtia.quest.4F4CB4AD090721C1.title}"
-			x: 3.0d
-			y: 5.0d
+			x: 1.0d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -175,8 +176,8 @@
 				}
 			]
 			title: "{gtia.quest.044777D8A6ACACE5.title}"
-			x: 2.0d
-			y: 7.0d
+			x: 4.0d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -211,22 +212,24 @@
 				}
 			]
 			title: "{gtia.quest.10F6BF82785B0F48.title}"
-			x: 12.5d
+			x: 7.0d
 			y: 6.0d
 		}
 		{
 			dependencies: [
 				"10F6BF82785B0F48"
+				"4F4CB4AD090721C1"
 			]
 			description: [
 				"{gtia.quest.309831FDDA2D16A3.desc.0}"
 			]
 			icon: "gtceu:lp_steam_furnace"
 			id: "309831FDDA2D16A3"
+			hide_dependent_lines: true
 			optional: true
 			rewards: [ ]
 			shape: "hexagon"
-			size: 1.0d
+			size: 1.25d
 			subtitle: "{gtia.quest.309831FDDA2D16A3.subtitle}"
 			tasks: [
 				{
@@ -239,8 +242,8 @@
 				}
 			]
 			title: "{gtia.quest.309831FDDA2D16A3.title}"
-			x: 1.0d
-			y: 3.5d
+			x: 7.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -276,8 +279,8 @@
 				}
 			]
 			title: "{gtia.quest.0D4E8CC3245E6800.title}"
-			x: 2.5d
-			y: 8.5d
+			x: 4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -306,8 +309,8 @@
 				}
 			]
 			title: "{gtia.quest.0FF5E90023F5FCFD.title}"
-			x: 11.5d
-			y: 3.5d
+			x: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -334,9 +337,8 @@
 				}
 			]
 			title: "{gtia.quest.520AD237AC3B724D.title}"
-			x: 16.0d
-			y: 5.0d
-			hide_dependency_lines: true
+			x: 13.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -349,7 +351,7 @@
 			id: "130B22C46670AED8"
 			rewards: [ ]
 			shape: "circle"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "{gtia.quest.130B22C46670AED8.subtitle}"
 			tasks: [
 				{
@@ -363,7 +365,7 @@
 			]
 			title: "{gtia.quest.130B22C46670AED8.title}"
 			x: 13.5d
-			y: 3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -376,7 +378,7 @@
 			id: "25B8076FDC395763"
 			rewards: [ ]
 			shape: "circle"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "{gtia.quest.25B8076FDC395763.subtitle}"
 			tasks: [
 				{
@@ -389,9 +391,8 @@
 				}
 			]
 			title: "{gtia.quest.25B8076FDC395763.title}"
-			x: 23.5d
-			y: 19.0d
-			hide_dependency_lines: true
+			x: 11.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -417,8 +418,8 @@
 				}
 			]
 			title: "{gtia.quest.30EDF167593F2578.title}"
-			x: 1.5d
-			y: 5.5d
+			x: 3.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -455,9 +456,8 @@
 				}
 			]
 			title: "{gtia.quest.363987BE26B78FE4.title}"
-			x: 14.5d
-			y: 5.0d
-			hide_dependency_lines: true
+			x: 6.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -486,12 +486,13 @@
 				}
 			]
 			title: "{gtia.quest.0E0958673BA3B92E.title}"
-			x: 16.0d
-			y: 3.5d
+			x: 10.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
 				"0E0958673BA3B92E"
+				"130B22C46670AED8"
 			]
 			description: [
 				"{gtia.quest.236448436A2E4C33.desc.0}"
@@ -514,8 +515,8 @@
 				}
 			]
 			title: "{gtia.quest.236448436A2E4C33.title}"
-			x: 15.5d
-			y: 2.0d
+			x: 9.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -526,9 +527,10 @@
 			]
 			icon: "minecraft:piston"
 			id: "3565931FCE2A770E"
+			hide_dependent_lines: true
 			rewards: [ ]
 			shape: "circle"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "{gtia.quest.3565931FCE2A770E.subtitle}"
 			tasks: [
 				{
@@ -541,9 +543,8 @@
 				}
 			]
 			title: "{gtia.quest.3565931FCE2A770E.title}"
-			x: 23.5d
-			y: 3.0d
-			hide_dependency_lines: true
+			x: 1.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -558,7 +559,7 @@
 			id: "61C301395A3CD5BF"
 			rewards: [ ]
 			shape: "hexagon"
-			size: 2.0d
+			size: 1.25d
 			subtitle: "{gtia.quest.61C301395A3CD5BF.subtitle}"
 			tasks: [
 				{
@@ -571,9 +572,8 @@
 				}
 			]
 			title: "{gtia.quest.61C301395A3CD5BF.title}"
-			x: 28.5d
-			y: 3.0d
-			hide_dependency_lines: true
+			x: 10.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -586,6 +586,7 @@
 			]
 			icon: "gtceu:steam_grinder"
 			id: "45ABA36DDF417F2D"
+			hide_dependent_lines: true
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
@@ -617,8 +618,8 @@
 				}
 			]
 			title: "{gtia.quest.45ABA36DDF417F2D.title}"
-			x: 31.0d
-			y: 3.0d
+			x: 12.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -646,9 +647,8 @@
 				}
 			]
 			title: "{gtia.quest.4717128674ADBA89.title}"
-			x: 20.5d
-			y: 6.0d
-			hide_dependency_lines: true
+			x: 7.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -674,9 +674,8 @@
 				}
 			]
 			title: "{gtia.quest.012E53ECB697D9F3.title}"
-			x: 27.0d
-			y: 7.5d
-			hide_dependency_lines: true
+			x: 9.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -687,6 +686,7 @@
 			]
 			icon: "minecraft:anvil"
 			id: "69D73C20940013E3"
+			hide_dependent_lines: true
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
@@ -702,9 +702,8 @@
 				}
 			]
 			title: "{gtia.quest.69D73C20940013E3.title}"
-			x: 19.0d
-			y: 8.5d
-			hide_dependency_lines: true
+			x: 9.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -717,7 +716,7 @@
 			id: "0BE3526B1728A13F"
 			rewards: [ ]
 			shape: "hexagon"
-			size: 2.0d
+			size: 1.25d
 			subtitle: "{gtia.quest.0BE3526B1728A13F.subtitle}"
 			tasks: [
 				{
@@ -730,9 +729,8 @@
 				}
 			]
 			title: "{gtia.quest.0BE3526B1728A13F.title}"
-			x: 13.5d
-			y: 10.0d
-			hide_dependency_lines: true
+			x: 9.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -745,7 +743,7 @@
 			id: "2E1B5CB58E08EB29"
 			rewards: [ ]
 			shape: "circle"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "{gtia.quest.2E1B5CB58E08EB29.subtitle}"
 			tasks: [
 				{
@@ -758,9 +756,8 @@
 				}
 			]
 			title: "{gtia.quest.2E1B5CB58E08EB29.title}"
-			x: 18.5d
-			y: 3.0d
-			hide_dependency_lines: true
+			x: 11.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -786,8 +783,8 @@
 				}
 			]
 			title: "{gtia.quest.63D808F9077FA81E.title}"
-			x: 22.0d
-			y: 6.0d
+			x: 8.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -823,8 +820,8 @@
 				}
 			]
 			title: "{gtia.quest.7DA696110A273CA4.title}"
-			x: 23.5d
-			y: 6.0d
+			x: 7.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -859,9 +856,8 @@
 				}
 			]
 			title: "{gtia.quest.3713CBE1F33AC0E6.title}"
-			x: 17.0d
-			y: 11.0d
-			hide_dependency_lines: true
+			x: 6.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -892,9 +888,8 @@
 				}
 			]
 			title: "{gtia.quest.707CBC0C69EAFA06.title}"
-			x: 8.5d
-			y: 16.0d
-			hide_dependency_lines: true
+			x: 15.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -905,6 +900,7 @@
 			]
 			icon: "gtceu:hp_steam_solid_boiler"
 			id: "237E6A27D526CE57"
+			hide_dependent_lines: true
 			optional: true
 			rewards: [ ]
 			shape: "hexagon"
@@ -921,8 +917,8 @@
 				}
 			]
 			title: "{gtia.quest.237E6A27D526CE57.title}"
-			x: 10.5d
-			y: 16.0d
+			x: 15.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -949,8 +945,8 @@
 				}
 			]
 			title: "{gtia.quest.53C413FEC2C1001C.title}"
-			x: 11.0d
-			y: 11.0d
+			x: 16.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -961,6 +957,7 @@
 			]
 			icon: "gtna:precision_steam_component"
 			id: "0C9BA2223F3D4D33"
+			hide_dependent_lines: true
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
@@ -976,8 +973,8 @@
 				}
 			]
 			title: "{gtia.quest.0C9BA2223F3D4D33.title}"
-			x: 9.5d
-			y: 18.0d
+			x: 17.5d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -988,6 +985,7 @@
 			]
 			icon: "gtna:breel_ingot"
 			id: "00BBCDAF61B4507A"
+			hide_dependent_lines: true
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
@@ -1011,8 +1009,8 @@
 				}
 			]
 			title: "{gtia.quest.00BBCDAF61B4507A.title}"
-			x: 8.0d
-			y: 18.0d
+			x: 18.0d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -1040,8 +1038,8 @@
 				}
 			]
 			title: "{gtia.quest.2859530E8F91C14C.title}"
-			x: 21.0d
-			y: 2.5d
+			x: 12.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1068,8 +1066,8 @@
 				}
 			]
 			title: "{gtia.quest.124C8D9FDCCC00E1.title}"
-			x: 25.0d
-			y: 1.0d
+			x: 14.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1103,8 +1101,8 @@
 				}
 			]
 			title: "{gtia.quest.60E0845A289BE078.title}"
-			x: 26.0d
-			y: 4.5d
+			x: 16.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1130,14 +1128,14 @@
 				}
 			]
 			title: "{gtia.quest.13E1320EF38F3A65.title}"
-			x: 21.5d
-			y: 9.5d
-			hide_dependency_lines: true
+			x: 17.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
 				"0C9BA2223F3D4D33"
 				"60E0845A289BE078"
+				"00BBCDAF61B4507A"
 			]
 			description: [
 				"{gtia.quest.10043917A6960AA3.desc.0}"
@@ -1159,13 +1157,13 @@
 				}
 			]
 			title: "{gtia.quest.10043917A6960AA3.title}"
-			x: 19.0d
-			y: 10.5d
-			hide_dependency_lines: true
+			x: 22.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
 				"10043917A6960AA3"
+				"45ABA36DDF417F2D"
 				"520AD237AC3B724D"
 			]
 			description: [
@@ -1187,12 +1185,12 @@
 				}
 			]
 			title: "{gtia.quest.6961142793AE9F7B.title}"
-			x: 22.5d
-			y: 7.5d
-			hide_dependency_lines: true
+			x: 22.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
+				"10043917A6960AA3"
 				"13E1320EF38F3A65"
 			]
 			description: [
@@ -1203,7 +1201,7 @@
 			optional: true
 			rewards: [ ]
 			shape: "gear"
-			size: 2.0d
+			size: 1.5d
 			subtitle: "{gtia.quest.6CD0424A8F315036.subtitle}"
 			tasks: [
 				{
@@ -1216,9 +1214,8 @@
 				}
 			]
 			title: "{gtia.quest.6CD0424A8F315036.title}"
-			x: 8.5d
-			y: 3.0d
-			hide_dependency_lines: true
+			x: 16.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1233,7 +1230,7 @@
 			optional: true
 			rewards: [ ]
 			shape: "gear"
-			size: 2.0d
+			size: 1.5d
 			subtitle: "{gtia.quest.6BABFB2B1E621605.subtitle}"
 			tasks: [
 				{
@@ -1246,9 +1243,8 @@
 				}
 			]
 			title: "{gtia.quest.6BABFB2B1E621605.title}"
-			x: 23.5d
-			y: 10.0d
-			hide_dependency_lines: true
+			x: 25.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -1275,12 +1271,13 @@
 				}
 			]
 			title: "{gtia.quest.24A0C4B65EF45179.title}"
-			x: 21.0d
-			y: 11.0d
+			x: 27.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
 				"10043917A6960AA3"
+				"309831FDDA2D16A3"
 				"520AD237AC3B724D"
 			]
 			description: [
@@ -1304,9 +1301,8 @@
 				}
 			]
 			title: "{gtia.quest.4477A45D4485478D.title}"
-			x: 12.0d
-			y: 8.0d
-			hide_dependency_lines: true
+			x: 18.5d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -1318,10 +1314,11 @@
 			]
 			icon: "gtna:large_steam_extractor"
 			id: "4BDCE20E098F475E"
+			hide_dependency_lines: true
 			optional: true
 			rewards: [ ]
 			shape: "gear"
-			size: 2.0d
+			size: 1.5d
 			subtitle: "{gtia.quest.4BDCE20E098F475E.subtitle}"
 			tasks: [
 				{
@@ -1334,12 +1331,12 @@
 				}
 			]
 			title: "{gtia.quest.4BDCE20E098F475E.title}"
-			x: 28.5d
-			y: 10.5d
-			hide_dependency_lines: true
+			x: 23.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
+				"10043917A6960AA3"
 				"3F1DCA7419D19774"
 			]
 			description: [
@@ -1363,8 +1360,8 @@
 				}
 			]
 			title: "{gtia.quest.54115CC7B051BD9E.title}"
-			x: 30.5d
-			y: 5.5d
+			x: 20.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1391,8 +1388,8 @@
 				}
 			]
 			title: "{gtia.quest.2A82174C947F4C30.title}"
-			x: 20.5d
-			y: 8.0d
+			x: 25.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -1419,8 +1416,8 @@
 				}
 			]
 			title: "{gtia.quest.6641AFACBF378E6D.title}"
-			x: 25.0d
-			y: 6.0d
+			x: 26.5d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -1447,8 +1444,8 @@
 				}
 			]
 			title: "{gtia.quest.1B5B8702CD8CD184.title}"
-			x: 32.0d
-			y: 10.0d
+			x: 20.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -1475,9 +1472,8 @@
 				}
 			]
 			title: "{gtia.quest.07B87A06EAA80D2E.title}"
-			x: 23.5d
-			y: 12.0d
-			hide_dependency_lines: true
+			x: 27.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -1504,11 +1500,12 @@
 				}
 			]
 			title: "{gtia.quest.3F22F9968DD21376.title}"
-			x: 18.0d
-			y: 16.5d
+			x: 24.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
+				"10043917A6960AA3"
 				"13E1320EF38F3A65"
 			]
 			description: [
@@ -1532,12 +1529,12 @@
 				}
 			]
 			title: "{gtia.quest.0F86C18F9B565DBA.title}"
-			x: 21.5d
-			y: 13.0d
-			hide_dependency_lines: true
+			x: 18.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
+				"10043917A6960AA3"
 				"13E1320EF38F3A65"
 			]
 			description: [
@@ -1561,12 +1558,12 @@
 				}
 			]
 			title: "{gtia.quest.10D4D19D6393D70F.title}"
-			x: 26.0d
-			y: 11.0d
-			hide_dependency_lines: true
+			x: 22.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
+				"10043917A6960AA3"
 				"13E1320EF38F3A65"
 			]
 			description: [
@@ -1590,8 +1587,8 @@
 				}
 			]
 			title: "{gtia.quest.30F6363FBD790EBB.title}"
-			x: 16.5d
-			y: 9.0d
+			x: 19.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -1618,12 +1615,13 @@
 				}
 			]
 			title: "{gtia.quest.12A3F0BDB61C4738.title}"
-			x: 17.0d
-			y: 13.5d
+			x: 18.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
 				"10043917A6960AA3"
+				"237E6A27D526CE57"
 				"520AD237AC3B724D"
 			]
 			description: [
@@ -1647,9 +1645,8 @@
 				}
 			]
 			title: "{gtia.quest.0B6B99B114BE146C.title}"
-			x: 15.0d
-			y: 12.0d
-			hide_dependency_lines: true
+			x: 19.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1676,8 +1673,8 @@
 				}
 			]
 			title: "{gtia.quest.41D6A548289FF42F.title}"
-			x: 17.5d
-			y: 7.0d
+			x: 26.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1704,8 +1701,8 @@
 				}
 			]
 			title: "{gtia.quest.2890D60ACDE4959D.title}"
-			x: 4.5d
-			y: 3.5d
+			x: 2.5d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -1732,8 +1729,8 @@
 				}
 			]
 			title: "{gtia.quest.15C7D95DE420E74C.title}"
-			x: 20.0d
-			y: 15.5d
+			x: 23.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1759,8 +1756,8 @@
 				}
 			]
 			title: "{gtia.quest.10A2B48FED1F6AC6.title}"
-			x: 5.5d
-			y: 14.0d
+			x: 14.5d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -1788,7 +1785,7 @@
 				}
 			]
 			title: "{gtia.quest.0EBD82984EF14E81.title}"
-			x: 9.0d
+			x: 12.5d
 			y: 12.5d
 		}
 		{
@@ -1802,7 +1799,7 @@
 			id: "392F0978473E4D96"
 			rewards: [ ]
 			shape: "circle"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "{gtia.quest.392F0978473E4D96.subtitle}"
 			tasks: [
 				{
@@ -1815,8 +1812,8 @@
 				}
 			]
 			title: "{gtia.quest.392F0978473E4D96.title}"
-			x: 13.5d
-			y: 19.0d
+			x: 9.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -1842,8 +1839,8 @@
 				}
 			]
 			title: "{gtia.quest.5BB7C360D019CF54.title}"
-			x: 10.5d
-			y: 19.5d
+			x: 9.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -1869,8 +1866,8 @@
 				}
 			]
 			title: "{gtia.quest.42A7A0ACDDB1588D.title}"
-			x: 13.0d
-			y: 17.0d
+			x: 10.5d
+			y: 13.5d
 		}
 		{
 			dependencies: [
@@ -1882,9 +1879,10 @@
 			]
 			icon: "minecraft:glass"
 			id: "3F1DCA7419D19774"
+			hide_dependent_lines: true
 			rewards: [ ]
 			shape: "circle"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "{gtia.quest.3F1DCA7419D19774.subtitle}"
 			tasks: [
 				{
@@ -1905,9 +1903,8 @@
 				}
 			]
 			title: "{gtia.quest.3F1DCA7419D19774.title}"
-			x: 28.5d
-			y: 6.0d
-			hide_dependency_lines: true
+			x: 10.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -1933,8 +1930,8 @@
 				}
 			]
 			title: "{gtia.quest.2C599B6E18221391.title}"
-			x: 31.5d
-			y: 7.5d
+			x: 16.5d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -1947,7 +1944,7 @@
 			id: "2D29E34885BE4BDE"
 			rewards: [ ]
 			shape: "circle"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "{gtia.quest.2D29E34885BE4BDE.subtitle}"
 			tasks: [
 				{
@@ -1960,9 +1957,8 @@
 				}
 			]
 			title: "{gtia.quest.2D29E34885BE4BDE.title}"
-			x: 23.5d
-			y: 22.0d
-			hide_dependency_lines: true
+			x: 10.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -1976,7 +1972,7 @@
 			id: "30B5CF8757F9BF2D"
 			rewards: [ ]
 			shape: "circle"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "{gtia.quest.30B5CF8757F9BF2D.subtitle}"
 			tasks: [
 				{
@@ -1989,8 +1985,8 @@
 				}
 			]
 			title: "{gtia.quest.30B5CF8757F9BF2D.title}"
-			x: 28.5d
-			y: 19.0d
+			x: 15.0d
+			y: 14.5d
 		}
 		{
 			dependencies: [
@@ -2026,8 +2022,8 @@
 				}
 			]
 			title: "{gtia.quest.625DD74AEAFA5AA4.title}"
-			x: 30.0d
-			y: 21.0d
+			x: 17.0d
+			y: 14.5d
 		}
 		{
 			dependencies: [
@@ -2053,8 +2049,8 @@
 				}
 			]
 			title: "{gtia.quest.52E07B2FAD21E496.title}"
-			x: 31.0d
-			y: 19.5d
+			x: 20.0d
+			y: 14.0d
 		}
 		{
 			dependencies: [
@@ -2065,6 +2061,7 @@
 			]
 			icon: "gtceu:red_alloy_single_cable"
 			id: "04D883B83F0A5B75"
+			hide_dependent_lines: true
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
@@ -2080,8 +2077,8 @@
 				}
 			]
 			title: "{gtia.quest.04D883B83F0A5B75.title}"
-			x: 23.5d
-			y: 24.0d
+			x: 21.5d
+			y: 15.5d
 		}
 		{
 			dependencies: [
@@ -2108,9 +2105,8 @@
 				}
 			]
 			title: "{gtia.quest.5A2F18CD6FB50ABA.title}"
-			x: 15.5d
-			y: 14.0d
-			hide_dependency_lines: true
+			x: 14.0d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -2123,7 +2119,7 @@
 			id: "39008B4252E18D4F"
 			rewards: [ ]
 			shape: "circle"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "{gtia.quest.39008B4252E18D4F.subtitle}"
 			tasks: [
 				{
@@ -2136,8 +2132,8 @@
 				}
 			]
 			title: "{gtia.quest.39008B4252E18D4F.title}"
-			x: 18.5d
-			y: 19.0d
+			x: 18.0d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -2163,8 +2159,8 @@
 				}
 			]
 			title: "{gtia.quest.09CD4AE957693FF7.title}"
-			x: 21.5d
-			y: 22.5d
+			x: 16.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -2200,9 +2196,8 @@
 				}
 			]
 			title: "{gtia.quest.1462856644D0B984.title}"
-			x: 23.5d
-			y: 14.0d
-			hide_dependency_lines: true
+			x: 13.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -2236,8 +2231,8 @@
 				}
 			]
 			title: "{gtia.quest.6953C899271F3796.title}"
-			x: 18.5d
-			y: 22.0d
+			x: 22.0d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -2264,8 +2259,8 @@
 				}
 			]
 			title: "{gtia.quest.69CA084126822E92.title}"
-			x: 19.5d
-			y: 24.0d
+			x: 21.5d
+			y: 14.0d
 		}
 		{
 			dependencies: [
@@ -2290,8 +2285,8 @@
 				}
 			]
 			title: "{gtia.quest.41499D4881126224.title}"
-			x: 8.0d
-			y: 20.0d
+			x: 20.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -2301,6 +2296,7 @@
 				"{gtia.quest.5AF28B9BC8D75791.desc.0}"
 			]
 			id: "5AF28B9BC8D75791"
+			hide_dependent_lines: true
 			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
@@ -2316,8 +2312,8 @@
 				}
 			]
 			title: "{gtia.quest.5AF28B9BC8D75791.title}"
-			x: 28.5d
-			y: 15.0d
+			x: 20.0d
+			y: 16.0d
 		}
 		{
 			dependencies: [
@@ -2331,7 +2327,7 @@
 			id: "0714D70458EEC997"
 			rewards: [ ]
 			shape: "diamond"
-			size: 2.0d
+			size: 1.75d
 			subtitle: "{gtia.quest.0714D70458EEC997.subtitle}"
 			tasks: [
 				{
@@ -2344,9 +2340,8 @@
 				}
 			]
 			title: "{gtia.quest.0714D70458EEC997.title}"
-			x: 8.5d
-			y: 25.5d
-			hide_dependency_lines: true
+			x: 24.5d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -2375,8 +2370,8 @@
 				}
 			]
 			title: "{gtia.quest.1470DD8318DF0F60.title}"
-			x: 20.5d
-			y: -1.0d
+			x: 7.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -2403,12 +2398,13 @@
 				}
 			]
 			title: "{gtia.quest.278E9258DFD1E67A.title}"
-			x: 19.0d
-			y: -1.0d
+			x: 8.0d
+			y: -6.5d
 		}
 		{
 			dependencies: [
 				"3713CBE1F33AC0E6"
+				"61C301395A3CD5BF"
 			]
 			description: [
 				"{gtia.quest.6637F16316206C88.desc.0}"
@@ -2433,9 +2429,8 @@
 				}
 			]
 			title: "{gtia.quest.6637F16316206C88.title}"
-			x: 28.5d
-			y: 8.0d
-			hide_dependency_lines: true
+			x: 11.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -2464,8 +2459,8 @@
 				}
 			]
 			title: "{gtia.quest.724D0AD550E0BFFE.title}"
-			x: 30.0d
-			y: 8.0d
+			x: 13.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -2489,8 +2484,8 @@
 				}
 			]
 			title: "{gtia.quest.7E683D21CB6D6CCD.title}"
-			x: 14.0d
-			y: 24.5d
+			x: 23.5d
+			y: 13.5d
 		}
 	]
 	title: "{gtia.quest.chapter.3C14547D33CC8C24}"
@@ -2501,14 +2496,14 @@
 			color: 16777215
 			corner: false
 			dev: false
-			height: 92.25d
+			height: 92.75d
 			hover: [ ]
 			image: "gtia_quests:textures/quests/backgrounds/steam.png"
 			order: -100
 			rotation: 0.0d
-			width: 92.25d
-			x: 16.625d
-			y: 12.375d
+			width: 92.75d
+			x: 11.375d
+			y: 4.75d
 		}
 		{
 			alpha: 255
@@ -2522,8 +2517,8 @@
 			order: 0
 			rotation: 0.0d
 			width: 7.0d
-			x: 6.5d
-			y: 0.0d
+			x: -1.5d
+			y: 3.5d
 		}
 	]
 }

@@ -1,3 +1,8 @@
+## Changes in 0.1.0-dev-7
+
+### Changes
+- **Steam, LV, MV and HV are back on the 0.1.0-dev-5 layout** while the GTNH 2.9 layout is redone: in dev-6 too many dependency lines were hidden and some quests had no line at all. The new tips sit next to the quest they explain.
+
 ## Changes in 0.1.0-dev-6
 
 ### New

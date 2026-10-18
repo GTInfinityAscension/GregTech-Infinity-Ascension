@@ -768,6 +768,8 @@ class Book:
             out = chapters_out[file]
             if chapter.get("layout") == "gtnh":
                 self.gtnh_positions(file, out)
+            if chapter.get("layout") == "fixed":
+                self.fixed_positions(file, out)
             if chapter.get("layout") == "layered":
                 exit_id = self.qid(file, "exit") if "exit" in self.specs[file] else None
                 quest_layout.layout(out, self.qid(file, "entry"), exit_id)
@@ -784,6 +786,26 @@ class Book:
                         (self.start_quest("Welcome to Infinity Ascension") if file == "welcome" else
                          ident("quest:start:wood") if file == "start" else None))
             place_images(out, chapter.get("banner"), entry_id, chapter.get("background"), chapter.get("texture"))
+
+    def fixed_positions(self, file: str, out: dict) -> None:
+        """The x/y written in quests-src/<file>.toml (the v7 layout, back while the GTNH layout is redone). Quests
+        without them (tips) move to a free spot by their dependencies; a line still running over a quest is hidden."""
+        import quest_layout
+        placed = {self.qid(file, q["key"]) for q in self.specs[file].get("quest", []) if "x" in q}
+        placed |= {self.qid(file, k) for k in ("entry", "exit") if "x" in self.specs[file].get(k, {})}
+        quests = {q["id"]: q for q in out["quests"]}
+        for q in quests.values():
+            q["x"], q["y"] = snbt.number(q["x"]), snbt.number(q["y"])
+        quest_layout._resolve_overlaps(quests, [i for i in quests if i not in placed])
+        moved = [i for i in quests if i not in placed]
+        quest_layout._relocate_blocked(quests, placed | {i for i in moved if not quest_layout._blocked(quests, i)})
+        for dep, kid in quest_layout._visible_edges(quests):
+            if quest_layout._runs_over(quests, dep, kid, margin=-0.05, scale=0.45):
+                quests[kid]["hide_dependency_lines"] = True
+        for q in quests.values():
+            q["x"], q["y"] = double(q["x"]), double(q["y"])
+            if q.get("hide_dependency_lines") is True:
+                q["hide_dependency_lines"] = Raw("true")
 
     def gtnh_positions(self, file: str, out: dict) -> None:
         """D-293: positions from quests-src/layout/<file>.toml, the GTNH 2.9 structure of that tier

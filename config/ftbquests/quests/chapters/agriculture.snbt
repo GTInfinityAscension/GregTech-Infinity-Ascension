@@ -34,7 +34,7 @@
 			]
 			title: "{gtia.quest.15C00FA8C66E0F43.title}"
 			x: 0.0d
-			y: 2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -62,7 +62,7 @@
 			]
 			title: "{gtia.quest.79D264DC2DF604DE.title}"
 			x: 2.5d
-			y: 2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -89,7 +89,7 @@
 			]
 			title: "{gtia.quest.5C6E1876A86071AF.title}"
 			x: 3.5d
-			y: 1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -116,7 +116,7 @@
 			]
 			title: "{gtia.quest.280C95B44BE970BE.title}"
 			x: 5.0d
-			y: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -143,7 +143,7 @@
 			]
 			title: "{gtia.quest.2CF80B31D06F2D33.title}"
 			x: 2.5d
-			y: -1.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -168,7 +168,7 @@
 			]
 			title: "{gtia.quest.61CDEB8D78DFB807.title}"
 			x: 2.5d
-			y: 5.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -193,7 +193,7 @@
 			]
 			title: "{gtia.quest.690F090EAB32DC94.title}"
 			x: 4.0d
-			y: 6.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -238,7 +238,7 @@
 			]
 			title: "{gtia.quest.6D5D193145CB0911.title}"
 			x: 5.0d
-			y: 5.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -265,7 +265,7 @@
 			]
 			title: "{gtia.quest.5C0076AE44C3EB29.title}"
 			x: 7.5d
-			y: 5.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -292,7 +292,7 @@
 			]
 			title: "{gtia.quest.540A418CDBD31773.title}"
 			x: 5.0d
-			y: 1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -318,8 +318,8 @@
 				}
 			]
 			title: "{gtia.quest.49E154954764A4ED.title}"
-			x: 5.0d
-			y: -0.5d
+			x: 6.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -348,7 +348,7 @@
 			]
 			title: "{gtia.quest.40D5BC0F0055731A.title}"
 			x: 7.5d
-			y: 2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -373,7 +373,7 @@
 			]
 			title: "{gtia.quest.3387CEA15F0DDD4E.title}"
 			x: 9.5d
-			y: 0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -400,7 +400,7 @@
 			]
 			title: "{gtia.quest.002D387591CB9B9D.title}"
 			x: 9.5d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -427,7 +427,7 @@
 			]
 			title: "{gtia.quest.4D49C4B1B20C5EC3.title}"
 			x: -2.0d
-			y: 2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -452,7 +452,7 @@
 			]
 			title: "{gtia.quest.5A8DE80B2B95A82C.title}"
 			x: 0.0d
-			y: 0.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -480,7 +480,7 @@
 			]
 			title: "{gtia.quest.56013617611B005C.title}"
 			x: 10.0d
-			y: 2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -506,8 +506,8 @@
 				}
 			]
 			title: "{gtia.quest.6AE53EA8632C0F32.title}"
-			x: 7.5d
-			y: 7.0d
+			x: 9.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -535,7 +535,7 @@
 			]
 			title: "{gtia.quest.113F593262989A47.title}"
 			x: 12.5d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -562,7 +562,7 @@
 			]
 			title: "{gtia.quest.4C222A05EE2D18AE.title}"
 			x: 15.0d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -589,7 +589,7 @@
 			]
 			title: "{gtia.quest.72AB8F349180CB28.title}"
 			x: 0.0d
-			y: 5.0d
+			y: 1.0d
 		}
 	]
 	title: "{gtia.quest.chapter.1CDFB08E1A218016}"
@@ -607,7 +607,7 @@
 			rotation: 0.0d
 			width: 81.0d
 			x: 5.0d
-			y: 2.25d
+			y: -1.6875d
 		}
 		{
 			alpha: 255
@@ -622,7 +622,7 @@
 			rotation: 0.0d
 			width: 7.0d
 			x: -2.0d
-			y: -2.0d
+			y: -6.0d
 		}
 	]
 }
