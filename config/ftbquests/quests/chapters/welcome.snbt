@@ -168,11 +168,6 @@
 					item: "minecraft:crying_obsidian"
 					type: "item"
 				}
-				{
-					id: "59CC94CAE75F034B"
-					item: "modernspace:personal_space_portal"
-					type: "item"
-				}
 			]
 			tasks: [
 				{
@@ -540,6 +535,43 @@
 			y: -2.25d
 			icon: "gtceu:steel_axe"
 			hide_until_deps_complete: true
+		}
+		{
+			dependencies: [ ]
+			description: [
+				"{gtia.quest.4FD105EEE01075DA.desc.0}"
+			]
+			id: "4FD105EEE01075DA"
+			rewards: [
+				{
+					id: "694006E408B2775B"
+					item: {
+						Count: 1b
+						id: "gtceu:steel_pickaxe"
+						tag: {Enchantments:[{id:"minecraft:fortune",lvl:3s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:efficiency",lvl:3s}]}
+					}
+					type: "item"
+				}
+				{
+					id: "4A38B881931B3163"
+					item: "gtceu:steel_mining_hammer"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "{gtia.quest.4FD105EEE01075DA.subtitle}"
+			tasks: [
+				{
+					id: "7DC519C211C79C3D"
+					title: "{gtia.quest.4FD105EEE01075DA.task.7DC519C211C79C3D}"
+					type: "checkmark"
+				}
+			]
+			title: "{gtia.quest.4FD105EEE01075DA.title}"
+			icon: "gtceu:steel_pickaxe"
+			x: 3.75d
+			y: -2.25d
 		}
 		{
 			dependencies: [

@@ -2126,5 +2126,11 @@
  "Very short recipes lose time between runs. The &6Batch Mode&r button in a multiblock controller's screen groups several runs into one longer run. The EBF and the Large Chemical Reactor support it.": "非常短的配方会在每次之间浪费时间。多方块控制器界面中的&6批处理模式&r按钮会把多次合并为一次更长的运行。电力高炉和大型化学反应釜都支持。",
  "Wood in the Coke Oven": "焦炉里的木头",
  "Yeast turns &e2 Sugar&r and &e100 mB&r of water into &e50 mB&r of &6Ethanol&r: the feed of the dehydration and a fuel of its own. The &6Brewery&r turns plants into Biomass, if you want the long way.": "酵母把 &e2 份糖&r和 &e100 mB&r 水变成 &e50 mB&r &6乙醇&r：既是脱水的原料，本身也是燃料。想走远路的话，&6酿造室&r能把植物变成生物质。",
- "Your old Coke Oven calcines &e2 Aluminium Hydroxide&r into &e1 Alumina&r. The Steam Age is still working for you.": "你的老焦炉把 &e2 份氢氧化铝&r煅烧成 &e1 份氧化铝&r。蒸汽时代仍在为你效力。"
+ "Your old Coke Oven calcines &e2 Aluminium Hydroxide&r into &e1 Alumina&r. The Steam Age is still working for you.": "你的老焦炉把 &e2 份氢氧化铝&r煅烧成 &e1 份氧化铝&r。蒸汽时代仍在为你效力。",
+ "A ME Controller, a drive and a terminal: every item in one network. The MV Laser Engraver prints the processors from the presses of AE2 meteorites, the Circuit Assembler finishes them, and the MV Assembler builds the network blocks. Autocrafting comes next; wireless access and P2P wait for High Voltage.": "一个 ME 控制器、一个驱动器和一个终端：所有物品都在一个网络里。MV 激光雕刻机用 AE2 陨石里的压印模板印刷处理器，电路组装机完成它们，MV 组装机制造网络方块。接下来是自动合成；无线访问和 P2P 要等到高压。",
+ "A steel pickaxe with Fortune III, Unbreaking III and Efficiency III, and a Steel Mining Hammer for 3 x 3 tunnels. Fortune multiplies the raw ore of every GregTech ore, as it does in vanilla.": "一把带有时运 III、耐久 III 和效率 III 的钢镐，以及一把用于 3 x 3 隧道的钢制采矿锤。时运会像原版一样倍增所有 GregTech 矿石的粗矿。",
+ "An Ender Pearl and two Blaze Powder in the &6HV Assembler&r: the only way to make the eye. The HV Sensor and Emitter look through it, and it opens the way to the End.": "一颗末影珍珠和两份烈焰粉放进&6HV 组装机&r：这是制作末影之眼的唯一方法。HV 传感器和发射器通过它观察，它也打开了通往末地的路。",
+ "Fortune works on GregTech ores.": "时运对 GregTech 矿石有效。",
+ "Large machines need room: the reward is a &6Personal Space Portal&r, a dimension of your own to build the factory in.": "大型机器需要空间：奖励是一个&6个人空间传送门&r，一个属于你自己的维度，可以在里面建造工厂。",
+ "Mining Kit": "采矿工具包"
 }

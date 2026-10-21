@@ -224,7 +224,8 @@
 		}
 		{
 			dependencies: [
-				"1EA40DE258CB0D37"
+				"0BF30866F9B0CEBA"
+				"667FD8A52B98CABC"
 			]
 			description: [
 				"{gtia.quest.1CBB0DE275C91AE9.desc.0}"
@@ -248,6 +249,7 @@
 			title: "{gtia.quest.1CBB0DE275C91AE9.title}"
 			x: 3.0d
 			y: 4.5d
+			hide_dependency_lines: true
 		}
 		{
 			dependencies: [
@@ -723,7 +725,6 @@
 		{
 			dependencies: [
 				"25498C9A9F1CC36E"
-				"3BDC45EDEE04CD6A"
 			]
 			description: [
 				"{gtia.quest.2CB52F62E8DC7FB2.desc.0}"
@@ -2734,7 +2735,8 @@
 		}
 		{
 			dependencies: [
-				"1EA40DE258CB0D37"
+				"3C748EBFCDA9FBE3"
+				"25498C9A9F1CC36E"
 			]
 			description: [
 				"{gtia.quest.68E6A481B1474EC2.desc.0}"
@@ -2758,10 +2760,12 @@
 			title: "{gtia.quest.68E6A481B1474EC2.title}"
 			x: 1.0d
 			y: 12.0d
+			hide_dependency_lines: true
 		}
 		{
 			dependencies: [
-				"1EA40DE258CB0D37"
+				"3C748EBFCDA9FBE3"
+				"25498C9A9F1CC36E"
 			]
 			description: [
 				"{gtia.quest.3E17ADB02173B934.desc.0}"
@@ -2785,6 +2789,7 @@
 			title: "{gtia.quest.3E17ADB02173B934.title}"
 			x: 0.0d
 			y: 5.0d
+			hide_dependency_lines: true
 		}
 		{
 			dependencies: [

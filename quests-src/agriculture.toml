@@ -252,7 +252,7 @@ key = "hv_analyzer"
 title = "HV Seed Analyzer"
 role = "side"
 icon = "gtia:hv_seed_analyzer"
-deps = ["seed_analyzer", "hv:hv_hull"]
+deps = ["seed_analyzer", "hv:hv_sensor", "hv:hv_emitter"]
 subtitle = "Faster reading."
 task = [{ item = "gtia:hv_seed_analyzer" }]
 text = """

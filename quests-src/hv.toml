@@ -143,11 +143,11 @@ x = 3
 y = 4.5
 shape = "circle"
 size = 1
-deps = ["hv_hull"]
+deps = ["hv_hull", "hv_assembler", "hv_power"]
 subtitle = "The eye of HV sensors."
 task = [{ item = "minecraft:ender_eye" }]
 text = """
-Ender Pearl and Blaze Powder. The HV Sensor and Emitter look through it.
+An Ender Pearl and two Blaze Powder in the [item]HV Assembler[/]: the only way to make the eye. The HV Sensor and Emitter look through it, and it opens the way to the End.
 """
 
 [[quest]]
@@ -1594,7 +1594,7 @@ x = 1
 y = 12
 shape = "octagon"
 size = 1
-deps = ["hv_hull"]
+deps = ["hv_hull", "hv_sensor", "hv_emitter"]
 subtitle = "Bridge: Bees."
 task = [{ item = "gtia:hv_industrial_apiary" }]
 text = """
@@ -1610,7 +1610,7 @@ x = 0
 y = 5
 shape = "octagon"
 size = 1
-deps = ["hv_hull"]
+deps = ["hv_hull", "hv_sensor", "hv_emitter"]
 subtitle = "Bridge: Agriculture."
 task = [{ item = "gtia:hv_seed_analyzer" }]
 text = """

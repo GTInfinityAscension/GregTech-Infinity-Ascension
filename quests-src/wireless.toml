@@ -10,6 +10,8 @@ GTNA moves steam and electricity through the air. Steam hatches share steam over
 
 [[quest]]
 key = "steam_output"
+mode = "journey"
+pending = "Journey only: the pack export is a Normal world, which has no wireless steam recipes (GTIA-D-340)"
 lane = "materials"
 row = 1
 role = "spine"
@@ -24,6 +26,8 @@ Put the output hatch next to a boiler and its steam goes into the wireless netwo
 
 [[quest]]
 key = "steam_input"
+mode = "journey"
+pending = "Journey only: the pack export is a Normal world, which has no wireless steam recipes (GTIA-D-340)"
 lane = "spine"
 row = 2
 role = "spine"
@@ -41,7 +45,7 @@ key = "steam_manufacturer"
 lane = "materials"
 row = 3
 role = "spine"
-deps = ["steam_input", "lv:lv_mixer"]
+deps = ["entry", "lv:lv_mixer"]
 icon = "gtna:steam_manufacturer"
 title = "Steam Manufacturer"
 subtitle = "Hydraulic assembly."
@@ -52,6 +56,8 @@ The Steam Manufacturer assembles hydraulic parts and upgrades steam hatches. It 
 
 [[quest]]
 key = "steam_steel"
+mode = "journey"
+pending = "Journey only: the pack export is a Normal world, which has no wireless steam recipes (GTIA-D-340)"
 lane = "spine"
 row = 3
 role = "spine"
@@ -69,7 +75,7 @@ key = "mv_bender"
 lane = "materials"
 row = 4
 role = "spine"
-deps = ["steam_input", "mv:mv_power"]
+deps = ["entry", "mv:mv_power"]
 icon = "gtceu:mv_bender"
 title = "MV Bender"
 subtitle = "Dense plates."

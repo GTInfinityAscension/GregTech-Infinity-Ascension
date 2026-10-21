@@ -517,6 +517,15 @@ class Book:
                 quest["dependencies"] = [ref(d) for d in quest.pop("_deps")]
         for title, deps in meta.get("deps", {}).items():
             by_title[title]["dependencies"] = [ref(d) for d in deps]
+        # An author reward the author later moved elsewhere ([[reward_removal]], each with its decision).
+        for removal in meta.get("reward_removal", []):
+            quest = by_title[removal["title"]]
+            before = len(quest.get("rewards", []))
+            quest["rewards"] = [r for r in quest.get("rewards", []) if not (
+                r.get("item") == removal["item"] or (isinstance(r.get("item"), dict) and
+                                                     r["item"].get("id") == removal["item"]))]
+            if len(quest["rewards"]) == before:
+                raise SystemExit(f"start.toml reward_removal: {removal['item']} not in {removal['title']!r}")
         for fix in meta.get("text_fix", []):
             quest = by_title[fix["title"]]
             lines = quest["description"]
@@ -527,15 +536,20 @@ class Book:
             if fix.get("new_title"):
                 quest["title"] = fix["new_title"]
         # D-279: some Start rewards depend on the mode. Journey keeps the author's rewards; Normal gets tier ones.
+        # D-348: `both` is a kit for both modes (an item may carry `nbt`, e.g. enchantments), in a quest of its own
+        # next to the mode kits, so the author's Journey rewards stay as they are.
+        def kit_reward(key, i, r):
+            item = r["item"] if "nbt" not in r else {"Count": Raw("1b"), "id": r["item"], "tag": Raw(r["nbt"])}
+            return {**({"count": Raw(str(r["count"]))} if r.get("count", 1) > 1 else {}),
+                    "id": ident(f"reward:start:{key}:{i}"), "item": item, "type": "item"}
+
         for spec in meta.get("mode_reward", []):
             base = by_title[spec["title"]]
             journey_rewards, base["rewards"] = base.get("rewards", []), []
             for mode, rewards, dx in (("journey", journey_rewards, 0.0), ("normal", None, 0.0)):
                 key = f"{spec['key']}_{mode}"
                 if rewards is None:
-                    rewards = [{**({"count": Raw(str(r["count"]))} if r.get("count", 1) > 1 else {}),
-                                "id": ident(f"reward:start:{key}:{i}"), "item": r["item"], "type": "item"}
-                               for i, r in enumerate(spec["normal"])]
+                    rewards = [kit_reward(key, i, r) for i, r in enumerate(spec["normal"])]
                 # Visible from the start in worlds of its mode; it completes with the same task as its Start step,
                 # so the kit is claimed when that step is done (a dependency on the step would hide it until then).
                 tasks = [{**task, "id": ident(f"task:start:{key}:{i}")} for i, task in enumerate(base.get("tasks", []))]
@@ -548,6 +562,18 @@ class Book:
                 quest["icon"] = first if isinstance(first, str) else (first or {}).get("id") or base.get("icon", "minecraft:chest")
                 quest["_chapter"] = spec.get("chapter", "start")
                 add_mode(quest, mode)
+                start["quests"].append(quest)
+            if spec.get("both"):
+                key = spec["key"] + "_both"
+                tasks = [{**task, "id": ident(f"task:start:{key}:{i}")} for i, task in enumerate(base.get("tasks", []))]
+                quest = {"dependencies": [], "description": paragraphs(spec["both_text"]),
+                         "id": ident("quest:start:" + key),
+                         "rewards": [kit_reward(key, i, r) for i, r in enumerate(spec["both"])], "shape": "diamond",
+                         "size": double(1.0), "subtitle": spec["both_subtitle"],
+                         "tasks": tasks or [{"id": ident(f"task:start:{key}"), "type": "checkmark", "title": "Claim"}],
+                         "title": spec["both_title"], "icon": spec["both"][0]["item"],
+                         "x": double(spec["x"] + spec.get("both_dx", 1.25)), "y": double(spec["y"])}
+                quest["_chapter"] = spec.get("chapter", "start")
                 start["quests"].append(quest)
         # D-291: the Steam supplies become per-mode kits in place: the author's quest is Journey's, a twin with
         # smaller supplies is Normal's.

@@ -81,7 +81,7 @@ key = "apiary"
 title = "Industrial Apiary"
 role = "gate"
 icon = "gtia:hv_industrial_apiary"
-deps = ["entry", "hv:hv_power"]
+deps = ["entry", "hv:hv_power", "hv:hv_sensor"]
 subtitle = "A hive with a power cable."
 task = [{ item = "gtia:hv_industrial_apiary" }]
 text = """
@@ -142,7 +142,7 @@ key = "mutation"
 title = "Mutation Chamber"
 role = "gate"
 icon = "gtia:hv_mutation_chamber"
-deps = ["apiary", "treat"]
+deps = ["apiary", "treat", "hv:hv_emitter"]
 subtitle = "No luck, only recipes."
 task = [{ item = "gtia:hv_mutation_chamber" }]
 text = """

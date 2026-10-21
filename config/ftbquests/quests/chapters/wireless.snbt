@@ -34,6 +34,7 @@
 				"5C019B5E2846B9D4"
 				"44D8CABA778F9F26"
 				"2D7482D6B779CB3D"
+				"270B3B2AA4C678D7"
 			]
 			description: [
 				"{gtia.quest.66FE9D53EFC5809F.desc.0}"
@@ -42,7 +43,7 @@
 			id: "66FE9D53EFC5809F"
 			rewards: [ ]
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
 			subtitle: "{gtia.quest.66FE9D53EFC5809F.subtitle}"
 			tasks: [
 				{
@@ -57,10 +58,14 @@
 			title: "{gtia.quest.66FE9D53EFC5809F.title}"
 			x: -3.0d
 			y: 1.5d
+			hide_until_deps_complete: true
 		}
 		{
 			dependencies: [
 				"66FE9D53EFC5809F"
+				"44D8CABA778F9F26"
+				"2D7482D6B779CB3D"
+				"270B3B2AA4C678D7"
 			]
 			description: [
 				"{gtia.quest.3AEF99284092055C.desc.0}"
@@ -69,7 +74,7 @@
 			id: "3AEF99284092055C"
 			rewards: [ ]
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
 			subtitle: "{gtia.quest.3AEF99284092055C.subtitle}"
 			tasks: [
 				{
@@ -84,10 +89,11 @@
 			title: "{gtia.quest.3AEF99284092055C.title}"
 			x: 0.0d
 			y: 3.0d
+			hide_until_deps_complete: true
 		}
 		{
 			dependencies: [
-				"3AEF99284092055C"
+				"5C019B5E2846B9D4"
 				"20EC7F7C7CE0AE76"
 			]
 			description: [
@@ -97,7 +103,7 @@
 			id: "51A80DE0F5320E35"
 			rewards: [ ]
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
 			subtitle: "{gtia.quest.51A80DE0F5320E35.subtitle}"
 			tasks: [
 				{
@@ -115,7 +121,9 @@
 		}
 		{
 			dependencies: [
+				"3AEF99284092055C"
 				"51A80DE0F5320E35"
+				"270B3B2AA4C678D7"
 			]
 			description: [
 				"{gtia.quest.51BA7FA5C93FFC0A.desc.0}"
@@ -124,7 +132,7 @@
 			id: "51BA7FA5C93FFC0A"
 			rewards: [ ]
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
 			subtitle: "{gtia.quest.51BA7FA5C93FFC0A.subtitle}"
 			tasks: [
 				{
@@ -139,10 +147,11 @@
 			title: "{gtia.quest.51BA7FA5C93FFC0A.title}"
 			x: 0.0d
 			y: 4.5d
+			hide_until_deps_complete: true
 		}
 		{
 			dependencies: [
-				"3AEF99284092055C"
+				"5C019B5E2846B9D4"
 				"6D1F91AD527835FA"
 			]
 			description: [
@@ -152,7 +161,7 @@
 			id: "28B3E457A1246B30"
 			rewards: [ ]
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
 			subtitle: "{gtia.quest.28B3E457A1246B30.subtitle}"
 			tasks: [
 				{
@@ -180,7 +189,7 @@
 			id: "2696A2F1B3139C12"
 			rewards: [ ]
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
 			subtitle: "{gtia.quest.2696A2F1B3139C12.subtitle}"
 			tasks: [
 				{
@@ -199,6 +208,7 @@
 		{
 			dependencies: [
 				"2696A2F1B3139C12"
+				"16DD3A8F254586F7"
 			]
 			description: [
 				"{gtia.quest.62B6515FA46E9E07.desc.0}"
@@ -253,6 +263,7 @@
 		{
 			dependencies: [
 				"5BDAE697615BCBC7"
+				"5090547B46FCE73D"
 			]
 			description: [
 				"{gtia.quest.6B4A626EEB7C8149.desc.0}"
@@ -280,6 +291,7 @@
 		{
 			dependencies: [
 				"5BDAE697615BCBC7"
+				"5090547B46FCE73D"
 			]
 			description: [
 				"{gtia.quest.37121221C77746A4.desc.0}"
@@ -319,7 +331,7 @@
 			order: -100
 			rotation: 0.0d
 			width: 71.25d
-			x: 0.6875d
+			x: 0.75d
 			y: 4.625d
 		}
 	]

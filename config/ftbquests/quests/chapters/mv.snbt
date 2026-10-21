@@ -489,6 +489,7 @@
 			title: "{gtia.quest.52E80D9614D45259.title}"
 			x: 10.5d
 			y: 12.5d
+			hide_dependency_lines: true
 		}
 		{
 			dependencies: [
@@ -1753,7 +1754,48 @@
 		{
 			dependencies: [
 				"1B0581FFF976E579"
-				"355578D8EBE7AC17"
+				"5033C713FFFE6453"
+				"5090547B46FCE73D"
+			]
+			description: [
+				"{gtia.quest.13D3E19AC83560D2.desc.0}"
+			]
+			id: "13D3E19AC83560D2"
+			rewards: [
+				{
+					id: "32CB724AD4D2262B"
+					item: "ae2:energy_acceptor"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "{gtia.quest.13D3E19AC83560D2.subtitle}"
+			tasks: [
+				{
+					id: "2396F7001BDA6C7D"
+					type: "item"
+					item: "ae2:controller"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "15A45C7CA3CF7FEE"
+					type: "item"
+					item: "ae2:drive"
+					count: 1L
+					consume_items: false
+					match_nbt: false
+				}
+			]
+			title: "{gtia.quest.13D3E19AC83560D2.title}"
+			x: 8.5d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"13D3E19AC83560D2"
 			]
 			description: [
 				"{gtia.quest.52BA60C2A0378DFA.desc.0}"

@@ -1041,6 +1041,22 @@ Much more Methanol and Acetic Acid from the same Wood Vinegar.
 """
 
 [[quest]]
+key = "ae2_start"
+title = "Applied Energistics"
+role = "side"
+x = 8.5
+y = 10
+shape = "circle"
+size = 1
+deps = ["mv_assembler", "mv_engraver", "mv_cutter", "lv:lv_circuit_assembler"]
+subtitle = "Storage that thinks."
+task = [{ item = "ae2:controller" }, { item = "ae2:drive" }]
+reward = [{ item = "ae2:energy_acceptor" }]
+text = """
+A ME Controller, a drive and a terminal: every item in one network. The MV Laser Engraver prints the processors from the presses of AE2 meteorites, the Circuit Assembler finishes them, and the MV Assembler builds the network blocks. Autocrafting comes next; wireless access and P2P wait for High Voltage.
+"""
+
+[[quest]]
 key = "autocrafting"
 title = "Autocrafting"
 role = "side"
@@ -1048,7 +1064,7 @@ x = 7.0
 y = 10.0
 shape = "circle"
 size = 1
-deps = ["mv_assembler", "lv:ae2_start"]
+deps = ["ae2_start", "mv_assembler", "mv_arm"]
 subtitle = "The network starts working for you."
 task = [{ item = "ae2:pattern_provider" }, { item = "ae2:molecular_assembler" }, { item = "ae2:crafting_unit" }]
 text = """

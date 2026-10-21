@@ -118,6 +118,7 @@ file = "wireless"
 background = "#1D5E61"
 texture = "wireless"
 kind = "generated"
+legacy = true   # GTIA-D-351: redone with the quest atlas after Start to MV (Flux Matrix in HV)
 group = "systems"
 order = 9
 

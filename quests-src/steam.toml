@@ -662,10 +662,13 @@ size = 1.5
 deps = ["gallery", "grinder", "alloy"]
 subtitle = "Four grinders in one machine."
 task = [{ item = "gtna:large_steam_crusher" }]
+reward = [{ item = "modernspace:personal_space_portal" }]
 group = "ore"
 optional = false
 text = """
 Crushes ore in parallel. Four Steam Grinders, Stronze Plates and a Precision Steam Component. It opens GTNA's Large steam line.
+
+Large machines need room: the reward is a [item]Personal Space Portal[/], a dimension of your own to build the factory in.
 """
 
 [[quest]]

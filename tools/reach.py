@@ -58,6 +58,7 @@ def available() -> bool:
 class Model:
     def __init__(self):
         config = tomllib.loads(CONFIG.read_text(encoding="utf-8"))
+        self.reward_only = set(config.get("reward_only", {}).get("items", []))
         self.items = set((EXPORT / "items.txt").read_text(encoding="utf-8").split())
         self.fluids = set((EXPORT / "fluids.txt").read_text(encoding="utf-8").split())
         self.machines = [json.loads(line) for line in open(EXPORT / "machines.jsonl", encoding="utf-8")]
@@ -382,7 +383,7 @@ def check(quests_by_id: dict[str, dict], names: dict[str, str], stop_at: str | N
                     yield qid, (f"gives the machine {token[2:]}; the player should build it (give a reason with "
                                 "allow_machine_reward if this is deliberate)")
                 continue
-            if not state.has(token):
+            if not state.has(token) and token[2:] not in model.reward_only:
                 yield qid, f"gives {token[2:]}, which the player cannot make yet even after this quest"
             if token in descendants_tasks[qid]:
                 yield qid, f"gives {token[2:]}, which a later quest asks the player to make"

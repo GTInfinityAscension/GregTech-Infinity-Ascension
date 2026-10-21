@@ -427,6 +427,14 @@ normal = [
     { item = "gtceu:steel_pickaxe" },
     { item = "gtceu:steel_shovel" },
 ]
+# GTIA-D-348: the mining kit, in both modes, in a quest of its own.
+both_title = "Mining Kit"
+both_subtitle = "Fortune works on GregTech ores."
+both_text = "A steel pickaxe with Fortune III, Unbreaking III and Efficiency III, and a Steel Mining Hammer for 3 x 3 tunnels. Fortune multiplies the raw ore of every GregTech ore, as it does in vanilla."
+both = [
+    { item = "gtceu:steel_pickaxe", nbt = '{Enchantments:[{id:"minecraft:fortune",lvl:3s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:efficiency",lvl:3s}]}' },
+    { item = "gtceu:steel_mining_hammer" },
+]
 
 [[mode_reward]]
 key = "workbench_kit"
@@ -499,3 +507,9 @@ title = "A Tool for the Next Stage"
 normal_subtitle = "Equipment for a growing mining operation."
 normal_text = "Claim a Steel Mining Hammer: it breaks a 3 x 3 area at once, a good friend for the long tunnels of the Steam Age."
 normal = [{ item = "gtceu:steel_mining_hammer" }]
+
+# GTIA-D-347: the personal dimension portal moves from "Room for a Factory" to the Steam chapter (Large Steam Machines).
+[[reward_removal]]
+title = "Room for a Factory"
+item = "modernspace:personal_space_portal"
+

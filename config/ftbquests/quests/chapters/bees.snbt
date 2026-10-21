@@ -32,7 +32,7 @@
 			]
 			title: "{gtia.quest.534EA0EFEFEF196A.title}"
 			x: 0.0d
-			y: 8.5d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -59,7 +59,7 @@
 			]
 			title: "{gtia.quest.41BEC28E3DE99535.title}"
 			x: 2.5d
-			y: 5.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -83,7 +83,7 @@
 			]
 			title: "{gtia.quest.219D196510C59DB9.title}"
 			x: 5.0d
-			y: 6.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -110,7 +110,7 @@
 			]
 			title: "{gtia.quest.57A6FBE224B5D911.title}"
 			x: 2.5d
-			y: 7.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -135,14 +135,12 @@
 				}
 			]
 			title: "{gtia.quest.2C61BAEEE679316E.title}"
-			x: 5.0d
-			y: 10.5d
+			x: 0.0d
+			y: -9.0d
 		}
 		{
 			dependencies: [
 				"219D196510C59DB9"
-				"2C61BAEEE679316E"
-				"069EED1B702CDEF4"
 			]
 			description: [
 				"{gtia.quest.7B40B3F427F9CA07.desc.0}"
@@ -164,12 +162,11 @@
 			]
 			title: "{gtia.quest.7B40B3F427F9CA07.title}"
 			x: 7.5d
-			y: 8.5d
+			y: -7.5d
 		}
 		{
 			dependencies: [
-				"534EA0EFEFEF196A"
-				"667FD8A52B98CABC"
+				"3C748EBFCDA9FBE3"
 			]
 			description: [
 				"{gtia.quest.6C8989C00FB54110.desc.0}"
@@ -191,12 +188,11 @@
 				}
 			]
 			title: "{gtia.quest.6C8989C00FB54110.title}"
-			x: 3.0d
-			y: 12.5d
+			x: 2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
-				"7B40B3F427F9CA07"
 				"6C8989C00FB54110"
 			]
 			description: [
@@ -219,8 +215,8 @@
 				}
 			]
 			title: "{gtia.quest.1D7DEEAD4BE44447.title}"
-			x: 10.0d
-			y: 8.5d
+			x: 5.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -244,8 +240,8 @@
 				}
 			]
 			title: "{gtia.quest.1136E33E3FD99DE1.title}"
-			x: 10.0d
-			y: 6.5d
+			x: 5.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -273,8 +269,8 @@
 				}
 			]
 			title: "{gtia.quest.21AD28D820DFECB8.title}"
-			x: 12.5d
-			y: 8.5d
+			x: 7.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -300,8 +296,8 @@
 				}
 			]
 			title: "{gtia.quest.0283F4777ECE4253.title}"
-			x: 0.5d
-			y: 5.0d
+			x: 4.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -330,7 +326,7 @@
 			]
 			title: "{gtia.quest.4D5FE0F95AD07F5E.title}"
 			x: 5.0d
-			y: 8.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -356,8 +352,8 @@
 				}
 			]
 			title: "{gtia.quest.3D8102E26BB79B9D.title}"
-			x: 7.5d
-			y: 11.0d
+			x: 7.0d
+			y: 2.0d
 		}
 	]
 	title: "{gtia.quest.chapter.6E798AA6D038ED8A}"
@@ -368,14 +364,14 @@
 			color: 16777215
 			corner: false
 			dev: false
-			height: 78.125d
+			height: 77.125d
 			hover: [ ]
 			image: "gtia_quests:textures/quests/backgrounds/bees.png"
 			order: -100
 			rotation: 0.0d
-			width: 78.125d
-			x: 4.5625d
-			y: 6.5625d
+			width: 77.125d
+			x: 2.0625d
+			y: -5.6875d
 		}
 		{
 			alpha: 255
@@ -390,7 +386,7 @@
 			rotation: 0.0d
 			width: 7.0d
 			x: -1.0d
-			y: 1.875d
+			y: -12.125d
 		}
 	]
 }

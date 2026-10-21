@@ -1168,9 +1168,17 @@
 			]
 			description: [
 				"{gtia.quest.6961142793AE9F7B.desc.0}"
+				""
+				"{gtia.quest.6961142793AE9F7B.desc.2}"
 			]
 			id: "6961142793AE9F7B"
-			rewards: [ ]
+			rewards: [
+				{
+					id: "3CAD4CA05F846CD5"
+					item: "modernspace:personal_space_portal"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			subtitle: "{gtia.quest.6961142793AE9F7B.subtitle}"

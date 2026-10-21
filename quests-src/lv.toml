@@ -1081,22 +1081,6 @@ Casing, two Copper Cables, two Wrought Iron Plates and an Aluminium Plate.
 """
 
 [[quest]]
-key = "ae2_start"
-title = "Applied Energistics"
-role = "side"
-x = 8.5
-y = 13
-shape = "circle"
-size = 1
-deps = ["lv_assembler"]
-subtitle = "Storage that thinks."
-task = [{ item = "ae2:controller" }]
-reward = [{ item = "ae2:energy_acceptor" }]
-text = """
-A ME Controller, a drive and a terminal: every item in one network. Autocrafting comes in Medium Voltage.
-"""
-
-[[quest]]
 key = "lv_multis"
 title = "LV Multiblocks"
 role = "hint"

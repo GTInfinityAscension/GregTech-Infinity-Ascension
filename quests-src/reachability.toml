@@ -43,6 +43,11 @@ fluids = ["minecraft:water", "minecraft:lava", "minecraft:milk"]
 
 # Blocks and ores of other dimensions that are not GregTech veins (Ad Astra places them itself). They count once a
 # quest with a dimension task for that dimension is done.
+[reward_only]
+# Items with no recipe on purpose: the book gives them, so a reward of one is not an error.
+# GTIA-D-347: the personal dimension portal is the reward of a Steam quest.
+items = ["modernspace:personal_space_portal"]
+
 [dimension_items]
 "ad_astra:moon" = ["ad_astra:moon_*", "ad_astra:raw_desh", "ad_astra:desh_*", "ad_astra:ice_shard"]
 

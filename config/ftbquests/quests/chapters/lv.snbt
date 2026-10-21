@@ -1850,38 +1850,6 @@
 				"2D7482D6B779CB3D"
 			]
 			description: [
-				"{gtia.quest.355578D8EBE7AC17.desc.0}"
-			]
-			id: "355578D8EBE7AC17"
-			rewards: [
-				{
-					id: "7DADABCC24D78C83"
-					item: "ae2:energy_acceptor"
-					type: "item"
-				}
-			]
-			shape: "circle"
-			size: 1.0d
-			subtitle: "{gtia.quest.355578D8EBE7AC17.subtitle}"
-			tasks: [
-				{
-					id: "5EE0B64B9111C4C3"
-					type: "item"
-					item: "ae2:controller"
-					count: 1L
-					consume_items: false
-					match_nbt: false
-				}
-			]
-			title: "{gtia.quest.355578D8EBE7AC17.title}"
-			x: 8.5d
-			y: 13.0d
-		}
-		{
-			dependencies: [
-				"2D7482D6B779CB3D"
-			]
-			description: [
 				"{gtia.quest.418F6715590E84F5.desc.0}"
 			]
 			id: "418F6715590E84F5"
@@ -2088,8 +2056,8 @@
 				}
 			]
 			title: "{gtia.quest.560B95AA0A068055.title}"
-			x: 11.5d
-			y: 16.5d
+			x: 8.5d
+			y: 13.0d
 		}
 		{
 			dependencies: [

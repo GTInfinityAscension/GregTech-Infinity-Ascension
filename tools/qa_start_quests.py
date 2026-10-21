@@ -53,7 +53,8 @@ def audit():
  # The Journey kit of each Start step (start.toml [[mode_reward]]) carries the author's original rewards.
  sys.path.insert(0,str(pack/'tools')); from questgen import ident
  by_title={q.get('title'):q['id'] for q in Parser((pack/'quests-src/start.original.snbt').read_text()).parse()['quests']}
- kit_of={by_title[s['title']]:ident(f"quest:start:{s['key']}_journey") for s in tomllib.loads((pack/'quests-src/start.toml').read_text())['mode_reward']}
+ meta=tomllib.loads((pack/'quests-src/start.toml').read_text())
+ kit_of={by_title[s['title']]:ident(f"quest:start:{s['key']}_journey") for s in meta['mode_reward']}
  assert {q['id'] for q in old['quests']}<=set(qs) and len(old['quests'])==29  # the 29 approved quests (The Research Tree was removed with GTIA-D-226)
  ids=[d['id'],w['id']]
  for q in qs.values():
@@ -89,6 +90,9 @@ def audit():
  for a in old['quests']:
   b=qs[a['id']]
   assert {t['id'] for t in a['tasks']}=={t['id'] for t in b['tasks']}
+  removed={x['item'] for x in meta.get('reward_removal',[]) if by_title.get(x['title'])==a['id']}
+  item_id=lambda r:r.get('item',{}).get('id') if isinstance(r.get('item'),dict) else r.get('item')
+  if removed:a=dict(a,rewards=[r for r in a.get('rewards',[]) if item_id(r) not in removed])
   if any(r['type']=='item' for r in a.get('rewards',[])):
    journey=[kits[kit_of[a['id']]]] if kit_of.get(a['id']) in kits else []
    assert a['rewards']==b['rewards'] or (not b['rewards'] and journey and journey[0]['rewards']==a['rewards']),'Author item reward changed'
