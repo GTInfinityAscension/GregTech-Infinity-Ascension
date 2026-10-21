@@ -2,18 +2,6 @@
 # tier: the highest voltage the controller's cheapest recipe needs (its own and its parts'); uhv = UHV and up.
 
 [[multiblock]]
-item = "gtia:lime_kiln"
-tier = "steam"
-family = "chemistry"
-text = ["gtia.machine.lime_kiln.tooltip.fact.0", "gtia.machine.lime_kiln.tooltip.main.0", "gtia.machine.lime_kiln.tooltip.main.1", "gtia.machine.lime_kiln.tooltip.requirements.0", "gtia.machine.lime_kiln.tooltip.requirements.1"]
-
-[[multiblock]]
-item = "gtia:wood_retort"
-tier = "steam"
-family = "chemistry"
-text = ["gtia.machine.wood_retort.tooltip.fact.0", "gtia.machine.wood_retort.tooltip.main.0", "gtia.machine.wood_retort.tooltip.main.1", "gtia.machine.wood_retort.tooltip.requirements.0", "gtia.machine.wood_retort.tooltip.requirements.1"]
-
-[[multiblock]]
 item = "gtceu:bronze_multiblock_tank"
 tier = "steam"
 family = "data"
@@ -278,12 +266,6 @@ family = "bio"
 text = ["gtna.machine.industrial_slaughterhouse.tooltip.0", "gtna.machine.industrial_slaughterhouse.tooltip.1", "gtna.machine.industrial_slaughterhouse.tooltip.2", "gtna.machine.industrial_slaughterhouse.tooltip.3", "gtna.machine.industrial_slaughterhouse.tooltip.4", "gtna.machine.industrial_slaughterhouse.tooltip.5", "gtna.machine.industrial_slaughterhouse.tooltip.6", "gtna.machine.industrial_slaughterhouse.tooltip.7", "gtna.machine.industrial_slaughterhouse.tooltip.8", "gtna.machine.industrial_slaughterhouse.tooltip.9"]
 
 [[multiblock]]
-item = "gtia:diaphragm_cell"
-tier = "lv"
-family = "chemistry"
-text = ["gtia.machine.diaphragm_cell.tooltip.fact.0", "gtia.machine.diaphragm_cell.tooltip.main.0", "gtia.machine.diaphragm_cell.tooltip.main.1", "gtia.machine.diaphragm_cell.tooltip.requirements.0", "gtia.machine.diaphragm_cell.tooltip.requirements.1", "gtia.machine.diaphragm_cell.tooltip.requirements.2"]
-
-[[multiblock]]
 item = "gtna:nexus_flux_matrix"
 tier = "lv"
 family = "data"
@@ -416,52 +398,10 @@ family = "steam"
 text = ["gtna.machine.steam_item_vault.tooltip.0", "gtna.machine.steam_item_vault.tooltip.1", "gtna.machine.steam_item_vault.tooltip.2", "gtna.machine.steam_item_vault.tooltip.3", "gtna.machine.steam_item_vault.tooltip.4", "gtna.machine.steam_item_vault.tooltip.5", "gtna.machine.steam_item_vault.tooltip.6", "gtna.machine.steam_item_vault.tooltip.7"]
 
 [[multiblock]]
-item = "gtia:greenhouse"
-tier = "mv"
-family = "bio"
-text = ["gtia.machine.greenhouse.tooltip.fact.0", "gtia.machine.greenhouse.tooltip.main.0", "gtia.machine.greenhouse.tooltip.main.1", "gtia.machine.greenhouse.tooltip.requirements.0", "gtia.machine.greenhouse.tooltip.requirements.1", "gtia.machine.greenhouse.tooltip.requirements.2"]
-
-[[multiblock]]
 item = "gtna:greenhouse"
 tier = "mv"
 family = "bio"
 text = ["gtna.machine.greenhouse.tooltip.0", "gtna.machine.greenhouse.tooltip.1", "gtna.machine.greenhouse.tooltip.2", "gtna.machine.greenhouse.tooltip.3", "gtna.machine.greenhouse.tooltip.4", "gtna.machine.greenhouse.tooltip.5", "gtna.machine.greenhouse.tooltip.6", "gtna.machine.greenhouse.tooltip.7"]
-
-[[multiblock]]
-item = "gtia:ammonia_converter"
-tier = "mv"
-family = "chemistry"
-text = ["gtia.machine.ammonia_converter.tooltip.fact.0", "gtia.machine.ammonia_converter.tooltip.main.0", "gtia.machine.ammonia_converter.tooltip.main.1", "gtia.machine.ammonia_converter.tooltip.requirements.0", "gtia.machine.ammonia_converter.tooltip.requirements.1"]
-
-[[multiblock]]
-item = "gtia:bayer_digester"
-tier = "mv"
-family = "chemistry"
-text = ["gtia.machine.bayer_digester.tooltip.fact.0", "gtia.machine.bayer_digester.tooltip.main.0", "gtia.machine.bayer_digester.tooltip.main.1", "gtia.machine.bayer_digester.tooltip.requirements.0", "gtia.machine.bayer_digester.tooltip.requirements.1", "gtia.machine.bayer_digester.tooltip.requirements.2"]
-
-[[multiblock]]
-item = "gtia:contact_converter"
-tier = "mv"
-family = "chemistry"
-text = ["gtia.machine.contact_converter.tooltip.fact.0", "gtia.machine.contact_converter.tooltip.main.0", "gtia.machine.contact_converter.tooltip.main.1", "gtia.machine.contact_converter.tooltip.requirements.0", "gtia.machine.contact_converter.tooltip.requirements.1"]
-
-[[multiblock]]
-item = "gtia:hall_heroult_cell"
-tier = "mv"
-family = "chemistry"
-text = ["gtia.machine.hall_heroult_cell.tooltip.fact.0", "gtia.machine.hall_heroult_cell.tooltip.main.0", "gtia.machine.hall_heroult_cell.tooltip.main.1", "gtia.machine.hall_heroult_cell.tooltip.requirements.0", "gtia.machine.hall_heroult_cell.tooltip.requirements.1", "gtia.machine.hall_heroult_cell.tooltip.requirements.2"]
-
-[[multiblock]]
-item = "gtia:ostwald_converter"
-tier = "mv"
-family = "chemistry"
-text = ["gtia.machine.ostwald_converter.tooltip.fact.0", "gtia.machine.ostwald_converter.tooltip.main.0", "gtia.machine.ostwald_converter.tooltip.main.1", "gtia.machine.ostwald_converter.tooltip.main.2", "gtia.machine.ostwald_converter.tooltip.main.3", "gtia.machine.ostwald_converter.tooltip.requirements.0", "gtia.machine.ostwald_converter.tooltip.requirements.1"]
-
-[[multiblock]]
-item = "gtia:solvay_tower"
-tier = "mv"
-family = "chemistry"
-text = ["gtia.machine.solvay_tower.tooltip.fact.0", "gtia.machine.solvay_tower.tooltip.main.0", "gtia.machine.solvay_tower.tooltip.main.1", "gtia.machine.solvay_tower.tooltip.requirements.0", "gtia.machine.solvay_tower.tooltip.requirements.1"]
 
 [[multiblock]]
 item = "gtceu:central_monitor"
@@ -582,24 +522,6 @@ item = "gtceu:large_chemical_reactor"
 tier = "hv"
 family = "chemistry"
 text = ["gtceu.multiblock.large_chemical_reactor.description", "gtceu.machine.large_chemical_reactor.tooltip"]
-
-[[multiblock]]
-item = "gtia:claus_unit"
-tier = "hv"
-family = "chemistry"
-text = ["gtia.machine.claus_unit.tooltip.fact.0", "gtia.machine.claus_unit.tooltip.main.0", "gtia.machine.claus_unit.tooltip.main.1", "gtia.machine.claus_unit.tooltip.requirements.0", "gtia.machine.claus_unit.tooltip.requirements.1"]
-
-[[multiblock]]
-item = "gtia:kroll_reactor"
-tier = "hv"
-family = "chemistry"
-text = ["gtia.machine.kroll_reactor.tooltip.fact.0", "gtia.machine.kroll_reactor.tooltip.main.0", "gtia.machine.kroll_reactor.tooltip.main.1", "gtia.machine.kroll_reactor.tooltip.main.2", "gtia.machine.kroll_reactor.tooltip.requirements.0", "gtia.machine.kroll_reactor.tooltip.requirements.1", "gtia.machine.kroll_reactor.tooltip.requirements.2"]
-
-[[multiblock]]
-item = "gtia:siemens_reactor"
-tier = "hv"
-family = "chemistry"
-text = ["gtia.machine.siemens_reactor.tooltip.fact.0", "gtia.machine.siemens_reactor.tooltip.main.0", "gtia.machine.siemens_reactor.tooltip.main.1", "gtia.machine.siemens_reactor.tooltip.requirements.0", "gtia.machine.siemens_reactor.tooltip.requirements.1"]
 
 [[multiblock]]
 item = "gtna:evaporation_plant"
@@ -740,12 +662,6 @@ family = "ore"
 text = ["gtna.machine.electric_void_miner.tooltip.0", "gtna.machine.electric_void_miner.tooltip.1", "gtna.machine.electric_void_miner.tooltip.2", "gtna.machine.electric_void_miner.tooltip.3", "gtna.machine.electric_void_miner.tooltip.4", "gtna.machine.electric_void_miner.tooltip.5", "gtna.machine.electric_void_miner.tooltip.6", "gtna.machine.electric_void_miner.tooltip.7", "gtna.machine.electric_void_miner.tooltip.8", "gtna.machine.electric_void_miner.tooltip.9", "gtna.machine.electric_void_miner.tooltip.10", "gtna.machine.electric_void_miner.tooltip.11"]
 
 [[multiblock]]
-item = "gtna:integrated_ore_processor"
-tier = "ev"
-family = "ore"
-text = ["gtna.machine.integrated_ore_processor.tooltip.0", "gtna.machine.integrated_ore_processor.tooltip.1", "gtna.machine.integrated_ore_processor.tooltip.2", "gtna.machine.integrated_ore_processor.tooltip.3", "gtna.machine.integrated_ore_processor.tooltip.4", "gtna.machine.integrated_ore_processor.tooltip.5", "gtna.machine.integrated_ore_processor.tooltip.6", "gtna.machine.integrated_ore_processor.tooltip.7", "gtna.machine.integrated_ore_processor.tooltip.8", "gtna.machine.integrated_ore_processor.tooltip.9", "gtna.machine.integrated_ore_processor.tooltip.10", "gtna.machine.integrated_ore_processor.tooltip.11", "gtna.machine.integrated_ore_processor.tooltip.12", "gtna.machine.integrated_ore_processor.tooltip.13", "gtna.machine.integrated_ore_processor.tooltip.14"]
-
-[[multiblock]]
 item = "gtna:void_fluid_drilling_rig"
 tier = "ev"
 family = "ore"
@@ -870,6 +786,12 @@ item = "gtceu:large_wiremill"
 tier = "iv"
 family = "ore"
 text = []
+
+[[multiblock]]
+item = "gtna:integrated_ore_processor"
+tier = "iv"
+family = "ore"
+text = ["gtna.machine.integrated_ore_processor.tooltip.0", "gtna.machine.integrated_ore_processor.tooltip.1", "gtna.machine.integrated_ore_processor.tooltip.2", "gtna.machine.integrated_ore_processor.tooltip.3", "gtna.machine.integrated_ore_processor.tooltip.4", "gtna.machine.integrated_ore_processor.tooltip.5", "gtna.machine.integrated_ore_processor.tooltip.6", "gtna.machine.integrated_ore_processor.tooltip.7", "gtna.machine.integrated_ore_processor.tooltip.8", "gtna.machine.integrated_ore_processor.tooltip.9", "gtna.machine.integrated_ore_processor.tooltip.10", "gtna.machine.integrated_ore_processor.tooltip.11", "gtna.machine.integrated_ore_processor.tooltip.12", "gtna.machine.integrated_ore_processor.tooltip.13", "gtna.machine.integrated_ore_processor.tooltip.14"]
 
 [[multiblock]]
 item = "gtna:nexus_me_hypercore"
@@ -1280,6 +1202,90 @@ family = "ore"
 text = ["gtna.machine.resource_collection_module.tooltip.0", "gtna.machine.resource_collection_module.tooltip.1", "gtna.machine.resource_collection_module.tooltip.2", "gtna.machine.resource_collection_module.tooltip.3", "gtna.machine.resource_collection_module.tooltip.4", "gtna.machine.resource_collection_module.tooltip.5", "gtna.machine.resource_collection_module.tooltip.6", "gtna.machine.resource_collection_module.tooltip.7"]
 
 [[multiblock]]
+item = "gtia:birch_world"
+tier = "uhv"
+family = "other"
+text = ["gtia.machine.birch_world.tooltip.0", "gtia.machine.birch_world.tooltip.1", "gtia.machine.birch_world.tooltip.2"]
+
+[[multiblock]]
+item = "gtia:disintegrator"
+tier = "uhv"
+family = "other"
+text = ["gtia.machine.disintegrator.tooltip.0", "gtia.machine.disintegrator.tooltip.1", "gtia.machine.disintegrator.tooltip.2"]
+
+[[multiblock]]
+item = "gtia:hraemc"
+tier = "uhv"
+family = "other"
+text = ["gtia.machine.hraemc.tooltip.0", "gtia.machine.hraemc.tooltip.1", "gtia.machine.hraemc.tooltip.2"]
+
+[[multiblock]]
+item = "gtia:kugelblitz"
+tier = "uhv"
+family = "other"
+text = ["gtia.machine.kugelblitz.tooltip.0", "gtia.machine.kugelblitz.tooltip.1", "gtia.machine.kugelblitz.tooltip.2"]
+
+[[multiblock]]
+item = "gtia:matrioshka_brain"
+tier = "uhv"
+family = "other"
+text = ["gtia.machine.matrioshka_brain.tooltip.0", "gtia.machine.matrioshka_brain.tooltip.1", "gtia.machine.matrioshka_brain.tooltip.2"]
+
+[[multiblock]]
+item = "gtia:nidavellir"
+tier = "uhv"
+family = "other"
+text = ["gtia.machine.nidavellir.tooltip.0", "gtia.machine.nidavellir.tooltip.1", "gtia.machine.nidavellir.tooltip.2"]
+
+[[multiblock]]
+item = "gtia:qso"
+tier = "uhv"
+family = "other"
+text = ["gtia.machine.qso.tooltip.0", "gtia.machine.qso.tooltip.1", "gtia.machine.qso.tooltip.2"]
+
+[[multiblock]]
+item = "gtia:star_lifter"
+tier = "uhv"
+family = "other"
+text = ["gtia.machine.star_lifter.tooltip.0", "gtia.machine.star_lifter.tooltip.1", "gtia.machine.star_lifter.tooltip.2"]
+
+[[multiblock]]
+item = "gtia:stellar_engine"
+tier = "uhv"
+family = "other"
+text = ["gtia.machine.stellar_engine.tooltip.0", "gtia.machine.stellar_engine.tooltip.1", "gtia.machine.stellar_engine.tooltip.2"]
+
+[[multiblock]]
+item = "gtia:stellar_harvester"
+tier = "uhv"
+family = "other"
+text = ["gtia.machine.stellar_harvester.tooltip.0", "gtia.machine.stellar_harvester.tooltip.1", "gtia.machine.stellar_harvester.tooltip.2"]
+
+[[multiblock]]
+item = "gtia:stellar_hoop"
+tier = "uhv"
+family = "other"
+text = ["gtia.machine.stellar_hoop.tooltip.0", "gtia.machine.stellar_hoop.tooltip.1", "gtia.machine.stellar_hoop.tooltip.2"]
+
+[[multiblock]]
+item = "gtia:suprashell"
+tier = "uhv"
+family = "other"
+text = ["gtia.machine.suprashell.tooltip.0", "gtia.machine.suprashell.tooltip.1", "gtia.machine.suprashell.tooltip.2"]
+
+[[multiblock]]
+item = "gtia:system_creator"
+tier = "uhv"
+family = "other"
+text = ["gtia.machine.system_creator.tooltip.0", "gtia.machine.system_creator.tooltip.1", "gtia.machine.system_creator.tooltip.2"]
+
+[[multiblock]]
+item = "gtia:yggdrasil"
+tier = "uhv"
+family = "other"
+text = ["gtia.machine.yggdrasil.tooltip.0", "gtia.machine.yggdrasil.tooltip.1", "gtia.machine.yggdrasil.tooltip.2"]
+
+[[multiblock]]
 item = "gtna:advanced_hyper_reactor"
 tier = "uhv"
 family = "other"
@@ -1376,6 +1382,12 @@ family = "other"
 text = ["gtna.machine.supercomputing_center.tooltip.0", "gtna.machine.supercomputing_center.tooltip.1", "gtna.machine.supercomputing_center.tooltip.2", "gtna.machine.supercomputing_center.tooltip.3", "gtna.machine.supercomputing_center.tooltip.4", "gtna.machine.supercomputing_center.tooltip.5", "gtna.machine.supercomputing_center.tooltip.6", "gtna.machine.supercomputing_center.tooltip.7", "gtna.machine.supercomputing_center.tooltip.8", "gtna.machine.supercomputing_center.tooltip.9", "gtna.machine.supercomputing_center.tooltip.10", "gtna.machine.supercomputing_center.tooltip.11", "gtna.machine.supercomputing_center.tooltip.12", "gtna.machine.supercomputing_center.tooltip.13", "gtna.machine.supercomputing_center.tooltip.14"]
 
 [[multiblock]]
+item = "gtia:fusion_suppressor"
+tier = "uhv"
+family = "power"
+text = ["gtia.machine.fusion_suppressor.tooltip.0", "gtia.machine.fusion_suppressor.tooltip.1", "gtia.machine.fusion_suppressor.tooltip.2"]
+
+[[multiblock]]
 item = "gtna:annihilate_generator"
 tier = "uhv"
 family = "power"
@@ -1416,6 +1428,12 @@ item = "gtna:transcendent_plasma_mixer"
 tier = "uhv"
 family = "power"
 text = ["gtna.machine.transcendent_plasma_mixer.tooltip.0", "gtna.machine.transcendent_plasma_mixer.tooltip.1", "gtna.machine.transcendent_plasma_mixer.tooltip.2", "gtna.machine.transcendent_plasma_mixer.tooltip.3", "gtna.machine.transcendent_plasma_mixer.tooltip.4", "gtna.machine.transcendent_plasma_mixer.tooltip.5", "gtna.machine.transcendent_plasma_mixer.tooltip.6", "gtna.machine.transcendent_plasma_mixer.tooltip.7", "gtna.machine.transcendent_plasma_mixer.tooltip.8", "gtna.machine.transcendent_plasma_mixer.tooltip.9"]
+
+[[multiblock]]
+item = "gtia:assembly_yard"
+tier = "uhv"
+family = "processing"
+text = ["gtia.machine.assembly_yard.tooltip.0", "gtia.machine.assembly_yard.tooltip.1", "gtia.machine.assembly_yard.tooltip.2"]
 
 [[multiblock]]
 item = "gtna:assembler_module"

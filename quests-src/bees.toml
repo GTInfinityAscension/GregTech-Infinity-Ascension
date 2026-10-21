@@ -55,11 +55,11 @@ key = "biomass"
 title = "Biomass for Bees"
 role = "side"
 icon = "gtceu:biomass_bucket"
-deps = ["entry", "lv:fermentation"]
+deps = ["entry", "lv:brewery"]
 subtitle = "Breakfast."
 task = [{ fluid = "gtceu:biomass", amount = 1000 }]
 text = """
-[num]1,000 mB[/] of [item]Biomass[/] per new bee. The Fermentation Vat makes it from plants; Elephant Grass from the Agriculture chapter is the best feed.
+[num]1,000 mB[/] of [item]Biomass[/] per new bee. The Brewery makes it from plants; Elephant Grass from the Agriculture chapter is the best feed.
 """
 
 [[quest]]

@@ -13,7 +13,6 @@
 {"item":"gtna:isa_mill","tier":0,"multiblock":true,"types":["gtna:isa_mill"]}
 {"item":"gtna:wireless_dynamo_hatch_65536a_uiv","tier":11,"multiblock":false,"types":[]}
 {"item":"gtceu:luv_4096a_laser_source_hatch","tier":6,"multiblock":false,"types":[]}
-{"item":"gtia:kroll_reactor","tier":0,"multiblock":true,"types":["gtia:kroll_reactor"]}
 {"item":"gtna:overclock_hatch_uv","tier":8,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_dynamo_hatch_64a_zpm","tier":7,"multiblock":false,"types":[]}
 {"item":"gtceu:uv_dual_input_hatch","tier":8,"multiblock":false,"types":[]}
@@ -43,7 +42,6 @@
 {"item":"gtceu:lv_muffler_hatch","tier":1,"multiblock":false,"types":[]}
 {"item":"gtceu:uhv_8a_energy_converter","tier":9,"multiblock":false,"types":[]}
 {"item":"gtceu:max_input_hatch_9x","tier":14,"multiblock":false,"types":[]}
-{"item":"gtia:ammonia_converter","tier":0,"multiblock":true,"types":["gtia:ammonia_converter"]}
 {"item":"gtceu:uxv_substation_output_hatch_64a","tier":12,"multiblock":false,"types":[]}
 {"item":"gtceu:hv_world_accelerator","tier":3,"multiblock":false,"types":["gtceu:dummy"]}
 {"item":"gtna:dimensional_rift_gate","tier":0,"multiblock":true,"types":["gtceu:dummy"]}
@@ -154,6 +152,7 @@
 {"item":"gtceu:uv_fluid_passthrough_hatch","tier":8,"multiblock":false,"types":[]}
 {"item":"gtceu:luv_fusion_reactor","tier":6,"multiblock":true,"types":["gtceu:fusion_reactor"]}
 {"item":"gtceu:lv_cutter","tier":1,"multiblock":false,"types":["gtceu:cutter"]}
+{"item":"gtia:stellar_engine","tier":0,"multiblock":true,"types":["gtceu:dummy"]}
 {"item":"gtna:me_storage_access_hatch","tier":4,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_dynamo_hatch_1048576a_ev","tier":4,"multiblock":false,"types":[]}
 {"item":"gtna:supercomputing_center","tier":0,"multiblock":true,"types":["gtceu:dummy"]}
@@ -185,7 +184,6 @@
 {"item":"gtna:thread_hatch_uhv","tier":9,"multiblock":false,"types":[]}
 {"item":"gtna:steam_item_vault","tier":0,"multiblock":true,"types":[]}
 {"item":"gtceu:uxv_4096a_laser_source_hatch","tier":12,"multiblock":false,"types":[]}
-{"item":"gtia:uv_fermentation_vat","tier":8,"multiblock":false,"types":["gtia:fermentation_vat"]}
 {"item":"gtceu:luv_centrifuge","tier":6,"multiblock":false,"types":["gtceu:centrifuge"]}
 {"item":"gtceu:max_input_hatch_4x","tier":14,"multiblock":false,"types":[]}
 {"item":"gtceu:mega_blast_furnace","tier":0,"multiblock":true,"types":["gtceu:electric_blast_furnace"]}
@@ -210,7 +208,6 @@
 {"item":"gtceu:uhv_substation_output_hatch_64a","tier":9,"multiblock":false,"types":[]}
 {"item":"gtceu:hpca_active_cooler_component","tier":0,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_energy_hatch_64a_lv","tier":1,"multiblock":false,"types":[]}
-{"item":"gtia:bayer_digester","tier":0,"multiblock":true,"types":["gtia:bayer_digester"]}
 {"item":"gtceu:ev_bedrock_ore_miner","tier":4,"multiblock":true,"types":["gtceu:dummy"]}
 {"item":"gtceu:mv_transformer_1a","tier":2,"multiblock":false,"types":[]}
 {"item":"gtna:steam_elevator_greenhouse_module","tier":5,"multiblock":true,"types":["gtceu:dummy"]}
@@ -289,8 +286,6 @@
 {"item":"gtceu:uv_brewery","tier":8,"multiblock":false,"types":["gtceu:brewery"]}
 {"item":"gtna:output_boost_fluid_hatch_iv","tier":5,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_dynamo_hatch_262144a_uev","tier":10,"multiblock":false,"types":[]}
-{"item":"gtia:lv_catalytic_dehydrator","tier":1,"multiblock":false,"types":["gtia:catalytic_dehydrator"]}
-{"item":"gtia:opv_fermentation_vat","tier":13,"multiblock":false,"types":["gtia:fermentation_vat"]}
 {"item":"gtceu:luv_forge_hammer","tier":6,"multiblock":false,"types":["gtceu:forge_hammer"]}
 {"item":"gtna:wireless_energy_hatch_16384a_uev","tier":10,"multiblock":false,"types":[]}
 {"item":"gtceu:uev_256a_laser_target_hatch","tier":10,"multiblock":false,"types":[]}
@@ -299,7 +294,6 @@
 {"item":"gtna:uev_dehydrator","tier":10,"multiblock":false,"types":["gtna:dehydrator"]}
 {"item":"gtna:wireless_energy_hatch_1a_ev","tier":4,"multiblock":false,"types":[]}
 {"item":"gtceu:lv_item_passthrough_hatch","tier":1,"multiblock":false,"types":[]}
-{"item":"gtia:lime_kiln","tier":0,"multiblock":true,"types":["gtia:lime_kiln"]}
 {"item":"gtceu:opv_16a_energy_converter","tier":13,"multiblock":false,"types":[]}
 {"item":"gtceu:lv_battery_buffer_16x","tier":1,"multiblock":false,"types":[]}
 {"item":"gtceu:opv_charger_4x","tier":13,"multiblock":false,"types":[]}
@@ -315,7 +309,6 @@
 {"item":"gtna:output_boost_hatch_opv","tier":13,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_dynamo_hatch_16384a_uiv","tier":11,"multiblock":false,"types":[]}
 {"item":"gtceu:uv_distillery","tier":8,"multiblock":false,"types":["gtceu:distillery"]}
-{"item":"gtia:mv_fermentation_vat","tier":2,"multiblock":false,"types":["gtia:fermentation_vat"]}
 {"item":"gtna:huge_steam_input_bus","tier":0,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_energy_hatch_262144a_opv","tier":13,"multiblock":false,"types":[]}
 {"item":"gtceu:iv_output_hatch_4x","tier":5,"multiblock":false,"types":[]}
@@ -338,13 +331,13 @@
 {"item":"gtna:wireless_energy_hatch_64a_uv","tier":8,"multiblock":false,"types":[]}
 {"item":"gtna:ev_dehydrator","tier":4,"multiblock":false,"types":["gtna:dehydrator"]}
 {"item":"gtceu:mv_lathe","tier":2,"multiblock":false,"types":["gtceu:lathe"]}
-{"item":"gtia:iv_fermentation_vat","tier":5,"multiblock":false,"types":["gtia:fermentation_vat"]}
 {"item":"gtna:wireless_dynamo_hatch_16384a_luv","tier":6,"multiblock":false,"types":[]}
 {"item":"gtceu:uv_1024a_laser_target_hatch","tier":8,"multiblock":false,"types":[]}
 {"item":"gtceu:wood_drum","tier":0,"multiblock":false,"types":[]}
 {"item":"gtna:steam_elevator_entity_crusher_module_iii","tier":3,"multiblock":true,"types":["gtceu:dummy"]}
 {"item":"gtna:wireless_energy_hatch_4a_uxv","tier":12,"multiblock":false,"types":[]}
 {"item":"gtceu:steel_crate","tier":0,"multiblock":false,"types":[]}
+{"item":"gtia:mv_entangled_miner","tier":2,"multiblock":false,"types":["gtia:entangled_miner"]}
 {"item":"gtceu:luv_output_hatch_9x","tier":6,"multiblock":false,"types":[]}
 {"item":"gtceu:ev_bender","tier":4,"multiblock":false,"types":["gtceu:bender"]}
 {"item":"gtceu:lv_output_bus","tier":1,"multiblock":false,"types":[]}
@@ -371,6 +364,7 @@
 {"item":"gtna:me_storage","tier":0,"multiblock":true,"types":["gtceu:dummy"]}
 {"item":"gtceu:ulv_charger_4x","tier":0,"multiblock":false,"types":[]}
 {"item":"gtceu:uxv_rock_crusher","tier":12,"multiblock":false,"types":["gtceu:rock_breaker"]}
+{"item":"gtia:yggdrasil","tier":0,"multiblock":true,"types":["gtceu:dummy"]}
 {"item":"gtceu:zpm_transformer_4a","tier":7,"multiblock":false,"types":[]}
 {"item":"gtceu:uhv_item_passthrough_hatch","tier":9,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_energy_hatch_65536a_zpm","tier":7,"multiblock":false,"types":[]}
@@ -401,6 +395,7 @@
 {"item":"gtceu:hv_packer","tier":3,"multiblock":false,"types":["gtceu:packer"]}
 {"item":"gtceu:lv_diode","tier":1,"multiblock":false,"types":[]}
 {"item":"gtna:annihilate_generator","tier":0,"multiblock":true,"types":["gtna:annihilate_generator"]}
+{"item":"gtia:hraemc","tier":0,"multiblock":true,"types":["gtceu:dummy"]}
 {"item":"gtceu:iv_fluid_heater","tier":5,"multiblock":false,"types":["gtceu:fluid_heater"]}
 {"item":"gtceu:data_access_hatch","tier":4,"multiblock":false,"types":[]}
 {"item":"gtceu:zpm_transformer_16a","tier":7,"multiblock":false,"types":[]}
@@ -430,6 +425,8 @@
 {"item":"gtna:bec_generator","tier":0,"multiblock":true,"types":["gtna:condensate_generator"]}
 {"item":"gtceu:uhv_ore_washer","tier":9,"multiblock":false,"types":["gtceu:ore_washer"]}
 {"item":"gtna:thread_hatch_uxv","tier":12,"multiblock":false,"types":[]}
+{"item":"gtia:birch_world","tier":0,"multiblock":true,"types":["gtceu:dummy"]}
+{"item":"gtia:assembly_yard","tier":0,"multiblock":true,"types":["gtceu:dummy"]}
 {"item":"gtceu:opv_fermenter","tier":13,"multiblock":false,"types":["gtceu:fermenter"]}
 {"item":"gtna:wireless_dynamo_hatch_16384a_max","tier":14,"multiblock":false,"types":[]}
 {"item":"gtceu:opv_dual_output_hatch","tier":13,"multiblock":false,"types":[]}
@@ -438,7 +435,6 @@
 {"item":"gtna:beam_dump","tier":11,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_dynamo_hatch_16384a_ev","tier":4,"multiblock":false,"types":[]}
 {"item":"gtceu:lv_steam_turbine","tier":1,"multiblock":false,"types":["gtceu:steam_turbine"]}
-{"item":"gtia:diaphragm_cell","tier":0,"multiblock":true,"types":["gtia:diaphragm_cell"]}
 {"item":"gtceu:lv_miner","tier":1,"multiblock":false,"types":["gtceu:dummy"]}
 {"item":"gtceu:lv_8a_energy_converter","tier":1,"multiblock":false,"types":[]}
 {"item":"gtceu:opv_laser_engraver","tier":13,"multiblock":false,"types":["gtceu:laser_engraver"]}
@@ -447,7 +443,6 @@
 {"item":"gtceu:ev_air_scrubber","tier":4,"multiblock":false,"types":["gtceu:air_scrubber"]}
 {"item":"gtna:wireless_dynamo_hatch_16384a_hv","tier":3,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_dynamo_hatch_4a_zpm","tier":7,"multiblock":false,"types":[]}
-{"item":"gtia:siemens_reactor","tier":0,"multiblock":true,"types":["gtia:siemens_reactor"]}
 {"item":"gtceu:uhv_fluid_solidifier","tier":9,"multiblock":false,"types":["gtceu:fluid_solidifier"]}
 {"item":"gtna:wireless_dynamo_hatch_1a_opv","tier":13,"multiblock":false,"types":[]}
 {"item":"gtceu:ev_substation_input_hatch_64a","tier":4,"multiblock":false,"types":[]}
@@ -713,7 +708,6 @@
 {"item":"gtna:steam_elevator_apiary_module","tier":6,"multiblock":true,"types":["gtceu:dummy"]}
 {"item":"gtceu:iv_bender","tier":5,"multiblock":false,"types":["gtceu:bender"]}
 {"item":"gtna:condensate_detector_hatch","tier":11,"multiblock":false,"types":[]}
-{"item":"gtia:greenhouse","tier":0,"multiblock":true,"types":["gtia:greenhouse"]}
 {"item":"gtceu:zpm_mixer","tier":7,"multiblock":false,"types":["gtceu:mixer"]}
 {"item":"gtceu:iv_circuit_assembler","tier":5,"multiblock":false,"types":["gtceu:circuit_assembler"]}
 {"item":"gtceu:uv_fluid_heater","tier":8,"multiblock":false,"types":["gtceu:fluid_heater"]}
@@ -773,7 +767,6 @@
 {"item":"gtna:wireless_dynamo_hatch_1048576a_mv","tier":2,"multiblock":false,"types":[]}
 {"item":"gtceu:mv_world_accelerator","tier":2,"multiblock":false,"types":["gtceu:dummy"]}
 {"item":"gtceu:large_chemical_bath","tier":0,"multiblock":true,"types":["gtceu:chemical_bath","gtceu:ore_washer"]}
-{"item":"gtia:luv_fermentation_vat","tier":6,"multiblock":false,"types":["gtia:fermentation_vat"]}
 {"item":"gtceu:uxv_laser_engraver","tier":12,"multiblock":false,"types":["gtceu:laser_engraver"]}
 {"item":"gtceu:zpm_packer","tier":7,"multiblock":false,"types":["gtceu:packer"]}
 {"item":"gtna:output_boost_item_bus_uhv","tier":9,"multiblock":false,"types":[]}
@@ -843,11 +836,13 @@
 {"item":"gtna:wireless_energy_hatch_4096a_lv","tier":1,"multiblock":false,"types":[]}
 {"item":"gtna:ev_rocket_engine","tier":4,"multiblock":false,"types":["gtna:rocket_engine"]}
 {"item":"gtceu:opv_machine_hull","tier":13,"multiblock":false,"types":[]}
+{"item":"gtia:kugelblitz","tier":0,"multiblock":true,"types":["gtceu:dummy"]}
 {"item":"gtceu:mv_1a_energy_converter","tier":2,"multiblock":false,"types":[]}
 {"item":"gtceu:uxv_1a_energy_converter","tier":12,"multiblock":false,"types":[]}
 {"item":"gtna:infinite_input_bus_uhv","tier":9,"multiblock":false,"types":[]}
 {"item":"gtceu:uev_energy_output_hatch_4a","tier":10,"multiblock":false,"types":[]}
 {"item":"gtna:forge_of_gods","tier":0,"multiblock":true,"types":["gtceu:dummy"]}
+{"item":"gtia:nidavellir","tier":0,"multiblock":true,"types":["gtceu:dummy"]}
 {"item":"gtceu:aluminium_drum","tier":0,"multiblock":false,"types":[]}
 {"item":"gtceu:uhv_output_bus","tier":9,"multiblock":false,"types":[]}
 {"item":"gtceu:uiv_1024a_laser_target_hatch","tier":11,"multiblock":false,"types":[]}
@@ -871,7 +866,6 @@
 {"item":"gtceu:iv_extruder","tier":5,"multiblock":false,"types":["gtceu:extruder"]}
 {"item":"gtna:large_steam_lathe","tier":0,"multiblock":true,"types":["gtceu:lathe"]}
 {"item":"gtceu:iv_energy_output_hatch_4a","tier":5,"multiblock":false,"types":[]}
-{"item":"gtia:solvay_tower","tier":0,"multiblock":true,"types":["gtia:solvay_tower"]}
 {"item":"gtceu:hp_steam_furnace","tier":1,"multiblock":false,"types":["gtceu:electric_furnace"]}
 {"item":"gtna:wireless_energy_hatch_1024a_uhv","tier":9,"multiblock":false,"types":[]}
 {"item":"gtceu:iv_rotor_holder","tier":5,"multiblock":false,"types":[]}
@@ -911,7 +905,6 @@
 {"item":"gtceu:zpm_4096a_laser_target_hatch","tier":7,"multiblock":false,"types":[]}
 {"item":"gtceu:hv_energy_output_hatch","tier":3,"multiblock":false,"types":[]}
 {"item":"gtna:assembler_module","tier":0,"multiblock":true,"types":["gtna:assembler_module"]}
-{"item":"gtia:ev_fermentation_vat","tier":4,"multiblock":false,"types":["gtia:fermentation_vat"]}
 {"item":"gtna:large_pyrolyse_oven","tier":0,"multiblock":true,"types":["gtceu:pyrolyse_oven"]}
 {"item":"gtna:wireless_energy_hatch_65536a_hv","tier":3,"multiblock":false,"types":[]}
 {"item":"gtceu:creative_tank","tier":0,"multiblock":false,"types":[]}
@@ -922,6 +915,7 @@
 {"item":"gtna:wireless_energy_hatch_256a_opv","tier":13,"multiblock":false,"types":[]}
 {"item":"gtceu:uev_output_bus","tier":10,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_energy_hatch_4096a_uiv","tier":11,"multiblock":false,"types":[]}
+{"item":"gtia:iv_entangled_miner","tier":5,"multiblock":false,"types":["gtia:entangled_miner"]}
 {"item":"gtceu:zpm_input_hatch","tier":7,"multiblock":false,"types":[]}
 {"item":"gtia:lv_seed_analyzer","tier":1,"multiblock":false,"types":["gtia:seed_analyzer"]}
 {"item":"gtceu:bronze_multiblock_tank","tier":0,"multiblock":true,"types":["gtceu:dummy"]}
@@ -931,7 +925,6 @@
 {"item":"gtceu:object_holder","tier":7,"multiblock":false,"types":[]}
 {"item":"gtceu:uv_battery_buffer_16x","tier":8,"multiblock":false,"types":[]}
 {"item":"gtceu:opv_electrolyzer","tier":13,"multiblock":false,"types":["gtceu:electrolyzer"]}
-{"item":"gtia:ostwald_converter","tier":0,"multiblock":true,"types":["gtia:ostwald_converter"]}
 {"item":"gtna:wireless_dynamo_hatch_4a_luv","tier":6,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_dynamo_hatch_1a_hv","tier":3,"multiblock":false,"types":[]}
 {"item":"gtceu:luv_quantum_chest","tier":6,"multiblock":false,"types":[]}
@@ -992,6 +985,7 @@
 {"item":"gtna:wireless_energy_hatch_16384a_iv","tier":5,"multiblock":false,"types":[]}
 {"item":"gtceu:iv_rock_crusher","tier":5,"multiblock":false,"types":["gtceu:rock_breaker"]}
 {"item":"gtceu:ev_input_hatch_9x","tier":4,"multiblock":false,"types":[]}
+{"item":"gtia:stellar_harvester","tier":0,"multiblock":true,"types":["gtceu:dummy"]}
 {"item":"gtceu:uiv_1a_energy_converter","tier":11,"multiblock":false,"types":[]}
 {"item":"gtia:luv_mutation_chamber","tier":6,"multiblock":false,"types":["gtia:mutation_chamber"]}
 {"item":"gtna:infinite_steam_input_bus","tier":0,"multiblock":false,"types":[]}
@@ -1045,6 +1039,7 @@
 {"item":"gtceu:zpm_laser_engraver","tier":7,"multiblock":false,"types":["gtceu:laser_engraver"]}
 {"item":"gtceu:iv_forming_press","tier":5,"multiblock":false,"types":["gtceu:forming_press"]}
 {"item":"gtna:greenhouse","tier":0,"multiblock":true,"types":["gtna:greenhouse"]}
+{"item":"gtia:star_lifter","tier":0,"multiblock":true,"types":["gtceu:dummy"]}
 {"item":"gtceu:opv_transformer_2a","tier":13,"multiblock":false,"types":[]}
 {"item":"gtceu:uv_quantum_tank","tier":8,"multiblock":false,"types":[]}
 {"item":"gtceu:hv_miner","tier":3,"multiblock":false,"types":["gtceu:dummy"]}
@@ -1086,7 +1081,6 @@
 {"item":"gtceu:iv_arc_furnace","tier":5,"multiblock":false,"types":["gtceu:arc_furnace"]}
 {"item":"gtceu:zpm_fluid_heater","tier":7,"multiblock":false,"types":["gtceu:fluid_heater"]}
 {"item":"gtceu:uxv_battery_buffer_4x","tier":12,"multiblock":false,"types":[]}
-{"item":"gtia:uxv_fermentation_vat","tier":12,"multiblock":false,"types":["gtia:fermentation_vat"]}
 {"item":"gtna:wireless_energy_hatch_1a_uxv","tier":12,"multiblock":false,"types":[]}
 {"item":"gtceu:zpm_fluid_passthrough_hatch","tier":7,"multiblock":false,"types":[]}
 {"item":"gtceu:mv_extractor","tier":2,"multiblock":false,"types":["gtceu:extractor"]}
@@ -1099,9 +1093,7 @@
 {"item":"gtceu:uv_battery_buffer_4x","tier":8,"multiblock":false,"types":[]}
 {"item":"gtceu:uxv_dual_input_hatch","tier":12,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_energy_hatch_256a_uhv","tier":9,"multiblock":false,"types":[]}
-{"item":"gtia:hv_fermentation_vat","tier":3,"multiblock":false,"types":["gtia:fermentation_vat"]}
 {"item":"gtceu:uev_mixer","tier":10,"multiblock":false,"types":["gtceu:mixer"]}
-{"item":"gtia:wood_retort","tier":0,"multiblock":true,"types":["gtia:wood_retort"]}
 {"item":"gtna:steam_elevator_beacon_module_iii","tier":3,"multiblock":true,"types":["gtceu:dummy"]}
 {"item":"gtna:dyson_sphere_launch_silo","tier":0,"multiblock":true,"types":["gtna:dyson_sphere"]}
 {"item":"gtceu:lv_buffer","tier":1,"multiblock":false,"types":[]}
@@ -1127,6 +1119,7 @@
 {"item":"gtceu:lp_steam_solid_boiler","tier":0,"multiblock":false,"types":["gtceu:steam_boiler"]}
 {"item":"gtceu:uxv_autoclave","tier":12,"multiblock":false,"types":["gtceu:autoclave"]}
 {"item":"gtna:wireless_dynamo_hatch_262144a_zpm","tier":7,"multiblock":false,"types":[]}
+{"item":"gtia:qso","tier":0,"multiblock":true,"types":["gtceu:dummy"]}
 {"item":"gtceu:hp_steam_extractor","tier":1,"multiblock":false,"types":["gtceu:extractor"]}
 {"item":"gtceu:iv_brewery","tier":5,"multiblock":false,"types":["gtceu:brewery"]}
 {"item":"gtceu:uv_macerator","tier":8,"multiblock":false,"types":["gtceu:macerator"]}
@@ -1168,7 +1161,6 @@
 {"item":"gtceu:opv_extractor","tier":13,"multiblock":false,"types":["gtceu:extractor"]}
 {"item":"gtna:ev_world_data_scanner","tier":4,"multiblock":false,"types":["gtna:world_data_scanner"]}
 {"item":"gtna:luv_dehydrator","tier":6,"multiblock":false,"types":["gtna:dehydrator"]}
-{"item":"gtia:uev_fermentation_vat","tier":10,"multiblock":false,"types":["gtia:fermentation_vat"]}
 {"item":"gtna:me_big_storage_access_hatch","tier":5,"multiblock":false,"types":[]}
 {"item":"gtceu:uhv_transformer_16a","tier":9,"multiblock":false,"types":[]}
 {"item":"gtceu:ev_energy_input_hatch","tier":4,"multiblock":false,"types":[]}
@@ -1191,6 +1183,7 @@
 {"item":"gtceu:uiv_diode","tier":11,"multiblock":false,"types":[]}
 {"item":"gtceu:iv_16a_energy_converter","tier":5,"multiblock":false,"types":[]}
 {"item":"gtceu:uev_extruder","tier":10,"multiblock":false,"types":["gtceu:extruder"]}
+{"item":"gtia:suprashell","tier":0,"multiblock":true,"types":["gtceu:dummy"]}
 {"item":"gtceu:uiv_compressor","tier":11,"multiblock":false,"types":["gtceu:compressor"]}
 {"item":"gtceu:uev_output_hatch_9x","tier":10,"multiblock":false,"types":[]}
 {"item":"gtna:overclock_hatch_uhv","tier":9,"multiblock":false,"types":[]}
@@ -1227,7 +1220,6 @@
 {"item":"gtna:wireless_dynamo_hatch_16a_hv","tier":3,"multiblock":false,"types":[]}
 {"item":"gtceu:hpca_bridge_component","tier":0,"multiblock":false,"types":[]}
 {"item":"gtceu:lv_chemical_reactor","tier":1,"multiblock":false,"types":["gtceu:chemical_reactor"]}
-{"item":"gtia:uiv_fermentation_vat","tier":11,"multiblock":false,"types":["gtia:fermentation_vat"]}
 {"item":"gtceu:wood_crate","tier":0,"multiblock":false,"types":[]}
 {"item":"gtceu:zpm_compressor","tier":7,"multiblock":false,"types":["gtceu:compressor"]}
 {"item":"gtna:wireless_energy_hatch_4a_opv","tier":13,"multiblock":false,"types":[]}
@@ -1250,6 +1242,7 @@
 {"item":"gtna:wireless_dynamo_hatch_16a_uev","tier":10,"multiblock":false,"types":[]}
 {"item":"gtceu:mv_fisher","tier":2,"multiblock":false,"types":[]}
 {"item":"gtceu:uiv_chemical_reactor","tier":11,"multiblock":false,"types":["gtceu:chemical_reactor"]}
+{"item":"gtia:matrioshka_brain","tier":0,"multiblock":true,"types":["gtceu:dummy"]}
 {"item":"gtceu:ev_energy_output_hatch_4a","tier":4,"multiblock":false,"types":[]}
 {"item":"gtceu:iv_1a_energy_converter","tier":5,"multiblock":false,"types":[]}
 {"item":"gtceu:uxv_macerator","tier":12,"multiblock":false,"types":["gtceu:macerator"]}
@@ -1265,7 +1258,6 @@
 {"item":"gtceu:ev_energy_output_hatch","tier":4,"multiblock":false,"types":[]}
 {"item":"gtceu:mv_input_bus","tier":2,"multiblock":false,"types":[]}
 {"item":"gtna:me_pattern_buffer","tier":7,"multiblock":false,"types":[]}
-{"item":"gtia:lv_fermentation_vat","tier":1,"multiblock":false,"types":["gtia:fermentation_vat"]}
 {"item":"gtceu:ulv_input_hatch","tier":0,"multiblock":false,"types":[]}
 {"item":"gtceu:iv_fluid_solidifier","tier":5,"multiblock":false,"types":["gtceu:fluid_solidifier"]}
 {"item":"gtna:wireless_dynamo_hatch_4096a_hv","tier":3,"multiblock":false,"types":[]}
@@ -1280,7 +1272,6 @@
 {"item":"gtceu:uev_ore_washer","tier":10,"multiblock":false,"types":["gtceu:ore_washer"]}
 {"item":"gtna:output_boost_item_bus_zpm","tier":7,"multiblock":false,"types":[]}
 {"item":"gtceu:hv_combustion","tier":3,"multiblock":false,"types":["gtceu:combustion_generator"]}
-{"item":"gtia:hall_heroult_cell","tier":0,"multiblock":true,"types":["gtia:hall_heroult"]}
 {"item":"gtceu:uiv_extractor","tier":11,"multiblock":false,"types":["gtceu:extractor"]}
 {"item":"gtceu:opv_energy_input_hatch_16a","tier":13,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_dynamo_hatch_262144a_mv","tier":2,"multiblock":false,"types":[]}
@@ -1354,7 +1345,6 @@
 {"item":"gtceu:luv_quantum_tank","tier":6,"multiblock":false,"types":[]}
 {"item":"gtceu:me_input_bus","tier":4,"multiblock":false,"types":[]}
 {"item":"gtceu:mv_wiremill","tier":2,"multiblock":false,"types":["gtceu:wiremill"]}
-{"item":"gtia:lv_still","tier":1,"multiblock":false,"types":["gtia:still"]}
 {"item":"gtceu:uev_dual_input_hatch","tier":10,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_dynamo_hatch_262144a_hv","tier":3,"multiblock":false,"types":[]}
 {"item":"gtceu:ev_input_bus","tier":4,"multiblock":false,"types":[]}
@@ -1412,7 +1402,6 @@
 {"item":"gtna:industrial_flotation_cell","tier":0,"multiblock":true,"types":["gtna:flotating_beneficiation"]}
 {"item":"gtceu:uxv_electromagnetic_separator","tier":12,"multiblock":false,"types":["gtceu:electromagnetic_separator"]}
 {"item":"gtna:resource_collection_module","tier":0,"multiblock":true,"types":["gtna:miner_module","gtna:drilling_module"]}
-{"item":"gtia:uhv_fermentation_vat","tier":9,"multiblock":false,"types":["gtia:fermentation_vat"]}
 {"item":"gtceu:uiv_arc_furnace","tier":11,"multiblock":false,"types":["gtceu:arc_furnace"]}
 {"item":"gtceu:luv_energy_output_hatch","tier":6,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_energy_hatch_16a_opv","tier":13,"multiblock":false,"types":[]}
@@ -1451,7 +1440,6 @@
 {"item":"gtna:me_export_buffer","tier":6,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_energy_hatch_4a_ev","tier":4,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_energy_hatch_1a_uhv","tier":9,"multiblock":false,"types":[]}
-{"item":"gtia:contact_converter","tier":0,"multiblock":true,"types":["gtia:contact_converter"]}
 {"item":"gtceu:iv_output_bus","tier":5,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_dynamo_hatch_65536a_lv","tier":1,"multiblock":false,"types":[]}
 {"item":"gtna:compound_extreme_cooling_unit","tier":0,"multiblock":true,"types":["gtceu:vacuum_freezer","gtna:atomization_condensation","gtna:plasma_condenser"]}
@@ -1511,6 +1499,7 @@
 {"item":"gtceu:hv_forge_hammer","tier":3,"multiblock":false,"types":["gtceu:forge_hammer"]}
 {"item":"gtna:me_craft_pattern_hatch","tier":7,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_dynamo_hatch_1024a_iv","tier":5,"multiblock":false,"types":[]}
+{"item":"gtia:lv_entangled_miner","tier":1,"multiblock":false,"types":["gtia:entangled_miner"]}
 {"item":"gtceu:luv_256a_laser_target_hatch","tier":6,"multiblock":false,"types":[]}
 {"item":"gtceu:uev_4096a_laser_target_hatch","tier":10,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_energy_hatch_1048576a_uxv","tier":12,"multiblock":false,"types":[]}
@@ -1555,6 +1544,7 @@
 {"item":"gtceu:ev_chemical_bath","tier":4,"multiblock":false,"types":["gtceu:chemical_bath"]}
 {"item":"gtceu:uhv_fluid_heater","tier":9,"multiblock":false,"types":["gtceu:fluid_heater"]}
 {"item":"gtna:output_boost_hatch_uhv","tier":9,"multiblock":false,"types":[]}
+{"item":"gtia:fusion_suppressor","tier":0,"multiblock":true,"types":["gtceu:dummy"]}
 {"item":"gtceu:opv_chemical_bath","tier":13,"multiblock":false,"types":["gtceu:chemical_bath"]}
 {"item":"gtceu:uhv_battery_buffer_8x","tier":9,"multiblock":false,"types":[]}
 {"item":"gtna:large_steam_storage_tank","tier":0,"multiblock":true,"types":["gtceu:dummy"]}
@@ -1606,6 +1596,7 @@
 {"item":"gtceu:uhv_electric_furnace","tier":9,"multiblock":false,"types":["gtceu:electric_furnace"]}
 {"item":"gtceu:iv_battery_buffer_16x","tier":5,"multiblock":false,"types":[]}
 {"item":"gtceu:opv_substation_output_hatch_64a","tier":13,"multiblock":false,"types":[]}
+{"item":"gtia:ev_entangled_miner","tier":4,"multiblock":false,"types":["gtia:entangled_miner"]}
 {"item":"gtna:large_steam_sifter","tier":0,"multiblock":true,"types":["gtceu:sifter"]}
 {"item":"gtna:debug_input_bus","tier":14,"multiblock":false,"types":[]}
 {"item":"gtceu:iv_laser_engraver","tier":5,"multiblock":false,"types":["gtceu:laser_engraver"]}
@@ -1627,6 +1618,7 @@
 {"item":"gtceu:iv_gas_collector","tier":5,"multiblock":false,"types":["gtceu:gas_collector"]}
 {"item":"gtceu:uiv_quantum_tank","tier":11,"multiblock":false,"types":[]}
 {"item":"gtceu:hv_16a_energy_converter","tier":3,"multiblock":false,"types":[]}
+{"item":"gtia:stellar_hoop","tier":0,"multiblock":true,"types":["gtceu:dummy"]}
 {"item":"gtceu:hv_steam_turbine","tier":3,"multiblock":false,"types":["gtceu:steam_turbine"]}
 {"item":"gtna:wireless_dynamo_hatch_4a_ev","tier":4,"multiblock":false,"types":[]}
 {"item":"gtceu:uiv_transformer_4a","tier":11,"multiblock":false,"types":[]}
@@ -1659,6 +1651,7 @@
 {"item":"gtceu:uev_packer","tier":10,"multiblock":false,"types":["gtceu:packer"]}
 {"item":"gtceu:uiv_transformer_2a","tier":11,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_energy_hatch_1048576a_uiv","tier":11,"multiblock":false,"types":[]}
+{"item":"gtia:disintegrator","tier":0,"multiblock":true,"types":["gtceu:dummy"]}
 {"item":"gtceu:iv_extractor","tier":5,"multiblock":false,"types":["gtceu:extractor"]}
 {"item":"gtceu:mv_sifter","tier":2,"multiblock":false,"types":["gtceu:sifter"]}
 {"item":"gtceu:mv_energy_output_hatch","tier":2,"multiblock":false,"types":[]}
@@ -1704,12 +1697,11 @@
 {"item":"gtceu:iv_electromagnetic_separator","tier":5,"multiblock":false,"types":["gtceu:electromagnetic_separator"]}
 {"item":"gtceu:mv_gas_collector","tier":2,"multiblock":false,"types":["gtceu:gas_collector"]}
 {"item":"gtceu:luv_scanner","tier":6,"multiblock":false,"types":["gtceu:scanner"]}
+{"item":"gtia:hv_entangled_miner","tier":3,"multiblock":false,"types":["gtia:entangled_miner"]}
 {"item":"gtceu:ev_block_breaker","tier":4,"multiblock":false,"types":[]}
 {"item":"gtceu:opv_autoclave","tier":13,"multiblock":false,"types":["gtceu:autoclave"]}
-{"item":"gtia:claus_unit","tier":0,"multiblock":true,"types":["gtia:claus_unit"]}
 {"item":"gtceu:steel_tank_valve","tier":0,"multiblock":false,"types":[]}
 {"item":"gtna:wireless_energy_hatch_1048576a_zpm","tier":7,"multiblock":false,"types":[]}
-{"item":"gtia:zpm_fermentation_vat","tier":7,"multiblock":false,"types":["gtia:fermentation_vat"]}
 {"item":"gtceu:lv_brewery","tier":1,"multiblock":false,"types":["gtceu:brewery"]}
 {"item":"gtna:large_steam_furnace","tier":0,"multiblock":true,"types":["gtceu:electric_furnace"]}
 {"item":"gtna:component_assembler","tier":0,"multiblock":true,"types":["gtna:component_assembly"]}
@@ -1837,6 +1829,7 @@
 {"item":"gtceu:bronze_tank_valve","tier":0,"multiblock":false,"types":[]}
 {"item":"gtceu:hv_diode","tier":3,"multiblock":false,"types":[]}
 {"item":"gtceu:uiv_thermal_centrifuge","tier":11,"multiblock":false,"types":["gtceu:thermal_centrifuge"]}
+{"item":"gtia:system_creator","tier":0,"multiblock":true,"types":["gtceu:dummy"]}
 {"item":"gtceu:ev_fermenter","tier":4,"multiblock":false,"types":["gtceu:fermenter"]}
 {"item":"gtceu:lv_16a_energy_converter","tier":1,"multiblock":false,"types":[]}
 {"item":"gtceu:zpm_parallel_hatch","tier":7,"multiblock":false,"types":[]}

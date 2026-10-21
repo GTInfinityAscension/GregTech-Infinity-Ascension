@@ -1060,9 +1060,11 @@ gtia:flowing_cell_liquor
 gtia:flowing_conductive_alloy
 gtia:flowing_pulsating_alloy
 gtia:flowing_sodium_aluminate
+gtia:flowing_superfluid_helium
 gtia:flowing_trichlorosilane
 gtia:pulsating_alloy
 gtia:sodium_aluminate
+gtia:superfluid_helium
 gtia:trichlorosilane
 gtna:abs
 gtna:acidic_bromine_exhaust

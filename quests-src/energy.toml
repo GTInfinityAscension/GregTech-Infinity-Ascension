@@ -282,7 +282,7 @@ title = "Combustion Generator"
 subtitle = "Liquid fuel at 32 V."
 task = [{ item = "gtceu:lv_combustion" }]
 text = """
-Burns the fuels of the card above. [item]Ethanol[/] from Infinity Ascension's [item]Fermentation Vats[/] is the one you can make without oil.
+Burns the fuels of the card above. [item]Ethanol[/] from the [item]Fermenter[/] is the one you can make without oil.
 """
 
 [[quest]]
@@ -297,7 +297,7 @@ title = "Gas Turbine"
 subtitle = "Gas at 32 V."
 task = [{ item = "gtceu:lv_gas_turbine" }]
 text = """
-Burns the gases of the card above. The [item]Catalytic Dehydrator[/]'s [item]Ethylene[/] is one of them.
+Burns the gases of the card above. [item]Ethylene[/] from ethanol dehydration is one of them.
 """
 
 # ------------------------------------------------------------------ MV row
@@ -438,7 +438,7 @@ title = "Ethanol"
 subtitle = "Fuel from plants."
 task = [{ fluid = "gtceu:ethanol", amount = 1000 }]
 text = """
-Carry a bucket of [item]Ethanol[/] from your Fermentation Vat. It is the combustion fuel you can make from plants alone.
+Carry a bucket of [item]Ethanol[/] from your Fermenter. It is the combustion fuel you can make from plants alone.
 """
 
 [[quest]]
@@ -453,7 +453,7 @@ title = "Ethylene"
 subtitle = "Ethanol, one step further."
 task = [{ fluid = "gtceu:ethylene", amount = 1000 }]
 text = """
-Carry a bucket of [item]Ethylene[/] from the [item]Catalytic Dehydrator[/]. Burn it in a Gas Turbine, or keep it: it is also the base of plastics later on.
+Carry a bucket of [item]Ethylene[/] from the Chemical Reactor's dehydration. Burn it in a Gas Turbine, or keep it: it is also the base of plastics later on.
 """
 
 # ------------------------------------------------------------------ moving the power

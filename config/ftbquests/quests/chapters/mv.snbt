@@ -1300,19 +1300,17 @@
 				"{gtia.quest.53FEE3DE0FB95AF5.desc.0}"
 				""
 				"{gtia.quest.53FEE3DE0FB95AF5.desc.2}"
-				""
-				"{gtia.quest.53FEE3DE0FB95AF5.desc.4}"
 			]
 			id: "53FEE3DE0FB95AF5"
 			rewards: [ ]
-			shape: "gear"
+			shape: "circle"
 			size: 1.5d
 			subtitle: "{gtia.quest.53FEE3DE0FB95AF5.subtitle}"
 			tasks: [
 				{
 					id: "222EFA94EAFEDD89"
 					type: "item"
-					item: "gtia:bayer_digester"
+					item: "gtia:sodium_aluminate_bucket"
 					count: 1L
 					consume_items: false
 					match_nbt: false
@@ -1414,19 +1412,18 @@
 				""
 				"{gtia.quest.67175118C46ADF68.desc.2}"
 			]
+			icon: "gtceu:electric_blast_furnace"
 			id: "67175118C46ADF68"
+			optional: true
 			rewards: [ ]
-			shape: "gear"
+			shape: "pentagon"
 			size: 1.5d
 			subtitle: "{gtia.quest.67175118C46ADF68.subtitle}"
 			tasks: [
 				{
 					id: "0129D22E36147124"
-					type: "item"
-					item: "gtia:hall_heroult_cell"
-					count: 1L
-					consume_items: false
-					match_nbt: false
+					type: "checkmark"
+					title: "{gtia.quest.67175118C46ADF68.task.0129D22E36147124}"
 				}
 			]
 			title: "{gtia.quest.67175118C46ADF68.title}"
@@ -1546,19 +1543,18 @@
 				""
 				"{gtia.quest.7C9302B22901B3EC.desc.2}"
 			]
+			icon: "gtceu:mv_chemical_reactor"
 			id: "7C9302B22901B3EC"
+			optional: true
 			rewards: [ ]
-			shape: "gear"
+			shape: "pentagon"
 			size: 1.5d
 			subtitle: "{gtia.quest.7C9302B22901B3EC.subtitle}"
 			tasks: [
 				{
 					id: "46531B74CB11CE6E"
-					type: "item"
-					item: "gtia:contact_converter"
-					count: 1L
-					consume_items: false
-					match_nbt: false
+					type: "checkmark"
+					title: "{gtia.quest.7C9302B22901B3EC.task.46531B74CB11CE6E}"
 				}
 			]
 			title: "{gtia.quest.7C9302B22901B3EC.title}"
@@ -1568,30 +1564,31 @@
 		{
 			dependencies: [
 				"0623071762390A9E"
+				"52E80D9614D45259"
 			]
 			description: [
 				"{gtia.quest.0B0DFAAC23E69912.desc.0}"
 				""
 				"{gtia.quest.0B0DFAAC23E69912.desc.2}"
 			]
+			icon: "gtceu:magnetite_dust"
 			id: "0B0DFAAC23E69912"
+			optional: true
 			rewards: [ ]
-			shape: "gear"
+			shape: "pentagon"
 			size: 1.5d
 			subtitle: "{gtia.quest.0B0DFAAC23E69912.subtitle}"
 			tasks: [
 				{
 					id: "20153CED7A75EDBE"
-					type: "item"
-					item: "gtia:ammonia_converter"
-					count: 1L
-					consume_items: false
-					match_nbt: false
+					type: "checkmark"
+					title: "{gtia.quest.0B0DFAAC23E69912.task.20153CED7A75EDBE}"
 				}
 			]
 			title: "{gtia.quest.0B0DFAAC23E69912.title}"
 			x: 23.5d
 			y: 10.5d
+			hide_dependency_lines: true
 		}
 		{
 			dependencies: [
@@ -1604,14 +1601,14 @@
 			]
 			id: "0D8B6A761A3480E0"
 			rewards: [ ]
-			shape: "gear"
+			shape: "circle"
 			size: 1.5d
 			subtitle: "{gtia.quest.0D8B6A761A3480E0.subtitle}"
 			tasks: [
 				{
 					id: "3C10003A87159F1A"
 					type: "item"
-					item: "gtia:solvay_tower"
+					item: "gtceu:sodium_bicarbonate_dust"
 					count: 1L
 					consume_items: false
 					match_nbt: false
@@ -2024,19 +2021,18 @@
 			description: [
 				"{gtia.quest.7DC9DE30EE29CB8C.desc.0}"
 			]
+			icon: "gtceu:cobalt_oxide_dust"
 			id: "7DC9DE30EE29CB8C"
+			optional: true
 			rewards: [ ]
-			shape: "gear"
+			shape: "pentagon"
 			size: 1.25d
 			subtitle: "{gtia.quest.7DC9DE30EE29CB8C.subtitle}"
 			tasks: [
 				{
 					id: "7DF740BEB5EB0DAF"
-					type: "item"
-					item: "gtia:ostwald_converter"
-					count: 1L
-					consume_items: false
-					match_nbt: false
+					type: "checkmark"
+					title: "{gtia.quest.7DC9DE30EE29CB8C.task.7DF740BEB5EB0DAF}"
 				}
 			]
 			title: "{gtia.quest.7DC9DE30EE29CB8C.title}"
@@ -2126,12 +2122,12 @@
 		}
 		{
 			dependencies: [
-				"53FEE3DE0FB95AF5"
+				"67175118C46ADF68"
 			]
 			description: [
 				"{gtia.quest.546CCE3DDBC40428.desc.0}"
 			]
-			icon: "gtia:bayer_digester"
+			icon: "gtceu:electric_blast_furnace"
 			id: "546CCE3DDBC40428"
 			optional: true
 			rewards: [ ]
@@ -2146,8 +2142,8 @@
 				}
 			]
 			title: "{gtia.quest.546CCE3DDBC40428.title}"
-			x: 12.0d
-			y: 18.0d
+			x: 17.5d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -2190,7 +2186,7 @@
 			rotation: 0.0d
 			width: 98.0d
 			x: 13.0d
-			y: 9.3125d
+			y: 9.125d
 		}
 		{
 			alpha: 255

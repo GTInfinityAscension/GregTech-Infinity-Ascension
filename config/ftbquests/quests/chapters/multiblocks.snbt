@@ -1498,88 +1498,6 @@
 				"4209FD70FEF1AA25"
 			]
 			description: [
-				"{gtia.machine.lime_kiln.tooltip.fact.0}"
-				"{gtia.machine.lime_kiln.tooltip.main.0}"
-				"{gtia.machine.lime_kiln.tooltip.main.1}"
-				"{gtia.machine.lime_kiln.tooltip.requirements.0}"
-				"{gtia.machine.lime_kiln.tooltip.requirements.1}"
-				""
-				"{gtia.quest.1CBB0773287BAD87.desc.6}"
-			]
-			icon: "gtia:lime_kiln"
-			id: "1CBB0773287BAD87"
-			optional: true
-			rewards: [
-				{
-					count: 4
-					id: "0C0AE861D466ED13"
-					item: "gtceu:bronze_ingot"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.0d
-			subtitle: "{gtia.quest.1CBB0773287BAD87.subtitle}"
-			tasks: [
-				{
-					consume_items: false
-					count: 1L
-					id: "44EE5C2D3CE4DC02"
-					item: "gtia:lime_kiln"
-					match_nbt: false
-					type: "item"
-				}
-			]
-			title: "{block.gtia.lime_kiln}"
-			x: 12.5d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"4209FD70FEF1AA25"
-			]
-			description: [
-				"{gtia.machine.wood_retort.tooltip.fact.0}"
-				"{gtia.machine.wood_retort.tooltip.main.0}"
-				"{gtia.machine.wood_retort.tooltip.main.1}"
-				"{gtia.machine.wood_retort.tooltip.requirements.0}"
-				"{gtia.machine.wood_retort.tooltip.requirements.1}"
-				""
-				"{gtia.quest.2EDC1E517C2E410F.desc.6}"
-			]
-			icon: "gtia:wood_retort"
-			id: "2EDC1E517C2E410F"
-			optional: true
-			rewards: [
-				{
-					count: 4
-					id: "1D03ECB6CB4B8BC9"
-					item: "gtceu:bronze_ingot"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.0d
-			subtitle: "{gtia.quest.2EDC1E517C2E410F.subtitle}"
-			tasks: [
-				{
-					consume_items: false
-					count: 1L
-					id: "01F6D12B0FD7282F"
-					item: "gtia:wood_retort"
-					match_nbt: false
-					type: "item"
-				}
-			]
-			title: "{block.gtia.wood_retort}"
-			x: 13.75d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"4209FD70FEF1AA25"
-			]
-			description: [
 				""
 				"{gtia.quest.6D26027E30BCF4DF.desc.1}"
 			]
@@ -2862,48 +2780,6 @@
 				"12109EC3AFEE15F3"
 			]
 			description: [
-				"{gtia.machine.diaphragm_cell.tooltip.fact.0}"
-				"{gtia.machine.diaphragm_cell.tooltip.main.0}"
-				"{gtia.machine.diaphragm_cell.tooltip.main.1}"
-				"{gtia.machine.diaphragm_cell.tooltip.requirements.0}"
-				"{gtia.machine.diaphragm_cell.tooltip.requirements.1}"
-				"{gtia.machine.diaphragm_cell.tooltip.requirements.2}"
-				""
-				"{gtia.quest.2093E23A031860DA.desc.7}"
-			]
-			icon: "gtia:diaphragm_cell"
-			id: "2093E23A031860DA"
-			optional: true
-			rewards: [
-				{
-					count: 4
-					id: "1ECA77FFDB624CB7"
-					item: "gtceu:steel_ingot"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.0d
-			subtitle: "{gtia.quest.2093E23A031860DA.subtitle}"
-			tasks: [
-				{
-					consume_items: false
-					count: 1L
-					id: "56CB529DBCB6BB0E"
-					item: "gtia:diaphragm_cell"
-					match_nbt: false
-					type: "item"
-				}
-			]
-			title: "{block.gtia.diaphragm_cell}"
-			x: 12.5d
-			y: 11.75d
-		}
-		{
-			dependencies: [
-				"12109EC3AFEE15F3"
-			]
-			description: [
 				"{gtna.machine.generator_array.tooltip.0}"
 				"{gtna.machine.generator_array.tooltip.1}"
 				"{gtna.machine.generator_array.tooltip.2}"
@@ -3656,256 +3532,6 @@
 				"0FB6866EFDE3AE94"
 			]
 			description: [
-				"{gtia.machine.ammonia_converter.tooltip.fact.0}"
-				"{gtia.machine.ammonia_converter.tooltip.main.0}"
-				"{gtia.machine.ammonia_converter.tooltip.main.1}"
-				"{gtia.machine.ammonia_converter.tooltip.requirements.0}"
-				"{gtia.machine.ammonia_converter.tooltip.requirements.1}"
-				""
-				"{gtia.quest.4BFD33E77D14CB93.desc.6}"
-			]
-			icon: "gtia:ammonia_converter"
-			id: "4BFD33E77D14CB93"
-			optional: true
-			rewards: [
-				{
-					count: 4
-					id: "7CC74D7C8ED1D6F9"
-					item: "gtceu:aluminium_ingot"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.0d
-			subtitle: "{gtia.quest.4BFD33E77D14CB93.subtitle}"
-			tasks: [
-				{
-					consume_items: false
-					count: 1L
-					id: "41A9B2CDBFCECC0E"
-					item: "gtia:ammonia_converter"
-					match_nbt: false
-					type: "item"
-				}
-			]
-			title: "{block.gtia.ammonia_converter}"
-			x: 12.5d
-			y: 19.75d
-		}
-		{
-			dependencies: [
-				"0FB6866EFDE3AE94"
-			]
-			description: [
-				"{gtia.machine.bayer_digester.tooltip.fact.0}"
-				"{gtia.machine.bayer_digester.tooltip.main.0}"
-				"{gtia.machine.bayer_digester.tooltip.main.1}"
-				"{gtia.machine.bayer_digester.tooltip.requirements.0}"
-				"{gtia.machine.bayer_digester.tooltip.requirements.1}"
-				"{gtia.machine.bayer_digester.tooltip.requirements.2}"
-				""
-				"{gtia.quest.5F809012B2FCC151.desc.7}"
-			]
-			icon: "gtia:bayer_digester"
-			id: "5F809012B2FCC151"
-			optional: true
-			rewards: [
-				{
-					count: 4
-					id: "593CA05960C1FE4D"
-					item: "gtceu:aluminium_ingot"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.0d
-			subtitle: "{gtia.quest.5F809012B2FCC151.subtitle}"
-			tasks: [
-				{
-					consume_items: false
-					count: 1L
-					id: "74FB428DF2827CB3"
-					item: "gtia:bayer_digester"
-					match_nbt: false
-					type: "item"
-				}
-			]
-			title: "{block.gtia.bayer_digester}"
-			x: 13.75d
-			y: 19.75d
-		}
-		{
-			dependencies: [
-				"0FB6866EFDE3AE94"
-			]
-			description: [
-				"{gtia.machine.contact_converter.tooltip.fact.0}"
-				"{gtia.machine.contact_converter.tooltip.main.0}"
-				"{gtia.machine.contact_converter.tooltip.main.1}"
-				"{gtia.machine.contact_converter.tooltip.requirements.0}"
-				"{gtia.machine.contact_converter.tooltip.requirements.1}"
-				""
-				"{gtia.quest.33B973F93EB94433.desc.6}"
-			]
-			icon: "gtia:contact_converter"
-			id: "33B973F93EB94433"
-			optional: true
-			rewards: [
-				{
-					count: 4
-					id: "360EFA4A72CF8F46"
-					item: "gtceu:aluminium_ingot"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.0d
-			subtitle: "{gtia.quest.33B973F93EB94433.subtitle}"
-			tasks: [
-				{
-					consume_items: false
-					count: 1L
-					id: "5C440F64DB4EAA2E"
-					item: "gtia:contact_converter"
-					match_nbt: false
-					type: "item"
-				}
-			]
-			title: "{block.gtia.contact_converter}"
-			x: 15.0d
-			y: 19.75d
-		}
-		{
-			dependencies: [
-				"0FB6866EFDE3AE94"
-			]
-			description: [
-				"{gtia.machine.hall_heroult_cell.tooltip.fact.0}"
-				"{gtia.machine.hall_heroult_cell.tooltip.main.0}"
-				"{gtia.machine.hall_heroult_cell.tooltip.main.1}"
-				"{gtia.machine.hall_heroult_cell.tooltip.requirements.0}"
-				"{gtia.machine.hall_heroult_cell.tooltip.requirements.1}"
-				"{gtia.machine.hall_heroult_cell.tooltip.requirements.2}"
-				""
-				"{gtia.quest.1374F552D9BABF20.desc.7}"
-			]
-			icon: "gtia:hall_heroult_cell"
-			id: "1374F552D9BABF20"
-			optional: true
-			rewards: [
-				{
-					count: 4
-					id: "4EAD72A4FC043371"
-					item: "gtceu:aluminium_ingot"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.0d
-			subtitle: "{gtia.quest.1374F552D9BABF20.subtitle}"
-			tasks: [
-				{
-					consume_items: false
-					count: 1L
-					id: "7E78B48D0C6DB1EA"
-					item: "gtia:hall_heroult_cell"
-					match_nbt: false
-					type: "item"
-				}
-			]
-			title: "{block.gtia.hall_heroult_cell}"
-			x: 16.25d
-			y: 19.75d
-		}
-		{
-			dependencies: [
-				"0FB6866EFDE3AE94"
-			]
-			description: [
-				"{gtia.machine.ostwald_converter.tooltip.fact.0}"
-				"{gtia.machine.ostwald_converter.tooltip.main.0}"
-				"{gtia.machine.ostwald_converter.tooltip.main.1}"
-				"{gtia.machine.ostwald_converter.tooltip.main.2}"
-				"{gtia.machine.ostwald_converter.tooltip.main.3}"
-				"{gtia.machine.ostwald_converter.tooltip.requirements.0}"
-				"{gtia.machine.ostwald_converter.tooltip.requirements.1}"
-				""
-				"{gtia.quest.7479AC65FAA265BF.desc.8}"
-			]
-			icon: "gtia:ostwald_converter"
-			id: "7479AC65FAA265BF"
-			optional: true
-			rewards: [
-				{
-					count: 4
-					id: "3AA2346248528C19"
-					item: "gtceu:aluminium_ingot"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.0d
-			subtitle: "{gtia.quest.7479AC65FAA265BF.subtitle}"
-			tasks: [
-				{
-					consume_items: false
-					count: 1L
-					id: "6285FAE407F21285"
-					item: "gtia:ostwald_converter"
-					match_nbt: false
-					type: "item"
-				}
-			]
-			title: "{block.gtia.ostwald_converter}"
-			x: 12.5d
-			y: 21.0d
-		}
-		{
-			dependencies: [
-				"0FB6866EFDE3AE94"
-			]
-			description: [
-				"{gtia.machine.solvay_tower.tooltip.fact.0}"
-				"{gtia.machine.solvay_tower.tooltip.main.0}"
-				"{gtia.machine.solvay_tower.tooltip.main.1}"
-				"{gtia.machine.solvay_tower.tooltip.requirements.0}"
-				"{gtia.machine.solvay_tower.tooltip.requirements.1}"
-				""
-				"{gtia.quest.77B050B8C7A1EB05.desc.6}"
-			]
-			icon: "gtia:solvay_tower"
-			id: "77B050B8C7A1EB05"
-			optional: true
-			rewards: [
-				{
-					count: 4
-					id: "14205BB07502D003"
-					item: "gtceu:aluminium_ingot"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.0d
-			subtitle: "{gtia.quest.77B050B8C7A1EB05.subtitle}"
-			tasks: [
-				{
-					consume_items: false
-					count: 1L
-					id: "2D7840C5921B3D69"
-					item: "gtia:solvay_tower"
-					match_nbt: false
-					type: "item"
-				}
-			]
-			title: "{block.gtia.solvay_tower}"
-			x: 13.75d
-			y: 21.0d
-		}
-		{
-			dependencies: [
-				"0FB6866EFDE3AE94"
-			]
-			description: [
 				""
 				"{gtia.quest.31B238A0D73726DE.desc.1}"
 			]
@@ -4071,48 +3697,6 @@
 				"0FB6866EFDE3AE94"
 			]
 			description: [
-				"{gtia.machine.greenhouse.tooltip.fact.0}"
-				"{gtia.machine.greenhouse.tooltip.main.0}"
-				"{gtia.machine.greenhouse.tooltip.main.1}"
-				"{gtia.machine.greenhouse.tooltip.requirements.0}"
-				"{gtia.machine.greenhouse.tooltip.requirements.1}"
-				"{gtia.machine.greenhouse.tooltip.requirements.2}"
-				""
-				"{gtia.quest.13ADF5EC62A85866.desc.7}"
-			]
-			icon: "gtia:greenhouse"
-			id: "13ADF5EC62A85866"
-			optional: true
-			rewards: [
-				{
-					count: 4
-					id: "17995F0D60B04E3A"
-					item: "gtceu:aluminium_ingot"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.0d
-			subtitle: "{gtia.quest.13ADF5EC62A85866.subtitle}"
-			tasks: [
-				{
-					consume_items: false
-					count: 1L
-					id: "50A406EBFEC89923"
-					item: "gtia:greenhouse"
-					match_nbt: false
-					type: "item"
-				}
-			]
-			title: "{block.gtia.greenhouse}"
-			x: 37.5d
-			y: 19.75d
-		}
-		{
-			dependencies: [
-				"0FB6866EFDE3AE94"
-			]
-			description: [
 				"{gtna.machine.greenhouse.tooltip.0}"
 				"{gtna.machine.greenhouse.tooltip.1}"
 				"{gtna.machine.greenhouse.tooltip.2}"
@@ -4149,7 +3733,7 @@
 				}
 			]
 			title: "{block.gtna.greenhouse}"
-			x: 38.75d
+			x: 37.5d
 			y: 19.75d
 		}
 		{
@@ -4596,131 +4180,6 @@
 				"7083ACEA5E57DB44"
 			]
 			description: [
-				"{gtia.machine.claus_unit.tooltip.fact.0}"
-				"{gtia.machine.claus_unit.tooltip.main.0}"
-				"{gtia.machine.claus_unit.tooltip.main.1}"
-				"{gtia.machine.claus_unit.tooltip.requirements.0}"
-				"{gtia.machine.claus_unit.tooltip.requirements.1}"
-				""
-				"{gtia.quest.761C9F1A9B04A0BE.desc.6}"
-			]
-			icon: "gtia:claus_unit"
-			id: "761C9F1A9B04A0BE"
-			optional: true
-			rewards: [
-				{
-					count: 4
-					id: "438B65AFBB4275A7"
-					item: "gtceu:stainless_steel_ingot"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.0d
-			subtitle: "{gtia.quest.761C9F1A9B04A0BE.subtitle}"
-			tasks: [
-				{
-					consume_items: false
-					count: 1L
-					id: "789D276491257BA9"
-					item: "gtia:claus_unit"
-					match_nbt: false
-					type: "item"
-				}
-			]
-			title: "{block.gtia.claus_unit}"
-			x: 15.0d
-			y: 25.25d
-		}
-		{
-			dependencies: [
-				"7083ACEA5E57DB44"
-			]
-			description: [
-				"{gtia.machine.kroll_reactor.tooltip.fact.0}"
-				"{gtia.machine.kroll_reactor.tooltip.main.0}"
-				"{gtia.machine.kroll_reactor.tooltip.main.1}"
-				"{gtia.machine.kroll_reactor.tooltip.main.2}"
-				"{gtia.machine.kroll_reactor.tooltip.requirements.0}"
-				"{gtia.machine.kroll_reactor.tooltip.requirements.1}"
-				"{gtia.machine.kroll_reactor.tooltip.requirements.2}"
-				""
-				"{gtia.quest.692920A9F8728ABD.desc.8}"
-			]
-			icon: "gtia:kroll_reactor"
-			id: "692920A9F8728ABD"
-			optional: true
-			rewards: [
-				{
-					count: 4
-					id: "169936BCB7F75404"
-					item: "gtceu:stainless_steel_ingot"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.0d
-			subtitle: "{gtia.quest.692920A9F8728ABD.subtitle}"
-			tasks: [
-				{
-					consume_items: false
-					count: 1L
-					id: "69F3702E45044C8B"
-					item: "gtia:kroll_reactor"
-					match_nbt: false
-					type: "item"
-				}
-			]
-			title: "{block.gtia.kroll_reactor}"
-			x: 16.25d
-			y: 25.25d
-		}
-		{
-			dependencies: [
-				"7083ACEA5E57DB44"
-			]
-			description: [
-				"{gtia.machine.siemens_reactor.tooltip.fact.0}"
-				"{gtia.machine.siemens_reactor.tooltip.main.0}"
-				"{gtia.machine.siemens_reactor.tooltip.main.1}"
-				"{gtia.machine.siemens_reactor.tooltip.requirements.0}"
-				"{gtia.machine.siemens_reactor.tooltip.requirements.1}"
-				""
-				"{gtia.quest.1CCDC491DDBCE2F6.desc.6}"
-			]
-			icon: "gtia:siemens_reactor"
-			id: "1CCDC491DDBCE2F6"
-			optional: true
-			rewards: [
-				{
-					count: 4
-					id: "4FFA99D9332BC64B"
-					item: "gtceu:stainless_steel_ingot"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.0d
-			subtitle: "{gtia.quest.1CCDC491DDBCE2F6.subtitle}"
-			tasks: [
-				{
-					consume_items: false
-					count: 1L
-					id: "5D7220DC325201D1"
-					item: "gtia:siemens_reactor"
-					match_nbt: false
-					type: "item"
-				}
-			]
-			title: "{block.gtia.siemens_reactor}"
-			x: 12.5d
-			y: 26.5d
-		}
-		{
-			dependencies: [
-				"7083ACEA5E57DB44"
-			]
-			description: [
 				"{gtna.machine.evaporation_plant.tooltip.0}"
 				"{gtna.machine.evaporation_plant.tooltip.1}"
 				"{gtna.machine.evaporation_plant.tooltip.2}"
@@ -4758,8 +4217,8 @@
 				}
 			]
 			title: "{block.gtna.evaporation_plant}"
-			x: 13.75d
-			y: 26.5d
+			x: 15.0d
+			y: 25.25d
 		}
 		{
 			dependencies: [
@@ -5436,57 +4895,6 @@
 				"49C023B9BBA75B98"
 			]
 			description: [
-				"{gtna.machine.integrated_ore_processor.tooltip.0}"
-				"{gtna.machine.integrated_ore_processor.tooltip.1}"
-				"{gtna.machine.integrated_ore_processor.tooltip.2}"
-				"{gtna.machine.integrated_ore_processor.tooltip.3}"
-				"{gtna.machine.integrated_ore_processor.tooltip.4}"
-				"{gtna.machine.integrated_ore_processor.tooltip.5}"
-				"{gtna.machine.integrated_ore_processor.tooltip.6}"
-				"{gtna.machine.integrated_ore_processor.tooltip.7}"
-				"{gtna.machine.integrated_ore_processor.tooltip.8}"
-				"{gtna.machine.integrated_ore_processor.tooltip.9}"
-				"{gtna.machine.integrated_ore_processor.tooltip.10}"
-				"{gtna.machine.integrated_ore_processor.tooltip.11}"
-				"{gtna.machine.integrated_ore_processor.tooltip.12}"
-				"{gtna.machine.integrated_ore_processor.tooltip.13}"
-				"{gtna.machine.integrated_ore_processor.tooltip.14}"
-				""
-				"{gtia.quest.5052D58655FD2859.desc.16}"
-			]
-			icon: "gtna:integrated_ore_processor"
-			id: "5052D58655FD2859"
-			optional: true
-			rewards: [
-				{
-					count: 4
-					id: "132804AE29741EEE"
-					item: "gtceu:titanium_ingot"
-					type: "item"
-				}
-			]
-			shape: "hexagon"
-			size: 1.0d
-			subtitle: "{gtia.quest.5052D58655FD2859.subtitle}"
-			tasks: [
-				{
-					consume_items: false
-					count: 1L
-					id: "288AF5C9C1FBD2C8"
-					item: "gtna:integrated_ore_processor"
-					match_nbt: false
-					type: "item"
-				}
-			]
-			title: "{block.gtna.integrated_ore_processor}"
-			x: 18.75d
-			y: 30.75d
-		}
-		{
-			dependencies: [
-				"49C023B9BBA75B98"
-			]
-			description: [
 				"{gtna.machine.void_fluid_drilling_rig.tooltip.0}"
 				"{gtna.machine.void_fluid_drilling_rig.tooltip.1}"
 				"{gtna.machine.void_fluid_drilling_rig.tooltip.2}"
@@ -5526,7 +4934,7 @@
 				}
 			]
 			title: "{block.gtna.void_fluid_drilling_rig}"
-			x: 20.0d
+			x: 18.75d
 			y: 30.75d
 		}
 		{
@@ -6382,6 +5790,57 @@
 				"115C73CDB4D2A517"
 			]
 			description: [
+				"{gtna.machine.integrated_ore_processor.tooltip.0}"
+				"{gtna.machine.integrated_ore_processor.tooltip.1}"
+				"{gtna.machine.integrated_ore_processor.tooltip.2}"
+				"{gtna.machine.integrated_ore_processor.tooltip.3}"
+				"{gtna.machine.integrated_ore_processor.tooltip.4}"
+				"{gtna.machine.integrated_ore_processor.tooltip.5}"
+				"{gtna.machine.integrated_ore_processor.tooltip.6}"
+				"{gtna.machine.integrated_ore_processor.tooltip.7}"
+				"{gtna.machine.integrated_ore_processor.tooltip.8}"
+				"{gtna.machine.integrated_ore_processor.tooltip.9}"
+				"{gtna.machine.integrated_ore_processor.tooltip.10}"
+				"{gtna.machine.integrated_ore_processor.tooltip.11}"
+				"{gtna.machine.integrated_ore_processor.tooltip.12}"
+				"{gtna.machine.integrated_ore_processor.tooltip.13}"
+				"{gtna.machine.integrated_ore_processor.tooltip.14}"
+				""
+				"{gtia.quest.5052D58655FD2859.desc.16}"
+			]
+			icon: "gtna:integrated_ore_processor"
+			id: "5052D58655FD2859"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "132804AE29741EEE"
+					item: "gtceu:tungsten_steel_ingot"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "{gtia.quest.5052D58655FD2859.subtitle}"
+			tasks: [
+				{
+					consume_items: false
+					count: 1L
+					id: "288AF5C9C1FBD2C8"
+					item: "gtna:integrated_ore_processor"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "{block.gtna.integrated_ore_processor}"
+			x: 22.5d
+			y: 33.75d
+		}
+		{
+			dependencies: [
+				"115C73CDB4D2A517"
+			]
+			description: [
 				"{gtna.machine.nexus_me_hypercore.tooltip.0}"
 				"{gtna.machine.nexus_me_hypercore.tooltip.1}"
 				"{gtna.machine.nexus_me_hypercore.tooltip.2}"
@@ -6422,8 +5881,8 @@
 				}
 			]
 			title: "{block.gtna.nexus_me_hypercore}"
-			x: 22.5d
-			y: 33.75d
+			x: 18.75d
+			y: 35.0d
 		}
 		{
 			dependencies: [
@@ -8303,7 +7762,7 @@
 			]
 			title: "{gtia.quest.487D50379431F8D5.title}"
 			x: -2.5d
-			y: 52.625d
+			y: 55.125d
 		}
 		{
 			dependencies: [
@@ -9249,6 +8708,44 @@
 				"487D50379431F8D5"
 			]
 			description: [
+				"{gtia.machine.assembly_yard.tooltip.0}"
+				"{gtia.machine.assembly_yard.tooltip.1}"
+				"{gtia.machine.assembly_yard.tooltip.2}"
+				""
+				"{gtia.quest.5DAE2D58D23E1BDC.desc.4}"
+			]
+			icon: "gtia:assembly_yard"
+			id: "5DAE2D58D23E1BDC"
+			optional: true
+			rewards: [
+				{
+					id: "1C3144C0E03A11CB"
+					item: "gtceu:neutronium_ingot"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "{gtia.quest.5DAE2D58D23E1BDC.subtitle}"
+			tasks: [
+				{
+					consume_items: false
+					count: 1L
+					id: "4B2962F06D41C772"
+					item: "gtia:assembly_yard"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "{block.gtia.assembly_yard}"
+			x: 25.0d
+			y: 50.75d
+		}
+		{
+			dependencies: [
+				"487D50379431F8D5"
+			]
+			description: [
 				"{gtna.machine.assembler_module.tooltip.0}"
 				"{gtna.machine.assembler_module.tooltip.1}"
 				"{gtna.machine.assembler_module.tooltip.2}"
@@ -9284,7 +8781,7 @@
 				}
 			]
 			title: "{block.gtna.assembler_module}"
-			x: 25.0d
+			x: 26.25d
 			y: 50.75d
 		}
 		{
@@ -9330,7 +8827,7 @@
 				}
 			]
 			title: "{block.gtna.bec_assembler}"
-			x: 26.25d
+			x: 27.5d
 			y: 50.75d
 		}
 		{
@@ -9374,7 +8871,7 @@
 				}
 			]
 			title: "{block.gtna.component_assembly_line}"
-			x: 27.5d
+			x: 28.75d
 			y: 50.75d
 		}
 		{
@@ -9419,8 +8916,8 @@
 				}
 			]
 			title: "{block.gtna.dimensional_focus_engraving_array}"
-			x: 28.75d
-			y: 50.75d
+			x: 25.0d
+			y: 52.0d
 		}
 		{
 			dependencies: [
@@ -9463,7 +8960,7 @@
 				}
 			]
 			title: "{block.gtna.engraving_laser_plant}"
-			x: 25.0d
+			x: 26.25d
 			y: 52.0d
 		}
 		{
@@ -9508,7 +9005,7 @@
 				}
 			]
 			title: "{block.gtna.extreme_compressor}"
-			x: 26.25d
+			x: 27.5d
 			y: 52.0d
 		}
 		{
@@ -9553,7 +9050,7 @@
 				}
 			]
 			title: "{block.gtna.heavy_rolling}"
-			x: 27.5d
+			x: 28.75d
 			y: 52.0d
 		}
 		{
@@ -9597,8 +9094,8 @@
 				}
 			]
 			title: "{block.gtna.high_energy_laser_lathe}"
-			x: 28.75d
-			y: 52.0d
+			x: 25.0d
+			y: 53.25d
 		}
 		{
 			dependencies: [
@@ -9641,7 +9138,7 @@
 				}
 			]
 			title: "{block.gtna.integrated_assembler}"
-			x: 25.0d
+			x: 26.25d
 			y: 53.25d
 		}
 		{
@@ -9685,7 +9182,7 @@
 				}
 			]
 			title: "{block.gtna.nanites_circuit_assembly_factory}"
-			x: 26.25d
+			x: 27.5d
 			y: 53.25d
 		}
 		{
@@ -9729,7 +9226,7 @@
 				}
 			]
 			title: "{block.gtna.neutronium_wire_cutting}"
-			x: 27.5d
+			x: 28.75d
 			y: 53.25d
 		}
 		{
@@ -9774,8 +9271,8 @@
 				}
 			]
 			title: "{block.gtna.pcb_factory}"
-			x: 28.75d
-			y: 53.25d
+			x: 25.0d
+			y: 54.5d
 		}
 		{
 			dependencies: [
@@ -9818,8 +9315,46 @@
 				}
 			]
 			title: "{block.gtna.superconducting_electromagnetism}"
-			x: 25.0d
+			x: 26.25d
 			y: 54.5d
+		}
+		{
+			dependencies: [
+				"487D50379431F8D5"
+			]
+			description: [
+				"{gtia.machine.fusion_suppressor.tooltip.0}"
+				"{gtia.machine.fusion_suppressor.tooltip.1}"
+				"{gtia.machine.fusion_suppressor.tooltip.2}"
+				""
+				"{gtia.quest.2DC51232F48C97F6.desc.4}"
+			]
+			icon: "gtia:fusion_suppressor"
+			id: "2DC51232F48C97F6"
+			optional: true
+			rewards: [
+				{
+					id: "4BDAC7CA14C224C1"
+					item: "gtceu:neutronium_ingot"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "{gtia.quest.2DC51232F48C97F6.subtitle}"
+			tasks: [
+				{
+					consume_items: false
+					count: 1L
+					id: "413756880381B464"
+					item: "gtia:fusion_suppressor"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "{block.gtia.fusion_suppressor}"
+			x: 31.25d
+			y: 50.75d
 		}
 		{
 			dependencies: [
@@ -9861,7 +9396,7 @@
 				}
 			]
 			title: "{block.gtna.annihilate_generator}"
-			x: 31.25d
+			x: 32.5d
 			y: 50.75d
 		}
 		{
@@ -9906,7 +9441,7 @@
 				}
 			]
 			title: "{block.gtna.bec_generator}"
-			x: 32.5d
+			x: 33.75d
 			y: 50.75d
 		}
 		{
@@ -9952,7 +9487,7 @@
 				}
 			]
 			title: "{block.gtna.dimensionally_transcendent_plasma_forge}"
-			x: 33.75d
+			x: 35.0d
 			y: 50.75d
 		}
 		{
@@ -9996,8 +9531,8 @@
 				}
 			]
 			title: "{block.gtna.godforge_plasma_module}"
-			x: 35.0d
-			y: 50.75d
+			x: 31.25d
+			y: 52.0d
 		}
 		{
 			dependencies: [
@@ -10041,7 +9576,7 @@
 				}
 			]
 			title: "{block.gtna.hyperdimensional_plasma_fusion_core}"
-			x: 31.25d
+			x: 32.5d
 			y: 52.0d
 		}
 		{
@@ -10085,7 +9620,7 @@
 				}
 			]
 			title: "{block.gtna.lightning_rod}"
-			x: 32.5d
+			x: 33.75d
 			y: 52.0d
 		}
 		{
@@ -10130,7 +9665,7 @@
 				}
 			]
 			title: "{block.gtna.transcendent_plasma_mixer}"
-			x: 33.75d
+			x: 35.0d
 			y: 52.0d
 		}
 		{
@@ -10460,6 +9995,538 @@
 				"487D50379431F8D5"
 			]
 			description: [
+				"{gtia.machine.birch_world.tooltip.0}"
+				"{gtia.machine.birch_world.tooltip.1}"
+				"{gtia.machine.birch_world.tooltip.2}"
+				""
+				"{gtia.quest.68FD0A9152775CF9.desc.4}"
+			]
+			icon: "gtia:birch_world"
+			id: "68FD0A9152775CF9"
+			optional: true
+			rewards: [
+				{
+					id: "7EAC3496999A43D1"
+					item: "gtceu:neutronium_ingot"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "{gtia.quest.68FD0A9152775CF9.subtitle}"
+			tasks: [
+				{
+					consume_items: false
+					count: 1L
+					id: "7032AB1EC020B38B"
+					item: "gtia:birch_world"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "{block.gtia.birch_world}"
+			x: 52.5d
+			y: 50.75d
+		}
+		{
+			dependencies: [
+				"487D50379431F8D5"
+			]
+			description: [
+				"{gtia.machine.disintegrator.tooltip.0}"
+				"{gtia.machine.disintegrator.tooltip.1}"
+				"{gtia.machine.disintegrator.tooltip.2}"
+				""
+				"{gtia.quest.4ABA616A56DA6890.desc.4}"
+			]
+			icon: "gtia:disintegrator"
+			id: "4ABA616A56DA6890"
+			optional: true
+			rewards: [
+				{
+					id: "51C1D7CDBFE2D02F"
+					item: "gtceu:neutronium_ingot"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "{gtia.quest.4ABA616A56DA6890.subtitle}"
+			tasks: [
+				{
+					consume_items: false
+					count: 1L
+					id: "0DC1B979ED3CF3F7"
+					item: "gtia:disintegrator"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "{block.gtia.disintegrator}"
+			x: 53.75d
+			y: 50.75d
+		}
+		{
+			dependencies: [
+				"487D50379431F8D5"
+			]
+			description: [
+				"{gtia.machine.hraemc.tooltip.0}"
+				"{gtia.machine.hraemc.tooltip.1}"
+				"{gtia.machine.hraemc.tooltip.2}"
+				""
+				"{gtia.quest.3318FAE3E151EA7C.desc.4}"
+			]
+			icon: "gtia:hraemc"
+			id: "3318FAE3E151EA7C"
+			optional: true
+			rewards: [
+				{
+					id: "2FE58AE62FD31C84"
+					item: "gtceu:neutronium_ingot"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "{gtia.quest.3318FAE3E151EA7C.subtitle}"
+			tasks: [
+				{
+					consume_items: false
+					count: 1L
+					id: "04BEF3C24FBC6648"
+					item: "gtia:hraemc"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "{block.gtia.hraemc}"
+			x: 55.0d
+			y: 50.75d
+		}
+		{
+			dependencies: [
+				"487D50379431F8D5"
+			]
+			description: [
+				"{gtia.machine.kugelblitz.tooltip.0}"
+				"{gtia.machine.kugelblitz.tooltip.1}"
+				"{gtia.machine.kugelblitz.tooltip.2}"
+				""
+				"{gtia.quest.6197DAA77954FDBC.desc.4}"
+			]
+			icon: "gtia:kugelblitz"
+			id: "6197DAA77954FDBC"
+			optional: true
+			rewards: [
+				{
+					id: "6C2519C47CED0012"
+					item: "gtceu:neutronium_ingot"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "{gtia.quest.6197DAA77954FDBC.subtitle}"
+			tasks: [
+				{
+					consume_items: false
+					count: 1L
+					id: "3BFFD69EDC708192"
+					item: "gtia:kugelblitz"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "{block.gtia.kugelblitz}"
+			x: 56.25d
+			y: 50.75d
+		}
+		{
+			dependencies: [
+				"487D50379431F8D5"
+			]
+			description: [
+				"{gtia.machine.matrioshka_brain.tooltip.0}"
+				"{gtia.machine.matrioshka_brain.tooltip.1}"
+				"{gtia.machine.matrioshka_brain.tooltip.2}"
+				""
+				"{gtia.quest.6872B262C94BCE76.desc.4}"
+			]
+			icon: "gtia:matrioshka_brain"
+			id: "6872B262C94BCE76"
+			optional: true
+			rewards: [
+				{
+					id: "374E847FE7674E26"
+					item: "gtceu:neutronium_ingot"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "{gtia.quest.6872B262C94BCE76.subtitle}"
+			tasks: [
+				{
+					consume_items: false
+					count: 1L
+					id: "0FE75AE1472CBD0C"
+					item: "gtia:matrioshka_brain"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "{block.gtia.matrioshka_brain}"
+			x: 52.5d
+			y: 52.0d
+		}
+		{
+			dependencies: [
+				"487D50379431F8D5"
+			]
+			description: [
+				"{gtia.machine.nidavellir.tooltip.0}"
+				"{gtia.machine.nidavellir.tooltip.1}"
+				"{gtia.machine.nidavellir.tooltip.2}"
+				""
+				"{gtia.quest.4D586F588ACAC843.desc.4}"
+			]
+			icon: "gtia:nidavellir"
+			id: "4D586F588ACAC843"
+			optional: true
+			rewards: [
+				{
+					id: "392A608808369DE4"
+					item: "gtceu:neutronium_ingot"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "{gtia.quest.4D586F588ACAC843.subtitle}"
+			tasks: [
+				{
+					consume_items: false
+					count: 1L
+					id: "0DC566B145695C22"
+					item: "gtia:nidavellir"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "{block.gtia.nidavellir}"
+			x: 53.75d
+			y: 52.0d
+		}
+		{
+			dependencies: [
+				"487D50379431F8D5"
+			]
+			description: [
+				"{gtia.machine.qso.tooltip.0}"
+				"{gtia.machine.qso.tooltip.1}"
+				"{gtia.machine.qso.tooltip.2}"
+				""
+				"{gtia.quest.609D5CF476E91C73.desc.4}"
+			]
+			icon: "gtia:qso"
+			id: "609D5CF476E91C73"
+			optional: true
+			rewards: [
+				{
+					id: "4639CC8E98F7FC5B"
+					item: "gtceu:neutronium_ingot"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "{gtia.quest.609D5CF476E91C73.subtitle}"
+			tasks: [
+				{
+					consume_items: false
+					count: 1L
+					id: "748B70BCB74ABCE9"
+					item: "gtia:qso"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "{block.gtia.qso}"
+			x: 55.0d
+			y: 52.0d
+		}
+		{
+			dependencies: [
+				"487D50379431F8D5"
+			]
+			description: [
+				"{gtia.machine.star_lifter.tooltip.0}"
+				"{gtia.machine.star_lifter.tooltip.1}"
+				"{gtia.machine.star_lifter.tooltip.2}"
+				""
+				"{gtia.quest.171830E2DC2AC536.desc.4}"
+			]
+			icon: "gtia:star_lifter"
+			id: "171830E2DC2AC536"
+			optional: true
+			rewards: [
+				{
+					id: "5D9BCFC4602CB2A7"
+					item: "gtceu:neutronium_ingot"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "{gtia.quest.171830E2DC2AC536.subtitle}"
+			tasks: [
+				{
+					consume_items: false
+					count: 1L
+					id: "4298E2E190532E03"
+					item: "gtia:star_lifter"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "{block.gtia.star_lifter}"
+			x: 56.25d
+			y: 52.0d
+		}
+		{
+			dependencies: [
+				"487D50379431F8D5"
+			]
+			description: [
+				"{gtia.machine.stellar_engine.tooltip.0}"
+				"{gtia.machine.stellar_engine.tooltip.1}"
+				"{gtia.machine.stellar_engine.tooltip.2}"
+				""
+				"{gtia.quest.14229426300CFF4A.desc.4}"
+			]
+			icon: "gtia:stellar_engine"
+			id: "14229426300CFF4A"
+			optional: true
+			rewards: [
+				{
+					id: "086A2D971AAC9D4A"
+					item: "gtceu:neutronium_ingot"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "{gtia.quest.14229426300CFF4A.subtitle}"
+			tasks: [
+				{
+					consume_items: false
+					count: 1L
+					id: "11B1CD4F151380E8"
+					item: "gtia:stellar_engine"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "{block.gtia.stellar_engine}"
+			x: 52.5d
+			y: 53.25d
+		}
+		{
+			dependencies: [
+				"487D50379431F8D5"
+			]
+			description: [
+				"{gtia.machine.stellar_harvester.tooltip.0}"
+				"{gtia.machine.stellar_harvester.tooltip.1}"
+				"{gtia.machine.stellar_harvester.tooltip.2}"
+				""
+				"{gtia.quest.5407CD36C4F8A28C.desc.4}"
+			]
+			icon: "gtia:stellar_harvester"
+			id: "5407CD36C4F8A28C"
+			optional: true
+			rewards: [
+				{
+					id: "7502909ACE0DB9B8"
+					item: "gtceu:neutronium_ingot"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "{gtia.quest.5407CD36C4F8A28C.subtitle}"
+			tasks: [
+				{
+					consume_items: false
+					count: 1L
+					id: "67D18A2653012210"
+					item: "gtia:stellar_harvester"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "{block.gtia.stellar_harvester}"
+			x: 53.75d
+			y: 53.25d
+		}
+		{
+			dependencies: [
+				"487D50379431F8D5"
+			]
+			description: [
+				"{gtia.machine.stellar_hoop.tooltip.0}"
+				"{gtia.machine.stellar_hoop.tooltip.1}"
+				"{gtia.machine.stellar_hoop.tooltip.2}"
+				""
+				"{gtia.quest.0811A48E24018EDC.desc.4}"
+			]
+			icon: "gtia:stellar_hoop"
+			id: "0811A48E24018EDC"
+			optional: true
+			rewards: [
+				{
+					id: "681CB2F677271F77"
+					item: "gtceu:neutronium_ingot"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "{gtia.quest.0811A48E24018EDC.subtitle}"
+			tasks: [
+				{
+					consume_items: false
+					count: 1L
+					id: "6D628EE3362C87E5"
+					item: "gtia:stellar_hoop"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "{block.gtia.stellar_hoop}"
+			x: 55.0d
+			y: 53.25d
+		}
+		{
+			dependencies: [
+				"487D50379431F8D5"
+			]
+			description: [
+				"{gtia.machine.suprashell.tooltip.0}"
+				"{gtia.machine.suprashell.tooltip.1}"
+				"{gtia.machine.suprashell.tooltip.2}"
+				""
+				"{gtia.quest.7966EA5F063F4C37.desc.4}"
+			]
+			icon: "gtia:suprashell"
+			id: "7966EA5F063F4C37"
+			optional: true
+			rewards: [
+				{
+					id: "2924ECC3D85CF08E"
+					item: "gtceu:neutronium_ingot"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "{gtia.quest.7966EA5F063F4C37.subtitle}"
+			tasks: [
+				{
+					consume_items: false
+					count: 1L
+					id: "52322B1196EF25A7"
+					item: "gtia:suprashell"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "{block.gtia.suprashell}"
+			x: 56.25d
+			y: 53.25d
+		}
+		{
+			dependencies: [
+				"487D50379431F8D5"
+			]
+			description: [
+				"{gtia.machine.system_creator.tooltip.0}"
+				"{gtia.machine.system_creator.tooltip.1}"
+				"{gtia.machine.system_creator.tooltip.2}"
+				""
+				"{gtia.quest.58E5942AE0F7D61A.desc.4}"
+			]
+			icon: "gtia:system_creator"
+			id: "58E5942AE0F7D61A"
+			optional: true
+			rewards: [
+				{
+					id: "003CA3F2766259B8"
+					item: "gtceu:neutronium_ingot"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "{gtia.quest.58E5942AE0F7D61A.subtitle}"
+			tasks: [
+				{
+					consume_items: false
+					count: 1L
+					id: "334303DC43764A64"
+					item: "gtia:system_creator"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "{block.gtia.system_creator}"
+			x: 52.5d
+			y: 54.5d
+		}
+		{
+			dependencies: [
+				"487D50379431F8D5"
+			]
+			description: [
+				"{gtia.machine.yggdrasil.tooltip.0}"
+				"{gtia.machine.yggdrasil.tooltip.1}"
+				"{gtia.machine.yggdrasil.tooltip.2}"
+				""
+				"{gtia.quest.2108D28DDA98D211.desc.4}"
+			]
+			icon: "gtia:yggdrasil"
+			id: "2108D28DDA98D211"
+			optional: true
+			rewards: [
+				{
+					id: "0773B66D5529031E"
+					item: "gtceu:neutronium_ingot"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "{gtia.quest.2108D28DDA98D211.subtitle}"
+			tasks: [
+				{
+					consume_items: false
+					count: 1L
+					id: "305489B5C32F8F47"
+					item: "gtia:yggdrasil"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "{block.gtia.yggdrasil}"
+			x: 53.75d
+			y: 54.5d
+		}
+		{
+			dependencies: [
+				"487D50379431F8D5"
+			]
+			description: [
 				"{gtna.machine.advanced_hyper_reactor.tooltip.0}"
 				"{gtna.machine.advanced_hyper_reactor.tooltip.1}"
 				"{gtna.machine.advanced_hyper_reactor.tooltip.2}"
@@ -10497,8 +10564,8 @@
 				}
 			]
 			title: "{block.gtna.advanced_hyper_reactor}"
-			x: 52.5d
-			y: 50.75d
+			x: 55.0d
+			y: 54.5d
 		}
 		{
 			dependencies: [
@@ -10545,8 +10612,8 @@
 				}
 			]
 			title: "{block.gtna.antimatter_collider_ring}"
-			x: 53.75d
-			y: 50.75d
+			x: 56.25d
+			y: 54.5d
 		}
 		{
 			dependencies: [
@@ -10590,8 +10657,8 @@
 				}
 			]
 			title: "{block.gtna.bec_diode}"
-			x: 55.0d
-			y: 50.75d
+			x: 52.5d
+			y: 55.75d
 		}
 		{
 			dependencies: [
@@ -10637,8 +10704,8 @@
 				}
 			]
 			title: "{block.gtna.bec_io_node}"
-			x: 56.25d
-			y: 50.75d
+			x: 53.75d
+			y: 55.75d
 		}
 		{
 			dependencies: [
@@ -10681,8 +10748,8 @@
 				}
 			]
 			title: "{block.gtna.crystal_builder}"
-			x: 52.5d
-			y: 52.0d
+			x: 55.0d
+			y: 55.75d
 		}
 		{
 			dependencies: [
@@ -10737,8 +10804,8 @@
 				}
 			]
 			title: "{block.gtna.eye_of_harmony}"
-			x: 53.75d
-			y: 52.0d
+			x: 56.25d
+			y: 55.75d
 		}
 		{
 			dependencies: [
@@ -10782,8 +10849,8 @@
 				}
 			]
 			title: "{block.gtna.gemini_containment_system}"
-			x: 55.0d
-			y: 52.0d
+			x: 52.5d
+			y: 57.0d
 		}
 		{
 			dependencies: [
@@ -10826,8 +10893,8 @@
 				}
 			]
 			title: "{block.gtna.hand_of_arachne}"
-			x: 56.25d
-			y: 52.0d
+			x: 53.75d
+			y: 57.0d
 		}
 		{
 			dependencies: [
@@ -10870,8 +10937,8 @@
 				}
 			]
 			title: "{block.gtna.holy_separator}"
-			x: 52.5d
-			y: 53.25d
+			x: 55.0d
+			y: 57.0d
 		}
 		{
 			dependencies: [
@@ -10916,8 +10983,8 @@
 				}
 			]
 			title: "{block.gtna.hyper_reactor}"
-			x: 53.75d
-			y: 53.25d
+			x: 56.25d
+			y: 57.0d
 		}
 		{
 			dependencies: [
@@ -10959,8 +11026,8 @@
 				}
 			]
 			title: "{block.gtna.kerr_newman_homogenizer}"
-			x: 55.0d
-			y: 53.25d
+			x: 52.5d
+			y: 58.25d
 		}
 		{
 			dependencies: [
@@ -11003,8 +11070,8 @@
 				}
 			]
 			title: "{block.gtna.nyarlathoteps_tentacle}"
-			x: 56.25d
-			y: 53.25d
+			x: 53.75d
+			y: 58.25d
 		}
 		{
 			dependencies: [
@@ -11047,8 +11114,8 @@
 				}
 			]
 			title: "{block.gtna.particle_stream_matrix_filling_machine}"
-			x: 52.5d
-			y: 54.5d
+			x: 55.0d
+			y: 58.25d
 		}
 		{
 			dependencies: [
@@ -11091,8 +11158,8 @@
 				}
 			]
 			title: "{block.gtna.phase_change_cube}"
-			x: 53.75d
-			y: 54.5d
+			x: 56.25d
+			y: 58.25d
 		}
 		{
 			dependencies: [
@@ -11139,8 +11206,8 @@
 				}
 			]
 			title: "{block.gtna.stellar_containment_chamber}"
-			x: 55.0d
-			y: 54.5d
+			x: 52.5d
+			y: 59.5d
 		}
 		{
 			dependencies: [
@@ -11189,8 +11256,8 @@
 				}
 			]
 			title: "{block.gtna.supercomputing_center}"
-			x: 56.25d
-			y: 54.5d
+			x: 53.75d
+			y: 59.5d
 		}
 	]
 	title: "{gtia.quest.chapter.0B1C7545E6CBD57C}"
@@ -11201,14 +11268,14 @@
 			color: 16777215
 			corner: false
 			dev: false
-			height: 120.25d
+			height: 124.0d
 			hover: [ ]
 			image: "gtia_quests:textures/quests/backgrounds/reference.png"
 			order: -100
 			rotation: 0.0d
-			width: 120.25d
+			width: 124.0d
 			x: 26.625d
-			y: 25.5d
+			y: 28.0d
 		}
 	]
 }

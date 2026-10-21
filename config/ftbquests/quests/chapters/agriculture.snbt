@@ -431,7 +431,7 @@
 		}
 		{
 			dependencies: [
-				"3B201ABFAD079376"
+				"2C3DA47A4BC52667"
 			]
 			description: [
 				"{gtia.quest.5A8DE80B2B95A82C.desc.0}"
@@ -517,7 +517,7 @@
 			description: [
 				"{gtia.quest.113F593262989A47.desc.0}"
 			]
-			icon: "gtia:greenhouse"
+			icon: "gtna:greenhouse"
 			id: "113F593262989A47"
 			rewards: [ ]
 			shape: "gear"
@@ -527,7 +527,7 @@
 				{
 					id: "345DEC9F6B750C56"
 					type: "item"
-					item: "gtia:greenhouse"
+					item: "gtna:greenhouse"
 					count: 1L
 					consume_items: false
 					match_nbt: false

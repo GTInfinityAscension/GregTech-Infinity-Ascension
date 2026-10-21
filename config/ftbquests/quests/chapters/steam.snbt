@@ -2351,22 +2351,19 @@
 				"{gtia.quest.1470DD8318DF0F60.desc.0}"
 				""
 				"{gtia.quest.1470DD8318DF0F60.desc.2}"
-				""
-				"{gtia.quest.1470DD8318DF0F60.desc.4}"
 			]
+			icon: "gtceu:coke_oven"
 			id: "1470DD8318DF0F60"
+			optional: true
 			rewards: [ ]
-			shape: "gear"
+			shape: "pentagon"
 			size: 1.5d
 			subtitle: "{gtia.quest.1470DD8318DF0F60.subtitle}"
 			tasks: [
 				{
 					id: "06B58864CFD3503F"
-					type: "item"
-					item: "gtia:wood_retort"
-					count: 1L
-					consume_items: false
-					match_nbt: false
+					type: "checkmark"
+					title: "{gtia.quest.1470DD8318DF0F60.task.06B58864CFD3503F}"
 				}
 			]
 			title: "{gtia.quest.1470DD8318DF0F60.title}"
@@ -2415,15 +2412,15 @@
 			]
 			id: "6637F16316206C88"
 			rewards: [ ]
-			shape: "gear"
+			shape: "circle"
 			size: 1.5d
 			subtitle: "{gtia.quest.6637F16316206C88.subtitle}"
 			tasks: [
 				{
 					id: "5320B0648E317717"
 					type: "item"
-					item: "gtia:lime_kiln"
-					count: 1L
+					item: "gtceu:calcite_dust"
+					count: 4L
 					consume_items: false
 					match_nbt: false
 				}

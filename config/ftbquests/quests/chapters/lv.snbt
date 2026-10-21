@@ -852,36 +852,32 @@
 		}
 		{
 			dependencies: [
-				"23493BC1D9D43A0A"
 				"186220CDDFF52D50"
-				"191CB01FF356FA8C"
+				"225A7837821FDE98"
 			]
 			description: [
 				"{gtia.quest.1FC6DB76FA90EDFD.desc.0}"
 				""
 				"{gtia.quest.1FC6DB76FA90EDFD.desc.2}"
-				""
-				"{gtia.quest.1FC6DB76FA90EDFD.desc.4}"
 			]
 			id: "1FC6DB76FA90EDFD"
 			hide_dependent_lines: true
 			rewards: [ ]
-			shape: "gear"
+			shape: "circle"
 			size: 1.5d
 			subtitle: "{gtia.quest.1FC6DB76FA90EDFD.subtitle}"
 			tasks: [
 				{
+					amount: 1000L
+					fluid: "gtceu:chlorine"
 					id: "577A59C0EFC3EACC"
-					type: "item"
-					item: "gtia:diaphragm_cell"
-					count: 1L
-					consume_items: false
-					match_nbt: false
+					type: "fluid"
 				}
 			]
 			title: "{gtia.quest.1FC6DB76FA90EDFD.title}"
 			x: 12.0d
 			y: 13.5d
+			hide_dependency_lines: true
 		}
 		{
 			dependencies: [
@@ -914,6 +910,7 @@
 		{
 			dependencies: [
 				"1FC6DB76FA90EDFD"
+				"44D8CABA778F9F26"
 			]
 			description: [
 				"{gtia.quest.1931522EEAF2AF90.desc.0}"
@@ -948,6 +945,7 @@
 			title: "{gtia.quest.1931522EEAF2AF90.title}"
 			x: 15.0d
 			y: 16.5d
+			hide_dependency_lines: true
 		}
 		{
 			dependencies: [
@@ -1001,7 +999,7 @@
 				{
 					id: "50335842D054BAA7"
 					type: "item"
-					item: "gtia:lv_still"
+					item: "gtceu:lv_distillery"
 					count: 1L
 					consume_items: false
 					match_nbt: false
@@ -1078,7 +1076,6 @@
 			dependencies: [
 				"0690FF584ED3E0EE"
 				"531706A7A114B6AC"
-				"07B07245F02E7787"
 				"225A7837821FDE98"
 			]
 			description: [
@@ -1259,7 +1256,7 @@
 				{
 					id: "6E67D6C322EE9722"
 					type: "item"
-					item: "gtia:lv_fermentation_vat"
+					item: "gtceu:lv_fermenter"
 					count: 1L
 					consume_items: false
 					match_nbt: false
@@ -1271,35 +1268,8 @@
 		}
 		{
 			dependencies: [
-				"0E0958673BA3B92E"
-				"3713CBE1F33AC0E6"
-			]
-			description: [
-				"{gtia.quest.066F6C2A340E23AF.desc.0}"
-			]
-			id: "066F6C2A340E23AF"
-			rewards: [ ]
-			shape: "circle"
-			size: 1.0d
-			subtitle: "{gtia.quest.066F6C2A340E23AF.subtitle}"
-			tasks: [
-				{
-					id: "0640808B8F97948A"
-					type: "item"
-					item: "gtia:phase_coupler"
-					count: 1L
-					consume_items: false
-					match_nbt: false
-				}
-			]
-			title: "{gtia.quest.066F6C2A340E23AF.title}"
-			x: 15.5d
-			y: 12.0d
-		}
-		{
-			dependencies: [
-				"066F6C2A340E23AF"
 				"3B201ABFAD079376"
+				"07B07245F02E7787"
 			]
 			description: [
 				"{gtia.quest.531706A7A114B6AC.desc.0}"
@@ -1308,14 +1278,14 @@
 			]
 			id: "531706A7A114B6AC"
 			rewards: [ ]
-			shape: "hexagon"
+			shape: "circle"
 			size: 1.25d
 			subtitle: "{gtia.quest.531706A7A114B6AC.subtitle}"
 			tasks: [
 				{
 					id: "74D3C46CA83F3CCC"
 					type: "item"
-					item: "gtia:lv_catalytic_dehydrator"
+					item: "gtceu:ethylene_bucket"
 					count: 1L
 					consume_items: false
 					match_nbt: false
@@ -1328,7 +1298,6 @@
 		{
 			dependencies: [
 				"531706A7A114B6AC"
-				"07B07245F02E7787"
 				"225A7837821FDE98"
 			]
 			description: [

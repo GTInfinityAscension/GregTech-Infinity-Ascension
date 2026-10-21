@@ -88,7 +88,7 @@ subtitle = "Move fluids."
 task = [{ item = "gtceu:lv_electric_pump" }]
 hide_dependents = true
 text = """
-A motor, a rotor and a tin pipe. The Extractor, Brewery, Fermentation Vat and Fluid Heater use it.
+A motor, a rotor and a tin pipe. The Extractor, Brewery, Fermenter and Fluid Heater use it.
 """
 
 [[quest]]
@@ -236,7 +236,7 @@ subtitle = "Items and fluids in and out."
 task = [{ item = "gtceu:lv_input_bus" }, { item = "gtceu:lv_output_bus" }, { item = "gtceu:lv_input_hatch" }, { item = "gtceu:lv_output_hatch" }]
 hide_dependents = true
 text = """
-[item]Buses[/] carry items and [item]Hatches[/] carry fluids, through the walls of a multiblock. The Assembler seals them with Glue (or, later, plastic). The Diaphragm Cell and the Electric Blast Furnace both need them.
+[item]Buses[/] carry items and [item]Hatches[/] carry fluids, through the walls of a multiblock. The Assembler seals them with Glue (or, later, plastic). The Electric Blast Furnace needs them.
 """
 
 [[quest]]
@@ -482,26 +482,24 @@ subtitle = "Steam without a boiler."
 task = [{ item = "gtceu:lv_fluid_heater" }]
 group = "bio"
 text = """
-Heats water into steam on electricity alone. Pipe it into the Catalytic Dehydrator and every batch takes half the time.
+Heats water into steam on electricity alone. Pipe it into the Chemical Reactor's ethanol dehydration (circuit 2) and every batch takes half the time.
 """
 
 [[quest]]
 key = "diaphragm_cell"
-title = "Diaphragm Cell"
+title = "Chlor-Alkali"
 role = "side"
 x = 12
 y = 13.5
-shape = "gear"
+shape = "circle"
 size = 1.5
-deps = ["buses", "asbestos_diaphragm", "energy_hatch"]
+deps = ["asbestos_diaphragm", "lv_electrolyzer"]
 subtitle = "Salt water, split three ways."
-task = [{ item = "gtia:diaphragm_cell" }]
+task = [{ fluid = "gtceu:chlorine", amount = 1000 }]
 group = "lvchem"
 hide_dependents = true
 text = """
-Electricity through salt water gives [item]Chlorine[/], [item]Hydrogen[/] and a salty caustic [item]Cell Liquor[/]: [num]4,000 mB[/] of Salt Water every [num]15 s[/] at [num]30 EU/t[/].
-
-A [num]3×3×3[/] tank of Solid Steel Machine Casings, with glass windows and iron bars in the middle for the diaphragm. In the casings: an LV Energy Hatch, a Fluid Input Hatch, three Fluid Output Hatches, an Input Bus for the diaphragm and a Maintenance Hatch.
+Electricity through salt water gives [item]Chlorine[/], [item]Hydrogen[/] and a salty caustic [item]Cell Liquor[/]: [num]4,000 mB[/] of Salt Water every [num]15 s[/] at [num]30 EU/t[/] in the [item]Electrolyzer[/]. The [item]Asbestos Diaphragm[/] goes in with the brine and wears out [num]1%[/] of the time.
 
 [tip]Real fact:[/] chlorine and caustic soda always come out together, in the same ratio. The industry has to sell both; chemists call it the chlor-alkali balance.
 """
@@ -532,7 +530,7 @@ x = 15
 y = 16.5
 shape = "circle"
 size = 1
-deps = ["asbestos_diaphragm", "diaphragm_cell"]
+deps = ["diaphragm_cell", "lv_centrifuge"]
 subtitle = "Half of the salt comes back."
 task = [{ item = "gtia:cell_liquor_bucket" }, { item = "gtceu:sodium_hydroxide_dust" }]
 group = "lvchem"
@@ -562,7 +560,7 @@ The cell's Chlorine and Hydrogen react into Hydrochloric Acid. One reactor handl
 
 [[quest]]
 key = "still"
-title = "The Still"
+title = "Distillery"
 role = "side"
 x = 10
 y = 13
@@ -570,16 +568,16 @@ shape = "hexagon"
 size = 1.25
 deps = ["steam:charcoal_byproducts", "electric_age"]
 subtitle = "Copper, heat and patience."
-task = [{ item = "gtia:lv_still" }]
+task = [{ item = "gtceu:lv_distillery" }]
 group = "wood"
 text = """
-The [item]Still[/] picks its cut by circuit, at [num]30 EU/t[/]:
+At LV the [item]Distillery[/] cuts the wood liquids one fraction per circuit, at [num]30 EU/t[/]:
 
-- Circuit 1: [num]1,000 mB[/] Charcoal Byproducts → [num]400 mB[/] Wood Vinegar + [num]250 mB[/] Wood Tar
-- Circuit 2: [num]1,000 mB[/] Wood Vinegar → [num]100 mB[/] Acetic Acid + [num]40 mB[/] Methanol + [num]700 mB[/] Water
-- Circuit 3: [num]1,000 mB[/] Wood Tar → [num]400 mB[/] Creosote
+- Charcoal Byproducts: circuit 11 → [num]250 mB[/] Wood Tar, circuit 12 → [num]400 mB[/] Wood Vinegar
+- Wood Vinegar: circuit 11 → [num]100 mB[/] Acetic Acid, circuit 12 → [num]40 mB[/] Methanol
+- Wood Tar: circuit 11 → [num]400 mB[/] Creosote
 
-[num]Three Wood Retorts[/] fill one Still on circuit 1.
+[num]Three Coke Ovens[/] on logs keep one Distillery busy.
 
 [tip]Real fact:[/] wood vinegar is about ninety percent water. The rest is what makes smoked ham taste like smoked ham.
 """
@@ -631,7 +629,7 @@ subtitle = "Where the wood meets the plants."
 task = [{ item = "gtceu:vinyl_acetate_bucket" }]
 group = "wood"
 text = """
-Acetic Acid from the Still, Ethylene from the Dehydrator and Oxygen. Two lines of this chapter, one molecule.
+Acetic Acid from the Distillery, Ethylene from the dehydration and Oxygen. Two lines of this chapter, one molecule.
 """
 
 [[quest]]
@@ -681,7 +679,7 @@ subtitle = "The tar, refined."
 task = [{ item = "gtceu:creosote_bucket" }]
 group = "wood"
 text = """
-Circuit 3 on the Still: [num]1,000 mB[/] of Wood Tar gives [num]400 mB[/] of Creosote. It burns in boilers and protects planks, but its best use is next.
+Circuit 11 on the Distillery: [num]1,000 mB[/] of Wood Tar gives [num]400 mB[/] of Creosote. It burns in boilers and protects planks, but its best use is next.
 """
 
 [[quest]]
@@ -719,53 +717,37 @@ Creosote and a Talc, Soapstone or Redstone dust in the [item]Brewery[/]. Every C
 
 [[quest]]
 key = "fermentation"
-title = "Fermentation Vat"
+title = "Fermenter"
 role = "side"
 x = 9.5
 y = 6.5
 shape = "hexagon"
 size = 1.25
 deps = ["electric_age", "lv_pump"]
-subtitle = "Plants into Ethanol."
-task = [{ item = "gtia:lv_fermentation_vat" }]
+subtitle = "Sugar into Ethanol."
+task = [{ item = "gtceu:lv_fermenter" }]
 group = "bio"
 hide_dependents = true
 text = """
-Plants become biomass and biomass becomes [item]Ethanol[/], the input of the Dehydrator and a fuel of its own.
-"""
-
-[[quest]]
-key = "coupler"
-title = "Phase Coupler"
-role = "detail"
-x = 15.5
-y = 12
-shape = "circle"
-size = 1
-deps = ["steam:pulsating", "steam:pbf"]
-subtitle = "Pulsating Alloy at work."
-task = [{ item = "gtia:phase_coupler" }]
-group = "bio"
-text = """
-[item]Pulsating Alloy[/], a [item]Vacuum Tube[/], a [item]Wrought Iron Plate[/] and two [item]Red Alloy[/] wires: the heart of the Dehydrator.
+Yeast turns [num]2 Sugar[/] and [num]100 mB[/] of water into [num]50 mB[/] of [item]Ethanol[/]: the feed of the dehydration and a fuel of its own. The [item]Brewery[/] turns plants into Biomass, if you want the long way.
 """
 
 [[quest]]
 key = "dehydrator"
-title = "Catalytic Dehydrator"
+title = "Catalytic Dehydration"
 role = "side"
 x = 17
 y = 12.5
-shape = "hexagon"
+shape = "circle"
 size = 1.25
-deps = ["coupler", "fermentation"]
+deps = ["fermentation", "lv_chem_reactor"]
 subtitle = "Ethanol into Ethylene."
-task = [{ item = "gtia:lv_catalytic_dehydrator" }]
+task = [{ item = "gtceu:ethylene_bucket" }]
 group = "bio"
 text = """
-Turns [num]225 mB[/] of Ethanol into [num]225 mB[/] of [item]Ethylene[/] and water.
+In the [item]Chemical Reactor[/], circuit 1 turns [num]225 mB[/] of Ethanol into [num]225 mB[/] of [item]Ethylene[/] and water.
 
-[tip]Give it 100 mB of steam and each batch takes 200 ticks instead of 400.[/]
+[tip]Circuit 2 with 100 mB of steam takes 200 ticks instead of 400.[/]
 """
 
 [[quest]]
@@ -915,7 +897,7 @@ subtitle = "The metal of Medium Voltage."
 task = [{ item = "gtceu:aluminium_ingot", count = 8 }]
 group = "ebf"
 text = """
-[num]1700 K[/] and [num]120 EU/t[/]: Cupronickel coils and two LV Energy Hatches. Slow and costly, but it is enough for the MV hull. In Medium Voltage the Hall-Heroult Cell makes it in bulk from Bauxite.
+[num]1700 K[/] and [num]120 EU/t[/]: Cupronickel coils and two LV Energy Hatches. Slow and costly, but it is enough for the MV hull. In Medium Voltage the Hall-Héroult recipe makes it in bulk from Bauxite.
 
 [tip]Real fact:[/] aluminium was once more precious than gold. Napoleon III kept aluminium cutlery for his most important guests.
 """

@@ -762,20 +762,18 @@ Casing, two Gold Cables, two Polyethylene Plates and a Stainless Steel Plate.
 
 [[quest]]
 key = "bayer"
-title = "Bayer Digester"
+title = "Bayer Process"
 role = "side"
 x = 14.5
 y = 15.5
-shape = "gear"
+shape = "circle"
 size = 1.5
 deps = ["mv_chem_reactor"]
 subtitle = "Bauxite in hot caustic soda."
-task = [{ item = "gtia:bayer_digester" }]
+task = [{ item = "gtia:sodium_aluminate_bucket" }]
 group = "bayer"
 text = """
-Circuit 1 digests [num]1 Bauxite[/], [num]1 Sodium Hydroxide[/], water and steam into [num]1,000 mB[/] of Sodium Aluminate, leaving red mud. Circuit 2 precipitates it into [num]2 Aluminium Hydroxide[/] and gives back most of the soda.
-
-Provisional structure: a hollow [num]3×3×3[/] of Solid Steel Machine Casings with hatches in the walls.
+In the [item]Chemical Reactor[/], [num]1 Bauxite[/], [num]1 Sodium Hydroxide[/], water and steam become [num]1,000 mB[/] of Sodium Aluminate, leaving red mud. A seed of Aluminium Hydroxide then precipitates it into [num]2 Aluminium Hydroxide[/] and gives back most of the soda.
 
 [tip]Real fact:[/] Karl Josef Bayer patented the process in 1888. Nearly all the world's alumina is still made this way.
 """
@@ -789,11 +787,11 @@ y = 15.5
 shape = "circle"
 size = 1
 deps = ["bayer", "steam:lime_kiln"]
-subtitle = "Calcined in the Lime Kiln."
+subtitle = "Calcined in the Coke Oven."
 task = [{ item = "gtia:alumina_dust", count = 4 }]
 group = "bayer"
 text = """
-Your old Lime Kiln calcines [num]2 Aluminium Hydroxide[/] into [num]1 Alumina[/]. The Steam Age is still working for you.
+Your old Coke Oven calcines [num]2 Aluminium Hydroxide[/] into [num]1 Alumina[/]. The Steam Age is still working for you.
 """
 
 [[quest]]
@@ -830,18 +828,17 @@ Coke dust bound with Wood Tar in a Mixer. It burns away in the cell, one per run
 
 [[quest]]
 key = "hall_heroult"
-title = "Hall-Héroult Cell"
-role = "side"
+title = "Hall-Héroult"
+role = "hint"
+icon = "gtceu:electric_blast_furnace"
 x = 16.5
 y = 13.0
-shape = "gear"
 size = 1.5
 deps = ["alumina", "cryolite", "anode"]
 subtitle = "Aluminium the real way."
-task = [{ item = "gtia:hall_heroult_cell" }]
 group = "bayer"
 text = """
-[num]2 Alumina[/] and a Carbon Anode become [num]4 Aluminium Ingots[/] and CO₂, with a small chance to use up the cryolite bath. No blast furnace needed.
+In the [item]Electric Blast Furnace[/] at [num]1,233 K[/], [num]2 Alumina[/] and a Carbon Anode become [num]4 Aluminium Ingots[/] and CO₂, with a small chance to use up the cryolite bath. Twice what alumina and plain carbon give.
 
 [tip]Real fact:[/] Charles Hall and Paul Héroult found the same process in 1886, independently, on two continents. Both were 22.
 """
@@ -912,54 +909,52 @@ Vanadium dust burnt in oxygen. It is never used up.
 
 [[quest]]
 key = "contact"
-title = "Contact Converter"
-role = "side"
+title = "Contact Process"
+role = "hint"
+icon = "gtceu:mv_chemical_reactor"
 x = 14.0
 y = 17.5
-shape = "gear"
 size = 1.5
-deps = ["vanadium_pentoxide"]
+deps = ["vanadium_pentoxide", "mv_chem_reactor"]
 subtitle = "Sulfur into acid, and steam for free."
-task = [{ item = "gtia:contact_converter" }]
 group = "acid"
 text = """
-Sulfur, oxygen and water over Vanadium Pentoxide: [num]1,000 mB[/] of Sulfuric Acid and [num]2,000 mB[/] of steam per run. The reaction is hot enough to feed your turbines.
+In the [item]Chemical Reactor[/]: sulfur, oxygen and water over Vanadium Pentoxide give [num]1,000 mB[/] of Sulfuric Acid and [num]2,000 mB[/] of steam per run. The reaction is hot enough to feed your turbines.
 
 [tip]Real fact:[/] sulfuric acid is the most produced chemical in the world; economists once used it to measure how industrial a country was.
 """
 
 [[quest]]
 key = "haber"
-title = "Ammonia Converter"
-role = "side"
+title = "Haber-Bosch"
+role = "hint"
+icon = "gtceu:magnetite_dust"
 x = 23.5
 y = 10.5
-shape = "gear"
 size = 1.5
-deps = ["nitrogen"]
+deps = ["nitrogen", "mv_chem_reactor"]
 subtitle = "Bread from air."
-task = [{ item = "gtia:ammonia_converter" }]
 group = "acid"
 text = """
-Nitrogen and Hydrogen over an iron (Magnetite) catalyst become Ammonia, with a little steam. Your Diaphragm Cell already makes the hydrogen.
+In the [item]Chemical Reactor[/], Nitrogen and Hydrogen over an iron (Magnetite) catalyst become Ammonia, with a little steam. Your chlor-alkali Electrolyzer already makes the hydrogen.
 
 [tip]Real fact:[/] the Haber-Bosch process feeds about half of humanity: most of the nitrogen in your body passed through one.
 """
 
 [[quest]]
 key = "solvay"
-title = "Solvay Tower"
+title = "Solvay Process"
 role = "side"
 x = 29.0
 y = 12.0
-shape = "gear"
+shape = "circle"
 size = 1.5
 deps = ["ammonia"]
 subtitle = "Soda from salt and lime."
-task = [{ item = "gtia:solvay_tower" }]
+task = [{ item = "gtceu:sodium_bicarbonate_dust" }]
 group = "acid"
 text = """
-Brine, Ammonia and CO₂ give Sodium Bicarbonate and Ammonium Chloride. The Lime Kiln calcines the bicarbonate into Soda Ash, and Quicklime gets the ammonia back.
+In the [item]Chemical Reactor[/], brine, Ammonia and CO₂ give Sodium Bicarbonate and Ammonium Chloride. The Coke Oven calcines the bicarbonate into Soda Ash, and Quicklime gets the ammonia back.
 
 [tip]Real fact:[/] Ernest Solvay's process (1861) made soda ash so cheap that glass windows became normal houses' business.
 """
@@ -994,7 +989,7 @@ subtitle = "Bread from air, by the bucket."
 task = [{ item = "gtceu:ammonia_bucket", count = 4 }]
 group = "acid"
 text = """
-Fertiliser, explosives, rocket fuel, and the Solvay Tower.
+Fertiliser, explosives, rocket fuel, and the Solvay process.
 """
 
 [[quest]]
@@ -1010,7 +1005,7 @@ subtitle = "Calcined bicarbonate."
 task = [{ item = "gtceu:soda_ash_dust", count = 8 }]
 group = "acid"
 text = """
-Sodium Bicarbonate from the tower, calcined in your Lime Kiln.
+Sodium Bicarbonate from the Solvay process, calcined in your Coke Oven.
 """
 
 [[quest]]
@@ -1022,7 +1017,7 @@ y = 11.0
 shape = "gear"
 size = 1.5
 deps = ["mv_power"]
-subtitle = "The Retort, grown up."
+subtitle = "The Coke Oven, grown up."
 task = [{ item = "gtceu:pyrolyse_oven" }]
 group = "wood"
 text = """
@@ -1038,7 +1033,7 @@ y = 11.5
 shape = "hexagon"
 size = 1.25
 deps = ["pyrolyse"]
-subtitle = "The Still, grown up."
+subtitle = "The LV Distillery, grown up."
 task = [{ item = "gtceu:mv_distillery" }]
 group = "wood"
 text = """
@@ -1073,7 +1068,7 @@ subtitle = "Crops on a conveyor."
 task = [{ item = "gtna:greenhouse" }]
 group = "bio"
 text = """
-A GTNA multiblock that grows plants for your Fermentation Vats and wood lines.
+A GTNA multiblock that grows plants for your Brewery and wood lines.
 """
 
 [[quest]]
@@ -1089,7 +1084,7 @@ deps = ["lv:dehydrator", "mv_chem_reactor"]
 subtitle = "Ethylene meets chlorine."
 task = [{ item = "gtceu:vinyl_chloride_bucket" }]
 text = """
-Ethylene from the Catalytic Dehydrator and chlorine from the Diaphragm Cell, in the Chemical Reactor.
+Ethylene from the ethanol dehydration and chlorine from the chlor-alkali Electrolyzer, in the Chemical Reactor.
 """
 
 [[quest]]
@@ -1193,17 +1188,16 @@ Cut the CPU wafer in the MV Cutter. Each chip becomes the heart of a Microproces
 
 [[quest]]
 key = "ostwald"
-title = "Ostwald Converter"
-role = "side"
+title = "Ostwald Process"
+role = "hint"
+icon = "gtceu:cobalt_oxide_dust"
 x = 27
 y = 13.5
-shape = "gear"
 size = 1.25
 deps = ["ammonia"]
 subtitle = "Ammonia into nitric acid."
-task = [{ item = "gtia:ostwald_converter" }]
 text = """
-Burns your [item]Ammonia[/] over a [item]Cobalt Oxide[/] gauze, oxidizes the gas and absorbs it in water. A third of the gas comes back for another round, like in every real plant.
+In the [item]Chemical Reactor[/]: circuit 1 burns your [item]Ammonia[/] over a [item]Cobalt Oxide[/] gauze, circuit 2 oxidizes the gas and circuit 3 absorbs it in water. A third of the gas comes back for another round, like in every real plant.
 """
 
 [[quest]]
@@ -1253,9 +1247,9 @@ In [item]Journey[/] worlds maintenance is off.
 key = "tip_batch"
 title = "Batch Mode"
 role = "hint"
-icon = "gtia:bayer_digester"
-deps = ["bayer"]
+icon = "gtceu:electric_blast_furnace"
+deps = ["hall_heroult"]
 subtitle = "Many short runs as one."
 text = """
-Very short recipes lose time between runs. The [item]Batch Mode[/] button in a controller's screen groups several runs into one longer run. The GTIA chemistry plants all support it.
+Very short recipes lose time between runs. The [item]Batch Mode[/] button in a multiblock controller's screen groups several runs into one longer run. The EBF and the Large Chemical Reactor support it.
 """

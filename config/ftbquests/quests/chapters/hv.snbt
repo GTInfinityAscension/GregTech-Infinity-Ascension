@@ -2970,19 +2970,18 @@
 			description: [
 				"{gtia.quest.637A995F8BDDC80B.desc.0}"
 			]
+			icon: "gtceu:hydrogen_sulfide_bucket"
 			id: "637A995F8BDDC80B"
+			optional: true
 			rewards: [ ]
-			shape: "gear"
+			shape: "pentagon"
 			size: 1.25d
 			subtitle: "{gtia.quest.637A995F8BDDC80B.subtitle}"
 			tasks: [
 				{
 					id: "1727C0DADBF2E643"
-					type: "item"
-					item: "gtia:claus_unit"
-					count: 1L
-					consume_items: false
-					match_nbt: false
+					type: "checkmark"
+					title: "{gtia.quest.637A995F8BDDC80B.task.1727C0DADBF2E643}"
 				}
 			]
 			title: "{gtia.quest.637A995F8BDDC80B.title}"
@@ -2993,23 +2992,23 @@
 			dependencies: [
 				"6D550B622B6C1DE9"
 				"09AEB1FD9B3D1AF2"
+				"6301DD637429E34F"
 			]
 			description: [
 				"{gtia.quest.5EAA295C6CBB7F46.desc.0}"
 			]
+			icon: "gtceu:rutile_dust"
 			id: "5EAA295C6CBB7F46"
+			optional: true
 			rewards: [ ]
-			shape: "gear"
+			shape: "pentagon"
 			size: 1.25d
 			subtitle: "{gtia.quest.5EAA295C6CBB7F46.subtitle}"
 			tasks: [
 				{
 					id: "1752D55923A06D55"
-					type: "item"
-					item: "gtia:kroll_reactor"
-					count: 1L
-					consume_items: false
-					match_nbt: false
+					type: "checkmark"
+					title: "{gtia.quest.5EAA295C6CBB7F46.task.1752D55923A06D55}"
 				}
 			]
 			title: "{gtia.quest.5EAA295C6CBB7F46.title}"
@@ -3020,28 +3019,30 @@
 		{
 			dependencies: [
 				"3A28137F2C526113"
+				"069EED1B702CDEF4"
+				"667FD8A52B98CABC"
 			]
 			description: [
 				"{gtia.quest.434EA51BE776FAA7.desc.0}"
 			]
+			icon: "gtia:trichlorosilane_bucket"
 			id: "434EA51BE776FAA7"
+			optional: true
 			rewards: [ ]
-			shape: "gear"
+			shape: "pentagon"
 			size: 1.25d
 			subtitle: "{gtia.quest.434EA51BE776FAA7.subtitle}"
 			tasks: [
 				{
 					id: "5FEBED5BAC00CC5D"
-					type: "item"
-					item: "gtia:siemens_reactor"
-					count: 1L
-					consume_items: false
-					match_nbt: false
+					type: "checkmark"
+					title: "{gtia.quest.434EA51BE776FAA7.task.5FEBED5BAC00CC5D}"
 				}
 			]
 			title: "{gtia.quest.434EA51BE776FAA7.title}"
 			x: 8.5d
 			y: 1.5d
+			hide_dependency_lines: true
 		}
 		{
 			dependencies: [

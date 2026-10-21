@@ -192,11 +192,11 @@ key = "biomass"
 title = "Biomass"
 role = "side"
 icon = "gtceu:biomass_bucket"
-deps = ["crossing", "lv:fermentation"]
+deps = ["crossing", "lv:brewery"]
 subtitle = "Grass into fuel."
 task = [{ fluid = "gtceu:biomass", amount = 1000 }]
 text = """
-Four [item]Biomass Bundles[/] and water become [num]500 mB[/] of [item]Biomass[/] in the Fermentation Vat. Ferment it again for ethanol; the High Voltage bees drink it too.
+Four [item]Biomass Bundles[/] and water become [num]500 mB[/] of [item]Biomass[/] in the Brewery. Ferment it again for ethanol; the High Voltage bees drink it too.
 """
 
 [[quest]]
@@ -227,12 +227,12 @@ Urea from [item]Ammonia[/] and [item]Carbon Dioxide[/], monoammonium phosphate f
 key = "greenhouse"
 title = "Greenhouse"
 role = "milestone"
-icon = "gtia:greenhouse"
+icon = "gtna:greenhouse"
 deps = ["seed_analyzer", "mv:mv_sensor", "mv:mv_pump", "mv:mv_power"]
 subtitle = "Hundreds of plants, one block entity."
-task = [{ item = "gtia:greenhouse" }]
+task = [{ item = "gtna:greenhouse" }]
 text = """
-A [num]5 x 4 x 5[/] glass house of frost-proof casing on a soil floor. One seed of the crop stays in the input bus as a catalyst; [num]1[/] NPK and [num]1,000 mB[/] of water give [num]8[/] of its harvest every 30 seconds. Compost works too, [num]2[/] per run for [num]6[/].
+The GTNA [item]Greenhouse[/] needs open sky above its glass roof: dim light slows it. One seed of the crop stays in the input bus as a catalyst; [num]1[/] NPK and [num]1,000 mB[/] of water give [num]8[/] of its harvest every 30 seconds. Compost works too, [num]2[/] per run for [num]6[/].
 """
 
 [[quest]]
@@ -244,7 +244,7 @@ deps = ["greenhouse"]
 subtitle = "No more clicking."
 task = [{ item = "agronomica:hemp_fiber", count = 64 }]
 text = """
-A stack of fibre without a single right click. Feed the Greenhouse from the Mixer and the barrels, and its output into the Fermentation Vats.
+A stack of fibre without a single right click. Feed the Greenhouse from the Mixer and the barrels, and its output into the Brewery.
 """
 
 [[quest]]

@@ -1344,20 +1344,17 @@ Casing, [num]two[/] Tin Cables, [num]two[/] Wrought Iron Plates and a Steel Plat
 
 [[quest]]
 key = "wood_retort"
-title = "Wood Retort"
-role = "side"
+title = "Wood in the Coke Oven"
+role = "hint"
+icon = "gtceu:coke_oven"
 x = 7.5
 y = -4.0
-shape = "gear"
 size = 1.5
 deps = ["firebricks"]
 subtitle = "Cook wood without air."
-task = [{ item = "gtia:wood_retort" }]
 group = "wood"
 text = """
-A furnace burns wood. A [item]Wood Retort[/] cooks it in a sealed box, and the wood comes apart: [num]4 logs[/] give [num]3 Charcoal[/] and [num]1,000 mB[/] of [item]Charcoal Byproducts[/] every [num]30 s[/], with no fuel at all.
-
-Build it like a Coke Oven, but taller: a hollow [num]3×3×4[/] of [item]Firebricks[/] with the controller in the middle of a face. Coke Oven Hatches in the walls automate it.
+A furnace burns wood. The [item]Coke Oven[/] cooks it without air, and the wood comes apart: [num]4 logs[/] give [num]3 Charcoal[/] and [num]1,000 mB[/] of [item]Charcoal Byproducts[/] every [num]30 s[/], with no fuel at all. Coke Oven Hatches automate it.
 
 [tip]Real fact:[/] until the 1920s, almost all of the world's methanol came from cooking wood. That is why it was called wood alcohol.
 """
@@ -1375,27 +1372,27 @@ subtitle = "Smells like a campfire with a chemistry degree."
 task = [{ item = "gtceu:charcoal_byproducts_bucket" }]
 group = "wood"
 text = """
-The liquid in the Retort's tank is a mix of wood vinegar and tar. You cannot separate it yet: keep it in tanks. In Low Voltage, a [item]Still[/] turns it into acid, alcohol and creosote.
+The liquid in the Coke Oven's tank is a mix of wood vinegar and tar. You cannot separate it yet: keep it in tanks. In Low Voltage, the [item]Distillery[/] cuts it into acid, alcohol and creosote.
 
-[num]Three Retorts[/] fill exactly one Still.
+[num]Three Coke Ovens[/] on logs fill exactly one LV Distillery.
 """
 
 [[quest]]
 key = "lime_kiln"
-title = "Lime Kiln"
+title = "Calcite Dust"
 role = "side"
 x = 11.5
 y = 1.0
-shape = "gear"
+shape = "circle"
 size = 1.5
 deps = ["pbf", "macerator"]
 subtitle = "Rocks in, hotter rocks out."
-task = [{ item = "gtia:lime_kiln" }]
+task = [{ item = "gtceu:calcite_dust", count = 4 }]
 group = "lime"
 text = """
-Calcite is limestone. Burn it and it becomes [item]Quicklime[/]: [num]4 Calcite Dust[/] and one Charcoal, Coal or Coke give [num]4 Quicklime[/] in [num]20 s[/]; the CO₂ goes up the shaft.
+Calcite is limestone. Burn it and it becomes [item]Quicklime[/]: [num]4 Calcite Dust[/] in the [item]Coke Oven[/] give [num]4 Quicklime[/] in [num]20 s[/]; the CO₂ goes up the chimney.
 
-Calcite blocks line dripstone caves and amethyst geodes; the Steam Macerator turns them into dust. Build a hollow [num]3×3×5[/] shaft of [item]Firebricks[/], open at the top, controller low on a face.
+Calcite blocks line dripstone caves and amethyst geodes; the Steam Macerator turns them into dust.
 
 [tip]Real fact:[/] lime kilns are older than writing.
 """
@@ -1415,7 +1412,7 @@ group = "lime"
 text = """
 Add Quicklime to the Primitive Blast Furnace: [num]2 Wrought Iron[/], [num]2 Charcoal[/] (or Coal) and [num]1 Quicklime[/] give [num]2 Steel[/] in [num]50 s[/]. That is [num]2.4 Steel[/] a minute per furnace, against [num]1.5[/] without it.
 
-One Lime Kiln keeps about ten furnaces fluxed.
+One Coke Oven on calcite keeps about ten furnaces fluxed.
 
 [tip]Real fact:[/] real blast furnaces add limestone as flux. It grabs the sulfur and the sand and floats them off as slag.
 """

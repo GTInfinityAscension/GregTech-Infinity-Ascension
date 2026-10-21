@@ -1209,7 +1209,7 @@ shape = "octagon"
 size = 1
 hide_lines = true
 deps = ["hv_cr", "mv:ammonia", "energy:hv_steam"]
-subtitle = "From the Ammonia Converter."
+subtitle = "From the Haber-Bosch process."
 task = [{ item = "gtceu:ammonia_bucket" }]
 text = """
 The Haber-Bosch ammonia from Medium Voltage starts the nitrogen line.
@@ -1260,7 +1260,7 @@ deps = ["no2", "mv:ostwald"]
 subtitle = "The Ostwald absorption tower."
 task = [{ item = "gtceu:nitric_acid_bucket" }]
 text = """
-Nitrogen dioxide and water in the Ostwald Converter's absorption stage give nitric acid; the leftover nitric oxide goes back in.
+Nitrogen dioxide and water in the Ostwald absorption (Chemical Reactor, circuit 3) give nitric acid; the leftover nitric oxide goes back in.
 """
 
 [[quest]]
@@ -1501,7 +1501,7 @@ deps = ["kroll"]
 subtitle = "Chlorinate the rutile."
 task = [{ item = "gtceu:titanium_tetrachloride_bucket" }]
 text = """
-Rutile, carbon and chlorine in the Kroll Reactor's chlorination stage.
+Rutile, carbon and chlorine in the Large Chemical Reactor: the Kroll chlorination.
 """
 
 [[quest]]
@@ -1533,7 +1533,7 @@ deps = ["ticl4", "magnesium", "vacuum_freezer", "hv_hatch"]
 subtitle = "A strong, light metal."
 task = [{ item = "gtceu:titanium_dust" }]
 text = """
-Titanium is a strong and light metal. The Kroll Reactor reduces the tetrachloride with magnesium under argon; the titanium dust melts in the blast furnace and the hot ingots cool in the Vacuum Freezer.
+Titanium is a strong and light metal. The Chemical Reactor reduces the tetrachloride with magnesium under argon; the titanium dust melts in the blast furnace and the hot ingots cool in the Vacuum Freezer.
 """
 
 [[quest]]
@@ -1614,7 +1614,7 @@ deps = ["hv_hull"]
 subtitle = "Bridge: Agriculture."
 task = [{ item = "gtia:hv_seed_analyzer" }]
 text = """
-The HV analyzer, the mutation chamber and the HV fermentation vat continue in the Agriculture chapter.
+The HV analyzer and the mutation chamber continue in the Agriculture chapter.
 """
 
 # ------------------------------------------------------------------ organs (GTIA-D-279), HV chemistry (GTIA-D-281)
@@ -1685,47 +1685,44 @@ Polyethylene foil, stainless steel and an LV field generator: the same flight, s
 
 [[quest]]
 key = "claus"
-title = "Claus Unit"
-role = "side"
+title = "Claus Process"
+role = "hint"
+icon = "gtceu:hydrogen_sulfide_bucket"
 x = 19.5
 y = 10.5
-shape = "gear"
 size = 1.25
 deps = ["desulf"]
 subtitle = "Sulfur from sour gas."
-task = [{ item = "gtia:claus_unit" }]
 text = """
-Desulfurizing oil leaves [item]Hydrogen Sulfide[/]. The Claus Unit burns a third of it and reacts the rest over the [item]Alumina[/] of your Bayer plant: sulfur for the Contact Converter, steam for your boilers.
+Desulfurizing oil leaves [item]Hydrogen Sulfide[/]. In the [item]Chemical Reactor[/], circuit 5 burns a third of it and reacts the rest over the [item]Alumina[/] of your Bayer line: sulfur for the Contact process, steam for your boilers. Circuit 6 does the second stage with Sulfur Dioxide.
 """
 
 [[quest]]
 key = "kroll"
-title = "Kroll Reactor"
-role = "side"
+title = "Kroll Process"
+role = "hint"
+icon = "gtceu:rutile_dust"
 x = 30
 y = 11
-shape = "gear"
 size = 1.25
-deps = ["rutile", "distillation"]
+deps = ["rutile", "distillation", "lcr"]
 subtitle = "Titanium the real way."
-task = [{ item = "gtia:kroll_reactor" }]
 text = """
-Chlorinates [item]Rutile[/], or the Moon's [item]Ilmenite[/], into [item]Titanium Tetrachloride[/], then reduces it with [item]Magnesium[/] under argon. Electrolyze the [item]Magnesium Chloride[/] to close the loop.
+The [item]Large Chemical Reactor[/] chlorinates [item]Rutile[/], or the Moon's [item]Ilmenite[/], into [item]Titanium Tetrachloride[/]; the Chemical Reactor then reduces it with [item]Magnesium[/] under argon (circuit 3). Electrolyze the [item]Magnesium Chloride[/] to close the loop.
 """
 
 [[quest]]
 key = "siemens"
-title = "Siemens Reactor"
-role = "side"
+title = "Siemens Process"
+role = "hint"
+icon = "gtia:trichlorosilane_bucket"
 x = 8.5
 y = 1.5
-shape = "gear"
 size = 1.25
-deps = ["hv_pump"]
+deps = ["hv_pump", "hv_cr", "hv_power"]
 subtitle = "Silicon, nine nines."
-task = [{ item = "gtia:siemens_reactor" }]
 text = """
-Silicon and hydrochloric acid become [item]Trichlorosilane[/]; on hot rods it deposits [item]Polysilicon[/] and gives the acid back.
+In the [item]Chemical Reactor[/], silicon and hydrochloric acid become [item]Trichlorosilane[/] (circuit 1); on hot rods it deposits [item]Polysilicon[/] and gives the acid back (circuit 2).
 """
 
 [[quest]]
