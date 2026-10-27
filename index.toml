@@ -161,20 +161,20 @@ file = "config/fancymenu/assets/gtia_discord_hover.png"
 hash = "36f7401383c0bba7cd7ecc77ffeda5fb0a2c1e20d7a69927246c818f37fafc5f"
 
 [[files]]
-file = "config/fancymenu/assets/gtia_emblem.gif"
-hash = "84519938046b6ff313c7cf7406271b844cd5df6eb6634d13355d2c2f86bf3dac"
+file = "config/fancymenu/assets/gtia_emblem.png"
+hash = "2e1c6826744e7fbf971cf50bf2dea9fb9b736aa2b97d98fc574cfcd40da383f0"
 
 [[files]]
 file = "config/fancymenu/assets/gtia_icon_16.png"
-hash = "56605d79f83a2169f234e96d47ba25ff2570810783a487e40d0289d5716a0ce1"
+hash = "131ee1d6e401a9f20d3225e1b0285937eeb253cca4bd458779d2e3ed756e0ac6"
 
 [[files]]
 file = "config/fancymenu/assets/gtia_icon_32.png"
-hash = "ddcf95401e30e5f1b649b3fb023ccfd535915044677ee539f4a98ccdd7107e56"
+hash = "257b39754352d53ed51fca728e69b52f48bae90df5c0a714dae4a4aa13552c2e"
 
 [[files]]
 file = "config/fancymenu/assets/gtia_icon_mac.png"
-hash = "0e3d9e69b0f6ab8932dc4f888a0f8997277241a59d791c6d7fa751e2d2e880b2"
+hash = "64151f4fc4a25b09d610dff4ad7b6a0dafb6580c5e704617a729ff90be607533"
 
 [[files]]
 file = "config/fancymenu/assets/gtia_text_logo.png"
@@ -186,7 +186,7 @@ hash = "4c68ab99c906dd487952f61bf33c0635039a8bbff3f02099e3cd8272fe51b4aa"
 
 [[files]]
 file = "config/fancymenu/customization/gtia_title_screen.txt"
-hash = "49c855dff12bfb4c97b87cc92b66ddaee6597bdbf0813330a8f4691cc8d7a6c1"
+hash = "b772448f9c72360987c390b5d2ae69cdbf0c0487e7081845c987d413918e27c6"
 
 [[files]]
 file = "config/fancymenu/options.txt"

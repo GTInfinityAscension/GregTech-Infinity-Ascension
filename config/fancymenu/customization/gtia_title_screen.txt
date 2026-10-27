@@ -27,7 +27,7 @@ menu_background {
 }
 
 element {
-  source = [source:local]/config/fancymenu/assets/gtia_emblem.gif
+  source = [source:local]/config/fancymenu/assets/gtia_emblem.png
   repeat_texture = false
   nine_slice_texture = false
   nine_slice_texture_border_x = 5

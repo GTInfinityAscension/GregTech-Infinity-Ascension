@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/assets/logo.png" width="160" alt="GregTech Infinity Ascension logo" />
+</p>
+
 # GregTech Infinity Ascension (GTIA)
 
 A GregTech modpack for Minecraft 1.20.1 built on **GTCEu Modern**, **[GregTech Nexus Addon (GTNA)](https://github.com/GTInfinityAscension/GregTech-Nexus-Addon)** and **[GTIACore](https://github.com/GTInfinityAscension/GTIACore)**.
